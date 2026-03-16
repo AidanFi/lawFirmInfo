@@ -19,6 +19,15 @@ _ASSOC_PATTERN = re.compile(r'\b(and|&)\b', re.IGNORECASE)
 _PUNCT_PATTERN = re.compile(r"[^\w\s]")
 _MULTI_SPACE = re.compile(r'\s+')
 
+_PRACTICE_ALIASES = {
+    "workers comp": "Workers' Compensation",
+    "workers compensation": "Workers' Compensation",
+    "pi": "Personal Injury",
+    "dui/dwi": "DUI",
+    "wills": "Estate Planning",
+    "wills and trusts": "Estate Planning",
+}
+
 
 def normalize_firm_name(name: str) -> str:
     """Return a normalized firm name for fuzzy dedup comparison."""
@@ -40,11 +49,15 @@ def are_same_firm(name_a: str, name_b: str, threshold: int = 85) -> bool:
 
 def normalize_practice_area(raw: str) -> str:
     """Map a raw practice area string to the closest canonical area."""
+    # Check aliases first (handles abbreviations that score below threshold)
+    lower = raw.strip().lower()
+    if lower in _PRACTICE_ALIASES:
+        return _PRACTICE_ALIASES[lower]
     result = process.extractOne(
         raw,
         CANONICAL_PRACTICE_AREAS,
         scorer=fuzz.token_sort_ratio,
-        score_cutoff=72
+        score_cutoff=85
     )
     if result:
         return result[0]

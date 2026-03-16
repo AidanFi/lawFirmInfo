@@ -249,7 +249,7 @@
       <div class="practice-badges">
         ${(firm.practiceAreas || []).map(p => `<span class="badge${firm.referralScore === "competitor" ? " competitor" : ""}">${esc(p)}</span>`).join("")}
       </div>
-      <div class="firm-meta">📍 ${esc(firm.address.city)}${firm.phone ? ` · ${esc(firm.phone)}` : ""}</div>
+      <div class="firm-meta">📍 ${esc(firm.address.city)}${firm.phone ? ` · ${esc(firm.phone)}` : ""}${firm.email ? ` · <a href="mailto:${esc(firm.email)}" style="color:var(--accent)" onclick="event.stopPropagation()">${esc(firm.email)}</a>` : ""}</div>
       <div class="firm-summary">${esc(firm.summary || "")}</div>
       <div class="firm-footer">
         <span class="match-badge ${scoreClass}">${firm.referralScore}</span>
@@ -306,6 +306,7 @@
       <td>${(firm.practiceAreas || []).join(", ")}</td>
       <td>${esc(firm.address.city)}</td>
       <td>${esc(firm.phone || "—")}</td>
+      <td>${firm.email ? `<a href="mailto:${esc(firm.email)}" class="website-link">${esc(firm.email)}</a>` : "—"}</td>
       <td>${firm.website ? `<a href="${esc(firm.website)}" target="_blank" class="website-link">Link</a>` : "—"}</td>
       <td><span class="match-badge ${scoreClass}">${firm.referralScore}</span></td>
       <td>

@@ -1,0 +1,8 @@
+scraper/.env
+data/
+app/firms_data.js
+__pycache__/
+*.pyc
+.pytest_cache/
+node_modules/
+.venv/

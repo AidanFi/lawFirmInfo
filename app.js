@@ -115,8 +115,8 @@
     document.getElementById("clear-filters").addEventListener("click", e => { e.preventDefault(); resetFilters(); });
 
     // View toggle
-    document.getElementById("view-cards-btn").addEventListener("click", () => setView("cards"));
-    document.getElementById("view-table-btn").addEventListener("click", () => setView("table"));
+    document.getElementById("view-cards-btn").addEventListener("click", () => { setView("cards"); rerender(); });
+    document.getElementById("view-table-btn").addEventListener("click", () => { setView("table"); rerender(); });
 
     // Export
     document.getElementById("export-filtered-btn").addEventListener("click", () =>
@@ -242,7 +242,7 @@
     <div class="firm-card${isActive ? " active" : ""}" data-id="${firm.id}">
       <div class="firm-card-header">
         <span class="firm-name">${esc(firm.name)}</span>
-        <button class="star-btn${starred ? " starred" : ""}" data-star="${firm.id}" onclick="event.stopPropagation()">
+        <button class="star-btn${starred ? " starred" : ""}" data-star="${firm.id}">
           ${starred ? "★" : "☆"}
         </button>
       </div>
@@ -253,7 +253,7 @@
       <div class="firm-summary">${esc(firm.summary || "")}</div>
       <div class="firm-footer">
         <span class="match-badge ${scoreClass}">${firm.referralScore}</span>
-        <select class="status-select" data-status="${firm.id}" onclick="event.stopPropagation()">
+        <select class="status-select" data-status="${firm.id}">
           ${["uncontacted","reached_out","partner","not_interested"].map(s =>
             `<option value="${s}"${status === s ? " selected" : ""}>${s.replace(/_/g," ")}</option>`
           ).join("")}

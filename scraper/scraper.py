@@ -73,6 +73,13 @@ def main():
             firm["summary"] = result["summary"]
             if result["email"]:
                 firm["email"] = result["email"]
+            if result.get("practiceAreas"):
+                # Merge website-detected areas with any existing ones (e.g. from KSBar)
+                existing = set(firm.get("practiceAreas") or [])
+                for area in result["practiceAreas"]:
+                    if area not in existing:
+                        firm["practiceAreas"].append(area)
+                        existing.add(area)
             if (i + 1) % 50 == 0:
                 save_checkpoint(firms, phase=3, path=CHECKPOINT_PATH)
                 print(f"[phase 3] Progress: {i + 1}/{len(firms)}")

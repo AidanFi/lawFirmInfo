@@ -1,0 +1,9 @@
+{
+  "name": "kansas-law-firm-tests",
+  "private": true,
+  "scripts": { "test": "jest" },
+  "devDependencies": {
+    "jest": "^29.0.0",
+    "jest-environment-jsdom": "^29.0.0"
+  }
+}

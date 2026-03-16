@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kansas Law Firm Directory</title>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.css">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.Default.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="app-header">
+    <span class="app-title">Kansas Law Firm Directory</span>
+    <nav class="tabs">
+      <button class="tab active" data-tab="directory">Directory</button>
+      <button class="tab" data-tab="map">Map</button>
+      <button class="tab" data-tab="starred">Starred</button>
+      <button class="tab" data-tab="settings">Settings</button>
+    </nav>
+  </header>
+
+  <div id="no-data" class="no-data hidden">
+    <h2>No data found</h2>
+    <p>Run the scraper to generate firm data:</p>
+    <pre>python scraper/scraper.py --test</pre>
+    <p>Then copy <code>app/firms_data.js</code> or run the full scraper.</p>
+  </div>
+
+  <div id="app-body" class="hidden">
+    <!-- Directory Tab -->
+    <div id="tab-directory" class="tab-panel active">
+      <aside class="sidebar">
+        <input type="text" id="search" class="search-input" placeholder="Search firm name...">
+        <div class="filter-section">
+          <div class="filter-label">Referral Match</div>
+          <label><input type="checkbox" name="score" value="high" checked> High match</label>
+          <label><input type="checkbox" name="score" value="medium" checked> Medium match</label>
+          <label><input type="checkbox" name="score" value="low" checked> Low match</label>
+          <label><input type="checkbox" name="score" value="competitor" checked> Competitor</label>
+        </div>
+        <div class="filter-section">
+          <div class="filter-label">Practice Area</div>
+          <div id="practice-checkboxes"></div>
+        </div>
+        <div class="filter-section">
+          <div class="filter-label">City</div>
+          <select id="city-filter"><option value="">All cities</option></select>
+        </div>
+        <div class="filter-section">
+          <div class="filter-label">County</div>
+          <select id="county-filter"><option value="">All counties</option></select>
+        </div>
+        <div class="filter-section">
+          <div class="filter-label">Contact Status</div>
+          <label><input type="checkbox" name="status" value="uncontacted" checked> Uncontacted</label>
+          <label><input type="checkbox" name="status" value="reached_out" checked> Reached Out</label>
+          <label><input type="checkbox" name="status" value="partner" checked> Partner</label>
+          <label><input type="checkbox" name="status" value="not_interested" checked> Not Interested</label>
+        </div>
+        <div class="filter-section">
+          <label class="starred-toggle"><input type="checkbox" id="starred-only"> Starred only</label>
+        </div>
+        <a href="#" id="clear-filters" class="clear-filters">Clear all filters</a>
+        <div id="result-count" class="result-count"></div>
+      </aside>
+      <main class="main-area">
+        <div class="main-toolbar">
+          <span id="toolbar-count"></span>
+          <div class="toolbar-right">
+            <button id="export-filtered-btn" class="btn btn-secondary">Export CSV</button>
+            <div class="view-toggle">
+              <button id="view-cards-btn" class="btn active">Cards</button>
+              <button id="view-table-btn" class="btn">Table</button>
+            </div>
+          </div>
+        </div>
+        <div id="cards-view" class="cards-grid"></div>
+        <div id="table-view" class="hidden">
+          <table id="firms-table">
+            <thead>
+              <tr>
+                <th data-col="name">Name</th>
+                <th data-col="practiceAreas">Practice Areas</th>
+                <th data-col="city">City</th>
+                <th data-col="phone">Phone</th>
+                <th>Website</th>
+                <th data-col="referralScore">Match</th>
+                <th>Status</th>
+                <th>Star</th>
+              </tr>
+            </thead>
+            <tbody id="table-body"></tbody>
+          </table>
+        </div>
+      </main>
+    </div>
+
+    <!-- Map Tab -->
+    <div id="tab-map" class="tab-panel hidden">
+      <div class="map-layout">
+        <div id="map"></div>
+        <div class="map-sidebar">
+          <div class="map-sidebar-title">Firms without location data</div>
+          <div id="unmapped-list"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Starred Tab -->
+    <div id="tab-starred" class="tab-panel hidden">
+      <main class="main-area full-width">
+        <div id="starred-cards" class="cards-grid"></div>
+        <div id="starred-empty" class="empty-state hidden">No starred firms yet. Star a firm to add it here.</div>
+      </main>
+    </div>
+
+    <!-- Settings Tab -->
+    <div id="tab-settings" class="tab-panel hidden">
+      <div class="settings-panel">
+        <div class="settings-group">
+          <div class="settings-label">Default View</div>
+          <div class="view-toggle">
+            <button id="settings-cards-btn" class="btn active" data-view="cards">Cards</button>
+            <button id="settings-table-btn" class="btn" data-view="table">Table</button>
+          </div>
+        </div>
+        <div class="settings-group">
+          <div class="settings-label">My Practice Area</div>
+          <select id="my-practice">
+            <option>Personal Injury</option>
+            <option>Family Law</option>
+            <option>Criminal Defense</option>
+            <option>Estate Planning</option>
+            <option>Business Law</option>
+            <option>Real Estate</option>
+            <option>Immigration</option>
+            <option>Bankruptcy</option>
+          </select>
+        </div>
+        <div class="settings-group">
+          <div class="settings-label">Export</div>
+          <button id="export-all-btn" class="btn btn-secondary">Export All as CSV</button>
+          <button id="export-starred-btn" class="btn btn-secondary">Export Starred as CSV</button>
+        </div>
+        <div class="settings-group">
+          <div class="settings-label">Data</div>
+          <div id="data-info" class="data-info"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scripts (order matters) -->
+  <script src="firms_data.js" onerror="window.__firmsLoadError=true"></script>
+  <script src="config.js"></script>
+  <script src="storage.js"></script>
+  <script src="filters.js"></script>
+  <script src="export.js"></script>
+  <script src="map.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

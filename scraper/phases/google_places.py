@@ -17,6 +17,31 @@ KANSAS_CITIES = [
     "Minneola", "Sublette", "Hugoton", "Liberal", "Scott City",
 ]
 
+COUNTY_SEATS_105 = [
+    "Abilene", "Alma", "Almena", "Anthony", "Arkansas City",
+    "Ashland", "Atchison", "Belleville", "Beloit",
+    "Burlington", "Caldwell", "Chanute", "Cimarron", "Clay Center",
+    "Coldwater", "Columbus", "Concordia", "Cottonwood Falls", "Council Grove",
+    "Dodge City", "El Dorado", "Elkhart", "Ellsworth", "Emporia",
+    "Erie", "Eureka", "Fort Scott", "Fredonia", "Garden City",
+    "Garnett", "Goodland", "Great Bend", "Greensburg", "Hays",
+    "Hiawatha", "Hill City", "Hillsboro", "Holton", "Howard",
+    "Hoxie", "Hugoton", "Hutchinson", "Independence", "Iola",
+    "Jetmore", "Johnson", "Junction City", "Kansas City", "Kingman",
+    "Kinsley", "La Crosse", "Lakin", "Larned", "Lawrence",
+    "Leavenworth", "Leoti", "Liberal", "Lincoln", "Lindsborg",
+    "Logan", "Lyndon", "Lyons", "Madison", "Manhattan",
+    "Mankato", "Marion", "Marysville", "McPherson", "Meade",
+    "Medicine Lodge", "Minneapolis", "Mound City", "Ness City", "Newton",
+    "Norton", "Oakley", "Oberlin", "Olathe", "Osborne",
+    "Oskaloosa", "Oswego", "Ottawa", "Paola",
+    "Phillipsburg", "Pittsburg", "Pratt", "Russell", "Salina",
+    "Sedan", "Seneca", "Smith Center", "St. John", "Stockton",
+    "Sublette", "Syracuse", "Topeka", "Tribune", "Troy",
+    "Ulysses", "Wakeeney", "Washington", "Wellington", "Wichita",
+    "Winfield", "Yates Center",
+]
+
 _ZIP_RE = re.compile(r'\b(\d{5})\b')
 _STATE_RE = re.compile(r',\s*([A-Z]{2})\s+\d{5}')
 _CITY_RE = re.compile(r',\s*([^,]+),\s*[A-Z]{2}\s+\d{5}')
@@ -105,4 +130,46 @@ def scrape_google_places(client, cities: list = None, delay: float = 0.5) -> lis
                 break
 
         time.sleep(delay)
+    return firms
+
+
+def merge_google_into_firms(firms: list, google_firms: list) -> list:
+    """Merge Google Places results into an existing firm list (enrichment mode).
+
+    For each google_firm, try to find a fuzzy match in *firms* (same city +
+    are_same_firm).  When a match is found the existing record is enriched
+    with Google data; otherwise the google_firm is appended as a new entry.
+
+    Returns the updated *firms* list (mutated in place for efficiency).
+    """
+    for gf in google_firms:
+        g_city = (gf.get("address") or {}).get("city", "").lower()
+        matched = False
+        for firm in firms:
+            f_city = (firm.get("address") or {}).get("city", "").lower()
+            if f_city == g_city and are_same_firm(gf["name"], firm["name"]):
+                # Coordinates: Google always wins
+                if gf.get("coordinates"):
+                    firm["coordinates"] = gf["coordinates"]
+                # Phone: Google wins only when existing is None
+                if firm.get("phone") is None and gf.get("phone") is not None:
+                    firm["phone"] = gf["phone"]
+                # Website: Google wins only when existing is None
+                if firm.get("website") is None and gf.get("website") is not None:
+                    firm["website"] = gf["website"]
+                # Address street/zip: Google wins when existing is empty
+                g_addr = gf.get("address") or {}
+                f_addr = firm.get("address") or {}
+                if not f_addr.get("street") and g_addr.get("street"):
+                    f_addr["street"] = g_addr["street"]
+                if not f_addr.get("zip") and g_addr.get("zip"):
+                    f_addr["zip"] = g_addr["zip"]
+                # Add source
+                sources = firm.setdefault("sources", [])
+                if "google_places" not in sources:
+                    sources.append("google_places")
+                matched = True
+                break
+        if not matched:
+            firms.append(gf)
     return firms

@@ -1,5 +1,8 @@
 from unittest.mock import patch, Mock
-from scraper.phases.ksbar import scrape_ksbar, is_js_rendered, merge_ksbar_into_firms
+from scraper.phases.ksbar import (
+    scrape_ksbar, is_js_rendered, merge_ksbar_into_firms,
+    _scrape_ksbar_static, _parse_member_table,
+)
 
 SAMPLE_HTML = """
 <html><body>
@@ -28,17 +31,33 @@ def test_detects_js_rendered():
 def test_detects_html_rendered():
     assert is_js_rendered(SAMPLE_HTML) is False
 
-def test_scrape_groups_by_firm():
-    with patch("scraper.phases.ksbar.requests.get", return_value=_mock_get(SAMPLE_HTML)):
-        entries = scrape_ksbar()
+def test_parse_member_table():
+    entries = _parse_member_table(SAMPLE_HTML)
+    assert len(entries) == 2  # Smith & Associates + Bob Solo
+    smith = [e for e in entries if e["firmName"] == "Smith & Associates"]
+    assert len(smith) == 1
+    assert "Family Law" in smith[0]["practiceAreas"]
+
+def test_solo_practitioner_uses_attorney_name():
+    entries = _parse_member_table(SAMPLE_HTML)
+    solo = [e for e in entries if e["firmName"] == "Bob Solo"]
+    assert len(solo) == 1
+
+def test_scrape_ksbar_falls_back_to_static():
+    """When Playwright returns nothing, falls back to static scrape."""
+    with patch("scraper.phases.ksbar._scrape_ksbar_playwright", return_value=[]):
+        with patch("scraper.phases.ksbar.requests.get", return_value=_mock_get(SAMPLE_HTML)):
+            entries = scrape_ksbar()
     firm_names = [e["firmName"] for e in entries]
     assert "Smith & Associates" in firm_names
 
-def test_solo_practitioner_uses_attorney_name():
-    with patch("scraper.phases.ksbar.requests.get", return_value=_mock_get(SAMPLE_HTML)):
+def test_scrape_ksbar_uses_playwright_when_available():
+    """When Playwright returns data, don't fall back."""
+    playwright_data = [{"firmName": "Playwright Firm", "practiceAreas": ["Tax Law"], "city": "Topeka"}]
+    with patch("scraper.phases.ksbar._scrape_ksbar_playwright", return_value=playwright_data):
         entries = scrape_ksbar()
-    solo = [e for e in entries if e["firmName"] == "Bob Solo"]
-    assert len(solo) == 1
+    assert len(entries) == 1
+    assert entries[0]["firmName"] == "Playwright Firm"
 
 def test_merge_adds_practice_areas():
     firms = [{"id": "1", "name": "Smith & Associates", "address": {"city": "Wichita"},

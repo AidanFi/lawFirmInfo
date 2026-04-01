@@ -1,5 +1,8 @@
 from unittest.mock import MagicMock, patch
-from scraper.phases.google_places import scrape_google_places, KANSAS_CITIES
+from scraper.phases.google_places import (
+    scrape_google_places, KANSAS_CITIES, COUNTY_SEATS_105,
+    merge_google_into_firms,
+)
 
 def _make_place(name, address, phone, website, lat, lng):
     return {
@@ -42,3 +45,69 @@ def test_extracts_city_from_address():
     firms = scrape_google_places(mock_client, cities=["Topeka"])
     assert firms[0]["address"]["city"] == "Topeka"
     assert firms[0]["address"]["state"] == "KS"
+
+
+# --------------- COUNTY_SEATS_105 tests ---------------
+
+def test_county_seats_has_105_entries():
+    assert len(COUNTY_SEATS_105) == 105
+
+
+# --------------- merge_google_into_firms tests ---------------
+
+def _make_existing_firm(name, city, phone=None, website=None, street="", zip_code=""):
+    return {
+        "id": "existing-1",
+        "name": name,
+        "practiceAreas": ["Family Law"],
+        "summary": None,
+        "website": website,
+        "phone": phone,
+        "email": None,
+        "address": {"street": street, "city": city, "county": "", "state": "KS", "zip": zip_code},
+        "coordinates": None,
+        "referralScore": "medium",
+        "sources": ["ks_courts"],
+    }
+
+
+def _make_google_firm(name, city, phone=None, website=None, lat=37.69, lng=-97.34, street="100 Main St", zip_code="67202"):
+    return {
+        "id": "google-1",
+        "name": name,
+        "practiceAreas": [],
+        "summary": None,
+        "website": website,
+        "phone": phone,
+        "email": None,
+        "address": {"street": street, "city": city, "county": "", "state": "KS", "zip": zip_code},
+        "coordinates": {"lat": lat, "lng": lng},
+        "referralScore": "low",
+        "sources": ["google_places"],
+    }
+
+
+def test_merge_enriches_existing_firm_with_coordinates():
+    firms = [_make_existing_firm("Smith Law", "Wichita")]
+    google_firms = [_make_google_firm("Smith Law LLC", "Wichita")]
+    result = merge_google_into_firms(firms, google_firms)
+    assert len(result) == 1
+    assert result[0]["coordinates"] == {"lat": 37.69, "lng": -97.34}
+    assert "google_places" in result[0]["sources"]
+    assert "ks_courts" in result[0]["sources"]
+
+
+def test_merge_adds_new_firm_when_no_match():
+    firms = [_make_existing_firm("Smith Law", "Wichita")]
+    google_firms = [_make_google_firm("Jones & Associates", "Topeka")]
+    result = merge_google_into_firms(firms, google_firms)
+    assert len(result) == 2
+    assert result[1]["name"] == "Jones & Associates"
+
+
+def test_merge_does_not_overwrite_existing_phone_with_none():
+    firms = [_make_existing_firm("Smith Law", "Wichita", phone="(316) 555-0100")]
+    google_firms = [_make_google_firm("Smith Law LLC", "Wichita", phone=None)]
+    result = merge_google_into_firms(firms, google_firms)
+    assert len(result) == 1
+    assert result[0]["phone"] == "(316) 555-0100"

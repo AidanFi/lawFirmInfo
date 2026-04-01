@@ -1,6 +1,7 @@
 (function () {
   // ── State ──────────────────────────────────────────────────────────────────
   const settings = getSettings();
+  const PAGE_SIZE = 100;
   let state = {
     allFirms: [],
     filteredFirms: [],
@@ -18,6 +19,7 @@
     sort: { col: "referralScore", dir: "desc" },
     expandedCardId: null,
     expandedRowId: null,
+    displayCount: PAGE_SIZE,
   };
   let userData = getAllUserData();
 
@@ -192,11 +194,13 @@
   }
 
   // ── Rerender ───────────────────────────────────────────────────────────────
-  function rerender() {
+  function rerender(keepDisplayCount) {
     userData = getAllUserData();
     state.filteredFirms = applyFilters(state.allFirms, state.filters, userData);
+    if (!keepDisplayCount) state.displayCount = PAGE_SIZE;
     const count = state.filteredFirms.length;
-    document.getElementById("result-count").textContent = `Showing ${count} of ${state.allFirms.length} firms`;
+    const showing = Math.min(state.displayCount, count);
+    document.getElementById("result-count").textContent = `Showing ${showing} of ${count} firms (${state.allFirms.length} total)`;
     document.getElementById("toolbar-count").textContent = `${count} firm${count !== 1 ? "s" : ""}`;
     if (state.view === "cards") renderCards(state.filteredFirms);
     else renderTable(state.filteredFirms);
@@ -209,26 +213,35 @@
     const container = document.getElementById("cards-view");
     if (!firms.length) { container.innerHTML = ""; return; }
 
+    const visible = firms.slice(0, state.displayCount);
+
     // Compute column count from viewport (matches CSS breakpoints in styles.css)
     const colCount = window.innerWidth >= 900 ? 3 : window.innerWidth >= 600 ? 2 : 1;
 
     // Find the index of the expanded firm so we know which row it's in
     const expandedIdx = state.expandedCardId
-      ? firms.findIndex(f => f.id === state.expandedCardId)
+      ? visible.findIndex(f => f.id === state.expandedCardId)
       : -1;
 
     // The panel inserts after the LAST card in the expanded card's row.
     const rowEndIdx = expandedIdx >= 0
-      ? Math.min(firms.length - 1, expandedIdx + (colCount - 1 - expandedIdx % colCount))
+      ? Math.min(visible.length - 1, expandedIdx + (colCount - 1 - expandedIdx % colCount))
       : -1;
 
     const items = [];
-    for (let i = 0; i < firms.length; i++) {
-      items.push(cardHTML(firms[i]));
+    for (let i = 0; i < visible.length; i++) {
+      items.push(cardHTML(visible[i]));
       if (i === rowEndIdx) {
-        items.push(detailPanelHTML(firms[expandedIdx]));
+        items.push(detailPanelHTML(visible[expandedIdx]));
       }
     }
+
+    if (state.displayCount < firms.length) {
+      items.push(`<div class="load-more-container" style="grid-column:1/-1;text-align:center;padding:1.5rem">
+        <button class="btn btn-secondary" id="load-more-btn">Show more (${firms.length - state.displayCount} remaining)</button>
+      </div>`);
+    }
+
     container.innerHTML = items.join("");
   }
 
@@ -292,8 +305,15 @@
   // ── Table rendering ────────────────────────────────────────────────────────
   function renderTable(firms) {
     const sorted = sortFirms([...firms]);
+    const visible = sorted.slice(0, state.displayCount);
     const tbody = document.getElementById("table-body");
-    tbody.innerHTML = sorted.map(f => tableRowHTML(f)).join("");
+    let html = visible.map(f => tableRowHTML(f)).join("");
+    if (state.displayCount < firms.length) {
+      html += `<tr><td colspan="9" style="text-align:center;padding:1rem">
+        <button class="btn btn-secondary" id="load-more-btn">Show more (${firms.length - state.displayCount} remaining)</button>
+      </td></tr>`;
+    }
+    tbody.innerHTML = html;
   }
 
   function tableRowHTML(firm) {
@@ -372,23 +392,30 @@
 
   // ── Global event delegation ────────────────────────────────────────────────
   document.addEventListener("click", e => {
+    // Load more button
+    if (e.target.id === "load-more-btn") {
+      state.displayCount += PAGE_SIZE;
+      rerender(true);
+      return;
+    }
+
     const starBtn = e.target.closest("[data-star]");
     if (starBtn) {
       const id = starBtn.dataset.star;
       setStar(id, !getStar(id));
       userData = getAllUserData();
-      rerender();
+      rerender(true);
       return;
     }
     // Close button on detail panel
     const closeBtn = e.target.closest("[data-close-panel]");
-    if (closeBtn) { state.expandedCardId = null; rerender(); return; }
+    if (closeBtn) { state.expandedCardId = null; rerender(true); return; }
 
     // Click card to open/close detail panel
     const card = e.target.closest(".firm-card");
     if (card && !e.target.closest("select, button, a, textarea")) {
       state.expandedCardId = state.expandedCardId === card.dataset.id ? null : card.dataset.id;
-      rerender();
+      rerender(true);
       return;
     }
   });

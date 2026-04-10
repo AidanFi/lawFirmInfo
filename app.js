@@ -13,6 +13,9 @@
       county: "",
       contactStatuses: ["uncontacted", "reached_out", "partner", "not_interested"],
       starredOnly: false,
+      hasWebsite: false,
+      hasPracticeArea: false,
+      hasContact: false,
     },
     view: settings.defaultView || "cards",
     tab: "directory",
@@ -109,6 +112,11 @@
         rerender();
       })
     );
+
+    // Data availability filters
+    document.getElementById("has-website").addEventListener("change", e => { state.filters.hasWebsite = e.target.checked; rerender(); });
+    document.getElementById("has-practice-area").addEventListener("change", e => { state.filters.hasPracticeArea = e.target.checked; rerender(); });
+    document.getElementById("has-contact").addEventListener("change", e => { state.filters.hasContact = e.target.checked; rerender(); });
 
     // Starred only
     document.getElementById("starred-only").addEventListener("change", e => { state.filters.starredOnly = e.target.checked; rerender(); });
@@ -447,6 +455,9 @@
       practiceAreas: [], city: "", county: "",
       contactStatuses: ["uncontacted","reached_out","partner","not_interested"],
       starredOnly: false,
+      hasWebsite: false,
+      hasPracticeArea: false,
+      hasContact: false,
     };
     document.getElementById("search").value = "";
     document.querySelectorAll('[name="score"]').forEach(cb => cb.checked = true);
@@ -455,6 +466,9 @@
     document.getElementById("county-filter").value = "";
     document.querySelectorAll('[name="status"]').forEach(cb => cb.checked = true);
     document.getElementById("starred-only").checked = false;
+    document.getElementById("has-website").checked = false;
+    document.getElementById("has-practice-area").checked = false;
+    document.getElementById("has-contact").checked = false;
     rerender();
   }
 

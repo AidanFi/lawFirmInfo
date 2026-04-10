@@ -14,6 +14,9 @@ function applyFilters(firms, filters, userData) {
     const status = (userData.status && userData.status[firm.id]) || "uncontacted";
     if (!filters.contactStatuses.includes(status)) return false;
     if (filters.starredOnly && !((userData.starred || {})[firm.id])) return false;
+    if (filters.hasWebsite && !firm.website) return false;
+    if (filters.hasPracticeArea && (!firm.practiceAreas || firm.practiceAreas.length === 0)) return false;
+    if (filters.hasContact && !firm.phone && !firm.email) return false;
     return true;
   });
 }

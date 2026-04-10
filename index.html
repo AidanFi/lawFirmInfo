@@ -161,12 +161,16 @@
   <!-- Scripts (order matters) -->
   <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
   <script src="https://unpkg.com/leaflet.markercluster@1.5.3/dist/leaflet.markercluster.js"></script>
-  <script src="firms_data.js" onerror="window.__firmsLoadError=true"></script>
-  <script src="config.js"></script>
-  <script src="storage.js"></script>
-  <script src="filters.js"></script>
-  <script src="export.js"></script>
-  <script src="map.js"></script>
-  <script src="app.js"></script>
+  <!-- Cache-bust local scripts with a timestamp so data updates show immediately -->
+  <script>
+    (function(){
+      const v = Date.now();
+      const scripts = ["firms_data.js","config.js","storage.js","filters.js","export.js","map.js","app.js"];
+      scripts.forEach(src => {
+        const onerr = src === "firms_data.js" ? ' onerror="window.__firmsLoadError=true"' : "";
+        document.write('<script src="' + src + '?v=' + v + '"' + onerr + '><\/script>');
+      });
+    })();
+  </script>
 </body>
 </html>

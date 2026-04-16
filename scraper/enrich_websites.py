@@ -14,6 +14,7 @@ Usage:
 """
 import argparse
 import json
+import os
 import re
 import shutil
 import time
@@ -22,9 +23,14 @@ from urllib.parse import urlparse, quote_plus, unquote
 
 from bs4 import BeautifulSoup
 from curl_cffi import requests as cffi_requests
+from dotenv import load_dotenv
 import requests
 
 from scraper.utils.normalize import normalize_firm_name, are_same_firm
+from scraper.utils.enrich_cache import EnrichCache
+
+# Load API keys from scraper/.env
+load_dotenv("scraper/.env")
 
 _IMPERSONATE = "chrome"
 INPUT_PATH = "app/firms_data.js"
@@ -34,20 +40,38 @@ HEADERS = {"User-Agent": "Mozilla/5.0 (compatible; LawFirmDirectory/1.0)"}
 
 # Domains to reject — directories, social media, not actual firm sites
 DIRECTORY_DOMAINS = {
+    # Major lawyer directories
     "findlaw.com", "lawyers.findlaw.com", "avvo.com", "justia.com",
     "lawyers.com", "martindale.com", "yelp.com", "yellowpages.com",
     "superlawyers.com", "nolo.com", "lawinfo.com", "hg.org",
     "lawyer.com", "bestlawyers.com", "usnews.com", "thumbtack.com",
+    "lawyerguide.com", "lawyergist.com", "attorneyhelp.org",
+    "attorneypages.com", "lawyerlegion.com", "topattorney.com",
+    "alawyerin.us", "kansaslaw.com", "legal-companies.com",
+    "ks.legal-companies.com", "dmlawusa.com", "dui.guru",
+    "sage.law", "morelaw.com", "lawyerskc.net",
+    # Social media / generic platforms
     "facebook.com", "linkedin.com", "twitter.com", "instagram.com",
     "bbb.org", "google.com", "bing.com", "mapquest.com", "manta.com",
-    "chamberofcommerce.com", "ksbar.org", "kscourts.org",
+    "chamberofcommerce.com", "hub.biz", "local.yahoo.com",
+    # State/government directories
+    "ksbar.org", "kscourts.org", "directory-kard.kscourts.gov",
+    "kacdl.org",
+    # Other directory / aggregator / review sites
     "superpages.com", "citysearch.com", "whitepages.com",
     "duckduckgo.com", "wikipedia.org", "youtube.com",
-    "attorneyhelp.org", "attorneypages.com", "lawyerlegion.com",
-    "directory-kard.kscourts.gov",
+    "locaterecords.com", "repsight.com", "trustanalytica.org",
+    "trellis.law",
+    # Academic / legal reference (not firm sites)
+    "cornell.edu", "law.cornell.edu", "lawyers.law.cornell.edu",
+    "jstor.org", "uchicago.edu", "journals.uchicago.edu",
+    "oclc.org", "contentdm.oclc.org", "kgi.contentdm.oclc.org",
+    # News / archive / document hosting
+    "lawrencekstimes.com", "newspaperarchive.com", "scribd.com",
     # Hosting/staging/CDN domains that aren't real firm sites
-    "myftpupload.com", "wpengine.com", "godaddy.com", "wixsite.com",
-    "squarespace.com", "weebly.com", "wordpress.com",
+    "myftpupload.com", "wpengine.com", "wpenginepowered.com",
+    "godaddy.com", "wixsite.com", "squarespace.com",
+    "weebly.com", "wordpress.com",
 }
 
 # Overly generic domains that match many firms incorrectly
@@ -532,6 +556,39 @@ def enrich_from_justia(firms, delay=1.0, test_mode=False):
 
 # ── Phase 2: Web Search ────────────────────────────────────────────────────
 
+_BRAVE_ENDPOINT = "https://api.search.brave.com/res/v1/web/search"
+
+
+def _brave_search(query, delay=0.5, count=10):
+    """Query Brave Search API and return result URLs.
+
+    Requires BRAVE_API_KEY in scraper/.env. Returns [] if no key or on error.
+    Brave pricing: ~$3/1k queries on the Pro tier; 2k/mo free tier available.
+    """
+    api_key = os.getenv("BRAVE_API_KEY") or os.getenv("BRAVE_SEARCH_API_KEY")
+    if not api_key:
+        return []
+    try:
+        r = requests.get(
+            _BRAVE_ENDPOINT,
+            params={"q": query, "count": count, "country": "US"},
+            headers={
+                "X-Subscription-Token": api_key,
+                "Accept": "application/json",
+            },
+            timeout=15,
+        )
+        time.sleep(delay)  # Brave Pro allows ~20 req/s; free tier is 1 req/s
+        if r.status_code != 200:
+            return []
+        payload = r.json()
+    except Exception:
+        return []
+
+    web = (payload.get("web") or {}).get("results") or []
+    return [item.get("url") for item in web if item.get("url")]
+
+
 def _duckduckgo_search(query, delay=2.5):
     """Search DuckDuckGo HTML version and return result URLs."""
     url = f"https://html.duckduckgo.com/html/?q={quote_plus(query)}"
@@ -639,8 +696,16 @@ def _bing_search(query, delay=2.0):
 
 
 def _web_search(query, delay=3.0):
-    """Try multiple search engines, return first successful result set."""
-    # Try Google first (best results), then Bing, then DuckDuckGo
+    """Try multiple search engines, return first successful result set.
+
+    Prefer Brave Search API when BRAVE_API_KEY is configured (reliable,
+    no rate-limit roulette). Fall back to scraped engines otherwise.
+    """
+    # Brave first when key is available — cheapest + most reliable
+    urls = _brave_search(query, delay=0.5)
+    if urls:
+        return urls, "brave"
+
     urls = _google_search(query, delay=delay)
     if urls:
         return urls, "google"
@@ -701,31 +766,42 @@ def _pick_best_result(urls, firm_name):
     candidates.sort(key=lambda x: -x[0])
     best_score, best_url = candidates[0]
 
-    # Require at least some relevance
+    # Accuracy bar: require a meaningful name/domain match. Without it,
+    # falling back to "first result" has produced too many false positives
+    # (aggregator sites, competitor firms, unrelated businesses).
     if best_score >= 2:
         return best_url
-
-    # If nothing scored well, return the first non-directory result
-    # (it appeared first in search results, likely most relevant)
-    return candidates[0][1] if candidates else None
+    return None
 
 
-def enrich_from_search(firms, delay=2.5, test_mode=False):
-    """Phase 2: Search multiple engines for firm websites."""
+def enrich_from_search(firms, delay=2.5, test_mode=False, force=False):
+    """Phase 2: Search engines for firm websites.
+
+    Uses EnrichCache to skip firms that were recently searched (hit or fresh miss).
+    Pass force=True to re-search everything.
+    """
     # Only search for firm-like names — bare person names produce too many false positives
     candidates = [f for f in firms if not f.get("website") and _is_firm_like_name(f["name"])]
 
     if test_mode:
         candidates = candidates[:30]
 
-    print(f"[search] {len(candidates)} firm-named entries to search...")
+    cache = EnrichCache()
+    pre_skip = sum(1 for f in candidates if cache.should_skip(f.get("id"), force=force))
+    print(f"[search] {len(candidates)} firm-named entries to search "
+          f"({pre_skip} will be skipped by cache)")
 
     found = 0
     searched = 0
+    cache_skipped = 0
     consecutive_failures = 0
 
-    for firm in candidates:
+    for i, firm in enumerate(candidates):
         if firm.get("website"):  # May have been set by earlier match
+            continue
+
+        if cache.should_skip(firm.get("id"), force=force):
+            cache_skipped += 1
             continue
 
         city = (firm.get("address") or {}).get("city", "")
@@ -734,6 +810,7 @@ def enrich_from_search(firms, delay=2.5, test_mode=False):
         urls, engine = _web_search(query, delay=delay)
 
         if not urls:
+            cache.record(firm.get("id"), query, None, None)
             consecutive_failures += 1
             if consecutive_failures >= 15:
                 delay = min(delay + 0.5, 8.0)
@@ -747,19 +824,25 @@ def enrich_from_search(firms, delay=2.5, test_mode=False):
         consecutive_failures = 0
         best = _pick_best_result(urls, firm["name"])
 
+        validated = None
         if best:
-            # Validate the URL actually resolves
             validated = _validate_url(best)
             if validated and not _is_directory_url(validated):
                 firm["website"] = validated
                 found += 1
+            else:
+                validated = None
 
+        cache.record(firm.get("id"), query, validated, engine)
         searched += 1
 
         if searched % 25 == 0:
-            print(f"[search] Progress: {searched}/{len(candidates)}, +{found} websites ({engine})")
+            cache.save()  # persist incrementally
+            print(f"[search] Progress: {searched}/{len(candidates)}, "
+                  f"+{found} websites ({engine}), cache_skip={cache_skipped}")
 
-    print(f"[search] Done: {searched} searched, +{found} websites")
+    cache.save()
+    print(f"[search] Done: {searched} searched, +{found} websites, {cache_skipped} cache-skipped")
     return found
 
 
@@ -859,6 +942,8 @@ def main():
     parser.add_argument("--only-avvo", action="store_true", help="Run only the Avvo phase")
     parser.add_argument("--test", action="store_true", help="Limit scope for testing")
     parser.add_argument("--delay", type=float, default=1.0)
+    parser.add_argument("--force", action="store_true",
+                        help="Ignore search cache and re-query every firm")
     args = parser.parse_args()
 
     data = _load_firms()
@@ -890,9 +975,10 @@ def main():
         data["firms"] = firms
         _save_firms(data)
 
-    # Phase 2: Web search (Google/Bing/DuckDuckGo)
+    # Phase 2: Web search (Brave / Google / Bing / DuckDuckGo)
     if not args.skip_search:
-        enrich_from_search(firms, delay=max(args.delay, 2.5), test_mode=args.test)
+        enrich_from_search(firms, delay=max(args.delay, 2.5),
+                           test_mode=args.test, force=args.force)
         data["firms"] = firms
         _save_firms(data)
 

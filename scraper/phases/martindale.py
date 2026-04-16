@@ -20,7 +20,7 @@ from urllib.parse import urlparse
 from bs4 import BeautifulSoup
 from curl_cffi import requests as cffi_requests
 
-from scraper.utils.normalize import are_same_firm
+from scraper.utils.normalize import are_same_firm, normalize_firm_name
 
 _BASE = "https://www.martindale.com"
 _IMPERSONATE = "chrome"
@@ -146,8 +146,21 @@ def _extract_next_page_url(soup, current_url):
     return None
 
 
+_FIRM_TOKENS = (" llc", " llp", " l.l.p", " l.l.c", " pa", " p.a.",
+                " law", " firm", " office", " associates", " group",
+                " & ", " chartered", " attorneys", " partners", " pllc",
+                " lc", " l.c.")
+
+
+def _looks_like_firm(name: str) -> bool:
+    """Return True if name has firm-indicator tokens."""
+    if not name:
+        return False
+    return any(t in name.lower() for t in _FIRM_TOKENS)
+
+
 def scrape_martindale(firms_index, cities=None, delay=1.5, max_pages_per_city=5,
-                      test_mode=False):
+                      test_mode=False, add_new=True):
     """Enrich *firms_index* with websites from Martindale listings.
 
     Args:
@@ -156,10 +169,14 @@ def scrape_martindale(firms_index, cities=None, delay=1.5, max_pages_per_city=5,
         delay: seconds between HTTP requests
         max_pages_per_city: pagination cap
         test_mode: only process 3 cities
+        add_new: if True, add net-new firms that don't match anything
 
     Returns (added_websites, new_firms_count).
     """
+    import uuid
     from collections import defaultdict
+
+    # Firms missing websites, indexed by city
     by_city = defaultdict(list)
     for firm in firms_index:
         if firm.get("website"):
@@ -167,6 +184,15 @@ def scrape_martindale(firms_index, cities=None, delay=1.5, max_pages_per_city=5,
         c = ((firm.get("address") or {}).get("city") or "").lower()
         if c:
             by_city[c].append(firm)
+
+    # ALL firms, for dedup check when adding net-new
+    all_firms_by_city = defaultdict(list)
+    for firm in firms_index:
+        c = ((firm.get("address") or {}).get("city") or "").lower()
+        if c:
+            all_firms_by_city[c].append(firm)
+    # Also index by normalized name for cross-city dedup
+    all_names_seen = {normalize_firm_name(f["name"]): f for f in firms_index if f.get("name")}
 
     print("[martindale] Getting Kansas city index...")
     soup = _get(f"{_BASE}/by-location/kansas-lawyers/", delay=delay)
@@ -186,13 +212,15 @@ def scrape_martindale(firms_index, cities=None, delay=1.5, max_pages_per_city=5,
         city_urls = city_urls[:3]
 
     added_websites = 0
+    new_firms_added = 0
     entries_seen = 0
     cities_done = 0
 
     for city_name, city_url in city_urls:
         city_key = city_name.lower().strip()
         city_firms_needing = by_city.get(city_key, [])
-        if not city_firms_needing and not test_mode:
+        city_firms_all = all_firms_by_city.get(city_key, [])
+        if not city_firms_needing and not test_mode and not add_new:
             cities_done += 1
             continue
 
@@ -243,7 +271,44 @@ def scrape_martindale(firms_index, cities=None, delay=1.5, max_pages_per_city=5,
                                 firm.setdefault("sources", []).append("martindale")
                             added_websites += 1
                             city_added += 1
+                            matched = True
                             break
+
+                # Net-new firm: only add if firm_name looks like a firm
+                # and we haven't seen anything close to this name yet
+                if not matched and add_new and entry.get("firm_name"):
+                    fn = entry["firm_name"]
+                    if not _looks_like_firm(fn):
+                        continue
+                    # Check against all firms in this city (including those with websites)
+                    already_exists = False
+                    for f in city_firms_all:
+                        if are_same_firm(f["name"], fn, threshold=80):
+                            already_exists = True
+                            break
+                    if already_exists:
+                        continue
+                    # Cross-city check by normalized name
+                    norm = normalize_firm_name(fn)
+                    if norm in all_names_seen:
+                        continue
+
+                    new_firm = {
+                        "id": f"martindale-{uuid.uuid4().hex[:8]}",
+                        "name": fn,
+                        "address": {"city": city_name, "state": "KS"},
+                        "website": entry["website"],
+                        "sources": ["martindale"],
+                    }
+                    if entry.get("phone"):
+                        new_firm["phone"] = entry["phone"]
+                    if entry.get("attorney_name"):
+                        new_firm["attorneys"] = [{"name": entry["attorney_name"]}]
+                    firms_index.append(new_firm)
+                    all_names_seen[norm] = new_firm
+                    city_firms_all.append(new_firm)
+                    new_firms_added += 1
+                    city_added += 1
 
             # Next page
             next_url = _extract_next_page_url(soup, page_url)
@@ -257,5 +322,5 @@ def scrape_martindale(firms_index, cities=None, delay=1.5, max_pages_per_city=5,
                   f"({city_entries} entries, {cities_done}/{len(city_urls)} cities)")
 
     print(f"[martindale] Done: {cities_done} cities, {entries_seen} entries seen, "
-          f"+{added_websites} websites")
-    return added_websites, 0
+          f"+{added_websites} websites, +{new_firms_added} new firms")
+    return added_websites, new_firms_added

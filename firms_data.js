@@ -4,7 +4,7 @@ const FIRMS_DATA = {
     "totalFirms": 9454,
     "lastCleaned": "2026-04-16T13:23:00.369032",
     "lastGooglePlaces": "2026-04-16T13:35:16.888838",
-    "lastMartindale": "2026-04-16T13:48:02.677742",
+    "lastMartindale": "2026-04-16T14:03:00.524245",
     "lastConsolidate": "2026-04-16T13:38:52.174982"
   },
   "firms": [
@@ -115261,7 +115261,7 @@ const FIRMS_DATA = {
         "Litigation"
       ],
       "summary": "Christopher Wade Sook \u2014 law firm in Hays, Kansas",
-      "website": null,
+      "website": "https://www.jeterlawoffice.com",
       "phone": null,
       "email": null,
       "address": {
@@ -115277,7 +115277,8 @@ const FIRMS_DATA = {
       },
       "referralScore": "competitor",
       "sources": [
-        "avvo"
+        "avvo",
+        "martindale"
       ]
     },
     {
@@ -243733,6 +243734,617 @@ const FIRMS_DATA = {
       "referralScore": "low",
       "sources": [
         "google_places"
+      ]
+    },
+    {
+      "id": "martindale-b172547f",
+      "name": "Riling, Burkhead & Nitcher Chartered",
+      "address": {
+        "city": "Wichita",
+        "state": "KS"
+      },
+      "website": "http://www.rilinglaw.com",
+      "sources": [
+        "martindale"
+      ],
+      "phone": "785-402-2067",
+      "attorneys": [
+        {
+          "name": "Christopher S. Peoples"
+        }
+      ]
+    },
+    {
+      "id": "martindale-439d2740",
+      "name": "Peggs Wheeler LC",
+      "address": {
+        "city": "Wichita",
+        "state": "KS"
+      },
+      "website": "http://www.peggswheeler.com",
+      "sources": [
+        "martindale"
+      ],
+      "phone": "316-925-7722",
+      "attorneys": [
+        {
+          "name": "Mindy Ellen Wheeler"
+        }
+      ]
+    },
+    {
+      "id": "martindale-e8f95bdc",
+      "name": "Full Circle Estate Planning and Probate, LLC",
+      "address": {
+        "city": "Wichita",
+        "state": "KS"
+      },
+      "website": "https://fullcircleestateplanning.com/",
+      "sources": [
+        "martindale"
+      ],
+      "phone": "316-242-0094",
+      "attorneys": [
+        {
+          "name": "Alexander Robinson"
+        }
+      ]
+    },
+    {
+      "id": "martindale-559a3df4",
+      "name": "Parnell Law Office, LLC",
+      "address": {
+        "city": "Lawrence",
+        "state": "KS"
+      },
+      "website": "https://www.parnelllawoffice.com/",
+      "sources": [
+        "martindale"
+      ],
+      "phone": "785-592-7368",
+      "attorneys": [
+        {
+          "name": "Jonathan Parnell"
+        }
+      ]
+    },
+    {
+      "id": "martindale-05f43862",
+      "name": "Law Office of Cathleen A. Gulledge, LLC",
+      "address": {
+        "city": "Wichita",
+        "state": "KS"
+      },
+      "website": "http://estateplan4u.com",
+      "sources": [
+        "martindale"
+      ],
+      "phone": "316-925-7312",
+      "attorneys": [
+        {
+          "name": "Cathleen A. Gulledge MBA, CPA, JD, LLM"
+        }
+      ]
+    },
+    {
+      "id": "martindale-fe838cc9",
+      "name": "Morrow Willnauer Church, LLC",
+      "address": {
+        "city": "Overland Park",
+        "state": "KS"
+      },
+      "website": "https://www.mwcattorneys.com",
+      "sources": [
+        "martindale"
+      ],
+      "phone": "816-573-2737",
+      "attorneys": [
+        {
+          "name": "Thomas Gregory Munsell"
+        }
+      ]
+    },
+    {
+      "id": "martindale-8d023fc6",
+      "name": "Manning & Smith",
+      "address": {
+        "city": "Overland Park",
+        "state": "KS"
+      },
+      "website": "https://www.manningandsmith.com/",
+      "sources": [
+        "martindale"
+      ],
+      "phone": "913-453-1387",
+      "attorneys": [
+        {
+          "name": "Donald S. Smith"
+        }
+      ]
+    },
+    {
+      "id": "martindale-f86eb52c",
+      "name": "McDowell, Rice, Smith & Buchanan A Professional Corporation",
+      "address": {
+        "city": "Overland Park",
+        "state": "KS"
+      },
+      "website": "http://www.pcfamilylaw.com",
+      "sources": [
+        "martindale"
+      ],
+      "phone": "913-808-2281",
+      "attorneys": [
+        {
+          "name": "Katherine Clevenger"
+        }
+      ]
+    },
+    {
+      "id": "martindale-472358fb",
+      "name": "Taylor Siemens Elliott Creedy & Lyle P.C.",
+      "address": {
+        "city": "Overland Park",
+        "state": "KS"
+      },
+      "website": "https://www.mtselaw.com",
+      "sources": [
+        "martindale"
+      ],
+      "phone": "816-396-7258",
+      "attorneys": [
+        {
+          "name": "Michael Taylor"
+        }
+      ]
+    },
+    {
+      "id": "martindale-dfbdd4d7",
+      "name": "Kreamer Kincaid Taylor Lipsman Parks & Arney",
+      "address": {
+        "city": "Overland Park",
+        "state": "KS"
+      },
+      "website": "http://www.pcfamilylaw.com/",
+      "sources": [
+        "martindale"
+      ],
+      "phone": "913-363-9473",
+      "attorneys": [
+        {
+          "name": "Dana Parks"
+        }
+      ]
+    },
+    {
+      "id": "martindale-66552d4a",
+      "name": "Matteuzzi Law, P.C.",
+      "address": {
+        "city": "Kansas City",
+        "state": "KS"
+      },
+      "website": "http://www.ma2zlaw.com",
+      "sources": [
+        "martindale"
+      ],
+      "phone": "913-399-2513",
+      "attorneys": [
+        {
+          "name": "Autumn Packard"
+        }
+      ]
+    },
+    {
+      "id": "martindale-87b6038a",
+      "name": "McAnany, Van Cleave & Phillips, P.A.",
+      "address": {
+        "city": "Kansas City",
+        "state": "KS"
+      },
+      "website": "http://www.mvplaw.com",
+      "sources": [
+        "martindale"
+      ],
+      "phone": "913-399-1359",
+      "attorneys": [
+        {
+          "name": "Kristina D. Mulvany"
+        }
+      ]
+    },
+    {
+      "id": "martindale-9e72727b",
+      "name": "Henson, Hutton, Mudrick & Gragson, LLP",
+      "address": {
+        "city": "Kansas City",
+        "state": "KS"
+      },
+      "website": "http://www.hensonlawoffice.com",
+      "sources": [
+        "martindale"
+      ],
+      "phone": "785-478-7322",
+      "attorneys": [
+        {
+          "name": "Amanda Vogelsberg"
+        }
+      ]
+    },
+    {
+      "id": "martindale-48203445",
+      "name": "Carter Law Offices",
+      "address": {
+        "city": "Olathe",
+        "state": "KS"
+      },
+      "website": "http://www.carterlaw.org",
+      "sources": [
+        "martindale"
+      ],
+      "phone": "816-462-4821",
+      "attorneys": [
+        {
+          "name": "Douglas L. Carter"
+        }
+      ]
+    },
+    {
+      "id": "martindale-40637e8b",
+      "name": "Law Offices of H. Reed Walker, P.A.",
+      "address": {
+        "city": "Olathe",
+        "state": "KS"
+      },
+      "website": "http://www.reed-walker.com",
+      "sources": [
+        "martindale"
+      ],
+      "phone": "816-631-2621",
+      "attorneys": [
+        {
+          "name": "H. Reed Walker"
+        }
+      ]
+    },
+    {
+      "id": "martindale-d31ef3c4",
+      "name": "Law Office of Bruce C. Barry",
+      "address": {
+        "city": "Manhattan",
+        "state": "KS"
+      },
+      "website": "https://www.brucecbarry.com",
+      "sources": [
+        "martindale"
+      ],
+      "attorneys": [
+        {
+          "name": "Bruce C. Barry"
+        }
+      ]
+    },
+    {
+      "id": "martindale-1f614f25",
+      "name": "Kennedy Berkley Yarnevich & Williamson Chartered",
+      "address": {
+        "city": "Salina",
+        "state": "KS"
+      },
+      "website": "http://www.kenberk.com",
+      "sources": [
+        "martindale"
+      ],
+      "phone": "785-432-9158",
+      "attorneys": [
+        {
+          "name": "Tom A. Williamson"
+        }
+      ]
+    },
+    {
+      "id": "martindale-6e8f6b01",
+      "name": "Hite, Fanning & Honeyman L.L.P.",
+      "address": {
+        "city": "Andover",
+        "state": "KS"
+      },
+      "website": "http://www.hitefanning.com",
+      "sources": [
+        "martindale"
+      ],
+      "phone": "316-882-7933",
+      "attorneys": [
+        {
+          "name": "Kelly Rundell"
+        }
+      ]
+    },
+    {
+      "id": "martindale-f81eb24c",
+      "name": "Norman E. Rouse, Collins, Webster & Rouse, P.C.",
+      "address": {
+        "city": "Baxter Springs",
+        "state": "KS"
+      },
+      "website": "http://www.rousebankruptcy.com/",
+      "sources": [
+        "martindale"
+      ],
+      "phone": "417-417-0196",
+      "attorneys": [
+        {
+          "name": "Mark E. Peron"
+        }
+      ]
+    },
+    {
+      "id": "martindale-cb58198d",
+      "name": "Thomas-Walters, PLLC",
+      "address": {
+        "city": "Baxter Springs",
+        "state": "KS"
+      },
+      "website": "https://thomas-walters.com/",
+      "sources": [
+        "martindale"
+      ],
+      "phone": "417-482-2637",
+      "attorneys": [
+        {
+          "name": "Jennifer Triplett"
+        }
+      ]
+    },
+    {
+      "id": "martindale-f3d4b48d",
+      "name": "The Glades Law Firm, P.C.",
+      "address": {
+        "city": "Baxter Springs",
+        "state": "KS"
+      },
+      "website": "https://www.gladeslaw.com/",
+      "sources": [
+        "martindale"
+      ],
+      "phone": "417-609-0040",
+      "attorneys": [
+        {
+          "name": "Phillip A. Glades"
+        }
+      ]
+    },
+    {
+      "id": "martindale-9a704e96",
+      "name": "Prigmore Law Office",
+      "address": {
+        "city": "Baxter Springs",
+        "state": "KS"
+      },
+      "website": "http://www.prigmorelawoffice.com/",
+      "sources": [
+        "martindale"
+      ],
+      "phone": "417-621-9897",
+      "attorneys": [
+        {
+          "name": "Terence Dale Prigmore"
+        }
+      ]
+    },
+    {
+      "id": "martindale-732971d7",
+      "name": "The Law Firm of Webster & Carlton",
+      "address": {
+        "city": "Baxter Springs",
+        "state": "KS"
+      },
+      "website": "http://www.morrisonwebstercarlton.com/",
+      "sources": [
+        "martindale"
+      ],
+      "phone": "417-582-8110",
+      "attorneys": [
+        {
+          "name": "Matthew Brian Webster"
+        }
+      ]
+    },
+    {
+      "id": "martindale-a04da0da",
+      "name": "Buchanan, Williams & O'Brien, P.C.",
+      "address": {
+        "city": "Baxter Springs",
+        "state": "KS"
+      },
+      "website": "https://www.bwoattorneys.com",
+      "sources": [
+        "martindale"
+      ],
+      "phone": "417-417-0248",
+      "attorneys": [
+        {
+          "name": "Andrew Buchanan"
+        }
+      ]
+    },
+    {
+      "id": "martindale-778b7e57",
+      "name": "Martin Law Office, P.C.",
+      "address": {
+        "city": "Baxter Springs",
+        "state": "KS"
+      },
+      "website": "http://www.traceymartinlaw.com",
+      "sources": [
+        "martindale"
+      ],
+      "phone": "417-417-1936",
+      "attorneys": [
+        {
+          "name": "Tracey Dawn Martin"
+        }
+      ]
+    },
+    {
+      "id": "martindale-ef638990",
+      "name": "The Law Office of Cobb Young, LLC",
+      "address": {
+        "city": "Baxter Springs",
+        "state": "KS"
+      },
+      "website": "http://www.cobbyounglaw.com",
+      "sources": [
+        "martindale"
+      ],
+      "phone": "417-417-8256",
+      "attorneys": [
+        {
+          "name": "Cobb Young"
+        }
+      ]
+    },
+    {
+      "id": "martindale-b0552844",
+      "name": "Sarah Luce Reeder & Associates LLC",
+      "address": {
+        "city": "Baxter Springs",
+        "state": "KS"
+      },
+      "website": "https://www.lucereederlaw.com",
+      "sources": [
+        "martindale"
+      ],
+      "phone": "417-417-1941",
+      "attorneys": [
+        {
+          "name": "Sarah Luce Reeder"
+        }
+      ]
+    },
+    {
+      "id": "martindale-164c1bce",
+      "name": "Law Office of William Fleischaker",
+      "address": {
+        "city": "Baxter Springs",
+        "state": "KS"
+      },
+      "website": "http://www.billfleischakerlaw.com",
+      "sources": [
+        "martindale"
+      ],
+      "phone": "417-614-2101",
+      "attorneys": [
+        {
+          "name": "William Fleischaker"
+        }
+      ]
+    },
+    {
+      "id": "martindale-180142e4",
+      "name": "Wright Law Office Chartered",
+      "address": {
+        "city": "Dodge City",
+        "state": "KS"
+      },
+      "website": "http://www.bcwrightlaw.com",
+      "sources": [
+        "martindale"
+      ],
+      "phone": "620-400-0287",
+      "attorneys": [
+        {
+          "name": "Brian C. Wright"
+        }
+      ]
+    },
+    {
+      "id": "martindale-6a3769a9",
+      "name": "Summers & Johnson, P.C.",
+      "address": {
+        "city": "Fort Leavenworth",
+        "state": "KS"
+      },
+      "website": "http://www.summersandjohnson.com",
+      "sources": [
+        "martindale"
+      ],
+      "phone": "816-386-3984",
+      "attorneys": [
+        {
+          "name": "David G. Summers"
+        }
+      ]
+    },
+    {
+      "id": "martindale-fd0bf6cb",
+      "name": "The Ritchie Law Group",
+      "address": {
+        "city": "Fort Leavenworth",
+        "state": "KS"
+      },
+      "website": "https://www.theritchielawgroup.com/",
+      "sources": [
+        "martindale"
+      ],
+      "phone": "913-380-1279",
+      "attorneys": [
+        {
+          "name": "Craig Dale Ritchie"
+        }
+      ]
+    },
+    {
+      "id": "martindale-411ebc24",
+      "name": "Scott L. Campbell Law Offices, L.L.C.",
+      "address": {
+        "city": "Fort Leavenworth",
+        "state": "KS"
+      },
+      "website": "http://www.scottcampbelllawyer.com",
+      "sources": [
+        "martindale"
+      ],
+      "phone": "208-693-2358",
+      "attorneys": [
+        {
+          "name": "Scott L. Campbell"
+        }
+      ]
+    },
+    {
+      "id": "martindale-9ad97efd",
+      "name": "Hampton & Royce, L.C.",
+      "address": {
+        "city": "Garden City",
+        "state": "KS"
+      },
+      "website": "https://www.hamptonlaw.com",
+      "sources": [
+        "martindale"
+      ],
+      "phone": "785-713-3085",
+      "attorneys": [
+        {
+          "name": "Tisha Morrical"
+        }
+      ]
+    },
+    {
+      "id": "martindale-3182461a",
+      "name": "Wiedner & McAuliffe, Ltd.",
+      "address": {
+        "city": "Leawood",
+        "state": "KS"
+      },
+      "website": "http://www.wmlaw.com",
+      "sources": [
+        "martindale"
+      ],
+      "phone": "872-270-8590",
+      "attorneys": [
+        {
+          "name": "Bruce Levine"
+        }
       ]
     }
   ]

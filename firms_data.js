@@ -243752,7 +243752,10 @@ const FIRMS_DATA = {
         {
           "name": "Christopher S. Peoples"
         }
-      ]
+      ],
+      "practiceAreas": [],
+      "summary": "",
+      "email": ""
     },
     {
       "id": "martindale-439d2740",
@@ -243770,7 +243773,10 @@ const FIRMS_DATA = {
         {
           "name": "Mindy Ellen Wheeler"
         }
-      ]
+      ],
+      "practiceAreas": [],
+      "summary": "",
+      "email": ""
     },
     {
       "id": "martindale-e8f95bdc",
@@ -243788,7 +243794,10 @@ const FIRMS_DATA = {
         {
           "name": "Alexander Robinson"
         }
-      ]
+      ],
+      "practiceAreas": [],
+      "summary": "",
+      "email": ""
     },
     {
       "id": "martindale-559a3df4",
@@ -243806,7 +243815,10 @@ const FIRMS_DATA = {
         {
           "name": "Jonathan Parnell"
         }
-      ]
+      ],
+      "practiceAreas": [],
+      "summary": "",
+      "email": ""
     },
     {
       "id": "martindale-05f43862",
@@ -243824,7 +243836,10 @@ const FIRMS_DATA = {
         {
           "name": "Cathleen A. Gulledge MBA, CPA, JD, LLM"
         }
-      ]
+      ],
+      "practiceAreas": [],
+      "summary": "",
+      "email": ""
     },
     {
       "id": "martindale-fe838cc9",
@@ -243842,7 +243857,10 @@ const FIRMS_DATA = {
         {
           "name": "Thomas Gregory Munsell"
         }
-      ]
+      ],
+      "practiceAreas": [],
+      "summary": "",
+      "email": ""
     },
     {
       "id": "martindale-8d023fc6",
@@ -243860,7 +243878,10 @@ const FIRMS_DATA = {
         {
           "name": "Donald S. Smith"
         }
-      ]
+      ],
+      "practiceAreas": [],
+      "summary": "",
+      "email": ""
     },
     {
       "id": "martindale-f86eb52c",
@@ -243878,7 +243899,10 @@ const FIRMS_DATA = {
         {
           "name": "Katherine Clevenger"
         }
-      ]
+      ],
+      "practiceAreas": [],
+      "summary": "",
+      "email": ""
     },
     {
       "id": "martindale-472358fb",
@@ -243896,7 +243920,10 @@ const FIRMS_DATA = {
         {
           "name": "Michael Taylor"
         }
-      ]
+      ],
+      "practiceAreas": [],
+      "summary": "",
+      "email": ""
     },
     {
       "id": "martindale-dfbdd4d7",
@@ -243914,7 +243941,10 @@ const FIRMS_DATA = {
         {
           "name": "Dana Parks"
         }
-      ]
+      ],
+      "practiceAreas": [],
+      "summary": "",
+      "email": ""
     },
     {
       "id": "martindale-66552d4a",
@@ -243932,7 +243962,10 @@ const FIRMS_DATA = {
         {
           "name": "Autumn Packard"
         }
-      ]
+      ],
+      "practiceAreas": [],
+      "summary": "",
+      "email": ""
     },
     {
       "id": "martindale-87b6038a",
@@ -243950,7 +243983,10 @@ const FIRMS_DATA = {
         {
           "name": "Kristina D. Mulvany"
         }
-      ]
+      ],
+      "practiceAreas": [],
+      "summary": "",
+      "email": ""
     },
     {
       "id": "martindale-9e72727b",
@@ -243968,7 +244004,10 @@ const FIRMS_DATA = {
         {
           "name": "Amanda Vogelsberg"
         }
-      ]
+      ],
+      "practiceAreas": [],
+      "summary": "",
+      "email": ""
     },
     {
       "id": "martindale-48203445",
@@ -243986,7 +244025,10 @@ const FIRMS_DATA = {
         {
           "name": "Douglas L. Carter"
         }
-      ]
+      ],
+      "practiceAreas": [],
+      "summary": "",
+      "email": ""
     },
     {
       "id": "martindale-40637e8b",
@@ -244004,7 +244046,10 @@ const FIRMS_DATA = {
         {
           "name": "H. Reed Walker"
         }
-      ]
+      ],
+      "practiceAreas": [],
+      "summary": "",
+      "email": ""
     },
     {
       "id": "martindale-d31ef3c4",
@@ -244021,7 +244066,11 @@ const FIRMS_DATA = {
         {
           "name": "Bruce C. Barry"
         }
-      ]
+      ],
+      "practiceAreas": [],
+      "summary": "",
+      "phone": "",
+      "email": ""
     },
     {
       "id": "martindale-1f614f25",
@@ -244039,7 +244088,10 @@ const FIRMS_DATA = {
         {
           "name": "Tom A. Williamson"
         }
-      ]
+      ],
+      "practiceAreas": [],
+      "summary": "",
+      "email": ""
     },
     {
       "id": "martindale-6e8f6b01",
@@ -244057,7 +244109,10 @@ const FIRMS_DATA = {
         {
           "name": "Kelly Rundell"
         }
-      ]
+      ],
+      "practiceAreas": [],
+      "summary": "",
+      "email": ""
     },
     {
       "id": "martindale-f81eb24c",
@@ -244075,7 +244130,10 @@ const FIRMS_DATA = {
         {
           "name": "Mark E. Peron"
         }
-      ]
+      ],
+      "practiceAreas": [],
+      "summary": "",
+      "email": ""
     },
     {
       "id": "martindale-cb58198d",
@@ -244093,7 +244151,10 @@ const FIRMS_DATA = {
         {
           "name": "Jennifer Triplett"
         }
-      ]
+      ],
+      "practiceAreas": [],
+      "summary": "",
+      "email": ""
     },
     {
       "id": "martindale-f3d4b48d",
@@ -244111,7 +244172,10 @@ const FIRMS_DATA = {
         {
           "name": "Phillip A. Glades"
         }
-      ]
+      ],
+      "practiceAreas": [],
+      "summary": "",
+      "email": ""
     },
     {
       "id": "martindale-9a704e96",
@@ -244129,7 +244193,10 @@ const FIRMS_DATA = {
         {
           "name": "Terence Dale Prigmore"
         }
-      ]
+      ],
+      "practiceAreas": [],
+      "summary": "",
+      "email": ""
     },
     {
       "id": "martindale-732971d7",
@@ -244147,7 +244214,10 @@ const FIRMS_DATA = {
         {
           "name": "Matthew Brian Webster"
         }
-      ]
+      ],
+      "practiceAreas": [],
+      "summary": "",
+      "email": ""
     },
     {
       "id": "martindale-a04da0da",
@@ -244165,7 +244235,10 @@ const FIRMS_DATA = {
         {
           "name": "Andrew Buchanan"
         }
-      ]
+      ],
+      "practiceAreas": [],
+      "summary": "",
+      "email": ""
     },
     {
       "id": "martindale-778b7e57",
@@ -244183,7 +244256,10 @@ const FIRMS_DATA = {
         {
           "name": "Tracey Dawn Martin"
         }
-      ]
+      ],
+      "practiceAreas": [],
+      "summary": "",
+      "email": ""
     },
     {
       "id": "martindale-ef638990",
@@ -244201,7 +244277,10 @@ const FIRMS_DATA = {
         {
           "name": "Cobb Young"
         }
-      ]
+      ],
+      "practiceAreas": [],
+      "summary": "",
+      "email": ""
     },
     {
       "id": "martindale-b0552844",
@@ -244219,7 +244298,10 @@ const FIRMS_DATA = {
         {
           "name": "Sarah Luce Reeder"
         }
-      ]
+      ],
+      "practiceAreas": [],
+      "summary": "",
+      "email": ""
     },
     {
       "id": "martindale-164c1bce",
@@ -244237,7 +244319,10 @@ const FIRMS_DATA = {
         {
           "name": "William Fleischaker"
         }
-      ]
+      ],
+      "practiceAreas": [],
+      "summary": "",
+      "email": ""
     },
     {
       "id": "martindale-180142e4",
@@ -244255,7 +244340,10 @@ const FIRMS_DATA = {
         {
           "name": "Brian C. Wright"
         }
-      ]
+      ],
+      "practiceAreas": [],
+      "summary": "",
+      "email": ""
     },
     {
       "id": "martindale-6a3769a9",
@@ -244273,7 +244361,10 @@ const FIRMS_DATA = {
         {
           "name": "David G. Summers"
         }
-      ]
+      ],
+      "practiceAreas": [],
+      "summary": "",
+      "email": ""
     },
     {
       "id": "martindale-fd0bf6cb",
@@ -244291,7 +244382,10 @@ const FIRMS_DATA = {
         {
           "name": "Craig Dale Ritchie"
         }
-      ]
+      ],
+      "practiceAreas": [],
+      "summary": "",
+      "email": ""
     },
     {
       "id": "martindale-411ebc24",
@@ -244309,7 +244403,10 @@ const FIRMS_DATA = {
         {
           "name": "Scott L. Campbell"
         }
-      ]
+      ],
+      "practiceAreas": [],
+      "summary": "",
+      "email": ""
     },
     {
       "id": "martindale-9ad97efd",
@@ -244327,7 +244424,10 @@ const FIRMS_DATA = {
         {
           "name": "Tisha Morrical"
         }
-      ]
+      ],
+      "practiceAreas": [],
+      "summary": "",
+      "email": ""
     },
     {
       "id": "martindale-3182461a",
@@ -244345,7 +244445,10 @@ const FIRMS_DATA = {
         {
           "name": "Bruce Levine"
         }
-      ]
+      ],
+      "practiceAreas": [],
+      "summary": "",
+      "email": ""
     }
   ]
 };

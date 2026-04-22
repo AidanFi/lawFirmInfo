@@ -48,7 +48,8 @@ _NON_LEGAL_INDICATORS = (
     # Other non-legal
     "snow removal", "feed ", "consulting services",
     "manufacturing", "service center", "training solutions",
-    "business solutions", "smiles",
+    "business solutions", "smiles", "law enforcement",
+    "air conditioning", "refrigerator", "watercooler", "enterprises",
 )
 
 _LEGAL_RE = re.compile(
@@ -483,18 +484,121 @@ def _scrape_websites(firms: list) -> int:
 # Sub-step 7: Web search for missing websites
 # ---------------------------------------------------------------------------
 
-def _enrich_websites_via_search(firms: list) -> int:
-    try:
-        from scraper.enrich_websites import (
-            _web_search, _pick_best_result, _validate_url, _is_firm_like_name,
-        )
-    except ImportError:
-        print("  [enhance] enrich_websites module not available — skipping web search")
-        return 0
+_DIRECTORY_DOMAINS = frozenset({
+    "findlaw.com", "avvo.com", "justia.com", "lawyers.com", "martindale.com",
+    "yelp.com", "yellowpages.com", "superlawyers.com", "nolo.com", "lawinfo.com",
+    "hg.org", "lawyer.com", "bestlawyers.com", "usnews.com", "thumbtack.com",
+    "facebook.com", "linkedin.com", "twitter.com", "instagram.com", "bbb.org",
+    "google.com", "bing.com", "manta.com", "ksbar.org", "kscourts.org",
+    "superpages.com", "whitepages.com", "duckduckgo.com", "wikipedia.org",
+    "youtube.com", "trellis.law", "myftpupload.com", "wixsite.com",
+    "squarespace.com", "weebly.com", "wordpress.com", "godaddy.com",
+    "chamberofcommerce.com", "birdeye.com", "attorneyslisted.com",
+    "lawyerdb.org", "showmelocal.com", "mapquest.com", "hub.biz",
+    "local.yahoo.com", "citysearch.com", "lawyerlegion.com",
+    "attorneyhelp.org", "attorneypages.com", "topattorney.com",
+    "repsight.com", "trustanalytica.org", "locaterecords.com",
+})
 
+_SEARCH_HEADERS = {
+    "User-Agent": (
+        "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) "
+        "AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+    ),
+    "Accept-Language": "en-US,en;q=0.9",
+}
+
+
+def _ddg_search(query: str, delay: float = 2.5) -> list[str]:
+    from urllib.parse import quote_plus, unquote
+    url = f"https://lite.duckduckgo.com/lite/?q={quote_plus(query)}"
+    try:
+        r = requests.get(url, timeout=15, headers=_SEARCH_HEADERS)
+        time.sleep(delay)
+        if r.status_code != 200:
+            return []
+        soup = BeautifulSoup(r.text, "lxml")
+    except Exception:
+        return []
+
+    results = []
+    for a in soup.find_all("a", href=True):
+        href = a["href"]
+        if "uddg=" in href:
+            m = re.search(r"uddg=([^&]+)", href)
+            if m:
+                actual = unquote(m.group(1))
+                if actual.startswith("http"):
+                    results.append(actual)
+        elif href.startswith("http") and "duckduckgo.com" not in href:
+            results.append(href)
+
+    return results[:15]
+
+
+def _is_directory_domain(url: str) -> bool:
+    from urllib.parse import urlparse
+    try:
+        domain = urlparse(url).netloc.lower()
+        if domain.startswith("www."):
+            domain = domain[4:]
+        for d in _DIRECTORY_DOMAINS:
+            if domain == d or domain.endswith("." + d):
+                return True
+    except Exception:
+        return True
+    return False
+
+
+def _pick_best_url(urls: list[str], firm_name: str) -> str | None:
+    norm = normalize_firm_name(firm_name).lower()
+    words = [w for w in norm.split() if len(w) > 2]
+    from urllib.parse import urlparse
+
+    best, best_score = None, -1
+    for url in urls:
+        if _is_directory_domain(url):
+            continue
+        try:
+            domain = urlparse(url).netloc.lower()
+            if domain.startswith("www."):
+                domain = domain[4:]
+        except Exception:
+            continue
+
+        score = 0
+        base = domain.split(".")[0]
+        for w in words:
+            if w in base:
+                score += 3
+        if any(domain.endswith(t) for t in (".law", ".legal", ".attorney")):
+            score += 2
+        elif domain.endswith(".com"):
+            score += 1
+
+        if score > best_score:
+            best, best_score = url, score
+    return best
+
+
+def _validate_search_url(url: str) -> str | None:
+    try:
+        r = requests.head(
+            url, timeout=6, headers=_SEARCH_HEADERS, allow_redirects=True,
+        )
+        if r.status_code < 400:
+            final = r.url
+            if not _is_directory_domain(final):
+                return final
+    except Exception:
+        pass
+    return None
+
+
+def _enrich_websites_via_search(firms: list) -> int:
     to_search = [
         f for f in firms
-        if not f.get("website") and _is_firm_like_name(f.get("name", ""))
+        if not f.get("website") and _LEGAL_RE.search(f.get("name", "").lower())
     ]
     if not to_search:
         return 0
@@ -504,17 +608,17 @@ def _enrich_websites_via_search(firms: list) -> int:
 
     for i, firm in enumerate(to_search):
         city = (firm.get("address") or {}).get("city", "")
-        query = f'"{firm["name"]}" {city} KS attorney'
+        query = f'{firm["name"]} {city} KS attorney'
 
-        urls, engine = _web_search(query, delay=2.5)
+        urls = _ddg_search(query, delay=2.5)
         if not urls:
             continue
 
-        best = _pick_best_result(urls, firm["name"])
+        best = _pick_best_url(urls, firm["name"])
         if not best:
             continue
 
-        validated = _validate_url(best)
+        validated = _validate_search_url(best)
         if validated:
             firm["website"] = validated
             _add_source(firm, "web_search")
@@ -688,7 +792,7 @@ def enhance_firms(
         _enrich_avvo(firms, county_config)
         _enrich_findlaw(firms, county_config)
         _scrape_websites(firms)
-        # _enrich_websites_via_search(firms)  # TODO: fix curl_cffi hanging on search engines
+        _enrich_websites_via_search(firms)
     else:
         print("  [enhance] Test mode — skipping directory enrichment and website scraping")
 

@@ -66,12 +66,17 @@ def _checkpoint_path(county_slug: str) -> str:
     return os.path.join("data", "county", f"{county_slug}_checkpoint.json")
 
 
+def _pct(n, total):
+    return f"{100 * n / total:.0f}%" if total else "0%"
+
+
 def _print_summary(firms: list, county_config: dict):
     source_counts = Counter()
     for f in firms:
         for s in f.get("sources", []):
             source_counts[s] += 1
 
+    n = len(firms)
     has_website = sum(1 for f in firms if f.get("website"))
     has_gbp = sum(1 for f in firms if f.get("google_business_profile"))
     has_directory = sum(1 for f in firms if
@@ -80,21 +85,34 @@ def _print_summary(firms: list, county_config: dict):
     has_phone = sum(1 for f in firms if f.get("phone"))
     has_email = sum(1 for f in firms if f.get("email"))
     has_practice = sum(1 for f in firms if f.get("practiceAreas"))
+    has_any_link = sum(
+        1 for f in firms
+        if f.get("website") or f.get("google_business_profile") or
+        f.get("martindale_url") or f.get("justia_url") or
+        f.get("avvo_url") or f.get("findlaw_url")
+    )
+    has_2plus = sum(
+        1 for f in firms
+        if sum(bool(f.get(k)) for k in ("website", "phone", "email")) >= 2
+    )
 
     print(f"\n{'=' * 55}")
     print(f"  County Scrape Complete: {county_config['name']}, {county_config['state']}")
     print(f"{'=' * 55}")
-    print(f"  Total firms: {len(firms)}")
+    print(f"  Total firms: {n}")
     print(f"\n  Data sources:")
     for src, count in source_counts.most_common():
-        print(f"    {src}: {count} firms")
+        print(f"    {src}: {count}")
     print(f"\n  Coverage:")
-    print(f"    With website:           {has_website}/{len(firms)}")
-    print(f"    With Google profile:    {has_gbp}/{len(firms)}")
-    print(f"    With directory listing: {has_directory}/{len(firms)}")
-    print(f"    With phone:             {has_phone}/{len(firms)}")
-    print(f"    With email:             {has_email}/{len(firms)}")
-    print(f"    With practice area:     {has_practice}/{len(firms)}")
+    print(f"    Website:           {has_website}/{n} ({_pct(has_website, n)})")
+    print(f"    Phone:             {has_phone}/{n} ({_pct(has_phone, n)})")
+    print(f"    Email:             {has_email}/{n} ({_pct(has_email, n)})")
+    print(f"    Google profile:    {has_gbp}/{n} ({_pct(has_gbp, n)})")
+    print(f"    Directory listing: {has_directory}/{n} ({_pct(has_directory, n)})")
+    print(f"    Any link/URL:      {has_any_link}/{n} ({_pct(has_any_link, n)})")
+    print(f"    Practice area:     {has_practice}/{n} ({_pct(has_practice, n)})")
+    print(f"\n  Quality:")
+    print(f"    2+ contact methods: {has_2plus}/{n} ({_pct(has_2plus, n)})")
     print(f"{'=' * 55}")
 
 
@@ -106,6 +124,8 @@ def main():
                         help="Skip Foursquare discovery phase")
     parser.add_argument("--skip-enhance", action="store_true",
                         help="Skip enhancement pass")
+    parser.add_argument("--skip-ks-courts", action="store_true",
+                        help="Skip KS Courts scraper in enhancement")
     parser.add_argument("--resume", action="store_true",
                         help="Resume from last checkpoint")
     parser.add_argument("--test", action="store_true",
@@ -171,7 +191,10 @@ def main():
 
     # ── Stage 3: Enhancement ──
     if start_stage <= 4 and not args.skip_enhance:
-        firms = enhance_firms(firms, county_config, test_mode=args.test)
+        firms = enhance_firms(
+            firms, county_config,
+            test_mode=args.test, skip_ks_courts=args.skip_ks_courts,
+        )
         save_checkpoint(firms, phase=5, path=cp_path)
 
     # ── Pre-dedup cleanup: normalize attorneys field ──

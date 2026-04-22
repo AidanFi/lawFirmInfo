@@ -6,6 +6,11 @@ SKIP_EMAIL_PATTERNS = re.compile(r'noreply|no-reply|admin@|webmaster@', re.IGNOR
 # Note: info@ is kept — many small law firms only publish info@ as their contact email
 HEADERS = {"User-Agent": "Mozilla/5.0 (compatible; LawFirmDirectory/1.0)"}
 
+_PHONE_RE = re.compile(
+    r'(?<!\d)(?:\+?1[-.\s]?)?\(?(\d{3})\)?[-.\s]?(\d{3})[-.\s]?(\d{4})(?!\d)'
+)
+_FAX_CONTEXT_RE = re.compile(r'\bfax\b', re.IGNORECASE)
+
 # Practice area keyword detection — maps canonical area → list of trigger phrases
 _PRACTICE_KEYWORDS = {
     "Personal Injury":           ["personal injury", "car accident", "auto accident", "slip and fall",
@@ -79,8 +84,32 @@ def _extract_email(soup: BeautifulSoup) -> str | None:
     return emails[0] if emails else None
 
 
+def _extract_phone(soup: BeautifulSoup) -> str | None:
+    for a in soup.find_all("a", href=True):
+        href = a["href"]
+        if href.startswith("tel:"):
+            digits = re.sub(r'\D', '', href[4:])
+            if len(digits) >= 10:
+                digits = digits[-10:]
+                return f"({digits[:3]}) {digits[3:6]}-{digits[6:]}"
+    text = soup.get_text(separator="\n", strip=True)
+    for line in text.split("\n"):
+        if _FAX_CONTEXT_RE.search(line):
+            continue
+        m = _PHONE_RE.search(line)
+        if m:
+            return f"({m.group(1)}) {m.group(2)}-{m.group(3)}"
+    return None
+
+
+_CONTACT_PATHS = [
+    "/contact", "/contact-us", "/about/contact",
+    "/about", "/about-us", "/our-firm",
+]
+
+
 def _fetch_contact_page(base_url: str) -> BeautifulSoup | None:
-    for path in ["/contact", "/contact-us"]:
+    for path in _CONTACT_PATHS:
         try:
             r = requests.get(base_url.rstrip("/") + path, timeout=5, headers=HEADERS)
             r.raise_for_status()
@@ -91,19 +120,23 @@ def _fetch_contact_page(base_url: str) -> BeautifulSoup | None:
 
 
 def scrape_firm_website(url: str, name: str, city: str) -> dict:
-    result = {"summary": None, "email": None, "practiceAreas": []}
+    result = {"summary": None, "email": None, "phone": None, "practiceAreas": []}
     try:
         resp = requests.get(url, timeout=5, headers=HEADERS)
         resp.raise_for_status()
         soup = BeautifulSoup(resp.text, "lxml")
         result["summary"] = _extract_summary(soup, name, city)
         result["email"] = _extract_email(soup)
+        result["phone"] = _extract_phone(soup)
         page_text = soup.get_text(separator=" ", strip=True)
         result["practiceAreas"] = _extract_practice_areas(page_text)
-        if result["email"] is None:
+        if result["email"] is None or result["phone"] is None:
             contact_soup = _fetch_contact_page(url)
             if contact_soup:
-                result["email"] = _extract_email(contact_soup)
+                if result["email"] is None:
+                    result["email"] = _extract_email(contact_soup)
+                if result["phone"] is None:
+                    result["phone"] = _extract_phone(contact_soup)
     except Exception:
         result["summary"] = f"{name} — law firm in {city}, Kansas"
     return result

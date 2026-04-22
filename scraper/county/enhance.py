@@ -1,3 +1,4 @@
+import html
 import json
 import os
 import re
@@ -14,34 +15,85 @@ from scraper.phases.website_scraper import scrape_firm_website
 
 
 _NON_LEGAL_INDICATORS = (
-    "bank", "hospital", "medical center", "pharmacy", "restaurant",
-    "gas station", "insurance company", "school district", "university",
-    "college", "church", "lawn care", "cleaning", "plumbing",
-    "roofing", "electric", "heating", "cooling", "hvac",
-    "construction", "realty", "real estate group", "mortgage",
-    "credit union", "financial group", "investments",
-    "manufacturing", "inc.", "corporation", "corp.",
-    "county government", "city of ", "state of ",
-    "gazette", "news", "media", "broadcasting",
+    # Medical/Health
+    "hospital", "medical center", "pharmacy", "dental", "dentist",
+    "chiropractic", "physical therapy", "health club", "clinic",
+    "dds", "orthodont", "veterinar",
+    # Food/Hospitality
+    "restaurant", "pub ", "patio", "cafe", "coffee",
+    # Home services
+    "cleaning", "plumbing", "roofing", "heating", "cooling", "hvac",
+    "construction", "painting", "pest control",
+    # Lawn/Garden
+    "lawn", "landscap", "mowing", "irrigation", "tree care",
+    "garden center", "garden farm", "lawncare",
+    # Real estate/Finance
+    "realty", "real estate group", "mortgage", "credit union",
+    "financial group", "investments", "financial partners", "advisors",
+    "insurance", "title loans",
+    # Specific companies
+    "gas station", "mattress", "salon", " spa",
+    "t-mobile", "activision", "blizzard", "morgan stanley",
+    "tyler technologies", "ikea", "scheels", "h&r block",
+    "wells fargo", "raymond james", "lendnation", "united parcel",
+    "rehrig", "fedex",
+    # Government/Education/Civic
+    "school district", "university", "college",
+    "county government", "city of ", "state of ", "city hall",
+    # Parks/Recreation
+    "dog park", "skate park", "memorial park", "arboretum",
+    "office park", "soccer complex", "sanctuary", " mall",
+    # Media
+    "gazette", "broadcasting",
+    # Other non-legal
+    "snow removal", "feed ", "consulting services",
+    "manufacturing", "service center", "training solutions",
+    "business solutions", "smiles",
 )
 
-_LEGAL_INDICATORS = (
-    "law", "legal", "attorney", "lawyer", "counsel", "advocate",
-    "firm", "llc", "llp", "pllc", "p.a.", " pa", " pc",
-    "chartered", "esquire", "esq",
+_LEGAL_RE = re.compile(
+    r'\b(?:'
+    r'law\s+(?:firm|office|offices|group|center|practice)|'
+    r'legal|attorney|lawyer|counsel|advocate|esquire|esq\.?|'
+    r'bankruptcy'
+    r')\b',
+    re.IGNORECASE,
+)
+
+_LEGAL_SUFFIX_RE = re.compile(
+    r'\b(?:llc|llp|pllc|p\.?a\.?|p\.?c\.?|chartered)\b',
+    re.IGNORECASE,
+)
+
+_TRUSTED_LEGAL_SOURCES = frozenset({
+    "google_places", "foursquare", "ks_courts", "martindale",
+})
+
+_NONLEGAL_RE = re.compile(
+    r'\bpark\s*$'
+    r'|\bbank\b(?!rupt)',
+    re.IGNORECASE,
 )
 
 
-def _looks_like_legal_entity(name: str, practice_areas: list) -> bool:
+def _looks_like_legal_entity(
+    name: str, practice_areas: list, sources: list | None = None,
+) -> bool:
     lower = name.lower()
-    if any(ind in lower for ind in _LEGAL_INDICATORS):
+    if _LEGAL_RE.search(lower):
         return True
+    # Check non-legal BEFORE legal suffix — catches "DDS PA" dental offices
     if any(ind in lower for ind in _NON_LEGAL_INDICATORS):
         return False
+    if _NONLEGAL_RE.search(lower):
+        return False
+    if _LEGAL_SUFFIX_RE.search(lower):
+        return True
+    if sources and _TRUSTED_LEGAL_SOURCES & set(sources):
+        return True
     if practice_areas:
         return True
-    # Person names (solo practitioners) — allow through
-    return True
+    return False
 
 
 def _find_matching_firm(name: str, city: str, firms: list) -> dict | None:
@@ -59,65 +111,166 @@ def _add_source(firm: dict, source: str):
         sources.append(source)
 
 
+_OUT_OF_STATE_RE = re.compile(
+    r'\b(?:miami|arizona|california|colorado|shreveport|suncoast|'
+    r'sarasota|st\.?\s*louis|chicago|houston|dallas|los angeles|'
+    r'new york|atlanta|detroit|phoenix|denver)\b',
+    re.IGNORECASE,
+)
+
+_GARBAGE_RE = re.compile(
+    r'\b(?:seo|sitemap|residents|subscribe|click here|read more|'
+    r'homepage|sign up|download|log ?in)\b',
+    re.IGNORECASE,
+)
+
+_PO_BOX_RE = re.compile(r'(?:p\.?o\.?\s*box|pmb)\b', re.IGNORECASE)
+
+
+def _sanitize_firm_name(name: str) -> str | None:
+    name = html.unescape(name).strip()
+    if not name:
+        return None
+    if "http://" in name or "https://" in name or "www." in name:
+        return None
+    if ".com/" in name or ".org/" in name or ".net/" in name:
+        return None
+    idx = name.find("...")
+    if idx != -1:
+        name = name[:idx].strip()
+        if len(name) < 5:
+            return None
+    if ": " in name:
+        name = name.split(": ")[0].strip()
+    if len(name) > 80:
+        return None
+    if _GARBAGE_RE.search(name):
+        return None
+    if _OUT_OF_STATE_RE.search(name):
+        return None
+    if "<" in name or ">" in name:
+        return None
+    return name or None
+
+
+def _sanitize_address(addr: dict) -> dict:
+    street = addr.get("street", "")
+    if not street:
+        return addr
+    if len(street) > 120:
+        addr["street"] = ""
+        return addr
+    if not _PO_BOX_RE.search(street) and not re.search(r'\d', street):
+        addr["street"] = ""
+        return addr
+    return addr
+
+
 # ---------------------------------------------------------------------------
-# Sub-step 1: KS Courts cross-check
+# Sub-step 1: KS Courts full scraper (cached)
 # ---------------------------------------------------------------------------
 
-def _crosscheck_ks_courts(firms: list, county_config: dict) -> int:
-    firms_data_path = os.path.join("app", "firms_data.js")
-    if not os.path.exists(firms_data_path):
-        print("  [enhance] firms_data.js not found — skipping KS Courts cross-check")
-        return 0
+_KS_COURTS_CACHE_MAX_AGE_DAYS = 30
 
-    with open(firms_data_path, "r", encoding="utf-8") as f:
-        content = f.read()
 
-    match = re.search(r'const\s+FIRMS_DATA\s*=\s*(\{.*\})\s*;?\s*$', content, re.DOTALL)
-    if not match:
-        print("  [enhance] Could not parse firms_data.js — skipping KS Courts cross-check")
-        return 0
-
+def _load_ks_courts_cache(cache_path: str) -> list | None:
+    if not os.path.exists(cache_path):
+        return None
     try:
-        data = json.loads(match.group(1))
-    except json.JSONDecodeError:
-        print("  [enhance] JSON parse failed for firms_data.js — skipping")
-        return 0
+        with open(cache_path, "r", encoding="utf-8") as f:
+            data = json.load(f)
+        from datetime import datetime, timezone
+        cached_at = datetime.fromisoformat(data["cached_at"])
+        age_days = (datetime.now(timezone.utc) - cached_at).days
+        if age_days > _KS_COURTS_CACHE_MAX_AGE_DAYS:
+            print(f"  [enhance] KS Courts cache expired ({age_days} days old)")
+            return None
+        print(f"  [enhance] KS Courts cache loaded ({len(data['firms'])} firms, {age_days} days old)")
+        return data["firms"]
+    except Exception as e:
+        print(f"  [enhance] KS Courts cache read failed: {e}")
+        return None
+
+
+def _save_ks_courts_cache(firms: list, cache_path: str):
+    from datetime import datetime, timezone
+    os.makedirs(os.path.dirname(cache_path), exist_ok=True)
+    with open(cache_path, "w", encoding="utf-8") as f:
+        json.dump({"cached_at": datetime.now(timezone.utc).isoformat(), "firms": firms}, f)
+    print(f"  [enhance] KS Courts cache saved ({len(firms)} firms)")
+
+
+def _enrich_from_ks_courts(firms: list, county_config: dict, test_mode: bool = False) -> int:
+    slug = county_config["slug"]
+    cache_path = os.path.join("data", "county", f"{slug}_ks_courts_cache.json")
+
+    ks_firms = _load_ks_courts_cache(cache_path)
+    if ks_firms is None:
+        try:
+            from scraper.phases.ks_courts import scrape_ks_courts
+        except ImportError:
+            print("  [enhance] ks_courts module not available — skipping")
+            return 0
+
+        print("  [enhance] Running full KS Courts scraper (this may take a while)...")
+        try:
+            ks_firms_raw = scrape_ks_courts(test_mode=test_mode)
+            ks_firms = [
+                {k: v for k, v in f.items() if k != "id"} for f in ks_firms_raw
+            ]
+            _save_ks_courts_cache(ks_firms, cache_path)
+        except Exception as e:
+            print(f"  [enhance] KS Courts scraper failed: {e}")
+            return 0
 
     county_cities = {c.lower() for c in county_config["cities"]}
+    enriched = 0
     added = 0
 
-    for existing_firm in data.get("firms", []):
-        addr = existing_firm.get("address") or {}
+    for ks_firm in ks_firms:
+        addr = ks_firm.get("address") or {}
         city = addr.get("city", "")
         if city.lower() not in county_cities:
             continue
 
-        if _find_matching_firm(existing_firm["name"], city, firms):
-            continue
+        existing = _find_matching_firm(ks_firm["name"], city, firms)
+        if existing:
+            if not existing.get("phone") and ks_firm.get("phone"):
+                existing["phone"] = ks_firm["phone"]
+            e_addr = existing.get("address") or {}
+            if not e_addr.get("street") and addr.get("street"):
+                e_addr["street"] = addr["street"]
+            if not e_addr.get("zip") and addr.get("zip"):
+                e_addr["zip"] = addr["zip"]
+            if ks_firm.get("attorneys"):
+                existing.setdefault("attorneys", []).extend(ks_firm["attorneys"])
+            _add_source(existing, "ks_courts")
+            enriched += 1
+        else:
+            if not ks_firm.get("phone"):
+                continue
+            if not _looks_like_legal_entity(
+                ks_firm["name"], [], ["ks_courts"],
+            ):
+                continue
+            firms.append({
+                "id": str(uuid.uuid4()),
+                "name": ks_firm["name"],
+                "practiceAreas": [],
+                "summary": None,
+                "website": None,
+                "phone": ks_firm.get("phone"),
+                "email": None,
+                "address": addr,
+                "coordinates": None,
+                "sources": ["ks_courts"],
+                "attorneys": ks_firm.get("attorneys", []),
+                "google_business_profile": "",
+            })
+            added += 1
 
-        if not _looks_like_legal_entity(
-            existing_firm["name"],
-            existing_firm.get("practiceAreas", []),
-        ):
-            continue
-
-        firms.append({
-            "id": str(uuid.uuid4()),
-            "name": existing_firm["name"],
-            "practiceAreas": existing_firm.get("practiceAreas", []),
-            "summary": existing_firm.get("summary"),
-            "website": existing_firm.get("website"),
-            "phone": existing_firm.get("phone"),
-            "email": existing_firm.get("email"),
-            "address": addr,
-            "coordinates": existing_firm.get("coordinates"),
-            "sources": ["ks_courts_crosscheck"],
-            "google_business_profile": "",
-        })
-        added += 1
-
-    print(f"  [enhance] KS Courts cross-check: added {added} firms not found by APIs")
-    return added
+    print(f"  [enhance] KS Courts: enriched {enriched}, added {added} new firms (with phone)")
+    return enriched + added
 
 
 # ---------------------------------------------------------------------------
@@ -283,8 +436,13 @@ def _enrich_findlaw(firms: list, county_config: dict) -> int:
 # ---------------------------------------------------------------------------
 
 def _scrape_websites(firms: list) -> int:
-    to_scrape = [f for f in firms if f.get("website") and not f.get("email")]
+    to_scrape = [
+        f for f in firms
+        if f.get("website") and (not f.get("email") or not f.get("phone"))
+    ]
     scraped = 0
+    phones_found = 0
+    emails_found = 0
 
     for firm in to_scrape:
         try:
@@ -295,8 +453,12 @@ def _scrape_websites(firms: list) -> int:
         except Exception:
             continue
 
-        if result.get("email"):
+        if result.get("email") and not firm.get("email"):
             firm["email"] = result["email"]
+            emails_found += 1
+        if result.get("phone") and not firm.get("phone"):
+            firm["phone"] = result["phone"]
+            phones_found += 1
         if result.get("summary") and not firm.get("summary"):
             firm["summary"] = result["summary"]
         if result.get("practiceAreas"):
@@ -313,19 +475,212 @@ def _scrape_websites(firms: list) -> int:
             print(f"  [enhance] Website scraping progress: {scraped}/{len(to_scrape)}")
         time.sleep(1.0)
 
-    print(f"  [enhance] Website scraping: processed {scraped} sites")
+    print(f"  [enhance] Website scraping: {scraped} sites → {emails_found} emails, {phones_found} phones")
     return scraped
+
+
+# ---------------------------------------------------------------------------
+# Sub-step 7: Web search for missing websites
+# ---------------------------------------------------------------------------
+
+def _enrich_websites_via_search(firms: list) -> int:
+    try:
+        from scraper.enrich_websites import (
+            _web_search, _pick_best_result, _validate_url, _is_firm_like_name,
+        )
+    except ImportError:
+        print("  [enhance] enrich_websites module not available — skipping web search")
+        return 0
+
+    to_search = [
+        f for f in firms
+        if not f.get("website") and _is_firm_like_name(f.get("name", ""))
+    ]
+    if not to_search:
+        return 0
+
+    print(f"  [enhance] Web search: {len(to_search)} firms without websites to search")
+    found = 0
+
+    for i, firm in enumerate(to_search):
+        city = (firm.get("address") or {}).get("city", "")
+        query = f'"{firm["name"]}" {city} KS attorney'
+
+        urls, engine = _web_search(query, delay=2.5)
+        if not urls:
+            continue
+
+        best = _pick_best_result(urls, firm["name"])
+        if not best:
+            continue
+
+        validated = _validate_url(best)
+        if validated:
+            firm["website"] = validated
+            _add_source(firm, "web_search")
+            found += 1
+
+        if (i + 1) % 25 == 0:
+            print(f"  [enhance] Web search progress: {i + 1}/{len(to_search)}, found {found}")
+
+    print(f"  [enhance] Web search: found {found} websites")
+    return found
+
+
+# ---------------------------------------------------------------------------
+# Sub-step 8: Consolidate person-named entries into parent firms
+# ---------------------------------------------------------------------------
+
+_FIRM_TOKENS = (
+    " llc", " llp", " l.l.p", " l.l.c", " pa", " p.a.",
+    " law", " firm", " office", " associates", " group",
+    " & ", " chartered", " attorneys", " partners", " pllc",
+    " lc", " l.c.",
+)
+
+
+def _is_person_like(name: str) -> bool:
+    if not name:
+        return False
+    lower = name.lower()
+    if any(t in lower for t in _FIRM_TOKENS):
+        return False
+    if any(c.isdigit() for c in name):
+        return False
+    words = name.replace(",", " ").split()
+    if len(words) < 2 or len(words) > 4:
+        return False
+    cap_words = sum(1 for w in words if w and w[0].isupper())
+    return cap_words == len(words)
+
+
+def _norm_phone(phone) -> str:
+    if not phone:
+        return ""
+    return re.sub(r"\D", "", str(phone))
+
+
+def _norm_street(street) -> str:
+    if not street:
+        return ""
+    s = street.lower().strip()
+    s = re.sub(r"\b(street|st)\b\.?", "st", s)
+    s = re.sub(r"\b(avenue|ave)\b\.?", "ave", s)
+    s = re.sub(r"\b(drive|dr)\b\.?", "dr", s)
+    s = re.sub(r"\b(road|rd)\b\.?", "rd", s)
+    s = re.sub(r"\b(boulevard|blvd)\b\.?", "blvd", s)
+    s = re.sub(r"\b(suite|ste)\b\.?\s*\d+", "", s)
+    s = re.sub(r"#\s*\d+", "", s)
+    return re.sub(r"\s+", " ", s).strip()
+
+
+def _consolidate_persons(firms: list) -> list:
+    from collections import defaultdict
+
+    firms_real = []
+    persons = []
+    for f in firms:
+        (persons if _is_person_like(f.get("name", "")) else firms_real).append(f)
+
+    if not persons:
+        return firms
+
+    by_phone = defaultdict(list)
+    by_addr = defaultdict(list)
+    for f in firms_real:
+        p = _norm_phone(f.get("phone"))
+        if p and len(p) >= 10:
+            by_phone[p[-10:]].append(f)
+        addr = f.get("address") or {}
+        street = _norm_street(addr.get("street"))
+        city = (addr.get("city") or "").lower()
+        if street and city:
+            by_addr[(street, city)].append(f)
+
+    merged = 0
+    dropped_no_contact = 0
+    kept_solo = 0
+
+    remaining = []
+    for p in persons:
+        if p.get("website"):
+            kept_solo += 1
+            remaining.append(p)
+            continue
+
+        phone = _norm_phone(p.get("phone"))
+        addr = p.get("address") or {}
+        street = _norm_street(addr.get("street"))
+        city = (addr.get("city") or "").lower()
+
+        candidates = []
+        if phone and len(phone) >= 10:
+            candidates.extend(by_phone.get(phone[-10:], []))
+        if street and city:
+            candidates.extend(by_addr.get((street, city), []))
+
+        seen_ids = set()
+        uniq = []
+        for c in candidates:
+            cid = id(c)
+            if cid not in seen_ids:
+                seen_ids.add(cid)
+                uniq.append(c)
+
+        if not uniq:
+            has_contact = p.get("phone") or p.get("email") or p.get("website")
+            if has_contact:
+                kept_solo += 1
+                remaining.append(p)
+            else:
+                dropped_no_contact += 1
+            continue
+
+        if len(uniq) > 1:
+            names = {c.get("name") for c in uniq}
+            if len(names) > 1:
+                has_contact = p.get("phone") or p.get("email") or p.get("website")
+                if has_contact:
+                    kept_solo += 1
+                    remaining.append(p)
+                else:
+                    dropped_no_contact += 1
+                continue
+
+        target = uniq[0]
+        attorneys = target.setdefault("attorneys", [])
+        pname = p.get("name", "").strip()
+        existing_names = {
+            (a.get("name", "") if isinstance(a, dict) else a).lower()
+            for a in attorneys
+        }
+        if pname and pname.lower() not in existing_names:
+            attorneys.append(pname)
+        if p.get("phone") and not target.get("phone"):
+            target["phone"] = p["phone"]
+        if p.get("email") and not target.get("email"):
+            target["email"] = p["email"]
+        merged += 1
+
+    result = firms_real + remaining
+    print(f"  [enhance] Consolidation: {merged} merged into firms, "
+          f"{kept_solo} kept as solo, {dropped_no_contact} dropped (no contact)")
+    return result
 
 
 # ---------------------------------------------------------------------------
 # Main enhancement coordinator
 # ---------------------------------------------------------------------------
 
-def enhance_firms(firms: list, county_config: dict, test_mode: bool = False) -> list:
+def enhance_firms(
+    firms: list, county_config: dict,
+    test_mode: bool = False, skip_ks_courts: bool = False,
+) -> list:
     print(f"\n[enhance] Starting enhancement for {county_config['name']}...")
     print(f"[enhance] {len(firms)} firms to enhance\n")
 
-    _crosscheck_ks_courts(firms, county_config)
+    if not skip_ks_courts:
+        _enrich_from_ks_courts(firms, county_config, test_mode=test_mode)
 
     if not test_mode:
         _enrich_martindale(firms, county_config)
@@ -333,6 +688,7 @@ def enhance_firms(firms: list, county_config: dict, test_mode: bool = False) -> 
         _enrich_avvo(firms, county_config)
         _enrich_findlaw(firms, county_config)
         _scrape_websites(firms)
+        # _enrich_websites_via_search(firms)  # TODO: fix curl_cffi hanging on search engines
     else:
         print("  [enhance] Test mode — skipping directory enrichment and website scraping")
 
@@ -344,6 +700,61 @@ def enhance_firms(firms: list, county_config: dict, test_mode: bool = False) -> 
                 if url:
                     firm["legal_directory_listing"] = url
                     break
+
+    # Sanitize names and addresses
+    sanitized = []
+    sanitize_dropped = 0
+    for firm in firms:
+        cleaned = _sanitize_firm_name(firm["name"])
+        if cleaned is None:
+            sanitize_dropped += 1
+            continue
+        firm["name"] = cleaned
+        firm["address"] = _sanitize_address(firm.setdefault("address", {}))
+        sanitized.append(firm)
+    if sanitize_dropped:
+        print(f"  [enhance] Sanitization: dropped {sanitize_dropped} corrupted entries")
+    firms = sanitized
+
+    # Consolidate person-named entries into parent firms
+    firms = _consolidate_persons(firms)
+
+    # Legal entity filter: remove non-law businesses regardless of source
+    before_legal = len(firms)
+    legal_filtered = []
+    for firm in firms:
+        if _looks_like_legal_entity(
+            firm["name"],
+            firm.get("practiceAreas", []),
+            firm.get("sources"),
+        ):
+            legal_filtered.append(firm)
+    dropped_legal = before_legal - len(legal_filtered)
+    if dropped_legal:
+        print(f"  [enhance] Legal filter: dropped {dropped_legal} non-law businesses")
+    firms = legal_filtered
+
+    # Quality gate: drop entries with zero contact info
+    before_gate = len(firms)
+    verified_sources = {"google_places", "foursquare"}
+    gated = []
+    for firm in firms:
+        has_contact = (
+            firm.get("website") or firm.get("phone") or firm.get("email")
+            or firm.get("google_business_profile")
+            or firm.get("legal_directory_listing")
+        )
+        if has_contact:
+            gated.append(firm)
+            continue
+        firm_sources = set(firm.get("sources") or [])
+        if firm_sources & verified_sources:
+            gated.append(firm)
+            continue
+    dropped_gate = before_gate - len(gated)
+    if dropped_gate:
+        print(f"  [enhance] Quality gate: dropped {dropped_gate} entries with zero contact info")
+    firms = gated
 
     # Set county on firms whose city is in the county; filter out the rest
     county_name = county_config["name"].replace(" County", "")

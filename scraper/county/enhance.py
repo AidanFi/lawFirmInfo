@@ -862,10 +862,14 @@ def enhance_firms(
 
     # Set county on firms whose city is in the county; filter out the rest
     county_name = county_config["name"].replace(" County", "")
+    county_state = county_config["state"]
     county_cities_lower = {c.lower() for c in county_config["cities"]}
     filtered = []
     for firm in firms:
         addr = firm.setdefault("address", {})
+        firm_state = addr.get("state", "")
+        if firm_state and firm_state != county_state:
+            continue
         firm_city = addr.get("city", "").lower()
         if not firm_city or firm_city not in county_cities_lower:
             continue

@@ -864,15 +864,32 @@ def enhance_firms(
     county_name = county_config["name"].replace(" County", "")
     county_state = county_config["state"]
     county_cities_lower = {c.lower() for c in county_config["cities"]}
+    county_zips = set(county_config.get("zip_codes", []))
     filtered = []
     for firm in firms:
         addr = firm.setdefault("address", {})
+        firm_zip = addr.get("zip", "")
         firm_state = addr.get("state", "")
-        if firm_state and firm_state != county_state:
-            continue
         firm_city = addr.get("city", "").lower()
-        if not firm_city or firm_city not in county_cities_lower:
+
+        in_county_by_zip = county_zips and firm_zip in county_zips
+        in_county_by_city = (
+            firm_city
+            and firm_city in county_cities_lower
+            and (not firm_state or firm_state == county_state)
+        )
+
+        if not in_county_by_zip and not in_county_by_city:
             continue
+
+        if in_county_by_zip and firm_state and firm_state != county_state:
+            addr["state"] = county_state
+        if in_county_by_zip and firm_city not in county_cities_lower:
+            for c in county_config["cities"]:
+                if c.lower() == "kansas city":
+                    addr["city"] = c
+                    break
+
         if not addr.get("county"):
             addr["county"] = county_name
         filtered.append(firm)

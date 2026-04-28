@@ -59,6 +59,7 @@ def discover_foursquare(county_config: dict, api_key: str, test_mode: bool = Fal
     state = county_config["state"]
     cities = county_config["cities"]
     county_cities_lower = {c.lower() for c in county_config["cities"]}
+    zip_codes = set(county_config.get("zip_codes", []))
     if test_mode:
         cities = cities[:3]
 
@@ -66,11 +67,17 @@ def discover_foursquare(county_config: dict, api_key: str, test_mode: bool = Fal
     skipped_out_of_county = 0
     skipped_not_legal = 0
 
-    for city in cities:
+    search_locations = [(city, f"{city}, {state}") for city in cities]
+    for term in county_config.get("extra_search_terms", []):
+        search_locations.append((term, term))
+    for zc in county_config.get("zip_codes", []):
+        search_locations.append((zc, zc))
+
+    for location_label, near_val in search_locations:
         for query in SEARCH_QUERIES:
             params = {
                 "query": query,
-                "near": f"{city}, {state}",
+                "near": near_val,
                 "categories": FOURSQUARE_LEGAL_CATEGORIES,
                 "limit": 50,
             }
@@ -91,11 +98,21 @@ def discover_foursquare(county_config: dict, api_key: str, test_mode: bool = Fal
                     continue
                 name = place.get("name", "")
                 address = _parse_location(place)
-                city_val = address["city"] or city
+                city_val = address["city"] or location_label
 
-                if city_val.lower() not in county_cities_lower:
+                in_county = (
+                    city_val.lower() in county_cities_lower
+                    or (zip_codes and address.get("zip") in zip_codes)
+                )
+                if not in_county:
                     skipped_out_of_county += 1
                     continue
+
+                if city_val.lower() not in county_cities_lower and address.get("zip") in zip_codes:
+                    for c in county_config["cities"]:
+                        if c.lower() == "kansas city":
+                            city_val = c
+                            break
 
                 if _is_duplicate(name, city_val, firms):
                     continue

@@ -20,6 +20,15 @@ COUNTY_DEFINITIONS = {
             "Kansas City", "Bonner Springs", "Edwardsville",
             "Lake Quivira",
         ],
+        "zip_codes": [
+            "66101", "66102", "66103", "66104", "66105", "66106",
+            "66109", "66111", "66112", "66115", "66117", "66118",
+            "66012", "66113",
+        ],
+        "extra_search_terms": [
+            "Kansas City Kansas",
+            "KCK",
+        ],
     },
 }
 

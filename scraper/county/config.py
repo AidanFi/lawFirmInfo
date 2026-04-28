@@ -11,6 +11,16 @@ COUNTY_DEFINITIONS = {
             "Lake Quivira", "Mission Hills", "Mission Woods", "Westwood Hills",
         ],
     },
+    "wyandotte": {
+        "name": "Wyandotte County",
+        "state": "KS",
+        "slug": "wyandotte-county-ks",
+        "msa": "Kansas City",
+        "cities": [
+            "Kansas City", "Bonner Springs", "Edwardsville",
+            "Lake Quivira",
+        ],
+    },
 }
 
 PRIORITY_SCORES = {

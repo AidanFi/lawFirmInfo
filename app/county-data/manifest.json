@@ -4,9 +4,17 @@
       "slug": "johnson-county-ks",
       "name": "Johnson County",
       "state": "KS",
-      "firm_count": 346,
-      "last_updated": "2026-04-22",
+      "firm_count": 341,
+      "last_updated": "2026-04-28",
       "csv_file": "johnson-county-ks.csv"
+    },
+    {
+      "slug": "wyandotte-county-ks",
+      "name": "Wyandotte County",
+      "state": "KS",
+      "firm_count": 39,
+      "last_updated": "2026-04-28",
+      "csv_file": "wyandotte-county-ks.csv"
     }
   ]
 }

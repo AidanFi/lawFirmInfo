@@ -14,7 +14,10 @@ Usage:
     python -m scraper.county.pipeline --county johnson --resume
 """
 import argparse
+import json
 import os
+import re
+import uuid
 from collections import Counter
 from dotenv import load_dotenv
 
@@ -28,6 +31,90 @@ from scraper.utils.normalize import deduplicate_firms, are_same_firm
 from scraper.utils.checkpoint import save_checkpoint, load_checkpoint, clear_checkpoint
 
 COUNTY_DATA_DIR = os.path.join("app", "county-data")
+STATEWIDE_DATA_PATH = os.path.join("app", "firms_data.js")
+
+
+def _import_statewide(firms: list, county_config: dict) -> list:
+    if not os.path.exists(STATEWIDE_DATA_PATH):
+        print("[statewide] firms_data.js not found — skipping")
+        return firms
+
+    with open(STATEWIDE_DATA_PATH) as f:
+        text = f.read()
+
+    json_str = re.sub(r'^const FIRMS_DATA = ', '', text).rstrip().rstrip(';')
+    data = json.loads(json_str)
+
+    county_cities_lower = {c.lower() for c in county_config["cities"]}
+    county_state = county_config["state"]
+    county_zips = set(county_config.get("zip_codes", []))
+
+    candidates = []
+    for sf in data["firms"]:
+        addr = sf.get("address") or {}
+        city = addr.get("city", "").lower()
+        state = addr.get("state", "")
+        zip_code = addr.get("zip", "")
+
+        in_county = (
+            (city in county_cities_lower and state == county_state)
+            or (county_zips and zip_code in county_zips)
+        )
+        if not in_county:
+            continue
+        candidates.append(sf)
+
+    added = 0
+    enriched = 0
+    for sf in candidates:
+        sf_addr = sf.get("address") or {}
+        sf_city = sf_addr.get("city", "")
+
+        matched = None
+        for firm in firms:
+            firm_city = (firm.get("address") or {}).get("city", "")
+            if firm_city.lower() == sf_city.lower() and are_same_firm(sf["name"], firm["name"]):
+                matched = firm
+                break
+
+        if matched:
+            if not matched.get("phone") and sf.get("phone"):
+                matched["phone"] = sf["phone"]
+            if not matched.get("website") and sf.get("website"):
+                matched["website"] = sf["website"]
+            if not matched.get("email") and sf.get("email"):
+                matched["email"] = sf["email"]
+            m_addr = matched.get("address") or {}
+            if not m_addr.get("street") and sf_addr.get("street"):
+                m_addr["street"] = sf_addr["street"]
+            if not m_addr.get("zip") and sf_addr.get("zip"):
+                m_addr["zip"] = sf_addr["zip"]
+            for src in sf.get("sources", []):
+                sources = matched.setdefault("sources", [])
+                if src not in sources:
+                    sources.append(src)
+            enriched += 1
+        else:
+            if not sf.get("phone") and not sf.get("website") and not sf.get("email"):
+                continue
+            firms.append({
+                "id": str(uuid.uuid4()),
+                "name": sf["name"],
+                "practiceAreas": sf.get("practiceAreas", []),
+                "summary": sf.get("summary"),
+                "website": sf.get("website"),
+                "phone": sf.get("phone"),
+                "email": sf.get("email"),
+                "address": sf_addr,
+                "coordinates": sf.get("coordinates"),
+                "sources": sf.get("sources", []),
+                "google_business_profile": "",
+            })
+            added += 1
+
+    print(f"  [statewide] Scanned {len(candidates)} matching entries")
+    print(f"  [statewide] Enriched {enriched} existing, added {added} new firms")
+    return firms
 
 
 def _merge_foursquare(firms: list, fsq_firms: list) -> list:
@@ -180,6 +267,13 @@ def main():
             firms = _merge_foursquare(firms, fsq_firms)
             print(f"[stage 2] Merged: {before} + {len(fsq_firms)} Foursquare → {len(firms)} total\n")
         save_checkpoint(firms, phase=3, path=cp_path)
+
+    # ── Stage 2b: Import from statewide data ──
+    if start_stage <= 3:
+        print("[stage 2b] Importing from statewide data...")
+        before = len(firms)
+        firms = _import_statewide(firms, county_config)
+        print(f"[stage 2b] {before} → {len(firms)} firms after statewide import\n")
 
     # ── Intermediate dedup ──
     if start_stage <= 3:

@@ -114,7 +114,7 @@ def _add_source(firm: dict, source: str):
 
 _OUT_OF_STATE_RE = re.compile(
     r'\b(?:miami|arizona|california|colorado|shreveport|suncoast|'
-    r'sarasota|st\.?\s*louis|chicago|houston|dallas|los angeles|'
+    r'sarasota|chicago|houston|dallas|los angeles|'
     r'new york|atlanta|detroit|phoenix|denver)\b',
     re.IGNORECASE,
 )
@@ -295,11 +295,12 @@ def _enrich_martindale(firms: list, county_config: dict) -> int:
         print(f"  [enhance] Martindale error: {e}")
         return 0
 
+    _state_names = {"ks": "kansas", "mo": "missouri"}
+    state_slug = _state_names.get(county_config["state"].lower(), county_config["state"].lower())
     for firm in firms:
         if "martindale" in (firm.get("sources") or []):
             if not firm.get("martindale_url"):
-                name_slug = normalize_firm_name(firm["name"]).replace(" ", "-")
-                firm["martindale_url"] = f"https://www.martindale.com/by-location/kansas-lawyers/"
+                firm["martindale_url"] = f"https://www.martindale.com/by-location/{state_slug}-lawyers/"
 
     print(f"  [enhance] Martindale: +{added_websites} websites, +{new_firms} new firms")
     return added_websites + new_firms
@@ -315,7 +316,7 @@ _JUSTIA_HEADERS = {"User-Agent": "Mozilla/5.0 (compatible; LawFirmDirectory/1.0)
 def _enrich_justia(firms: list, county_config: dict) -> int:
     enriched = 0
     state_lower = county_config["state"].lower()
-    state_map = {"ks": "kansas"}
+    state_map = {"ks": "kansas", "mo": "missouri"}
     state_name = state_map.get(state_lower, state_lower)
 
     for city in county_config["cities"]:
@@ -358,9 +359,10 @@ def _enrich_justia(firms: list, county_config: dict) -> int:
 
 def _enrich_avvo(firms: list, county_config: dict) -> int:
     enriched = 0
+    state_lower = county_config["state"].lower()
     for city in county_config["cities"]:
         city_slug = city.lower().replace(" ", "-")
-        url = f"https://www.avvo.com/all-lawyers/{city_slug}-ks.html"
+        url = f"https://www.avvo.com/all-lawyers/{city_slug}-{state_lower}.html"
 
         try:
             resp = requests.get(url, headers=_JUSTIA_HEADERS, timeout=15)
@@ -595,7 +597,7 @@ def _validate_search_url(url: str) -> str | None:
     return None
 
 
-def _enrich_websites_via_search(firms: list) -> int:
+def _enrich_websites_via_search(firms: list, county_config: dict) -> int:
     to_search = [
         f for f in firms
         if not f.get("website") and _LEGAL_RE.search(f.get("name", "").lower())
@@ -608,7 +610,8 @@ def _enrich_websites_via_search(firms: list) -> int:
 
     for i, firm in enumerate(to_search):
         city = (firm.get("address") or {}).get("city", "")
-        query = f'{firm["name"]} {city} KS attorney'
+        state = county_config["state"]
+        query = f'{firm["name"]} {city} {state} attorney'
 
         urls = _ddg_search(query, delay=2.5)
         if not urls:
@@ -792,7 +795,7 @@ def enhance_firms(
         _enrich_avvo(firms, county_config)
         _enrich_findlaw(firms, county_config)
         _scrape_websites(firms)
-        _enrich_websites_via_search(firms)
+        _enrich_websites_via_search(firms, county_config)
     else:
         print("  [enhance] Test mode — skipping directory enrichment and website scraping")
 
@@ -885,10 +888,8 @@ def enhance_firms(
         if in_county_by_zip and firm_state and firm_state != county_state:
             addr["state"] = county_state
         if in_county_by_zip and firm_city not in county_cities_lower:
-            for c in county_config["cities"]:
-                if c.lower() == "kansas city":
-                    addr["city"] = c
-                    break
+            if county_config["cities"]:
+                addr["city"] = county_config["cities"][0]
 
         if not addr.get("county"):
             addr["county"] = county_name

@@ -88,7 +88,7 @@ def discover_foursquare(county_config: dict, api_key: str, test_mode: bool = Fal
                 resp.raise_for_status()
                 data = resp.json()
             except requests.RequestException as e:
-                print(f"  [foursquare] Error searching '{query}' in {city}: {e}")
+                print(f"  [foursquare] Error searching '{query}' in {location_label}: {e}")
                 continue
 
             results = data.get("results", [])
@@ -109,10 +109,8 @@ def discover_foursquare(county_config: dict, api_key: str, test_mode: bool = Fal
                     continue
 
                 if city_val.lower() not in county_cities_lower and address.get("zip") in zip_codes:
-                    for c in county_config["cities"]:
-                        if c.lower() == "kansas city":
-                            city_val = c
-                            break
+                    if county_config["cities"]:
+                        city_val = county_config["cities"][0]
 
                 if _is_duplicate(name, city_val, firms):
                     continue

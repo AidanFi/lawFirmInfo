@@ -22,7 +22,7 @@ def _parse_address(formatted: str) -> dict:
         "street": parts[0] if parts else "",
         "city": city_match.group(1).strip() if city_match else "",
         "county": "",
-        "state": state_match.group(1) if state_match else "KS",
+        "state": state_match.group(1) if state_match else "",
         "zip": zip_match.group(1) if zip_match else "",
     }
 

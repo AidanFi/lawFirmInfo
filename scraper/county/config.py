@@ -44,8 +44,7 @@ COUNTY_DEFINITIONS = {
         "extra_search_terms": [
             "Saint Louis Missouri",
             "St Louis MO",
-            "STL attorney",
-            "downtown St. Louis",
+            "downtown St. Louis MO",
         ],
     },
     "st_louis_county": {

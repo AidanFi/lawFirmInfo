@@ -85,10 +85,9 @@ COUNTY_DEFINITIONS = {
             "63137", "63138", "63141", "63143", "63144", "63146",
         ],
         "extra_search_terms": [
-            "Clayton MO attorney",
-            "Kirkwood MO attorney",
-            "Chesterfield MO attorney",
-            "Florissant MO attorney",
+            "Clayton, MO",
+            "Chesterfield, MO",
+            "Florissant, MO",
         ],
     },
 }

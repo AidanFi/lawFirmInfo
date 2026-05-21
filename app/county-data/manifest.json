@@ -20,7 +20,7 @@
       "slug": "st-louis-city-mo",
       "name": "St. Louis City County",
       "state": "MO",
-      "firm_count": 349,
+      "firm_count": 284,
       "last_updated": "2026-05-20",
       "csv_file": "st-louis-city-mo.csv"
     },
@@ -28,7 +28,7 @@
       "slug": "st-louis-county-mo",
       "name": "St. Louis County",
       "state": "MO",
-      "firm_count": 994,
+      "firm_count": 948,
       "last_updated": "2026-05-20",
       "csv_file": "st-louis-county-mo.csv"
     }

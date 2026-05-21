@@ -22,7 +22,8 @@
       "state": "MO",
       "firm_count": 284,
       "last_updated": "2026-05-20",
-      "csv_file": "st-louis-city-mo.csv"
+      "csv_file": "st-louis-city-mo.csv",
+      "count": 263
     },
     {
       "slug": "st-louis-county-mo",
@@ -30,7 +31,8 @@
       "state": "MO",
       "firm_count": 948,
       "last_updated": "2026-05-20",
-      "csv_file": "st-louis-county-mo.csv"
+      "csv_file": "st-louis-county-mo.csv",
+      "count": 881
     }
   ]
 }

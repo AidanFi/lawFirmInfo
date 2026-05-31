@@ -5,15 +5,15 @@
       "name": "Johnson County",
       "state": "KS",
       "firm_count": 341,
-      "last_updated": "2026-05-20",
+      "last_updated": "2026-05-31",
       "csv_file": "johnson-county-ks.csv"
     },
     {
       "slug": "wyandotte-county-ks",
       "name": "Wyandotte County",
       "state": "KS",
-      "firm_count": 273,
-      "last_updated": "2026-05-20",
+      "firm_count": 271,
+      "last_updated": "2026-05-31",
       "csv_file": "wyandotte-county-ks.csv"
     },
     {
@@ -21,7 +21,7 @@
       "name": "St. Louis City",
       "state": "MO",
       "firm_count": 263,
-      "last_updated": "2026-05-22",
+      "last_updated": "2026-05-31",
       "csv_file": "st-louis-city-mo.csv"
     },
     {
@@ -29,8 +29,16 @@
       "name": "St. Louis County",
       "state": "MO",
       "firm_count": 881,
-      "last_updated": "2026-05-22",
+      "last_updated": "2026-05-31",
       "csv_file": "st-louis-county-mo.csv"
+    },
+    {
+      "slug": "jackson-county-mo",
+      "name": "Jackson County",
+      "state": "MO",
+      "firm_count": 652,
+      "last_updated": "2026-05-31",
+      "csv_file": "jackson-county-mo.csv"
     }
   ]
 }

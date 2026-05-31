@@ -36,7 +36,7 @@
       "slug": "jackson-county-mo",
       "name": "Jackson County",
       "state": "MO",
-      "firm_count": 651,
+      "firm_count": 565,
       "last_updated": "2026-05-31",
       "csv_file": "jackson-county-mo.csv"
     },
@@ -44,7 +44,7 @@
       "slug": "greene-county-mo",
       "name": "Greene County",
       "state": "MO",
-      "firm_count": 188,
+      "firm_count": 166,
       "last_updated": "2026-05-31",
       "csv_file": "greene-county-mo.csv"
     },
@@ -52,7 +52,7 @@
       "slug": "st-charles-county-mo",
       "name": "St. Charles County",
       "state": "MO",
-      "firm_count": 207,
+      "firm_count": 178,
       "last_updated": "2026-05-31",
       "csv_file": "st-charles-county-mo.csv"
     }

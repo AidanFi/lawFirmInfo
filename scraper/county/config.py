@@ -30,6 +30,122 @@ COUNTY_DEFINITIONS = {
             "KCK",
         ],
     },
+    "jackson": {
+        "name": "Jackson County",
+        "state": "MO",
+        "slug": "jackson-county-mo",
+        "msa": "Kansas City",
+        "cities": [
+            "Kansas City", "Independence", "Blue Springs", "Lee's Summit",
+            "Raytown", "Grandview", "Sugar Creek", "Grain Valley", "Oak Grove",
+            "Lone Jack", "Buckner", "Sibley", "Lake Lotawana", "Loch Lloyd",
+            "Levasy", "Atherton", "Unity Village",
+        ],
+        "zip_codes": [
+            # Kansas City proper (Jackson County, south of Missouri River)
+            "64101", "64102", "64103", "64104", "64105", "64106",
+            "64108", "64109", "64110", "64111", "64112", "64113", "64114",
+            "64120", "64123", "64124", "64125", "64126", "64127", "64128",
+            "64129", "64130", "64131", "64132", "64133", "64134",
+            "64136", "64137", "64138", "64139",
+            "64145", "64146", "64147", "64148", "64149",
+            # Independence
+            "64050", "64052", "64053", "64054", "64055", "64056", "64057", "64058",
+            # Blue Springs / Buckner
+            "64013", "64014", "64015", "64016",
+            # Lee's Summit / Unity Village
+            "64063", "64064", "64065", "64082", "64086",
+            # Grain Valley
+            "64029",
+            # Grandview
+            "64030",
+            # Oak Grove
+            "64075",
+            # Lone Jack
+            "64070",
+        ],
+        "extra_search_terms": [
+            "Kansas City, Missouri",
+            "Independence, Missouri",
+        ],
+    },
+    "greene": {
+        "name": "Greene County",
+        "state": "MO",
+        "slug": "greene-county-mo",
+        "msa": "Springfield",
+        "cities": [
+            "Springfield", "Republic", "Battlefield", "Strafford", "Willard",
+            "Ash Grove", "Fair Grove", "Bois D'Arc", "Brookline",
+        ],
+        "zip_codes": [
+            # Springfield
+            "65801", "65802", "65803", "65804", "65806", "65807", "65809", "65810",
+            # Republic
+            "65738",
+            # Battlefield
+            "65619",
+            # Strafford
+            "65757",
+            # Willard
+            "65781",
+            # Ash Grove
+            "65604",
+            # Fair Grove
+            "65648",
+            # Bois D'Arc
+            "65612",
+        ],
+        "extra_search_terms": [
+            "Springfield, Missouri",
+            "Springfield MO",
+        ],
+    },
+    "st_charles": {
+        "name": "St. Charles County",
+        "state": "MO",
+        "slug": "st-charles-county-mo",
+        "msa": "St. Louis",
+        "cities": [
+            "O'Fallon", "St. Peters", "St. Charles", "Wentzville",
+            "Lake Saint Louis", "Cottleville", "Weldon Spring", "Augusta",
+            "Dardenne Prairie", "Flint Hill", "New Melle", "Josephville",
+            "Portage Des Sioux", "St. Paul", "Foristell",
+        ],
+        "zip_codes": [
+            # St. Charles / Weldon Spring
+            "63301", "63303", "63304",
+            # Augusta
+            "63332",
+            # Cottleville
+            "63338",
+            # Defiance (small town, St. Charles County)
+            "63341",
+            # Foristell
+            "63348",
+            # New Melle
+            "63362",
+            # Flint Hill
+            "63363",
+            # O'Fallon / Lake Saint Louis / St. Paul
+            "63366",
+            # Lake Saint Louis
+            "63367",
+            # O'Fallon / Dardenne Prairie
+            "63368",
+            # Portage Des Sioux
+            "63373",
+            # St. Peters
+            "63376",
+            # Wentzville
+            "63385",
+        ],
+        "extra_search_terms": [
+            "O'Fallon, Missouri",
+            "St. Peters, Missouri",
+            "Wentzville, Missouri",
+        ],
+    },
     "st_louis_city": {
         "name": "St. Louis City",
         "state": "MO",

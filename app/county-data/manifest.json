@@ -18,7 +18,7 @@
     },
     {
       "slug": "st-louis-city-mo",
-      "name": "St. Louis City",
+      "name": "St. Louis City County",
       "state": "MO",
       "firm_count": 263,
       "last_updated": "2026-05-31",
@@ -36,9 +36,17 @@
       "slug": "jackson-county-mo",
       "name": "Jackson County",
       "state": "MO",
-      "firm_count": 652,
+      "firm_count": 651,
       "last_updated": "2026-05-31",
       "csv_file": "jackson-county-mo.csv"
+    },
+    {
+      "slug": "greene-county-mo",
+      "name": "Greene County",
+      "state": "MO",
+      "firm_count": 188,
+      "last_updated": "2026-05-31",
+      "csv_file": "greene-county-mo.csv"
     }
   ]
 }

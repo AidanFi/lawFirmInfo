@@ -36,7 +36,7 @@
       "slug": "jackson-county-mo",
       "name": "Jackson County",
       "state": "MO",
-      "firm_count": 565,
+      "firm_count": 562,
       "last_updated": "2026-05-31",
       "csv_file": "jackson-county-mo.csv"
     },
@@ -52,7 +52,7 @@
       "slug": "st-charles-county-mo",
       "name": "St. Charles County",
       "state": "MO",
-      "firm_count": 178,
+      "firm_count": 176,
       "last_updated": "2026-05-31",
       "csv_file": "st-charles-county-mo.csv"
     }

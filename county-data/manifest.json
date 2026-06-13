@@ -4,24 +4,25 @@
       "slug": "johnson-county-ks",
       "name": "Johnson County",
       "state": "KS",
-      "firm_count": 341,
-      "last_updated": "2026-05-31",
-      "csv_file": "johnson-county-ks.csv"
+      "firm_count": 1423,
+      "last_updated": "2026-06-12",
+      "csv_file": "johnson-county-ks.csv",
+      "count": 611
     },
     {
       "slug": "wyandotte-county-ks",
       "name": "Wyandotte County",
       "state": "KS",
       "firm_count": 271,
-      "last_updated": "2026-05-31",
+      "last_updated": "2026-06-12",
       "csv_file": "wyandotte-county-ks.csv"
     },
     {
       "slug": "st-louis-city-mo",
-      "name": "St. Louis City",
+      "name": "St. Louis City County",
       "state": "MO",
       "firm_count": 263,
-      "last_updated": "2026-05-31",
+      "last_updated": "2026-06-12",
       "csv_file": "st-louis-city-mo.csv"
     },
     {
@@ -29,7 +30,7 @@
       "name": "St. Louis County",
       "state": "MO",
       "firm_count": 880,
-      "last_updated": "2026-05-31",
+      "last_updated": "2026-06-12",
       "csv_file": "st-louis-county-mo.csv"
     },
     {
@@ -37,7 +38,7 @@
       "name": "Jackson County",
       "state": "MO",
       "firm_count": 562,
-      "last_updated": "2026-05-31",
+      "last_updated": "2026-06-12",
       "csv_file": "jackson-county-mo.csv"
     },
     {
@@ -45,7 +46,7 @@
       "name": "Greene County",
       "state": "MO",
       "firm_count": 166,
-      "last_updated": "2026-05-31",
+      "last_updated": "2026-06-12",
       "csv_file": "greene-county-mo.csv"
     },
     {
@@ -53,7 +54,7 @@
       "name": "St. Charles County",
       "state": "MO",
       "firm_count": 176,
-      "last_updated": "2026-05-31",
+      "last_updated": "2026-06-12",
       "csv_file": "st-charles-county-mo.csv"
     }
   ]

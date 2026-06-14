@@ -12,10 +12,9 @@
       "slug": "wyandotte-county-ks",
       "name": "Wyandotte County",
       "state": "KS",
-      "firm_count": 344,
+      "firm_count": 233,
       "last_updated": "2026-06-13",
-      "csv_file": "wyandotte-county-ks.csv",
-      "count": 233
+      "csv_file": "wyandotte-county-ks.csv"
     },
     {
       "slug": "st-louis-city-mo",

@@ -24,7 +24,9 @@ from dotenv import load_dotenv
 from scraper.county.config import get_county_config
 from scraper.county.google_places import discover_google
 from scraper.county.foursquare import discover_foursquare
+from scraper.county.yelp_places import discover_yelp
 from scraper.county.enhance import enhance_firms
+from scraper.phases.martindale import scrape_martindale
 from scraper.county.csv_output import firms_to_csv
 from scraper.county.manifest import update_manifest
 from scraper.utils.normalize import deduplicate_firms, are_same_firm
@@ -149,6 +151,36 @@ def _merge_foursquare(firms: list, fsq_firms: list) -> list:
     return firms
 
 
+def _merge_yelp(firms: list, yelp_firms: list) -> list:
+    for yf in yelp_firms:
+        yf_city = (yf.get("address") or {}).get("city", "").lower()
+        matched = False
+
+        for firm in firms:
+            firm_city = (firm.get("address") or {}).get("city", "").lower()
+            if firm_city == yf_city and are_same_firm(yf["name"], firm["name"]):
+                if not firm.get("phone") and yf.get("phone"):
+                    firm["phone"] = yf["phone"]
+                if not firm.get("coordinates") and yf.get("coordinates"):
+                    firm["coordinates"] = yf["coordinates"]
+                addr = firm.get("address") or {}
+                yf_addr = yf.get("address") or {}
+                if not addr.get("street") and yf_addr.get("street"):
+                    addr["street"] = yf_addr["street"]
+                if not addr.get("zip") and yf_addr.get("zip"):
+                    addr["zip"] = yf_addr["zip"]
+                sources = firm.setdefault("sources", [])
+                if "yelp" not in sources:
+                    sources.append("yelp")
+                matched = True
+                break
+
+        if not matched:
+            firms.append(yf)
+
+    return firms
+
+
 def _checkpoint_path(county_slug: str) -> str:
     return os.path.join("data", "county", f"{county_slug}_checkpoint.json")
 
@@ -268,28 +300,54 @@ def main():
             print(f"[stage 2] Merged: {before} + {len(fsq_firms)} Foursquare → {len(firms)} total\n")
         save_checkpoint(firms, phase=3, path=cp_path)
 
-    # ── Stage 2b: Import from statewide data ──
+    # ── Stage 3: Yelp Discovery ──
     if start_stage <= 3:
-        print("[stage 2b] Importing from statewide data...")
+        yelp_key = os.getenv("YELP_API_KEY")
+        if not yelp_key:
+            print("[stage 3] Yelp API key not found — skipping Yelp")
+        else:
+            print("[stage 3] Yelp discovery...")
+            yelp_firms = discover_yelp(county_config, yelp_key, test_mode=args.test)
+            before = len(firms)
+            firms = _merge_yelp(firms, yelp_firms)
+            print(f"[stage 3] Merged: {before} + {len(yelp_firms)} Yelp → {len(firms)} total\n")
+        save_checkpoint(firms, phase=4, path=cp_path)
+
+    # ── Stage 4: Import from statewide data ──
+    if start_stage <= 4:
+        print("[stage 4] Importing from statewide data...")
         before = len(firms)
         firms = _import_statewide(firms, county_config)
-        print(f"[stage 2b] {before} → {len(firms)} firms after statewide import\n")
+        print(f"[stage 4] {before} → {len(firms)} firms after statewide import\n")
+
+    # ── Stage 4b: Martindale directory enrichment ──
+    if start_stage <= 4:
+        print("[stage 4b] Martindale directory scrape...")
+        added_web, new_firms = scrape_martindale(
+            firms,
+            cities=county_config["cities"],
+            delay=1.2,
+            max_pages_per_city=5,
+            test_mode=args.test,
+            add_new=True,
+        )
+        print(f"[stage 4b] +{added_web} websites filled, +{new_firms} new firms\n")
 
     # ── Intermediate dedup ──
-    if start_stage <= 3:
+    if start_stage <= 4:
         print("[dedup] Running intermediate deduplication...")
         log_path = os.path.join("data", "county", f"{slug}_potential_duplicates.log")
         firms = deduplicate_firms(firms, log_path=log_path)
         print(f"[dedup] {len(firms)} firms after intermediate dedup\n")
-        save_checkpoint(firms, phase=4, path=cp_path)
+        save_checkpoint(firms, phase=5, path=cp_path)
 
-    # ── Stage 3: Enhancement ──
-    if start_stage <= 4 and not args.skip_enhance:
+    # ── Stage 5: Enhancement ──
+    if start_stage <= 5 and not args.skip_enhance:
         firms = enhance_firms(
             firms, county_config,
             test_mode=args.test, skip_ks_courts=args.skip_ks_courts,
         )
-        save_checkpoint(firms, phase=5, path=cp_path)
+        save_checkpoint(firms, phase=6, path=cp_path)
 
     # ── Pre-dedup cleanup: normalize attorneys field ──
     for firm in firms:

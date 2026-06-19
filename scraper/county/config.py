@@ -11,6 +11,24 @@ COUNTY_DEFINITIONS = {
             "Lake Quivira", "Mission Hills", "Mission Woods", "Westwood Hills",
         ],
     },
+    "leavenworth": {
+        "name": "Leavenworth County",
+        "state": "KS",
+        "slug": "leavenworth-county-ks",
+        "msa": "Kansas City",
+        "cities": [
+            "Leavenworth", "Lansing", "Basehor", "Tonganoxie", "Linwood",
+            "Easton", "Fort Leavenworth", "Stranger", "McLouth",
+        ],
+        "zip_codes": [
+            "66048", "66043", "66007", "66086", "66052",
+            "66020", "66027", "66019", "66054",
+        ],
+        "extra_search_terms": [
+            "Leavenworth KS",
+            "Fort Leavenworth",
+        ],
+    },
     "wyandotte": {
         "name": "Wyandotte County",
         "state": "KS",
@@ -28,6 +46,51 @@ COUNTY_DEFINITIONS = {
         "extra_search_terms": [
             "Kansas City Kansas",
             "KCK",
+        ],
+    },
+    "miami": {
+        "name": "Miami County",
+        "state": "KS",
+        "slug": "miami-county-ks",
+        "msa": "Kansas City",
+        # Order matters: clean_county.py maps cities[i] -> zip_codes[i].
+        # Cities with a clean primary ZIP come first (aligned with zip_codes);
+        # Bucyrus is last (its ZIP 66013 is omitted — see below — so it stays
+        # unmapped here and is fixed by fix_miami_zips.py).
+        "cities": [
+            "Paola", "Osawatomie", "Louisburg", "Fontana", "Hillsdale",
+            "Bucyrus",
+        ],
+        # Spring Hill (66083) and Bucyrus (66013) ZIPs are intentionally
+        # omitted from statewide ZIP matching — they straddle the Johnson
+        # County line and would pull in out-of-county (Johnson/Stilwell) firms.
+        "zip_codes": [
+            "66071", "66064", "66053", "66026", "66036",
+        ],
+        "extra_search_terms": [
+            "Paola KS",
+            "Osawatomie KS",
+            "Louisburg KS",
+            "Miami County Kansas",
+        ],
+    },
+    "linn": {
+        "name": "Linn County",
+        "state": "KS",
+        "slug": "linn-county-ks",
+        "msa": "Kansas City",
+        "cities": [
+            "Pleasanton", "La Cygne", "Mound City", "Prescott", "Blue Mound",
+            "Parker", "Linn Valley", "Centerville",
+        ],
+        "zip_codes": [
+            "66075", "66040", "66056", "66767", "66010", "66072",
+        ],
+        "extra_search_terms": [
+            "Mound City KS",
+            "Pleasanton KS",
+            "La Cygne KS",
+            "Linn County Kansas",
         ],
     },
     "jackson": {

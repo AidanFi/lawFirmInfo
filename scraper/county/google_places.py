@@ -81,6 +81,14 @@ def discover_google(county_config: dict, api_key: str, test_mode: bool = False) 
                     address = _parse_address(place.get("formatted_address", ""))
                     city_val = address["city"] or location_label
 
+                    # Reject wrong-state same-named cities (e.g. Louisburg, NC
+                    # vs Louisburg, KS). A blank state is allowed through since
+                    # some detail rows omit it; ZIP membership re-confirms.
+                    addr_state = address.get("state", "")
+                    if addr_state and addr_state != state:
+                        skipped_out_of_county += 1
+                        continue
+
                     in_county = (
                         city_val.lower() in county_cities_lower
                         or (zip_codes and address.get("zip") in zip_codes)

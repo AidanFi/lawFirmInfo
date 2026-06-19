@@ -57,9 +57,12 @@ COUNTY_DEFINITIONS = {
         # Cities with a clean primary ZIP come first (aligned with zip_codes);
         # Bucyrus is last (its ZIP 66013 is omitted — see below — so it stays
         # unmapped here and is fixed by fix_miami_zips.py).
+        # Spring Hill straddles the Johnson/Miami line; the KS attorney
+        # registry lists several Miami-area private attorneys there, so it is
+        # included for discovery (firms get re-curated against the registry).
         "cities": [
             "Paola", "Osawatomie", "Louisburg", "Fontana", "Hillsdale",
-            "Bucyrus",
+            "Bucyrus", "Spring Hill",
         ],
         # Spring Hill (66083) and Bucyrus (66013) ZIPs are intentionally
         # omitted from statewide ZIP matching — they straddle the Johnson

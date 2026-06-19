@@ -248,8 +248,8 @@ def _enrich_from_ks_courts(firms: list, county_config: dict, test_mode: bool = F
             _add_source(existing, "ks_courts")
             enriched += 1
         else:
-            if not ks_firm.get("phone"):
-                continue
+            # Per the include-all-firms policy, do NOT skip registered
+            # attorneys just because the registry row lacks a phone number.
             if not _looks_like_legal_entity(
                 ks_firm["name"], [], ["ks_courts"],
             ):

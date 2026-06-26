@@ -84,7 +84,7 @@
       "slug": "logan-county-ok",
       "name": "Logan County",
       "state": "OK",
-      "firm_count": 15,
+      "firm_count": 221,
       "last_updated": "2026-06-26",
       "csv_file": "logan-county-ok.csv"
     },
@@ -92,7 +92,7 @@
       "slug": "washington-county-ok",
       "name": "Washington County",
       "state": "OK",
-      "firm_count": 26,
+      "firm_count": 76,
       "last_updated": "2026-06-26",
       "csv_file": "washington-county-ok.csv"
     },
@@ -100,7 +100,7 @@
       "slug": "osage-county-ok",
       "name": "Osage County",
       "state": "OK",
-      "firm_count": 13,
+      "firm_count": 77,
       "last_updated": "2026-06-26",
       "csv_file": "osage-county-ok.csv"
     },
@@ -108,7 +108,7 @@
       "slug": "mcclain-county-ok",
       "name": "McClain County",
       "state": "OK",
-      "firm_count": 24,
+      "firm_count": 145,
       "last_updated": "2026-06-26",
       "csv_file": "mcclain-county-ok.csv"
     },
@@ -116,7 +116,7 @@
       "slug": "wagoner-county-ok",
       "name": "Wagoner County",
       "state": "OK",
-      "firm_count": 34,
+      "firm_count": 167,
       "last_updated": "2026-06-26",
       "csv_file": "wagoner-county-ok.csv"
     },
@@ -124,7 +124,7 @@
       "slug": "okmulgee-county-ok",
       "name": "Okmulgee County",
       "state": "OK",
-      "firm_count": 27,
+      "firm_count": 79,
       "last_updated": "2026-06-26",
       "csv_file": "okmulgee-county-ok.csv"
     },
@@ -132,7 +132,7 @@
       "slug": "rogers-county-ok",
       "name": "Rogers County",
       "state": "OK",
-      "firm_count": 35,
+      "firm_count": 176,
       "last_updated": "2026-06-26",
       "csv_file": "rogers-county-ok.csv"
     },
@@ -140,7 +140,7 @@
       "slug": "creek-county-ok",
       "name": "Creek County",
       "state": "OK",
-      "firm_count": 37,
+      "firm_count": 184,
       "last_updated": "2026-06-26",
       "csv_file": "creek-county-ok.csv"
     },
@@ -148,7 +148,7 @@
       "slug": "grady-county-ok",
       "name": "Grady County",
       "state": "OK",
-      "firm_count": 38,
+      "firm_count": 102,
       "last_updated": "2026-06-26",
       "csv_file": "grady-county-ok.csv"
     },
@@ -156,7 +156,7 @@
       "slug": "pottawatomie-county-ok",
       "name": "Pottawatomie County",
       "state": "OK",
-      "firm_count": 39,
+      "firm_count": 107,
       "last_updated": "2026-06-26",
       "csv_file": "pottawatomie-county-ok.csv"
     },
@@ -164,7 +164,7 @@
       "slug": "canadian-county-ok",
       "name": "Canadian County",
       "state": "OK",
-      "firm_count": 71,
+      "firm_count": 239,
       "last_updated": "2026-06-26",
       "csv_file": "canadian-county-ok.csv"
     },
@@ -172,7 +172,7 @@
       "slug": "cleveland-county-ok",
       "name": "Cleveland County",
       "state": "OK",
-      "firm_count": 123,
+      "firm_count": 289,
       "last_updated": "2026-06-26",
       "csv_file": "cleveland-county-ok.csv"
     },
@@ -180,7 +180,7 @@
       "slug": "tulsa-county-ok",
       "name": "Tulsa County",
       "state": "OK",
-      "firm_count": 383,
+      "firm_count": 515,
       "last_updated": "2026-06-26",
       "csv_file": "tulsa-county-ok.csv"
     },
@@ -188,9 +188,11 @@
       "slug": "oklahoma-county-ok",
       "name": "Oklahoma County",
       "state": "OK",
-      "firm_count": 607,
+      "firm_count": 752,
       "last_updated": "2026-06-26",
       "csv_file": "oklahoma-county-ok.csv"
     }
-  ]
+  ],
+  "total_firms": 6172,
+  "last_updated": "2026-06-26"
 }

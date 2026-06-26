@@ -180,7 +180,7 @@
       "slug": "tulsa-county-ok",
       "name": "Tulsa County",
       "state": "OK",
-      "firm_count": 752,
+      "firm_count": 751,
       "last_updated": "2026-06-26",
       "csv_file": "tulsa-county-ok.csv"
     },
@@ -188,11 +188,11 @@
       "slug": "oklahoma-county-ok",
       "name": "Oklahoma County",
       "state": "OK",
-      "firm_count": 1142,
+      "firm_count": 1141,
       "last_updated": "2026-06-26",
       "csv_file": "oklahoma-county-ok.csv"
     }
   ],
-  "total_firms": 7930,
+  "total_firms": 7928,
   "last_updated": "2026-06-26"
 }

@@ -84,7 +84,7 @@
       "slug": "logan-county-ok",
       "name": "Logan County",
       "state": "OK",
-      "firm_count": 221,
+      "firm_count": 261,
       "last_updated": "2026-06-26",
       "csv_file": "logan-county-ok.csv"
     },
@@ -108,7 +108,7 @@
       "slug": "mcclain-county-ok",
       "name": "McClain County",
       "state": "OK",
-      "firm_count": 145,
+      "firm_count": 180,
       "last_updated": "2026-06-26",
       "csv_file": "mcclain-county-ok.csv"
     },
@@ -116,7 +116,7 @@
       "slug": "wagoner-county-ok",
       "name": "Wagoner County",
       "state": "OK",
-      "firm_count": 167,
+      "firm_count": 246,
       "last_updated": "2026-06-26",
       "csv_file": "wagoner-county-ok.csv"
     },
@@ -132,7 +132,7 @@
       "slug": "rogers-county-ok",
       "name": "Rogers County",
       "state": "OK",
-      "firm_count": 176,
+      "firm_count": 290,
       "last_updated": "2026-06-26",
       "csv_file": "rogers-county-ok.csv"
     },
@@ -140,7 +140,7 @@
       "slug": "creek-county-ok",
       "name": "Creek County",
       "state": "OK",
-      "firm_count": 184,
+      "firm_count": 299,
       "last_updated": "2026-06-26",
       "csv_file": "creek-county-ok.csv"
     },
@@ -164,7 +164,7 @@
       "slug": "canadian-county-ok",
       "name": "Canadian County",
       "state": "OK",
-      "firm_count": 239,
+      "firm_count": 548,
       "last_updated": "2026-06-26",
       "csv_file": "canadian-county-ok.csv"
     },
@@ -172,7 +172,7 @@
       "slug": "cleveland-county-ok",
       "name": "Cleveland County",
       "state": "OK",
-      "firm_count": 289,
+      "firm_count": 728,
       "last_updated": "2026-06-26",
       "csv_file": "cleveland-county-ok.csv"
     },
@@ -180,7 +180,7 @@
       "slug": "tulsa-county-ok",
       "name": "Tulsa County",
       "state": "OK",
-      "firm_count": 515,
+      "firm_count": 737,
       "last_updated": "2026-06-26",
       "csv_file": "tulsa-county-ok.csv"
     },
@@ -188,11 +188,11 @@
       "slug": "oklahoma-county-ok",
       "name": "Oklahoma County",
       "state": "OK",
-      "firm_count": 752,
+      "firm_count": 1104,
       "last_updated": "2026-06-26",
       "csv_file": "oklahoma-county-ok.csv"
     }
   ],
-  "total_firms": 6172,
+  "total_firms": 7877,
   "last_updated": "2026-06-26"
 }

@@ -81,6 +81,46 @@
       "csv_file": "linn-county-ks.csv"
     },
     {
+      "slug": "douglas-county-ks",
+      "name": "Douglas County",
+      "state": "KS",
+      "firm_count": 981,
+      "last_updated": "2026-07-01",
+      "csv_file": "douglas-county-ks.csv"
+    },
+    {
+      "slug": "franklin-county-ks",
+      "name": "Franklin County",
+      "state": "KS",
+      "firm_count": 67,
+      "last_updated": "2026-07-01",
+      "csv_file": "franklin-county-ks.csv"
+    },
+    {
+      "slug": "jefferson-county-ks",
+      "name": "Jefferson County",
+      "state": "KS",
+      "firm_count": 35,
+      "last_updated": "2026-07-01",
+      "csv_file": "jefferson-county-ks.csv"
+    },
+    {
+      "slug": "osage-county-ks",
+      "name": "Osage County",
+      "state": "KS",
+      "firm_count": 32,
+      "last_updated": "2026-07-01",
+      "csv_file": "osage-county-ks.csv"
+    },
+    {
+      "slug": "shawnee-county-ks",
+      "name": "Shawnee County",
+      "state": "KS",
+      "firm_count": 1553,
+      "last_updated": "2026-07-01",
+      "csv_file": "shawnee-county-ks.csv"
+    },
+    {
       "slug": "logan-county-ok",
       "name": "Logan County",
       "state": "OK",
@@ -193,6 +233,6 @@
       "csv_file": "oklahoma-county-ok.csv"
     }
   ],
-  "total_firms": 12541,
+  "total_firms": 15209,
   "last_updated": "2026-07-01"
 }

@@ -4,7 +4,7 @@
       "slug": "johnson-county-ks",
       "name": "Johnson County",
       "state": "KS",
-      "firm_count": 5199,
+      "firm_count": 5166,
       "last_updated": "2026-07-01",
       "csv_file": "johnson-county-ks.csv"
     },
@@ -12,7 +12,7 @@
       "slug": "wyandotte-county-ks",
       "name": "Wyandotte County",
       "state": "KS",
-      "firm_count": 808,
+      "firm_count": 804,
       "last_updated": "2026-07-01",
       "csv_file": "wyandotte-county-ks.csv"
     },
@@ -60,7 +60,7 @@
       "slug": "leavenworth-county-ks",
       "name": "Leavenworth County",
       "state": "KS",
-      "firm_count": 347,
+      "firm_count": 346,
       "last_updated": "2026-07-01",
       "csv_file": "leavenworth-county-ks.csv"
     },
@@ -193,6 +193,6 @@
       "csv_file": "oklahoma-county-ok.csv"
     }
   ],
-  "total_firms": 13494,
+  "total_firms": 13456,
   "last_updated": "2026-07-01"
 }

@@ -100,7 +100,7 @@
       "slug": "jefferson-county-ks",
       "name": "Jefferson County",
       "state": "KS",
-      "firm_count": 35,
+      "firm_count": 41,
       "last_updated": "2026-07-01",
       "csv_file": "jefferson-county-ks.csv"
     },
@@ -108,7 +108,7 @@
       "slug": "osage-county-ks",
       "name": "Osage County",
       "state": "KS",
-      "firm_count": 32,
+      "firm_count": 37,
       "last_updated": "2026-07-01",
       "csv_file": "osage-county-ks.csv"
     },
@@ -233,6 +233,6 @@
       "csv_file": "oklahoma-county-ok.csv"
     }
   ],
-  "total_firms": 15209,
+  "total_firms": 15220,
   "last_updated": "2026-07-01"
 }

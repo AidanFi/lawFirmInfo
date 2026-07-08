@@ -1,0 +1,238 @@
+{
+  "counties": [
+    {
+      "slug": "johnson-county-ks",
+      "name": "Johnson County",
+      "state": "KS",
+      "firm_count": 4591,
+      "last_updated": "2026-07-01",
+      "csv_file": "johnson-county-ks.csv"
+    },
+    {
+      "slug": "wyandotte-county-ks",
+      "name": "Wyandotte County",
+      "state": "KS",
+      "firm_count": 643,
+      "last_updated": "2026-07-01",
+      "csv_file": "wyandotte-county-ks.csv"
+    },
+    {
+      "slug": "st-louis-city-mo",
+      "name": "St. Louis City County",
+      "state": "MO",
+      "firm_count": 263,
+      "last_updated": "2026-06-26",
+      "csv_file": "st-louis-city-mo.csv"
+    },
+    {
+      "slug": "st-louis-county-mo",
+      "name": "St. Louis County",
+      "state": "MO",
+      "firm_count": 880,
+      "last_updated": "2026-06-26",
+      "csv_file": "st-louis-county-mo.csv"
+    },
+    {
+      "slug": "jackson-county-mo",
+      "name": "Jackson County",
+      "state": "MO",
+      "firm_count": 562,
+      "last_updated": "2026-06-26",
+      "csv_file": "jackson-county-mo.csv"
+    },
+    {
+      "slug": "greene-county-mo",
+      "name": "Greene County",
+      "state": "MO",
+      "firm_count": 166,
+      "last_updated": "2026-06-26",
+      "csv_file": "greene-county-mo.csv"
+    },
+    {
+      "slug": "st-charles-county-mo",
+      "name": "St. Charles County",
+      "state": "MO",
+      "firm_count": 176,
+      "last_updated": "2026-06-26",
+      "csv_file": "st-charles-county-mo.csv"
+    },
+    {
+      "slug": "leavenworth-county-ks",
+      "name": "Leavenworth County",
+      "state": "KS",
+      "firm_count": 242,
+      "last_updated": "2026-07-01",
+      "csv_file": "leavenworth-county-ks.csv"
+    },
+    {
+      "slug": "miami-county-ks",
+      "name": "Miami County",
+      "state": "KS",
+      "firm_count": 100,
+      "last_updated": "2026-07-01",
+      "csv_file": "miami-county-ks.csv"
+    },
+    {
+      "slug": "linn-county-ks",
+      "name": "Linn County",
+      "state": "KS",
+      "firm_count": 33,
+      "last_updated": "2026-07-01",
+      "csv_file": "linn-county-ks.csv"
+    },
+    {
+      "slug": "douglas-county-ks",
+      "name": "Douglas County",
+      "state": "KS",
+      "firm_count": 981,
+      "last_updated": "2026-07-01",
+      "csv_file": "douglas-county-ks.csv"
+    },
+    {
+      "slug": "franklin-county-ks",
+      "name": "Franklin County",
+      "state": "KS",
+      "firm_count": 67,
+      "last_updated": "2026-07-01",
+      "csv_file": "franklin-county-ks.csv"
+    },
+    {
+      "slug": "jefferson-county-ks",
+      "name": "Jefferson County",
+      "state": "KS",
+      "firm_count": 41,
+      "last_updated": "2026-07-01",
+      "csv_file": "jefferson-county-ks.csv"
+    },
+    {
+      "slug": "osage-county-ks",
+      "name": "Osage County",
+      "state": "KS",
+      "firm_count": 37,
+      "last_updated": "2026-07-01",
+      "csv_file": "osage-county-ks.csv"
+    },
+    {
+      "slug": "shawnee-county-ks",
+      "name": "Shawnee County",
+      "state": "KS",
+      "firm_count": 1553,
+      "last_updated": "2026-07-01",
+      "csv_file": "shawnee-county-ks.csv"
+    },
+    {
+      "slug": "logan-county-ok",
+      "name": "Logan County",
+      "state": "OK",
+      "firm_count": 261,
+      "last_updated": "2026-06-26",
+      "csv_file": "logan-county-ok.csv"
+    },
+    {
+      "slug": "washington-county-ok",
+      "name": "Washington County",
+      "state": "OK",
+      "firm_count": 76,
+      "last_updated": "2026-06-26",
+      "csv_file": "washington-county-ok.csv"
+    },
+    {
+      "slug": "osage-county-ok",
+      "name": "Osage County",
+      "state": "OK",
+      "firm_count": 77,
+      "last_updated": "2026-06-26",
+      "csv_file": "osage-county-ok.csv"
+    },
+    {
+      "slug": "mcclain-county-ok",
+      "name": "McClain County",
+      "state": "OK",
+      "firm_count": 180,
+      "last_updated": "2026-06-26",
+      "csv_file": "mcclain-county-ok.csv"
+    },
+    {
+      "slug": "wagoner-county-ok",
+      "name": "Wagoner County",
+      "state": "OK",
+      "firm_count": 246,
+      "last_updated": "2026-06-26",
+      "csv_file": "wagoner-county-ok.csv"
+    },
+    {
+      "slug": "okmulgee-county-ok",
+      "name": "Okmulgee County",
+      "state": "OK",
+      "firm_count": 79,
+      "last_updated": "2026-06-26",
+      "csv_file": "okmulgee-county-ok.csv"
+    },
+    {
+      "slug": "rogers-county-ok",
+      "name": "Rogers County",
+      "state": "OK",
+      "firm_count": 290,
+      "last_updated": "2026-06-26",
+      "csv_file": "rogers-county-ok.csv"
+    },
+    {
+      "slug": "creek-county-ok",
+      "name": "Creek County",
+      "state": "OK",
+      "firm_count": 299,
+      "last_updated": "2026-06-26",
+      "csv_file": "creek-county-ok.csv"
+    },
+    {
+      "slug": "grady-county-ok",
+      "name": "Grady County",
+      "state": "OK",
+      "firm_count": 102,
+      "last_updated": "2026-06-26",
+      "csv_file": "grady-county-ok.csv"
+    },
+    {
+      "slug": "pottawatomie-county-ok",
+      "name": "Pottawatomie County",
+      "state": "OK",
+      "firm_count": 107,
+      "last_updated": "2026-06-26",
+      "csv_file": "pottawatomie-county-ok.csv"
+    },
+    {
+      "slug": "canadian-county-ok",
+      "name": "Canadian County",
+      "state": "OK",
+      "firm_count": 548,
+      "last_updated": "2026-06-26",
+      "csv_file": "canadian-county-ok.csv"
+    },
+    {
+      "slug": "cleveland-county-ok",
+      "name": "Cleveland County",
+      "state": "OK",
+      "firm_count": 728,
+      "last_updated": "2026-06-26",
+      "csv_file": "cleveland-county-ok.csv"
+    },
+    {
+      "slug": "tulsa-county-ok",
+      "name": "Tulsa County",
+      "state": "OK",
+      "firm_count": 751,
+      "last_updated": "2026-06-26",
+      "csv_file": "tulsa-county-ok.csv"
+    },
+    {
+      "slug": "oklahoma-county-ok",
+      "name": "Oklahoma County",
+      "state": "OK",
+      "firm_count": 1141,
+      "last_updated": "2026-06-26",
+      "csv_file": "oklahoma-county-ok.csv"
+    }
+  ],
+  "total_firms": 15220,
+  "last_updated": "2026-07-01"
+}

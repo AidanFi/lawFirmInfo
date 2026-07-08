@@ -279,6 +279,10 @@ def _enrich_from_ks_courts(firms: list, county_config: dict, test_mode: bool = F
 # ---------------------------------------------------------------------------
 
 def _enrich_martindale(firms: list, county_config: dict) -> int:
+    # Martindale scraper is KS/MO only — skip gracefully for other states
+    if county_config.get("state", "").upper() not in ("KS", "MO"):
+        print(f"  [enhance] Martindale: skipping (state={county_config.get('state')})")
+        return 0
     try:
         from scraper.phases.martindale import scrape_martindale
     except ImportError:
@@ -295,7 +299,7 @@ def _enrich_martindale(firms: list, county_config: dict) -> int:
         print(f"  [enhance] Martindale error: {e}")
         return 0
 
-    _state_names = {"ks": "kansas", "mo": "missouri"}
+    _state_names = {"ks": "kansas", "mo": "missouri", "ok": "oklahoma"}
     state_slug = _state_names.get(county_config["state"].lower(), county_config["state"].lower())
     for firm in firms:
         if "martindale" in (firm.get("sources") or []):
@@ -316,7 +320,7 @@ _JUSTIA_HEADERS = {"User-Agent": "Mozilla/5.0 (compatible; LawFirmDirectory/1.0)
 def _enrich_justia(firms: list, county_config: dict) -> int:
     enriched = 0
     state_lower = county_config["state"].lower()
-    state_map = {"ks": "kansas", "mo": "missouri"}
+    state_map = {"ks": "kansas", "mo": "missouri", "ok": "oklahoma"}
     state_name = state_map.get(state_lower, state_lower)
 
     for city in county_config["cities"]:

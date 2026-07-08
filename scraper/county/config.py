@@ -96,6 +96,56 @@ COUNTY_DEFINITIONS = {
             "Linn County Kansas",
         ],
     },
+    "douglas": {
+        "name": "Douglas County",
+        "state": "KS",
+        "slug": "douglas-county-ks",
+        "msa": "Lawrence",
+        "cities": ["Lawrence", "Eudora", "Baldwin City", "Lecompton"],
+        "zip_codes": ["66044", "66045", "66046", "66047", "66049", "66025", "66006", "66050"],
+        "extra_search_terms": ["Lawrence KS", "University of Kansas attorneys", "Douglas County Kansas"],
+    },
+    "franklin_ks": {
+        "name": "Franklin County",
+        "state": "KS",
+        "slug": "franklin-county-ks",
+        "msa": "Kansas City",
+        "cities": ["Ottawa", "Wellsville", "Williamsburg", "Richmond", "Lane"],
+        "zip_codes": ["66067", "66092", "66095", "66081"],
+        "extra_search_terms": ["Ottawa KS", "Franklin County Kansas"],
+    },
+    "jefferson_ks": {
+        "name": "Jefferson County",
+        "state": "KS",
+        "slug": "jefferson-county-ks",
+        "msa": "Topeka",
+        "cities": ["Oskaloosa", "Winchester", "Valley Falls", "Meriden", "McLouth", "Perry", "Nortonville"],
+        "zip_codes": ["66066", "66097", "66088", "66086", "66054", "66073", "66060"],
+        "extra_search_terms": ["Oskaloosa KS", "Jefferson County Kansas"],
+    },
+    "osage_ks": {
+        "name": "Osage County",
+        "state": "KS",
+        "slug": "osage-county-ks",
+        "msa": "Topeka",
+        "cities": ["Lyndon", "Osage City", "Burlingame", "Overbrook", "Scranton"],
+        "zip_codes": ["66451", "66523", "66413", "66524", "66537"],
+        "extra_search_terms": ["Lyndon KS", "Osage City KS", "Osage County Kansas"],
+    },
+    "shawnee_ks": {
+        "name": "Shawnee County",
+        "state": "KS",
+        "slug": "shawnee-county-ks",
+        "msa": "Topeka",
+        "cities": ["Topeka", "Silver Lake", "Rossville", "Willard", "Auburn", "Wakarusa", "Tecumseh"],
+        "zip_codes": [
+            "66603", "66604", "66605", "66606", "66607", "66608", "66609",
+            "66610", "66611", "66612", "66614", "66615", "66616", "66617",
+            "66618", "66619", "66621", "66622", "66548", "66533", "66549",
+            "66402", "66546", "66542",
+        ],
+        "extra_search_terms": ["Topeka KS", "Topeka Kansas attorney", "Shawnee County Kansas"],
+    },
     "jackson": {
         "name": "Jackson County",
         "state": "MO",
@@ -270,6 +320,433 @@ COUNTY_DEFINITIONS = {
             "Clayton, MO",
             "Chesterfield, MO",
             "Florissant, MO",
+        ],
+    },
+
+    # =========================================================================
+    # OKLAHOMA COUNTIES — Oklahoma City MSA
+    # =========================================================================
+    "oklahoma_county": {
+        "name": "Oklahoma County",
+        "state": "OK",
+        "slug": "oklahoma-county-ok",
+        "msa": "Oklahoma City",
+        "cities": [
+            "Oklahoma City", "Edmond", "Moore", "Midwest City", "Del City",
+            "Bethany", "Warr Acres", "Nichols Hills", "The Village", "Choctaw",
+            "Harrah", "Luther", "Jones", "Spencer", "Arcadia", "Newalla",
+            "Forest Park", "Woodlawn Park", "Lake Aluma",
+        ],
+        "zip_codes": [
+            # Oklahoma City proper
+            "73101", "73102", "73103", "73104", "73105", "73106", "73107",
+            "73108", "73109", "73110", "73111", "73112", "73114", "73115",
+            "73116", "73117", "73118", "73119", "73120", "73121", "73122",
+            "73123", "73124", "73125", "73126", "73127", "73128", "73129",
+            "73130", "73131", "73132", "73134", "73135", "73136", "73137",
+            "73139", "73141", "73142", "73143", "73144", "73145", "73146",
+            "73147", "73148", "73149", "73150", "73151", "73152", "73153",
+            "73154", "73155", "73156", "73157", "73158", "73159", "73160",
+            "73162", "73163", "73164", "73165", "73167", "73169", "73170",
+            "73172", "73173", "73178", "73179",
+            # Edmond
+            "73003", "73007", "73012", "73013", "73025", "73034", "73083",
+            # Bethany
+            "73008",
+            # Choctaw
+            "73020",
+            # Harrah
+            "73045",
+            # Luther
+            "73054",
+            # Jones
+            "73049",
+            # Spencer
+            "73084",
+        ],
+        "extra_search_terms": [
+            "Oklahoma City OK",
+            "Edmond OK",
+            "Moore OK",
+            "Midwest City OK",
+            "Del City OK",
+            "Bethany OK",
+            "law firm downtown Oklahoma City",
+            "attorney Midtown OKC",
+            "lawyer NW Oklahoma City",
+            "law office Northwest Expressway OKC",
+            "attorney Memorial Road Oklahoma City",
+            "law firm Bricktown OKC",
+            "attorney Nichols Hills OK",
+        ],
+    },
+    "canadian_county": {
+        "name": "Canadian County",
+        "state": "OK",
+        "slug": "canadian-county-ok",
+        "msa": "Oklahoma City",
+        "cities": [
+            "Yukon", "Mustang", "El Reno", "Piedmont", "Union City",
+            "Calumet", "Okarche", "Tuttle", "Weatherford",
+        ],
+        "zip_codes": [
+            "73085", "73099",  # Yukon
+            "73064",           # Mustang
+            "73036",           # El Reno
+            "73078",           # Piedmont
+            "73090",           # Union City
+            "73014",           # Calumet
+            "73762",           # Okarche
+            "73089",           # Tuttle (shared Grady border — also in grady_county)
+            "73096",           # Weatherford
+        ],
+        "extra_search_terms": [
+            "Yukon OK",
+            "El Reno OK",
+            "Mustang OK",
+            "Canadian County Oklahoma",
+        ],
+    },
+    "cleveland_county": {
+        "name": "Cleveland County",
+        "state": "OK",
+        "slug": "cleveland-county-ok",
+        "msa": "Oklahoma City",
+        "cities": [
+            "Norman", "Moore", "Noble", "Lexington", "Slaughterville",
+            "Goldsby", "Etowah",
+        ],
+        "zip_codes": [
+            # Norman
+            "73019", "73026", "73069", "73070", "73071", "73072",
+            # Moore (Cleveland County portion)
+            "73153", "73160", "73165",
+            # Noble
+            "73068",
+            # Lexington
+            "73051",
+            # Goldsby / Washington
+            "73093",
+        ],
+        "extra_search_terms": [
+            "Norman OK",
+            "Moore OK",
+            "Noble OK",
+            "Cleveland County Oklahoma",
+            "lawyer University of Oklahoma Norman",
+        ],
+    },
+    "logan_county": {
+        "name": "Logan County",
+        "state": "OK",
+        "slug": "logan-county-ok",
+        "msa": "Oklahoma City",
+        "cities": [
+            "Guthrie", "Crescent", "Cashion", "Coyle", "Meridian",
+            "Orlando", "Marshall", "Langston", "Cimarron City",
+        ],
+        "zip_codes": [
+            "73044",  # Guthrie
+            "73028",  # Crescent
+            "73016",  # Cashion
+            "73027",  # Coyle
+            "73073",  # Orlando
+            "73056",  # Marshall
+            "73050",  # Langston
+        ],
+        "extra_search_terms": [
+            "Guthrie OK",
+            "Logan County Oklahoma",
+        ],
+    },
+    "grady_county": {
+        "name": "Grady County",
+        "state": "OK",
+        "slug": "grady-county-ok",
+        "msa": "Oklahoma City",
+        "cities": [
+            "Chickasha", "Blanchard", "Tuttle", "Ninnekah", "Rush Springs",
+            "Minco", "Amber", "Verden", "Alex", "Bradley", "Pocasset",
+            "Cement", "Chickasha",
+        ],
+        "zip_codes": [
+            "73018", "73023",  # Chickasha
+            "73010",           # Blanchard
+            "73089",           # Tuttle
+            "73067",           # Ninnekah
+            "73082",           # Rush Springs
+            "73059",           # Minco
+            "73004",           # Amber
+            "73092",           # Verden
+            "73002",           # Alex
+            "73011",           # Bradley
+            "73075",           # Pocasset
+            "73017",           # Cement
+        ],
+        "extra_search_terms": [
+            "Chickasha OK",
+            "Grady County Oklahoma",
+        ],
+    },
+    "mcclain_county": {
+        "name": "McClain County",
+        "state": "OK",
+        "slug": "mcclain-county-ok",
+        "msa": "Oklahoma City",
+        "cities": [
+            "Purcell", "Newcastle", "Lindsay", "Blanchard", "Byars",
+            "Washington", "Elmore City", "Maysville",
+        ],
+        "zip_codes": [
+            "73080",  # Purcell
+            "73065",  # Newcastle
+            "73052",  # Lindsay
+            "73010",  # Blanchard (shared Grady border)
+            "74831",  # Byars
+            "73093",  # Washington / Goldsby
+            "73433",  # Elmore City
+            "73057",  # Maysville
+        ],
+        "extra_search_terms": [
+            "Purcell OK",
+            "Newcastle OK",
+            "McClain County Oklahoma",
+        ],
+    },
+    "pottawatomie_county": {
+        "name": "Pottawatomie County",
+        "state": "OK",
+        "slug": "pottawatomie-county-ok",
+        "msa": "Oklahoma City",
+        "cities": [
+            "Shawnee", "Tecumseh", "McLoud", "Meeker", "Prague",
+            "Maud", "Earlsboro", "Bethel Acres", "Dale", "Wanette",
+            "Asher",
+        ],
+        "zip_codes": [
+            "74801", "74802", "74804",  # Shawnee
+            "74873",  # Tecumseh
+            "74851",  # McLoud
+            "74855",  # Meeker
+            "74864",  # Prague
+            "74854",  # Maud
+            "74840",  # Earlsboro
+            "74827",  # Bethel Acres / Dale
+            "74871",  # Wanette
+            "74826",  # Asher
+        ],
+        "extra_search_terms": [
+            "Shawnee OK",
+            "Tecumseh OK",
+            "Pottawatomie County Oklahoma",
+        ],
+    },
+
+    # =========================================================================
+    # OKLAHOMA COUNTIES — Tulsa MSA
+    # =========================================================================
+    "tulsa_county": {
+        "name": "Tulsa County",
+        "state": "OK",
+        "slug": "tulsa-county-ok",
+        "msa": "Tulsa",
+        "cities": [
+            "Tulsa", "Broken Arrow", "Owasso", "Sand Springs", "Jenks",
+            "Bixby", "Collinsville", "Glenpool", "Skiatook", "Sperry",
+            "Turley", "Catoosa",
+        ],
+        "zip_codes": [
+            # Tulsa proper
+            "74101", "74102", "74103", "74104", "74105", "74106",
+            "74107", "74108", "74110", "74112", "74114", "74115",
+            "74116", "74117", "74119", "74120", "74126", "74127",
+            "74128", "74129", "74130", "74131", "74132", "74133",
+            "74134", "74135", "74136", "74137", "74145", "74146",
+            "74171",
+            # Broken Arrow (Tulsa County portion)
+            "74011", "74012", "74013",
+            # Owasso
+            "74055",
+            # Sand Springs
+            "74063",
+            # Jenks
+            "74037",
+            # Bixby
+            "74008",
+            # Collinsville
+            "74021",
+            # Glenpool
+            "74033",
+            # Skiatook
+            "74070",
+            # Sperry
+            "74073",
+        ],
+        "extra_search_terms": [
+            "Tulsa OK",
+            "Broken Arrow OK",
+            "Owasso OK",
+            "Sand Springs OK",
+            "Jenks OK",
+            "Bixby OK",
+            "law firm downtown Tulsa",
+            "attorney South Tulsa",
+            "lawyer Midtown Tulsa",
+            "law office Brookside Tulsa",
+            "attorney Utica Square Tulsa",
+            "law firm Cherry Street Tulsa",
+        ],
+    },
+    "rogers_county": {
+        "name": "Rogers County",
+        "state": "OK",
+        "slug": "rogers-county-ok",
+        "msa": "Tulsa",
+        "cities": [
+            "Claremore", "Catoosa", "Verdigris", "Inola", "Foyil",
+            "Chelsea", "Oologah", "Talala", "Sequoyah",
+        ],
+        "zip_codes": [
+            "74017", "74018", "74019",  # Claremore
+            "74015",  # Catoosa
+            "74036",  # Inola
+            "74031",  # Foyil
+            "74016",  # Chelsea
+            "74053",  # Oologah
+            "74083",  # Talala
+            "74059",  # Sequoyah
+        ],
+        "extra_search_terms": [
+            "Claremore OK",
+            "Rogers County Oklahoma",
+        ],
+    },
+    "wagoner_county": {
+        "name": "Wagoner County",
+        "state": "OK",
+        "slug": "wagoner-county-ok",
+        "msa": "Tulsa",
+        "cities": [
+            "Wagoner", "Coweta", "Porter", "Okay", "Redbird",
+            "Tullahassee",
+        ],
+        "zip_codes": [
+            "74467",  # Wagoner
+            "74429",  # Coweta
+            "74454",  # Porter
+            "74446",  # Okay
+            "74458",  # Redbird
+            "74464",  # Tullahassee
+            "74014",  # eastern Broken Arrow (Wagoner County portion)
+        ],
+        "extra_search_terms": [
+            "Wagoner OK",
+            "Coweta OK",
+            "Wagoner County Oklahoma",
+        ],
+    },
+    "creek_county": {
+        "name": "Creek County",
+        "state": "OK",
+        "slug": "creek-county-ok",
+        "msa": "Tulsa",
+        "cities": [
+            "Sapulpa", "Bristow", "Drumright", "Mannford", "Kiefer",
+            "Depew", "Kellyville", "Mounds", "Oilton", "Shamrock",
+            "Slick",
+        ],
+        "zip_codes": [
+            "74066",  # Sapulpa
+            "74010",  # Bristow
+            "74030",  # Drumright
+            "74044",  # Mannford
+            "74041",  # Kiefer
+            "74028",  # Depew
+            "74039",  # Kellyville
+            "74047",  # Mounds
+            "74052",  # Oilton
+            "74068",  # Shamrock
+            "74071",  # Slick
+        ],
+        "extra_search_terms": [
+            "Sapulpa OK",
+            "Bristow OK",
+            "Creek County Oklahoma",
+        ],
+    },
+    "osage_county": {
+        "name": "Osage County",
+        "state": "OK",
+        "slug": "osage-county-ok",
+        "msa": "Tulsa",
+        "cities": [
+            "Pawhuska", "Hominy", "Fairfax", "Barnsdall", "Wynona",
+            "Skiatook", "Shidler", "Avant", "Burbank", "Osage",
+        ],
+        "zip_codes": [
+            "74056",  # Pawhuska
+            "74035",  # Hominy
+            "74637",  # Fairfax
+            "74002",  # Barnsdall
+            "74084",  # Wynona
+            "74070",  # Skiatook (shared Tulsa County border)
+            "74651",  # Shidler
+            "74001",  # Avant
+            "74644",  # Burbank
+            "74054",  # Osage
+        ],
+        "extra_search_terms": [
+            "Pawhuska OK",
+            "Hominy OK",
+            "Osage County Oklahoma",
+        ],
+    },
+    "washington_county": {
+        "name": "Washington County",
+        "state": "OK",
+        "slug": "washington-county-ok",
+        "msa": "Tulsa",
+        "cities": [
+            "Bartlesville", "Dewey", "Copan", "Ochelata", "Ramona",
+            "Vera", "South Coffeyville",
+        ],
+        "zip_codes": [
+            "74003", "74006",  # Bartlesville
+            "74029",  # Dewey
+            "74022",  # Copan
+            "74051",  # Ochelata
+            "74061",  # Ramona
+            "74082",  # Vera
+            "74072",  # South Coffeyville
+        ],
+        "extra_search_terms": [
+            "Bartlesville OK",
+            "Washington County Oklahoma",
+        ],
+    },
+    "okmulgee_county": {
+        "name": "Okmulgee County",
+        "state": "OK",
+        "slug": "okmulgee-county-ok",
+        "msa": "Tulsa",
+        "cities": [
+            "Okmulgee", "Henryetta", "Beggs", "Dewar", "Morris",
+            "Schulter", "Taft", "Preston",
+        ],
+        "zip_codes": [
+            "74447",  # Okmulgee
+            "74437",  # Henryetta
+            "74421",  # Beggs
+            "74431",  # Dewar
+            "74445",  # Morris
+            "74460",  # Schulter
+            "74462",  # Taft
+            "74456",  # Preston
+        ],
+        "extra_search_terms": [
+            "Okmulgee OK",
+            "Henryetta OK",
+            "Okmulgee County Oklahoma",
         ],
     },
 }

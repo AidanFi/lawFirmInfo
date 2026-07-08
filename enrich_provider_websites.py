@@ -155,60 +155,73 @@ def is_org_name(name: str) -> bool:
 
 
 # ---------------------------------------------------------------------------
-# Pass 0: Google Places Find Place — most reliable, runs first
+# Pass 0: Google Places — two-step: Find Place (place_id) → Details (website)
 # ---------------------------------------------------------------------------
 
-_PLACES_URL = "https://maps.googleapis.com/maps/api/place/findplacefromtext/json"
+_FIND_PLACE_URL = "https://maps.googleapis.com/maps/api/place/findplacefromtext/json"
+_PLACE_DETAILS_URL = "https://maps.googleapis.com/maps/api/place/details/json"
 _GMAPS_PREFIX = "https://www.google.com/maps"
 _PLACES_AVAILABLE = None  # None = untested, True/False after first call
 
+_STOP_WORDS = {"the","of","and","for","a","an","at","in","llc","inc","pa","dba","pllc"}
+
+def _name_similarity(query: str, result: str) -> bool:
+    """True if result name shares at least one meaningful keyword with query."""
+    def kw(s):
+        return {w.lower() for w in re.split(r"[\s,.\-&]+", s)
+                if len(w) > 2 and w.lower() not in _STOP_WORDS}
+    return bool(kw(query) & kw(result))
+
 
 def _places_find_website(name: str, city: str, state: str) -> str:
-    """Look up a provider via Google Places Find Place and return their website."""
+    """Two-step Places lookup: Find Place → place_id → Details → website."""
     global _PLACES_AVAILABLE
-    if not _GMAPS_KEY:
+    if not _GMAPS_KEY or _PLACES_AVAILABLE is False:
         return ""
-    query = f"{name} {city} {state}"
     try:
-        r = requests.get(
-            _PLACES_URL,
-            params={
-                "input": query,
-                "inputtype": "textquery",
-                "fields": "name,website",
-                "locationbias": f"circle:80000@{_STATE_CENTERS.get(state, '38.97,-95.68')}",
-                "key": _GMAPS_KEY,
-            },
+        # Step 1: Find Place → place_id + matched name
+        r1 = requests.get(
+            _FIND_PLACE_URL,
+            params={"input": f"{name} {city} {state}", "inputtype": "textquery",
+                    "fields": "place_id,name", "key": _GMAPS_KEY},
             timeout=10,
         )
-        data = r.json()
-        status = data.get("status", "")
-        if status == "REQUEST_DENIED":
+        d1 = r1.json()
+        s1 = d1.get("status", "")
+        if s1 == "REQUEST_DENIED":
             _PLACES_AVAILABLE = False
-            print(f"    [Places] REQUEST_DENIED — billing may be off. Skipping Places pass.")
+            print("    [Places] REQUEST_DENIED — billing may be off. Skipping.")
+            return ""
+        if s1 not in ("OK", "ZERO_RESULTS"):
             return ""
         _PLACES_AVAILABLE = True
-        candidates = data.get("candidates", [])
+        candidates = d1.get("candidates", [])
         if not candidates:
             return ""
-        website = candidates[0].get("website", "")
-        # Reject Google Maps URLs and directory sites
+        place_id = candidates[0]["place_id"]
+        matched_name = candidates[0].get("name", "")
+        if not _name_similarity(name, matched_name):
+            return ""  # matched wrong business
+
+        # Step 2: Place Details → website
+        r2 = requests.get(
+            _PLACE_DETAILS_URL,
+            params={"place_id": place_id, "fields": "website", "key": _GMAPS_KEY},
+            timeout=10,
+        )
+        d2 = r2.json()
+        if d2.get("status") != "OK":
+            return ""
+        website = d2.get("result", {}).get("website", "")
         if website and not website.startswith(_GMAPS_PREFIX) and not _is_bad(website):
             return website
         return ""
     except Exception:
         return ""
 
-# Rough geographic centers for locationbias (keeps results in the right state)
-_STATE_CENTERS = {
-    "KS": "38.68,-98.32",
-    "MO": "38.57,-92.60",
-    "OK": "35.47,-97.51",
-}
-
 
 def pass0_google_places(records: list[dict]) -> int:
-    """Use Google Places Find Place to get websites directly from Google Business Profiles."""
+    """Use two-step Google Places lookup to get websites from Google Business Profiles."""
     if not _GMAPS_KEY:
         print("\n  Pass 0 (Google Places): no API key found, skipping")
         return 0
@@ -218,12 +231,12 @@ def pass0_google_places(records: list[dict]) -> int:
     found = 0
     for i, rec in enumerate(targets):
         if _PLACES_AVAILABLE is False:
-            break  # billing confirmed off — stop wasting calls
+            break
         site = _places_find_website(rec["provider_name"], rec["city"], rec["state"])
         if site:
             rec["website"] = site
             found += 1
-        time.sleep(0.05)  # Places API allows ~50 QPS; 0.05s is well within limits
+        time.sleep(0.1)  # 2 API calls per provider; 0.1s keeps us under rate limits
         if (i + 1) % 50 == 0:
             print(f"    {i+1}/{len(targets)} — {found} found")
     print(f"    Done: {found} websites via Google Places")

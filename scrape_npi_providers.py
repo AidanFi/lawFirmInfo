@@ -23,6 +23,18 @@ from bs4 import BeautifulSoup
 warnings.filterwarnings("ignore")
 
 DATA_DIR = Path("app/county-data")
+
+# Load Google Maps API key
+_GMAPS_KEY = ""
+_env_path = Path("scraper/.env")
+if _env_path.exists():
+    for _line in _env_path.read_text().splitlines():
+        if _line.startswith("GOOGLE_MAPS_API_KEY="):
+            _GMAPS_KEY = _line.split("=", 1)[1].strip()
+            break
+
+_PLACES_URL = "https://maps.googleapis.com/maps/api/place/findplacefromtext/json"
+_PLACES_AVAILABLE = None  # None=untested, True/False after first attempt
 NPI_URL = "https://npiregistry.cms.hhs.gov/api/"
 
 FIELDNAMES = [
@@ -48,6 +60,64 @@ COUNTIES = {
         "state": "KS",
         "cities": [
             "Kansas City", "Bonner Springs", "Edwardsville",
+        ],
+    },
+    "leavenworth-county-ks": {
+        "name": "Leavenworth County",
+        "state": "KS",
+        "cities": [
+            "Leavenworth", "Lansing", "Basehor", "Tonganoxie", "Linwood", "Easton",
+        ],
+    },
+    "miami-county-ks": {
+        "name": "Miami County",
+        "state": "KS",
+        "cities": [
+            "Paola", "Osawatomie", "Louisburg", "Fontana",
+        ],
+    },
+    "linn-county-ks": {
+        "name": "Linn County",
+        "state": "KS",
+        "cities": [
+            "Pleasanton", "La Cygne", "Mound City", "Prescott", "Blue Mound",
+        ],
+    },
+    "douglas-county-ks": {
+        "name": "Douglas County",
+        "state": "KS",
+        "cities": [
+            "Lawrence", "Eudora", "Baldwin City", "Lecompton",
+        ],
+    },
+    "franklin-county-ks": {
+        "name": "Franklin County",
+        "state": "KS",
+        "cities": [
+            "Ottawa", "Wellsville", "Williamsburg", "Richmond", "Lane",
+        ],
+    },
+    "jefferson-county-ks": {
+        "name": "Jefferson County",
+        "state": "KS",
+        "cities": [
+            "Oskaloosa", "Winchester", "Valley Falls", "Meriden",
+            "McLouth", "Perry", "Nortonville",
+        ],
+    },
+    "osage-county-ks": {
+        "name": "Osage County",
+        "state": "KS",
+        "cities": [
+            "Lyndon", "Osage City", "Burlingame", "Overbrook", "Scranton",
+        ],
+    },
+    "shawnee-county-ks": {
+        "name": "Shawnee County",
+        "state": "KS",
+        "cities": [
+            "Topeka", "Silver Lake", "Rossville", "Willard",
+            "Auburn", "Wakarusa", "Tecumseh",
         ],
     },
 }
@@ -278,22 +348,71 @@ def scrape_county(slug: str, cfg: dict) -> list[dict]:
     return records
 
 
+def _places_find_website(name: str, city: str, state: str) -> str:
+    """Google Places Find Place — returns website from Google Business Profile."""
+    global _PLACES_AVAILABLE
+    if not _GMAPS_KEY or _PLACES_AVAILABLE is False:
+        return ""
+    try:
+        r = requests.get(
+            _PLACES_URL,
+            params={
+                "input": f"{name} {city} {state}",
+                "inputtype": "textquery",
+                "fields": "name,website",
+                "key": _GMAPS_KEY,
+            },
+            timeout=10,
+        )
+        data = r.json()
+        if data.get("status") == "REQUEST_DENIED":
+            _PLACES_AVAILABLE = False
+            print("    [Places] REQUEST_DENIED — falling back to DDG only")
+            return ""
+        _PLACES_AVAILABLE = True
+        candidates = data.get("candidates", [])
+        if not candidates:
+            return ""
+        website = candidates[0].get("website", "")
+        if website and not website.startswith("https://www.google.com/maps") and not _is_directory(website):
+            return website
+        return ""
+    except Exception:
+        return ""
+
+
 def enrich_websites(records: list[dict]) -> int:
-    """DDG-search for websites on records that don't have one."""
-    enriched = 0
+    """Website enrichment: Google Places first, DDG fallback."""
     no_web = [r for r in records if not r["website"]]
     print(f"\n  Website enrichment: {len(no_web)} providers to search...")
+    enriched = 0
 
+    # Pass 0: Google Places (fast, accurate)
+    if _GMAPS_KEY:
+        print(f"    Pass 0 (Google Places)...")
+        for i, rec in enumerate(no_web):
+            if _PLACES_AVAILABLE is False:
+                break
+            site = _places_find_website(rec["provider_name"], rec["city"], rec["state"])
+            if site:
+                rec["website"] = site
+                enriched += 1
+            time.sleep(0.05)
+        places_found = enriched
+        no_web = [r for r in no_web if not r["website"]]
+        print(f"    Places: {places_found} found, {len(no_web)} remaining")
+
+    # Pass 1: DDG fallback for remainder
     for i, rec in enumerate(no_web):
         if i > 0 and i % 20 == 0:
-            print(f"    {i}/{len(no_web)} searched, {enriched} found so far")
+            print(f"    DDG: {i}/{len(no_web)} searched, {enriched} found so far")
         site = ddg_find_website(
             rec["provider_name"], rec["provider_type"], rec["city"], rec["state"]
         )
         if site:
             rec["website"] = site
             enriched += 1
-        time.sleep(2.5)  # DDG rate limit
+        time.sleep(2.5)
 
     return enriched
 
@@ -308,16 +427,51 @@ def write_csv(slug: str, records: list[dict]) -> Path:
     return path
 
 
+_GMAPS_PREFIX = "https://www.google.com/maps"
+
+
+def _strip_gmaps(records: list[dict]) -> int:
+    """Clear Google Maps URLs from website field — leave blank instead."""
+    cleared = 0
+    for r in records:
+        w = r.get("website", "")
+        if w.startswith(_GMAPS_PREFIX):
+            r["website"] = ""
+            cleared += 1
+    return cleared
+
+
 def main():
     DATA_DIR.mkdir(parents=True, exist_ok=True)
 
+    # Slugs already fully processed — skip NPI scrape, only clean Maps URLs
+    ALREADY_DONE = {"johnson-county-ks", "wyandotte-county-ks"}
+
+    # Clean Google Maps URLs from existing files first
+    for slug in ALREADY_DONE:
+        p = DATA_DIR / f"providers-{slug}.csv"
+        if p.exists():
+            rows = list(csv.DictReader(p.open()))
+            cleared = _strip_gmaps(rows)
+            if cleared:
+                with p.open("w", newline="", encoding="utf-8") as f:
+                    w = csv.DictWriter(f, fieldnames=FIELDNAMES)
+                    w.writeheader(); w.writerows(rows)
+                print(f"  {slug}: cleared {cleared} Google Maps URLs")
+
     for slug, cfg in COUNTIES.items():
+        if slug in ALREADY_DONE:
+            continue
+
         print(f"\n{'='*55}")
         print(f"{cfg['name']} ({slug})")
         print(f"{'='*55}")
 
         records = scrape_county(slug, cfg)
         print(f"\n  Raw total: {len(records)} providers")
+
+        # Never store Google Maps links — leave website blank if not a real site
+        _strip_gmaps(records)
 
         enriched = enrich_websites(records)
         print(f"  Websites found: {enriched}")

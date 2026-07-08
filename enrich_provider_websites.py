@@ -22,6 +22,15 @@ from bs4 import BeautifulSoup
 
 warnings.filterwarnings("ignore")
 
+# Load Google Maps API key from scraper/.env
+_GMAPS_KEY = ""
+_env_path = Path("scraper/.env")
+if _env_path.exists():
+    for line in _env_path.read_text().splitlines():
+        if line.startswith("GOOGLE_MAPS_API_KEY="):
+            _GMAPS_KEY = line.split("=", 1)[1].strip()
+            break
+
 DATA_DIR = Path("app/county-data")
 
 FIELDNAMES = [
@@ -146,6 +155,82 @@ def is_org_name(name: str) -> bool:
 
 
 # ---------------------------------------------------------------------------
+# Pass 0: Google Places Find Place — most reliable, runs first
+# ---------------------------------------------------------------------------
+
+_PLACES_URL = "https://maps.googleapis.com/maps/api/place/findplacefromtext/json"
+_GMAPS_PREFIX = "https://www.google.com/maps"
+_PLACES_AVAILABLE = None  # None = untested, True/False after first call
+
+
+def _places_find_website(name: str, city: str, state: str) -> str:
+    """Look up a provider via Google Places Find Place and return their website."""
+    global _PLACES_AVAILABLE
+    if not _GMAPS_KEY:
+        return ""
+    query = f"{name} {city} {state}"
+    try:
+        r = requests.get(
+            _PLACES_URL,
+            params={
+                "input": query,
+                "inputtype": "textquery",
+                "fields": "name,website",
+                "locationbias": f"circle:80000@{_STATE_CENTERS.get(state, '38.97,-95.68')}",
+                "key": _GMAPS_KEY,
+            },
+            timeout=10,
+        )
+        data = r.json()
+        status = data.get("status", "")
+        if status == "REQUEST_DENIED":
+            _PLACES_AVAILABLE = False
+            print(f"    [Places] REQUEST_DENIED — billing may be off. Skipping Places pass.")
+            return ""
+        _PLACES_AVAILABLE = True
+        candidates = data.get("candidates", [])
+        if not candidates:
+            return ""
+        website = candidates[0].get("website", "")
+        # Reject Google Maps URLs and directory sites
+        if website and not website.startswith(_GMAPS_PREFIX) and not _is_bad(website):
+            return website
+        return ""
+    except Exception:
+        return ""
+
+# Rough geographic centers for locationbias (keeps results in the right state)
+_STATE_CENTERS = {
+    "KS": "38.68,-98.32",
+    "MO": "38.57,-92.60",
+    "OK": "35.47,-97.51",
+}
+
+
+def pass0_google_places(records: list[dict]) -> int:
+    """Use Google Places Find Place to get websites directly from Google Business Profiles."""
+    if not _GMAPS_KEY:
+        print("\n  Pass 0 (Google Places): no API key found, skipping")
+        return 0
+
+    targets = [r for r in records if not r["website"]]
+    print(f"\n  Pass 0 (Google Places): {len(targets)} providers to look up...")
+    found = 0
+    for i, rec in enumerate(targets):
+        if _PLACES_AVAILABLE is False:
+            break  # billing confirmed off — stop wasting calls
+        site = _places_find_website(rec["provider_name"], rec["city"], rec["state"])
+        if site:
+            rec["website"] = site
+            found += 1
+        time.sleep(0.05)  # Places API allows ~50 QPS; 0.05s is well within limits
+        if (i + 1) % 50 == 0:
+            print(f"    {i+1}/{len(targets)} — {found} found")
+    print(f"    Done: {found} websites via Google Places")
+    return found
+
+
+# ---------------------------------------------------------------------------
 # Pass 1: DDG phone search
 # ---------------------------------------------------------------------------
 
@@ -227,20 +312,25 @@ def main():
         before = sum(1 for r in rows if r.get("website", "").strip())
         print(f"  Starting: {len(rows)} records, {before} with website")
 
-        # Run all three passes
-        found1 = pass1_phone_ddg(rows)
-        # Save after each pass in case of interruption
+        # Pass 0: Google Places (fastest, most reliable — runs first)
+        found0 = pass0_google_places(rows)
         _write(p, rows)
 
+        # Pass 1: DDG phone search
+        found1 = pass1_phone_ddg(rows)
+        _write(p, rows)
+
+        # Pass 2: Domain guessing
         found2 = pass2_domain_guess(rows)
         _write(p, rows)
 
+        # Pass 3: DDG name+city search
         found3 = pass3_name_ddg(rows)
         _write(p, rows)
 
         after = sum(1 for r in rows if r.get("website", "").strip())
         print(f"\n  Final: {after} websites (+{after - before} from {before})")
-        print(f"  Breakdown: phone={found1}, domain={found2}, name={found3}")
+        print(f"  Breakdown: places={found0}, phone={found1}, domain={found2}, name={found3}")
 
 
 def _write(path: Path, rows: list[dict]):

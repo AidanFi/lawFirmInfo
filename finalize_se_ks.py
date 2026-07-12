@@ -27,7 +27,7 @@ SE_KS_COUNTIES = {
     },
     "bourbon-county-ks": {
         "county": "Bourbon", "state": "KS", "msa": "",
-        "cities": ["Fort Scott", "Uniontown", "Bronson", "Mapleton", "Garland", "Redfield"],
+        "cities": ["Fort Scott", "Ft Scott", "Fulton", "Uniontown", "Bronson", "Mapleton", "Garland", "Redfield"],
     },
     "chautauqua-county-ks": {
         "county": "Chautauqua", "state": "KS", "msa": "",
@@ -43,7 +43,7 @@ SE_KS_COUNTIES = {
     },
     "crawford-county-ks": {
         "county": "Crawford", "state": "KS", "msa": "Pittsburg",
-        "cities": ["Pittsburg", "Girard", "Frontenac", "Cherokee", "Arma", "Mc Cune", "McCune", "Mulberry", "Hepler", "Arcadia", "Franklin", "West Mineral"],
+        "cities": ["Pittsburg", "Girard", "Frontenac", "Cherokee", "Arma", "Mc Cune", "McCune", "Mulberry", "Hepler", "Arcadia", "Franklin", "West Mineral", "Farlington"],
     },
     "elk-county-ks": {
         "county": "Elk", "state": "KS", "msa": "",
@@ -139,7 +139,7 @@ def merge_kscourts(slug, info, all_ids):
         addr_parts = [p.strip() for p in addr_raw.split("|") if p.strip()]
         city = state = zipcode = firm_name = street = ""
         for i, part in enumerate(addr_parts):
-            m = re.match(r"^(.+),\s*([A-Z]{2})\s*(\d{5})?$", part)
+            m = re.match(r"^(.+),\s*(KS)\s*(\d{5}(?:-\d{4})?)?\s*$", part)
             if m:
                 city = m.group(1).strip()
                 state = m.group(2).strip()

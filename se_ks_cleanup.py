@@ -262,6 +262,7 @@ REMOVE_EXACT = {
     # Montgomery county additional junk
     "reynolds daniel m",  # Daniel Reynolds is a member of Emert Chubb LLC; firm name is the referral target
     "patricia a. horton, pa",  # medical professional (ascension.org profile), not an attorney
+    "kritz paul m",  # attorney name used as firm name; correct firm is Hall Levy DeVore Bell Ott & Kritz, PA
     # Chautauqua county junk
     "western union",
     "wagnon commodities",
@@ -557,7 +558,7 @@ def is_junk(row):
     # City/municipality employers (e.g., "City of Parsons")
     if re.match(r"^city\s+of\s+\w[\w\s]*$", name, re.I) and not LAW_INDICATORS.search(name):
         return True
-    if re.search(r"\b(\d+th|\d+st|\d+nd|\d+rd|eleventh|twelfth|thirteenth|fourteenth)\s+judicial\s+district\b", name, re.I):
+    if re.search(r"\b(\d+th|\d+st|\d+nd|\d+rd|first|second|third|fourth|fifth|sixth|seventh|eighth|ninth|tenth|eleventh|twelfth|thirteenth|fourteenth|fifteenth|sixteenth)\s+judicial\s+district\b", name, re.I):
         if not re.search(r"\b(public defender|defender|legal services|legal aid)\b", name, re.I):
             return True
     if re.match(r"^\w[\w\s]+county\s*$", name, re.I) and not LAW_INDICATORS.search(name):

@@ -4,16 +4,16 @@
       "slug": "johnson-county-ks",
       "name": "Johnson County",
       "state": "KS",
-      "firm_count": 4591,
-      "last_updated": "2026-07-01",
+      "firm_count": 5133,
+      "last_updated": "2026-07-11",
       "csv_file": "johnson-county-ks.csv"
     },
     {
       "slug": "wyandotte-county-ks",
       "name": "Wyandotte County",
       "state": "KS",
-      "firm_count": 643,
-      "last_updated": "2026-07-01",
+      "firm_count": 729,
+      "last_updated": "2026-07-11",
       "csv_file": "wyandotte-county-ks.csv"
     },
     {
@@ -21,7 +21,7 @@
       "name": "St. Louis City County",
       "state": "MO",
       "firm_count": 263,
-      "last_updated": "2026-06-26",
+      "last_updated": "2026-07-11",
       "csv_file": "st-louis-city-mo.csv"
     },
     {
@@ -29,7 +29,7 @@
       "name": "St. Louis County",
       "state": "MO",
       "firm_count": 880,
-      "last_updated": "2026-06-26",
+      "last_updated": "2026-07-11",
       "csv_file": "st-louis-county-mo.csv"
     },
     {
@@ -37,7 +37,7 @@
       "name": "Jackson County",
       "state": "MO",
       "firm_count": 562,
-      "last_updated": "2026-06-26",
+      "last_updated": "2026-07-11",
       "csv_file": "jackson-county-mo.csv"
     },
     {
@@ -45,7 +45,7 @@
       "name": "Greene County",
       "state": "MO",
       "firm_count": 166,
-      "last_updated": "2026-06-26",
+      "last_updated": "2026-07-11",
       "csv_file": "greene-county-mo.csv"
     },
     {
@@ -53,55 +53,55 @@
       "name": "St. Charles County",
       "state": "MO",
       "firm_count": 176,
-      "last_updated": "2026-06-26",
+      "last_updated": "2026-07-11",
       "csv_file": "st-charles-county-mo.csv"
     },
     {
       "slug": "leavenworth-county-ks",
       "name": "Leavenworth County",
       "state": "KS",
-      "firm_count": 242,
-      "last_updated": "2026-07-01",
+      "firm_count": 268,
+      "last_updated": "2026-07-11",
       "csv_file": "leavenworth-county-ks.csv"
     },
     {
       "slug": "miami-county-ks",
       "name": "Miami County",
       "state": "KS",
-      "firm_count": 100,
-      "last_updated": "2026-07-01",
+      "firm_count": 114,
+      "last_updated": "2026-07-11",
       "csv_file": "miami-county-ks.csv"
     },
     {
       "slug": "linn-county-ks",
       "name": "Linn County",
       "state": "KS",
-      "firm_count": 33,
-      "last_updated": "2026-07-01",
+      "firm_count": 40,
+      "last_updated": "2026-07-11",
       "csv_file": "linn-county-ks.csv"
     },
     {
       "slug": "douglas-county-ks",
       "name": "Douglas County",
       "state": "KS",
-      "firm_count": 981,
-      "last_updated": "2026-07-01",
+      "firm_count": 1001,
+      "last_updated": "2026-07-11",
       "csv_file": "douglas-county-ks.csv"
     },
     {
       "slug": "franklin-county-ks",
       "name": "Franklin County",
       "state": "KS",
-      "firm_count": 67,
-      "last_updated": "2026-07-01",
+      "firm_count": 68,
+      "last_updated": "2026-07-11",
       "csv_file": "franklin-county-ks.csv"
     },
     {
       "slug": "jefferson-county-ks",
       "name": "Jefferson County",
       "state": "KS",
-      "firm_count": 41,
-      "last_updated": "2026-07-01",
+      "firm_count": 43,
+      "last_updated": "2026-07-11",
       "csv_file": "jefferson-county-ks.csv"
     },
     {
@@ -109,15 +109,15 @@
       "name": "Osage County",
       "state": "KS",
       "firm_count": 37,
-      "last_updated": "2026-07-01",
+      "last_updated": "2026-07-11",
       "csv_file": "osage-county-ks.csv"
     },
     {
       "slug": "shawnee-county-ks",
       "name": "Shawnee County",
       "state": "KS",
-      "firm_count": 1553,
-      "last_updated": "2026-07-01",
+      "firm_count": 1676,
+      "last_updated": "2026-07-11",
       "csv_file": "shawnee-county-ks.csv"
     },
     {
@@ -125,7 +125,7 @@
       "name": "Logan County",
       "state": "OK",
       "firm_count": 261,
-      "last_updated": "2026-06-26",
+      "last_updated": "2026-07-11",
       "csv_file": "logan-county-ok.csv"
     },
     {
@@ -133,7 +133,7 @@
       "name": "Washington County",
       "state": "OK",
       "firm_count": 76,
-      "last_updated": "2026-06-26",
+      "last_updated": "2026-07-11",
       "csv_file": "washington-county-ok.csv"
     },
     {
@@ -141,7 +141,7 @@
       "name": "Osage County",
       "state": "OK",
       "firm_count": 77,
-      "last_updated": "2026-06-26",
+      "last_updated": "2026-07-11",
       "csv_file": "osage-county-ok.csv"
     },
     {
@@ -149,7 +149,7 @@
       "name": "McClain County",
       "state": "OK",
       "firm_count": 180,
-      "last_updated": "2026-06-26",
+      "last_updated": "2026-07-11",
       "csv_file": "mcclain-county-ok.csv"
     },
     {
@@ -157,7 +157,7 @@
       "name": "Wagoner County",
       "state": "OK",
       "firm_count": 246,
-      "last_updated": "2026-06-26",
+      "last_updated": "2026-07-11",
       "csv_file": "wagoner-county-ok.csv"
     },
     {
@@ -165,7 +165,7 @@
       "name": "Okmulgee County",
       "state": "OK",
       "firm_count": 79,
-      "last_updated": "2026-06-26",
+      "last_updated": "2026-07-11",
       "csv_file": "okmulgee-county-ok.csv"
     },
     {
@@ -173,7 +173,7 @@
       "name": "Rogers County",
       "state": "OK",
       "firm_count": 290,
-      "last_updated": "2026-06-26",
+      "last_updated": "2026-07-11",
       "csv_file": "rogers-county-ok.csv"
     },
     {
@@ -181,7 +181,7 @@
       "name": "Creek County",
       "state": "OK",
       "firm_count": 299,
-      "last_updated": "2026-06-26",
+      "last_updated": "2026-07-11",
       "csv_file": "creek-county-ok.csv"
     },
     {
@@ -189,7 +189,7 @@
       "name": "Grady County",
       "state": "OK",
       "firm_count": 102,
-      "last_updated": "2026-06-26",
+      "last_updated": "2026-07-11",
       "csv_file": "grady-county-ok.csv"
     },
     {
@@ -197,7 +197,7 @@
       "name": "Pottawatomie County",
       "state": "OK",
       "firm_count": 107,
-      "last_updated": "2026-06-26",
+      "last_updated": "2026-07-11",
       "csv_file": "pottawatomie-county-ok.csv"
     },
     {
@@ -205,7 +205,7 @@
       "name": "Canadian County",
       "state": "OK",
       "firm_count": 548,
-      "last_updated": "2026-06-26",
+      "last_updated": "2026-07-11",
       "csv_file": "canadian-county-ok.csv"
     },
     {
@@ -213,7 +213,7 @@
       "name": "Cleveland County",
       "state": "OK",
       "firm_count": 728,
-      "last_updated": "2026-06-26",
+      "last_updated": "2026-07-11",
       "csv_file": "cleveland-county-ok.csv"
     },
     {
@@ -221,7 +221,7 @@
       "name": "Tulsa County",
       "state": "OK",
       "firm_count": 751,
-      "last_updated": "2026-06-26",
+      "last_updated": "2026-07-11",
       "csv_file": "tulsa-county-ok.csv"
     },
     {
@@ -229,10 +229,192 @@
       "name": "Oklahoma County",
       "state": "OK",
       "firm_count": 1141,
-      "last_updated": "2026-06-26",
+      "last_updated": "2026-07-11",
       "csv_file": "oklahoma-county-ok.csv"
+    },
+    {
+      "slug": "allen-county-ks",
+      "name": "Allen County",
+      "state": "KS",
+      "firm_count": 9,
+      "last_updated": "2026-07-11",
+      "csv_file": "allen-county-ks.csv"
+    },
+    {
+      "slug": "bourbon-county-ks",
+      "name": "Bourbon County",
+      "state": "KS",
+      "firm_count": 9,
+      "last_updated": "2026-07-11",
+      "csv_file": "bourbon-county-ks.csv"
+    },
+    {
+      "slug": "chautauqua-county-ks",
+      "name": "Chautauqua County",
+      "state": "KS",
+      "firm_count": 7,
+      "last_updated": "2026-07-11",
+      "csv_file": "chautauqua-county-ks.csv"
+    },
+    {
+      "slug": "cherokee-county-ks",
+      "name": "Cherokee County",
+      "state": "KS",
+      "firm_count": 29,
+      "last_updated": "2026-07-11",
+      "csv_file": "cherokee-county-ks.csv"
+    },
+    {
+      "slug": "coffey-county-ks",
+      "name": "Coffey County",
+      "state": "KS",
+      "firm_count": 6,
+      "last_updated": "2026-07-11",
+      "csv_file": "coffey-county-ks.csv"
+    },
+    {
+      "slug": "crawford-county-ks",
+      "name": "Crawford County",
+      "state": "",
+      "firm_count": 38,
+      "last_updated": "2026-07-11",
+      "csv_file": "crawford-county-ks.csv"
+    },
+    {
+      "slug": "elk-county-ks",
+      "name": "Elk County",
+      "state": "KS",
+      "firm_count": 1,
+      "last_updated": "2026-07-11",
+      "csv_file": "elk-county-ks.csv"
+    },
+    {
+      "slug": "greenwood-county-ks",
+      "name": "Greenwood County",
+      "state": "KS",
+      "firm_count": 4,
+      "last_updated": "2026-07-11",
+      "csv_file": "greenwood-county-ks.csv"
+    },
+    {
+      "slug": "labette-county-ks",
+      "name": "Labette County",
+      "state": "KS",
+      "firm_count": 5,
+      "last_updated": "2026-07-11",
+      "csv_file": "labette-county-ks.csv"
+    },
+    {
+      "slug": "montgomery-county-ks",
+      "name": "Montgomery County",
+      "state": "KS",
+      "firm_count": 19,
+      "last_updated": "2026-07-11",
+      "csv_file": "montgomery-county-ks.csv"
+    },
+    {
+      "slug": "neosho-county-ks",
+      "name": "Neosho County",
+      "state": "",
+      "firm_count": 19,
+      "last_updated": "2026-07-11",
+      "csv_file": "neosho-county-ks.csv"
+    },
+    {
+      "slug": "providers-douglas-county-ks",
+      "name": "Douglas County County",
+      "state": "KS",
+      "firm_count": 269,
+      "last_updated": "2026-07-11",
+      "csv_file": "providers-douglas-county-ks.csv"
+    },
+    {
+      "slug": "providers-franklin-county-ks",
+      "name": "Franklin County County",
+      "state": "KS",
+      "firm_count": 42,
+      "last_updated": "2026-07-11",
+      "csv_file": "providers-franklin-county-ks.csv"
+    },
+    {
+      "slug": "providers-jefferson-county-ks",
+      "name": "Jefferson County County",
+      "state": "KS",
+      "firm_count": 14,
+      "last_updated": "2026-07-11",
+      "csv_file": "providers-jefferson-county-ks.csv"
+    },
+    {
+      "slug": "providers-johnson-county-ks",
+      "name": "Johnson County County",
+      "state": "KS",
+      "firm_count": 1964,
+      "last_updated": "2026-07-11",
+      "csv_file": "providers-johnson-county-ks.csv"
+    },
+    {
+      "slug": "providers-leavenworth-county-ks",
+      "name": "Leavenworth County County",
+      "state": "KS",
+      "firm_count": 92,
+      "last_updated": "2026-07-11",
+      "csv_file": "providers-leavenworth-county-ks.csv"
+    },
+    {
+      "slug": "providers-linn-county-ks",
+      "name": "Linn County County",
+      "state": "KS",
+      "firm_count": 10,
+      "last_updated": "2026-07-11",
+      "csv_file": "providers-linn-county-ks.csv"
+    },
+    {
+      "slug": "providers-miami-county-ks",
+      "name": "Miami County County",
+      "state": "KS",
+      "firm_count": 42,
+      "last_updated": "2026-07-11",
+      "csv_file": "providers-miami-county-ks.csv"
+    },
+    {
+      "slug": "providers-osage-county-ks",
+      "name": "Osage County County",
+      "state": "KS",
+      "firm_count": 10,
+      "last_updated": "2026-07-11",
+      "csv_file": "providers-osage-county-ks.csv"
+    },
+    {
+      "slug": "providers-shawnee-county-ks",
+      "name": "Shawnee County County",
+      "state": "KS",
+      "firm_count": 296,
+      "last_updated": "2026-07-11",
+      "csv_file": "providers-shawnee-county-ks.csv"
+    },
+    {
+      "slug": "providers-wyandotte-county-ks",
+      "name": "Wyandotte County County",
+      "state": "KS",
+      "firm_count": 191,
+      "last_updated": "2026-07-11",
+      "csv_file": "providers-wyandotte-county-ks.csv"
+    },
+    {
+      "slug": "wilson-county-ks",
+      "name": "Wilson County",
+      "state": "KS",
+      "firm_count": 8,
+      "last_updated": "2026-07-11",
+      "csv_file": "wilson-county-ks.csv"
+    },
+    {
+      "slug": "woodson-county-ks",
+      "name": "Woodson County",
+      "state": "",
+      "firm_count": 2,
+      "last_updated": "2026-07-11",
+      "csv_file": "woodson-county-ks.csv"
     }
-  ],
-  "total_firms": 15220,
-  "last_updated": "2026-07-01"
+  ]
 }

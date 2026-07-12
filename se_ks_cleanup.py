@@ -67,6 +67,15 @@ NONKS_AREA_CODES = {
     "319", "515", "563",                 # Iowa
     "844", "855", "866", "877", "888",  # Toll-free (often out-of-state)
     "800",                               # Toll-free
+    "760", "442",                        # Palm Springs / Inland Empire CA
+    "443", "410",                        # Baltimore / Maryland
+    "805",                               # Ventura County CA
+    "315",                               # Syracuse NY
+    "902",                               # Nova Scotia Canada
+    "225",                               # Baton Rouge LA
+    "801", "385",                        # Salt Lake City / Utah
+    "918",                               # Tulsa OK
+    "479", "501", "870",                 # Arkansas
 }
 
 LAW_INDICATORS = re.compile(
@@ -138,21 +147,35 @@ REMOVE_EXACT = {
     "st paul water treatment plant",
     "moran city clerk",
     "moran city clerk",
-    # Government entities (not referral targets)
-    "allen county attorney",
-    "bourbon county attorney",
-    "bourbon county courthouse",
-    "chautauqua county attorney",
-    "cherokee county attorney",
-    "coffey county attorney",
-    "crawford county attorney",
+    # Government entities / non-law kscourts employers (always remove even if kscourts-sourced)
+    "allen county attorney", "allen county courthouse",
+    "bourbon county attorney", "bourbon county courthouse", "bourbon county district court",
+    "bourbon county attorney's office",
+    "chautauqua county attorney", "chautauqua county",  # raw county name = non-law kscourts employer
+    "14th judicial district - state of kansas",  # 918 area code (Tulsa OK), not a KS firm
+    "cherokee county attorney", "cherokee county district court",
+    "crossland construction co., inc.",  # construction company (Cherokee)
+    "american bank",  # Cherokee
+    "coffey county attorney", "coffey county district court",
+    "crawford county attorney", "crawford county district court",
     "elk county attorney",
-    "greenwood county attorney",
+    "greenwood county attorney", "greenwood county district court",
     "labette county attorney",
     "montgomery county attorney",
     "neosho county attorney",
-    "wilson county attorney",
-    "woodson county attorney",
+    "wilson county attorney", "wilson county district court",
+    "woodson county attorney", "woodson county courthouse",
+    "state of kansas",  # generic government employer (Crawford, Montgomery)
+    "pittsburg state university",  # university employer (Crawford)
+    "community health center of se kansas, inc",  # medical center employer (Crawford)
+    "community health center of southeast kansas, inc.",
+    "watco",  # railroad company (Crawford)
+    "tfi family services inc",  # foster care agency (Allen)
+    # Elk county junk (triggered by "Howard KS" Google Places results)
+    "attorney howard sanger",  # Palm Springs CA (760 area code)
+    "common law marriage & estate planning challenges",  # MD article (443 area code)
+    "contact the law offices of john h. howard",  # CA contact page (805 area code)
+    "international lawyer resources",  # MD attorney directory (410 area code)
     # Montgomery county junk
     "custom innovations paint and body", "the tribal domicile", "bug busters usa llc",
     "american family insurance - linda frazier", "coffeyville orthopaedics p.a.",
@@ -181,12 +204,13 @@ REMOVE_EXACT = {
     "exterior escapes llc.", "frontenac parks & recreation",
     "monica r kellogg cpa llc", "steve gintner painting",
     "crawford county attorney's office", "crawford county. kansas",
+    "crawford county judicial center",
     "girard retail & pawn", "h&r block", "tadpole painting",
     "j b's lawns & trees", "jake's fireworks inc", "lawson auto service",
     "nate's lawn & landscape", "pittsburg law enforcement center",
     "the lawn", "commerce trust", "loy kurtis i attorney, attorney, 511 s georgia st",
     "names and numbers", "murphy's wheat law - wildcat district",
-    "young williams child support services", "young williams",
+    "young williams child support services", "young williams", "young williams cse",
     "atropos arms llc", "jennifer brunetti",
     # Neosho county junk
     "hi-lo ind. inc", "kansas department for children & families",
@@ -196,6 +220,32 @@ REMOVE_EXACT = {
     "catherine lerner - murphy law group, llc",  # Philadelphia PA firm (267 area code) triggered by "Erie" KS
     "guides at georgetown law library: u.s. law, research process ...",  # DC law library, not a KS firm
     "wllbert & towner pa",  # typo variant of Wilbert & Towner; Pittsburg firm wrongly placed in Chanute
+    "thuston linus",  # dup of "Linus A. Thuston, Attorney at Law" (kscourts); different phones can't auto-dedup
+    "neosho memorial medical center",  # medical center kscourts employer
+    # Labette county junk (Parsons KS triggered out-of-state results)
+    "bartlett co-op association - bartlett",  # grain cooperative
+    "usd 505 chetopa - st paul",  # school district
+    "contact syracuse medical malpractice attorney janet izzo",  # Syracuse NY (315 area code)
+    "danielle m. hall – institute for well-being in law",  # law wellness org, not KS firm
+    "danielle m. hall - institute for well-being in law",
+    "judge david waxse - legal talk network",  # podcast bio page
+    "labette county law enforcement center and e.o.c.",  # law enforcement building
+    "syracuse estate planning attorney frederick p. davies explains key ...",  # NY article headline
+    "taylor news papers",  # newspaper
+    "advance america",  # payday loan company
+    "angela walker, k.c. - mdw law",  # Nova Scotia Canada firm (902 area code)
+    "express inn parsons",  # hotel
+    "firms - scg legal",  # Baton Rouge LA directory (225 area code)
+    "green country ford of parsons",  # car dealership
+    "kitchen pass",  # restaurant
+    "memorial lawn cemetery",  # cemetery
+    "utah state list: elder law, medicaid, and estate planning services",  # Utah directory (801 area code)
+    # Crawford county additional junk
+    "henry law firm",  # address field contains review text, no city/zip
+    "jason peak - laxalt law group",  # Nevada firm; address contains image filename
+    # Greenwood county junk (keyword-dump addresses that bypassed the check)
+    "attorney zackery e. reynolds",  # address = review testimonial text
+    "farris legal services llc: home",  # nav artifact name + garbage address
     # Cherokee county junk (duplicates)
     "gene barrett law office",  # same as Barrett Law Office, same phone
     "gay parita",
@@ -208,6 +258,10 @@ REMOVE_EXACT = {
     "district magistrate judge",
     "cherokee county attorney'soffice",
     "kingrey-kellum agency, inc.",
+    "diana marshall, pa",  # physician's assistant (mercy.net profile), not an attorney
+    # Montgomery county additional junk
+    "reynolds daniel m",  # Daniel Reynolds is a member of Emert Chubb LLC; firm name is the referral target
+    "patricia a. horton, pa",  # medical professional (ascension.org profile), not an attorney
     # Chautauqua county junk
     "western union",
     "wagnon commodities",
@@ -259,6 +313,11 @@ NON_LAW_DOMAINS = {
     "wardmfg.com", "aptv.org", "ablebailbonding.com", "garfunkelwild.com",
     "bourboncountyks.org",  # county government website
     "chieftain.com",  # newspaper
+    "odvip9.cc",  # spam domain (Loy Law Firm, Crawford)
+    "jobsbr.info",  # job posting site (Schneider Law Offices, Montgomery)
+    "mercy.net",  # hospital/medical (Diana Marshall PA, Cherokee)
+    "ascension.org",  # hospital system (Patricia Horton PA, Montgomery)
+    "healthcare.ascension.org",
 }
 
 # Websites that are directory pages / news articles (not the firm's actual site)
@@ -269,7 +328,18 @@ DIRECTORY_WEBSITE_PATTERNS = re.compile(
     r"thetexasattorney\.com|fortlauderdalecriminalattorneyblog\.com|"
     r"scottjbrookpa\.com|goodpeopledogetarrested\.com|"
     r"lexvisio\.com|bencmartin\.com|scottrmarshall\.com|"
-    r"chieftain\.com|thelegaldescription\.com)",
+    r"chieftain\.com|thelegaldescription\.com|"
+    r"lawyersdirs\.com|legaltalknetwork\.com)",
+    re.IGNORECASE
+)
+
+# Generic directory landing pages that should be cleared from legal_directory_listing
+# (not a specific attorney profile, just the generic listing page)
+GENERIC_DIRECTORY_URLS = re.compile(
+    r"martindale\.com/by-location/|"
+    r"avvo\.com/find-a-lawyer/|"
+    r"findlaw\.com/lawyer/|"
+    r"justia\.com/lawyers/\w+-lawyers/?$",
     re.IGNORECASE
 )
 
@@ -293,6 +363,54 @@ def clean_website(row):
         row["website"] = ""
     return row
 
+
+def clean_directory_listing(row):
+    """Clear generic/landing-page URLs from legal_directory_listing (keep specific profiles)."""
+    listing = row.get("legal_directory_listing", "").strip()
+    if not listing:
+        return row
+    # Clear martindale general listing pages (not attorney-specific profiles)
+    if GENERIC_DIRECTORY_URLS.search(listing):
+        row = dict(row)
+        row["legal_directory_listing"] = ""
+    return row
+
+
+def fix_fields(row):
+    """Fix known bad field values: tracking emails, phone fragments, misassigned websites."""
+    row = dict(row)
+    name_lc = _normalize_quotes(row.get("law_firm_name", "")).lower().strip()
+
+    # Clear tracking/spam emails
+    email = row.get("email", "")
+    if email and re.search(r"(leadrouter|wixpress|sentry|tracking|noreply@)", email, re.I):
+        row["email"] = ""
+
+    # Fix phone fragments missing area code (e.g., "231-9873" in a KS county)
+    phone = row.get("phone_number", "").strip()
+    if re.match(r"^\d{3}-\d{4}$", phone):
+        county = row.get("county", "").lower()
+        if county in {"allen", "bourbon", "chautauqua", "cherokee", "coffey",
+                      "crawford", "elk", "greenwood", "labette", "montgomery",
+                      "neosho", "wilson", "woodson"}:
+            row["phone_number"] = f"(620) {phone}"
+
+    # Clear website misassigned to a different attorney's firm
+    if name_lc == "charles gentry law office":
+        website = row.get("website", "")
+        if "zackeryreynolds" in website or "reynolds" in website.lower():
+            row["website"] = ""
+            row["email"] = ""  # email was also Reynolds'
+
+    # Strip tracking parameters from website URLs
+    website = row.get("website", "")
+    if website and "?" in website:
+        clean = re.sub(r"\?[^#]*", "", website)
+        if len(clean) > 10:
+            row["website"] = clean
+
+    return row
+
 def is_keyword_dump_address(street):
     """Return True if street address looks like scraped text rather than an address."""
     if not street or not street.strip():
@@ -301,14 +419,25 @@ def is_keyword_dump_address(street):
     # Street addresses have digits and short content
     if len(s) > 100:
         return True
+    # Image filenames or hex hashes embedded in address
+    if re.search(r"\.(jpg|jpeg|png|gif|pdf|webp|mp4)\)", s, re.I):
+        return True
+    if re.search(r"\b[a-f0-9]{20,}\b", s):  # long hex string (file hash)
+        return True
     # Contains obvious non-address content
     if re.search(r"\b(award|million|billion|lawsuit|settlement|verdict|"
                  r"damages|plaintiff|defendant|case|appeal|result)\b", s, re.I):
         return True
     if re.search(r"^\d+[MBK]\s+", s, re.I):  # "$50M" style
         return True
-    # Looks like a sentence (multiple words, no digits)
-    if len(s) > 40 and not re.search(r"\d", s):
+    # Testimonial / review text (may start with a digit like "0")
+    if re.search(r"\b(treated my|my sister|years? of practice|over \d+ years|"
+                 r"highly recommend|excellent service|great attorney|"
+                 r"applications? while|reforms? program|race.gender neutral|"
+                 r"small business program|characteristics under)\b", s, re.I):
+        return True
+    # Looks like a sentence (multiple words, no digits after first 2 chars)
+    if len(s) > 40 and not re.search(r"\d", s[2:]):
         words = s.split()
         if len(words) > 5:
             return True
@@ -412,7 +541,29 @@ def is_junk(row):
     city = row.get("city", "").strip()
     phone = row.get("phone_number", "").strip()
 
-    # Always keep kscourts-sourced entries
+    # Remove non-Latin / obviously foreign entries — no exceptions
+    if re.search(r"[äöüÄÖÜßéèêàùâîôûç]|rechtsanwalt|rechtsanwälte|kanzlei|"
+                 r"fachanwalt|notar\b|desa|bengkel|balai|warnet|bukit|rumah\b|"
+                 r"desa lawiran|firman\b(?! law| legal)", name, re.I):
+        return True
+
+    # REMOVE_EXACT always wins — even for kscourts entries
+    if name_lc in REMOVE_EXACT:
+        return True
+
+    # Government courts / county entities — remove even from kscourts
+    if re.match(r"^\w[\w\s]+\s+county\s+(district\s+court(?:house)?|courthouse|attorney'?s?\s+office?|attorney|magistrate\s+judge|judicial\s+center)\s*$", name, re.I):
+        return True
+    # City/municipality employers (e.g., "City of Parsons")
+    if re.match(r"^city\s+of\s+\w[\w\s]*$", name, re.I) and not LAW_INDICATORS.search(name):
+        return True
+    if re.search(r"\b(\d+th|\d+st|\d+nd|\d+rd|eleventh|twelfth|thirteenth|fourteenth)\s+judicial\s+district\b", name, re.I):
+        if not re.search(r"\b(public defender|defender|legal services|legal aid)\b", name, re.I):
+            return True
+    if re.match(r"^\w[\w\s]+county\s*$", name, re.I) and not LAW_INDICATORS.search(name):
+        return True
+
+    # Always keep kscourts-sourced entries (after name-based filters above)
     if kscourts and "kscourts.gov" in kscourts:
         return False
 
@@ -425,16 +576,6 @@ def is_junk(row):
             return True  # No city + non-KS/non-US phone = international result
         if not area and not gbp:
             return True  # No city + no phone + no GBP = can't verify locality
-
-    # Remove non-Latin / obviously foreign entries (German, Indonesian, etc.)
-    if re.search(r"[äöüÄÖÜßéèêàùâîôûç]|rechtsanwalt|rechtsanwälte|kanzlei|"
-                 r"fachanwalt|notar\b|desa|bengkel|balai|warnet|bukit|rumah\b|"
-                 r"desa lawiran|firman\b(?! law| legal)", name, re.I):
-        return True
-
-    # Remove exact matches
-    if name_lc in REMOVE_EXACT:
-        return True
 
     # Remove SEO/keyword patterns in name
     if re.search(
@@ -623,6 +764,19 @@ def _phone_digits(phone):
     return d[-10:] if len(d) >= 10 else None
 
 
+_DEDUP_STOP = frozenset({
+    "law", "firm", "office", "offices", "group", "llc", "llp", "pc", "pa", "pllc",
+    "the", "and", "of", "at", "attorney", "attorneys", "lawyer", "lawyers",
+    "chartered", "associates", "associate", "legal", "services", "center",
+})
+
+def _share_name_token(name1, name2):
+    """Return True if both names share a significant (4+ char, non-stop) word."""
+    def tokens(n):
+        return {w for w in re.findall(r'[a-z]{4,}', n.lower()) if w not in _DEDUP_STOP}
+    return bool(tokens(name1) & tokens(name2))
+
+
 def deduplicate(rows):
     def richness(r):
         return sum(1 for v in r.values() if v and str(v).strip())
@@ -661,10 +815,9 @@ def deduplicate(rows):
         # Check phone-based dedup (same phone + city = same entity)
         if phone_key and phone_key in by_phone_key:
             idx = by_phone_key[phone_key]
-            # Only merge if names are somewhat similar (share first token)
-            existing_name = kept[idx].get("law_firm_name", "").lower()
-            new_first = re.split(r"[\s,]", name.lower())[0]
-            if new_first and new_first in existing_name:
+            existing_name = kept[idx].get("law_firm_name", "")
+            # Merge if names share a significant token (bidirectional, 4+ chars, non-stop-word)
+            if _share_name_token(name, existing_name):
                 if richness(row) > richness(kept[idx]):
                     merge_into(row, kept[idx])
                     kept[idx] = row
@@ -695,8 +848,12 @@ def process_county(slug):
 
     original = len(rows)
 
-    # Clean bad websites
+    # Fix known bad field values (emails, phone fragments, misassigned websites)
+    rows = [fix_fields(r) for r in rows]
+
+    # Clean bad websites and generic directory listing URLs
     rows = [clean_website(r) for r in rows]
+    rows = [clean_directory_listing(r) for r in rows]
 
     # Remove junk
     kept = [r for r in rows if not is_junk(r)]

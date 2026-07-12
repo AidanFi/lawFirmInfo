@@ -244,7 +244,7 @@
       "slug": "bourbon-county-ks",
       "name": "Bourbon County",
       "state": "KS",
-      "firm_count": 9,
+      "firm_count": 11,
       "last_updated": "2026-07-11",
       "csv_file": "bourbon-county-ks.csv"
     },
@@ -276,7 +276,7 @@
       "slug": "crawford-county-ks",
       "name": "Crawford County",
       "state": "",
-      "firm_count": 38,
+      "firm_count": 39,
       "last_updated": "2026-07-11",
       "csv_file": "crawford-county-ks.csv"
     },
@@ -404,7 +404,7 @@
       "slug": "wilson-county-ks",
       "name": "Wilson County",
       "state": "KS",
-      "firm_count": 8,
+      "firm_count": 9,
       "last_updated": "2026-07-11",
       "csv_file": "wilson-county-ks.csv"
     },

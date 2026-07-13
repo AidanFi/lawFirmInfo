@@ -749,6 +749,198 @@ COUNTY_DEFINITIONS = {
             "Okmulgee County Oklahoma",
         ],
     },
+
+    # =========================================================================
+    # CENTRAL KANSAS COUNTIES
+    # =========================================================================
+    "barton_ks": {
+        "name": "Barton County",
+        "state": "KS",
+        "slug": "barton-county-ks",
+        "msa": "",
+        "cities": [
+            "Great Bend", "Ellinwood", "Hoisington", "Claflin", "Albert",
+            "Olmitz", "Pawnee Rock", "Galatia", "Susank",
+        ],
+        "extra_search_terms": ["Great Bend KS", "Barton County Kansas"],
+    },
+    "clay_ks": {
+        "name": "Clay County",
+        "state": "KS",
+        "slug": "clay-county-ks",
+        "msa": "",
+        "cities": [
+            "Clay Center", "Wakefield", "Green", "Clifton", "Morganville",
+            "Leonardville", "Idana",
+        ],
+        "extra_search_terms": ["Clay Center KS", "Clay County Kansas"],
+    },
+    "cloud_ks": {
+        "name": "Cloud County",
+        "state": "KS",
+        "slug": "cloud-county-ks",
+        "msa": "",
+        "cities": [
+            "Concordia", "Miltonvale", "Glasco", "Clyde", "Jamestown",
+            "Aurora", "Ames", "Tipton",
+        ],
+        "extra_search_terms": ["Concordia KS", "Cloud County Kansas"],
+    },
+    "dickinson_ks": {
+        "name": "Dickinson County",
+        "state": "KS",
+        "slug": "dickinson-county-ks",
+        "msa": "",
+        "cities": [
+            "Abilene", "Chapman", "Solomon", "Herington", "Detroit",
+            "Hope", "Enterprise", "Elmo", "Carlton", "Navarre", "Woodbine",
+        ],
+        "extra_search_terms": ["Abilene KS", "Dickinson County Kansas"],
+    },
+    "ellsworth_ks": {
+        "name": "Ellsworth County",
+        "state": "KS",
+        "slug": "ellsworth-county-ks",
+        "msa": "",
+        "cities": [
+            "Ellsworth", "Kanopolis", "Wilson", "Lorraine", "Holyrood", "Carneiro",
+        ],
+        "extra_search_terms": ["Ellsworth KS", "Ellsworth County Kansas"],
+    },
+    "harvey_ks": {
+        "name": "Harvey County",
+        "state": "KS",
+        "slug": "harvey-county-ks",
+        "msa": "Wichita",
+        "cities": [
+            "Newton", "Halstead", "Hesston", "Burrton", "Sedgwick", "Walton",
+            "North Newton",
+        ],
+        "extra_search_terms": ["Newton KS", "Harvey County Kansas"],
+    },
+    "kingman_ks": {
+        "name": "Kingman County",
+        "state": "KS",
+        "slug": "kingman-county-ks",
+        "msa": "",
+        "cities": [
+            "Kingman", "Norwich", "Nashville", "Cunningham", "Zenda",
+            "Penalosa", "Spivey", "Rago", "Murdock",
+        ],
+        "extra_search_terms": ["Kingman KS", "Kingman County Kansas"],
+    },
+    "lincoln_ks": {
+        "name": "Lincoln County",
+        "state": "KS",
+        "slug": "lincoln-county-ks",
+        "msa": "",
+        "cities": [
+            "Lincoln", "Sylvan Grove", "Barnard", "Beverly", "Vesper",
+            "Luray", "Denmark",
+        ],
+        "extra_search_terms": ["Lincoln KS", "Lincoln County Kansas"],
+    },
+    "marion_ks": {
+        "name": "Marion County",
+        "state": "KS",
+        "slug": "marion-county-ks",
+        "msa": "",
+        "cities": [
+            "Marion", "Hillsboro", "Peabody", "Florence", "Burns", "Durham",
+            "Goessel", "Lehigh", "Lost Springs", "Ramona", "Tampa",
+            "Lincolnville", "Antelope",
+        ],
+        "extra_search_terms": ["Marion KS", "Hillsboro KS", "Marion County Kansas"],
+    },
+    "mcpherson_ks": {
+        "name": "McPherson County",
+        "state": "KS",
+        "slug": "mcpherson-county-ks",
+        "msa": "",
+        "cities": [
+            "McPherson", "Mc Pherson", "Lindsborg", "Marquette", "Inman",
+            "Canton", "Moundridge", "Galva", "Windom", "Buhler", "Roxbury", "Elyria",
+        ],
+        "extra_search_terms": ["McPherson KS", "Mc Pherson KS", "McPherson County Kansas"],
+    },
+    "mitchell_ks": {
+        "name": "Mitchell County",
+        "state": "KS",
+        "slug": "mitchell-county-ks",
+        "msa": "",
+        "cities": [
+            "Beloit", "Cawker City", "Glen Elder", "Tipton", "Hunter",
+            "Simpson", "Scottus",
+        ],
+        "extra_search_terms": ["Beloit KS", "Mitchell County Kansas"],
+    },
+    "ottawa_ks": {
+        "name": "Ottawa County",
+        "state": "KS",
+        "slug": "ottawa-county-ks",
+        "msa": "",
+        "cities": [
+            "Minneapolis", "Delphos", "Tescott", "Bennington", "Culver",
+            "Simpson", "Markley",
+        ],
+        "extra_search_terms": ["Minneapolis KS", "Ottawa County Kansas"],
+    },
+    "reno_ks": {
+        "name": "Reno County",
+        "state": "KS",
+        "slug": "reno-county-ks",
+        "msa": "Wichita",
+        "cities": [
+            "Hutchinson", "South Hutchinson", "Nickerson", "Pretty Prairie",
+            "Haven", "Partridge", "Burrton", "Turon", "Yoder", "Arlington",
+            "Abbyville", "Sylvia", "Medora", "Plevna", "Willowbrook",
+        ],
+        "extra_search_terms": ["Hutchinson KS", "Reno County Kansas"],
+    },
+    "rice_ks": {
+        "name": "Rice County",
+        "state": "KS",
+        "slug": "rice-county-ks",
+        "msa": "",
+        "cities": [
+            "Lyons", "Sterling", "Little River", "Chase", "Alden",
+            "Bushton", "Geneseo", "Raymond",
+        ],
+        "extra_search_terms": ["Lyons KS", "Rice County Kansas"],
+    },
+    "russell_ks": {
+        "name": "Russell County",
+        "state": "KS",
+        "slug": "russell-county-ks",
+        "msa": "",
+        "cities": [
+            "Russell", "Lucas", "Dorrance", "Gorham", "Bunker Hill",
+            "Paradise", "Waldo",
+        ],
+        "extra_search_terms": ["Russell KS", "Russell County Kansas"],
+    },
+    "saline_ks": {
+        "name": "Saline County",
+        "state": "KS",
+        "slug": "saline-county-ks",
+        "msa": "Salina",
+        "cities": [
+            "Salina", "Assaria", "Brookville", "Gypsum", "Mentor",
+            "New Cambria", "Smolan", "Falun",
+        ],
+        "extra_search_terms": ["Salina KS", "Saline County Kansas"],
+    },
+    "stafford_ks": {
+        "name": "Stafford County",
+        "state": "KS",
+        "slug": "stafford-county-ks",
+        "msa": "",
+        "cities": [
+            "Saint John", "St. John", "Stafford", "Macksville", "Seward",
+            "Hudson", "Radium", "Zenith",
+        ],
+        "extra_search_terms": ["Saint John KS", "St. John KS", "Stafford County Kansas"],
+    },
 }
 
 PRIORITY_SCORES = {

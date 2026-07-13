@@ -415,6 +415,142 @@
       "firm_count": 2,
       "last_updated": "2026-07-11",
       "csv_file": "woodson-county-ks.csv"
+    },
+    {
+      "slug": "barton-county-ks",
+      "name": "Barton County",
+      "state": "KS",
+      "firm_count": 17,
+      "last_updated": "2026-07-12",
+      "msa": ""
+    },
+    {
+      "slug": "clay-county-ks",
+      "name": "Clay County",
+      "state": "KS",
+      "firm_count": 4,
+      "last_updated": "2026-07-12",
+      "msa": ""
+    },
+    {
+      "slug": "cloud-county-ks",
+      "name": "Cloud County",
+      "state": "KS",
+      "firm_count": 3,
+      "last_updated": "2026-07-12",
+      "msa": ""
+    },
+    {
+      "slug": "dickinson-county-ks",
+      "name": "Dickinson County",
+      "state": "KS",
+      "firm_count": 4,
+      "last_updated": "2026-07-12",
+      "msa": ""
+    },
+    {
+      "slug": "ellsworth-county-ks",
+      "name": "Ellsworth County",
+      "state": "KS",
+      "firm_count": 1,
+      "last_updated": "2026-07-12",
+      "msa": ""
+    },
+    {
+      "slug": "harvey-county-ks",
+      "name": "Harvey County",
+      "state": "KS",
+      "firm_count": 24,
+      "last_updated": "2026-07-12",
+      "msa": "Wichita"
+    },
+    {
+      "slug": "kingman-county-ks",
+      "name": "Kingman County",
+      "state": "KS",
+      "firm_count": 3,
+      "last_updated": "2026-07-12",
+      "msa": ""
+    },
+    {
+      "slug": "lincoln-county-ks",
+      "name": "Lincoln County",
+      "state": "KS",
+      "firm_count": 1,
+      "last_updated": "2026-07-12",
+      "msa": ""
+    },
+    {
+      "slug": "marion-county-ks",
+      "name": "Marion County",
+      "state": "KS",
+      "firm_count": 2,
+      "last_updated": "2026-07-12",
+      "msa": ""
+    },
+    {
+      "slug": "mcpherson-county-ks",
+      "name": "McPherson County",
+      "state": "KS",
+      "firm_count": 19,
+      "last_updated": "2026-07-12",
+      "msa": ""
+    },
+    {
+      "slug": "mitchell-county-ks",
+      "name": "Mitchell County",
+      "state": "KS",
+      "firm_count": 5,
+      "last_updated": "2026-07-12",
+      "msa": ""
+    },
+    {
+      "slug": "ottawa-county-ks",
+      "name": "Ottawa County",
+      "state": "KS",
+      "firm_count": 2,
+      "last_updated": "2026-07-12",
+      "msa": ""
+    },
+    {
+      "slug": "reno-county-ks",
+      "name": "Reno County",
+      "state": "KS",
+      "firm_count": 35,
+      "last_updated": "2026-07-12",
+      "msa": "Wichita"
+    },
+    {
+      "slug": "rice-county-ks",
+      "name": "Rice County",
+      "state": "KS",
+      "firm_count": 6,
+      "last_updated": "2026-07-12",
+      "msa": ""
+    },
+    {
+      "slug": "russell-county-ks",
+      "name": "Russell County",
+      "state": "KS",
+      "firm_count": 4,
+      "last_updated": "2026-07-12",
+      "msa": ""
+    },
+    {
+      "slug": "saline-county-ks",
+      "name": "Saline County",
+      "state": "KS",
+      "firm_count": 41,
+      "last_updated": "2026-07-12",
+      "msa": "Salina"
+    },
+    {
+      "slug": "stafford-county-ks",
+      "name": "Stafford County",
+      "state": "KS",
+      "firm_count": 1,
+      "last_updated": "2026-07-12",
+      "msa": ""
     }
   ]
 }

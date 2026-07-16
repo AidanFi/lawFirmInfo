@@ -1,10 +1,10 @@
 provider_name,website,phone_number,provider_type,city,state,county,street_address,zip_code,email,npi_number
 "Roy Leon Lane, D.C.",,(620) 826-3539,Chiropractor,Bucklin,KS,Ford County,710 W Center St,67834,,1194727339
 "Angela Dawn Harp, D.C.",,(620) 227-9902,Chiropractor,Dodge City,KS,Ford County,2601 Central Ave Suite 22,67801,,1952492761
-Arrowhead Family Chiropractic Llc,,(620) 371-5580,Chiropractor,Dodge City,KS,Ford County,2004 1St Ave,67801,,1326758483
-"Centre For Health And Wellness, P.A.",,(620) 225-9922,Chiropractor,Dodge City,KS,Ford County,701 E Comanche Ln Ste B,67801,,1821274366
+Arrowhead Family Chiropractic Llc,https://arrowheadpt.com,(620) 371-5580,Chiropractor,Dodge City,KS,Ford County,2004 1St Ave,67801,,1326758483
+"Centre For Health And Wellness, P.A.",https://centrechiropractic.com,(620) 225-9922,Chiropractor,Dodge City,KS,Ford County,701 E Comanche Ln Ste B,67801,,1821274366
 "Dodge City Chiropractic, Llc",https://dodgecitychiropractic.com,(620) 371-6166,Chiropractor,Dodge City,KS,Ford County,210 E Frontview St Suite C,67801,,1306248992
-Fischer Chiropractic Pa,,(620) 225-2299,Chiropractor,Dodge City,KS,Ford County,2000 N 14Th Ave,67801,,1376630715
+Fischer Chiropractic Pa,https://fischerchiro.com,(620) 225-2299,Chiropractor,Dodge City,KS,Ford County,2000 N 14Th Ave,67801,,1376630715
 "Jammie D Phillips, D. C.",https://phillipschiropracticpa.com,(620) 225-4139,Chiropractor,Dodge City,KS,Ford County,2601 Central Ave Village Square Mall,67801,,1558466169
 "Jared Christopher Peters, D.C.",,(620) 227-7082,Chiropractor,Dodge City,KS,Ford County,1805 Avenue A,67801,,1912055922
 "Jason Alan Joy, DC",https://joychiropractic.com,(620) 225-8677,Chiropractor,Dodge City,KS,Ford County,900 W Frontview St Ste 101,67801,,1376627059
@@ -14,16 +14,16 @@ Kirk L. Henrichs,,(620) 227-7082,Chiropractor,Dodge City,KS,Ford County,1805 Ave
 "Koehn Wellness & Chiropractic, P.A.",,(620) 227-9902,Chiropractor,Dodge City,KS,Ford County,"2601 Central Avenue, Suite 22",67801,,1902903917
 Ks Spine & Performance Llc,,(620) 682-5149,Chiropractor,Dodge City,KS,Ford County,100 Military Ave Ste 222,67801,,1821715558
 "Kylan Cris Bennett, DC",,(620) 227-9902,Chiropractor,Dodge City,KS,Ford County,2605 Central Ave,67801,,1265062848
-"Lauren Rae Quint, D.C.",,(620) 225-2299,Chiropractor,Dodge City,KS,Ford County,2000 N 14Th Ave,67801,,1194096685
+"Lauren Rae Quint, D.C.",https://quintchiro.com,(620) 225-2299,Chiropractor,Dodge City,KS,Ford County,2000 N 14Th Ave,67801,,1194096685
 "Mark D Pick, DC",,(620) 225-3411,Chiropractor,Dodge City,KS,Ford County,2300 N 14Th Ave Suite 200,67801,,1487738167
 "Matthew Schneweis, DC",,(620) 682-5149,Chiropractor,Dodge City,KS,Ford County,100 Military Ave Ste 222,67801,,1477136604
 Phillips Chiropractic P.A.,https://phillipschiropracticpa.com,(620) 225-4139,Chiropractor,Dodge City,KS,Ford County,2200 Summerlon Cir Ste D,67801,,1487818522
 "Pick Chiropractic, P.A.",,(620) 225-3411,Chiropractor,Dodge City,KS,Ford County,2300 N 14Th Ave Suite 200,67801,,1356492391
-"Quint Chiropractic, Llc",,(620) 225-2299,Chiropractor,Dodge City,KS,Ford County,2000 N 14Th Ave,67801,,1528457983
+"Quint Chiropractic, Llc",https://quintchiro.com,(620) 225-2299,Chiropractor,Dodge City,KS,Ford County,2000 N 14Th Ave,67801,,1528457983
 "Rex Dion Stanley, D.C.",https://phillipschiropracticpa.com,(620) 225-4139,Chiropractor,Dodge City,KS,Ford County,2200 Summerlon Cir Suite D,67801,,1932643137
 "Samantha Marie Pearce, DC",https://dodgecitychiropractic.com,(620) 371-6166,Chiropractor,Dodge City,KS,Ford County,210 E Frontview St Ste C,67801,,1568271583
 "Sara Nicole Flickinger, D.C.",https://dodgecitychiropractic.com,(620) 371-6166,Chiropractor,Dodge City,KS,Ford County,210 E Frontview St Suite C,67801,,1134468382
-"Scott D Fischer, DC",,(620) 225-2299,Chiropractor,Dodge City,KS,Ford County,2000 N 14Th Ave,67801,,1538370200
+"Scott D Fischer, DC",https://quintchiro.com,(620) 225-2299,Chiropractor,Dodge City,KS,Ford County,2000 N 14Th Ave,67801,,1538370200
 "Sean D Krylie Flickinger, D.C.",https://dodgecitychiropractic.com,(620) 371-6166,Chiropractor,Dodge City,KS,Ford County,210 E Frontview St Ste C,67801,,1154021715
 "Shanda Renae Koehn, D.C.",,(620) 227-9902,Chiropractor,Dodge City,KS,Ford County,2601 Central Ave Suite 22,67801,,1730270596
 "Shaunnon J Flickinger, D.C.",https://dodgecitychiropractic.com,(620) 370-6166,Chiropractor,Dodge City,KS,Ford County,210 E Frontview St Suite C,67801,,1386941979
@@ -42,5 +42,5 @@ Craighton Carey,,(402) 806-0892,Physical Therapist,Dodge City,KS,Ford County,236
 "Premier Physical Therapy And Sports Performance, Llc",,(620) 338-8633,Physical Therapist,Dodge City,KS,Ford County,1909 N 14Th Ave Ste C,67801,,1679280267
 "Rakhi D Save, PT",,(620) 227-1371,Physical Therapist,Dodge City,KS,Ford County,2020 Central Ave,67801,,1679081228
 "Sheree Salve, PT",https://phillipschiropracticpa.com,(620) 225-4139,Physical Therapist,Dodge City,KS,Ford County,2200 Summerlon Cir Ste D,67801,,1679997001
-"Stephanie A Hornung, RPT",,(615) 896-6400,Physical Therapist,Dodge City,KS,Ford County,501 W Beeson Rd,67801,,1477702249
+"Stephanie A Hornung, RPT",http://www.priebpropertymanagement.com/,(615) 896-6400,Physical Therapist,Dodge City,KS,Ford County,501 W Beeson Rd,67801,,1477702249
 "Whitney Nicole Stapleton, P.T.",,(620) 338-8633,Physical Therapist,Dodge City,KS,Ford County,1909 N 14Th Ave,67801,,1154582468

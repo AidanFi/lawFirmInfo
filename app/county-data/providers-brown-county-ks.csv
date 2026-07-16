@@ -1,19 +1,19 @@
 provider_name,website,phone_number,provider_type,city,state,county,street_address,zip_code,email,npi_number
 Bartek Chiropractic Of Hiawatha Llc,,(785) 740-2264,Chiropractor,Hiawatha,KS,Brown County,120 N 6Th St,66434,,1003277690
 Binkley Chiropractic Llc,,(785) 742-1800,Chiropractor,Hiawatha,KS,Brown County,120 N 6Th St,66434,,1205939386
-"James Robert Stallbaumer, D.C.",,(785) 742-7164,Chiropractor,Hiawatha,KS,Brown County,206 S 1St St,66434,,1043664667
-"Kelsey Stallbaumer, D.C.",,(785) 742-7164,Chiropractor,Hiawatha,KS,Brown County,206 S 1St St,66434,,1376926212
-"Max Allen Swim, D.C.",,(785) 742-7164,Chiropractor,Hiawatha,KS,Brown County,206 S 1St St,66434,,1396749842
+"James Robert Stallbaumer, D.C.",http://www.stallbaumerfc.com/about.php,(785) 742-7164,Chiropractor,Hiawatha,KS,Brown County,206 S 1St St,66434,,1043664667
+"Kelsey Stallbaumer, D.C.",http://www.stallbaumerfc.com/about.php,(785) 742-7164,Chiropractor,Hiawatha,KS,Brown County,206 S 1St St,66434,,1376926212
+"Max Allen Swim, D.C.",http://www.stallbaumerfc.com/about.php,(785) 742-7164,Chiropractor,Hiawatha,KS,Brown County,206 S 1St St,66434,,1396749842
 "Sean Michael Binkley, D.C.",,(785) 742-1800,Chiropractor,Hiawatha,KS,Brown County,120 N 6Th St,66434,,1093708489
-Stallbaumer Family Chiropractic Llc,,(785) 742-7164,Chiropractor,Hiawatha,KS,Brown County,206 S 1St St,66434,,1487001269
-"Ashley Thomas Kidwell, D.C.",,(913) 575-0763,Chiropractor,Horton,KS,Brown County,106 W 8Th St Ste A,66439,,1164474169
+Stallbaumer Family Chiropractic Llc,http://www.stallbaumerfc.com/about.php,(785) 742-7164,Chiropractor,Hiawatha,KS,Brown County,206 S 1St St,66434,,1487001269
+"Ashley Thomas Kidwell, D.C.",https://ashleykidwellfe0.dr-leonardo.com/,(913) 575-0763,Chiropractor,Horton,KS,Brown County,106 W 8Th St Ste A,66439,,1164474169
 "Bradley G Farr, D.C.",,(785) 486-2171,Chiropractor,Horton,KS,Brown County,120 W 18Th St,66439,,1093754699
 Farr Chiropractic Clinic,,(785) 486-2171,Chiropractor,Horton,KS,Brown County,120 W 18Th St,66439,,1023219011
-Kidwell Chiropractic Llc,,(913) 575-0763,Chiropractor,Horton,KS,Brown County,106 W 8Th St Ste A,66439,,1699796698
+Kidwell Chiropractic Llc,https://ashleykidwellfe0.dr-leonardo.com/,(913) 575-0763,Chiropractor,Horton,KS,Brown County,106 W 8Th St Ste A,66439,,1699796698
 "Jamie Mulanax Jacobsen, D.O.",,(785) 966-8200,Chiropractor,Mayetta,KS,Brown County,11400 158Th Rd,66509,,1669447330
 "Brett L. Lukert, D.C.",,(785) 284-0088,Chiropractor,Sabetha,KS,Brown County,1102 S Hwy 75,66534,,1659372936
-"Harling Chiropractic, Llc",,(402) 801-9391,Chiropractor,Sabetha,KS,Brown County,502 S Washington Ave,66534,,1235877390
-"Mitchell James Harling, DC",,(402) 801-9391,Chiropractor,Sabetha,KS,Brown County,502 S Washington Ave,66534,,1962144576
+"Harling Chiropractic, Llc",https://www.cityofsabetha.com/healthcare.cfm,(402) 801-9391,Chiropractor,Sabetha,KS,Brown County,502 S Washington Ave,66534,,1235877390
+"Mitchell James Harling, DC",https://www.cityofsabetha.com/healthcare.cfm,(402) 801-9391,Chiropractor,Sabetha,KS,Brown County,502 S Washington Ave,66534,,1962144576
 Simpson Chiropractic Pa,https://simpsonchiropractic.com,(785) 284-2205,Chiropractor,Sabetha,KS,Brown County,914 Main St,66534,,1508823170
 "William T. Simpson, D.C.",https://simpsonchiropractic.com,(785) 284-2205,Chiropractor,Sabetha,KS,Brown County,914 Main St,66534,,1386645414
 "Adam Ryan Goodpasture, DPT, PT",,(913) 360-5550,Physical Therapist,Atchison,KS,Brown County,800 Ravenhill Dr,66002,,1811762271
@@ -25,7 +25,7 @@ Cory Eckert,,(913) 367-2131,Physical Therapist,Atchison,KS,Brown County,800 Rave
 Margo Chartier,,(913) 367-2131,Physical Therapist,Atchison,KS,Brown County,800 Ravenhill Dr,66002,,1982092797
 "Mariah Kathryn Henning, PT, DPT",,(913) 360-5550,Physical Therapist,Atchison,KS,Brown County,800 Ravenhill Dr,66002,,1679254023
 Michele Renee Combs,,(913) 360-5550,Physical Therapist,Atchison,KS,Brown County,800 Ravenhill Dr,66002,,1477329647
-"Adam Robert Jahnel, DPT",,(785) 742-2201,Physical Therapist,Hiawatha,KS,Brown County,819 Oregon St,66434,,1558920140
+"Adam Robert Jahnel, DPT",https://www.cityofhiawatha.org/business/stars-inc,(785) 742-2201,Physical Therapist,Hiawatha,KS,Brown County,819 Oregon St,66434,,1558920140
 "Adelyn Tackitt, PT, DPT",,(785) 742-2131,Physical Therapist,Hiawatha,KS,Brown County,300 Utah St,66434,,1295651511
 "Brandon W Deeds, PT",,(785) 742-7606,Physical Therapist,Hiawatha,KS,Brown County,700 Oregon St,66434,,1134565955
 "Brian Alan Voos, PT",,(785) 742-7606,Physical Therapist,Hiawatha,KS,Brown County,700 Oregon St,66434,,1619971124
@@ -38,10 +38,10 @@ Caleb Winkel,,(785) 742-6219,Physical Therapist,Hiawatha,KS,Brown County,300 Uta
 "Kristin Fassnacht, PT, DPT",https://stars.com,(785) 742-7300,Physical Therapist,Hiawatha,KS,Brown County,201 S 4Th St,66434,,1124411251
 Mark Sudbeck,,(785) 742-2131,Physical Therapist,Hiawatha,KS,Brown County,300 Utah St,66434,,1659765485
 Michelle Tedman,https://stars.com,(785) 742-7300,Physical Therapist,Hiawatha,KS,Brown County,201 S 4Th St,66434,,1629462452
-Payton Cole Parker,,(785) 742-2201,Physical Therapist,Hiawatha,KS,Brown County,819 Oregon St,66434,,1548043854
-Physical & Respiratory Therapy Services Llc,,(785) 742-2201,Physical Therapist,Hiawatha,KS,Brown County,819 Oregon St,66434,,1407850902
+Payton Cole Parker,https://www.cityofhiawatha.org/business/stars-inc,(785) 742-2201,Physical Therapist,Hiawatha,KS,Brown County,819 Oregon St,66434,,1548043854
+Physical & Respiratory Therapy Services Llc,https://www.cityofhiawatha.org/business/stars-inc,(785) 742-2201,Physical Therapist,Hiawatha,KS,Brown County,819 Oregon St,66434,,1407850902
 "Rachel Jackson, P.T., D.P.T.",,(785) 742-7606,Physical Therapist,Hiawatha,KS,Brown County,700 Oregon St,66434,,1831509991
-"Shannon Henry, DPT",,(785) 742-2201,Physical Therapist,Hiawatha,KS,Brown County,819 Oregon St,66434,,1457125551
+"Shannon Henry, DPT",https://www.cityofhiawatha.org/business/stars-inc,(785) 742-2201,Physical Therapist,Hiawatha,KS,Brown County,819 Oregon St,66434,,1457125551
 "Stars, Inc",https://stars.com,(785) 742-7300,Physical Therapist,Hiawatha,KS,Brown County,201 S 4Th St,66434,,1578637500
 "Teresa Marie Miller, Physical Therepist",,(785) 742-7606,Physical Therapist,Hiawatha,KS,Brown County,700 Oregon St,66434,,1326143702
 "Amanda Pottroff, PT, DPT",https://stars.com,(785) 742-7300,Physical Therapist,Horton,KS,Brown County,1903 Euclid Ave Ste B,66439,,1154913002

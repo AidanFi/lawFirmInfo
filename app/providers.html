@@ -21,13 +21,12 @@
     .county-card-breakdown { display: flex; gap: 12px; margin-bottom: 14px; }
     .breakdown-item { font-size: 12px; color: var(--subtle); }
     .breakdown-item strong { color: var(--text); font-weight: 600; }
-    .county-card-meta { color: var(--muted); font-size: 11px; margin-bottom: 14px; }
     .download-btn { display: inline-block; background: var(--accent); color: white; padding: 8px 18px; border-radius: var(--radius-sm); text-decoration: none; font-size: 13px; font-weight: 500; transition: opacity .15s; }
     .download-btn:hover { opacity: 0.85; }
     .info-box { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 16px 20px; margin-bottom: 24px; font-size: 13px; color: var(--subtle); line-height: 1.6; }
     .info-box strong { color: var(--text); }
-    .empty-state { text-align: center; padding: 80px 20px; color: var(--muted); }
-    .empty-state h2 { font-size: 18px; color: var(--subtle); margin-bottom: 8px; }
+    .summary-bar { display: flex; gap: 28px; margin-bottom: 24px; font-size: 13px; color: var(--subtle); }
+    .summary-bar strong { color: var(--text); font-size: 15px; display: block; }
   </style>
 </head>
 <body>
@@ -51,74 +50,132 @@
       <strong>Data source:</strong> National Provider Identifier (NPI) Registry — the government database all licensed healthcare providers who bill insurance are required to register with. Equivalent in authority to the state bar registry for attorneys.
     </div>
 
-    <div id="provider-grid" class="county-grid"></div>
-    <div id="empty-state" class="empty-state hidden">
-      <h2>No provider data available</h2>
+    <div class="summary-bar">
+      <div><strong id="total-counties">97</strong> counties</div>
+      <div><strong id="total-chiro">2,729</strong> chiropractors</div>
+      <div><strong id="total-pt">3,277</strong> physical therapists</div>
     </div>
+
+    <div id="provider-grid" class="county-grid"></div>
   </div>
 
   <script>
+    function esc(s) {
+      return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
+    }
+
     const PROVIDERS = [
-      { name: "Johnson County",    state: "KS", chiro: 0, pt: 0, last_updated: "2026-07-08", csv_file: "county-data/providers-johnson-county-ks.csv" },
-      { name: "Wyandotte County",  state: "KS", chiro: 0, pt: 0, last_updated: "2026-07-08", csv_file: "county-data/providers-wyandotte-county-ks.csv" },
-      { name: "Douglas County",    state: "KS", chiro: 0, pt: 0, last_updated: "2026-07-08", csv_file: "county-data/providers-douglas-county-ks.csv" },
-      { name: "Shawnee County",    state: "KS", chiro: 0, pt: 0, last_updated: "2026-07-08", csv_file: "county-data/providers-shawnee-county-ks.csv" },
-      { name: "Leavenworth County",state: "KS", chiro: 0, pt: 0, last_updated: "2026-07-08", csv_file: "county-data/providers-leavenworth-county-ks.csv" },
-      { name: "Miami County",      state: "KS", chiro: 0, pt: 0, last_updated: "2026-07-08", csv_file: "county-data/providers-miami-county-ks.csv" },
-      { name: "Franklin County",   state: "KS", chiro: 0, pt: 0, last_updated: "2026-07-08", csv_file: "county-data/providers-franklin-county-ks.csv" },
-      { name: "Jefferson County",  state: "KS", chiro: 0, pt: 0, last_updated: "2026-07-08", csv_file: "county-data/providers-jefferson-county-ks.csv" },
-      { name: "Osage County",      state: "KS", chiro: 0, pt: 0, last_updated: "2026-07-08", csv_file: "county-data/providers-osage-county-ks.csv" },
-      { name: "Linn County",       state: "KS", chiro: 0, pt: 0, last_updated: "2026-07-08", csv_file: "county-data/providers-linn-county-ks.csv" },
+      { name: "Allen County", state: "KS", csv_file: "county-data/providers-allen-county-ks.csv", chiro: 13, pt: 9 },
+      { name: "Anderson County", state: "KS", csv_file: "county-data/providers-anderson-county-ks.csv", chiro: 4, pt: 4 },
+      { name: "Atchison County", state: "KS", csv_file: "county-data/providers-atchison-county-ks.csv", chiro: 11, pt: 19 },
+      { name: "Barber County", state: "KS", csv_file: "county-data/providers-barber-county-ks.csv", chiro: 1, pt: 2 },
+      { name: "Barton County", state: "KS", csv_file: "county-data/providers-barton-county-ks.csv", chiro: 27, pt: 30 },
+      { name: "Bourbon County", state: "KS", csv_file: "county-data/providers-bourbon-county-ks.csv", chiro: 11, pt: 12 },
+      { name: "Brown County", state: "KS", csv_file: "county-data/providers-brown-county-ks.csv", chiro: 17, pt: 37 },
+      { name: "Butler County", state: "KS", csv_file: "county-data/providers-butler-county-ks.csv", chiro: 54, pt: 75 },
+      { name: "Chase County", state: "KS", csv_file: "county-data/providers-chase-county-ks.csv", chiro: 0, pt: 1 },
+      { name: "Chautauqua County", state: "KS", csv_file: "county-data/providers-chautauqua-county-ks.csv", chiro: 3, pt: 1 },
+      { name: "Cherokee County", state: "KS", csv_file: "county-data/providers-cherokee-county-ks.csv", chiro: 4, pt: 17 },
+      { name: "Cheyenne County", state: "KS", csv_file: "county-data/providers-cheyenne-county-ks.csv", chiro: 4, pt: 4 },
+      { name: "Clark County", state: "KS", csv_file: "county-data/providers-clark-county-ks.csv", chiro: 2, pt: 2 },
+      { name: "Clay County", state: "KS", csv_file: "county-data/providers-clay-county-ks.csv", chiro: 13, pt: 6 },
+      { name: "Cloud County", state: "KS", csv_file: "county-data/providers-cloud-county-ks.csv", chiro: 12, pt: 7 },
+      { name: "Coffey County", state: "KS", csv_file: "county-data/providers-coffey-county-ks.csv", chiro: 3, pt: 6 },
+      { name: "Cowley County", state: "KS", csv_file: "county-data/providers-cowley-county-ks.csv", chiro: 20, pt: 14 },
+      { name: "Crawford County", state: "KS", csv_file: "county-data/providers-crawford-county-ks.csv", chiro: 27, pt: 45 },
+      { name: "Decatur County", state: "KS", csv_file: "county-data/providers-decatur-county-ks.csv", chiro: 3, pt: 0 },
+      { name: "Dickinson County", state: "KS", csv_file: "county-data/providers-dickinson-county-ks.csv", chiro: 10, pt: 7 },
+      { name: "Doniphan County", state: "KS", csv_file: "county-data/providers-doniphan-county-ks.csv", chiro: 4, pt: 2 },
+      { name: "Douglas County", state: "KS", csv_file: "county-data/providers-douglas-county-ks.csv", chiro: 111, pt: 158 },
+      { name: "Edwards County", state: "KS", csv_file: "county-data/providers-edwards-county-ks.csv", chiro: 2, pt: 2 },
+      { name: "Elk County", state: "KS", csv_file: "county-data/providers-elk-county-ks.csv", chiro: 0, pt: 1 },
+      { name: "Ellis County", state: "KS", csv_file: "county-data/providers-ellis-county-ks.csv", chiro: 28, pt: 29 },
+      { name: "Ellsworth County", state: "KS", csv_file: "county-data/providers-ellsworth-county-ks.csv", chiro: 7, pt: 1 },
+      { name: "Finney County", state: "KS", csv_file: "county-data/providers-finney-county-ks.csv", chiro: 24, pt: 30 },
+      { name: "Ford County", state: "KS", csv_file: "county-data/providers-ford-county-ks.csv", chiro: 29, pt: 16 },
+      { name: "Franklin County", state: "KS", csv_file: "county-data/providers-franklin-county-ks.csv", chiro: 27, pt: 15 },
+      { name: "Geary County", state: "KS", csv_file: "county-data/providers-geary-county-ks.csv", chiro: 15, pt: 49 },
+      { name: "Gove County", state: "KS", csv_file: "county-data/providers-gove-county-ks.csv", chiro: 1, pt: 0 },
+      { name: "Graham County", state: "KS", csv_file: "county-data/providers-graham-county-ks.csv", chiro: 3, pt: 0 },
+      { name: "Grant County", state: "KS", csv_file: "county-data/providers-grant-county-ks.csv", chiro: 5, pt: 5 },
+      { name: "Gray County", state: "KS", csv_file: "county-data/providers-gray-county-ks.csv", chiro: 3, pt: 1 },
+      { name: "Greeley County", state: "KS", csv_file: "county-data/providers-greeley-county-ks.csv", chiro: 0, pt: 1 },
+      { name: "Greenwood County", state: "KS", csv_file: "county-data/providers-greenwood-county-ks.csv", chiro: 2, pt: 3 },
+      { name: "Hamilton County", state: "KS", csv_file: "county-data/providers-hamilton-county-ks.csv", chiro: 1, pt: 1 },
+      { name: "Harvey County", state: "KS", csv_file: "county-data/providers-harvey-county-ks.csv", chiro: 29, pt: 77 },
+      { name: "Haskell County", state: "KS", csv_file: "county-data/providers-haskell-county-ks.csv", chiro: 0, pt: 2 },
+      { name: "Hodgeman County", state: "KS", csv_file: "county-data/providers-hodgeman-county-ks.csv", chiro: 1, pt: 0 },
+      { name: "Jackson County", state: "KS", csv_file: "county-data/providers-jackson-county-ks.csv", chiro: 10, pt: 9 },
+      { name: "Jefferson County", state: "KS", csv_file: "county-data/providers-jefferson-county-ks.csv", chiro: 13, pt: 1 },
+      { name: "Jewell County", state: "KS", csv_file: "county-data/providers-jewell-county-ks.csv", chiro: 0, pt: 1 },
+      { name: "Johnson County", state: "KS", csv_file: "county-data/providers-johnson-county-ks.csv", chiro: 849, pt: 1111 },
+      { name: "Kearny County", state: "KS", csv_file: "county-data/providers-kearny-county-ks.csv", chiro: 4, pt: 1 },
+      { name: "Kingman County", state: "KS", csv_file: "county-data/providers-kingman-county-ks.csv", chiro: 6, pt: 5 },
+      { name: "Labette County", state: "KS", csv_file: "county-data/providers-labette-county-ks.csv", chiro: 11, pt: 9 },
+      { name: "Leavenworth County", state: "KS", csv_file: "county-data/providers-leavenworth-county-ks.csv", chiro: 34, pt: 58 },
+      { name: "Lincoln County", state: "KS", csv_file: "county-data/providers-lincoln-county-ks.csv", chiro: 6, pt: 2 },
+      { name: "Linn County", state: "KS", csv_file: "county-data/providers-linn-county-ks.csv", chiro: 9, pt: 1 },
+      { name: "Logan County", state: "KS", csv_file: "county-data/providers-logan-county-ks.csv", chiro: 3, pt: 0 },
+      { name: "Lyon County", state: "KS", csv_file: "county-data/providers-lyon-county-ks.csv", chiro: 23, pt: 41 },
+      { name: "Marion County", state: "KS", csv_file: "county-data/providers-marion-county-ks.csv", chiro: 11, pt: 8 },
+      { name: "McPherson County", state: "KS", csv_file: "county-data/providers-mcpherson-county-ks.csv", chiro: 22, pt: 31 },
+      { name: "Meade County", state: "KS", csv_file: "county-data/providers-meade-county-ks.csv", chiro: 1, pt: 0 },
+      { name: "Miami County", state: "KS", csv_file: "county-data/providers-miami-county-ks.csv", chiro: 31, pt: 11 },
+      { name: "Mitchell County", state: "KS", csv_file: "county-data/providers-mitchell-county-ks.csv", chiro: 9, pt: 5 },
+      { name: "Montgomery County", state: "KS", csv_file: "county-data/providers-montgomery-county-ks.csv", chiro: 19, pt: 14 },
+      { name: "Morris County", state: "KS", csv_file: "county-data/providers-morris-county-ks.csv", chiro: 8, pt: 0 },
+      { name: "Morton County", state: "KS", csv_file: "county-data/providers-morton-county-ks.csv", chiro: 0, pt: 3 },
+      { name: "Nemaha County", state: "KS", csv_file: "county-data/providers-nemaha-county-ks.csv", chiro: 12, pt: 8 },
+      { name: "Neosho County", state: "KS", csv_file: "county-data/providers-neosho-county-ks.csv", chiro: 22, pt: 24 },
+      { name: "Ness County", state: "KS", csv_file: "county-data/providers-ness-county-ks.csv", chiro: 4, pt: 0 },
+      { name: "Norton County", state: "KS", csv_file: "county-data/providers-norton-county-ks.csv", chiro: 4, pt: 3 },
+      { name: "Osage County", state: "KS", csv_file: "county-data/providers-osage-county-ks.csv", chiro: 5, pt: 5 },
+      { name: "Osborne County", state: "KS", csv_file: "county-data/providers-osborne-county-ks.csv", chiro: 7, pt: 7 },
+      { name: "Ottawa County", state: "KS", csv_file: "county-data/providers-ottawa-county-ks.csv", chiro: 2, pt: 2 },
+      { name: "Pawnee County", state: "KS", csv_file: "county-data/providers-pawnee-county-ks.csv", chiro: 5, pt: 3 },
+      { name: "Phillips County", state: "KS", csv_file: "county-data/providers-phillips-county-ks.csv", chiro: 8, pt: 4 },
+      { name: "Pottawatomie County", state: "KS", csv_file: "county-data/providers-pottawatomie-county-ks.csv", chiro: 12, pt: 13 },
+      { name: "Pratt County", state: "KS", csv_file: "county-data/providers-pratt-county-ks.csv", chiro: 8, pt: 6 },
+      { name: "Rawlins County", state: "KS", csv_file: "county-data/providers-rawlins-county-ks.csv", chiro: 4, pt: 0 },
+      { name: "Reno County", state: "KS", csv_file: "county-data/providers-reno-county-ks.csv", chiro: 52, pt: 44 },
+      { name: "Republic County", state: "KS", csv_file: "county-data/providers-republic-county-ks.csv", chiro: 6, pt: 2 },
+      { name: "Rice County", state: "KS", csv_file: "county-data/providers-rice-county-ks.csv", chiro: 12, pt: 8 },
+      { name: "Riley County", state: "KS", csv_file: "county-data/providers-riley-county-ks.csv", chiro: 81, pt: 89 },
+      { name: "Rooks County", state: "KS", csv_file: "county-data/providers-rooks-county-ks.csv", chiro: 8, pt: 6 },
+      { name: "Rush County", state: "KS", csv_file: "county-data/providers-rush-county-ks.csv", chiro: 2, pt: 2 },
+      { name: "Russell County", state: "KS", csv_file: "county-data/providers-russell-county-ks.csv", chiro: 8, pt: 2 },
+      { name: "Saline County", state: "KS", csv_file: "county-data/providers-saline-county-ks.csv", chiro: 49, pt: 64 },
+      { name: "Scott County", state: "KS", csv_file: "county-data/providers-scott-county-ks.csv", chiro: 8, pt: 5 },
+      { name: "Sedgwick County", state: "KS", csv_file: "county-data/providers-sedgwick-county-ks.csv", chiro: 430, pt: 779 },
+      { name: "Seward County", state: "KS", csv_file: "county-data/providers-seward-county-ks.csv", chiro: 10, pt: 8 },
+      { name: "Shawnee County", state: "KS", csv_file: "county-data/providers-shawnee-county-ks.csv", chiro: 82, pt: 214 },
+      { name: "Sheridan County", state: "KS", csv_file: "county-data/providers-sheridan-county-ks.csv", chiro: 5, pt: 3 },
+      { name: "Sherman County", state: "KS", csv_file: "county-data/providers-sherman-county-ks.csv", chiro: 6, pt: 1 },
+      { name: "Smith County", state: "KS", csv_file: "county-data/providers-smith-county-ks.csv", chiro: 5, pt: 2 },
+      { name: "Stafford County", state: "KS", csv_file: "county-data/providers-stafford-county-ks.csv", chiro: 0, pt: 2 },
+      { name: "Stevens County", state: "KS", csv_file: "county-data/providers-stevens-county-ks.csv", chiro: 1, pt: 4 },
+      { name: "Sumner County", state: "KS", csv_file: "county-data/providers-sumner-county-ks.csv", chiro: 13, pt: 15 },
+      { name: "Thomas County", state: "KS", csv_file: "county-data/providers-thomas-county-ks.csv", chiro: 13, pt: 8 },
+      { name: "Trego County", state: "KS", csv_file: "county-data/providers-trego-county-ks.csv", chiro: 3, pt: 1 },
+      { name: "Wallace County", state: "KS", csv_file: "county-data/providers-wallace-county-ks.csv", chiro: 2, pt: 0 },
+      { name: "Washington County", state: "KS", csv_file: "county-data/providers-washington-county-ks.csv", chiro: 5, pt: 4 },
+      { name: "Wilson County", state: "KS", csv_file: "county-data/providers-wilson-county-ks.csv", chiro: 2, pt: 1 },
+      { name: "Woodson County", state: "KS", csv_file: "county-data/providers-woodson-county-ks.csv", chiro: 2, pt: 6 },
+      { name: "Wyandotte County", state: "KS", csv_file: "county-data/providers-wyandotte-county-ks.csv", chiro: 59, pt: 132 },
     ];
 
-    function esc(s) {
-      return String(s).replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;");
-    }
-
-    async function loadCounts() {
-      for (const p of PROVIDERS) {
-        try {
-          const r = await fetch(p.csv_file);
-          if (!r.ok) continue;
-          const text = await r.text();
-          const lines = text.trim().split("\n").slice(1); // skip header
-          p.chiro = lines.filter(l => l.includes('"Chiropractor"') || l.includes(',Chiropractor,')).length;
-          p.pt = lines.filter(l => l.includes('"Physical Therapist"') || l.includes(',Physical Therapist,')).length;
-          // Extract last_updated from first data line if present
-          const firstLine = lines[0] || "";
-          // We don't store date in CSV rows — use a fallback
-          p.last_updated = "2026-06-26";
-        } catch (e) {
-          // file not yet available
-        }
-      }
-    }
-
-    function renderGrid() {
-      const grid = document.getElementById("provider-grid");
-      const empty = document.getElementById("empty-state");
-      const available = PROVIDERS.filter(p => p.chiro + p.pt > 0);
-
-      if (!available.length) {
-        empty.classList.remove("hidden");
-        return;
-      }
-
-      grid.innerHTML = available.map(p => `
-        <div class="county-card">
-          <div class="county-card-name">${esc(p.name)}</div>
-          <div class="county-card-state">${esc(p.state)}</div>
-          <div class="county-card-breakdown">
-            <span class="breakdown-item"><strong>${p.chiro}</strong> Chiropractors</span>
-            <span class="breakdown-item"><strong>${p.pt}</strong> Physical Therapists</span>
-          </div>
-          <div class="county-card-meta">Updated ${esc(p.last_updated)}</div>
-          <a class="download-btn" href="${esc(p.csv_file)}" download>Download CSV</a>
+    const grid = document.getElementById('provider-grid');
+    grid.innerHTML = PROVIDERS.map(p => `
+      <div class="county-card">
+        <div class="county-card-name">${esc(p.name)}</div>
+        <div class="county-card-state">${esc(p.state)}</div>
+        <div class="county-card-breakdown">
+          <span class="breakdown-item"><strong>${p.chiro}</strong> Chiropractors</span>
+          <span class="breakdown-item"><strong>${p.pt}</strong> Physical Therapists</span>
         </div>
-      `).join("");
-    }
-
-    loadCounts().then(renderGrid);
+        <a class="download-btn" href="${esc(p.csv_file)}" download>Download CSV</a>
+      </div>
+    `).join('');
   </script>
 </body>
 </html>

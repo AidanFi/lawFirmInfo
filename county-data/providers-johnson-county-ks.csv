@@ -1,6 +1,6 @@
 provider_name,website,phone_number,provider_type,city,state,county,street_address,zip_code,email,npi_number
 "Aaron R Beck, D.C.",http://www.beck-chiro.com/,(319) 504-5806,Chiropractor,Gardner,KS,Johnson County,969 E Lincoln Ln,66030,,1497097133
-"Ana Rebecca Rentas, D.C.",,(913) 832-3030,Chiropractor,Gardner,KS,Johnson County,550 E Lakota St,66030,,1861817033
+"Ana Rebecca Rentas, D.C.",https://rentashealth.com,(913) 832-3030,Chiropractor,Gardner,KS,Johnson County,550 E Lakota St,66030,,1861817033
 Beck Chiropractic Center Llc,http://www.beck-chiro.com/,(319) 504-5806,Chiropractor,Gardner,KS,Johnson County,969 E Lincoln Ln,66030,,1124788419
 "Brian Todd Cook, D.C.",https://cookfamilychiropractic.com,(913) 244-4704,Chiropractor,Gardner,KS,Johnson County,969 E. Lincoln Lane,66030,,1396954483
 "Britney Ward, Chiropractic Doctor",https://catalystchiropractic.org,(913) 856-7067,Chiropractor,Gardner,KS,Johnson County,122 E Park St,66030,,1821605007
@@ -8,7 +8,7 @@ Catalyst Chiropractic Llc,https://catalystchiropractic.org,(913) 286-4968,Chirop
 Cook Family Chiropractic Inc.,https://cookfamilychiropractic.com,(913) 244-4704,Chiropractor,Gardner,KS,Johnson County,969 E. Lincoln Ln.,66030,,1609061795
 "David A Hedman, D.C.",,(913) 884-2057,Chiropractor,Gardner,KS,Johnson County,1815 E Santa Fe St,66030,,1386672590
 "Kaylea Dawn Cantrell, DC",https://catalystchiropractic.org,(913) 286-4968,Chiropractor,Gardner,KS,Johnson County,122 E Park St,66030,,1699364356
-Rentas Holistic Care Llc,,(913) 832-3030,Chiropractor,Gardner,KS,Johnson County,550 E. Lakota St.,66030,,1851709562
+Rentas Holistic Care Llc,https://rentashealth.com,(913) 832-3030,Chiropractor,Gardner,KS,Johnson County,550 E. Lakota St.,66030,,1851709562
 "Tobi Jeurink, D.C.",http://rootfunctionhealth.com/,(913) 856-4595,Chiropractor,Gardner,KS,Johnson County,325 E Main St Ste C,66030,,1184784092
 "Todd James Winters, D.C.",http://doctodd.com/,(913) 856-8135,Chiropractor,Gardner,KS,Johnson County,802 E Main St,66030,,1033168752
 "Gregory G Gates, D.C.",,(913) 322-2995,Chiropractor,Kansas City,KS,Johnson County,9040 Haskins Rd,66215,,1861771438
@@ -23,7 +23,7 @@ Aspire Back Pain & Rehab Clinic,https://aspirechiro.com,(913) 381-2388,Chiroprac
 "Bethany Paige Long, D.C.",https://thrivechiro.com,(913) 735-6854,Chiropractor,Leawood,KS,Johnson County,5001 College Blvd # 102,66211,,1861930620
 Bethesda Chiropractic And Accupuncture Inc,https://bethesdachiropractic.com,(913) 341-1930,Chiropractor,Leawood,KS,Johnson County,"8014 State Line Rd., Suite 101",66208,,1851508931
 Bodywerkz Llc,,(913) 271-4272,Chiropractor,Leawood,KS,Johnson County,11301 Ash St,66211,,1821382300
-"Brandon Lee Thomas Van Anne, DC",,(620) 794-5466,Chiropractor,Leawood,KS,Johnson County,7000 W 121St St Ste 100,66209,,1558933887
+"Brandon Lee Thomas Van Anne, DC",http://www.curaintegrative.com/,(620) 794-5466,Chiropractor,Leawood,KS,Johnson County,7000 W 121St St Ste 100,66209,,1558933887
 "Carl S Cleveland Iv, Dc Llc",https://thrivechiro.com,(913) 341-4300,Chiropractor,Leawood,KS,Johnson County,8016 State Line Rd Ste 100,66208,,1578858270
 Catalyst Hc,https://lpckc.com/,(913) 345-9888,Chiropractor,Leawood,KS,Johnson County,12100 State Line Rd,66209,,1114493194
 "Catalyst Health Center, Pa",https://catalystchiro.com,(913) 345-9888,Chiropractor,Leawood,KS,Johnson County,12256 State Line Rd,66209,,1538589767
@@ -52,7 +52,7 @@ Shane Bisson Chiropractic Pa,https://lpckc.com/,(913) 345-9888,Chiropractor,Leaw
 Troy C Peters,https://lpckc.com/,(816) 665-3455,Chiropractor,Leawood,KS,Johnson County,12100 State Line Rd,66209,,1902651649
 True Life Chiropractic,https://catalystchiro.com,(913) 345-9888,Chiropractor,Leawood,KS,Johnson County,12256 State Line Rd,66209,,1710122072
 Vital Roots Chiropractic Llc,https://vitalrootschiropractic.com,(913) 754-7004,Chiropractor,Leawood,KS,Johnson County,14300 Kenneth Rd,66224,,1851070155
-Vital Roots Chiropractic Llc,,(913) 745-7004,Chiropractor,Leawood,KS,Johnson County,14300 Kenneth Rd Ste 210,66224,,1124711015
+Vital Roots Chiropractic Llc,https://vitalchiropractic.com,(913) 745-7004,Chiropractor,Leawood,KS,Johnson County,14300 Kenneth Rd Ste 210,66224,,1124711015
 "Aaron Riedel, D.C.",https://drnaomi.com,(913) 299-6000,Chiropractor,Lenexa,KS,Johnson County,8724 Bourgade St,66219,,1578823381
 Adjust To Health Llc,https://adjustchiropractic.com,(913) 299-6000,Chiropractor,Lenexa,KS,Johnson County,8724 Bourgade Ave.,66219,,1982822144
 "Andrew L Todd, DC",http://www.performancerehabkc.com/,(913) 888-4845,Chiropractor,Lenexa,KS,Johnson County,8550 Marshall Dr Ste 105,66214,,1720689359
@@ -199,7 +199,7 @@ Coral Chiropractic Llc,https://coralchiropractic.com,(913) 355-5164,Chiropractor
 "Craig Edward Koshlap, D.C.",https://ridgeviewchiropractic.com,(913) 890-7370,Chiropractor,Olathe,KS,Johnson County,17775 W 106Th St Ste 105,66061,,1063576023
 "D'Sjon Thomas, D.C.",https://www.fulkchiropractic.com,(913) 764-6237,Chiropractor,Olathe,KS,Johnson County,2110 E Santa Fe St,66062,,1518294420
 "David Anthony Yoo, D.C.",,(913) 375-7357,Chiropractor,Olathe,KS,Johnson County,12968 S Summit St,66062,,1235351057
-Dearmond Chiropractic,,(913) 859-9135,Chiropractor,Olathe,KS,Johnson County,10528 S Ridgeview Rd,66061,,1578961363
+Dearmond Chiropractic,https://dearmondtherapy.com,(913) 859-9135,Chiropractor,Olathe,KS,Johnson County,10528 S Ridgeview Rd,66061,,1578961363
 "Decker Chiropractic Walk-In-Care, Pa",https://deckerchiropractic.com,(913) 829-5111,Chiropractor,Olathe,KS,Johnson County,13025 S Mur Len Rd Suite 100,66062,,1265614010
 "Dennis Wayne Miller, D.C.",https://millerchiropractic.com,(913) 782-7260,Chiropractor,Olathe,KS,Johnson County,13470 S Arapaho Dr Suite 150,66062,,1497782494
 "Devin Morton, DC",https://www.completecare-kc.com/,(913) 815-8076,Chiropractor,Olathe,KS,Johnson County,784 N Ridgeview Rd,66061,,1740660927
@@ -230,7 +230,7 @@ Jaimison Ashton Peckham,https://physicaltherapy.fitmjc.com/location/physical-the
 "Jeremy Lee Landry, D.C.",https://olathechiropractic.com,(913) 764-9393,Chiropractor,Olathe,KS,Johnson County,16077 S Bradley Dr,66062,,1134369994
 Jimmie D Williams Iii Dc Pa,https://jimmied.com,(913) 764-9077,Chiropractor,Olathe,KS,Johnson County,14101 S Mur Len Rd,66062,,1437187580
 "Jimmie Douglas Williams, D.C., P.A.",https://jimmied.com,(913) 764-9077,Chiropractor,Olathe,KS,Johnson County,14101 S Mur Len Rd,66062,,1326070483
-"John G Pickering, D.C. ,B.S.",,(913) 390-5533,Chiropractor,Olathe,KS,Johnson County,535 N Mur Len Rd,66062,,1841279437
+"John G Pickering, D.C. ,B.S.",https://pickeringchiro.com,(913) 390-5533,Chiropractor,Olathe,KS,Johnson County,535 N Mur Len Rd,66062,,1841279437
 "John Williams Krim, DC",http://www.karimchiropractic.com/,(913) 638-9669,Chiropractor,Olathe,KS,Johnson County,14625 S Caenen Ln,66062,,1811347743
 "Jordan Butler, D.C.",https://www.purebalancechiro.com/,(913) 538-1582,Chiropractor,Olathe,KS,Johnson County,601 N Mur Len Rd Ste 5,66062,,1811398399
 "Joseph Mark Anderson, DC",https://olathechiropractic.com,(913) 764-9393,Chiropractor,Olathe,KS,Johnson County,16041 S Bradley Dr,66062,,1508097916
@@ -266,11 +266,11 @@ Olathe Chiropractic,https://olathechiropractic.com,(913) 764-9393,Chiropractor,O
 Olathe Chiropractic Llc,https://olathechiropractic.com,(913) 764-9393,Chiropractor,Olathe,KS,Johnson County,16041 S Bradley Dr,66062,,1679933436
 Parsons Chiropractic Llc,https://parsonschiropractic.com,(913) 712-7044,Chiropractor,Olathe,KS,Johnson County,12704 S Blackbob Rd,66062,,1548035967
 Performance Chiropractic,https://myperformancechiropractic.com/,(913) 782-5000,Chiropractor,Olathe,KS,Johnson County,708 S Rogers Rd Ste A,66062,,1366699407
-Pickering Chiropractic Chartered,,(913) 390-5533,Chiropractor,Olathe,KS,Johnson County,535 N Mur Len Rd,66062,,1003982398
+Pickering Chiropractic Chartered,https://pickeringchiro.com,(913) 390-5533,Chiropractor,Olathe,KS,Johnson County,535 N Mur Len Rd,66062,,1003982398
 Pulse Chiropractic And Health Care,https://pulsechiropractic.com,(913) 353-6555,Chiropractor,Olathe,KS,Johnson County,513 N Mur Len Rd Ste B,66062,,1093193450
 Pure Balance Family Chiropractic Llc,https://www.purebalancechiro.com/,(913) 538-1582,Chiropractor,Olathe,KS,Johnson County,601 N Mur Len Rd Ste 5,66062,,1356819395
 Radiant Family Wellness,https://financhiropractic.com,(913) 322-0251,Chiropractor,Olathe,KS,Johnson County,12744 S Pflumm Rd,66062,,1982337705
-"Rayford Wesley Hembree, D.C.",,(913) 390-5533,Chiropractor,Olathe,KS,Johnson County,535 N Mur Len Rd,66062,,1184887465
+"Rayford Wesley Hembree, D.C.",https://pickeringchiro.com,(913) 390-5533,Chiropractor,Olathe,KS,Johnson County,535 N Mur Len Rd,66062,,1184887465
 "Realign Kc Chiropractic, Llc",https://realignchiropractic.com,(913) 485-6401,Chiropractor,Olathe,KS,Johnson County,14949 W 124Th Ter,66062,,1124566088
 "Reed Benjamin Hartshorn, DC",http://www.kchealthandsport.com/,(913) 764-2271,Chiropractor,Olathe,KS,Johnson County,20160 W 153Rd St,66062,,1588220198
 "Reid Mcmullin, DC",,(913) 689-2333,Chiropractor,Olathe,KS,Johnson County,10454 S Ridgeview Rd,66061,,1649930330
@@ -294,13 +294,13 @@ Seoul Chiropractic Llc,https://seoulchiropractic.com,(913) 333-7550,Chiropractor
 "Stephanie Lynn Mealman, D.C.",,(913) 764-2850,Chiropractor,Olathe,KS,Johnson County,890 S Chestnut St,66061,,1780800656
 Steven Reece,https://www.leegoodrumhealth.com/,(913) 390-9355,Chiropractor,Olathe,KS,Johnson County,153 W 151St St #150,66061,,1588064356
 "Stevenson Family Chiropractic, Llc",https://stevensonfamilychiropractic.com,(913) 313-1032,Chiropractor,Olathe,KS,Johnson County,513 N Mur Len Rd Ste A,66062,,1346677218
-"Summit Chiropractic, Llc",,(913) 440-4142,Chiropractor,Olathe,KS,Johnson County,801 N Mur Len Rd Ste 103,66062,,1790286391
+"Summit Chiropractic, Llc",https://summitchiro.com,(913) 440-4142,Chiropractor,Olathe,KS,Johnson County,801 N Mur Len Rd Ste 103,66062,,1790286391
 "Sylvia Vallotton, D.C.",,(913) 397-8378,Chiropractor,Olathe,KS,Johnson County,113 N Chester St,66061,,1902040785
 "Tanya Denille Schupbach, DC",https://www.hallwellness.com/,(913) 764-2525,Chiropractor,Olathe,KS,Johnson County,1500 Kansas City Rd Ste 50 Family Chiropractic Care,66061,,1669571717
 "Thomas R Taylor, D.C.",http://www.healingneck.com/,(913) 780-6000,Chiropractor,Olathe,KS,Johnson County,450 E Santa Fe St,66061,,1295057859
 "Tim Bhakta, Pa",http://www.activejoco.com/,(913) 397-6900,Chiropractor,Olathe,KS,Johnson County,401 S Clairborne Rd Ste 202,66062,,1609811819
 "Timir H Bhakta, D.C.",http://www.activejoco.com/,(913) 397-6900,Chiropractor,Olathe,KS,Johnson County,401 S Clairborne Rd Suite 202,66062,,1063405058
-"Timothy Dearmond, D.C.",,(913) 859-9135,Chiropractor,Olathe,KS,Johnson County,10528 S Ridgeview Rd,66061,,1952709024
+"Timothy Dearmond, D.C.",https://dearmondtherapy.com,(913) 859-9135,Chiropractor,Olathe,KS,Johnson County,10528 S Ridgeview Rd,66061,,1952709024
 "Toby Alexander Scott, DC",http://procarekc.com/,(913) 393-1303,Chiropractor,Olathe,KS,Johnson County,15211 S Blackbob Rd,66062,,1154594026
 "Todd Williams, D.C.",https://docwilliamskc.com/,(913) 579-0491,Chiropractor,Olathe,KS,Johnson County,14006 W 135Th St,66062,,1699105791
 Trajectory Spine And Strength,https://trajectoryspineandstrength.com/,(913) 904-8605,Chiropractor,Olathe,KS,Johnson County,19915 W 161St St,66062,,1255924536
@@ -315,7 +315,7 @@ Woodroof Chiropractic And Acupuncture Llc,https://woodroofchiro.com,(816) 506-05
 "Christopher Leonardi, DC",,(913) 381-4357,Chiropractor,Overland,KS,Johnson County,7070 W 107Th St Ste 100,66212,,1205878618
 "Aaron Mark Lawson, D.C.",https://anthonychiropractic.com,(913) 685-0023,Chiropractor,Overland Park,KS,Johnson County,14331 Metcalf Ave,66223,,1689035735
 "Abigail Dawn Stanley, DC",https://firstchoicechiropractic.com,(913) 402-7444,Chiropractor,Overland Park,KS,Johnson County,11960 Quivira Rd Ste 200,66213,,1720587942
-Absolute Health,,(913) 649-6677,Chiropractor,Overland Park,KS,Johnson County,10464 Metcalf Ave,66212,,1376782367
+Absolute Health,https://absolutept.com,(913) 649-6677,Chiropractor,Overland Park,KS,Johnson County,10464 Metcalf Ave,66212,,1376782367
 Abundant Life Wellness Center,https://abundantlifewellnesscenter.com,(913) 345-2221,Chiropractor,Overland Park,KS,Johnson County,10709 Barkley St Suite A,66211,,1205938370
 "Active Care Chiropractic, Inc.",https://activecarechiropractic.com,(913) 341-2900,Chiropractor,Overland Park,KS,Johnson County,7811 Marty St,66204,,1215975131
 "Active Chiropractic, P.A.",https://robertschiro.com,(913) 385-5444,Chiropractor,Overland Park,KS,Johnson County,10400 W 103Rd St Suite 20,66214,,1952540098
@@ -358,7 +358,7 @@ Bestlifechiropractic Llc,https://bestlifechiropractic.com,(913) 689-8529,Chiropr
 Bigby Family Chiropractic Llc,https://drbigby.com,(913) 214-2910,Chiropractor,Overland Park,KS,Johnson County,10628 W 87Th St,66214,,1659146157
 Body Basics Chiropractic Llc,https://anthonychiropractic.com,(913) 685-0023,Chiropractor,Overland Park,KS,Johnson County,14331 Metcalf Ave,66223,,1295944494
 Body Logic Llc,https://bodylogic.net,(913) 277-0127,Chiropractor,Overland Park,KS,Johnson County,15445 Metcalf Ave,66223,,1144057498
-Body Synergy Wellness Center,,(913) 228-1024,Chiropractor,Overland Park,KS,Johnson County,7250 W 151St St,66223,,1881071785
+Body Synergy Wellness Center,https://synergypt.com,(913) 228-1024,Chiropractor,Overland Park,KS,Johnson County,7250 W 151St St,66223,,1881071785
 "Bradley Michael Woodle, DC",https://asfca.com/clinic-locations/overland-park-ks-clinic/,(913) 643-1771,Chiropractor,Overland Park,KS,Johnson County,12643 Metcalf Ave,66213,,1750307120
 "Bradley William Carolan, D.C.",http://www.hope-chiro.com/,(913) 648-8111,Chiropractor,Overland Park,KS,Johnson County,4687 Indian Creek Pkwy,66207,,1023421179
 "Brandon Beckerman, D.C.",https://integrativechiropractic.com,(620) 921-0979,Chiropractor,Overland Park,KS,Johnson County,5600 W 95Th St Suite 201,66207,,1588035836
@@ -418,8 +418,8 @@ Dallis Rogers Chiropractic Llc,https://anthonychiropractic.com,(913) 685-0023,Ch
 "Dalton Stoss, DC",https://virtueintegrativehealth.com/chiropractic/,(913) 399-1793,Chiropractor,Overland Park,KS,Johnson County,6511 W 119Th St,66209,,1073498432
 "Daniel Joseph Sallee, D.C.",https://asfca.com/clinic-locations/overland-park-ks-clinic/,(913) 643-1771,Chiropractor,Overland Park,KS,Johnson County,12643 Metcalf Ave,66213,,1487958807
 "Darin M Upchurch, DC",https://maxlifechiro.com,(913) 327-7246,Chiropractor,Overland Park,KS,Johnson County,11010 Quivira Rd,66210,,1093931743
-"David Charles Commerford, D.C.",,(913) 681-3500,Chiropractor,Overland Park,KS,Johnson County,8024 W 151St St,66223,,1538356076
-"David John Beisiegel, D.C.",,(913) 649-6677,Chiropractor,Overland Park,KS,Johnson County,10464 Metcalf Ave,66212,,1225178890
+"David Charles Commerford, D.C.",https://spinalcarecenter.com,(913) 681-3500,Chiropractor,Overland Park,KS,Johnson County,8024 W 151St St,66223,,1538356076
+"David John Beisiegel, D.C.",https://absolutept.com,(913) 649-6677,Chiropractor,Overland Park,KS,Johnson County,10464 Metcalf Ave,66212,,1225178890
 "David Lauchlin Gulledge, D.C.",https://www.truehealthkc.com/,(913) 338-1112,Chiropractor,Overland Park,KS,Johnson County,11879 W 112Th St Suite 100,66210,,1992938369
 "David Nmn Rosas, DC",https://mymidwestphysician.com/physicians/profile/Dr-David-Clark-MD?utm_campaign=corp_listings_mgmt&utm_source=google&utm_medium=business_listing,(913) 353-3377,Chiropractor,Overland Park,KS,Johnson County,10841 W 87Th St Ste 200,66214,,1679338867
 Davidson Family Chiropractic Llc,https://davidsonchiropractic.com,(731) 414-3241,Chiropractor,Overland Park,KS,Johnson County,7951 West 160Th Street Suite 500,66223,,1073018446
@@ -474,13 +474,13 @@ Harlan Chiropractic And Acupuncture Llc,https://harlanchiropractic.com,(913) 897
 "Heather Lynn Bourdon, D.C.",https://www.unbrokenchiropractic.com/,(913) 239-8501,Chiropractor,Overland Park,KS,Johnson County,9159 W 133Rd St,66213,,1831438647
 "Heather Trammell, DC",http://www.robertsonchiro.com/,(913) 234-0700,Chiropractor,Overland Park,KS,Johnson County,10850 Lowell Ave,66210,,1962066928
 Henry C Marquardt Dc Llc,https://henrychiropractic.com,(913) 451-7500,Chiropractor,Overland Park,KS,Johnson County,8600 W 110Th St Suite 211,66210,,1255488516
-"Hobart Howard Hull, DC",,(913) 888-6789,Chiropractor,Overland Park,KS,Johnson County,10400 W 103Rd St Ste 20,66214,,1447357231
+"Hobart Howard Hull, DC",https://robertschiro.com,(913) 888-6789,Chiropractor,Overland Park,KS,Johnson County,10400 W 103Rd St Ste 20,66214,,1447357231
 Hope Chiropractic Llc,https://hopechiropractic.com,(913) 725-8735,Chiropractor,Overland Park,KS,Johnson County,8826 Santa Fe Dr Ste 104,66212,,1447883814
 "Hope Family Chiropractic, P.A.",http://www.hope-chiro.com/,(913) 381-2525,Chiropractor,Overland Park,KS,Johnson County,4687 Indian Creek Pkwy,66207,,1891087243
 "Hoskins Chiropractric, Pa",https://dunnchiropractic.com,(913) 825-9281,Chiropractor,Overland Park,KS,Johnson County,11960 W 119Th Street,66213,,1649380403
 Huffman Chiropractic And Acupuncture Pa,https://huffmanchiropractic.com,(913) 851-8500,Chiropractor,Overland Park,KS,Johnson County,7811 W 151St St,66223,,1013224955
-"Hull Chiropractic Enterprises, Inc",,(913) 888-6789,Chiropractor,Overland Park,KS,Johnson County,10251 W 87Th St,66212,,1386863124
-"Hull Chiropractic Enterprises, Inc.",,(913) 888-6789,Chiropractor,Overland Park,KS,Johnson County,10400 W 103Rd St Ste 20,66214,,1255465498
+"Hull Chiropractic Enterprises, Inc",https://robertschiro.com,(913) 888-6789,Chiropractor,Overland Park,KS,Johnson County,10251 W 87Th St,66212,,1386863124
+"Hull Chiropractic Enterprises, Inc.",https://robertschiro.com,(913) 888-6789,Chiropractor,Overland Park,KS,Johnson County,10400 W 103Rd St Ste 20,66214,,1255465498
 "Ian Kipkosgei Kolum, DC",,(913) 265-6650,Chiropractor,Overland Park,KS,Johnson County,9607 W 118Th St Apt 2,66210,,1285591248
 Identity Chiropractic Llc,https://identitychiropractic.com,(913) 387-4921,Chiropractor,Overland Park,KS,Johnson County,10410 Mastin St,66212,,1972082188
 Ignite Chiropractic And Wellness,https://ignitechiropractic.com,(402) 470-7050,Chiropractor,Overland Park,KS,Johnson County,16082 Metcalf Ave,66085,,1124874854
@@ -677,7 +677,7 @@ Steven J Quade D C P A,https://greenchiropractic.com,(913) 642-6900,Chiropractor
 "Sydney Elizabeth Collier, DC",http://www.asfca.com/,(913) 490-4444,Chiropractor,Overland Park,KS,Johnson County,6701 W 121St St Ste 200,66209,,1861213142
 Synergy Studio,http://www.synergysearchkc.com/,(913) 345-9439,Chiropractor,Overland Park,KS,Johnson County,7824 W. 119Th St.,66213,,1477705945
 "Taejeon Shin, D.C., L.Ac",http://kacclinic.com/,(913) 649-2044,Chiropractor,Overland Park,KS,Johnson County,7050 W 105Th St,66212,,1962757575
-"Tallgrass Chiropractic Center, P.A.",,(913) 648-8600,Chiropractor,Overland Park,KS,Johnson County,7108 W. 119Th Street,66213,,1780875112
+"Tallgrass Chiropractic Center, P.A.",https://tallgrasstherapy.com,(913) 648-8600,Chiropractor,Overland Park,KS,Johnson County,7108 W. 119Th Street,66213,,1780875112
 "Taylor Marie Jacobs, DC",https://findadoctor.kansashealthsystem.com/provider/cory-t-carpenter/2537532,(913) 228-0123,Chiropractor,Overland Park,KS,Johnson County,11709 College Blvd,66210,,1851039135
 "Taylor Walter, DC",https://drwalter.com,(913) 681-9355,Chiropractor,Overland Park,KS,Johnson County,7439 W 161St St,66085,,1972125722
 "Teresa Ann Elder, D.C.",https://greenchiropractic.com,(913) 530-0128,Chiropractor,Overland Park,KS,Johnson County,7905 Santa Fe Dr,66204,,1780893701
@@ -700,7 +700,7 @@ Tyler Jackson Nigus,https://niguschiropractic.com,(913) 953-5959,Chiropractor,Ov
 Urgent Care Chiropractic Pa,https://urgentcarechiropractic.com,(480) 334-9812,Chiropractor,Overland Park,KS,Johnson County,13469 Switzer Rd,66213,,1174927669
 Vance Cole,https://naturalchiropractic.com,(913) 385-1999,Chiropractor,Overland Park,KS,Johnson County,9150 Glenwood St,66212,,1790134930
 Virtue Chiropractic Llc,https://virtueintegrativehealth.com/chiropractic/,(913) 303-8029,Chiropractor,Overland Park,KS,Johnson County,6511 W 119Th St,66209,,1083267637
-"Vohn Watts, D.C.",,(913) 228-1024,Chiropractor,Overland Park,KS,Johnson County,7250 W 151St St,66223,,1689085391
+"Vohn Watts, D.C.",https://synergypt.com,(913) 228-1024,Chiropractor,Overland Park,KS,Johnson County,7250 W 151St St,66223,,1689085391
 Wallace Chiropractic & Nutrition Clinic,https://wallacechiro.com,(913) 722-3200,Chiropractor,Overland Park,KS,Johnson County,9337 W 75Th St,66204,,1063617918
 Walter Chiropractic & Wellness Llc,https://drwalter.com,(913) 681-9355,Chiropractor,Overland Park,KS,Johnson County,7439 W 161St St,66085,,1518570530
 "Well Spine Kc, Llc",https://wellspinekc.com,(913) 624-3888,Chiropractor,Overland Park,KS,Johnson County,8665 W 96Th St Suite 203,66212,,1235662701
@@ -711,7 +711,7 @@ Whole Life Chiropractic Pa,https://wholelifechiropractic.com,(913) 696-1500,Chir
 "Zachary Hesse, D.C.",https://naturalchiropractic.com,(913) 385-1999,Chiropractor,Overland Park,KS,Johnson County,9150 Glenwood St,66212,,1871915819
 "Zafer Chiropractic Health Clinic, P.A.",https://asfca.com/clinic-locations/overland-park-ks-clinic/,(913) 642-1400,Chiropractor,Overland Park,KS,Johnson County,8817 W 95Th St,66212,,1356521645
 "Above And Beyond Chiropractic, P.A.",https://thrivechiro.com,(913) 341-4300,Chiropractor,Prairie Village,KS,Johnson County,8014 State Line Rd Suite 200,66208,,1033376926
-Active Health Solutions,,(913) 341-1200,Chiropractor,Prairie Village,KS,Johnson County,8839 Roe Ave,66207,,1710265533
+Active Health Solutions,https://solutionschiropractic.com,(913) 341-1200,Chiropractor,Prairie Village,KS,Johnson County,8839 Roe Ave,66207,,1710265533
 "Alek Santo, DC",http://www.asfca.com/,(913) 490-4444,Chiropractor,Prairie Village,KS,Johnson County,4121 W 83Rd St Ste 147,66208,,1467107342
 "Alexis Buford, DC",http://volitionchiropractic.com/,(816) 585-4450,Chiropractor,Prairie Village,KS,Johnson County,7301 Mission Rd Ste 241,66208,,1780443481
 "Angela Ribaste, D.C.",http://pvchiro.com/,(913) 948-6602,Chiropractor,Prairie Village,KS,Johnson County,"9401 Nall Ave., Ste 202",66207,,1962424978
@@ -722,23 +722,23 @@ Approach,https://thrivechiro.com,(913) 826-6837,Chiropractor,Prairie Village,KS,
 Glenn Chiropractic,https://glennchiropractic.com,(785) 764-9200,Chiropractor,Prairie Village,KS,Johnson County,8016 State Line Rd Ste 100,66208,,1730590357
 "Haley Nichole Day, D.C.",https://thrivechiro.com,(913) 341-4300,Chiropractor,Prairie Village,KS,Johnson County,8016 State Line Rd Ste 100,66208,,1669740718
 "Jared Brian Meyer, D.C.",https://meyerchiropractic.com,(913) 906-8000,Chiropractor,Prairie Village,KS,Johnson County,2200 W 75Th St Ste 102,66208,,1316307911
-"Jeffrey Remsburg, D.C.",,(913) 341-1200,Chiropractor,Prairie Village,KS,Johnson County,8839 Roe Ave,66207,,1518255470
+"Jeffrey Remsburg, D.C.",https://solutionschiropractic.com,(913) 341-1200,Chiropractor,Prairie Village,KS,Johnson County,8839 Roe Ave,66207,,1518255470
 "John Eric Rasmussen, D.C., D.A.B.C.O.",https://rasmussendc.com/,(913) 677-4224,Chiropractor,Prairie Village,KS,Johnson County,1900 W 75Th St Ste. 210,66208,,1568461408
-"Kevin Ross Mott, D.C.",,(913) 642-4188,Chiropractor,Prairie Village,KS,Johnson County,8014 State Line Rd Suite 200,66208,,1043396427
+"Kevin Ross Mott, D.C.",https://thrivechiro.com,(913) 642-4188,Chiropractor,Prairie Village,KS,Johnson County,8014 State Line Rd Suite 200,66208,,1043396427
 "Kimberly Hunt, DC",,(816) 841-3503,Chiropractor,Prairie Village,KS,Johnson County,7301 Mission Rd Ste 314,66208,,1902138852
-Mary Elizabeth Meeker-Pregon,,(913) 642-4188,Chiropractor,Prairie Village,KS,Johnson County,8014 State Line Rd Ste 200,66208,,1790847622
+Mary Elizabeth Meeker-Pregon,https://thrivechiro.com,(913) 642-4188,Chiropractor,Prairie Village,KS,Johnson County,8014 State Line Rd Ste 200,66208,,1790847622
 Meyer Muscle And Joint Clinic Llc,https://meyerchiropractic.com,(913) 906-8000,Chiropractor,Prairie Village,KS,Johnson County,2200 W 75Th St,66208,,1346600954
 "Overland Park Chiropractic, Pa",https://overlandparkchiropractic.com,(913) 375-8449,Chiropractor,Prairie Village,KS,Johnson County,7301 Mission Rd 251,66208,,1316274103
 Richard E. Day,https://thrivechiro.com,(913) 341-4300,Chiropractor,Prairie Village,KS,Johnson County,8016 State Line Rd 100,66208,,1255762324
 "Rostberg Chiropractic & Acupuncture, P.A.",,(913) 381-9355,Chiropractor,Prairie Village,KS,Johnson County,4121 W 83Rd St Suite 204,66208,,1063605608
 "Stephanie A Rasmussen, D.C., FICS, DABCA",https://rasmussendc.com/,(913) 677-4224,Chiropractor,Prairie Village,KS,Johnson County,1900 W 75Th St Suite 210,66208,,1093714198
 "Synergy Health And Wellness, Pa",https://synergyhealthandwellness.org,(913) 217-7655,Chiropractor,Prairie Village,KS,Johnson County,5200 W 94Th Ter Ste 109,66207,,1770885725
-"Thomas Cotter, D.C.",,(913) 341-1200,Chiropractor,Prairie Village,KS,Johnson County,8839 Roe Ave,66207,,1912206418
+"Thomas Cotter, D.C.",https://solutionschiropractic.com,(913) 341-1200,Chiropractor,Prairie Village,KS,Johnson County,8839 Roe Ave,66207,,1912206418
 "Thrive Kc, Llc",https://thrivechiro.com,(913) 735-6854,Chiropractor,Prairie Village,KS,Johnson County,8016 State Line Rd Ste 100,66208,,1881117265
 "Well Being, Inc.",http://wellbeingkc.com/,(913) 649-3308,Chiropractor,Prairie Village,KS,Johnson County,5304 W 95Th St,66207,,1437689007
 Franz Chiropractic Llc,https://franzchiropractic.com,(913) 594-8914,Chiropractor,Roeland Park,KS,Johnson County,4760 Reinhardt Dr,66205,,1205726577
-Health Source Kc Inc,,(816) 294-2281,Chiropractor,Roeland Park,KS,Johnson County,5228 Juniper Dr,66205,,1841645686
-"Ryan Nadolski, D.C",,(816) 294-2281,Chiropractor,Roeland Park,KS,Johnson County,5424 Johnson Dr,66205,,1972925139
+Health Source Kc Inc,https://sourcechiropractic.com,(816) 294-2281,Chiropractor,Roeland Park,KS,Johnson County,5228 Juniper Dr,66205,,1841645686
+"Ryan Nadolski, D.C",https://sourcechiropractic.com,(816) 294-2281,Chiropractor,Roeland Park,KS,Johnson County,5424 Johnson Dr,66205,,1972925139
 Abide Functional Wellness Llc,https://abidefunctionalwellness.com,(913) 732-1525,Chiropractor,Shawnee,KS,Johnson County,6109 Nieman Rd Apt A,66203,,1215783311
 "Alejandro Gonzalez, D.C.",https://gonzalezchiropractic.com,(913) 962-4500,Chiropractor,Shawnee,KS,Johnson County,12480 W 62Nd Ter Suite 103,66216,,1801232061
 "Alisa Anderson Joyce, DC",https://shawneechiro.com/,(913) 422-1900,Chiropractor,Shawnee,KS,Johnson County,21640 Midland Dr,66218,,1093745481
@@ -746,7 +746,7 @@ Abide Functional Wellness Llc,https://abidefunctionalwellness.com,(913) 732-1525
 "All Spine Chiropractic And Wellness, Llc",http://www.allspinechiro.com/,(316) 617-7348,Chiropractor,Shawnee,KS,Johnson County,5931 Nieman Rd,66203,,1497478903
 "Alvin Dwight Ens, D.C.",,(913) 962-7800,Chiropractor,Shawnee,KS,Johnson County,6230 Nieman Rd,66203,,1922170307
 "Amanda Rose Wappelhorst, DC",http://www.allspinechiro.com/,(913) 914-7090,Chiropractor,Shawnee,KS,Johnson County,5931 Nieman Rd Ste 100,66203,,1871359414
-"Anderson Family Chiropractic, Llc",,(913) 962-2244,Chiropractor,Shawnee,KS,Johnson County,12510 W 62Nd Ter Suite 101,66216,,1528304516
+"Anderson Family Chiropractic, Llc",https://andersonchiropractic.com,(913) 962-2244,Chiropractor,Shawnee,KS,Johnson County,12510 W 62Nd Ter Suite 101,66216,,1528304516
 "Anthony H Trotter, D.C.",https://hammondchiropractic.com,(913) 248-9500,Chiropractor,Shawnee,KS,Johnson County,10610 Shawnee Mission Pkwy Ste 210,66203,,1427451772
 "Anthony Scott Phillips, D.C.",https://www.balderstonchiropractic.com/,(913) 631-8888,Chiropractor,Shawnee,KS,Johnson County,11015 W 75Th St,66214,,1962496372
 "Back In Motion Chiropractic, Llc",https://backinmotionchiropractic.com,(913) 962-6063,Chiropractor,Shawnee,KS,Johnson County,11405 Johnson Dr,66203,,1205972221
@@ -764,7 +764,7 @@ Cook Chiropractic Center Llc,https://cookchiropracticcenter.com,(913) 600-4476,C
 "Dana James Huebner, DC",,(308) 289-0614,Chiropractor,Shawnee,KS,Johnson County,16314 W 65Th St,66217,,1366938920
 "David D Hull, D.C.",,(913) 362-5445,Chiropractor,Shawnee,KS,Johnson County,12212 Johnson Dr,66216,,1407853930
 "Dilyn Matthew Schooley, DC",http://fitmjc.com/location/chiropractors-in-shawnee/,(913) 745-4064,Chiropractor,Shawnee,KS,Johnson County,22120 Midland Dr Ste 1,66226,,1952084394
-"Douglas A Anderson, DC",,(913) 962-2244,Chiropractor,Shawnee,KS,Johnson County,12510 W 62Nd Terrace Ste #101,66216,,1699788307
+"Douglas A Anderson, DC",https://andersonchiropractic.com,(913) 962-2244,Chiropractor,Shawnee,KS,Johnson County,12510 W 62Nd Terrace Ste #101,66216,,1699788307
 "Douglas Allen Mathiesen, DC",,(913) 631-7900,Chiropractor,Shawnee,KS,Johnson County,5900 Nieman Rd Suite 300,66203,,1457368102
 "Dustin H. Moses, D.C.",http://www.puremotionkc.com/menu-2,(913) 766-7292,Chiropractor,Shawnee,KS,Johnson County,15945 W 65Th St,66217,,1073991998
 Empower Chiropractic Llc,https://empowerchiro.com,(913) 278-1598,Chiropractor,Shawnee,KS,Johnson County,6308 Monrovia St,66216,,1659901940
@@ -785,7 +785,7 @@ Isom Chiropractic Llc,http://coreelementchiro.com/,(913) 735-9565,Chiropractor,S
 "Jet Performance Chiropractic, Pa",http://puremotionkc.com/,(913) 766-9266,Chiropractor,Shawnee,KS,Johnson County,12402 W 62Nd Ter,66216,,1154561124
 "Joshua G Vanzandt, DC",https://www.balderstonchiropractic.com/,(913) 631-8888,Chiropractor,Shawnee,KS,Johnson County,6308 Monrovia St,66216,,1699015594
 Khia Chiropractic Llc,http://www.drkatelavigne.com/,(913) 962-7408,Chiropractor,Shawnee,KS,Johnson County,7410 Switzer Rd,66203,,1417648387
-"Khia Chonyale Simmons, DC",,(816) 651-3111,Chiropractor,Shawnee,KS,Johnson County,7410 Switzer Rd,66203,,1356004477
+"Khia Chonyale Simmons, DC",http://www.drkatelavigne.com/,(816) 651-3111,Chiropractor,Shawnee,KS,Johnson County,7410 Switzer Rd,66203,,1356004477
 "Kile Renee Kaspar, D.C.",https://backinmotionchiropractic.com,(913) 962-6063,Chiropractor,Shawnee,KS,Johnson County,10912 W 74Th Ter,66203,,1265493654
 "Kimberly Jo Flaming, DC",https://shawneechiro.com/,(913) 422-1900,Chiropractor,Shawnee,KS,Johnson County,21640 Midland Dr,66218,,1194754911
 "Kolton Riley Buer, DC",https://hammondchiropractic.com,(913) 248-9500,Chiropractor,Shawnee,KS,Johnson County,10610 Shawnee Mission Pkwy Ste 210,66203,,1528726064
@@ -826,8 +826,8 @@ Rogers Family Chiropractic,https://www.balderstonchiropractic.com/,(913) 631-888
 "Vitality Chiropractic And Family Wellness, Llc",http://www.drkatelavigne.com/,(913) 962-7408,Chiropractor,Shawnee,KS,Johnson County,7410 Switzer St,66203,,1215350723
 "Your Wellness Connection, P.A.",http://www.drkatelavigne.com/,(913) 962-7408,Chiropractor,Shawnee,KS,Johnson County,7410 Switzer,66203,,1942396528
 "Zachary Alan Jaskinia, DC",http://www.drkatelavigne.com/,(913) 962-7408,Chiropractor,Shawnee,KS,Johnson County,7410 Switzer St,66203,,1003448689
-"Arvil Lonnie Rudd, DC",,(913) 722-1113,Chiropractor,Shawnee Mission,KS,Johnson County,6220 Antioch Rd Ste 200,66202,,1396832812
-Custom Chiropractic Center Llc,,(913) 722-1113,Chiropractor,Shawnee Mission,KS,Johnson County,6220 Antioch Rd Suite 200,66202,,1659562148
+"Arvil Lonnie Rudd, DC",https://customchiro.com,(913) 722-1113,Chiropractor,Shawnee Mission,KS,Johnson County,6220 Antioch Rd Ste 200,66202,,1396832812
+Custom Chiropractic Center Llc,https://customchiro.com,(913) 722-1113,Chiropractor,Shawnee Mission,KS,Johnson County,6220 Antioch Rd Suite 200,66202,,1659562148
 Healthy Life Chiropractic Llc,http://www.drkatelavigne.com/,(913) 962-7408,Chiropractor,Shawnee Mission,KS,Johnson County,7410 Switzer St,66203,,1760806301
 "Kaitlin Lavigne, D.C.",http://www.drkatelavigne.com/,(913) 223-7710,Chiropractor,Shawnee Mission,KS,Johnson County,10000 W 75Th St Ste 117,66204,,1093105439
 "Roger Thomas Maher, D.C.",,(913) 677-3353,Chiropractor,Shawnee Mission,KS,Johnson County,7031 Johnson Dr,66202,,1598894479
@@ -839,9 +839,9 @@ Healthy Life Chiropractic Llc,http://www.drkatelavigne.com/,(913) 962-7408,Chiro
 "Ellis Chiropractic & Laser Center, Llc",https://ellischiropractic.com,(913) 592-2116,Chiropractor,Spring Hill,KS,Johnson County,703 N Webster St,66083,,1023353919
 "Matthew Robert Metcalf, D.C.",https://sozochiropractic.com,(913) 592-3541,Chiropractor,Spring Hill,KS,Johnson County,22386 S Harrison St,66083,,1609898048
 Sozo Chiropractic Llc,https://sozochiropractic.com,(913) 592-0010,Chiropractor,Spring Hill,KS,Johnson County,22386 S Harrison St,66083,,1558975425
-Kinetic Chiropractic Llc,,(913) 499-6118,Chiropractor,Stilwell,KS,Johnson County,7390 W 161St St,66085,,1033771308
-Specific Chiropractic Llc,,(913) 239-0360,Chiropractor,Stilwell,KS,Johnson County,16010 Metcalf Ave Suite 200,66085,,1568403426
-"Tanner Parr, DC",,(620) 640-8396,Chiropractor,Stilwell,KS,Johnson County,7390 W 161St St,66085,,1881178093
+Kinetic Chiropractic Llc,https://kineticpt.com,(913) 499-6118,Chiropractor,Stilwell,KS,Johnson County,7390 W 161St St,66085,,1033771308
+Specific Chiropractic Llc,https://specificchiropractic.com,(913) 239-0360,Chiropractor,Stilwell,KS,Johnson County,16010 Metcalf Ave Suite 200,66085,,1568403426
+"Tanner Parr, DC",https://kineticpt.com,(620) 640-8396,Chiropractor,Stilwell,KS,Johnson County,7390 W 161St St,66085,,1881178093
 "All Star Chiropractic, Inc.",https://allstarchiropractic.com,(913) 432-5678,Chiropractor,Westwood,KS,Johnson County,4711 Mission Rd,66205,,1619076478
 "Blake Andrew Saville, DC",https://allstarchiropractic.com,(913) 432-5678,Chiropractor,Westwood,KS,Johnson County,4711 Mission Rd,66205,,1023887957
 "Camren Healthcare Group, Pa",https://allstarchiropractic.com,(913) 432-5678,Chiropractor,Westwood,KS,Johnson County,4711 Mission Rd,66205,,1275843625
@@ -857,15 +857,15 @@ Joel Polacek,https://allstarchiropractic.com,(913) 432-5678,Chiropractor,Westwoo
 "Callie Paige Stephens, PT,  DPT",https://serc.urpt.com/locations/gardner/?utm_source=google&utm_medium=organic&utm_campaign=gmb,(913) 856-7927,Physical Therapist,Gardner,KS,Johnson County,225 N Moonlight Rd,66030,,1760779334
 "Erin Anne Nichols, PT, DPT",https://serc.urpt.com/locations/gardner/?utm_source=google&utm_medium=organic&utm_campaign=gmb,(913) 856-7927,Physical Therapist,Gardner,KS,Johnson County,225 N Moonlight Rd,66030,,1124302542
 "Hannah Holmes, PT, DPT",https://meadowbrookrh.com/,(913) 856-8747,Physical Therapist,Gardner,KS,Johnson County,427 W Main St,66030,,1972166817
-"Jamie F Konrade, RPT",,(615) 896-6400,Physical Therapist,Gardner,KS,Johnson County,223 Bedford St,66030,,1306081153
-Jaqueline Wesley,,(615) 896-6400,Physical Therapist,Gardner,KS,Johnson County,223 Bedford St,66030,,1356546782
+"Jamie F Konrade, RPT",http://www.priebpropertymanagement.com/,(615) 896-6400,Physical Therapist,Gardner,KS,Johnson County,223 Bedford St,66030,,1306081153
+Jaqueline Wesley,http://www.priebpropertymanagement.com/,(615) 896-6400,Physical Therapist,Gardner,KS,Johnson County,223 Bedford St,66030,,1356546782
 "Karley Lynn Perry, PT, DPT",https://serc.urpt.com/locations/gardner/?utm_source=google&utm_medium=organic&utm_campaign=gmb,(913) 856-7927,Physical Therapist,Gardner,KS,Johnson County,225 N Moonlight Rd,66030,,1255851754
 "Kelly Anne Yates, PT, MSPT",https://serc.urpt.com/locations/gardner/?utm_source=google&utm_medium=organic&utm_campaign=gmb,(913) 856-7927,Physical Therapist,Gardner,KS,Johnson County,225 N Moonlight Rd,66030,,1023062007
 "Micah Steven Sanders, PT, DPT",https://serc.urpt.com/locations/gardner/?utm_source=google&utm_medium=organic&utm_campaign=gmb,(913) 856-7927,Physical Therapist,Gardner,KS,Johnson County,225 N Moonlight Rd,66030,,1962925636
 "Phillip Richard, PT, DPT",https://serc.urpt.com/locations/gardner/?utm_source=google&utm_medium=organic&utm_campaign=gmb,(913) 856-7927,Physical Therapist,Gardner,KS,Johnson County,225 N Moonlight Rd,66030,,1568249084
 Robinson Physical Therapy,https://robinsonchiro.com,(785) 216-0666,Physical Therapist,Gardner,KS,Johnson County,1817 E Santa Fe St,66030,,1376354126
 "Ryan Barragree, PT, DPT",https://www.olathehealth.org/locations/olathe-health-rehabilitation-services---gardner,(913) 324-8680,Physical Therapist,Gardner,KS,Johnson County,824 E Main St,66030,,1255717542
-Sandra Billinger,,(615) 896-6400,Physical Therapist,Gardner,KS,Johnson County,223 Bedford St,66030,,1083819981
+Sandra Billinger,http://www.priebpropertymanagement.com/,(615) 896-6400,Physical Therapist,Gardner,KS,Johnson County,223 Bedford St,66030,,1083819981
 Serc Rehabilitation Partners Llc,https://serc.urpt.com/locations/gardner/?utm_source=google&utm_medium=organic&utm_campaign=gmb,(913) 856-7927,Physical Therapist,Gardner,KS,Johnson County,225 N Moonlight Rd,66030,,1770980146
 "Toni Rose Cruz Capule, PT",https://meadowbrookrh.com/,(913) 856-8747,Physical Therapist,Gardner,KS,Johnson County,427 W Main St,66030,,1699944371
 Tracy Renee Cochran,,(913) 271-0900,Physical Therapist,Gardner,KS,Johnson County,16555 Agnes St,66030,,1689259061
@@ -877,7 +877,7 @@ Tracy Renee Cochran,,(913) 271-0900,Physical Therapist,Gardner,KS,Johnson County
 "Amy Gallagher, PT",http://www.coachamypt.com/,(816) 590-6007,Physical Therapist,Leawood,KS,Johnson County,3303 W 146Th St,66224,,1659505352
 "Andrea Megan Southard, OTR/L",https://drdebscenter.com/,(913) 219-5696,Physical Therapist,Leawood,KS,Johnson County,5420 W 151St St,66224,,1396123956
 "Andrew Lee Bianchi, DPT",,(913) 404-6530,Physical Therapist,Leawood,KS,Johnson County,13401 Mission Rd Ste 201,66209,,1205780194
-"Angela Nicole Vanderpluym, PT, DPT",,(191) 388-8001,Physical Therapist,Leawood,KS,Johnson County,12728 State Line Rd,66209,,1134807852
+"Angela Nicole Vanderpluym, PT, DPT",https://preferredptkc.com/location/south-leawood/,(191) 388-8001,Physical Therapist,Leawood,KS,Johnson County,12728 State Line Rd,66209,,1134807852
 "Anna C Walker, PT",,(913) 491-8211,Physical Therapist,Leawood,KS,Johnson County,12421 Howe Dr,66209,,1902137300
 "Ashley Kearney, DPT",,(913) 491-9404,Physical Therapist,Leawood,KS,Johnson County,8900 State Line Rd Ste 333,66206,,1558762492
 Ashley Wiesner,https://www.edwardjones.com/us-en/financial-advisor/ashleyl-matthews?y_source=1_OTYyNjYzLTcxNS1sb2NhdGlvbi53ZWJzaXRl,(913) 491-3681,Physical Therapist,Leawood,KS,Johnson County,4400 W 115Th St,66211,,1679963672
@@ -897,7 +897,7 @@ Children'S Physical Therapy Associates,http://www.pt4rkids.com/,(913) 345-1997,P
 "Christopher Karson, PT",http://www.performancerehabkc.com/,(913) 253-8980,Physical Therapist,Leawood,KS,Johnson County,3651 College Blvd,66211,,1699498964
 "Cody Wiley Sliva, PT, DPT",,(913) 270-6187,Physical Therapist,Leawood,KS,Johnson County,5241 W 151St Ter,66224,,1063002780
 Courtney Steiner,https://www.foundationalconcepts.com/,(913) 498-8492,Physical Therapist,Leawood,KS,Johnson County,6701 W 121St St Ste 300,66209,,1639614597
-"Elizabeth Anne Miller, PT, DPT",,(913) 766-9816,Physical Therapist,Leawood,KS,Johnson County,4800 W 135Th St Ste 210,66224,,1205364460
+"Elizabeth Anne Miller, PT, DPT",https://partnerspt.com,(913) 766-9816,Physical Therapist,Leawood,KS,Johnson County,4800 W 135Th St Ste 210,66224,,1205364460
 "Emily Tomlinson, PT, DPT, OCS",http://www.performancerehabkc.com/,(913) 253-1760,Physical Therapist,Leawood,KS,Johnson County,3651 College Blvd,66211,,1003269507
 "Eric Eduardo Vargas, DPT",https://www.truefixphysicaltherapy.com/locations/overland-park/,(913) 391-7288,Physical Therapist,Leawood,KS,Johnson County,4200 Somerset Dr. Suite 244,66206,,1114587318
 "Erik Michael Hansen, PT",http://www.kcorthoalliance.com/,(913) 226-9240,Physical Therapist,Leawood,KS,Johnson County,13016 Linden St,66209,,1053745018
@@ -908,7 +908,7 @@ Grace O'Brien,https://preferredptkc.com/location/mpact/,(913) 381-2100,Physical 
 "Hannah Wessel, PT, DPT",https://preferredptkc.com/location/south-leawood/,(913) 888-0014,Physical Therapist,Leawood,KS,Johnson County,12728 State Line Rd,66209,,1902476955
 "Jacob Reinkemeyer, PT, DPT",https://ptsolutions.com/find-a-clinic/ks/leawood/college-boulevard/?utm_source=google&utm_medium=organic&utm_campaign=GMB-PT-Solutions-College-Boulevard&utm_content=listing,(913) 632-4745,Physical Therapist,Leawood,KS,Johnson County,7025 College Blvd Ste 310,66211,,1689401887
 "Jason Brinkman, PT",https://www.kcoi.com/physical-and-occupational-therapy/,(913) 253-8980,Physical Therapist,Leawood,KS,Johnson County,3651 College Blvd Ste 110,66211,,1679296974
-"Jeffrey Eugene Martin, PT, DPT",,(913) 766-9816,Physical Therapist,Leawood,KS,Johnson County,4800 W 135Th St Ste 210,66224,,1285072074
+"Jeffrey Eugene Martin, PT, DPT",https://partnerspt.com,(913) 766-9816,Physical Therapist,Leawood,KS,Johnson County,4800 W 135Th St Ste 210,66224,,1285072074
 "Jennifer Lawhon, P.T., DPT",https://www.foundationalconcepts.com/,(913) 498-8492,Physical Therapist,Leawood,KS,Johnson County,6701 W 121St St,66209,,1700286275
 "Jennifer Mary Huddin, PT, MPT",https://www.usdermatologypartners.com/provider/anne-miller-blake-md/,(913) 484-7632,Physical Therapist,Leawood,KS,Johnson County,13420 Briar Dr Ste C,66209,,1578006938
 "Jill Bradshaw-Haley, DPT",http://www.pt4rkids.com/,(913) 345-1997,Physical Therapist,Leawood,KS,Johnson County,12612 Sherwood Dr,66209,,1245386952
@@ -927,11 +927,11 @@ Kansas City Orthopaedic Institute Llc,https://www.kcoi.com/physical-and-occupati
 "Kayla S Nonnast, DPT",https://www.usdermatologypartners.com/provider/anne-miller-blake-md/,(913) 484-7632,Physical Therapist,Leawood,KS,Johnson County,13420 Briar Dr Ste C,66209,,1902153414
 "Kayli M Larocca, DPT",https://www.usdermatologypartners.com/provider/anne-miller-blake-md/,(913) 484-7632,Physical Therapist,Leawood,KS,Johnson County,13420 Briar Dr Ste C,66209,,1689248122
 "Kelly Harrick, PT",,(913) 529-1801,Physical Therapist,Leawood,KS,Johnson County,4901 College Blvd,66211,,1457690539
-Kelly Melinda Morris,,(913) 438-8000,Physical Therapist,Leawood,KS,Johnson County,11501 Granada Ln,66211,,1184943698
+Kelly Melinda Morris,https://www.kcoi.com/?utm_source=google&utm_medium=organic&utm_campaign=kcoi&utm_content=localgmb,(913) 438-8000,Physical Therapist,Leawood,KS,Johnson County,11501 Granada Ln,66211,,1184943698
 Kelsey Biro,https://ptsolutions.com/find-a-clinic/ks/leawood/college-boulevard/?utm_source=google&utm_medium=organic&utm_campaign=GMB-PT-Solutions-College-Boulevard&utm_content=listing,(913) 632-4745,Physical Therapist,Leawood,KS,Johnson County,7025 College Blvd Ste 310,66211,,1689505950
 "Kerry Smith, MSPT",https://preferredptkc.com/location/mpact/,(913) 381-2100,Physical Therapist,Leawood,KS,Johnson County,9425 Mission Rd,66206,,1407322191
 "Kristin Gallant, DPT",https://www.usdermatologypartners.com/provider/anne-miller-blake-md/,(913) 484-7632,Physical Therapist,Leawood,KS,Johnson County,13420 Briar Dr Ste C,66209,,1912834474
-"Kylie Werth, PT, DPT",,(913) 937-5346,Physical Therapist,Leawood,KS,Johnson County,8340 Mission Rd Ste 119,66206,,1639809874
+"Kylie Werth, PT, DPT",https://ssorkc.com/?utm_source=google&utm_medium=organic&utm_campaign=google_business_page&utm_id=gbp,(913) 937-5346,Physical Therapist,Leawood,KS,Johnson County,8340 Mission Rd Ste 119,66206,,1639809874
 "Larissa L Michaelis, PT",,(816) 217-4406,Physical Therapist,Leawood,KS,Johnson County,8610 Meadow Ln,66206,,1982854899
 "Lauren Mccoy, DPT",https://playabilities.org/,(913) 213-3531,Physical Therapist,Leawood,KS,Johnson County,3715 W 133Rd St,66209,,1184513814
 Lea D Coccetella,https://www.kcoi.com/physical-and-occupational-therapy/,(913) 253-8980,Physical Therapist,Leawood,KS,Johnson County,11250 Tomahawk Creek Pkwy,66211,,1306721949
@@ -941,7 +941,7 @@ Lea D Coccetella,https://www.kcoi.com/physical-and-occupational-therapy/,(913) 2
 "Meaghan Moore, PT",http://www.pt4rkids.com/,(913) 345-1997,Physical Therapist,Leawood,KS,Johnson County,2844 W 118Th Ter,66211,,1386800928
 "Megan Elle Algya, PT, DPT",https://preferredptkc.com/location/south-leawood/,(913) 888-0014,Physical Therapist,Leawood,KS,Johnson County,12728 State Line Rd,66209,,1942828447
 "Melissa Hipp, PT, DPT",https://preferredptkc.com/location/south-leawood/,(913) 888-0014,Physical Therapist,Leawood,KS,Johnson County,12728 State Line Rd,66209,,1558049270
-"Meredith Turner Cabe, PT, DPT",,(913) 766-9816,Physical Therapist,Leawood,KS,Johnson County,4800 W 135Th St Ste 210,66224,,1083016851
+"Meredith Turner Cabe, PT, DPT",https://partnerspt.com,(913) 766-9816,Physical Therapist,Leawood,KS,Johnson County,4800 W 135Th St Ste 210,66224,,1083016851
 "Michael Wesley Hauber, DPT",https://preferredptkc.com/location/south-leawood/,(816) 941-2550,Physical Therapist,Leawood,KS,Johnson County,12728 State Line Rd,66209,,1689056483
 "Michaela Marie Keller, DPT",https://playabilities.org/,(913) 213-3531,Physical Therapist,Leawood,KS,Johnson County,3715 W 133Rd St,66209,,1790527356
 "Michelle Claassen, DPT",https://www.usdermatologypartners.com/provider/anne-miller-blake-md/,(913) 484-7632,Physical Therapist,Leawood,KS,Johnson County,13420 Briar Dr Ste C,66209,,1952828923
@@ -952,16 +952,16 @@ Mid-America Orthopedics Kc Llc,https://midamortho.com/?utm_source=gbpe&utm_mediu
 "Paula Dianne Walsh, PT, DPT",https://www.foundationalconcepts.com/,(913) 498-8492,Physical Therapist,Leawood,KS,Johnson County,6701 W 121St St Ste 300,66209,,1003514811
 Playabilities,https://playabilities.org/,(913) 515-3531,Physical Therapist,Leawood,KS,Johnson County,3715 W 133Rd St,66209,,1043607674
 "Playabilities For Sensational Kids, Llc",https://playabilities.org/,(913) 515-3531,Physical Therapist,Leawood,KS,Johnson County,3715 W 133Rd St,66209,,1861815532
-Preferred Pt Llc,,(910) 798-2318,Physical Therapist,Leawood,KS,Johnson County,12728 State Line Rd,66209,,1336966852
+Preferred Pt Llc,https://preferredptkc.com/location/south-leawood/,(910) 798-2318,Physical Therapist,Leawood,KS,Johnson County,12728 State Line Rd,66209,,1336966852
 "Preferred Pt, Llc",https://preferredptkc.com/location/mpact/,(913) 381-2100,Physical Therapist,Leawood,KS,Johnson County,9425 Mission Rd,66206,,1437879590
 "Preston Hollenbeck, DPT",https://midamortho.com/?utm_source=gbpe&utm_medium=organic&utm_id=ifocus,(913) 232-9846,Physical Therapist,Leawood,KS,Johnson County,4940B W. 137Th St.,66224,,1457845034
 "Rachel Auten, P. T.",,(325) 650-7927,Physical Therapist,Leawood,KS,Johnson County,15190 Granada Ave,66224,,1932407020
 "Sadie Schulze Laughlin, DPT",https://preferredptkc.com/location/mpact/,(913) 381-2100,Physical Therapist,Leawood,KS,Johnson County,9425 Mission Rd,66206,,1265000368
 "Scott A Steenhard, PT",https://www.kcoi.com/physical-and-occupational-therapy/,(913) 253-8980,Physical Therapist,Leawood,KS,Johnson County,3651 College Blvd Ste 110,66211,,1568442333
-Serc Rehabilitation Partners Llc,,(913) 766-9816,Physical Therapist,Leawood,KS,Johnson County,4800 W 135Th St Ste 210,66224,,1174095335
+Serc Rehabilitation Partners Llc,https://partnerspt.com,(913) 766-9816,Physical Therapist,Leawood,KS,Johnson County,4800 W 135Th St Ste 210,66224,,1174095335
 "Shweta Shah, PT",,(913) 703-7641,Physical Therapist,Leawood,KS,Johnson County,11661 Granada St Genesis Rehab Services,66211,,1598038077
 "Stephanie Ann Simon, PT",https://www.usdermatologypartners.com/provider/anne-miller-blake-md/,(913) 484-7632,Physical Therapist,Leawood,KS,Johnson County,13420 Briar Dr Ste C,66209,,1154653707
-"Stephanie R. Wuertz, PT",,(913) 321-8765,Physical Therapist,Leawood,KS,Johnson County,11501 Granada Ln,66211,,1427190677
+"Stephanie R. Wuertz, PT",https://www.kcoi.com/?utm_source=google&utm_medium=organic&utm_campaign=kcoi&utm_content=localgmb,(913) 321-8765,Physical Therapist,Leawood,KS,Johnson County,11501 Granada Ln,66211,,1427190677
 "Tara K. Moon, MS, PT",https://playabilities.org/,(913) 593-5939,Physical Therapist,Leawood,KS,Johnson County,3715 W 133Rd St,66209,,1851391171
 "Tarrah Nicole Kelly, DPT",https://www.foundationalconcepts.com/,(913) 498-8492,Physical Therapist,Leawood,KS,Johnson County,6701 W 121St St Ste 300,66209,,1629833249
 "Taylor Little, PT, DPT",https://ptsolutions.com/find-a-clinic/ks/leawood/college-boulevard/?utm_source=google&utm_medium=organic&utm_campaign=GMB-PT-Solutions-College-Boulevard&utm_content=listing,(913) 632-4745,Physical Therapist,Leawood,KS,Johnson County,7025 College Blvd Ste 310,66211,,1386422657
@@ -974,7 +974,7 @@ Aaron Matthew Bellelo,,(913) 894-6664,Physical Therapist,Lenexa,KS,Johnson Count
 "Alison Erin Mitchell, DPT",,(913) 980-6606,Physical Therapist,Lenexa,KS,Johnson County,9524 Cailler Dr,66220,,1851732663
 Alyssa Jaso,https://www.adventhealth.com/practice/adventhealth-medical-group/adventhealth-medical-group-primary-care-shawnee-mission,(913) 676-8610,Physical Therapist,Lenexa,KS,Johnson County,23351 Prairie Star Pkwy Ste A125,66227,,1265223507
 "Amy Holder, P.T.",,(615) 778-4066,Physical Therapist,Lenexa,KS,Johnson County,13140-14 W 99Th Street Exchange Place # 1,66215,,1841316643
-"Amy Jo Hughes, P.T.",,(913) 492-3277,Physical Therapist,Lenexa,KS,Johnson County,8550 Marshall Dr,66214,,1396929832
+"Amy Jo Hughes, P.T.",https://preferredptkc.com/location/lenexa/?UTM_source=GMB_listing&UTM_medium=organic%EF%BB%BF%EF%BB%BF%EF%BB%BF,(913) 492-3277,Physical Therapist,Lenexa,KS,Johnson County,8550 Marshall Dr,66214,,1396929832
 "Amy L Nichols, DPT",http://www.neurokc.com/,(913) 894-1500,Physical Therapist,Lenexa,KS,Johnson County,8550 Marshall Dr Suite 100,66214,,1063604189
 "Andrew John Lentell, PT, DPT, CSCS",,(913) 638-8869,Physical Therapist,Lenexa,KS,Johnson County,12932 W 87Th St Pkwy,66215,,1992375273
 "Angela Lucille Sas, DPT, MBA",https://www.adventhealth.com/practice/adventhealth-medical-group/adventhealth-medical-group-primary-care-shawnee-mission,(913) 676-8610,Physical Therapist,Lenexa,KS,Johnson County,23351 Prairie Star Pkwy Ste A125,66227,,1497573414
@@ -1034,7 +1034,7 @@ Lori Slettehaugh,,(913) 963-9900,Physical Therapist,Lenexa,KS,Johnson County,761
 "Mary E Peterson, PT",,(913) 789-4075,Physical Therapist,Lenexa,KS,Johnson County,11140 Thompson Ave,66219,,1730403213
 "Mary Krogmeier, DPT",,(913) 894-6664,Physical Therapist,Lenexa,KS,Johnson County,14809 W 95Th St,66215,,1407395015
 "Mary Lucille Bajich, DPT",https://www.adventhealth.com/practice/adventhealth-medical-group/adventhealth-medical-group-primary-care-shawnee-mission,(913) 676-8610,Physical Therapist,Lenexa,KS,Johnson County,23351 Prairie Star Pkwy Ste A125,66227,,1821977208
-"Megan Lee Moe, PT, DPT",,(913) 588-3510,Physical Therapist,Lenexa,KS,Johnson County,7405 Renner Rd,66217,,1033781091
+"Megan Lee Moe, PT, DPT",https://www.kansashealthsystem.com/locations/main-campus-main-hospital-kansas-city-ks?utm_source=gmb&utm_medium=web&utm_term=&utm_content=&utm_campaign=kyruus_brandify,(913) 588-3510,Physical Therapist,Lenexa,KS,Johnson County,7405 Renner Rd,66217,,1033781091
 Mind Body Shen,http://www.mindandbodykc.com/,(503) 560-4672,Physical Therapist,Lenexa,KS,Johnson County,8829 Long St,66215,,1730846742
 Molly M Porter,https://preferredptkc.com/location/lenexa/?UTM_source=GMB_listing&UTM_medium=organic%EF%BB%BF%EF%BB%BF%EF%BB%BF,(913) 492-0333,Physical Therapist,Lenexa,KS,Johnson County,8550 Marshall Dr Ste 210,66214,,1114585320
 "Molly Reynolds, PT",,(913) 488-5124,Physical Therapist,Lenexa,KS,Johnson County,10005 Sunset Dr,66220,,1740707983
@@ -1065,7 +1065,7 @@ Therapy Associates Llc,https://therapyassociates.com,(913) 747-6100,Physical The
 "Tiffany C Broeckelman, MSPT, Cert MDT",https://arcpt.com/clinics/overland-park-ks/,(913) 754-0888,Physical Therapist,Lenexa,KS,Johnson County,7931 Bond St,66214,,1194702498
 "Tracy Lynn Mccarty, PT",https://therapyassociates.com,(913) 747-6100,Physical Therapist,Lenexa,KS,Johnson County,11900 W 87Th Street Pkwy Suite 125,66215,,1407908296
 "Trent J. Foster, P.T.",https://arcpt.com/clinics/overland-park-ks/,(913) 754-0888,Physical Therapist,Lenexa,KS,Johnson County,7931 Bond St,66214,,1184719635
-Trevor Arellanes,,(913) 286-6625,Physical Therapist,Lenexa,KS,Johnson County,11150 S Greenwood St,66215,,1326620527
+Trevor Arellanes,http://foxrehab.org/,(913) 286-6625,Physical Therapist,Lenexa,KS,Johnson County,11150 S Greenwood St,66215,,1326620527
 "Aaron Canfield, DPT, CSCS",http://www.performancerehabkc.com/,(913) 318-1970,Physical Therapist,Merriam,KS,Johnson County,7448 W Frontage Rd,66203,,1083307151
 "Amanda Joy Wiederholt, D.P.T",http://www.quantum-pros.com/,(913) 894-1910,Physical Therapist,Merriam,KS,Johnson County,10000 W 75Th St Suite 250,66204,,1366760787
 "Ami C Neder, PT, DPT",http://www.quantum-pros.com/,(913) 894-1910,Physical Therapist,Merriam,KS,Johnson County,10000 W 75Th St Suite 250,66204,,1245565316
@@ -1091,9 +1091,9 @@ Hailey Puett,http://www.activatingwellness.com/,(913) 676-2444,Physical Therapis
 "Heidi Diane Golubski, DPT",http://www.quantum-pros.com/,(913) 894-1910,Physical Therapist,Merriam,KS,Johnson County,10000 W 75Th St Suite 250,66204,,1619316577
 "Jamie Lea Harris, DPT",http://www.activatingwellness.com/,(913) 676-2444,Physical Therapist,Merriam,KS,Johnson County,7315 E Frontage Rd Ste 120,66204,,1154146595
 "Jamie Lynn Nordstrom, DPT",http://www.quantum-pros.com/,(913) 894-1910,Physical Therapist,Merriam,KS,Johnson County,10000 W 75Th St Suite 250,66204,,1861628562
-Janet Mcmullen,,(888) 652-9225,Physical Therapist,Merriam,KS,Johnson County,6700 Antioch Rd Ste 120,66204,,1528433646
+Janet Mcmullen,http://www.juanitaryan.com/,(888) 652-9225,Physical Therapist,Merriam,KS,Johnson County,6700 Antioch Rd Ste 120,66204,,1528433646
 "Jennifer Gotham, DPT",http://www.quantum-pros.com/,(888) 913-1910,Physical Therapist,Merriam,KS,Johnson County,10000 W 75Th St Ste. 250,66204,,1790234318
-"Jennifer Kay Bedell, DPT",,(866) 502-3190,Physical Therapist,Merriam,KS,Johnson County,6700 Antioch Rd Ste 120,66204,,1801143516
+"Jennifer Kay Bedell, DPT",http://www.juanitaryan.com/,(866) 502-3190,Physical Therapist,Merriam,KS,Johnson County,6700 Antioch Rd Ste 120,66204,,1801143516
 "Jessica L Stegman, DPT",,(913) 620-1007,Physical Therapist,Merriam,KS,Johnson County,6223 Slater St,66202,,1982830477
 "Julia Lakin, DPT",http://www.quantum-pros.com/,(888) 913-1910,Physical Therapist,Merriam,KS,Johnson County,10000 W 75Th St Ste 250,66204,,1912565045
 "Julie M Elkinton, P.T.",http://www.quantum-pros.com/,(913) 894-1910,Physical Therapist,Merriam,KS,Johnson County,10000 W 75Th St Suite 250,66204,,1033128319
@@ -1107,7 +1107,7 @@ Kansas City Orthopaedic Institute Llc,http://www.performancerehabkc.com/,(913) 3
 "Kyree Scripsick, DPT",http://www.quantum-pros.com/,(913) 894-1910,Physical Therapist,Merriam,KS,Johnson County,10000 W 75Th St Suite 250,66204,,1467869321
 "Lacey Alice Marie Dickson, OTR",http://www.quantum-pros.com/,(913) 894-1910,Physical Therapist,Merriam,KS,Johnson County,10000 W. 75Th St. Suite 250,66204,,1649577701
 "Lindsey Anne Norris, DPT",http://www.juanitaryan.com/,(913) 652-9229,Physical Therapist,Merriam,KS,Johnson County,6700 Antioch Rd Suite 120,66204,,1891064234
-"Lisa Bierly Steinert, PT",,(913) 652-9225,Physical Therapist,Merriam,KS,Johnson County,6700 Antioch Rd,66204,,1588039838
+"Lisa Bierly Steinert, PT",http://www.juanitaryan.com/,(913) 652-9225,Physical Therapist,Merriam,KS,Johnson County,6700 Antioch Rd,66204,,1588039838
 Lucas Jameson,http://www.quantum-pros.com/,(888) 913-1910,Physical Therapist,Merriam,KS,Johnson County,10000 W 75Th St Ste 250,66204,,1528447976
 Margaret Pogge,http://www.quantum-pros.com/,(913) 894-1910,Physical Therapist,Merriam,KS,Johnson County,10000 W 75Th St Suite 250,66204,,1669750188
 "Mark Twellman, D.P.T.",http://www.quantum-pros.com/,(913) 894-1910,Physical Therapist,Merriam,KS,Johnson County,10000 W 75Th St Suite 250,66204,,1245518117
@@ -1124,7 +1124,7 @@ Pinnacle Therapy Services Llc,https://pinnaclechiro.com,(913) 262-2221,Physical 
 "Sarah Ann Mckenny, D.P.T.",http://www.quantum-pros.com/,(913) 894-1910,Physical Therapist,Merriam,KS,Johnson County,10000 W 75Th St Suite 250,66204,,1821422387
 Sushma Gampa,http://www.quantum-pros.com/,(888) 913-1174,Physical Therapist,Merriam,KS,Johnson County,10000 W 75Th St Ste 250,66204,,1700246196
 Taylor Meyer,http://www.quantum-pros.com/,(888) 913-1910,Physical Therapist,Merriam,KS,Johnson County,10000 W 75Th St Ste 250,66204,,1003478884
-Teresa May-Teerink,,(888) 652-9228,Physical Therapist,Merriam,KS,Johnson County,6700 Antioch Rd,66204,,1871903823
+Teresa May-Teerink,http://www.juanitaryan.com/,(888) 652-9228,Physical Therapist,Merriam,KS,Johnson County,6700 Antioch Rd,66204,,1871903823
 "Tiffany Ann Bohm, MPT, DPT",http://www.juanitaryan.com/,(913) 652-9229,Physical Therapist,Merriam,KS,Johnson County,6700 Antioch Rd Ste 430,66204,,1679709661
 Tiffany Koivuniemi-Berg,http://www.quantum-pros.com/,(888) 913-1910,Physical Therapist,Merriam,KS,Johnson County,10000 W 75Th St Ste. 250,66204,,1487109781
 "Tra Brendon Statler, PT, DPT",http://www.activatingwellness.com/,(913) 676-2444,Physical Therapist,Merriam,KS,Johnson County,7315 E Frontage Rd Ste 120,66204,,1912893223
@@ -1174,7 +1174,7 @@ Angel Felipe Colon,,(913) 445-4105,Physical Therapist,Olathe,KS,Johnson County,1
 "Ashley Nicole Clark, PT, DPT",https://serc.urpt.com/locations/olathe/?utm_source=google&utm_medium=organic&utm_campaign=gmb,(913) 782-8729,Physical Therapist,Olathe,KS,Johnson County,12755 S Mur Len Rd Ste B1,66062,,1902468200
 Athletico Ltd,https://www.athletico.com/locations/olathe-santa-fe-k7/?utm_source=google-olathesantafe&utm_medium=web&utm_campaign=google-listings,(913) 538-5453,Physical Therapist,Olathe,KS,Johnson County,141 S Parker St,66061,,1780218651
 Athletico Ltd,https://www.athletico.com/locations/olathe/?utm_source=google-olathe&utm_medium=web&utm_campaign=google-listings,(913) 440-0992,Physical Therapist,Olathe,KS,Johnson County,14895 W 151St St,66062,,1255829933
-"Audrey O'Sullivan, PT, DPT",,(913) 780-9916,Physical Therapist,Olathe,KS,Johnson County,15325 S Lone Elm Rd,66061,,1538964994
+"Audrey O'Sullivan, PT, DPT",https://heidichiropractic.com,(913) 780-9916,Physical Therapist,Olathe,KS,Johnson County,15325 S Lone Elm Rd,66061,,1538964994
 "Benjamin T Mclane, DPT",https://arcpt.com/clinics/olathe-ks/,(913) 254-0568,Physical Therapist,Olathe,KS,Johnson County,15455 S Rogers Rd,66062,,1467801795
 "Brandon James Walker, DPT",,(620) 474-2950,Physical Therapist,Olathe,KS,Johnson County,608 E Harold St,66061,,1104227578
 "Bryan Dillberg, PT, DPT",https://ptsolutions.com/find-a-clinic/ks/olathe/olathe-station/?utm_source=google&utm_medium=organic&utm_campaign=GMB-PT-Solutions-Olathe-Station&utm_content=listing,(913) 632-4770,Physical Therapist,Olathe,KS,Johnson County,11970 S Blackbob Rd Ste 100,66062,,1275312548
@@ -1194,12 +1194,12 @@ Esmeralda Anayi Reyes Vredenburg,https://serc.urpt.com/locations/olathe/?utm_sou
 "Ethan Gechter, DPT",https://www.athletico.com/locations/olathe-santa-fe-k7/?utm_source=google-olathesantafe&utm_medium=web&utm_campaign=google-listings,(913) 538-5453,Physical Therapist,Olathe,KS,Johnson County,141 S Parker St,66061,,1801246145
 "Evan Smith, PT, DPT",https://www.salinaohp.com/,(913) 599-4600,Physical Therapist,Olathe,KS,Johnson County,10396 S Ridgeview Rd,66061,,1578329017
 "Genesis Eldercare Rehabilitation Services, Inc",https://drgenesis.com,(913) 839-8562,Physical Therapist,Olathe,KS,Johnson County,1558 E Spruce St,66061,,1669731048
-"Heidi Hanson, Physical Therapist",,(913) 780-9916,Physical Therapist,Olathe,KS,Johnson County,15325 S Lone Elm Rd,66061,,1801263918
+"Heidi Hanson, Physical Therapist",https://heidichiropractic.com,(913) 780-9916,Physical Therapist,Olathe,KS,Johnson County,15325 S Lone Elm Rd,66061,,1801263918
 "Hilarie Gillian, P.T.",https://www.selectphysicaltherapy.com/contact/find-a-location/ks/olathe/olathe/?ty=xt,(913) 829-3133,Physical Therapist,Olathe,KS,Johnson County,1061 E 151St St,66062,,1568786788
 "Isaac Holtz, DPT",https://physicaltherapy.fitmjc.com/location/physical-therapy-in-olathe/,(913) 791-0144,Physical Therapist,Olathe,KS,Johnson County,2113 E Kansas City Rd,66061,,1306591359
 "Isabella Madison Pappert, DPT",https://www.good-sam.com/locations/olathe?yxt_info=gss-location-GSS-3140&y_source=1_MTQyNTAxNDMtNzE1LWxvY2F0aW9uLndlYnNpdGU%3D,(913) 395-2964,Physical Therapist,Olathe,KS,Johnson County,20705 W 151St St,66061,,1306731112
 "Jacinda A Draisey, pt, dpt",https://www.athletico.com/locations/olathe/?utm_source=google-olathe&utm_medium=web&utm_campaign=google-listings,(913) 440-0992,Physical Therapist,Olathe,KS,Johnson County,14895 W 151St St,66062,,1619513686
-"Jackson William Cooper, Physical Therapist",,(913) 708-8450,Physical Therapist,Olathe,KS,Johnson County,11160 S Lone Elm Rd,66061,,1295621258
+"Jackson William Cooper, Physical Therapist",https://jacksonchiro.com,(913) 708-8450,Physical Therapist,Olathe,KS,Johnson County,11160 S Lone Elm Rd,66061,,1295621258
 Jacob Campbell,http://www.thehealthcareresortolathe.com/,(913) 390-0444,Physical Therapist,Olathe,KS,Johnson County,21250 W 151St St,66061,,1386230787
 "Jacob Miller, DPT",https://www.athletico.com/locations/olathe-santa-fe-k7/?utm_source=google-olathesantafe&utm_medium=web&utm_campaign=google-listings,(913) 538-5453,Physical Therapist,Olathe,KS,Johnson County,141 S Parker St,66061,,1063377984
 "Jadyn Flores Smith, PT, DPT",https://alptkc.com/,(913) 232-8864,Physical Therapist,Olathe,KS,Johnson County,14146 W 119Th St,66062,,1922873520
@@ -1207,13 +1207,13 @@ Jacob Campbell,http://www.thehealthcareresortolathe.com/,(913) 390-0444,Physical
 Jason Roskam,https://www.salinaohp.com/,(913) 599-4600,Physical Therapist,Olathe,KS,Johnson County,10396 S Ridgeview Rd,66061,,1407209588
 Jerrad O'Malley,https://physicaltherapy.fitmjc.com/location/physical-therapy-in-olathe/,(913) 791-0144,Physical Therapist,Olathe,KS,Johnson County,2113 E Kansas City Rd,66061,,1871338590
 "Jonathan Richard Jones, P.T.",,(913) 231-9820,Physical Therapist,Olathe,KS,Johnson County,15325 W 156Th St,66062,,1407953722
-"Joseph Welling, DPT",,(191) 323-2895,Physical Therapist,Olathe,KS,Johnson County,1445 S Mahaffie St,66062,,1881455756
+"Joseph Welling, DPT",https://kansasspine.com,(191) 323-2895,Physical Therapist,Olathe,KS,Johnson County,1445 S Mahaffie St,66062,,1881455756
 Joshua Woodard,https://www.salinaohp.com/,(913) 599-4600,Physical Therapist,Olathe,KS,Johnson County,10396 S Ridgeview Rd,66061,,1477081826
 "Joyce Shulfer, PT",http://www.thehealthcareresortolathe.com/,(913) 390-0444,Physical Therapist,Olathe,KS,Johnson County,21250 W 151St St,66061,,1801070123
 "Julia Moore, DPT",,(314) 972-3319,Physical Therapist,Olathe,KS,Johnson County,13060 S Summit St,66062,,1871163063
-Kansas City Orthopaedic Institute Llc,,(913) 708-8450,Physical Therapist,Olathe,KS,Johnson County,11160 S Lone Elm Rd,66061,,1396511341
+Kansas City Orthopaedic Institute Llc,https://kansaschiro.com,(913) 708-8450,Physical Therapist,Olathe,KS,Johnson County,11160 S Lone Elm Rd,66061,,1396511341
 Kansas City Orthopaedic Institute Llc,https://www.salinaohp.com/,(913) 599-4600,Physical Therapist,Olathe,KS,Johnson County,10396 S Ridgeview Rd,66061,,1568238624
-Kansas City Orthopaedic Institute Llc,,(913) 319-7672,Physical Therapist,Olathe,KS,Johnson County,1445 S Mahaffie St,66062,,1740056787
+Kansas City Orthopaedic Institute Llc,https://kansasspine.com,(913) 319-7672,Physical Therapist,Olathe,KS,Johnson County,1445 S Mahaffie St,66062,,1740056787
 Kate Lindelof,https://www.essentiahealth.org/find-doctor-provider/kate-lindelof?utm_source=pg-google&utm_medium=organic&utm_campaign=pg-listings,(913) 645-9744,Physical Therapist,Olathe,KS,Johnson County,14537 S Mullen St,66062,,1336533231
 "Kathryn Wade, DPT",,(816) 510-8436,Physical Therapist,Olathe,KS,Johnson County,11933 S Cottonwood Dr,66062,,1912311713
 Kaye Northcott,https://www.olathehealth.org/locations,(913) 791-4200,Physical Therapist,Olathe,KS,Johnson County,20333 W 151St St,66061,,1174990642
@@ -1280,18 +1280,18 @@ Stacie Wiechman,,(816) 520-0431,Physical Therapist,Olathe,KS,Johnson County,2098
 Tracy Wills,https://www.good-sam.com/locations/hoeger-house?yxt_info=gss-location-GSS-3180&y_source=1_MTQyNTAzNTAtNzE1LWxvY2F0aW9uLndlYnNpdGU%3D,(913) 397-2964,Physical Therapist,Olathe,KS,Johnson County,20911 W 153Rd St,66061,,1861686883
 "Troy Nelson Smith, PT",https://alptkc.com/,(913) 232-8864,Physical Therapist,Olathe,KS,Johnson County,14146 W 119Th St,66062,,1750941936
 Tyson Miller,https://www.selectphysicaltherapy.com/contact/find-a-location/ks/olathe/olathe/?ty=xt,(913) 829-3133,Physical Therapist,Olathe,KS,Johnson County,1315 S Fountain Dr,66061,,1134374473
-"Vivian Ann Weber, Physical Therapist",,(913) 764-5817,Physical Therapist,Olathe,KS,Johnson County,1208 S Winterbrooke Dr,66062,,1700964921
-Wyatt D Schulz,,(913) 708-8450,Physical Therapist,Olathe,KS,Johnson County,11160 S Lone Elm Rd,66061,,1477336964
+"Vivian Ann Weber, Physical Therapist",https://vivianweber.com,(913) 764-5817,Physical Therapist,Olathe,KS,Johnson County,1208 S Winterbrooke Dr,66062,,1700964921
+Wyatt D Schulz,https://kansaschiro.com,(913) 708-8450,Physical Therapist,Olathe,KS,Johnson County,11160 S Lone Elm Rd,66061,,1477336964
 "Yves Vu, DPT",,(408) 677-9151,Physical Therapist,Olathe,KS,Johnson County,21467 W 121St Ter,66061,,1700511292
 "Aaron Fast, PT, DPT",http://www.performancerehabkc.com/,(913) 681-9909,Physical Therapist,Overland Park,KS,Johnson County,11301 W 88Th St Ste 100,66214,,1942677117
 "Abby Bodenhausen, DPT",https://lscm.org,(913) 681-0606,Physical Therapist,Overland Park,KS,Johnson County,10600 Mastin St,66212,,1881866069
 "Abby E Sauber, DPT",https://www.kcrehabpt.com/,(913) 681-9909,Physical Therapist,Overland Park,KS,Johnson County,11408 W 135Th St,66221,,1093494056
 "Adam Lee Leblanc, DPT",,(913) 945-2153,Physical Therapist,Overland Park,KS,Johnson County,13800 Metcalf Ave,66223,,1649764077
-"Adrienne Volkmer, DPT",,(913) 904-0261,Physical Therapist,Overland Park,KS,Johnson County,7381 W 133Rd St Ste 302,66213,,1518315308
+"Adrienne Volkmer, DPT",https://ssorkc.com/?utm_source=google&utm_medium=organic&utm_campaign=google_business_page&utm_id=gbp,(913) 904-0261,Physical Therapist,Overland Park,KS,Johnson County,7381 W 133Rd St Ste 302,66213,,1518315308
 "Aidan Mills, DPT",https://lscm.org,(913) 681-0606,Physical Therapist,Overland Park,KS,Johnson County,10600 Mastin St,66212,,1255137428
 Aimeen Sajjad Paroya,,(913) 963-4786,Physical Therapist,Overland Park,KS,Johnson County,6514 W 91St St Apt 42,66212,,1265366702
 "Alexandra Grace Arnold, DPT",,(913) 945-2153,Physical Therapist,Overland Park,KS,Johnson County,13800 Metcalf Ave,66223,,1598495590
-"Alexandra M Thompson, PT",,(913) 574-1460,Physical Therapist,Overland Park,KS,Johnson County,10730 Nall Ave Ste 200,66211,,1275053449
+"Alexandra M Thompson, PT",https://www.kansashealthsystem.com/locations/main-campus-main-hospital-kansas-city-ks?utm_source=gmb&utm_medium=web&utm_term=&utm_content=&utm_campaign=kyruus_brandify,(913) 574-1460,Physical Therapist,Overland Park,KS,Johnson County,10730 Nall Ave Ste 200,66211,,1275053449
 "Alexis Larson, PT, DPT",https://www.coreptkc.com/,(913) 322-4000,Physical Therapist,Overland Park,KS,Johnson County,10400 W 103Rd St Ste 22,66214,,1326802042
 "Alice J Schafersman, R.P.T.",,(913) 469-8878,Physical Therapist,Overland Park,KS,Johnson County,10100 W 119Th St Suite 200,66213,,1477540797
 "Alicia Marie Roster, DPT",http://www.bluevalleypt.com/,(913) 897-1100,Physical Therapist,Overland Park,KS,Johnson County,6885 W 151St St,66223,,1801554860
@@ -1324,7 +1324,7 @@ Amanda Smith,http://www.sageandserotonin.com/,(816) 223-0008,Physical Therapist,
 "Ann Marie Kleikamp, P.T.",,(913) 945-2153,Physical Therapist,Overland Park,KS,Johnson County,13800 Metcalf Ave,66223,,1124401898
 "Anna Hallum Merrill, DPT",http://www.kcsportsrehab.com/,(913) 663-2634,Physical Therapist,Overland Park,KS,Johnson County,10701 Nall Ave Suite 120,66211,,1124450846
 "Anna Heck, PT, DPT",https://www.johnsoncounty-rehab.com/,(913) 372-7800,Physical Therapist,Overland Park,KS,Johnson County,11325 College Blvd,66210,,1447135298
-Anna Miller,,(903) 904-1128,Physical Therapist,Overland Park,KS,Johnson County,7381 W 133Rd St Ste 302,66213,,1235823048
+Anna Miller,https://ssorkc.com/?utm_source=google&utm_medium=organic&utm_campaign=google_business_page&utm_id=gbp,(903) 904-1128,Physical Therapist,Overland Park,KS,Johnson County,7381 W 133Rd St Ste 302,66213,,1235823048
 "Anna Ramage, PT, DPT",https://lscm.org,(913) 681-7628,Physical Therapist,Overland Park,KS,Johnson County,15100 Metcalf Ave Ste 102,66223,,1841090115
 Anne Wetterer,http://www.quantum-pros.com/,(913) 894-1910,Physical Therapist,Overland Park,KS,Johnson County,10300 W 103Rd St. 300,66214,,1013120575
 Ansible Health Medical Group Of Kansas Pa,https://ansiblehealth.com,(877) 267-4253,Physical Therapist,Overland Park,KS,Johnson County,"7300 West 110Th Street Commerce Plaza I, 7Th Floor",66210,,1790547172
@@ -1338,7 +1338,7 @@ Athletico Ltd,https://www.athletico.com/locations/overland-park/?utm_source=goog
 "Austin Morris Foley, DPT",https://physicaltherapy.fitmjc.com/location/leawood-physical-therapy/,(913) 354-5020,Physical Therapist,Overland Park,KS,Johnson County,11340 Nall Ave,66211,,1255024311
 Austin Robert Mcallister,https://www.coreptkc.com/,(913) 322-4000,Physical Therapist,Overland Park,KS,Johnson County,10400 W 103Rd St Ste 22,66214,,1346818127
 "Bailey Oehm, DPT",https://lscm.org,(913) 681-0606,Physical Therapist,Overland Park,KS,Johnson County,10800 Farley St Ste 130,66210,,1326998899
-Balance & Neurological Rehabilitation,,(816) 679-7056,Physical Therapist,Overland Park,KS,Johnson County,12000 W 110Th St Suite 400,66210,,1962592741
+Balance & Neurological Rehabilitation,https://neurologicalpt.com,(816) 679-7056,Physical Therapist,Overland Park,KS,Johnson County,12000 W 110Th St Suite 400,66210,,1962592741
 "Baleigh Fry, PT, DPT",https://www.coreptkc.com/,(913) 322-4000,Physical Therapist,Overland Park,KS,Johnson County,10400 W 103Rd St Ste 22,66214,,1295619849
 "Bardavon Health Innovations, Llc",https://www.bardavon.com/?utm_source=gmb&utm_medium=yext,(913) 236-1020,Physical Therapist,Overland Park,KS,Johnson County,"6701 W 64Th St Building 5, Suite 125",66202,,1194103283
 "Beau Cohen, PT",,(913) 942-5090,Physical Therapist,Overland Park,KS,Johnson County,8740 W 151St St,66221,,1760906119
@@ -1382,7 +1382,7 @@ Childrens Therapy Group Inc,https://childrenstherapygroup.com,(913) 383-9014,Phy
 "Christine Marie Compton, LPT",http://comptoncounseling.net/,(913) 383-9866,Physical Therapist,Overland Park,KS,Johnson County,6501 W 75Th St,66204,,1497274567
 "Clara Phillips Moyer, PT, DPT",http://postacutemedical.com/facilities/find-facility/rehabilitation-hospitals/pam-rehabilitation-hospital-overland,(913) 544-1957,Physical Therapist,Overland Park,KS,Johnson County,5100 Indian Creek Pkwy,66207,,1033737788
 Cody Ibarra,http://www.performancerehabkc.com/,(913) 600-7876,Physical Therapist,Overland Park,KS,Johnson County,6885 W 151St St Ste 102,66223,,1235080458
-Cole Gregory Meier,,(913) 708-8448,Physical Therapist,Overland Park,KS,Johnson County,10777 Nall Ave Ste 320,66211,,1316416217
+Cole Gregory Meier,https://ustherapyservices.com,(913) 708-8448,Physical Therapist,Overland Park,KS,Johnson County,10777 Nall Ave Ste 320,66211,,1316416217
 Collin Oglesby,http://fitmjc.com/location/chiropractors-in-overland-park/,(913) 257-5627,Physical Therapist,Overland Park,KS,Johnson County,9120 Metcalf Ave,66212,,1972458990
 "Colten Avery Miller, PT, DPT",http://fitmjc.com/location/chiropractors-in-overland-park/,(913) 257-5627,Physical Therapist,Overland Park,KS,Johnson County,9120 Metcalf Ave,66212,,1881459964
 Connie Schulte,,(913) 341-9880,Physical Therapist,Overland Park,KS,Johnson County,4500 W 107Th St,66207,,1639289531
@@ -1394,7 +1394,7 @@ Connie Schulte,,(913) 341-9880,Physical Therapist,Overland Park,KS,Johnson Count
 "Curtis Ellis Kempton, D.P.T.",https://ssorkc.com/?utm_source=google&utm_medium=organic&utm_campaign=google_business_page&utm_id=gbp,(913) 904-1128,Physical Therapist,Overland Park,KS,Johnson County,7381 W 133Rd St Suite 302,66213,,1063758837
 "Cynthia Sandquist Peterson, P.T.",https://serc.urpt.com/locations/overland-park/?utm_source=google&utm_medium=organic&utm_campaign=gmb,(913) 451-7372,Physical Therapist,Overland Park,KS,Johnson County,6600 College Blvd,66211,,1679659353
 "Dace Robert Ball, PT, DPT",https://www.fitmjc.com/,(913) 808-5245,Physical Therapist,Overland Park,KS,Johnson County,15040 Newton Lane,66223,,1457151276
-"Dana E Young, DPT",,(913) 574-1460,Physical Therapist,Overland Park,KS,Johnson County,10730 Nall Ave Ste 204,66211,,1063861425
+"Dana E Young, DPT",https://ashleykendrickkc.com/,(913) 574-1460,Physical Therapist,Overland Park,KS,Johnson County,10730 Nall Ave Ste 204,66211,,1063861425
 "Daniel Edward Laughlin, DPT",https://drlaughlin.com,(913) 642-4900,Physical Therapist,Overland Park,KS,Johnson County,6501 W 101St Ter 9506 Nall Avenue,66212,,1134355340
 "Daniel N Knight, DPT",https://ssorkc.com/?utm_source=google&utm_medium=organic&utm_campaign=google_business_page&utm_id=gbp,(913) 904-1128,Physical Therapist,Overland Park,KS,Johnson County,7381 W 133Rd St Ste 302,66213,,1194583476
 "Danielle Kastner, DPT",https://lscm.org,(913) 681-0606,Physical Therapist,Overland Park,KS,Johnson County,10600 Mastin St,66212,,1689355232
@@ -1417,7 +1417,7 @@ Elaine Ka Odell,https://legacyhealthcareservices.com,(913) 901-8200,Physical The
 "Elizabeth Ann Lewis, DPT",http://shawneeparc.com/,(913) 383-2001,Physical Therapist,Overland Park,KS,Johnson County,7600 Antioch Rd,66204,,1265975809
 "Elizabeth Brownlee Kennedy, DPT",,(913) 831-2721,Physical Therapist,Overland Park,KS,Johnson County,6400 Glenwood St Building 4 Suite 111,66202,,1811320104
 "Elizabeth Campbell, DPT",https://ptsolutions.com/find-a-clinic/ks/overland-park/overland-park/?utm_source=google&utm_medium=organic&utm_campaign=GMB-PT-Solutions-Overland-Park&utm_content=listing,(913) 373-2100,Physical Therapist,Overland Park,KS,Johnson County,7840 W 165Th St Ste 100,66223,,1235018458
-"Elizabeth Kieffer, DPT",,(913) 808-5244,Physical Therapist,Overland Park,KS,Johnson County,14876 Metcalf Ave,66223,,1053895912
+"Elizabeth Kieffer, DPT",https://www.fitmjc.com/,(913) 808-5244,Physical Therapist,Overland Park,KS,Johnson County,14876 Metcalf Ave,66223,,1053895912
 Elle Cole,https://www.ellecoleinteriors.com/,(913) 735-8707,Physical Therapist,Overland Park,KS,Johnson County,10034 W 151St St,66221,,1295568202
 Ellis Health Group Llc,https://ellishealthgroup.com,(816) 799-1767,Physical Therapist,Overland Park,KS,Johnson County,10034 W 151St St,66221,,1518636000
 "Ellis Lee Morton, DPT",https://www.kcoi.com/?utm_source=google&utm_medium=organic&utm_campaign=kcoi&utm_content=localgmb,(913) 648-6755,Physical Therapist,Overland Park,KS,Johnson County,7414 Metcalf Ave,66204,,1689547556
@@ -1446,13 +1446,13 @@ Garrett Michael Rolofson,https://physicaltherapy.fitmjc.com/location/leawood-phy
 "Grace Parker, DPT",https://drlaughlin.com,(913) 912-1096,Physical Therapist,Overland Park,KS,Johnson County,9506 Nall Ave,66207,,1043097678
 "Gregory Kenneth Hollenbeck, DPT",https://drlaughlin.com,(913) 912-1096,Physical Therapist,Overland Park,KS,Johnson County,9506 Nall Ave,66207,,1790049757
 "Gregory Scott Noel, PT MS SCS",,(913) 385-0564,Physical Therapist,Overland Park,KS,Johnson County,10351 Barkley St,66212,,1790767630
-Haley Zerr,,(913) 708-8448,Physical Therapist,Overland Park,KS,Johnson County,10777 Nall Ave Ste 320,66211,,1689407520
+Haley Zerr,https://ustherapyservices.com,(913) 708-8448,Physical Therapist,Overland Park,KS,Johnson County,10777 Nall Ave Ste 320,66211,,1689407520
 "Hannah Caroline Sowers, PT, DPT",http://www.saintlukeskc.org/provider/lisa-hermes-1003818345?utm_source=yext&utm_medium=local_listing&utm_campaign=yext_listing,(913) 296-5000,Physical Therapist,Overland Park,KS,Johnson County,12300 Metcalf Ave,66213,,1174388847
 "Hannah Sinclair, DPT",https://www.athletico.com/locations/overland-park/?utm_source=google-overlandpark&utm_medium=web&utm_campaign=google-listings,(913) 396-6756,Physical Therapist,Overland Park,KS,Johnson County,9544 Antioch Rd,66212,,1467268318
 "Harrison Lee Petrik, PT, DPT",https://www.kcrehabpt.com/,(785) 249-1269,Physical Therapist,Overland Park,KS,Johnson County,11408 W 135Th St,66221,,1508482712
 "Hayden M Olson, PT, DPT",https://www.fitmjc.com/,(913) 808-5245,Physical Therapist,Overland Park,KS,Johnson County,15040 Newton Dr,66223,,1003703273
 "Haylie Eileen Schmidt, DPT, ATC",https://www.fitmjc.com/,(913) 808-5245,Physical Therapist,Overland Park,KS,Johnson County,15040 Newton Dr,66223,,1992489447
-"Haylie Stocker, DPT",,(913) 708-8448,Physical Therapist,Overland Park,KS,Johnson County,10777 Nall Ave Ste 320,66211,,1043031263
+"Haylie Stocker, DPT",https://ustherapyservices.com,(913) 708-8448,Physical Therapist,Overland Park,KS,Johnson County,10777 Nall Ave Ste 320,66211,,1043031263
 "Holly C Lang, PT",https://ashleykendrickkc.com/,(913) 385-0075,Physical Therapist,Overland Park,KS,Johnson County,10730 Nall Ave Ste 204,66211,,1548585235
 "Holly Nicole Smith, DPT",http://shawneeparc.com/,(913) 383-2001,Physical Therapist,Overland Park,KS,Johnson County,7600 Antioch Rd,66204,,1093258436
 "Ian Lee Purisima Winchester, DPT",http://allisonkiddtherapy.com/,(913) 642-7746,Physical Therapist,Overland Park,KS,Johnson County,7279 W 105Th St,66212,,1023794740
@@ -1480,7 +1480,7 @@ Jay J Anderson,http://fitmjc.com/location/chiropractors-in-overland-park/,(913) 
 Jennifer Jeanne Walawender,https://ustherapyservices.com,(913) 312-1777,Physical Therapist,Overland Park,KS,Johnson County,10777 Nall Ave Suite 320,66211,,1003112038
 "Jennifer Leah Westerberg, P.T.",https://www.coreptkc.com/,(913) 322-4000,Physical Therapist,Overland Park,KS,Johnson County,10400 W 103Rd St Suite 22,66214,,1407903503
 "Jennifer Lynn Serres, PT",,(913) 696-8800,Physical Therapist,Overland Park,KS,Johnson County,5520 College Blvd Suite 340,66211,,1952471948
-"Jennifer Talone, DPT",,(913) 574-1240,Physical Therapist,Overland Park,KS,Johnson County,8302 W 125Th St,66213,,1982085437
+"Jennifer Talone, DPT",https://www.kansashealthsystem.com/care/specialties/sports-medicine/sports-performance?utm_source=gmb&utm_medium=web&utm_term=&utm_content=&utm_campaign=kyruus_brandify,(913) 574-1240,Physical Therapist,Overland Park,KS,Johnson County,8302 W 125Th St,66213,,1982085437
 "Jeremy R Jabara, DPT",,(913) 831-2721,Physical Therapist,Overland Park,KS,Johnson County,6405 Metcalf Ave Suite 220,66202,,1033422035
 "Jessica Elizabeth Cummings, PT",https://www.coreptkc.com/,(913) 322-4000,Physical Therapist,Overland Park,KS,Johnson County,10400 W 103Rd St Suite 22,66214,,1952614430
 "Jessica Jane Larson, PT",http://www.quantum-pros.com/,(913) 894-1910,Physical Therapist,Overland Park,KS,Johnson County,10300 W 103Rd St Suite 300,66214,,1548433675
@@ -1488,8 +1488,8 @@ Jennifer Jeanne Walawender,https://ustherapyservices.com,(913) 312-1777,Physical
 "Jigisha Mukeshkumar Ganatra, RPT",,(913) 320-2266,Physical Therapist,Overland Park,KS,Johnson County,6701 W 121St St Ste 103,66209,,1922443159
 "Joanna Hansen, DPT",https://www.selectphysicaltherapy.com/contact/find-a-location/ks/overland-park/overland-park-south/?ty=xt,(913) 239-9539,Physical Therapist,Overland Park,KS,Johnson County,15917 Antioch Rd,66223,,1548615370
 "Jody A Grigsby, PT",,(913) 685-5892,Physical Therapist,Overland Park,KS,Johnson County,13800 Metcalf Avenue,66223,,1366718207
-"John Kyle Veazey, DPT",,(913) 574-1240,Physical Therapist,Overland Park,KS,Johnson County,8302 W 125Th St,66213,,1770985566
-"Johnny Manuel Herrera, PT",,(913) 574-1240,Physical Therapist,Overland Park,KS,Johnson County,8302 W 125Th St,66213,,1013641182
+"John Kyle Veazey, DPT",https://www.kansashealthsystem.com/care/specialties/sports-medicine/sports-performance?utm_source=gmb&utm_medium=web&utm_term=&utm_content=&utm_campaign=kyruus_brandify,(913) 574-1240,Physical Therapist,Overland Park,KS,Johnson County,8302 W 125Th St,66213,,1770985566
+"Johnny Manuel Herrera, PT",https://www.kansashealthsystem.com/care/specialties/sports-medicine/sports-performance?utm_source=gmb&utm_medium=web&utm_term=&utm_content=&utm_campaign=kyruus_brandify,(913) 574-1240,Physical Therapist,Overland Park,KS,Johnson County,8302 W 125Th St,66213,,1013641182
 "Jolyne A. Harrington, Physical Therapist",http://www.quantum-pros.com/,(913) 894-1910,Physical Therapist,Overland Park,KS,Johnson County,10300 W 103Rd St Suite 300 Quantum Health Professionals,66214,,1770781460
 "Jonna Danyale Foley, DPT",https://physicaltherapy.fitmjc.com/location/leawood-physical-therapy/,(913) 354-5020,Physical Therapist,Overland Park,KS,Johnson County,11340 Nall Ave Unit 200B,66211,,1467216069
 "Jordan Michelle Minor, PT, DPT",https://lscm.org,(913) 681-0606,Physical Therapist,Overland Park,KS,Johnson County,15100 Metcalf Ave Ste 102,66223,,1700585296
@@ -1511,14 +1511,14 @@ Justin Brown,https://summitcare.com,(913) 239-8777,Physical Therapist,Overland P
 "Justin Marshall Prier, MSPT",https://www.johnsoncounty-rehab.com/,(913) 814-9431,Physical Therapist,Overland Park,KS,Johnson County,9201 W 133Rd St,66213,,1386600377
 "Kacie Beebe, DPT",https://www.coreptkc.com/,(913) 322-4000,Physical Therapist,Overland Park,KS,Johnson County,10400 W 103Rd St Ste 22,66214,,1003659111
 "Kailee Michelle Butler, PT, DPT",http://www.quantum-pros.com/,(888) 913-1910,Physical Therapist,Overland Park,KS,Johnson County,6901 Shawnee Mission Pkwy Ste 207,66202,,1912622820
-"Kaitlyn Marissa Townsend, DPT",,(913) 708-8448,Physical Therapist,Overland Park,KS,Johnson County,10777 Nall Ave Ste 320,66211,,1619861135
+"Kaitlyn Marissa Townsend, DPT",https://ustherapyservices.com,(913) 708-8448,Physical Therapist,Overland Park,KS,Johnson County,10777 Nall Ave Ste 320,66211,,1619861135
 "Kalleigh Anne Meyer, PT, DPT",http://www.performancerehabkc.com/,(913) 897-1100,Physical Therapist,Overland Park,KS,Johnson County,6885 W 151St St Ste 102,66223,,1588231807
 Kansas City Orthopaedic Institute Llc,https://www.kcoi.com/?utm_source=google&utm_medium=organic&utm_campaign=kcoi&utm_content=localgmb,(913) 648-6755,Physical Therapist,Overland Park,KS,Johnson County,7414 Metcalf Ave,66204,,1982473906
-Kansas City Orthopaedic Institute Llc,,(913) 708-8448,Physical Therapist,Overland Park,KS,Johnson County,10777 Nall Ave Ste 320,66211,,1831906296
+Kansas City Orthopaedic Institute Llc,https://ustherapyservices.com,(913) 708-8448,Physical Therapist,Overland Park,KS,Johnson County,10777 Nall Ave Ste 320,66211,,1831906296
 Kansas City Orthopaedic Institute Llc,https://livingwellchiropractic.com,(913) 319-7575,Physical Therapist,Overland Park,KS,Johnson County,8825 W 75Th St,66204,,1295501351
 Kansas City Orthopaedic Institute Llc,https://www.kcrehabpt.com/,(913) 319-7575,Physical Therapist,Overland Park,KS,Johnson County,11408 W 135Th St,66221,,1578339636
 Kansas City Orthopaedic Institute Llc,https://www.salinaohp.com/,(913) 599-4600,Physical Therapist,Overland Park,KS,Johnson County,11940 W 119Th St,66213,,1922874080
-Kansas City Orthopaedic Institute Llc,,(913) 708-8448,Physical Therapist,Overland Park,KS,Johnson County,10777 Nall Ave Ste 320,66211,,1700652757
+Kansas City Orthopaedic Institute Llc,https://ustherapyservices.com,(913) 708-8448,Physical Therapist,Overland Park,KS,Johnson County,10777 Nall Ave Ste 320,66211,,1700652757
 Kansas City Orthopaedic Institute Llc,https://livingwellchiropractic.com,(913) 319-7575,Physical Therapist,Overland Park,KS,Johnson County,15445 Metcalf Ave,66223,,1669248720
 Kansas Multispecialty Care Llc,https://coremedcenter.com/?utm_source=GBP&utm_medium=organic,(816) 229-1941,Physical Therapist,Overland Park,KS,Johnson County,10520 Barkley St,66212,,1679329692
 "Karen Ann Whitehead, P.T.",http://www.quantum-pros.com/,(913) 894-1910,Physical Therapist,Overland Park,KS,Johnson County,Quantum Health Professionals 10300 W 103 St. Suite 300,66214,,1235268137
@@ -1579,12 +1579,12 @@ Laurie George,http://www.karimchiropractic.com/,(913) 381-5454,Physical Therapis
 "Leah Findley, PT, DPT",https://physicaltherapy.fitmjc.com/location/leawood-physical-therapy/,(913) 354-5020,Physical Therapist,Overland Park,KS,Johnson County,11340 Nall Ave Ste 200B,66211,,1235061821
 Leah Paige Phipps,http://allisonkiddtherapy.com/,(136) 968-0009,Physical Therapist,Overland Park,KS,Johnson County,5808 W 110Th St,66211,,1194544924
 Legacy Healthcare Services Inc,https://legacyhealthcareservices.com,(913) 220-2240,Physical Therapist,Overland Park,KS,Johnson County,5901 W 107Th St,66207,,1427681220
-"Linda K. Moore, P.T.",,(913) 321-8765,Physical Therapist,Overland Park,KS,Johnson County,8825 W 75Th St,66204,,1699921643
+"Linda K. Moore, P.T.",https://www.kcoi.com/?utm_source=google&utm_medium=organic&utm_campaign=kcoi&utm_content=localgmb,(913) 321-8765,Physical Therapist,Overland Park,KS,Johnson County,8825 W 75Th St,66204,,1699921643
 "Linda Kay Mufich-Knopp, PT, CAPP",http://www.homeholistic.com/,(913) 396-9595,Physical Therapist,Overland Park,KS,Johnson County,"Femme Focus, L.L.C. In The Home Family Holistic Center 7927 Floyd Street, Suite 5",66204,,1427577469
 "Lindsey Phelps, DPT",https://www.coreptkc.com/,(913) 322-4000,Physical Therapist,Overland Park,KS,Johnson County,10400 W 103Rd St Ste 22,66214,,1730598574
 "Lindsey Rosemann, DPT",http://www.performancerehabkc.com/,(913) 897-1100,Physical Therapist,Overland Park,KS,Johnson County,6885 W 151St St Suite 102,66223,,1447482112
 "Lisa D Lowe, PT",,(913) 221-8656,Physical Therapist,Overland Park,KS,Johnson County,4000 W 102Nd St,66207,,1588153399
-"Lisa Jo Boudrieau, PT",,(816) 679-7056,Physical Therapist,Overland Park,KS,Johnson County,12000 W 110Th St Suite 400,66210,,1720095995
+"Lisa Jo Boudrieau, PT",https://neurologicalpt.com,(816) 679-7056,Physical Therapist,Overland Park,KS,Johnson County,12000 W 110Th St Suite 400,66210,,1720095995
 "Lisa Marie Ballard, PT",https://lscm.org,(913) 681-0606,Physical Therapist,Overland Park,KS,Johnson County,10600 Mastin St,66212,,1538390984
 "Lisa Thackery, MPT",http://www.juanitaryan.com/,(913) 652-9229,Physical Therapist,Overland Park,KS,Johnson County,10560 Barkley St Suite 330,66212,,1821123985
 "Lissa F Windhorst, R.P.T.",,(913) 469-8878,Physical Therapist,Overland Park,KS,Johnson County,10100 W 119Th St Suite 200,66213,,1124015441
@@ -1615,7 +1615,7 @@ Mary Deboest,https://sanokc.com/provider/dr-joseph?utm_source=GMBSocialClimb&utm
 "Mary M Sauder, PT",http://www.kcsportsrehab.com/,(913) 663-2555,Physical Therapist,Overland Park,KS,Johnson County,6362 College Blvd,66211,,1144267543
 Mary Rush,https://www.therushfunplex.com/shawnee-ks/,(903) 312-0758,Physical Therapist,Overland Park,KS,Johnson County,12213 Goodman St,66213,,1487369443
 "Mary Sue Gilman, PT",http://www.kcsportsrehab.com/,(913) 663-2555,Physical Therapist,Overland Park,KS,Johnson County,6362 College Blvd,66211,,1356382931
-"Mary Therese Sydzyik, PT",,(913) 574-1460,Physical Therapist,Overland Park,KS,Johnson County,10730 Nall Ave Ste 200,66211,,1528572286
+"Mary Therese Sydzyik, PT",https://www.kansashealthsystem.com/locations/main-campus-main-hospital-kansas-city-ks?utm_source=gmb&utm_medium=web&utm_term=&utm_content=&utm_campaign=kyruus_brandify,(913) 574-1460,Physical Therapist,Overland Park,KS,Johnson County,10730 Nall Ave Ste 200,66211,,1528572286
 Mason Carey,https://www.hutchgov.com/170/Parks-and-Playgrounds?contentId=49f28bdb-51f9-4cdd-8c12-14fb1aee578e,(402) 806-0893,Physical Therapist,Overland Park,KS,Johnson County,5306 Goodman Ln,66202,,1568189249
 "Matthew Kent Stensrud, DPT",https://www.johnsoncounty-rehab.com/,(913) 322-7828,Physical Therapist,Overland Park,KS,Johnson County,8889 W 75Th St,66204,,1174758593
 "Matthew Michael July, PT, DPT, OCS",http://allisonkiddtherapy.com/,(913) 696-8000,Physical Therapist,Overland Park,KS,Johnson County,5808 W 110Th St,66211,,1598120420
@@ -1634,18 +1634,18 @@ Maya Gallagher,https://physicaltherapy.fitmjc.com/location/leawood-physical-ther
 "Melissa Ruth Church, P.T.",https://www.salinaohp.com/,(913) 563-5500,Physical Therapist,Overland Park,KS,Johnson County,11940 W 119Th St Ste 102,66213,,1376632398
 "Michael A. Denning, DPT",https://www.denninglawfirm.com/?utm_source=google-local&utm_medium=organic&utm_campaign=2635,(913) 717-4755,Physical Therapist,Overland Park,KS,Johnson County,6750 W 135Th St,66223,,1528315488
 "Michael David Rozell, PT",https://ustherapyservices.com,(913) 663-2555,Physical Therapist,Overland Park,KS,Johnson County,10777 Nall Ave Suite 320,66211,,1972544567
-"Michael Joseph Peterson, PT DPT",,(913) 574-1460,Physical Therapist,Overland Park,KS,Johnson County,10730 Nall Ave Ste 200,66211,,1134575368
+"Michael Joseph Peterson, PT DPT",https://www.kansashealthsystem.com/locations/main-campus-main-hospital-kansas-city-ks?utm_source=gmb&utm_medium=web&utm_term=&utm_content=&utm_campaign=kyruus_brandify,(913) 574-1460,Physical Therapist,Overland Park,KS,Johnson County,10730 Nall Ave Ste 200,66211,,1134575368
 "Michael Ryan Schlicht, PT, DPT, LAT, ATC",https://www.kcrehabpt.com/,(913) 681-9909,Physical Therapist,Overland Park,KS,Johnson County,11408 W 135Th St,66221,,1053982686
 "Michael Stout, DPT",https://www.athletico.com/locations/overland-park/?utm_source=google-overlandpark&utm_medium=web&utm_campaign=google-listings,(913) 396-6756,Physical Therapist,Overland Park,KS,Johnson County,9544 Antioch Rd,66212,,1952160905
-"Michele Renae Schuessler, PT",,(888) 652-9225,Physical Therapist,Overland Park,KS,Johnson County,6700 Antioch Rd Ste 120,66204,,1932558251
+"Michele Renae Schuessler, PT",http://www.juanitaryan.com/,(888) 652-9225,Physical Therapist,Overland Park,KS,Johnson County,6700 Antioch Rd Ste 120,66204,,1932558251
 "Michelle Eagleton, PT, DPT",https://athletico.com,(913) 275-5343,Physical Therapist,Overland Park,KS,Johnson County,7212 W 135Th St,66223,,1275074825
 "Midwest Physical Therapy Specialists, Llc",http://www.kcorthoalliance.com/,(913) 226-9240,Physical Therapist,Overland Park,KS,Johnson County,6500 W 143Rd St,66223,,1720785769
 "Millie Hatfield, DPT",https://ssorkc.com/?utm_source=google&utm_medium=organic&utm_campaign=google_business_page&utm_id=gbp,(913) 904-1128,Physical Therapist,Overland Park,KS,Johnson County,7381 W 133Rd St Ste 302,66213,,1184322059
 "Mitchell D Barber, M.S.P.T.",,(913) 469-8878,Physical Therapist,Overland Park,KS,Johnson County,10100 W 119Th St Suite 200,66213,,1750378071
-"Mitchell Kidd, PT, DPT",,(785) 633-8505,Physical Therapist,Overland Park,KS,Johnson County,10800 Farley St Ste 130,66210,,1003746140
+"Mitchell Kidd, PT, DPT",https://lscm.org,(785) 633-8505,Physical Therapist,Overland Park,KS,Johnson County,10800 Farley St Ste 130,66210,,1003746140
 "Moheen Amin Mian, DPT",https://arcpt.com/clinics/overland-park-ks/,(913) 754-0888,Physical Therapist,Overland Park,KS,Johnson County,6362 College Blvd,66211,,1699660167
-"Molly Ann Ash, DPT",,(913) 754-7344,Physical Therapist,Overland Park,KS,Johnson County,10730 Nall Ave Ste 200,66211,,1669696720
-"Molly Carboy, DPT",,(303) 242-2027,Physical Therapist,Overland Park,KS,Johnson County,6701 W 121St St,66209,,1528438751
+"Molly Ann Ash, DPT",https://www.kansashealthsystem.com/locations/main-campus-main-hospital-kansas-city-ks?utm_source=gmb&utm_medium=web&utm_term=&utm_content=&utm_campaign=kyruus_brandify,(913) 754-7344,Physical Therapist,Overland Park,KS,Johnson County,10730 Nall Ave Ste 200,66211,,1669696720
+"Molly Carboy, DPT",https://www.foundationalconcepts.com/,(303) 242-2027,Physical Therapist,Overland Park,KS,Johnson County,6701 W 121St St,66209,,1528438751
 "Molly Creaden, DPT",https://arcpt.com/clinics/overland-park-ks/,(913) 754-0888,Physical Therapist,Overland Park,KS,Johnson County,6362 College Blvd,66211,,1619582798
 "Morgan Bradley Funk, PT, DPT",https://www.kansashealthsystem.com/locations/main-campus-main-hospital-kansas-city-ks?utm_source=gmb&utm_medium=web&utm_term=&utm_content=&utm_campaign=kyruus_brandify,(913) 588-1227,Physical Therapist,Overland Park,KS,Johnson County,10730 Nall Ave Ste 200,66211,,1306417084
 "Morgan D Walker, DPT",http://www.kcsportsrehab.com/,(913) 663-2555,Physical Therapist,Overland Park,KS,Johnson County,10701 Nall Ave,66211,,1689291965
@@ -1655,7 +1655,7 @@ Maya Gallagher,https://physicaltherapy.fitmjc.com/location/leawood-physical-ther
 "Natalie R Gulley, PT",,(913) 383-2569,Physical Therapist,Overland Park,KS,Johnson County,5211 W 103Rd St,66207,,1649560483
 "Nathan C Veenis, DPT",https://www.johnsoncounty-rehab.com/,(913) 322-7828,Physical Therapist,Overland Park,KS,Johnson County,8889 W 75Th St,66204,,1295396497
 "Nathan Douglas Kalberer, DPT",https://www.johnsoncounty-rehab.com/,(913) 322-7828,Physical Therapist,Overland Park,KS,Johnson County,8877 W 75Th St,66204,,1457880478
-Nicholas Alford,,(913) 574-1460,Physical Therapist,Overland Park,KS,Johnson County,10730 Nall Ave Ste 200,66211,,1225566532
+Nicholas Alford,https://www.kansashealthsystem.com/locations/main-campus-main-hospital-kansas-city-ks?utm_source=gmb&utm_medium=web&utm_term=&utm_content=&utm_campaign=kyruus_brandify,(913) 574-1460,Physical Therapist,Overland Park,KS,Johnson County,10730 Nall Ave Ste 200,66211,,1225566532
 "Nicole Kathleen Hogan, DPT",https://www.denninglawfirm.com/?utm_source=google-local&utm_medium=organic&utm_campaign=2635,(913) 717-4750,Physical Therapist,Overland Park,KS,Johnson County,6750 W 135Th St,66223,,1982002390
 "Noelle Susan Dowma, DPT",https://kinespherept.com,(816) 379-6899,Physical Therapist,Overland Park,KS,Johnson County,10880 Benson Dr Ste 2370,66210,,1871706903
 "Olivia Cramer, DPT",http://allisonkiddtherapy.com/,(913) 642-7746,Physical Therapist,Overland Park,KS,Johnson County,7279 W 105Th St,66212,,1588598064
@@ -1683,7 +1683,7 @@ R&R Collaborative Therapy Services,https://www.rrcollaborativetherapy.com/?UTM_s
 "Rachel Bradrick, DPT",,(800) 989-0525,Physical Therapist,Overland Park,KS,Johnson County,13800 Metcalf Ave,66223,,1578911665
 "Rachel Word, DPT",https://arcpt.com/clinics/overland-park-ks/,(913) 754-0888,Physical Therapist,Overland Park,KS,Johnson County,6362 College Blvd,66211,,1760996482
 "Rachelle Kristin Martin, PT, DPT",https://serc.urpt.com/locations/overland-park/?utm_source=google&utm_medium=organic&utm_campaign=gmb,(913) 451-7377,Physical Therapist,Overland Park,KS,Johnson County,7211 W 110Th St,66210,,1811349459
-Rebecca Mary Ferguson,,(913) 754-0891,Physical Therapist,Overland Park,KS,Johnson County,6362 College Blvd,66211,,1427618602
+Rebecca Mary Ferguson,https://arcpt.com/clinics/overland-park-ks/,(913) 754-0891,Physical Therapist,Overland Park,KS,Johnson County,6362 College Blvd,66211,,1427618602
 "Regina Wood Sylvester, P.T.",http://www.juanitaryan.com/,(913) 652-9229,Physical Therapist,Overland Park,KS,Johnson County,10560 Barkley St Suite #330,66212,,1013134089
 "Reid Johnson, DPT",https://www.johnsoncounty-rehab.com/,(913) 469-0949,Physical Therapist,Overland Park,KS,Johnson County,9201 W 133Rd St,66213,,1336723253
 "Renee Lyn Walczak, RPT",,(913) 402-0651,Physical Therapist,Overland Park,KS,Johnson County,14112 King St,66221,,1376714808
@@ -1723,7 +1723,7 @@ Serc Rehabilitation Partners Llc,https://serc.urpt.com/locations/overland-park/?
 "Shawn Kavanaugh, PT",https://ashleykendrickkc.com/,(913) 385-0075,Physical Therapist,Overland Park,KS,Johnson County,4001 Indian Creek Pkwy,66207,,1871602441
 "Shawna Haynes, P.T.",http://www.juanitaryan.com/,(913) 652-9229,Physical Therapist,Overland Park,KS,Johnson County,10560 Barkley St Suite 330,66212,,1972721314
 "Shefali Shirali, B Sc, LPT",https://ashleykendrickkc.com/,(913) 385-0075,Physical Therapist,Overland Park,KS,Johnson County,10730 Nall Ave,66211,,1053463844
-"Shelby Lee Fagan Abreu, PT, DPT",,(913) 574-1460,Physical Therapist,Overland Park,KS,Johnson County,10730 Nall Ave Ste 200,66211,,1841850716
+"Shelby Lee Fagan Abreu, PT, DPT",https://www.kansashealthsystem.com/locations/main-campus-main-hospital-kansas-city-ks?utm_source=gmb&utm_medium=web&utm_term=&utm_content=&utm_campaign=kyruus_brandify,(913) 574-1460,Physical Therapist,Overland Park,KS,Johnson County,10730 Nall Ave Ste 200,66211,,1841850716
 "Sheri Dawn Espino, P.T.",http://www.quantum-pros.com/,(913) 894-1910,Physical Therapist,Overland Park,KS,Johnson County,10300 W 103Rd St Suite 300,66214,,1578746855
 Shira Gail Hurst-Sneh,,(913) 945-2153,Physical Therapist,Overland Park,KS,Johnson County,13800 Metcalf Ave,66223,,1285391839
 Skylar Dailey,http://fitmjc.com/location/chiropractors-in-overland-park/,(913) 257-5627,Physical Therapist,Overland Park,KS,Johnson County,9120 Metcalf Ave,66212,,1316676703
@@ -1759,19 +1759,19 @@ Teresa Jeanette Heit,http://www.quantum-pros.com/,(913) 894-1910,Physical Therap
 "Teresa S Rose, R.P.T.",https://lscm.org,(913) 681-7628,Physical Therapist,Overland Park,KS,Johnson County,15100 Metcalf Ave Suite 102,66223,,1023005345
 "Terri Lynne Newkirk, P.T.",http://www.quantum-pros.com/,(913) 894-1910,Physical Therapist,Overland Park,KS,Johnson County,10300 W 103Rd St Suite 300,66214,,1316198898
 "Thomas Reuther, DPT",https://www.hearingandbalancekc.com/,(913) 521-9090,Physical Therapist,Overland Park,KS,Johnson County,6650 W 110Th St Ste 330,66211,,1548781719
-Tidd-Krafft Occupational And Physical Therapy Pa,,(610) 925-4560,Physical Therapist,Overland Park,KS,Johnson County,6701 W 121St St,66209,,1225541246
+Tidd-Krafft Occupational And Physical Therapy Pa,https://www.foundationalconcepts.com/,(610) 925-4560,Physical Therapist,Overland Park,KS,Johnson County,6701 W 121St St,66209,,1225541246
 "Tower Physical Therapy, Llc",https://towerpt.com,(913) 906-8656,Physical Therapist,Overland Park,KS,Johnson County,7600 W 110Th St Suite 206,66225,,1073822086
 Traci Smiley,https://calibrationptkc.com/?utm_source=gbp,(913) 914-7174,Physical Therapist,Overland Park,KS,Johnson County,7313 W 95Th St,66212,,1164870093
 "Travis Scott Messer, PT",,(816) 836-0800,Physical Therapist,Overland Park,KS,Johnson County,10777 Nall Ave Suite 320 Corporate Medical Plaza Bldg Ii,66211,,1568801900
 Trent Allen Nichol,https://trent-gallagher.com/?utm_source=google&utm_medium=organic&utm_campaign=google-my-business,(913) 640-9090,Physical Therapist,Overland Park,KS,Johnson County,5267 W 95Th St,66207,,1366972937
 Trevor Dillon Johnson,http://www.quantum-pros.com/,(888) 913-1910,Physical Therapist,Overland Park,KS,Johnson County,6901 Shawnee Mission Pkwy Ste 207,66202,,1427652023
 Trumove Physical Therapy,http://allisonkiddtherapy.com/,(913) 642-7746,Physical Therapist,Overland Park,KS,Johnson County,7279 W 105Th St,66212,,1669501631
-Tyler Johnston,,(913) 574-1460,Physical Therapist,Overland Park,KS,Johnson County,10730 Nall Ave Ste 200,66211,,1316364300
+Tyler Johnston,https://www.kansashealthsystem.com/locations/main-campus-main-hospital-kansas-city-ks?utm_source=gmb&utm_medium=web&utm_term=&utm_content=&utm_campaign=kyruus_brandify,(913) 574-1460,Physical Therapist,Overland Park,KS,Johnson County,10730 Nall Ave Ste 200,66211,,1316364300
 "Tyler Newton, PT",http://www.kcsportsrehab.com/,(913) 663-2555,Physical Therapist,Overland Park,KS,Johnson County,10701 Nall Ave,66211,,1447505292
 "Tyler Thomas Lampe, PT, DPT",https://serc.urpt.com/locations/overland-park-stanley/?utm_source=google&utm_medium=organic&utm_campaign=gmb,(913) 685-5803,Physical Therapist,Overland Park,KS,Johnson County,8019 W 151St St,66223,,1346637246
 U.S. Pt Therapy Services Inc.,https://ustherapyservices.com,(713) 297-7000,Physical Therapist,Overland Park,KS,Johnson County,10777 Nall Ave Suite 320,66211,,1114363504
 "Us Pt Therapy Services, Inc.",https://www.johnsoncounty-rehab.com/,(913) 814-9431,Physical Therapist,Overland Park,KS,Johnson County,9201 W 133Rd St Suite B,66213,,1770519829
-"Vanessa Winters, DPT",,(913) 574-1460,Physical Therapist,Overland Park,KS,Johnson County,10730 Nall Ave Ste 200,66211,,1942649280
+"Vanessa Winters, DPT",https://www.kansashealthsystem.com/locations/main-campus-main-hospital-kansas-city-ks?utm_source=gmb&utm_medium=web&utm_term=&utm_content=&utm_campaign=kyruus_brandify,(913) 574-1460,Physical Therapist,Overland Park,KS,Johnson County,10730 Nall Ave Ste 200,66211,,1942649280
 "Victoria Avc Koch, MPH, PT",http://www.quantum-pros.com/,(913) 894-1910,Physical Therapist,Overland Park,KS,Johnson County,10300 W 103Rd St Suite 300,66214,,1548454473
 "Victoria L Bouckhout, P.T.",,(913) 681-0146,Physical Therapist,Overland Park,KS,Johnson County,14346 Metcalf Ave,66223,,1306889415
 Vip Physical Therapy Llc,https://www.vipptkc.com/,(816) 520-4755,Physical Therapist,Overland Park,KS,Johnson County,6608 W 150Th St,66223,,1184409138
@@ -1784,7 +1784,7 @@ Whole Body Method Physical Therapy Inc,https://wholept.com,(913) 213-3632,Physic
 Addison Olivia Ward,,(913) 335-0428,Physical Therapist,Prairie Village,KS,Johnson County,7300 Nall Ave,66208,,1174458939
 "Allison Lancaster, DPT",https://lifestance.com/provider/therapist/ks/overland-park/nathan-bartlett/?utm_source=gmb&utm_medium=organic&utm_campaign=providers,(913) 521-8851,Physical Therapist,Prairie Village,KS,Johnson County,2700 Somerset Dr,66206,,1598287310
 Allison Marie Mcdonough,https://playabilities.org/,(913) 213-3531,Physical Therapist,Prairie Village,KS,Johnson County,8340 Mission Rd,66206,,1548102759
-"Amanda Rixey, DPT",,(425) 341-3128,Physical Therapist,Prairie Village,KS,Johnson County,7301 Mission Rd Ste 330,66208,,1093208605
+"Amanda Rixey, DPT",https://newfoundtherapy.com,(425) 341-3128,Physical Therapist,Prairie Village,KS,Johnson County,7301 Mission Rd Ste 330,66208,,1093208605
 "Amy Lee Culp, RPT",http://www.tutera.com/location/village-at-mission-senior-living/?utm_source=google&utm_medium=organic&utm_campaign=gbp,(913) 831-0164,Physical Therapist,Prairie Village,KS,Johnson County,7105 Mission Rd,66208,,1700077468
 "Ana Jean Riddle, DPT",https://www.athletico.com/locations/prairie-village/?utm_source=google-prairievillage&utm_medium=web&utm_campaign=google-listings,(913) 871-6291,Physical Therapist,Prairie Village,KS,Johnson County,6911 Tomahawk Rd,66208,,1841850070
 "Andrew Deboest, DPT",,(913) 593-6667,Physical Therapist,Prairie Village,KS,Johnson County,7608 Briar St,66208,,1114391844
@@ -1833,15 +1833,15 @@ Katherine Kempf Libby,,(316) 670-3426,Physical Therapist,Prairie Village,KS,John
 "Kristin Wier, DPT",https://www.kristinewertzpt.com/,(913) 620-7486,Physical Therapist,Prairie Village,KS,Johnson County,5808 W 79Th St,66208,,1558732651
 "Lisa Adams, P.T.",https://www.claridgecourt.com/retirement-community-kansas-city-mo/?utm_medium=organic&utm_source=gmb&utm_campaign=community,(913) 383-2085,Physical Therapist,Prairie Village,KS,Johnson County,8101 Mission Rd,66208,,1518714765
 "Lisa Ree Bowser, PT",http://www.tutera.com/location/village-at-mission-senior-living/?utm_source=google&utm_medium=organic&utm_campaign=gbp,(913) 262-1611,Physical Therapist,Prairie Village,KS,Johnson County,7105 Mission Rd,66208,,1851866701
-"Lydia Pemberton, DPT",,(913) 904-0261,Physical Therapist,Prairie Village,KS,Johnson County,8340 Mission Rd Ste 119,66206,,1316829294
+"Lydia Pemberton, DPT",https://ssorkc.com/?utm_source=google&utm_medium=organic&utm_campaign=google_business_page&utm_id=gbp,(913) 904-0261,Physical Therapist,Prairie Village,KS,Johnson County,8340 Mission Rd Ste 119,66206,,1316829294
 "Madeline Danielle Thurman, DPT",http://www.pt4rkids.com/,(913) 345-1997,Physical Therapist,Prairie Village,KS,Johnson County,5250 W 94Th Ter Ste 200,66207,,1790415164
 "Marcus S Baker, PT",,(816) 695-6818,Physical Therapist,Prairie Village,KS,Johnson County,4505 W 94Th St,66207,,1578195343
 "Margaret Ann Hartman, P.T.",,(913) 522-8732,Physical Therapist,Prairie Village,KS,Johnson County,5300 W 65Th Pl,66202,,1285856138
 "Megan Koenigsman, PT",http://www.pt4rkids.com/,(913) 345-1997,Physical Therapist,Prairie Village,KS,Johnson County,5250 W 94Th Ter Ste 200,66207,,1467294751
 Morgan Jordan,https://www.athletico.com/locations/prairie-village/?utm_source=google-prairievillage&utm_medium=web&utm_campaign=google-listings,(913) 871-6291,Physical Therapist,Prairie Village,KS,Johnson County,6911 Tomahawk Rd,66208,,1952268088
-"Nathan Ahrens, DPT",,(913) 904-0261,Physical Therapist,Prairie Village,KS,Johnson County,8340 Mission Rd Ste 119,66206,,1689408411
+"Nathan Ahrens, DPT",https://ssorkc.com/?utm_source=google&utm_medium=organic&utm_campaign=google_business_page&utm_id=gbp,(913) 904-0261,Physical Therapist,Prairie Village,KS,Johnson County,8340 Mission Rd Ste 119,66206,,1689408411
 "Nathan Schultze, DPT",https://lifestance.com/provider/therapist/ks/overland-park/nathan-bartlett/?utm_source=gmb&utm_medium=organic&utm_campaign=providers,(913) 276-0901,Physical Therapist,Prairie Village,KS,Johnson County,2700 Somerset Dr,66206,,1669012514
-Newfound Physical Therapy Llc,,(425) 341-3128,Physical Therapist,Prairie Village,KS,Johnson County,7301 Mission Rd Ste 330,66208,,1104552033
+Newfound Physical Therapy Llc,https://newfoundtherapy.com,(425) 341-3128,Physical Therapist,Prairie Village,KS,Johnson County,7301 Mission Rd Ste 330,66208,,1104552033
 Noah Mulder,http://www.kcchampionperformance.com/,(913) 291-2290,Physical Therapist,Prairie Village,KS,Johnson County,2106 W 75Th St,66208,,1275420101
 "Patricia N Watson, BA,MSPT",,(913) 438-8000,Physical Therapist,Prairie Village,KS,Johnson County,5000 W 95Th St Suite 100,66207,,1164450706
 "Paul Thomas Physical Therapy,Llc",http://www.kcchampionperformance.com/,(913) 291-2290,Physical Therapist,Prairie Village,KS,Johnson County,2106 W 75Th St,66208,,1861642035
@@ -1857,7 +1857,7 @@ Sasha Pedersen,http://www.pt4rkids.com/,(913) 345-1997,Physical Therapist,Prairi
 Tiffany Mische,https://stores.hallmark.com/ks/prairievillage/tiffany-town-prairievillage-ks-012284.html,(913) 233-9568,Physical Therapist,Prairie Village,KS,Johnson County,7900 Roe Ave,66208,,1487957742
 "Tiffonie Kai Dirks, M.P.T.",,(913) 432-1866,Physical Therapist,Prairie Village,KS,Johnson County,4127 W 73Rd St,66208,,1003958109
 Tyler Lockton,,(913) 224-2990,Physical Therapist,Prairie Village,KS,Johnson County,5200 W 94Th Ter Ste 112,66207,,1548065246
-"Zachery Michael Rottinghaus, DPT",,(913) 904-0261,Physical Therapist,Prairie Village,KS,Johnson County,8340 Mission Rd Ste 119,66206,,1679315048
+"Zachery Michael Rottinghaus, DPT",https://ssorkc.com/?utm_source=google&utm_medium=organic&utm_campaign=google_business_page&utm_id=gbp,(913) 904-0261,Physical Therapist,Prairie Village,KS,Johnson County,8340 Mission Rd Ste 119,66206,,1679315048
 "Langhston Mimms, DPT, MBA",https://healthcare.ascension.org/find-care/provider/1093561854/matthew-massey?utm_campaign=gmb-website&utm_medium=organic&utm_source=google,(913) 632-4750,Physical Therapist,Roeland Park,KS,Johnson County,5675 Roe Blvd Ste 240,66205,,1710778964
 "Matthew A Massey, DPT",https://healthcare.ascension.org/find-care/provider/1093561854/matthew-massey?utm_campaign=gmb-website&utm_medium=organic&utm_source=google,(913) 632-4750,Physical Therapist,Roeland Park,KS,Johnson County,5675 Roe Blvd Ste 240,66205,,1093561854
 "Omar Pulido Zepeda, PT, DPT",https://healthcare.ascension.org/find-care/provider/1093561854/matthew-massey?utm_campaign=gmb-website&utm_medium=organic&utm_source=google,(913) 632-4750,Physical Therapist,Roeland Park,KS,Johnson County,5675 Roe Blvd Ste 240,66205,,1902653686
@@ -1883,26 +1883,26 @@ Athletico Ltd,,(913) 275-5751,Physical Therapist,Shawnee,KS,Johnson County,11207
 "Chandler R Altom, PT, DPT",,(913) 275-5751,Physical Therapist,Shawnee,KS,Johnson County,11207 Shawnee Mission Pkwy,66203,,1003486077
 "Courtney Weis, PT, DPT",,(913) 728-6166,Physical Therapist,Shawnee,KS,Johnson County,22342 W 66Th St,66226,,1104554369
 "Don Dequine, PT",,(913) 745-7537,Physical Therapist,Shawnee,KS,Johnson County,7740 Hedge Lane Ter,66227,,1871984161
-"Emily Marie O'Laughlin, PT, DPT",,(913) 588-3510,Physical Therapist,Shawnee,KS,Johnson County,7405 Renner Rd,66217,,1306376892
+"Emily Marie O'Laughlin, PT, DPT",https://www.kansashealthsystem.com/locations/main-campus-main-hospital-kansas-city-ks?utm_source=gmb&utm_medium=web&utm_term=&utm_content=&utm_campaign=kyruus_brandify,(913) 588-3510,Physical Therapist,Shawnee,KS,Johnson County,7405 Renner Rd,66217,,1306376892
 "Erin Denise Cain, PT",,(785) 766-4906,Physical Therapist,Shawnee,KS,Johnson County,20816 W 72Nd St,66218,,1164770830
 "Giovanni K Robinson, PT",https://www.brookdale.com/en/communities/brookdale-rosehill.html?cid=yext,(913) 962-7600,Physical Therapist,Shawnee,KS,Johnson County,12802 Johnson Dr,66216,,1639894959
-"Gregory Fiorentino, PT, DPT",,(913) 588-3510,Physical Therapist,Shawnee,KS,Johnson County,7405 Renner Rd,66217,,1447099346
+"Gregory Fiorentino, PT, DPT",https://www.kansashealthsystem.com/locations/main-campus-main-hospital-kansas-city-ks?utm_source=gmb&utm_medium=web&utm_term=&utm_content=&utm_campaign=kyruus_brandify,(913) 588-3510,Physical Therapist,Shawnee,KS,Johnson County,7405 Renner Rd,66217,,1447099346
 Gwendolyn Sophia Kibbe,https://ptsolutions.com/find-a-clinic/ks/shawnee/shawnee/?utm_source=google&utm_medium=organic&utm_campaign=GMB-PT-Solutions-Shawnee&utm_content=listing,(913) 632-4785,Physical Therapist,Shawnee,KS,Johnson County,15315 W 67Th St,66217,,1467212845
 Hunter Roberts,,(913) 275-5751,Physical Therapist,Shawnee,KS,Johnson County,11207 Shawnee Mission Pkwy,66203,,1245058783
 "James B Kase, DPT",http://fitmjc.com/location/chiropractors-in-shawnee/,(913) 745-4064,Physical Therapist,Shawnee,KS,Johnson County,22120 Midland Dr Ste 1,66226,,1639825839
-"Jamie Alexander Torres, D.P.T",,(913) 588-3510,Physical Therapist,Shawnee,KS,Johnson County,7405 Renner Rd,66217,,1477803302
+"Jamie Alexander Torres, D.P.T",https://www.kansashealthsystem.com/locations/main-campus-main-hospital-kansas-city-ks?utm_source=gmb&utm_medium=web&utm_term=&utm_content=&utm_campaign=kyruus_brandify,(913) 588-3510,Physical Therapist,Shawnee,KS,Johnson County,7405 Renner Rd,66217,,1477803302
 "Jamie Kay Arbogast, PT",http://www.sharonlane.com/,(913) 631-8200,Physical Therapist,Shawnee,KS,Johnson County,10315 Johnson Dr,66203,,1538584156
 Jayhawk Primary Care Inc,https://www.kansashealthsystem.com/care/specialties/primary-care,(913) 588-8400,Physical Therapist,Shawnee,KS,Johnson County,7405 Renner Rd Ku Medwest,66217,,1528025053
-"Jennifer Jill Zentz, PT",,(913) 588-3510,Physical Therapist,Shawnee,KS,Johnson County,7405 Renner Rd Ku Medwest Therapy,66217,,1396877023
+"Jennifer Jill Zentz, PT",https://www.kansashealthsystem.com/locations/main-campus-main-hospital-kansas-city-ks?utm_source=gmb&utm_medium=web&utm_term=&utm_content=&utm_campaign=kyruus_brandify,(913) 588-3510,Physical Therapist,Shawnee,KS,Johnson County,7405 Renner Rd Ku Medwest Therapy,66217,,1396877023
 Joel Alan Broeckelman,,(913) 745-7537,Physical Therapist,Shawnee,KS,Johnson County,7740 Hedge Lane Ter,66227,,1427546159
 "John Thomas Smith, MSPT",,(913) 441-8225,Physical Therapist,Shawnee,KS,Johnson County,22208 W 51St St,66226,,1013073014
-Joseph Seyforth,,(815) 277-7069,Physical Therapist,Shawnee,KS,Johnson County,22120 Midland Dr # 1,66226,,1306290119
+Joseph Seyforth,http://fitmjc.com/location/chiropractors-in-shawnee/,(815) 277-7069,Physical Therapist,Shawnee,KS,Johnson County,22120 Midland Dr # 1,66226,,1306290119
 "Joseph Xavier Straws, DPT",http://fitmjc.com/location/chiropractors-in-shawnee/,(913) 745-4064,Physical Therapist,Shawnee,KS,Johnson County,22346 W 66Th St,66226,,1568192763
 Kaden Strickler,https://ptsolutions.com/find-a-clinic/ks/shawnee/shawnee/?utm_source=google&utm_medium=organic&utm_campaign=GMB-PT-Solutions-Shawnee&utm_content=listing,(913) 632-4785,Physical Therapist,Shawnee,KS,Johnson County,15315 W 67Th St,66217,,1558149013
 Kailey Spero,https://www.kansashealthsystem.com/locations/main-campus-main-hospital-kansas-city-ks?utm_source=gmb&utm_medium=web&utm_term=&utm_content=&utm_campaign=kyruus_brandify,(913) 588-1227,Physical Therapist,Shawnee,KS,Johnson County,7405 Renner Rd,66217,,1164037925
 Kaitlyn Anne Heffernon,,(913) 901-7658,Physical Therapist,Shawnee,KS,Johnson County,5114 Aminda St,66226,,1467804815
 "Kasey Nicole Hohlen, DPT",,(913) 728-6166,Physical Therapist,Shawnee,KS,Johnson County,22342 W 66Th St,66226,,1871218123
-"Kate L Daon, DPT",,(913) 588-3510,Physical Therapist,Shawnee,KS,Johnson County,7405 Renner Rd,66217,,1245212406
+"Kate L Daon, DPT",https://www.kansashealthsystem.com/locations/main-campus-main-hospital-kansas-city-ks?utm_source=gmb&utm_medium=web&utm_term=&utm_content=&utm_campaign=kyruus_brandify,(913) 588-3510,Physical Therapist,Shawnee,KS,Johnson County,7405 Renner Rd,66217,,1245212406
 "Katherine Grace Wedel, PT, DPT",https://serc.urpt.com/locations/shawnee/?utm_source=google&utm_medium=organic&utm_campaign=gmb,(913) 962-7774,Physical Therapist,Shawnee,KS,Johnson County,13847 W 63Rd St Ste 2,66216,,1457702722
 "Keely Nolte, DPT",http://fitmjc.com/location/chiropractors-in-shawnee/,(913) 745-4064,Physical Therapist,Shawnee,KS,Johnson County,22120 Midland Dr # 1,66226,,1285010694
 "Kimberly Michel Sumner, MSPT",https://arcpt.com/clinics/shawnee-ks/,(913) 815-6677,Physical Therapist,Shawnee,KS,Johnson County,16018 W. 65Th Street,66217,,1043257447
@@ -1920,9 +1920,9 @@ Olivia Terryberry,,(913) 213-7571,Physical Therapist,Shawnee,KS,Johnson County,1
 Pam Carney Pt Llc,https://www.pamcarney.com,(913) 631-5749,Physical Therapist,Shawnee,KS,Johnson County,18315 Midland Dr,66218,,1841452943
 "Pamela Anne Carney, PT",https://www.pamcarney.com,(913) 631-5749,Physical Therapist,Shawnee,KS,Johnson County,18315 Midland Dr,66218,,1437166287
 "Pamela B Stockman, PT",,(913) 268-0287,Physical Therapist,Shawnee,KS,Johnson County,14418 W 68Th St,66216,,1447545256
-"Rachel Marie Mcgraw, P.T.",,(913) 588-3506,Physical Therapist,Shawnee,KS,Johnson County,7405 Renner Rd,66217,,1023266855
+"Rachel Marie Mcgraw, P.T.",https://www.kansashealthsystem.com/locations/main-campus-main-hospital-kansas-city-ks?utm_source=gmb&utm_medium=web&utm_term=&utm_content=&utm_campaign=kyruus_brandify,(913) 588-3506,Physical Therapist,Shawnee,KS,Johnson County,7405 Renner Rd,66217,,1023266855
 "Rachel Pierson, DPT",,(913) 275-5751,Physical Therapist,Shawnee,KS,Johnson County,11207 Shawnee Mission Pkwy,66203,,1407559362
-Robert Raymer,,(913) 588-3510,Physical Therapist,Shawnee,KS,Johnson County,7405 Renner Rd,66217,,1689083487
+Robert Raymer,https://www.kansashealthsystem.com/locations/main-campus-main-hospital-kansas-city-ks?utm_source=gmb&utm_medium=web&utm_term=&utm_content=&utm_campaign=kyruus_brandify,(913) 588-3510,Physical Therapist,Shawnee,KS,Johnson County,7405 Renner Rd,66217,,1689083487
 "Robyn Diane Williams, DPT",https://serc.urpt.com/locations/shawnee/?utm_source=google&utm_medium=organic&utm_campaign=gmb,(913) 962-7770,Physical Therapist,Shawnee,KS,Johnson County,7162 Renner Rd,66217,,1245438464
 Scott Thomas Hoffman,http://mannwyatt.com/,(913) 669-0744,Physical Therapist,Shawnee,KS,Johnson County,13775 W 51St St,66216,,1992372148
 Serc Rehabilitation Partners Llc,https://serc.urpt.com/locations/shawnee/?utm_source=google&utm_medium=organic&utm_campaign=gmb,(913) 962-7770,Physical Therapist,Shawnee,KS,Johnson County,13847 W 63Rd St Ste 2,66216,,1447699244
@@ -1935,31 +1935,31 @@ Trina Stutz,http://dunningexpress.com/,(913) 441-3280,Physical Therapist,Shawnee
 U.S. Pt Therapy Services Inc.,,(913) 268-2969,Physical Therapist,Shawnee,KS,Johnson County,16018 W 65Th St,66217,,1669717518
 "Veronica Vabishchevich, PT, DPT",https://www.lifeworksweightloss.com/,(913) 270-0469,Physical Therapist,Shawnee,KS,Johnson County,19701 W 65Th Ter,66218,,1265255111
 "Willy Kimani, DPT",http://fitmjc.com/location/chiropractors-in-shawnee/,(913) 745-4064,Physical Therapist,Shawnee,KS,Johnson County,22120 Midland Dr Ste 1,66226,,1174380638
-"Andrea M Wattree, RPT",,(913) 362-7518,Physical Therapist,Shawnee Mission,KS,Johnson County,10000 W 75Th St Suite 121,66204,,1932228384
-Angela Davis,,(913) 362-7518,Physical Therapist,Shawnee Mission,KS,Johnson County,10000 W 75Th St Ste 121,66204,,1588688055
-Angustia Henry,,(913) 362-7518,Physical Therapist,Shawnee Mission,KS,Johnson County,10000 W 75Th St Suite 121,66204,,1346609294
-"Anita A. Ye, P.T.",,(913) 362-7518,Physical Therapist,Shawnee Mission,KS,Johnson County,10000 W 75Th St Ste 121,66204,,1063753929
+"Andrea M Wattree, RPT",https://deborahwellness.com,(913) 362-7518,Physical Therapist,Shawnee Mission,KS,Johnson County,10000 W 75Th St Suite 121,66204,,1932228384
+Angela Davis,https://deborahwellness.com,(913) 362-7518,Physical Therapist,Shawnee Mission,KS,Johnson County,10000 W 75Th St Ste 121,66204,,1588688055
+Angustia Henry,https://deborahwellness.com,(913) 362-7518,Physical Therapist,Shawnee Mission,KS,Johnson County,10000 W 75Th St Suite 121,66204,,1346609294
+"Anita A. Ye, P.T.",https://deborahwellness.com,(913) 362-7518,Physical Therapist,Shawnee Mission,KS,Johnson County,10000 W 75Th St Ste 121,66204,,1063753929
 "Danielle Renee Boxberger, DPT",http://www.performancerehabkc.com/,(913) 897-1100,Physical Therapist,Shawnee Mission,KS,Johnson County,15100 Metcalf Ave Suite 102,66223,,1952567562
-Deborah A King Ma & Associates Inc,,(913) 362-7518,Physical Therapist,Shawnee Mission,KS,Johnson County,10000 W 75Th St Ste 121,66204,,1942408950
-"Devin King Winter, PT",,(913) 362-7518,Physical Therapist,Shawnee Mission,KS,Johnson County,10000 W 75Th St Ste 121,66204,,1609189166
-"E Evonne Cooper, PT",,(913) 362-7518,Physical Therapist,Shawnee Mission,KS,Johnson County,10000 W 75Th St Ste 121,66204,,1336249507
+Deborah A King Ma & Associates Inc,https://deborahwellness.com,(913) 362-7518,Physical Therapist,Shawnee Mission,KS,Johnson County,10000 W 75Th St Ste 121,66204,,1942408950
+"Devin King Winter, PT",https://deborahwellness.com,(913) 362-7518,Physical Therapist,Shawnee Mission,KS,Johnson County,10000 W 75Th St Ste 121,66204,,1609189166
+"E Evonne Cooper, PT",https://deborahwellness.com,(913) 362-7518,Physical Therapist,Shawnee Mission,KS,Johnson County,10000 W 75Th St Ste 121,66204,,1336249507
 "Elizabeth Hesse Fetter, M.P.T",,(913) 676-7778,Physical Therapist,Shawnee Mission,KS,Johnson County,9120 W 75Th St,66204,,1063634368
 "Jennifer Michelle Powell, P.T., M.S.",https://www.adventhealth.com/hospital/adventhealth-shawnee-mission/be-smith-family-center,(913) 676-2253,Physical Therapist,Shawnee Mission,KS,Johnson County,9100 W 74Th St Lee Ann Britain Infant Development Center,66204,,1326257833
-Kae Emery,,(913) 362-7518,Physical Therapist,Shawnee Mission,KS,Johnson County,10000 W 75Th St Ste 121,66204,,1861416356
-Kay Bollinger,,(913) 362-7518,Physical Therapist,Shawnee Mission,KS,Johnson County,10000 W 75Th St Ste 121,66204,,1124048095
-"Leah Petersen, RPT",,(913) 362-7518,Physical Therapist,Shawnee Mission,KS,Johnson County,10000 W 75Th St Ste 121,66204,,1114205226
-Mary Ann Aggabao,,(913) 362-7518,Physical Therapist,Shawnee Mission,KS,Johnson County,10000 W 75Th St Ste 121,66204,,1295173607
+Kae Emery,https://deborahwellness.com,(913) 362-7518,Physical Therapist,Shawnee Mission,KS,Johnson County,10000 W 75Th St Ste 121,66204,,1861416356
+Kay Bollinger,https://deborahwellness.com,(913) 362-7518,Physical Therapist,Shawnee Mission,KS,Johnson County,10000 W 75Th St Ste 121,66204,,1124048095
+"Leah Petersen, RPT",https://deborahwellness.com,(913) 362-7518,Physical Therapist,Shawnee Mission,KS,Johnson County,10000 W 75Th St Ste 121,66204,,1114205226
+Mary Ann Aggabao,https://deborahwellness.com,(913) 362-7518,Physical Therapist,Shawnee Mission,KS,Johnson County,10000 W 75Th St Ste 121,66204,,1295173607
 "Miguel Angel Catano, DPT, MSPT",,(913) 676-6835,Physical Therapist,Shawnee Mission,KS,Johnson County,9120 W 75Th St Life Dynamics Building,66204,,1629190707
 "Stacia Troshynski Brown, P.T., D.P.T.",,(913) 676-6838,Physical Therapist,Shawnee Mission,KS,Johnson County,9120 W 75Th St,66204,,1124233093
 "Tom Riggs, MPT, CSCS",,(913) 676-7778,Physical Therapist,Shawnee Mission,KS,Johnson County,9120 W 75Th St,66204,,1053521534
 "Cullen Edwin Grabast, DPT",http://www.primept.org/,(913) 592-9101,Physical Therapist,Spring Hill,KS,Johnson County,22378 S Harrison St,66083,,1841020823
-"Maria Susan Wright, PT, DPT",,(913) 686-3333,Physical Therapist,Spring Hill,KS,Johnson County,21161 W 223Rd St,66083,,1659014058
-"Serc Rehabilitation Partners, Llc",,(913) 686-3333,Physical Therapist,Spring Hill,KS,Johnson County,21161 W 223Rd St,66083,,1386154953
+"Maria Susan Wright, PT, DPT",https://partnerspt.com,(913) 686-3333,Physical Therapist,Spring Hill,KS,Johnson County,21161 W 223Rd St,66083,,1659014058
+"Serc Rehabilitation Partners, Llc",https://partnerspt.com,(913) 686-3333,Physical Therapist,Spring Hill,KS,Johnson County,21161 W 223Rd St,66083,,1386154953
 "Andrew Daubman, DPT",,(402) 217-1207,Physical Therapist,Stilwell,KS,Johnson County,7362 W 162Nd Ter,66085,,1720649601
 "Caitlin Daubman, DPT",,(402) 217-1207,Physical Therapist,Stilwell,KS,Johnson County,7362 W 162Nd Ter,66085,,1134507668
 Institute Of Rehab Health And Fitne,https://lscm.org,(913) 681-0606,Physical Therapist,Stilwell,KS,Johnson County,7213 W 161St St,66085,,1598884322
 "Marsha B Lawrence, P.T., CHT",,(913) 209-9558,Physical Therapist,Stilwell,KS,Johnson County,18540 Metcalf Ave,66085,,1245276013
 "Shelley L Lewis, P.T.",,(913) 269-3232,Physical Therapist,Stilwell,KS,Johnson County,5800 W 180Th St,66085,,1265490353
-"Chandler Lauren Stephens, DPT",,(913) 237-2251,Physical Therapist,Westwood,KS,Johnson County,4713 Rainbow Blvd,66205,,1184390544
+"Chandler Lauren Stephens, DPT",http://www.performancerehabkc.com/,(913) 237-2251,Physical Therapist,Westwood,KS,Johnson County,4713 Rainbow Blvd,66205,,1184390544
 Kansas City Orthopaedic Institute Llc,http://www.performancerehabkc.com/,(913) 789-0888,Physical Therapist,Westwood,KS,Johnson County,4713 Rainbow Blvd,66205,,1104692268
 "Scott C Magner, PT",,(913) 638-2755,Physical Therapist,Westwood,KS,Johnson County,2801 W 50Th St,66205,,1144315474

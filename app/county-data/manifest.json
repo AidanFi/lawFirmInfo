@@ -967,6 +967,30 @@
       "firm_count": 1,
       "last_updated": "2026-07-22",
       "csv_file": "gove-county-ks.csv"
+    },
+    {
+      "slug": "marshall-county-ks",
+      "name": "Marshall County",
+      "state": "KS",
+      "csv_file": "marshall-county-ks.csv",
+      "firm_count": 2,
+      "last_updated": "2026-08-17"
+    },
+    {
+      "slug": "harper-county-ks",
+      "name": "Harper County",
+      "state": "KS",
+      "csv_file": "harper-county-ks.csv",
+      "firm_count": 3,
+      "last_updated": "2026-08-17"
+    },
+    {
+      "slug": "wichita-county-ks",
+      "name": "Wichita County",
+      "state": "KS",
+      "csv_file": "wichita-county-ks.csv",
+      "firm_count": 0,
+      "last_updated": "2026-08-17"
     }
   ]
 }

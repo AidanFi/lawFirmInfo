@@ -121,6 +121,20 @@ COUNTIES = {
         "county": "Woodson", "state": "KS", "msa": "",
         "cities": ["Yates Center", "Toronto", "Neosho Falls", "Piqua", "Kalida"],
     },
+    # ---- Previously-missed counties ----
+    "marshall-county-ks": {
+        "county": "Marshall", "state": "KS", "msa": "",
+        "cities": ["Marysville", "Frankfort", "Blue Rapids", "Waterville", "Beattie",
+                   "Axtell", "Summerfield", "Vermillion", "Bremen", "Home"],
+    },
+    "harper-county-ks": {
+        "county": "Harper", "state": "KS", "msa": "",
+        "cities": ["Anthony", "Attica", "Harper", "Danville"],
+    },
+    "wichita-county-ks": {
+        "county": "Wichita", "state": "KS", "msa": "",
+        "cities": ["Leoti", "Marienthal", "Selkirk"],
+    },
 }
 
 # Build city → county index (lowercase)

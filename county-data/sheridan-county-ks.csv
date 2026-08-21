@@ -1,2 +1,2 @@
-law_firm_name,website,google_business_profile,legal_directory_listing,city,state,county,phone_number,email,practice_area,street_address,zip_code,msa,priority,number_of_lawyers
-Eland Law Office LLC,,,https://directory-kard.kscourts.gov/Home/Details?regNum=12054,Hoxie,KS,Sheridan,(785) 675-3217,,General,736 Main St PO Box 565,67740,,2,
+law_firm_name,website,google_business_profile,legal_directory_listing,city,state,county,phone_number,email,practice_area,street_address,zip_code,msa,priority,number_of_lawyers,source,date_pulled
+Eland Law Office LLC,,,https://directory-kard.kscourts.gov/Home/Details?regNum=12054,Hoxie,KS,Sheridan,(785) 675-3217,,General,736 Main St PO Box 565,67740,,2,1,KS Courts Registry,2026-08-17

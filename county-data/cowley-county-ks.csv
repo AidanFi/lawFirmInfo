@@ -1,14 +1,14 @@
-law_firm_name,website,google_business_profile,legal_directory_listing,city,state,county,phone_number,email,practice_area,street_address,zip_code,msa,priority,number_of_lawyers
-"Law Office of Edward D. Heath, Jr",,,https://directory-kard.kscourts.gov/Home/Details?regNum=9806,Arkansas City,KS,Cowley,(316) 651-3943,,General,1 Parman Ln,67005,,2,
-Cowley County Courthouse,,,https://directory-kard.kscourts.gov/Home/Details?regNum=16011,Winfield,KS,Cowley,(620) 221-5481,,General,P.O. Box 472,67156,,2,
-Creekstone Farms Premium Beef LLC,,,https://directory-kard.kscourts.gov/Home/Details?regNum=16788,Arkansas City,KS,Cowley,(620) 741-3132,,General,604 Goff Industrial Pk Rd,67005,,2,
-Orvel Mason PA,,,https://directory-kard.kscourts.gov/Home/Details?regNum=11067,Arkansas City,KS,Cowley,(620) 442-8370,,General,PO Box 739 - 309 S 1st St,67005-0739,,2,
-Law Office of Jennifer Passiglia,,,https://directory-kard.kscourts.gov/Home/Details?regNum=18224,Winfield,KS,Cowley,(620) 221-2277,,General,"104 1/2 W. 9th Ave, Suite 528 P.O. Box 757",67156,,2,
-"Summit Law, PA",,,https://directory-kard.kscourts.gov/Home/Details?regNum=19834,Arkansas City,KS,Cowley,(620) 442-1950,,General,PO Box 896,67005,,2,
-Herlocker Roberts & Herlocker LLC,,,https://directory-kard.kscourts.gov/Home/Details?regNum=12959,Winfield,KS,Cowley,(620) 221-4600,,General,115 E 9th Ave PO Box 754,67156,,2,
-Soule & Giles LLC,,,https://directory-kard.kscourts.gov/Home/Details?regNum=23650,Arkansas City,KS,Cowley,(620) 741-0000,,General,209 S Summit St PO Box 1123,67005,,2,
-Dwight Dee Keen,,,https://directory-kard.kscourts.gov/Home/Details?regNum=8024,Winfield,KS,Cowley,(620) 221-6267,,General,#1 Tam-O-Shanter Ct,67156,,2,
-William E Muret LLC,,,https://directory-kard.kscourts.gov/Home/Details?regNum=12014,Winfield,KS,Cowley,(620) 221-7200,,General,103 E 9th Ste 208,67156,,2,
-Rogers Law Office,,,https://directory-kard.kscourts.gov/Home/Details?regNum=7624,Winfield,KS,Cowley,(620) 221-6330,,General,117 College,67156,,2,
-"Seitz Law Office, LLC",,,https://directory-kard.kscourts.gov/Home/Details?regNum=28128,Arkansas City,KS,Cowley,(620) 506-2232,,General,309 S 1st St,67005,,2,
-"Taylor & Krusor, LLC",,,https://directory-kard.kscourts.gov/Home/Details?regNum=9222,Winfield,KS,Cowley,(620) 221-1120,,General,P.O. Box 731,67156,,2,
+law_firm_name,website,google_business_profile,legal_directory_listing,city,state,county,phone_number,email,practice_area,street_address,zip_code,msa,priority,number_of_lawyers,source,date_pulled
+"Law Office of Edward D. Heath, Jr",,,https://directory-kard.kscourts.gov/Home/Details?regNum=9806,Arkansas City,KS,Cowley,(316) 651-3943,,General,1 Parman Ln,67005,,2,1,KS Courts Registry,2026-08-17
+Cowley County Courthouse,,,https://directory-kard.kscourts.gov/Home/Details?regNum=16011,Winfield,KS,Cowley,(620) 221-5481,,General,P.O. Box 472,67156,,2,2,KS Courts Registry,2026-08-17
+Creekstone Farms Premium Beef LLC,,,https://directory-kard.kscourts.gov/Home/Details?regNum=16788,Arkansas City,KS,Cowley,(620) 741-3132,,General,604 Goff Industrial Pk Rd,67005,,2,1,KS Courts Registry,2026-08-17
+Orvel Mason PA,,,https://directory-kard.kscourts.gov/Home/Details?regNum=11067,Arkansas City,KS,Cowley,(620) 442-8370,,General,PO Box 739 - 309 S 1st St,67005-0739,,2,,KS Courts Registry,2026-08-17
+Law Office of Jennifer Passiglia,,,https://directory-kard.kscourts.gov/Home/Details?regNum=18224,Winfield,KS,Cowley,(620) 221-2277,,General,"104 1/2 W. 9th Ave, Suite 528 P.O. Box 757",67156,,2,1,KS Courts Registry,2026-08-17
+"Summit Law, PA",,,https://directory-kard.kscourts.gov/Home/Details?regNum=19834,Arkansas City,KS,Cowley,(620) 442-1950,,General,PO Box 896,67005,,2,,KS Courts Registry,2026-08-17
+Herlocker Roberts & Herlocker LLC,,,https://directory-kard.kscourts.gov/Home/Details?regNum=12959,Winfield,KS,Cowley,(620) 221-4600,,General,115 E 9th Ave PO Box 754,67156,,2,2,KS Courts Registry,2026-08-17
+Soule & Giles LLC,,,https://directory-kard.kscourts.gov/Home/Details?regNum=23650,Arkansas City,KS,Cowley,(620) 741-0000,,General,209 S Summit St PO Box 1123,67005,,2,2,KS Courts Registry,2026-08-17
+Dwight Dee Keen,,,https://directory-kard.kscourts.gov/Home/Details?regNum=8024,Winfield,KS,Cowley,(620) 221-6267,,General,#1 Tam-O-Shanter Ct,67156,,2,1,KS Courts Registry,2026-08-17
+William E Muret LLC,,,https://directory-kard.kscourts.gov/Home/Details?regNum=12014,Winfield,KS,Cowley,(620) 221-7200,,General,103 E 9th Ste 208,67156,,2,1,KS Courts Registry,2026-08-17
+Rogers Law Office,,,https://directory-kard.kscourts.gov/Home/Details?regNum=7624,Winfield,KS,Cowley,(620) 221-6330,,General,117 College,67156,,2,1,KS Courts Registry,2026-08-17
+"Seitz Law Office, LLC",https://www.seitzlawoffice.com,,https://directory-kard.kscourts.gov/Home/Details?regNum=28128,Arkansas City,KS,Cowley,(620) 506-2232,,Criminal Defense,309 S 1st St,67005,,5,1,KS Courts Registry; website via DuckDuckGo/Google Business Profile search,2026-08-17
+"Taylor & Krusor, LLC",,,https://directory-kard.kscourts.gov/Home/Details?regNum=9222,Winfield,KS,Cowley,(620) 221-1120,,General,P.O. Box 731,67156,,2,1,KS Courts Registry,2026-08-17

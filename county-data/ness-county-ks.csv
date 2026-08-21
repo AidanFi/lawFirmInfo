@@ -1,2 +1,2 @@
-law_firm_name,website,google_business_profile,legal_directory_listing,city,state,county,phone_number,email,practice_area,street_address,zip_code,msa,priority,number_of_lawyers
-Tittel Law Office,,,https://directory-kard.kscourts.gov/Home/Details?regNum=9489,Ness City,KS,Ness,(785) 798-3376,,General,PO Box 130 112 S Pennsylvania,67560,,2,
+law_firm_name,website,google_business_profile,legal_directory_listing,city,state,county,phone_number,email,practice_area,street_address,zip_code,msa,priority,number_of_lawyers,source,date_pulled
+Tittel Law Office,,,https://directory-kard.kscourts.gov/Home/Details?regNum=9489,Ness City,KS,Ness,(785) 798-3376,,General,PO Box 130 112 S Pennsylvania,67560,,2,1,KS Courts Registry,2026-08-17

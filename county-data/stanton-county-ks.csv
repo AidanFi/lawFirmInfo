@@ -1,2 +1,2 @@
-law_firm_name,website,google_business_profile,legal_directory_listing,city,state,county,phone_number,email,practice_area,street_address,zip_code,msa,priority,number_of_lawyers
-Floyd Law Office LLC,,,https://directory-kard.kscourts.gov/Home/Details?regNum=21694,Johnson,KS,Stanton,(620) 492-6600,,General,PO Box 540 511 N Main St,67855,,2,
+law_firm_name,website,google_business_profile,legal_directory_listing,city,state,county,phone_number,email,practice_area,street_address,zip_code,msa,priority,number_of_lawyers,source,date_pulled
+Floyd Law Office LLC,,,https://directory-kard.kscourts.gov/Home/Details?regNum=21694,Johnson,KS,Stanton,(620) 492-6600,,General,PO Box 540 511 N Main St,67855,,2,1,KS Courts Registry,2026-08-17

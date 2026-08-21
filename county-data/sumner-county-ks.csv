@@ -1,11 +1,11 @@
-law_firm_name,website,google_business_profile,legal_directory_listing,city,state,county,phone_number,email,practice_area,street_address,zip_code,msa,priority,number_of_lawyers
-Pfalzgraf Law Offices,,,https://directory-kard.kscourts.gov/Home/Details?regNum=29443,Wellington,KS,Sumner,(620) 326-8962,,General,522 N Washington Ave,67152,Wichita,2,
-Martin J. Peck,,,https://directory-kard.kscourts.gov/Home/Details?regNum=16273,Wellington,KS,Sumner,(620) 326-5997,,General,107 E Harvey PO Box 236,67152,Wichita,2,
-Potucek Law Office,,,https://directory-kard.kscourts.gov/Home/Details?regNum=7286,Wellington,KS,Sumner,(620) 326-5969,,General,601 N Washington,67152,Wichita,2,
-Spencer Law Office,,,https://directory-kard.kscourts.gov/Home/Details?regNum=10785,Wellington,KS,Sumner,(620) 399-3340,,General,119 E 11th St,67152,Wichita,2,
-Dierking Law Offices,,,https://directory-kard.kscourts.gov/Home/Details?regNum=15796,Caldwell,KS,Sumner,(620) 845-2756,,General,6 S Main PO Box 46,67022,Wichita,2,
-"Matthew B. Metcalf, Attorney at Law",,,https://directory-kard.kscourts.gov/Home/Details?regNum=30833,Wellington,KS,Sumner,(620) 440-4258,,General,"107 E Harvey, 2nd Fl, P.O. Box 594",67152,Wichita,2,
-"Colin Wood, Attorney at Law",,,https://directory-kard.kscourts.gov/Home/Details?regNum=19800,Caldwell,KS,Sumner,(620) 845-4365,,General,702 S Osage,67022,Wichita,2,
-Kelly Law Offices,,,https://directory-kard.kscourts.gov/Home/Details?regNum=6638,Wellington,KS,Sumner,(620) 326-8200,,General,115 E 11th St,67152,Wichita,2,
-"Renn & Short, LLC",,,https://directory-kard.kscourts.gov/Home/Details?regNum=9833,Wellington,KS,Sumner,(620) 326-7422,,General,"122 E Harvey, P.O. Box 188",67152,Wichita,2,
-Sumner County Courthouse,,,https://directory-kard.kscourts.gov/Home/Details?regNum=17142,Wellington,KS,Sumner,(620) 326-5936,,General,P.O.  Box 399,67152,Wichita,2,
+law_firm_name,website,google_business_profile,legal_directory_listing,city,state,county,phone_number,email,practice_area,street_address,zip_code,msa,priority,number_of_lawyers,source,date_pulled
+Pfalzgraf Law Offices,,,https://directory-kard.kscourts.gov/Home/Details?regNum=29443,Wellington,KS,Sumner,(620) 326-8962,,General,522 N Washington Ave,67152,Wichita,2,2,KS Courts Registry,2026-08-17
+Martin J. Peck,,,https://directory-kard.kscourts.gov/Home/Details?regNum=16273,Wellington,KS,Sumner,(620) 326-5997,,General,107 E Harvey PO Box 236,67152,Wichita,2,1,KS Courts Registry,2026-08-17
+Potucek Law Office,,,https://directory-kard.kscourts.gov/Home/Details?regNum=7286,Wellington,KS,Sumner,(620) 326-5969,,General,601 N Washington,67152,Wichita,2,1,KS Courts Registry,2026-08-17
+Spencer Law Office,,,https://directory-kard.kscourts.gov/Home/Details?regNum=10785,Wellington,KS,Sumner,(620) 399-3340,,General,119 E 11th St,67152,Wichita,2,1,KS Courts Registry,2026-08-17
+Dierking Law Offices,,,https://directory-kard.kscourts.gov/Home/Details?regNum=15796,Caldwell,KS,Sumner,(620) 845-2756,,General,6 S Main PO Box 46,67022,Wichita,2,1,KS Courts Registry,2026-08-17
+"Matthew B. Metcalf, Attorney at Law",,,https://directory-kard.kscourts.gov/Home/Details?regNum=30833,Wellington,KS,Sumner,(620) 440-4258,,General,"107 E Harvey, 2nd Fl, P.O. Box 594",67152,Wichita,2,1,KS Courts Registry,2026-08-17
+"Colin Wood, Attorney at Law",,,https://directory-kard.kscourts.gov/Home/Details?regNum=19800,Caldwell,KS,Sumner,(620) 845-4365,,General,702 S Osage,67022,Wichita,2,1,KS Courts Registry,2026-08-17
+Kelly Law Offices,,,https://directory-kard.kscourts.gov/Home/Details?regNum=6638,Wellington,KS,Sumner,(620) 326-8200,,General,115 E 11th St,67152,Wichita,2,1,KS Courts Registry,2026-08-17
+"Renn & Short, LLC",https://www.rennshortlaw.com,,https://directory-kard.kscourts.gov/Home/Details?regNum=9833,Wellington,KS,Sumner,(620) 326-7422,,Family Law,"122 E Harvey, P.O. Box 188",67152,Wichita,4,2,KS Courts Registry; website via DuckDuckGo/Google Business Profile search,2026-08-17
+Sumner County Courthouse,,,https://directory-kard.kscourts.gov/Home/Details?regNum=17142,Wellington,KS,Sumner,(620) 326-5936,,General,P.O.  Box 399,67152,Wichita,2,1,KS Courts Registry,2026-08-17

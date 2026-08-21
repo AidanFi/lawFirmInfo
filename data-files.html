@@ -3,25 +3,34 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>County Data — Kansas Law Firm Directory</title>
+  <title>Data Files — Kansas Law Firm Directory</title>
   <link rel="stylesheet" href="styles.css">
   <style>
-    .county-page { max-width: 900px; margin: 0 auto; padding: 32px 20px; }
-    .county-page-header { display: flex; align-items: center; justify-content: space-between; margin-bottom: 28px; }
+    .county-page { max-width: 960px; margin: 0 auto; padding: 32px 20px; }
+    .county-page-header { display: flex; align-items: center; justify-content: space-between; margin-bottom: 20px; }
     .county-page-title { font-weight: 700; font-size: 22px; }
     .back-link { color: var(--accent); text-decoration: none; font-size: 13px; }
     .back-link:hover { text-decoration: underline; }
+    .state-tabs { display: flex; gap: 6px; margin-bottom: 20px; border-bottom: 1px solid var(--border); padding-bottom: 16px; flex-wrap: wrap; }
+    .category-tabs { display: flex; gap: 6px; margin: 4px 0 20px; }
+    .state-panel.hidden, .category-panel.hidden { display: none; }
     .county-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 14px; }
     .county-card { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 18px; transition: border-color .15s; }
     .county-card:hover { border-color: var(--accent); }
     .county-card-name { font-weight: 600; font-size: 16px; margin-bottom: 6px; }
+    .county-card-state { color: var(--muted); font-size: 11px; text-transform: uppercase; letter-spacing: .05em; margin-bottom: 10px; }
     .county-card-meta { color: var(--muted); font-size: 12px; margin-bottom: 14px; }
     .county-card-meta span { margin-right: 14px; }
+    .county-card-breakdown { display: flex; gap: 12px; margin-bottom: 14px; }
+    .breakdown-item { font-size: 12px; color: var(--subtle); }
+    .breakdown-item strong { color: var(--text); font-weight: 600; }
     .download-btn { display: inline-block; background: var(--accent); color: white; padding: 8px 18px; border-radius: var(--radius-sm); text-decoration: none; font-size: 13px; font-weight: 500; transition: opacity .15s; }
     .download-btn:hover { opacity: 0.85; }
     .empty-state { text-align: center; padding: 80px 20px; color: var(--muted); }
     .empty-state h2 { font-size: 18px; color: var(--subtle); margin-bottom: 8px; }
     .empty-state p { font-size: 13px; }
+    .summary-bar { display: flex; gap: 28px; margin-bottom: 20px; font-size: 13px; color: var(--subtle); }
+    .summary-bar strong { color: var(--text); font-size: 15px; display: block; }
   </style>
 </head>
 <body>
@@ -29,23 +38,25 @@
     <span class="app-title">Kansas Law Firm Directory</span>
     <nav class="tabs">
       <a href="index.html" class="tab">Directory</a>
-      <a href="county-data.html" class="tab active">County Data</a>
-      <a href="providers.html" class="tab">Providers</a>
+      <a href="data-files.html" class="tab active">Data Files</a>
     </nav>
   </header>
 
   <div class="county-page">
     <div class="county-page-header">
-      <div class="county-page-title">County Data</div>
+      <div class="county-page-title">Data Files</div>
       <a href="index.html" class="back-link">Back to Directory</a>
     </div>
-    <div id="county-grid" class="county-grid"></div>
-    <div id="empty-state" class="empty-state hidden">
-      <h2>No county data available yet</h2>
-      <p>Run the county pipeline to generate data files.</p>
+
+    <nav id="state-tabs" class="state-tabs"></nav>
+    <div id="state-panels"></div>
+
+    <div id="load-error" class="empty-state hidden">
+      <h2>Could not load data files</h2>
+      <p>Try refreshing the page.</p>
     </div>
   </div>
 
-  <script src="county-data.js"></script>
+  <script src="data-files.js"></script>
 </body>
 </html>

@@ -1,0 +1,780 @@
+{
+  "providers": [
+    {
+      "slug": "allen-county-ks",
+      "name": "Allen County",
+      "state": "KS",
+      "csv_file": "providers-allen-county-ks.csv",
+      "chiro": 13,
+      "pt": 9
+    },
+    {
+      "slug": "anderson-county-ks",
+      "name": "Anderson County",
+      "state": "KS",
+      "csv_file": "providers-anderson-county-ks.csv",
+      "chiro": 4,
+      "pt": 4
+    },
+    {
+      "slug": "atchison-county-ks",
+      "name": "Atchison County",
+      "state": "KS",
+      "csv_file": "providers-atchison-county-ks.csv",
+      "chiro": 11,
+      "pt": 19
+    },
+    {
+      "slug": "barber-county-ks",
+      "name": "Barber County",
+      "state": "KS",
+      "csv_file": "providers-barber-county-ks.csv",
+      "chiro": 1,
+      "pt": 2
+    },
+    {
+      "slug": "barton-county-ks",
+      "name": "Barton County",
+      "state": "KS",
+      "csv_file": "providers-barton-county-ks.csv",
+      "chiro": 27,
+      "pt": 30
+    },
+    {
+      "slug": "bourbon-county-ks",
+      "name": "Bourbon County",
+      "state": "KS",
+      "csv_file": "providers-bourbon-county-ks.csv",
+      "chiro": 11,
+      "pt": 12
+    },
+    {
+      "slug": "brown-county-ks",
+      "name": "Brown County",
+      "state": "KS",
+      "csv_file": "providers-brown-county-ks.csv",
+      "chiro": 17,
+      "pt": 37
+    },
+    {
+      "slug": "butler-county-ks",
+      "name": "Butler County",
+      "state": "KS",
+      "csv_file": "providers-butler-county-ks.csv",
+      "chiro": 54,
+      "pt": 75
+    },
+    {
+      "slug": "chase-county-ks",
+      "name": "Chase County",
+      "state": "KS",
+      "csv_file": "providers-chase-county-ks.csv",
+      "chiro": 0,
+      "pt": 1
+    },
+    {
+      "slug": "chautauqua-county-ks",
+      "name": "Chautauqua County",
+      "state": "KS",
+      "csv_file": "providers-chautauqua-county-ks.csv",
+      "chiro": 3,
+      "pt": 1
+    },
+    {
+      "slug": "cherokee-county-ks",
+      "name": "Cherokee County",
+      "state": "KS",
+      "csv_file": "providers-cherokee-county-ks.csv",
+      "chiro": 4,
+      "pt": 17
+    },
+    {
+      "slug": "cheyenne-county-ks",
+      "name": "Cheyenne County",
+      "state": "KS",
+      "csv_file": "providers-cheyenne-county-ks.csv",
+      "chiro": 4,
+      "pt": 4
+    },
+    {
+      "slug": "clark-county-ks",
+      "name": "Clark County",
+      "state": "KS",
+      "csv_file": "providers-clark-county-ks.csv",
+      "chiro": 2,
+      "pt": 2
+    },
+    {
+      "slug": "clay-county-ks",
+      "name": "Clay County",
+      "state": "KS",
+      "csv_file": "providers-clay-county-ks.csv",
+      "chiro": 13,
+      "pt": 6
+    },
+    {
+      "slug": "cloud-county-ks",
+      "name": "Cloud County",
+      "state": "KS",
+      "csv_file": "providers-cloud-county-ks.csv",
+      "chiro": 12,
+      "pt": 7
+    },
+    {
+      "slug": "coffey-county-ks",
+      "name": "Coffey County",
+      "state": "KS",
+      "csv_file": "providers-coffey-county-ks.csv",
+      "chiro": 3,
+      "pt": 6
+    },
+    {
+      "slug": "cowley-county-ks",
+      "name": "Cowley County",
+      "state": "KS",
+      "csv_file": "providers-cowley-county-ks.csv",
+      "chiro": 20,
+      "pt": 14
+    },
+    {
+      "slug": "crawford-county-ks",
+      "name": "Crawford County",
+      "state": "KS",
+      "csv_file": "providers-crawford-county-ks.csv",
+      "chiro": 27,
+      "pt": 45
+    },
+    {
+      "slug": "decatur-county-ks",
+      "name": "Decatur County",
+      "state": "KS",
+      "csv_file": "providers-decatur-county-ks.csv",
+      "chiro": 3,
+      "pt": 0
+    },
+    {
+      "slug": "dickinson-county-ks",
+      "name": "Dickinson County",
+      "state": "KS",
+      "csv_file": "providers-dickinson-county-ks.csv",
+      "chiro": 10,
+      "pt": 7
+    },
+    {
+      "slug": "doniphan-county-ks",
+      "name": "Doniphan County",
+      "state": "KS",
+      "csv_file": "providers-doniphan-county-ks.csv",
+      "chiro": 4,
+      "pt": 2
+    },
+    {
+      "slug": "douglas-county-ks",
+      "name": "Douglas County",
+      "state": "KS",
+      "csv_file": "providers-douglas-county-ks.csv",
+      "chiro": 111,
+      "pt": 158
+    },
+    {
+      "slug": "edwards-county-ks",
+      "name": "Edwards County",
+      "state": "KS",
+      "csv_file": "providers-edwards-county-ks.csv",
+      "chiro": 2,
+      "pt": 2
+    },
+    {
+      "slug": "elk-county-ks",
+      "name": "Elk County",
+      "state": "KS",
+      "csv_file": "providers-elk-county-ks.csv",
+      "chiro": 0,
+      "pt": 1
+    },
+    {
+      "slug": "ellis-county-ks",
+      "name": "Ellis County",
+      "state": "KS",
+      "csv_file": "providers-ellis-county-ks.csv",
+      "chiro": 28,
+      "pt": 29
+    },
+    {
+      "slug": "ellsworth-county-ks",
+      "name": "Ellsworth County",
+      "state": "KS",
+      "csv_file": "providers-ellsworth-county-ks.csv",
+      "chiro": 7,
+      "pt": 1
+    },
+    {
+      "slug": "finney-county-ks",
+      "name": "Finney County",
+      "state": "KS",
+      "csv_file": "providers-finney-county-ks.csv",
+      "chiro": 24,
+      "pt": 30
+    },
+    {
+      "slug": "ford-county-ks",
+      "name": "Ford County",
+      "state": "KS",
+      "csv_file": "providers-ford-county-ks.csv",
+      "chiro": 29,
+      "pt": 16
+    },
+    {
+      "slug": "franklin-county-ks",
+      "name": "Franklin County",
+      "state": "KS",
+      "csv_file": "providers-franklin-county-ks.csv",
+      "chiro": 27,
+      "pt": 15
+    },
+    {
+      "slug": "geary-county-ks",
+      "name": "Geary County",
+      "state": "KS",
+      "csv_file": "providers-geary-county-ks.csv",
+      "chiro": 15,
+      "pt": 49
+    },
+    {
+      "slug": "gove-county-ks",
+      "name": "Gove County",
+      "state": "KS",
+      "csv_file": "providers-gove-county-ks.csv",
+      "chiro": 1,
+      "pt": 0
+    },
+    {
+      "slug": "graham-county-ks",
+      "name": "Graham County",
+      "state": "KS",
+      "csv_file": "providers-graham-county-ks.csv",
+      "chiro": 3,
+      "pt": 0
+    },
+    {
+      "slug": "grant-county-ks",
+      "name": "Grant County",
+      "state": "KS",
+      "csv_file": "providers-grant-county-ks.csv",
+      "chiro": 5,
+      "pt": 5
+    },
+    {
+      "slug": "gray-county-ks",
+      "name": "Gray County",
+      "state": "KS",
+      "csv_file": "providers-gray-county-ks.csv",
+      "chiro": 3,
+      "pt": 1
+    },
+    {
+      "slug": "greeley-county-ks",
+      "name": "Greeley County",
+      "state": "KS",
+      "csv_file": "providers-greeley-county-ks.csv",
+      "chiro": 0,
+      "pt": 1
+    },
+    {
+      "slug": "greenwood-county-ks",
+      "name": "Greenwood County",
+      "state": "KS",
+      "csv_file": "providers-greenwood-county-ks.csv",
+      "chiro": 2,
+      "pt": 3
+    },
+    {
+      "slug": "hamilton-county-ks",
+      "name": "Hamilton County",
+      "state": "KS",
+      "csv_file": "providers-hamilton-county-ks.csv",
+      "chiro": 1,
+      "pt": 1
+    },
+    {
+      "slug": "harvey-county-ks",
+      "name": "Harvey County",
+      "state": "KS",
+      "csv_file": "providers-harvey-county-ks.csv",
+      "chiro": 29,
+      "pt": 77
+    },
+    {
+      "slug": "haskell-county-ks",
+      "name": "Haskell County",
+      "state": "KS",
+      "csv_file": "providers-haskell-county-ks.csv",
+      "chiro": 0,
+      "pt": 2
+    },
+    {
+      "slug": "hodgeman-county-ks",
+      "name": "Hodgeman County",
+      "state": "KS",
+      "csv_file": "providers-hodgeman-county-ks.csv",
+      "chiro": 1,
+      "pt": 0
+    },
+    {
+      "slug": "jackson-county-ks",
+      "name": "Jackson County",
+      "state": "KS",
+      "csv_file": "providers-jackson-county-ks.csv",
+      "chiro": 10,
+      "pt": 9
+    },
+    {
+      "slug": "jefferson-county-ks",
+      "name": "Jefferson County",
+      "state": "KS",
+      "csv_file": "providers-jefferson-county-ks.csv",
+      "chiro": 13,
+      "pt": 1
+    },
+    {
+      "slug": "jewell-county-ks",
+      "name": "Jewell County",
+      "state": "KS",
+      "csv_file": "providers-jewell-county-ks.csv",
+      "chiro": 0,
+      "pt": 1
+    },
+    {
+      "slug": "johnson-county-ks",
+      "name": "Johnson County",
+      "state": "KS",
+      "csv_file": "providers-johnson-county-ks.csv",
+      "chiro": 849,
+      "pt": 1111
+    },
+    {
+      "slug": "kearny-county-ks",
+      "name": "Kearny County",
+      "state": "KS",
+      "csv_file": "providers-kearny-county-ks.csv",
+      "chiro": 4,
+      "pt": 1
+    },
+    {
+      "slug": "kingman-county-ks",
+      "name": "Kingman County",
+      "state": "KS",
+      "csv_file": "providers-kingman-county-ks.csv",
+      "chiro": 6,
+      "pt": 5
+    },
+    {
+      "slug": "labette-county-ks",
+      "name": "Labette County",
+      "state": "KS",
+      "csv_file": "providers-labette-county-ks.csv",
+      "chiro": 11,
+      "pt": 9
+    },
+    {
+      "slug": "leavenworth-county-ks",
+      "name": "Leavenworth County",
+      "state": "KS",
+      "csv_file": "providers-leavenworth-county-ks.csv",
+      "chiro": 34,
+      "pt": 58
+    },
+    {
+      "slug": "lincoln-county-ks",
+      "name": "Lincoln County",
+      "state": "KS",
+      "csv_file": "providers-lincoln-county-ks.csv",
+      "chiro": 6,
+      "pt": 2
+    },
+    {
+      "slug": "linn-county-ks",
+      "name": "Linn County",
+      "state": "KS",
+      "csv_file": "providers-linn-county-ks.csv",
+      "chiro": 9,
+      "pt": 1
+    },
+    {
+      "slug": "logan-county-ks",
+      "name": "Logan County",
+      "state": "KS",
+      "csv_file": "providers-logan-county-ks.csv",
+      "chiro": 3,
+      "pt": 0
+    },
+    {
+      "slug": "lyon-county-ks",
+      "name": "Lyon County",
+      "state": "KS",
+      "csv_file": "providers-lyon-county-ks.csv",
+      "chiro": 23,
+      "pt": 41
+    },
+    {
+      "slug": "marion-county-ks",
+      "name": "Marion County",
+      "state": "KS",
+      "csv_file": "providers-marion-county-ks.csv",
+      "chiro": 11,
+      "pt": 8
+    },
+    {
+      "slug": "mcpherson-county-ks",
+      "name": "McPherson County",
+      "state": "KS",
+      "csv_file": "providers-mcpherson-county-ks.csv",
+      "chiro": 22,
+      "pt": 31
+    },
+    {
+      "slug": "meade-county-ks",
+      "name": "Meade County",
+      "state": "KS",
+      "csv_file": "providers-meade-county-ks.csv",
+      "chiro": 1,
+      "pt": 0
+    },
+    {
+      "slug": "miami-county-ks",
+      "name": "Miami County",
+      "state": "KS",
+      "csv_file": "providers-miami-county-ks.csv",
+      "chiro": 31,
+      "pt": 11
+    },
+    {
+      "slug": "mitchell-county-ks",
+      "name": "Mitchell County",
+      "state": "KS",
+      "csv_file": "providers-mitchell-county-ks.csv",
+      "chiro": 9,
+      "pt": 5
+    },
+    {
+      "slug": "montgomery-county-ks",
+      "name": "Montgomery County",
+      "state": "KS",
+      "csv_file": "providers-montgomery-county-ks.csv",
+      "chiro": 19,
+      "pt": 14
+    },
+    {
+      "slug": "morris-county-ks",
+      "name": "Morris County",
+      "state": "KS",
+      "csv_file": "providers-morris-county-ks.csv",
+      "chiro": 8,
+      "pt": 0
+    },
+    {
+      "slug": "morton-county-ks",
+      "name": "Morton County",
+      "state": "KS",
+      "csv_file": "providers-morton-county-ks.csv",
+      "chiro": 0,
+      "pt": 3
+    },
+    {
+      "slug": "nemaha-county-ks",
+      "name": "Nemaha County",
+      "state": "KS",
+      "csv_file": "providers-nemaha-county-ks.csv",
+      "chiro": 12,
+      "pt": 8
+    },
+    {
+      "slug": "neosho-county-ks",
+      "name": "Neosho County",
+      "state": "KS",
+      "csv_file": "providers-neosho-county-ks.csv",
+      "chiro": 22,
+      "pt": 24
+    },
+    {
+      "slug": "ness-county-ks",
+      "name": "Ness County",
+      "state": "KS",
+      "csv_file": "providers-ness-county-ks.csv",
+      "chiro": 4,
+      "pt": 0
+    },
+    {
+      "slug": "norton-county-ks",
+      "name": "Norton County",
+      "state": "KS",
+      "csv_file": "providers-norton-county-ks.csv",
+      "chiro": 4,
+      "pt": 3
+    },
+    {
+      "slug": "osage-county-ks",
+      "name": "Osage County",
+      "state": "KS",
+      "csv_file": "providers-osage-county-ks.csv",
+      "chiro": 5,
+      "pt": 5
+    },
+    {
+      "slug": "osborne-county-ks",
+      "name": "Osborne County",
+      "state": "KS",
+      "csv_file": "providers-osborne-county-ks.csv",
+      "chiro": 7,
+      "pt": 7
+    },
+    {
+      "slug": "ottawa-county-ks",
+      "name": "Ottawa County",
+      "state": "KS",
+      "csv_file": "providers-ottawa-county-ks.csv",
+      "chiro": 2,
+      "pt": 2
+    },
+    {
+      "slug": "pawnee-county-ks",
+      "name": "Pawnee County",
+      "state": "KS",
+      "csv_file": "providers-pawnee-county-ks.csv",
+      "chiro": 5,
+      "pt": 3
+    },
+    {
+      "slug": "phillips-county-ks",
+      "name": "Phillips County",
+      "state": "KS",
+      "csv_file": "providers-phillips-county-ks.csv",
+      "chiro": 8,
+      "pt": 4
+    },
+    {
+      "slug": "pottawatomie-county-ks",
+      "name": "Pottawatomie County",
+      "state": "KS",
+      "csv_file": "providers-pottawatomie-county-ks.csv",
+      "chiro": 12,
+      "pt": 13
+    },
+    {
+      "slug": "pratt-county-ks",
+      "name": "Pratt County",
+      "state": "KS",
+      "csv_file": "providers-pratt-county-ks.csv",
+      "chiro": 8,
+      "pt": 6
+    },
+    {
+      "slug": "rawlins-county-ks",
+      "name": "Rawlins County",
+      "state": "KS",
+      "csv_file": "providers-rawlins-county-ks.csv",
+      "chiro": 4,
+      "pt": 0
+    },
+    {
+      "slug": "reno-county-ks",
+      "name": "Reno County",
+      "state": "KS",
+      "csv_file": "providers-reno-county-ks.csv",
+      "chiro": 52,
+      "pt": 44
+    },
+    {
+      "slug": "republic-county-ks",
+      "name": "Republic County",
+      "state": "KS",
+      "csv_file": "providers-republic-county-ks.csv",
+      "chiro": 6,
+      "pt": 2
+    },
+    {
+      "slug": "rice-county-ks",
+      "name": "Rice County",
+      "state": "KS",
+      "csv_file": "providers-rice-county-ks.csv",
+      "chiro": 12,
+      "pt": 8
+    },
+    {
+      "slug": "riley-county-ks",
+      "name": "Riley County",
+      "state": "KS",
+      "csv_file": "providers-riley-county-ks.csv",
+      "chiro": 81,
+      "pt": 89
+    },
+    {
+      "slug": "rooks-county-ks",
+      "name": "Rooks County",
+      "state": "KS",
+      "csv_file": "providers-rooks-county-ks.csv",
+      "chiro": 8,
+      "pt": 6
+    },
+    {
+      "slug": "rush-county-ks",
+      "name": "Rush County",
+      "state": "KS",
+      "csv_file": "providers-rush-county-ks.csv",
+      "chiro": 2,
+      "pt": 2
+    },
+    {
+      "slug": "russell-county-ks",
+      "name": "Russell County",
+      "state": "KS",
+      "csv_file": "providers-russell-county-ks.csv",
+      "chiro": 8,
+      "pt": 2
+    },
+    {
+      "slug": "saline-county-ks",
+      "name": "Saline County",
+      "state": "KS",
+      "csv_file": "providers-saline-county-ks.csv",
+      "chiro": 49,
+      "pt": 64
+    },
+    {
+      "slug": "scott-county-ks",
+      "name": "Scott County",
+      "state": "KS",
+      "csv_file": "providers-scott-county-ks.csv",
+      "chiro": 8,
+      "pt": 5
+    },
+    {
+      "slug": "sedgwick-county-ks",
+      "name": "Sedgwick County",
+      "state": "KS",
+      "csv_file": "providers-sedgwick-county-ks.csv",
+      "chiro": 430,
+      "pt": 779
+    },
+    {
+      "slug": "seward-county-ks",
+      "name": "Seward County",
+      "state": "KS",
+      "csv_file": "providers-seward-county-ks.csv",
+      "chiro": 10,
+      "pt": 8
+    },
+    {
+      "slug": "shawnee-county-ks",
+      "name": "Shawnee County",
+      "state": "KS",
+      "csv_file": "providers-shawnee-county-ks.csv",
+      "chiro": 82,
+      "pt": 214
+    },
+    {
+      "slug": "sheridan-county-ks",
+      "name": "Sheridan County",
+      "state": "KS",
+      "csv_file": "providers-sheridan-county-ks.csv",
+      "chiro": 5,
+      "pt": 3
+    },
+    {
+      "slug": "sherman-county-ks",
+      "name": "Sherman County",
+      "state": "KS",
+      "csv_file": "providers-sherman-county-ks.csv",
+      "chiro": 6,
+      "pt": 1
+    },
+    {
+      "slug": "smith-county-ks",
+      "name": "Smith County",
+      "state": "KS",
+      "csv_file": "providers-smith-county-ks.csv",
+      "chiro": 5,
+      "pt": 2
+    },
+    {
+      "slug": "stafford-county-ks",
+      "name": "Stafford County",
+      "state": "KS",
+      "csv_file": "providers-stafford-county-ks.csv",
+      "chiro": 0,
+      "pt": 2
+    },
+    {
+      "slug": "stevens-county-ks",
+      "name": "Stevens County",
+      "state": "KS",
+      "csv_file": "providers-stevens-county-ks.csv",
+      "chiro": 1,
+      "pt": 4
+    },
+    {
+      "slug": "sumner-county-ks",
+      "name": "Sumner County",
+      "state": "KS",
+      "csv_file": "providers-sumner-county-ks.csv",
+      "chiro": 13,
+      "pt": 15
+    },
+    {
+      "slug": "thomas-county-ks",
+      "name": "Thomas County",
+      "state": "KS",
+      "csv_file": "providers-thomas-county-ks.csv",
+      "chiro": 13,
+      "pt": 8
+    },
+    {
+      "slug": "trego-county-ks",
+      "name": "Trego County",
+      "state": "KS",
+      "csv_file": "providers-trego-county-ks.csv",
+      "chiro": 3,
+      "pt": 1
+    },
+    {
+      "slug": "wallace-county-ks",
+      "name": "Wallace County",
+      "state": "KS",
+      "csv_file": "providers-wallace-county-ks.csv",
+      "chiro": 2,
+      "pt": 0
+    },
+    {
+      "slug": "washington-county-ks",
+      "name": "Washington County",
+      "state": "KS",
+      "csv_file": "providers-washington-county-ks.csv",
+      "chiro": 5,
+      "pt": 4
+    },
+    {
+      "slug": "wilson-county-ks",
+      "name": "Wilson County",
+      "state": "KS",
+      "csv_file": "providers-wilson-county-ks.csv",
+      "chiro": 2,
+      "pt": 1
+    },
+    {
+      "slug": "woodson-county-ks",
+      "name": "Woodson County",
+      "state": "KS",
+      "csv_file": "providers-woodson-county-ks.csv",
+      "chiro": 2,
+      "pt": 6
+    },
+    {
+      "slug": "wyandotte-county-ks",
+      "name": "Wyandotte County",
+      "state": "KS",
+      "csv_file": "providers-wyandotte-county-ks.csv",
+      "chiro": 59,
+      "pt": 132
+    }
+  ]
+}

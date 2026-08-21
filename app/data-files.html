@@ -29,8 +29,14 @@
     .empty-state { text-align: center; padding: 80px 20px; color: var(--muted); }
     .empty-state h2 { font-size: 18px; color: var(--subtle); margin-bottom: 8px; }
     .empty-state p { font-size: 13px; }
-    .summary-bar { display: flex; gap: 28px; margin-bottom: 20px; font-size: 13px; color: var(--subtle); }
-    .summary-bar strong { color: var(--text); font-size: 15px; display: block; }
+    .panel-toolbar { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 10px 16px; margin-bottom: 16px; }
+    .panel-count { font-size: 13px; color: var(--subtle); }
+    .panel-sort { display: flex; align-items: center; gap: 6px; font-size: 12px; color: var(--muted); }
+    .panel-sort-label { margin-right: 2px; }
+    .sort-btn { background: transparent; border: 1px solid var(--border); color: var(--muted); padding: 5px 12px; border-radius: var(--radius-sm); cursor: pointer; font-size: 12px; transition: all .15s; }
+    .sort-btn:hover { color: var(--text); border-color: var(--accent); }
+    .sort-btn.active { background: var(--accent); color: white; border-color: var(--accent); }
+    .panel-search { margin-bottom: 0; min-width: 220px; width: auto; }
   </style>
 </head>
 <body>

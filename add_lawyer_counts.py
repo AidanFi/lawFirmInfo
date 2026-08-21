@@ -72,6 +72,27 @@ def _load_ks_cache(slug: str) -> dict[str, int]:
     return result
 
 
+STATEWIDE_CACHE_PATH = CACHE_DIR / "_statewide_lawyer_counts.json"
+
+
+def _load_statewide_cache() -> dict[str, int]:
+    if not STATEWIDE_CACHE_PATH.exists():
+        return {}
+    return json.loads(STATEWIDE_CACHE_PATH.read_text())
+
+
+def _normalize_name(name: str) -> str:
+    name = name.lower().strip()
+    name = re.sub(r"\b(law|firm|office|offices|group|llc|llp|pc|pa|pllc|plc|&|and|the|attorney|attorneys|at|of|lawyer|lawyers|chartered|chtd)\b", "", name)
+    name = re.sub(r"[^a-z0-9]", "", name)
+    return name
+
+
+def _lookup_statewide_count(firm_name: str, city: str, statewide: dict[str, int]) -> int | None:
+    key = _normalize_name(firm_name) + "|" + city.lower().strip()
+    return statewide.get(key)
+
+
 def _lookup_ks_count(firm_name: str, cache: dict[str, int]) -> int | None:
     key = firm_name.strip().lower()
     if key in cache:
@@ -176,7 +197,7 @@ def _scrape_lawyer_count(website: str) -> int | None:
 
 # ── Main ─────────────────────────────────────────────────────────────────────
 
-def process_county(slug: str, ks_cache: dict[str, int]) -> None:
+def process_county(slug: str, ks_cache: dict[str, int], statewide_cache: dict[str, int] | None = None) -> None:
     csv_path = DATA_DIR / f"{slug}.csv"
     if not csv_path.exists():
         print(f"  [skip] {slug}: CSV not found")
@@ -205,9 +226,15 @@ def process_county(slug: str, ks_cache: dict[str, int]) -> None:
 
         count = None
 
-        # 1. KS courts cache
+        # 1. KS courts cache (per-county)
         if ks_cache:
             count = _lookup_ks_count(row.get("law_firm_name", ""), ks_cache)
+            if count is not None:
+                cache_hits += 1
+
+        # 1b. KS courts cache (statewide, name+city keyed) fallback
+        if count is None and statewide_cache:
+            count = _lookup_statewide_count(row.get("law_firm_name", ""), row.get("city", ""), statewide_cache)
             if count is not None:
                 cache_hits += 1
 
@@ -247,12 +274,13 @@ def main() -> None:
     else:
         parser.error("Provide --county <slug> or --all")
 
+    statewide_cache = _load_statewide_cache()
     for slug in slugs:
         print(f"\n[{slug}]")
         ks_cache = _load_ks_cache(slug)
         if ks_cache:
             print(f"  KS courts cache: {len(ks_cache)} firms")
-        process_county(slug, ks_cache)
+        process_county(slug, ks_cache, statewide_cache)
 
 
 if __name__ == "__main__":

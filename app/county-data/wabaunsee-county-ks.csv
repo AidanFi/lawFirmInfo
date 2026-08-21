@@ -1,5 +1,5 @@
-law_firm_name,website,google_business_profile,legal_directory_listing,city,state,county,phone_number,email,practice_area,street_address,zip_code,msa,priority,number_of_lawyers
-John S. Waugh,,,https://directory-kard.kscourts.gov/Home/Details?regNum=18465,Eskridge,KS,Wabaunsee,(785) 449-2452,,General,123 Main St PO Box 278,66423,,2,
-Keen A. Umbehr,,,https://directory-kard.kscourts.gov/Home/Details?regNum=22047,Alma,KS,Wabaunsee,(785) 230-8093,,General,29268 Old K18 Rd,66401,,2,
-Dan Riley Law,,,https://directory-kard.kscourts.gov/Home/Details?regNum=15658,Maple Hill,KS,Wabaunsee,(785) 969-1498,,General,22122 Bradford Rd,66507,,2,
-Jack Turner,,,https://directory-kard.kscourts.gov/Home/Details?regNum=16595,Alma,KS,Wabaunsee,(785) 317-4004,,General,PO Box 537,66401,,2,
+law_firm_name,website,google_business_profile,legal_directory_listing,city,state,county,phone_number,email,practice_area,street_address,zip_code,msa,priority,number_of_lawyers,source,date_pulled
+John S. Waugh,,,https://directory-kard.kscourts.gov/Home/Details?regNum=18465,Eskridge,KS,Wabaunsee,(785) 449-2452,,General,123 Main St PO Box 278,66423,,2,1,KS Courts Registry,2026-08-17
+Keen A. Umbehr,,,https://directory-kard.kscourts.gov/Home/Details?regNum=22047,Alma,KS,Wabaunsee,(785) 230-8093,,General,29268 Old K18 Rd,66401,,2,1,KS Courts Registry,2026-08-17
+Dan Riley Law,,,https://directory-kard.kscourts.gov/Home/Details?regNum=15658,Maple Hill,KS,Wabaunsee,(785) 969-1498,,General,22122 Bradford Rd,66507,,2,1,KS Courts Registry,2026-08-17
+Jack Turner,,,https://directory-kard.kscourts.gov/Home/Details?regNum=16595,Alma,KS,Wabaunsee,(785) 317-4004,,General,PO Box 537,66401,,2,1,KS Courts Registry,2026-08-17

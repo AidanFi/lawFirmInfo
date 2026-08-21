@@ -1,2 +1,2 @@
-law_firm_name,website,google_business_profile,legal_directory_listing,city,state,county,phone_number,email,practice_area,street_address,zip_code,msa,priority,number_of_lawyers
-Law Office of Darrell E. Miller,,,https://directory-kard.kscourts.gov/Home/Details?regNum=7613,Mankato,KS,Jewell,(785) 378-3128,,General,Box 344 208 N Commercial,66956,,2,
+law_firm_name,website,google_business_profile,legal_directory_listing,city,state,county,phone_number,email,practice_area,street_address,zip_code,msa,priority,number_of_lawyers,source,date_pulled
+Law Office of Darrell E. Miller,,,https://directory-kard.kscourts.gov/Home/Details?regNum=7613,Mankato,KS,Jewell,(785) 378-3128,,General,Box 344 208 N Commercial,66956,,2,1,KS Courts Registry,2026-08-17

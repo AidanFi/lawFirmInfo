@@ -1,10 +1,10 @@
-law_firm_name,website,google_business_profile,legal_directory_listing,city,state,county,phone_number,email,practice_area,street_address,zip_code,msa,priority,number_of_lawyers
-Barker Law LLP,,,https://directory-kard.kscourts.gov/Home/Details?regNum=21652,Pratt,KS,Pratt,(620) 388-0051,,General,307 S Main St,67124,,2,
-"Black's Law Office, PA",,,https://directory-kard.kscourts.gov/Home/Details?regNum=14084,Pratt,KS,Pratt,(620) 672-5671,,General,306 S Oak St,67124,,2,
-"Johnson, Eisenhauer, Eisenhauer & Lynch, LLC",,,https://directory-kard.kscourts.gov/Home/Details?regNum=10835,Pratt,KS,Pratt,(620) 672-5533,,General,P.O. Box 825 - 113 E. Third,67124,,2,
-Johnston Eisenhauer Eisenhauer & Lynch LLC,,,https://directory-kard.kscourts.gov/Home/Details?regNum=25424,Pratt,KS,Pratt,(620) 450-8132,,General,"113 E 3rd St, PO Box 825",67124,,2,
-"Stull Beverlin Nicolay & Haas, LLC",,,https://directory-kard.kscourts.gov/Home/Details?regNum=19808,Pratt,KS,Pratt,(620) 672-9446,,General,"420 S Jackson, Ste 100",67124,,2,
-"Hanson Beverlin & Moore, LLC",,,https://directory-kard.kscourts.gov/Home/Details?regNum=6499,Pratt,KS,Pratt,(620) 672-9471,,General,321 S Ninnescah PO Box 824,67124,,2,
-"Krueger & Richard, Attorneys At Law",,,https://directory-kard.kscourts.gov/Home/Details?regNum=30957,Pratt,KS,Pratt,(620) 979-9077,,General,209 S Main St,67124,,2,
-Schmisseur Law,,,https://directory-kard.kscourts.gov/Home/Details?regNum=9224,Pratt,KS,Pratt,(620) 770-6420,,General,PO Box 313,67124,,2,
-Daniel W Krueger PLLC,,,https://directory-kard.kscourts.gov/Home/Details?regNum=29786,Pratt,KS,Pratt,(972) 688-6760,,General,209 S Main St,67124,,2,
+law_firm_name,website,google_business_profile,legal_directory_listing,city,state,county,phone_number,email,practice_area,street_address,zip_code,msa,priority,number_of_lawyers,source,date_pulled
+Barker Law LLP,,,https://directory-kard.kscourts.gov/Home/Details?regNum=21652,Pratt,KS,Pratt,(620) 388-0051,,General,307 S Main St,67124,,2,1,KS Courts Registry,2026-08-17
+"Black's Law Office, PA",,,https://directory-kard.kscourts.gov/Home/Details?regNum=14084,Pratt,KS,Pratt,(620) 672-5671,,General,306 S Oak St,67124,,2,,KS Courts Registry,2026-08-17
+"Johnson, Eisenhauer, Eisenhauer & Lynch, LLC",,,https://directory-kard.kscourts.gov/Home/Details?regNum=10835,Pratt,KS,Pratt,(620) 672-5533,,General,P.O. Box 825 - 113 E. Third,67124,,2,1,KS Courts Registry,2026-08-17
+Johnston Eisenhauer Eisenhauer & Lynch LLC,,,https://directory-kard.kscourts.gov/Home/Details?regNum=25424,Pratt,KS,Pratt,(620) 450-8132,,General,"113 E 3rd St, PO Box 825",67124,,2,3,KS Courts Registry,2026-08-17
+"Stull Beverlin Nicolay & Haas, LLC",,,https://directory-kard.kscourts.gov/Home/Details?regNum=19808,Pratt,KS,Pratt,(620) 672-9446,,General,"420 S Jackson, Ste 100",67124,,2,3,KS Courts Registry,2026-08-17
+"Hanson Beverlin & Moore, LLC",,,https://directory-kard.kscourts.gov/Home/Details?regNum=6499,Pratt,KS,Pratt,(620) 672-9471,,General,321 S Ninnescah PO Box 824,67124,,2,2,KS Courts Registry,2026-08-17
+"Krueger & Richard, Attorneys At Law",https://www.kruegerrichard.com,,https://directory-kard.kscourts.gov/Home/Details?regNum=30957,Pratt,KS,Pratt,(620) 979-9077,danielkrueger@krueger-richard.com,Estate Planning,209 S Main St,67124,,2,1,KS Courts Registry; website via DuckDuckGo/Google Business Profile search; email via firm website scrape,2026-08-17
+Schmisseur Law,,,https://directory-kard.kscourts.gov/Home/Details?regNum=9224,Pratt,KS,Pratt,(620) 770-6420,,General,PO Box 313,67124,,2,1,KS Courts Registry,2026-08-17
+Daniel W Krueger PLLC,,,https://directory-kard.kscourts.gov/Home/Details?regNum=29786,Pratt,KS,Pratt,(972) 688-6760,,General,209 S Main St,67124,,2,1,KS Courts Registry,2026-08-17

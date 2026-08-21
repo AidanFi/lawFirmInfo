@@ -1,4 +1,4 @@
-law_firm_name,website,google_business_profile,legal_directory_listing,city,state,county,phone_number,email,practice_area,street_address,zip_code,msa,priority,number_of_lawyers
-Berkley Law,,,https://directory-kard.kscourts.gov/Home/Details?regNum=14583,Downs,KS,Osborne,(785) 454-1172,,General,PO Box 253 507 Morgan Ave,67437,,2,
-Dietz Law Office,,,https://directory-kard.kscourts.gov/Home/Details?regNum=8330,Osborne,KS,Osborne,(785) 346-2157,,General,"115 S First St, PO Box 326",67473,,2,
-Gregory & Gregory,,,https://directory-kard.kscourts.gov/Home/Details?regNum=12408,Osborne,KS,Osborne,(785) 346-5445,,General,P.O. Box 345,67473,,2,
+law_firm_name,website,google_business_profile,legal_directory_listing,city,state,county,phone_number,email,practice_area,street_address,zip_code,msa,priority,number_of_lawyers,source,date_pulled
+Berkley Law,,,https://directory-kard.kscourts.gov/Home/Details?regNum=14583,Downs,KS,Osborne,(785) 454-1172,,General,PO Box 253 507 Morgan Ave,67437,,2,1,KS Courts Registry,2026-08-17
+Dietz Law Office,,,https://directory-kard.kscourts.gov/Home/Details?regNum=8330,Osborne,KS,Osborne,(785) 346-2157,,General,"115 S First St, PO Box 326",67473,,2,1,KS Courts Registry,2026-08-17
+Gregory & Gregory,,,https://directory-kard.kscourts.gov/Home/Details?regNum=12408,Osborne,KS,Osborne,(785) 346-5445,,General,P.O. Box 345,67473,,2,1,KS Courts Registry,2026-08-17

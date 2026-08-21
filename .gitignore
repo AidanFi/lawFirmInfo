@@ -1,5 +1,7 @@
 scraper/.env
+.env
 data/
+.kscourts_cache/
 __pycache__/
 *.pyc
 .pytest_cache/

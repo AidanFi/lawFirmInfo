@@ -84,24 +84,24 @@
       "slug": "douglas-county-ks",
       "name": "Douglas County",
       "state": "KS",
-      "firm_count": 971,
-      "last_updated": "2026-07-22",
+      "firm_count": 981,
+      "last_updated": "2026-08-17",
       "csv_file": "douglas-county-ks.csv"
     },
     {
       "slug": "franklin-county-ks",
       "name": "Franklin County",
       "state": "KS",
-      "firm_count": 66,
-      "last_updated": "2026-07-22",
+      "firm_count": 67,
+      "last_updated": "2026-08-18",
       "csv_file": "franklin-county-ks.csv"
     },
     {
       "slug": "jefferson-county-ks",
       "name": "Jefferson County",
       "state": "KS",
-      "firm_count": 40,
-      "last_updated": "2026-07-22",
+      "firm_count": 41,
+      "last_updated": "2026-08-18",
       "csv_file": "jefferson-county-ks.csv"
     },
     {
@@ -109,15 +109,15 @@
       "name": "Osage County",
       "state": "KS",
       "firm_count": 37,
-      "last_updated": "2026-07-22",
+      "last_updated": "2026-08-18",
       "csv_file": "osage-county-ks.csv"
     },
     {
       "slug": "shawnee-county-ks",
       "name": "Shawnee County",
       "state": "KS",
-      "firm_count": 1526,
-      "last_updated": "2026-07-22",
+      "firm_count": 1331,
+      "last_updated": "2026-08-17",
       "csv_file": "shawnee-county-ks.csv"
     },
     {
@@ -476,16 +476,16 @@
       "slug": "sedgwick-county-ks",
       "name": "Sedgwick County",
       "state": "KS",
-      "firm_count": 383,
-      "last_updated": "2026-07-22",
+      "firm_count": 382,
+      "last_updated": "2026-08-18",
       "csv_file": "sedgwick-county-ks.csv"
     },
     {
       "slug": "riley-county-ks",
       "name": "Riley County",
       "state": "KS",
-      "firm_count": 49,
-      "last_updated": "2026-07-22",
+      "firm_count": 48,
+      "last_updated": "2026-08-18",
       "csv_file": "riley-county-ks.csv"
     },
     {
@@ -493,7 +493,7 @@
       "name": "Ellis County",
       "state": "KS",
       "firm_count": 22,
-      "last_updated": "2026-07-22",
+      "last_updated": "2026-08-18",
       "csv_file": "ellis-county-ks.csv"
     },
     {
@@ -501,7 +501,7 @@
       "name": "Finney County",
       "state": "KS",
       "firm_count": 17,
-      "last_updated": "2026-07-22",
+      "last_updated": "2026-08-18",
       "csv_file": "finney-county-ks.csv"
     },
     {
@@ -509,7 +509,7 @@
       "name": "Geary County",
       "state": "KS",
       "firm_count": 12,
-      "last_updated": "2026-07-22",
+      "last_updated": "2026-08-18",
       "csv_file": "geary-county-ks.csv"
     },
     {
@@ -517,7 +517,7 @@
       "name": "Ford County",
       "state": "KS",
       "firm_count": 21,
-      "last_updated": "2026-07-22",
+      "last_updated": "2026-08-18",
       "csv_file": "ford-county-ks.csv"
     },
     {
@@ -525,7 +525,7 @@
       "name": "Seward County",
       "state": "KS",
       "firm_count": 8,
-      "last_updated": "2026-07-22",
+      "last_updated": "2026-08-18",
       "csv_file": "seward-county-ks.csv"
     },
     {
@@ -533,7 +533,7 @@
       "name": "Sumner County",
       "state": "KS",
       "firm_count": 10,
-      "last_updated": "2026-07-22",
+      "last_updated": "2026-08-18",
       "csv_file": "sumner-county-ks.csv"
     },
     {
@@ -541,7 +541,7 @@
       "name": "Atchison County",
       "state": "KS",
       "firm_count": 10,
-      "last_updated": "2026-07-22",
+      "last_updated": "2026-08-18",
       "csv_file": "atchison-county-ks.csv"
     },
     {
@@ -549,7 +549,7 @@
       "name": "Pottawatomie County",
       "state": "KS",
       "firm_count": 7,
-      "last_updated": "2026-07-22",
+      "last_updated": "2026-08-18",
       "csv_file": "pottawatomie-county-ks.csv"
     },
     {
@@ -557,7 +557,7 @@
       "name": "Butler County",
       "state": "KS",
       "firm_count": 29,
-      "last_updated": "2026-07-22",
+      "last_updated": "2026-08-18",
       "csv_file": "butler-county-ks.csv"
     },
     {
@@ -565,7 +565,7 @@
       "name": "Lyon County",
       "state": "KS",
       "firm_count": 18,
-      "last_updated": "2026-07-22",
+      "last_updated": "2026-08-18",
       "csv_file": "lyon-county-ks.csv"
     },
     {
@@ -573,7 +573,7 @@
       "name": "Cowley County",
       "state": "KS",
       "firm_count": 13,
-      "last_updated": "2026-07-22",
+      "last_updated": "2026-08-18",
       "csv_file": "cowley-county-ks.csv"
     },
     {
@@ -581,7 +581,7 @@
       "name": "Pratt County",
       "state": "KS",
       "firm_count": 9,
-      "last_updated": "2026-07-22",
+      "last_updated": "2026-08-18",
       "csv_file": "pratt-county-ks.csv"
     },
     {
@@ -589,7 +589,7 @@
       "name": "Jackson County",
       "state": "KS",
       "firm_count": 9,
-      "last_updated": "2026-07-22",
+      "last_updated": "2026-08-18",
       "csv_file": "jackson-county-ks.csv"
     },
     {
@@ -597,7 +597,7 @@
       "name": "Brown County",
       "state": "KS",
       "firm_count": 11,
-      "last_updated": "2026-07-22",
+      "last_updated": "2026-08-18",
       "csv_file": "brown-county-ks.csv"
     },
     {
@@ -605,7 +605,7 @@
       "name": "Thomas County",
       "state": "KS",
       "firm_count": 7,
-      "last_updated": "2026-07-22",
+      "last_updated": "2026-08-18",
       "csv_file": "thomas-county-ks.csv"
     },
     {
@@ -613,7 +613,7 @@
       "name": "Doniphan County",
       "state": "KS",
       "firm_count": 5,
-      "last_updated": "2026-07-22",
+      "last_updated": "2026-08-18",
       "csv_file": "doniphan-county-ks.csv"
     },
     {
@@ -621,7 +621,7 @@
       "name": "Nemaha County",
       "state": "KS",
       "firm_count": 6,
-      "last_updated": "2026-07-22",
+      "last_updated": "2026-08-18",
       "csv_file": "nemaha-county-ks.csv"
     },
     {
@@ -629,7 +629,7 @@
       "name": "Stevens County",
       "state": "KS",
       "firm_count": 5,
-      "last_updated": "2026-07-22",
+      "last_updated": "2026-08-18",
       "csv_file": "stevens-county-ks.csv"
     },
     {
@@ -637,7 +637,7 @@
       "name": "Norton County",
       "state": "KS",
       "firm_count": 4,
-      "last_updated": "2026-07-22",
+      "last_updated": "2026-08-18",
       "csv_file": "norton-county-ks.csv"
     },
     {
@@ -645,7 +645,7 @@
       "name": "Pawnee County",
       "state": "KS",
       "firm_count": 3,
-      "last_updated": "2026-07-22",
+      "last_updated": "2026-08-18",
       "csv_file": "pawnee-county-ks.csv"
     },
     {
@@ -653,7 +653,7 @@
       "name": "Scott County",
       "state": "KS",
       "firm_count": 3,
-      "last_updated": "2026-07-22",
+      "last_updated": "2026-08-18",
       "csv_file": "scott-county-ks.csv"
     },
     {
@@ -661,7 +661,7 @@
       "name": "Morris County",
       "state": "KS",
       "firm_count": 2,
-      "last_updated": "2026-07-22",
+      "last_updated": "2026-08-18",
       "csv_file": "morris-county-ks.csv"
     },
     {
@@ -669,7 +669,7 @@
       "name": "Wabaunsee County",
       "state": "KS",
       "firm_count": 4,
-      "last_updated": "2026-07-22",
+      "last_updated": "2026-08-18",
       "csv_file": "wabaunsee-county-ks.csv"
     },
     {
@@ -677,7 +677,7 @@
       "name": "Chase County",
       "state": "KS",
       "firm_count": 1,
-      "last_updated": "2026-07-22",
+      "last_updated": "2026-08-18",
       "csv_file": "chase-county-ks.csv"
     },
     {
@@ -685,7 +685,7 @@
       "name": "Washington County",
       "state": "KS",
       "firm_count": 2,
-      "last_updated": "2026-07-22",
+      "last_updated": "2026-08-18",
       "csv_file": "washington-county-ks.csv"
     },
     {
@@ -693,7 +693,7 @@
       "name": "Republic County",
       "state": "KS",
       "firm_count": 2,
-      "last_updated": "2026-07-22",
+      "last_updated": "2026-08-18",
       "csv_file": "republic-county-ks.csv"
     },
     {
@@ -701,7 +701,7 @@
       "name": "Jewell County",
       "state": "KS",
       "firm_count": 1,
-      "last_updated": "2026-07-22",
+      "last_updated": "2026-08-18",
       "csv_file": "jewell-county-ks.csv"
     },
     {
@@ -709,7 +709,7 @@
       "name": "Smith County",
       "state": "KS",
       "firm_count": 4,
-      "last_updated": "2026-07-22",
+      "last_updated": "2026-08-18",
       "csv_file": "smith-county-ks.csv"
     },
     {
@@ -717,7 +717,7 @@
       "name": "Decatur County",
       "state": "KS",
       "firm_count": 2,
-      "last_updated": "2026-07-22",
+      "last_updated": "2026-08-18",
       "csv_file": "decatur-county-ks.csv"
     },
     {
@@ -725,7 +725,7 @@
       "name": "Phillips County",
       "state": "KS",
       "firm_count": 4,
-      "last_updated": "2026-07-22",
+      "last_updated": "2026-08-18",
       "csv_file": "phillips-county-ks.csv"
     },
     {
@@ -733,7 +733,7 @@
       "name": "Anderson County",
       "state": "KS",
       "firm_count": 4,
-      "last_updated": "2026-07-22",
+      "last_updated": "2026-08-18",
       "csv_file": "anderson-county-ks.csv"
     },
     {
@@ -741,7 +741,7 @@
       "name": "Barber County",
       "state": "KS",
       "firm_count": 3,
-      "last_updated": "2026-07-22",
+      "last_updated": "2026-08-18",
       "csv_file": "barber-county-ks.csv"
     },
     {
@@ -749,7 +749,7 @@
       "name": "Rooks County",
       "state": "KS",
       "firm_count": 5,
-      "last_updated": "2026-07-22",
+      "last_updated": "2026-08-18",
       "csv_file": "rooks-county-ks.csv"
     },
     {
@@ -757,7 +757,7 @@
       "name": "Trego County",
       "state": "KS",
       "firm_count": 5,
-      "last_updated": "2026-07-22",
+      "last_updated": "2026-08-18",
       "csv_file": "trego-county-ks.csv"
     },
     {
@@ -765,7 +765,7 @@
       "name": "Grant County",
       "state": "KS",
       "firm_count": 2,
-      "last_updated": "2026-07-22",
+      "last_updated": "2026-08-18",
       "csv_file": "grant-county-ks.csv"
     },
     {
@@ -773,7 +773,7 @@
       "name": "Osborne County",
       "state": "KS",
       "firm_count": 3,
-      "last_updated": "2026-07-22",
+      "last_updated": "2026-08-18",
       "csv_file": "osborne-county-ks.csv"
     },
     {
@@ -781,7 +781,7 @@
       "name": "Sherman County",
       "state": "KS",
       "firm_count": 2,
-      "last_updated": "2026-07-22",
+      "last_updated": "2026-08-18",
       "csv_file": "sherman-county-ks.csv"
     },
     {
@@ -789,7 +789,7 @@
       "name": "Graham County",
       "state": "KS",
       "firm_count": 3,
-      "last_updated": "2026-07-22",
+      "last_updated": "2026-08-18",
       "csv_file": "graham-county-ks.csv"
     },
     {
@@ -797,7 +797,7 @@
       "name": "Greeley County",
       "state": "KS",
       "firm_count": 2,
-      "last_updated": "2026-07-22",
+      "last_updated": "2026-08-18",
       "csv_file": "greeley-county-ks.csv"
     },
     {
@@ -805,7 +805,7 @@
       "name": "Hamilton County",
       "state": "KS",
       "firm_count": 1,
-      "last_updated": "2026-07-22",
+      "last_updated": "2026-08-18",
       "csv_file": "hamilton-county-ks.csv"
     },
     {
@@ -813,7 +813,7 @@
       "name": "Clark County",
       "state": "KS",
       "firm_count": 3,
-      "last_updated": "2026-07-22",
+      "last_updated": "2026-08-18",
       "csv_file": "clark-county-ks.csv"
     },
     {
@@ -821,7 +821,7 @@
       "name": "Lane County",
       "state": "KS",
       "firm_count": 2,
-      "last_updated": "2026-07-22",
+      "last_updated": "2026-08-18",
       "csv_file": "lane-county-ks.csv"
     },
     {
@@ -829,7 +829,7 @@
       "name": "Morton County",
       "state": "KS",
       "firm_count": 2,
-      "last_updated": "2026-07-22",
+      "last_updated": "2026-08-18",
       "csv_file": "morton-county-ks.csv"
     },
     {
@@ -837,7 +837,7 @@
       "name": "Gray County",
       "state": "KS",
       "firm_count": 2,
-      "last_updated": "2026-07-22",
+      "last_updated": "2026-08-18",
       "csv_file": "gray-county-ks.csv"
     },
     {
@@ -845,7 +845,7 @@
       "name": "Meade County",
       "state": "KS",
       "firm_count": 2,
-      "last_updated": "2026-07-22",
+      "last_updated": "2026-08-18",
       "csv_file": "meade-county-ks.csv"
     },
     {
@@ -853,7 +853,7 @@
       "name": "Rawlins County",
       "state": "KS",
       "firm_count": 2,
-      "last_updated": "2026-07-22",
+      "last_updated": "2026-08-18",
       "csv_file": "rawlins-county-ks.csv"
     },
     {
@@ -861,7 +861,7 @@
       "name": "Haskell County",
       "state": "KS",
       "firm_count": 3,
-      "last_updated": "2026-07-22",
+      "last_updated": "2026-08-18",
       "csv_file": "haskell-county-ks.csv"
     },
     {
@@ -869,7 +869,7 @@
       "name": "Logan County",
       "state": "KS",
       "firm_count": 2,
-      "last_updated": "2026-07-22",
+      "last_updated": "2026-08-18",
       "csv_file": "logan-county-ks.csv"
     },
     {
@@ -877,7 +877,7 @@
       "name": "Sheridan County",
       "state": "KS",
       "firm_count": 1,
-      "last_updated": "2026-07-22",
+      "last_updated": "2026-08-18",
       "csv_file": "sheridan-county-ks.csv"
     },
     {
@@ -885,7 +885,7 @@
       "name": "Wallace County",
       "state": "KS",
       "firm_count": 2,
-      "last_updated": "2026-07-22",
+      "last_updated": "2026-08-18",
       "csv_file": "wallace-county-ks.csv"
     },
     {
@@ -893,7 +893,7 @@
       "name": "Cheyenne County",
       "state": "KS",
       "firm_count": 2,
-      "last_updated": "2026-07-22",
+      "last_updated": "2026-08-18",
       "csv_file": "cheyenne-county-ks.csv"
     },
     {
@@ -901,7 +901,7 @@
       "name": "Comanche County",
       "state": "KS",
       "firm_count": 2,
-      "last_updated": "2026-07-22",
+      "last_updated": "2026-08-18",
       "csv_file": "comanche-county-ks.csv"
     },
     {
@@ -909,7 +909,7 @@
       "name": "Hodgeman County",
       "state": "KS",
       "firm_count": 1,
-      "last_updated": "2026-07-22",
+      "last_updated": "2026-08-18",
       "csv_file": "hodgeman-county-ks.csv"
     },
     {
@@ -917,7 +917,7 @@
       "name": "Edwards County",
       "state": "KS",
       "firm_count": 1,
-      "last_updated": "2026-07-22",
+      "last_updated": "2026-08-18",
       "csv_file": "edwards-county-ks.csv"
     },
     {
@@ -925,7 +925,7 @@
       "name": "Kiowa County",
       "state": "KS",
       "firm_count": 1,
-      "last_updated": "2026-07-22",
+      "last_updated": "2026-08-18",
       "csv_file": "kiowa-county-ks.csv"
     },
     {
@@ -933,7 +933,7 @@
       "name": "Rush County",
       "state": "KS",
       "firm_count": 1,
-      "last_updated": "2026-07-22",
+      "last_updated": "2026-08-18",
       "csv_file": "rush-county-ks.csv"
     },
     {
@@ -941,7 +941,7 @@
       "name": "Stanton County",
       "state": "KS",
       "firm_count": 1,
-      "last_updated": "2026-07-22",
+      "last_updated": "2026-08-18",
       "csv_file": "stanton-county-ks.csv"
     },
     {
@@ -949,7 +949,7 @@
       "name": "Kearny County",
       "state": "KS",
       "firm_count": 1,
-      "last_updated": "2026-07-22",
+      "last_updated": "2026-08-18",
       "csv_file": "kearny-county-ks.csv"
     },
     {
@@ -957,7 +957,7 @@
       "name": "Ness County",
       "state": "KS",
       "firm_count": 1,
-      "last_updated": "2026-07-22",
+      "last_updated": "2026-08-18",
       "csv_file": "ness-county-ks.csv"
     },
     {
@@ -965,7 +965,7 @@
       "name": "Gove County",
       "state": "KS",
       "firm_count": 1,
-      "last_updated": "2026-07-22",
+      "last_updated": "2026-08-18",
       "csv_file": "gove-county-ks.csv"
     },
     {

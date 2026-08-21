@@ -86,39 +86,108 @@
   }
 
   function renderFirmGrid(entries) {
-    if (!entries.length) {
-      return renderEmptyState('No law firm data yet', 'Run the county pipeline to generate data files for this state.');
-    }
-    var sorted = entries.slice().sort(function (a, b) { return a.name.localeCompare(b.name); });
-    var grid = document.createElement('div');
-    grid.className = 'county-grid';
-    sorted.forEach(function (county) { grid.appendChild(createFirmCard(county)); });
-    return grid;
+    return buildSearchableGrid(entries, {
+      emptyTitle: 'No law firm data yet',
+      emptyMessage: 'Run the county pipeline to generate data files for this state.',
+      cardBuilder: createFirmCard,
+      sortCountKey: function (e) { return e.firm_count || 0; }
+    });
   }
 
   function renderProviderGrid(entries) {
-    if (!entries.length) {
-      return renderEmptyState('No provider data yet', 'Chiropractor & physical therapist data has not been collected for this state yet.');
-    }
-    var sorted = entries.slice().sort(function (a, b) { return a.name.localeCompare(b.name); });
-    var totalChiro = sorted.reduce(function (sum, p) { return sum + p.chiro; }, 0);
-    var totalPt = sorted.reduce(function (sum, p) { return sum + p.pt; }, 0);
+    return buildSearchableGrid(entries, {
+      emptyTitle: 'No provider data yet',
+      emptyMessage: 'Chiropractor & physical therapist data has not been collected for this state yet.',
+      cardBuilder: createProviderCard,
+      sortCountKey: function (e) { return (e.chiro || 0) + (e.pt || 0); },
+      extraSummary: function (filtered) {
+        var totalChiro = filtered.reduce(function (sum, p) { return sum + p.chiro; }, 0);
+        var totalPt = filtered.reduce(function (sum, p) { return sum + p.pt; }, 0);
+        return ' · ' + totalChiro.toLocaleString() + ' chiropractors · ' + totalPt.toLocaleString() + ' physical therapists';
+      }
+    });
+  }
 
+  // Shared county-grid component: entry count summary, alphabetical/entry-count
+  // sort (defaults to entry count), and a live name search.
+  function buildSearchableGrid(entries, opts) {
     var wrap = document.createElement('div');
+    if (!entries.length) {
+      wrap.appendChild(renderEmptyState(opts.emptyTitle, opts.emptyMessage));
+      return wrap;
+    }
 
-    var summary = document.createElement('div');
-    summary.className = 'summary-bar';
-    summary.innerHTML =
-      '<div><strong>' + sorted.length + '</strong> counties</div>' +
-      '<div><strong>' + totalChiro.toLocaleString() + '</strong> chiropractors</div>' +
-      '<div><strong>' + totalPt.toLocaleString() + '</strong> physical therapists</div>';
-    wrap.appendChild(summary);
+    var sortMode = 'count';
+    var searchText = '';
+
+    var toolbar = document.createElement('div');
+    toolbar.className = 'panel-toolbar';
+
+    var countLine = document.createElement('div');
+    countLine.className = 'panel-count';
+
+    var sortWrap = document.createElement('div');
+    sortWrap.className = 'panel-sort';
+    sortWrap.innerHTML =
+      '<span class="panel-sort-label">Sort:</span>' +
+      '<button type="button" class="sort-btn active" data-sort="count">Entry Count</button>' +
+      '<button type="button" class="sort-btn" data-sort="alpha">A–Z</button>';
+
+    var searchInput = document.createElement('input');
+    searchInput.type = 'search';
+    searchInput.className = 'search-input panel-search';
+    searchInput.placeholder = 'Search counties…';
+
+    toolbar.appendChild(countLine);
+    toolbar.appendChild(sortWrap);
+    toolbar.appendChild(searchInput);
+    wrap.appendChild(toolbar);
 
     var grid = document.createElement('div');
     grid.className = 'county-grid';
-    sorted.forEach(function (p) { grid.appendChild(createProviderCard(p)); });
     wrap.appendChild(grid);
 
+    function getFiltered() {
+      var list = entries;
+      if (searchText) {
+        var q = searchText.toLowerCase();
+        list = list.filter(function (e) { return e.name.toLowerCase().indexOf(q) !== -1; });
+      }
+      list = list.slice();
+      if (sortMode === 'alpha') {
+        list.sort(function (a, b) { return a.name.localeCompare(b.name); });
+      } else {
+        list.sort(function (a, b) { return opts.sortCountKey(b) - opts.sortCountKey(a); });
+      }
+      return list;
+    }
+
+    function rerender() {
+      var filtered = getFiltered();
+      countLine.textContent = 'Showing ' + filtered.length + ' of ' + entries.length + ' counties' +
+        (opts.extraSummary ? opts.extraSummary(filtered) : '');
+      grid.innerHTML = '';
+      if (!filtered.length) {
+        grid.appendChild(renderEmptyState('No matches', 'No counties match your search.'));
+        return;
+      }
+      filtered.forEach(function (e) { grid.appendChild(opts.cardBuilder(e)); });
+    }
+
+    sortWrap.querySelectorAll('.sort-btn').forEach(function (btn) {
+      btn.addEventListener('click', function () {
+        sortMode = btn.dataset.sort;
+        sortWrap.querySelectorAll('.sort-btn').forEach(function (b) { b.classList.toggle('active', b === btn); });
+        rerender();
+      });
+    });
+
+    searchInput.addEventListener('input', function () {
+      searchText = searchInput.value;
+      rerender();
+    });
+
+    rerender();
     return wrap;
   }
 

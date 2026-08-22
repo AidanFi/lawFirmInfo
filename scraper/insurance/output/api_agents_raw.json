@@ -1,0 +1,4482 @@
+[
+  {
+    "name": "Holloway Insurance Group",
+    "phone": "(913) 901-0031",
+    "street_address": "7920 Floyd St",
+    "city": "Overland Park",
+    "zip": "66204",
+    "website": "http://www.hollowaygrp.com",
+    "source_url": "https://foursquare.com/placemakers/review-place/59f7434b12f0a97a148bfc22",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Farm Bureau Financial Services: Michael Smith",
+    "phone": "(913) 228-0358",
+    "street_address": "8941 W 75th St",
+    "city": "Overland Park",
+    "zip": "66204",
+    "website": "https://www.fbfs.com/find-an-agent/michaelsmith",
+    "source_url": "https://foursquare.com/placemakers/review-place/6082da1a5ed14406b575e189",
+    "source": "Foursquare"
+  },
+  {
+    "name": "American Family Insurance- James Mcmillian",
+    "phone": "(913) 599-3100",
+    "street_address": "6420 W 95th St",
+    "city": "Overland Park",
+    "zip": "66212",
+    "website": "http://americanfamilyinsurance.com",
+    "source_url": "https://foursquare.com/placemakers/review-place/68dfd92e961849f0ed1d8159",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Insurance Analysts",
+    "phone": "(913) 362-0486",
+    "street_address": "10000 W 75th St",
+    "city": "Overland Park",
+    "zip": "66204",
+    "website": "http://gmacinsurance.com",
+    "source_url": "https://foursquare.com/placemakers/review-place/1cb065f6383c4c341e93dc06",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Nationwide",
+    "phone": "(913) 385-5000",
+    "street_address": "5750 W 95th St",
+    "city": "Overland Park",
+    "zip": "66207",
+    "website": "https://www.nationwide.com",
+    "source_url": "https://foursquare.com/placemakers/review-place/2e2ee28dfc5a42bea283284b",
+    "source": "Foursquare"
+  },
+  {
+    "name": "National Ltc Network",
+    "phone": "(913) 385-7899",
+    "street_address": "5750 W 95th St",
+    "city": "Overland Park",
+    "zip": "66207",
+    "website": null,
+    "source_url": "https://foursquare.com/placemakers/review-place/050af5e756264d063fa3411f",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Cody Corr - State Farm Insurance Agent",
+    "phone": "(913) 402-7428",
+    "street_address": "8676 W 96th St",
+    "city": "Overland Park",
+    "zip": "66212",
+    "website": "https://www.statefarm.com/agent/us/ks/leawood/cody-corr-0r4nh5c95ak",
+    "source_url": "https://foursquare.com/placemakers/review-place/4a8973230e4a4f8c09608470",
+    "source": "Foursquare"
+  },
+  {
+    "name": "State Farm Mutual Automobile Insurance Company",
+    "phone": "(913) 599-3500",
+    "street_address": "8676 W 96th St",
+    "city": "Overland Park",
+    "zip": "66212",
+    "website": null,
+    "source_url": "https://foursquare.com/placemakers/review-place/0a0b7ed1d8224f3ab40fb0b6",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Nationwide Mutual Insurance Company",
+    "phone": "(816) 699-3188",
+    "street_address": "6405 Metcalf Ave",
+    "city": "Mission",
+    "zip": "66202",
+    "website": "https://www.nationwide.com",
+    "source_url": "https://foursquare.com/placemakers/review-place/897693d16806820faa7c6166",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Nationwide",
+    "phone": "(816) 699-3188",
+    "street_address": "6405 Metcalf Ave",
+    "city": "Mission",
+    "zip": "66202",
+    "website": "https://www.nationwide.com",
+    "source_url": "https://foursquare.com/placemakers/review-place/26896eff1d9b4735abd2bcf0",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Midwest Marketing Associates",
+    "phone": "(913) 649-0300",
+    "street_address": "7299 W 98th Ter",
+    "city": "Overland Park",
+    "zip": "66212",
+    "website": "http://www.askmma.com",
+    "source_url": "https://foursquare.com/placemakers/review-place/4b8121dae35b4c2939d05bcb",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Farmers Insurance",
+    "phone": "(913) 325-4084",
+    "street_address": "6701 W 64th St",
+    "city": "Overland Park",
+    "zip": "66202",
+    "website": "http://www.farmersagent.com/rpurvis",
+    "source_url": "https://foursquare.com/placemakers/review-place/564500ba498edf3cd0e152fe",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Nationwide",
+    "phone": "(877) 611-7333",
+    "street_address": "9500 Nall Ave",
+    "city": "Overland Park",
+    "zip": "66207",
+    "website": "https://www.nationwide.com",
+    "source_url": "https://foursquare.com/placemakers/review-place/b5f1224a9805425b5012ab90",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Capitol Agency Insurance",
+    "phone": "(877) 611-7333",
+    "street_address": "9500 Nall Ave",
+    "city": "Overland Park",
+    "zip": "66207",
+    "website": "https://www.capitolagencyins.com/locations/overland-park",
+    "source_url": "https://foursquare.com/placemakers/review-place/37d4f82ca59e4298906d6f41",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Surety Support Service",
+    "phone": "(913) 385-7760",
+    "street_address": "7255 W 98th Ter",
+    "city": "Overland Park",
+    "zip": "66212",
+    "website": "http://www.suretyss.com",
+    "source_url": "https://foursquare.com/placemakers/review-place/242f38c8d0484a6963b180b9",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Ofm Benefits Consulting",
+    "phone": "(913) 432-2732",
+    "street_address": "6400 Glenwood St",
+    "city": "Overland Park",
+    "zip": "66202",
+    "website": "http://www.ofmtorch.com",
+    "source_url": "https://foursquare.com/placemakers/review-place/608949dbef12462c83e8eaca",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Farmers Insurance - Melissa Drinkard",
+    "phone": "(913) 717-7333",
+    "street_address": "6811 Shawnee Mission Pkwy",
+    "city": "Overland Park",
+    "zip": "66202",
+    "website": "http://www.farmers.com",
+    "source_url": "https://foursquare.com/placemakers/review-place/6cd599a0fbc548dc6e4d7f87",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Nason Associates Inc.",
+    "phone": "(913) 677-1550",
+    "street_address": "6811 Shawnee Mission Pkwy Ste 312",
+    "city": "Overland Park",
+    "zip": "66202",
+    "website": "http://www.nasonassoc.com",
+    "source_url": "https://foursquare.com/placemakers/review-place/5a914c38898bdc060050fb06",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Lee Ann Woods - State Farm Insurance Agent",
+    "phone": "(913) 381-1000",
+    "street_address": "5235 W 95th St",
+    "city": "Overland Park",
+    "zip": "66207",
+    "website": "http://www.leeannismyagent.com",
+    "source_url": "https://foursquare.com/placemakers/review-place/52eaa088498e00cab88e4a2b",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Estes & Associates",
+    "phone": "(913) 383-8450",
+    "street_address": "9817 Glenwood St",
+    "city": "Overland Park",
+    "zip": "66212",
+    "website": "https://shawnee-mission-kansas.acreme.org.au/estes-and-associates-inc.html",
+    "source_url": "https://foursquare.com/placemakers/review-place/1b87720a793c4c5b5cbab37c",
+    "source": "Foursquare"
+  },
+  {
+    "name": "State Farm Insurance",
+    "phone": "(913) 888-2200",
+    "street_address": "10801 W 87th St",
+    "city": "Overland Park",
+    "zip": "66214",
+    "website": "http://www.statefarm.com",
+    "source_url": "https://foursquare.com/placemakers/review-place/3522b243911448ac03b82c1c",
+    "source": "Foursquare"
+  },
+  {
+    "name": "American Family Insurance - Marc Green Agency, Inc",
+    "phone": "(913) 649-2002",
+    "street_address": "10404 Metcalf Ave",
+    "city": "Overland Park",
+    "zip": "66212",
+    "website": "http://insurance-agency.amfam.com/KS/marc-green/default.aspx?sourceid=agp0001022661",
+    "source_url": "https://foursquare.com/placemakers/review-place/4d8cd5981d06b1f7bb92223b",
+    "source": "Foursquare"
+  },
+  {
+    "name": "American Family Insurance - Christopher Hotchkiss",
+    "phone": "(913) 268-8200",
+    "street_address": "11111 W 95th St Ste 150",
+    "city": "Overland Park",
+    "zip": "66214",
+    "website": "http://insurance-agency.amfam.com/KS/christopher-hotchkiss/default.aspx?sourceid=agp0001047562",
+    "source_url": "https://foursquare.com/placemakers/review-place/5352b0be498e5a6eb4313c0f",
+    "source": "Foursquare"
+  },
+  {
+    "name": "HealthMarkets Insurance Agency",
+    "phone": "(913) 385-2022",
+    "street_address": "10551 Barkley St",
+    "city": "Overland Park",
+    "zip": "66212",
+    "website": "http://agents.healthmarkets.com/KansasCity?LOB=HLT&audience=GNL",
+    "source_url": "https://foursquare.com/placemakers/review-place/eff97fc6dc4545b158212304",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Audit Store",
+    "phone": "(913) 647-7268",
+    "street_address": "10540 Barkley St",
+    "city": "Overland Park",
+    "zip": "66212",
+    "website": "https://www.theauditstore.com",
+    "source_url": "https://foursquare.com/placemakers/review-place/0d51d77dc38b4513de77f2a5",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Farmers Insurance - Paul Fischer",
+    "phone": "(913) 942-0950",
+    "street_address": "11568 W 95th St",
+    "city": "Overland Park",
+    "zip": "66214",
+    "website": "http://www.farmers.com",
+    "source_url": "https://foursquare.com/placemakers/review-place/db29ffcc72254a85259c6d8a",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Benefits By Design",
+    "phone": "(913) 385-2224",
+    "street_address": "10540 Marty St",
+    "city": "Overland Park",
+    "zip": "66212",
+    "website": "http://www.benefitsbydesigninc.com",
+    "source_url": "https://foursquare.com/placemakers/review-place/8b0b0003797d4f408fbc3c04",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Farmers Insurance - Patrick Wertzberger",
+    "phone": "(913) 383-3276",
+    "street_address": "10560 Barkley St",
+    "city": "Overland Park",
+    "zip": "66212",
+    "website": "http://www.farmers.com",
+    "source_url": "https://foursquare.com/placemakers/review-place/22d347032f9b4eb7086620bd",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Halpin & Co.",
+    "phone": "(913) 383-2288",
+    "street_address": "10701 Barkley St",
+    "city": "Overland Park",
+    "zip": "66211",
+    "website": "http://www.halpinco.com",
+    "source_url": "https://foursquare.com/placemakers/review-place/e5124b2730604e0628ac7316",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Integrity Insurance Services",
+    "phone": "(913) 681-1270",
+    "street_address": "8900 Indian Creek Pkwy Ste 250",
+    "city": "Overland Park",
+    "zip": "66210",
+    "website": "http://itsinsurancekc.com",
+    "source_url": "https://foursquare.com/placemakers/review-place/99b4dbc721c74caca5808228",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Flury-Hinderks Insurance Agency",
+    "phone": "(913) 345-9900",
+    "street_address": "10740 Nall Ave Ste 310",
+    "city": "Overland Park",
+    "zip": "66211",
+    "website": "https://www.fhins.com",
+    "source_url": "https://foursquare.com/placemakers/review-place/60235389303b206d26ff6e7c",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Nationwide",
+    "phone": "(888) 890-2050",
+    "street_address": "10740 Nall Ave",
+    "city": "Overland Park",
+    "zip": "66211",
+    "website": "https://www.nationwide.com",
+    "source_url": "https://foursquare.com/placemakers/review-place/21a68e1e58194d49e693fa92",
+    "source": "Foursquare"
+  },
+  {
+    "name": "DBR Insurance",
+    "phone": "(913) 871-3606",
+    "street_address": "7600 W 110th St",
+    "city": "Overland Park",
+    "zip": "66210",
+    "website": "http://www.dbrinsurance.com",
+    "source_url": "https://foursquare.com/placemakers/review-place/97b8924bade643d156a48ac5",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Ed Hearn",
+    "phone": "(913) 661-7240",
+    "street_address": "7500 College Blvd",
+    "city": "Overland Park",
+    "zip": "66210",
+    "website": "http://www.talentsecure.com",
+    "source_url": "https://foursquare.com/placemakers/review-place/41a1ce05dca04f413068c803",
+    "source": "Foursquare"
+  },
+  {
+    "name": "State Farm Insurance",
+    "phone": "(913) 827-1528",
+    "street_address": "6400 W 110th St",
+    "city": "Overland Park",
+    "zip": "66211",
+    "website": "http://www.statefarm.com",
+    "source_url": "https://foursquare.com/placemakers/review-place/2f55d365112d426cd10d4b6e",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Ricky Freeman",
+    "phone": "(913) 599-4335",
+    "street_address": "8500 W 110th St",
+    "city": "Overland Park",
+    "zip": "66210",
+    "website": "http://www.wyndhamcapital.com/Ricky-Freeman",
+    "source_url": "https://foursquare.com/placemakers/review-place/35f58ab0853b4a2ecaa8c85b",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Ryan Wescoat Regional Leader with Primerica",
+    "phone": "(913) 890-3356",
+    "street_address": "8500 W 110th St",
+    "city": "Overland Park",
+    "zip": "66210",
+    "website": null,
+    "source_url": "https://foursquare.com/placemakers/review-place/5bf4ca40646e380039e341ac",
+    "source": "Foursquare"
+  },
+  {
+    "name": "First Capital Group",
+    "phone": "(913) 663-2800",
+    "street_address": "10925 Antioch Rd",
+    "city": "Overland Park",
+    "zip": "66210",
+    "website": "http://www.fcginvest.com",
+    "source_url": "https://foursquare.com/placemakers/review-place/272bae6539bf4613904893bb",
+    "source": "Foursquare"
+  },
+  {
+    "name": "CNA Insurance",
+    "phone": "(913) 661-2700",
+    "street_address": "7400 College Blvd",
+    "city": "Overland Park",
+    "zip": "66210",
+    "website": "http://cna.com",
+    "source_url": "https://foursquare.com/placemakers/review-place/b67fd35a5cbd4f86dffec222",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Hobart, Seth Hartford Fire Insurance Co.",
+    "phone": "(913) 693-2956",
+    "street_address": "7400 College Blvd",
+    "city": "Overland Park",
+    "zip": "66210",
+    "website": "http://www.thehartford.com",
+    "source_url": "https://foursquare.com/placemakers/review-place/17be24f7e8294d54475abe45",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Standard Insurance",
+    "phone": "(913) 661-9241",
+    "street_address": "6800 College Blvd",
+    "city": "Overland Park",
+    "zip": "66211",
+    "website": "http://www.standard.com",
+    "source_url": "https://foursquare.com/placemakers/review-place/f6f0fb5fef9340c431e69696",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Farmers Insurance",
+    "phone": "(913) 338-4888",
+    "street_address": "10800 Farley St",
+    "city": "Overland Park",
+    "zip": "66210",
+    "website": "http://www.farmersagent.com/cgrant2",
+    "source_url": "https://foursquare.com/placemakers/review-place/564500ba498edf3cd0e15326",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Nationwide",
+    "phone": "(913) 451-5601",
+    "street_address": "10800 Farley St",
+    "city": "Overland Park",
+    "zip": "66210",
+    "website": "https://www.nationwide.com",
+    "source_url": "https://foursquare.com/placemakers/review-place/b13b6bdac16944a3bb362428",
+    "source": "Foursquare"
+  },
+  {
+    "name": "MedMutual Protect",
+    "phone": "(913) 275-5092",
+    "street_address": "8575 W 110th St Ste 105",
+    "city": "Overland Park",
+    "zip": "66210",
+    "website": "https://medmutualprotect.com/find-an-agent/cameron-daniels",
+    "source_url": "https://foursquare.com/placemakers/review-place/69b33b130c327f62047705cc",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Nationwide",
+    "phone": "(913) 944-4465",
+    "street_address": "6600 College Blvd",
+    "city": "Overland Park",
+    "zip": "66211",
+    "website": "https://www.nationwide.com",
+    "source_url": "https://foursquare.com/placemakers/review-place/eda140b2558546ea020588df",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Farmers Insurance - Matthew McLin",
+    "phone": "(913) 706-6830",
+    "street_address": "6600 College Blvd",
+    "city": "Overland Park",
+    "zip": "66211",
+    "website": "http://www.farmers.com",
+    "source_url": "https://foursquare.com/placemakers/review-place/b1f75f15bdc8442d20c9cf32",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Elliott Group",
+    "phone": "(816) 761-3230",
+    "street_address": "8500 College Blvd",
+    "city": "Overland Park",
+    "zip": "66210",
+    "website": "https://agency.nationwide.com/elliott-group-in-overland-park-ks-13398425",
+    "source_url": "https://foursquare.com/placemakers/review-place/5e6289d4f3bac00008f3e776",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Miller & Newberg",
+    "phone": "(913) 393-2522",
+    "street_address": "8717 W 110th St",
+    "city": "Overland Park",
+    "zip": "66210",
+    "website": "http://www.miller-newberg.com",
+    "source_url": "https://foursquare.com/placemakers/review-place/1cfaa89c48a84f13ec4e6d42",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Lewerglobal",
+    "phone": "(800) 821-7711",
+    "street_address": "9900 W 109th St Ste 200",
+    "city": "Overland Park",
+    "zip": "66210",
+    "website": null,
+    "source_url": "https://foursquare.com/placemakers/review-place/6291471e422c88304260b995",
+    "source": "Foursquare"
+  },
+  {
+    "name": "American Family Insurance - Dean Ordiway Agency, Inc",
+    "phone": "(913) 663-2121",
+    "street_address": "7007 College Blvd Ste 120",
+    "city": "Leawood",
+    "zip": "66211",
+    "website": "http://insurance-agency.amfam.com/KS/dean-ordiway/default.aspx?sourceid=agp0001015931",
+    "source_url": "https://foursquare.com/placemakers/review-place/5351501e498ef1a92d42579e",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Nationwide Mutual Insurance Company",
+    "phone": "(913) 888-6888",
+    "street_address": "8101 College Blvd",
+    "city": "Overland Park",
+    "zip": "66210",
+    "website": "https://www.nationwide.com",
+    "source_url": "https://foursquare.com/placemakers/review-place/3d009af588e864ba156751e9",
+    "source": "Foursquare"
+  },
+  {
+    "name": "American Family Insurance - Joe Thelen Agency, Inc",
+    "phone": "(913) 469-8888",
+    "street_address": "7007 College Blvd Ste 120",
+    "city": "Leawood",
+    "zip": "66211",
+    "website": "http://insurance-agency.amfam.com/KS/joe-thelen/default.aspx?sourceid=agp0001025473",
+    "source_url": "https://foursquare.com/placemakers/review-place/5351c0c6498e1cc9107c6f58",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Hergott Debbie Health Benefit Systems Leawood",
+    "phone": "(913) 642-1666",
+    "street_address": "6363 College Blvd",
+    "city": "Leawood",
+    "zip": "66211",
+    "website": "http://healthandbenefits.com",
+    "source_url": "https://foursquare.com/placemakers/review-place/ab04c47ee4a04c1f4f19af3c",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Nationwide Mutual Insurance Company",
+    "phone": "(816) 919-2323",
+    "street_address": "4550 W 109th St",
+    "city": "Overland Park",
+    "zip": "66211",
+    "website": "https://www.nationwide.com",
+    "source_url": "https://foursquare.com/placemakers/review-place/330382fc90376eb2d118fd0b",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Bituminous Insurance Companies",
+    "phone": "(913) 262-4664",
+    "street_address": "5901 College Blvd",
+    "city": "Overland Park",
+    "zip": "66211",
+    "website": "http://bituminousinsurance.com",
+    "source_url": "https://foursquare.com/placemakers/review-place/305781c6444748903d7d04c0",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Farmers Insurance",
+    "phone": "(913) 663-3600",
+    "street_address": "8645 College Blvd",
+    "city": "Overland Park",
+    "zip": "66210",
+    "website": "http://www.farmersagent.com/gking",
+    "source_url": "https://foursquare.com/placemakers/review-place/564500ba498edf3cd0e15332",
+    "source": "Foursquare"
+  },
+  {
+    "name": "John Yates - Mutual of Omaha Advisor",
+    "phone": "",
+    "street_address": "7015 College Blvd",
+    "city": "Overland Park",
+    "zip": "66211",
+    "website": null,
+    "source_url": "https://foursquare.com/placemakers/review-place/69405c6b65d559314ad10686",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Nationwide Mutual Insurance Company",
+    "phone": "(913) 339-0800",
+    "street_address": "5700 W 112th St",
+    "city": "Overland Park",
+    "zip": "66211",
+    "website": "https://www.nationwide.com",
+    "source_url": "https://foursquare.com/placemakers/review-place/73011943a501320e281fb34e",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Nationwide Mutual Insurance Company",
+    "phone": "(816) 891-0502",
+    "street_address": "11501 Outlook St",
+    "city": "Overland Park",
+    "zip": "66211",
+    "website": "https://www.nationwide.com",
+    "source_url": "https://foursquare.com/placemakers/review-place/a0e7298e29dbe0d2e7a06988",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Rector & Associates",
+    "phone": "(913) 362-8500",
+    "street_address": "11011 King St",
+    "city": "Overland Park",
+    "zip": "66210",
+    "website": "http://www.rector-associates.com",
+    "source_url": "https://foursquare.com/placemakers/review-place/4111cf3fe2fa40842dd91eeb",
+    "source": "Foursquare"
+  },
+  {
+    "name": "PlatinumOne Insurance Agency",
+    "phone": "(913) 451-4800",
+    "street_address": "11020 King St",
+    "city": "Overland Park",
+    "zip": "66210",
+    "website": "http://www.platinumoneinsurance.com",
+    "source_url": "https://foursquare.com/placemakers/review-place/47a241c339fa457ad430439f",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Nationwide",
+    "phone": "(913) 451-4800",
+    "street_address": "11020 King St",
+    "city": "Overland Park",
+    "zip": "66210",
+    "website": "https://www.nationwide.com",
+    "source_url": "https://foursquare.com/placemakers/review-place/e09ac1732480490b9b002654",
+    "source": "Foursquare"
+  },
+  {
+    "name": "FMH Benefit Service",
+    "phone": "(913) 685-4740",
+    "street_address": "6100 Sprint Pkwy",
+    "city": "Overland Park",
+    "zip": "66211",
+    "website": "https://www.f-m-h.com",
+    "source_url": "https://foursquare.com/placemakers/review-place/7e19763ad65a4f77b34070fe",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Steve Weiner - State Farm Insurance Agent",
+    "phone": "(913) 469-1455",
+    "street_address": "7406 W 119th St",
+    "city": "Overland Park",
+    "zip": "66213",
+    "website": "http://www.steveweinerinsurance.com",
+    "source_url": "https://foursquare.com/placemakers/review-place/5214e8ed11d22c3f87f53180",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Chris Hare - State Farm Insurance Agent",
+    "phone": "(913) 469-1455",
+    "street_address": "7406 W 119th St",
+    "city": "Overland Park",
+    "zip": "66213",
+    "website": "http://www.chrishareinsurance.com",
+    "source_url": "https://foursquare.com/placemakers/review-place/58126d7538fa608e856c9d36",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Foremost Insurance",
+    "phone": "(800) 523-3907",
+    "street_address": "11880-11898 College Blvd",
+    "city": "Overland Park",
+    "zip": "66210",
+    "website": null,
+    "source_url": "https://foursquare.com/placemakers/review-place/4c7287f5d944224bf4db0c29",
+    "source": "Foursquare"
+  },
+  {
+    "name": "State Farm - John Burns",
+    "phone": "(913) 469-9010",
+    "street_address": "11020 Quivira Rd",
+    "city": "Overland Park",
+    "zip": "66210",
+    "website": "http://www.johnburnsins.com",
+    "source_url": "https://foursquare.com/placemakers/review-place/4ff1d5f9e4b09f46baf3682a",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Nationwide Mutual Insurance Company",
+    "phone": "(913) 661-2400",
+    "street_address": "11775 W 112th St",
+    "city": "Overland Park",
+    "zip": "66210",
+    "website": "https://www.nationwide.com",
+    "source_url": "https://foursquare.com/placemakers/review-place/9b7afdf7f9b06c79c7d8c63b",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Nationwide",
+    "phone": "(913) 661-2400",
+    "street_address": "11775 W 112th St",
+    "city": "Overland Park",
+    "zip": "66210",
+    "website": "https://www.nationwide.com",
+    "source_url": "https://foursquare.com/placemakers/review-place/b646e7ab1cf44b08879bf4a8",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Farmers Insurance - Richard Merz",
+    "phone": "(913) 491-4244",
+    "street_address": "11900 College Blvd",
+    "city": "Overland Park",
+    "zip": "66210",
+    "website": "http://www.farmers.com",
+    "source_url": "https://foursquare.com/placemakers/review-place/ff24add86c7b4acf64461b60",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Farmers Insurance",
+    "phone": "(913) 491-4244",
+    "street_address": "11900 College Blvd",
+    "city": "Overland Park",
+    "zip": "66210",
+    "website": "http://www.farmersagent.com/jgasper",
+    "source_url": "https://foursquare.com/placemakers/review-place/564500ba498edf3cd0e1532c",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Keith Jones: Allstate Insurance",
+    "phone": "(816) 895-2100",
+    "street_address": "6330 Sprint Pkwy",
+    "city": "Overland Park",
+    "zip": "66211",
+    "website": "https://agents.allstate.com/keith-jones-overland-park-ks.html",
+    "source_url": "https://foursquare.com/placemakers/review-place/60226b122b80ac3588efc154",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Financial Associates Midwest",
+    "phone": "(913) 491-5200",
+    "street_address": "11030 Oakmont St",
+    "city": "Overland Park",
+    "zip": "66210",
+    "website": "http://www.finassoc.com",
+    "source_url": "https://foursquare.com/placemakers/review-place/15b53146bc984ab4bb3eb060",
+    "source": "Foursquare"
+  },
+  {
+    "name": "American Family Insurance",
+    "phone": "(913) 317-9200",
+    "street_address": "6836 W 121st Ct",
+    "city": "Overland Park",
+    "zip": "66209",
+    "website": "http://www.amfam.com",
+    "source_url": "https://foursquare.com/placemakers/review-place/8de54201932f401299388cb2",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Farm Bureau Financial Services",
+    "phone": "(913) 268-4222",
+    "street_address": "6860 W 121st Ct",
+    "city": "Overland Park",
+    "zip": "66209",
+    "website": "http://www.fbfs.com",
+    "source_url": "https://foursquare.com/placemakers/review-place/cb0d357a718c4e03082a3948",
+    "source": "Foursquare"
+  },
+  {
+    "name": "American Family Insurance - Derwin Flener",
+    "phone": "(913) 451-3777",
+    "street_address": "11970 W 119th St",
+    "city": "Overland Park",
+    "zip": "66213",
+    "website": "http://insurance-agency.amfam.com/KS/derwin-flener/default.aspx?sourceid=agp0001025366",
+    "source_url": "https://foursquare.com/placemakers/review-place/4c727f278efc37047e06137d",
+    "source": "Foursquare"
+  },
+  {
+    "name": "American Family Insurance - Leo Mickeletto Agency, Inc",
+    "phone": "(913) 685-9600",
+    "street_address": "12501 Antioch Rd Ste A",
+    "city": "Overland Park",
+    "zip": "66213",
+    "website": "http://insurance-agency.amfam.com/KS/leo-mickeletto-jr/default.aspx?sourceid=agp0001024161",
+    "source_url": "https://foursquare.com/placemakers/review-place/53515021498e2121ac1db99e",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Tiffany Nyquist - COUNTRY Financial Representative",
+    "phone": "(913) 381-5513",
+    "street_address": "12701 Metcalf Ave",
+    "city": "Overland Park",
+    "zip": "66213",
+    "website": "https://www.countryfinancial.com",
+    "source_url": "https://foursquare.com/placemakers/review-place/ffdad609fb54427a80bd408c",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Liberty Mutual",
+    "phone": "(913) 239-0524",
+    "street_address": "7201 W 129th St",
+    "city": "Overland Park",
+    "zip": "66213",
+    "website": "http://www.libertymutual.com",
+    "source_url": "https://foursquare.com/placemakers/review-place/f83a2711b52f48b134385dd1",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Farmers Insurance",
+    "phone": "(913) 953-8001",
+    "street_address": "12900 Metcalf Ave",
+    "city": "Overland Park",
+    "zip": "66213",
+    "website": "http://www.farmersagent.com/mnorth",
+    "source_url": "https://foursquare.com/placemakers/review-place/564500ba498edf3cd0e15355",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Nationwide Mutual Insurance Company",
+    "phone": "(913) 800-6311",
+    "street_address": "12920 Metcalf Ave",
+    "city": "Overland Park",
+    "zip": "66213",
+    "website": "https://www.nationwide.com",
+    "source_url": "https://foursquare.com/placemakers/review-place/fd0ccb02c84d6c90ea6a42ec",
+    "source": "Foursquare"
+  },
+  {
+    "name": "The Stanley Agency American Family Insurance",
+    "phone": "",
+    "street_address": "12920 Metcalf Ave",
+    "city": "Overland Park",
+    "zip": "66213",
+    "website": null,
+    "source_url": "https://foursquare.com/placemakers/review-place/69405ff865d559314addcf2e",
+    "source": "Foursquare"
+  },
+  {
+    "name": "American Family Insurance - Richard Marks Agency, Inc",
+    "phone": "(913) 681-8886",
+    "street_address": "12920 Metcalf Ave Ste 110",
+    "city": "Overland Park",
+    "zip": "66213",
+    "website": "http://insurance-agency.amfam.com/KS/richard-marks/default.aspx?sourceid=agp0001023684",
+    "source_url": "https://foursquare.com/placemakers/review-place/53515e14498e6a1765d148ea",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Titan Risk Solutions",
+    "phone": "",
+    "street_address": "7301 W 129th St",
+    "city": "Overland Park",
+    "zip": "66213",
+    "website": null,
+    "source_url": "https://foursquare.com/placemakers/review-place/694073a098a16e23d34b2ca5",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Health Insurance In Kansas City",
+    "phone": "(913) 322-1972",
+    "street_address": "12640 W 121st Ter",
+    "city": "Overland Park",
+    "zip": "66213",
+    "website": "http://www.healthinsuranceinkansascity.com",
+    "source_url": "https://foursquare.com/placemakers/review-place/535242c54e0742ab8f2a7000",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Farmers Insurance",
+    "phone": "(913) 681-6565",
+    "street_address": "13200 Metcalf Ave",
+    "city": "Overland Park",
+    "zip": "66213",
+    "website": "http://www.farmersagent.com/rbrown",
+    "source_url": "https://foursquare.com/placemakers/review-place/564500ba498edf3cd0e15342",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Kim Lawson - Humana Agent",
+    "phone": "(913) 274-1993",
+    "street_address": "7311 W 132nd St",
+    "city": "Overland Park",
+    "zip": "66213",
+    "website": "https://medicareagent.humana.com/ks/overland-park/kim-lawson-humana-agent",
+    "source_url": "https://foursquare.com/placemakers/review-place/2610eac9d404470d5f4c312e",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Blue Valley Insurance Agency",
+    "phone": "(913) 451-0020",
+    "street_address": "7311 W 132nd St, Ste 100",
+    "city": "Overland Park",
+    "zip": "66213",
+    "website": "https://www.bvia.com",
+    "source_url": "https://foursquare.com/placemakers/review-place/50536b07e4b0e95b0dd91a1c",
+    "source": "Foursquare"
+  },
+  {
+    "name": "AAA Overland Park Insurance and Member Services",
+    "phone": "(913) 649-2280",
+    "street_address": "7000 W 135th St",
+    "city": "Overland Park",
+    "zip": "66223",
+    "website": "https://www.ace.aaa.com/locations.html?branch=Overland_Park-66212-141",
+    "source_url": "https://foursquare.com/placemakers/review-place/153092877b794188ae9021d5",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Capitol Agency Insurance",
+    "phone": "(913) 652-2317",
+    "street_address": "13500 Metcalf Ave",
+    "city": "Overland Park",
+    "zip": "66223",
+    "website": "https://www.capitolagencyins.com/locations/south-overland-park",
+    "source_url": "https://foursquare.com/placemakers/review-place/7d598c27b672499e90606b15",
+    "source": "Foursquare"
+  },
+  {
+    "name": "John Brouillette - State Farm Insurance Agent",
+    "phone": "(913) 402-8558",
+    "street_address": "12254 W 135th St",
+    "city": "Overland Park",
+    "zip": "66221",
+    "website": "http://www.johnbrouillette.com",
+    "source_url": "https://foursquare.com/placemakers/review-place/4f2b1240e4b0aa4f6be8265c",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Allstate Insurance",
+    "phone": "(913) 851-1499",
+    "street_address": "14221 Metcalf Ave",
+    "city": "Overland Park",
+    "zip": "66223",
+    "website": "http://www.allstate.com",
+    "source_url": "https://foursquare.com/placemakers/review-place/b6bb5aabf0814a988a5fdcaa",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Nationwide",
+    "phone": "(402) 201-6931",
+    "street_address": "6801 W 107th St",
+    "city": "Overland Park",
+    "zip": "66212",
+    "website": "https://www.nationwide.com",
+    "source_url": "https://foursquare.com/placemakers/review-place/919322f230c342199126276e",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Nationwide Mutual Insurance Company",
+    "phone": "(913) 529-1111",
+    "street_address": "14352 Metcalf Ave",
+    "city": "Overland Park",
+    "zip": "66223",
+    "website": "https://www.nationwide.com",
+    "source_url": "https://foursquare.com/placemakers/review-place/ac5ec00f59941884f21323fe",
+    "source": "Foursquare"
+  },
+  {
+    "name": "American Family Insurance - Ronald Shrum",
+    "phone": "(913) 897-5253",
+    "street_address": "7944 W 151st St",
+    "city": "Overland Park",
+    "zip": "66223",
+    "website": "http://insurance-agency.amfam.com/KS/ronald-shrum/default.aspx?sourceid=agp0001023894",
+    "source_url": "https://foursquare.com/placemakers/review-place/53515029498e555c5cf372c0",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Shrum Ron Ins",
+    "phone": "(913) 897-5253",
+    "street_address": "7944 W 151st St",
+    "city": "Overland Park",
+    "zip": "66223",
+    "website": null,
+    "source_url": "https://foursquare.com/placemakers/review-place/ab11ef5af4454e8adb6f7995",
+    "source": "Foursquare"
+  },
+  {
+    "name": "American Family Insurance",
+    "phone": "(913) 563-3804",
+    "street_address": "15060 Antioch Rd",
+    "city": "Overland Park",
+    "zip": "66221",
+    "website": "http://www.amfam.com",
+    "source_url": "https://foursquare.com/placemakers/review-place/8c25832ce591422d49633d86",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Nationwide Mutual Insurance Company",
+    "phone": "(913) 333-0370",
+    "street_address": "7590 W 151st St",
+    "city": "Overland Park",
+    "zip": "66223",
+    "website": "https://www.nationwide.com",
+    "source_url": "https://foursquare.com/placemakers/review-place/651d4ee3d08fbecc84691ac3",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Nationwide",
+    "phone": "(913) 333-0370",
+    "street_address": "7590 W 151st St",
+    "city": "Overland Park",
+    "zip": "66223",
+    "website": "https://www.nationwide.com",
+    "source_url": "https://foursquare.com/placemakers/review-place/ba6ab175ec9045b8ae1bb6bc",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Chad Vanderpol: Allstate Insurance",
+    "phone": "(913) 648-8913",
+    "street_address": "100 E Park St",
+    "city": "Olathe",
+    "zip": "66061",
+    "website": "https://agents.allstate.com/chad-vanderpol-olathe-ks.html",
+    "source_url": "https://foursquare.com/placemakers/review-place/a420b5c919ed45f4b330810a",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Farmers Insurance - Manuel Escobar",
+    "phone": "(913) 248-7790",
+    "street_address": "110 N Cherry St",
+    "city": "Olathe",
+    "zip": "66061",
+    "website": "http://www.farmers.com",
+    "source_url": "https://foursquare.com/placemakers/review-place/232d5da52b004ef49041deb0",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Nationwide",
+    "phone": "(913) 738-9937",
+    "street_address": "430 E Santa Fe St",
+    "city": "Olathe",
+    "zip": "66061",
+    "website": "https://www.nationwide.com",
+    "source_url": "https://foursquare.com/placemakers/review-place/053e78fc0cc040743013ee39",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Freeway Insurance",
+    "phone": "(913) 774-1013",
+    "street_address": "539 E Santa Fe St Ste 2",
+    "city": "Olathe",
+    "zip": "66061",
+    "website": "https://locations.freeway.com/olathe-car-insurance-66061-ks",
+    "source_url": "https://foursquare.com/placemakers/review-place/5acec5bc3abcaf32ccf5603a",
+    "source": "Foursquare"
+  },
+  {
+    "name": "R & S Agency",
+    "phone": "(913) 815-3244",
+    "street_address": "540 E Santa Fe St",
+    "city": "Olathe",
+    "zip": "66061",
+    "website": "http://www.rs-agency.com",
+    "source_url": "https://foursquare.com/placemakers/review-place/a5df835918ee456754608403",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Sheridan Crossing",
+    "phone": "(913) 440-9267",
+    "street_address": "600 S Harrison St",
+    "city": "Olathe",
+    "zip": "66061",
+    "website": "https://www.olathehaciendas.com/amenities.aspx",
+    "source_url": "https://foursquare.com/placemakers/review-place/459f6de1d6a346c491f076b2",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Victor Kim - State Farm Insurance Agent",
+    "phone": "(913) 782-9900",
+    "street_address": "1020 W Santa Fe St",
+    "city": "Olathe",
+    "zip": "66061",
+    "website": "http://www.victorkim.org",
+    "source_url": "https://foursquare.com/placemakers/review-place/4e5418ea1495a46b65c00b0d",
+    "source": "Foursquare"
+  },
+  {
+    "name": "American Family Insurance - Robert Frick",
+    "phone": "(913) 829-1818",
+    "street_address": "110 S Parker St",
+    "city": "Olathe",
+    "zip": "66061",
+    "website": "http://insurance-agency.amfam.com/KS/robert-frick/default.aspx?sourceid=agp0001022572",
+    "source_url": "https://foursquare.com/placemakers/review-place/53515026498ecfbe20781a54",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Sje Agencies",
+    "phone": "(913) 764-6699",
+    "street_address": "1088 W Santa Fe St",
+    "city": "Olathe",
+    "zip": "66061",
+    "website": "http://abiainsurancekc.com",
+    "source_url": "https://foursquare.com/placemakers/review-place/6607a6a74e98406a363c5f27",
+    "source": "Foursquare"
+  },
+  {
+    "name": "The Woody Financial Group",
+    "phone": "(913) 345-1030",
+    "street_address": "14670 S Harrison St",
+    "city": "Olathe",
+    "zip": "66061",
+    "website": "https://agencies.guardianlife.com/midwest/olathe/14670-s-harrison-street",
+    "source_url": "https://foursquare.com/placemakers/review-place/581ad15085518925361f9c66",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Farmers Insurance - Wesley Phillips",
+    "phone": "(913) 586-1613",
+    "street_address": "1231 W Harold St",
+    "city": "Olathe",
+    "zip": "66061",
+    "website": "https://agents.farmers.com/ks/olathe/wesley-phillips",
+    "source_url": "https://foursquare.com/placemakers/review-place/1033da7a0eca4d35e09f3c37",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Farmers Insurance - Misty Schenherr",
+    "phone": "(913) 248-1767",
+    "street_address": "720 S Rogers Rd",
+    "city": "Olathe",
+    "zip": "66062",
+    "website": "http://www.farmers.com",
+    "source_url": "https://foursquare.com/placemakers/review-place/9eb09bd2516d479ff22d17a6",
+    "source": "Foursquare"
+  },
+  {
+    "name": "The Paul Dykes Insurance Agency",
+    "phone": "",
+    "street_address": "405 S Clairborne Rd",
+    "city": "Olathe",
+    "zip": "66062",
+    "website": null,
+    "source_url": "https://foursquare.com/placemakers/review-place/4e9c8ccd2c5b4d6406307105",
+    "source": "Foursquare"
+  },
+  {
+    "name": "The Horace Mann Companies",
+    "phone": "(913) 712-8500",
+    "street_address": "815 S Clairborne Rd",
+    "city": "Olathe",
+    "zip": "66062",
+    "website": "http://horacemann.com",
+    "source_url": "https://foursquare.com/placemakers/review-place/8c0349fee314407b3a6c8af3",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Nationwide",
+    "phone": "(816) 524-6600",
+    "street_address": "1715 E Cedar St",
+    "city": "Olathe",
+    "zip": "66062",
+    "website": "https://www.nationwide.com",
+    "source_url": "https://foursquare.com/placemakers/review-place/d062cddd324aecdccba42e0f",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Nationwide Mutual Insurance Company",
+    "phone": "(816) 765-0450",
+    "street_address": "1715 E Cedar St",
+    "city": "Olathe",
+    "zip": "66062",
+    "website": "https://www.nationwide.com",
+    "source_url": "https://foursquare.com/placemakers/review-place/7e89edd351e9c72d236fb4d1",
+    "source": "Foursquare"
+  },
+  {
+    "name": "J Goodman Insurance Agency",
+    "phone": "(913) 829-0093",
+    "street_address": "1990 E Santa Fe St",
+    "city": "Olathe",
+    "zip": "66062",
+    "website": "http://www.jgoodmaninsurance.com",
+    "source_url": "https://foursquare.com/placemakers/review-place/166d080d1c9a485a14aa567a",
+    "source": "Foursquare"
+  },
+  {
+    "name": "HealthMarkets Insurance - Susan Sundberg",
+    "phone": "(816) 718-9554",
+    "street_address": "1990 E Santa Fe St",
+    "city": "Olathe",
+    "zip": "66062",
+    "website": "http://www.healthmarkets.com/susan.sundberg",
+    "source_url": "https://foursquare.com/placemakers/review-place/c7d7fb8f60334c6b50aa414d",
+    "source": "Foursquare"
+  },
+  {
+    "name": "State Farm Insurance",
+    "phone": "(913) 764-4000",
+    "street_address": "",
+    "city": "Olathe",
+    "zip": "66062",
+    "website": "http://www.statefarm.com",
+    "source_url": "https://foursquare.com/placemakers/review-place/ba57ac726f281358bf83ef2e",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Dave Goodman - State Farm Insurance Agent",
+    "phone": "(913) 764-4000",
+    "street_address": "1990 E Santa Fe, Ste 201",
+    "city": "Olathe",
+    "zip": "66062",
+    "website": "http://www.davegoodman.biz",
+    "source_url": "https://foursquare.com/placemakers/review-place/4eb7f9a5b634a04861376fed",
+    "source": "Foursquare"
+  },
+  {
+    "name": "American Family Insurance - Jim Mitchell Agency, Inc",
+    "phone": "(913) 829-8888",
+    "street_address": "1990 E Santa Fe St Ste 101",
+    "city": "Olathe",
+    "zip": "66062",
+    "website": "http://insurance-agency.amfam.com/KS/james-mitchell-jr/default.aspx?sourceid=agp0001025376",
+    "source_url": "https://foursquare.com/placemakers/review-place/4d8a52257d4c54815ab76671",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Nationwide",
+    "phone": "(913) 661-0466",
+    "street_address": "706 N Lindenwood Dr",
+    "city": "Olathe",
+    "zip": "66062",
+    "website": "https://www.nationwide.com",
+    "source_url": "https://foursquare.com/placemakers/review-place/50c80ed06bee468e9e16768a",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Nationwide Mutual Insurance Company",
+    "phone": "(913) 661-0466",
+    "street_address": "706 N Lindenwood Dr",
+    "city": "Olathe",
+    "zip": "66062",
+    "website": "https://www.nationwide.com",
+    "source_url": "https://foursquare.com/placemakers/review-place/3d3ab8d6283fd5546be03626",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Agency West Insurance",
+    "phone": "(913) 661-0466",
+    "street_address": "706 N Lindenwood Dr",
+    "city": "Olathe",
+    "zip": "66062",
+    "website": "https://www.agencywest-ins.com",
+    "source_url": "https://foursquare.com/placemakers/review-place/284ba08643864d67ecb5dc10",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Nationwide Insurance: Miller & Associates Inc.",
+    "phone": "(913) 469-9400",
+    "street_address": "107 S Mur-Len Rd",
+    "city": "Olathe",
+    "zip": "66062",
+    "website": "https://agency.nationwide.com/rod-miller-in-olathe-ks",
+    "source_url": "https://foursquare.com/placemakers/review-place/52138e113456cd469634c447",
+    "source": "Foursquare"
+  },
+  {
+    "name": "AAA Missouri",
+    "phone": "(913) 764-5300",
+    "street_address": "113 S Mur-Len Rd",
+    "city": "Olathe",
+    "zip": "66062",
+    "website": "http://www.aaa.com",
+    "source_url": "https://foursquare.com/placemakers/review-place/4e2af883bd41be4b161a6554",
+    "source": "Foursquare"
+  },
+  {
+    "name": "AAA Olathe Insurance and Member Services",
+    "phone": "(913) 764-5300",
+    "street_address": "113 S Mur Len Rd",
+    "city": "Olathe",
+    "zip": "66062",
+    "website": "https://www.ace.aaa.com/locations.html?branch=Olathe-66062-178",
+    "source_url": "https://foursquare.com/placemakers/review-place/4156c29f56694c14fdfbbe7d",
+    "source": "Foursquare"
+  },
+  {
+    "name": "AAA Insurance - Jim Glano",
+    "phone": "(913) 764-5300",
+    "street_address": "113 S Mur Len Rd",
+    "city": "Olathe",
+    "zip": "66062",
+    "website": "https://www.agentsview.com",
+    "source_url": "https://foursquare.com/placemakers/review-place/e6302bf9f11245db134148f5",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Nationwide Mutual Insurance Company",
+    "phone": "(913) 469-9400",
+    "street_address": "107 S Mur Len Rd",
+    "city": "Olathe",
+    "zip": "66062",
+    "website": "https://www.nationwide.com",
+    "source_url": "https://foursquare.com/placemakers/review-place/f4dfe1a3a18843c170ff432b",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Smith Ins Group",
+    "phone": "(913) 747-9259",
+    "street_address": "509 N Mur Len Rd",
+    "city": "Olathe",
+    "zip": "66062",
+    "website": "http://www.encompassinsurance.com/independent-insurance-agent/AgentList.aspx",
+    "source_url": "https://foursquare.com/placemakers/review-place/bc10b1aeb9894f18ded64fcc",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Nationwide Mutual Insurance Company",
+    "phone": "(913) 782-1404",
+    "street_address": "523 N Mur Len Rd",
+    "city": "Olathe",
+    "zip": "66062",
+    "website": "https://www.nationwide.com",
+    "source_url": "https://foursquare.com/placemakers/review-place/0783543375d31d59d7b3f201",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Jason Parker - State Farm Insurance Agent",
+    "phone": "(913) 764-0555",
+    "street_address": "13095 S Murlen Rd,Ste 180",
+    "city": "Olathe",
+    "zip": "66062",
+    "website": "http://www.jasonparker.biz",
+    "source_url": "https://foursquare.com/placemakers/review-place/50c6232d90e732743b102e93",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Farmers Insurance - Darien Lame",
+    "phone": "(913) 586-0020",
+    "street_address": "13401 S Mur Len Rd",
+    "city": "Olathe",
+    "zip": "66062",
+    "website": "http://www.farmers.com",
+    "source_url": "https://foursquare.com/placemakers/review-place/49f14ccf875d49cc94ce4d2f",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Farmers Insurance - Brent Jackson",
+    "phone": "(913) 286-1550",
+    "street_address": "1817 S Ridgeview Rd",
+    "city": "Olathe",
+    "zip": "66062",
+    "website": "http://www.farmers.com",
+    "source_url": "https://foursquare.com/placemakers/review-place/b960351af79a4e4255a72623",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Farmers Insurance - Richard Balistreri",
+    "phone": "(913) 782-1818",
+    "street_address": "601 N Mur Len Rd",
+    "city": "Olathe",
+    "zip": "66062",
+    "website": "http://www.farmers.com",
+    "source_url": "https://foursquare.com/placemakers/review-place/cdc3f2f79f8f41baa05d0123",
+    "source": "Foursquare"
+  },
+  {
+    "name": "John Booth - State Farm Insurance Agent",
+    "phone": "(913) 782-4418",
+    "street_address": "1821 S Ridgeview Rd",
+    "city": "Olathe",
+    "zip": "66062",
+    "website": "http://www.johngbooth.com",
+    "source_url": "https://foursquare.com/placemakers/review-place/521b3f5211d2a62f0c065861",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Farmers Insurance",
+    "phone": "(913) 829-8101",
+    "street_address": "14115 S Mur Len Rd",
+    "city": "Olathe",
+    "zip": "66062",
+    "website": "http://www.farmersagent.com/nhook",
+    "source_url": "https://foursquare.com/placemakers/review-place/564500ba498edf3cd0e152ed",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Farmers Insurance - Douglas Lott",
+    "phone": "(913) 829-0357",
+    "street_address": "14115 S Mur Len Rd",
+    "city": "Olathe",
+    "zip": "66062",
+    "website": "http://www.farmers.com",
+    "source_url": "https://foursquare.com/placemakers/review-place/450ef7b98e444704fb8bf908",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Shelter Insurance - Scott Niebuhr Agency",
+    "phone": "(913) 438-4057",
+    "street_address": "14159 S Mur Len Rd",
+    "city": "Olathe",
+    "zip": "66062",
+    "website": null,
+    "source_url": "https://foursquare.com/placemakers/review-place/f084454bc008441f285a101c",
+    "source": "Foursquare"
+  },
+  {
+    "name": "American Family Insurance - Franklin Tyrer",
+    "phone": "(913) 829-8282",
+    "street_address": "14201 S Mur Len Rd Ste 102",
+    "city": "Olathe",
+    "zip": "66062",
+    "website": "http://insurance-agency.amfam.com/KS/franklin-tyrer/default.aspx?sourceid=agp0001024109",
+    "source_url": "https://foursquare.com/placemakers/review-place/5352bdef498ebc0e7dd0a634",
+    "source": "Foursquare"
+  },
+  {
+    "name": "American Family Insurance - Dustin Brown",
+    "phone": "(913) 829-7007",
+    "street_address": "801 N Mur-Len Rd Ste 106",
+    "city": "Olathe",
+    "zip": "66062",
+    "website": "http://insurance-agency.amfam.com/KS/dustin-brown/default.aspx?sourceid=agp0001053514",
+    "source_url": "https://foursquare.com/placemakers/review-place/4ced2065b80da093b71c2000",
+    "source": "Foursquare"
+  },
+  {
+    "name": "American Family Insurance - Jeff Harville Agency Inc.",
+    "phone": "(913) 829-7007",
+    "street_address": "801 N Mur Len Rd, Ste 106",
+    "city": "Olathe",
+    "zip": "66062",
+    "website": "http://insurance-agency.amfam.com/KS/jeffrey-harville/default.aspx",
+    "source_url": "https://foursquare.com/placemakers/review-place/5352bded11d20c751e27f0c7",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Movement Mortgage - Lisa Lee,653842",
+    "phone": "(913) 406-5476",
+    "street_address": "13651 S Mur Len Rd",
+    "city": "Olathe",
+    "zip": "66062",
+    "website": "http://www.movement.com/lisa.lee",
+    "source_url": "https://foursquare.com/placemakers/review-place/36c0daff06454fd8ffa5cbb4",
+    "source": "Foursquare"
+  },
+  {
+    "name": "State Farm Insurance",
+    "phone": "(913) 782-3310",
+    "street_address": "13095 S Mur Len Rd",
+    "city": "Olathe",
+    "zip": "66062",
+    "website": "http://www.statefarm.com",
+    "source_url": "https://foursquare.com/placemakers/review-place/0143d13d846a4b513180abd4",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Harlan Parker - State Farm Insurance Agent",
+    "phone": "(913) 782-3310",
+    "street_address": "13095 S Mur Len Rd Ste 180",
+    "city": "Olathe",
+    "zip": "66062",
+    "website": "http://www.harlanparker.com",
+    "source_url": "https://foursquare.com/placemakers/review-place/4c0bb20cdb369c74f6d391ea",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Nationwide Mutual Insurance Company",
+    "phone": "(913) 829-7711",
+    "street_address": "13025 S Mur Len Rd",
+    "city": "Olathe",
+    "zip": "66062",
+    "website": "https://www.nationwide.com",
+    "source_url": "https://foursquare.com/placemakers/review-place/bfe5de635dd064f9a4b5ef11",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Rich & Cartmill",
+    "phone": "(913) 764-0952",
+    "street_address": "13025 S Mur Len Rd",
+    "city": "Olathe",
+    "zip": "66062",
+    "website": "https://www.rcins.com/contact",
+    "source_url": "https://foursquare.com/placemakers/review-place/c793efb3f207483987139dce",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Nationwide",
+    "phone": "(913) 829-7711",
+    "street_address": "13025 S Mur Len Rd",
+    "city": "Olathe",
+    "zip": "66062",
+    "website": "https://www.nationwide.com",
+    "source_url": "https://foursquare.com/placemakers/review-place/5f162277316e4d082d983c26",
+    "source": "Foursquare"
+  },
+  {
+    "name": "HealthMarkets Insurance - Laura Shipman",
+    "phone": "(913) 707-6096",
+    "street_address": "20160 W 117th Ter",
+    "city": "Olathe",
+    "zip": "66061",
+    "website": "http://agents.healthmarkets.com/laura.shipman",
+    "source_url": "https://foursquare.com/placemakers/review-place/89c71e1fbbc446607b382125",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Tony Reinhart: Allstate Insurance",
+    "phone": "(913) 764-1590",
+    "street_address": "12755 S Mur Len Rd #B8",
+    "city": "Olathe",
+    "zip": "66062",
+    "website": "https://agents.allstate.com/tony-reinhart-olathe-ks.html",
+    "source_url": "https://foursquare.com/placemakers/review-place/559a95f0498eaf75949ebcdf",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Alternative Claims Service",
+    "phone": "(800) 354-5732",
+    "street_address": "15665 S Mahaffie St",
+    "city": "Olathe",
+    "zip": "66062",
+    "website": "https://www.alternativeclaims.com/about",
+    "source_url": "https://foursquare.com/placemakers/review-place/6f00af63b1724fa6cb3e1f01",
+    "source": "Foursquare"
+  },
+  {
+    "name": "TCG Insurance Solutions",
+    "phone": "(913) 390-3220",
+    "street_address": "15829 Indian Creek Pkwy",
+    "city": "Olathe",
+    "zip": "66062",
+    "website": "http://www.tcgsolutions.us",
+    "source_url": "https://foursquare.com/placemakers/review-place/8f9f09fcbf6f49bffdde42c9",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Debbie Swinney - State Farm Insurance Agent",
+    "phone": "",
+    "street_address": "2099 E 151st St",
+    "city": "Olathe",
+    "zip": "66062",
+    "website": null,
+    "source_url": "https://foursquare.com/placemakers/review-place/6940717698a16e23d344f7c2",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Nationwide",
+    "phone": "(913) 444-9058",
+    "street_address": "15661 W 138th St",
+    "city": "Olathe",
+    "zip": "66062",
+    "website": "https://www.nationwide.com",
+    "source_url": "https://foursquare.com/placemakers/review-place/a06e0a2621dc4446129b86f6",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Nationwide Mutual Insurance Company",
+    "phone": "(913) 444-9058",
+    "street_address": "15661 W 138th St",
+    "city": "Olathe",
+    "zip": "66062",
+    "website": "https://www.nationwide.com",
+    "source_url": "https://foursquare.com/placemakers/review-place/6683456cd9eb8e1240791f35",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Nationwide",
+    "phone": "(913) 839-1478",
+    "street_address": "2143 E 151st St",
+    "city": "Olathe",
+    "zip": "66062",
+    "website": "https://www.nationwide.com",
+    "source_url": "https://foursquare.com/placemakers/review-place/4e8244b3ea5a4c604a516218",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Nationwide Mutual Insurance Company",
+    "phone": "(913) 839-1478",
+    "street_address": "2143 E 151st St",
+    "city": "Olathe",
+    "zip": "66062",
+    "website": "https://www.nationwide.com",
+    "source_url": "https://foursquare.com/placemakers/review-place/b204af3393ce40aeeccca95b",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Auto Home Insurance Group",
+    "phone": "(913) 839-1478",
+    "street_address": "2143 E 151st St",
+    "city": "Olathe",
+    "zip": "66062",
+    "website": "https://www.autohomekc.com",
+    "source_url": "https://foursquare.com/placemakers/review-place/5e2b247017ff640008ee710f",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Nationwide Mutual Insurance Company",
+    "phone": "(913) 735-0110",
+    "street_address": "24107 W 124th Ter",
+    "city": "Olathe",
+    "zip": "66061",
+    "website": "https://www.nationwide.com",
+    "source_url": "https://foursquare.com/placemakers/review-place/2d51a8c72d65d8da3957550e",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Nationwide",
+    "phone": "(913) 735-0110",
+    "street_address": "24107 W 124th Ter",
+    "city": "Olathe",
+    "zip": "66061",
+    "website": "https://www.nationwide.com",
+    "source_url": "https://foursquare.com/placemakers/review-place/77bab1262819432003b2d155",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Nationwide",
+    "phone": "(816) 765-0450",
+    "street_address": "18993 W 158th St",
+    "city": "Olathe",
+    "zip": "66062",
+    "website": "https://www.nationwide.com",
+    "source_url": "https://foursquare.com/placemakers/review-place/43adfe1d636d45c871909c3b",
+    "source": "Foursquare"
+  },
+  {
+    "name": "AIG Domestic Claims",
+    "phone": "(913) 495-3311",
+    "street_address": "17200 W 119th St",
+    "city": "Olathe",
+    "zip": "66061",
+    "website": "https://www.aig.com/individual/individual-claims",
+    "source_url": "https://foursquare.com/placemakers/review-place/b91e5ba4efb54e7791a688d8",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Farmers Insurance - G Steven Kohnle",
+    "phone": "(913) 871-4040",
+    "street_address": "16567 W 151st St",
+    "city": "Olathe",
+    "zip": "66062",
+    "website": "http://www.farmers.com",
+    "source_url": "https://foursquare.com/placemakers/review-place/e690d9068b6f4eeb8063fc69",
+    "source": "Foursquare"
+  },
+  {
+    "name": "SR22 Structures Of Olathe",
+    "phone": "(913) 270-2354",
+    "street_address": "17150 W 118th Ter",
+    "city": "Olathe",
+    "zip": "66061",
+    "website": null,
+    "source_url": "https://foursquare.com/placemakers/review-place/638f833949a6db4a832ea8a0",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Christin Black - State Farm Insurance Agent",
+    "phone": "(913) 780-3000",
+    "street_address": "11690 Renner Rd",
+    "city": "Olathe",
+    "zip": "66061",
+    "website": "https://www.statefarm.com/agent/us/ks/olathe/christin-black-dcfy15092al",
+    "source_url": "https://foursquare.com/placemakers/review-place/53064361498e5650138fff29",
+    "source": "Foursquare"
+  },
+  {
+    "name": "American Senior Benefits",
+    "phone": "(913) 815-3475",
+    "street_address": "12722 S Blackbob Rd",
+    "city": "Olathe",
+    "zip": "66062",
+    "website": "http://www.americanseniorbenefits.com",
+    "source_url": "https://foursquare.com/placemakers/review-place/20409079c4064cdcd577112b",
+    "source": "Foursquare"
+  },
+  {
+    "name": "HealthMarkets Insurance - Keaton Suellentrop",
+    "phone": "(913) 593-8439",
+    "street_address": "16371 S Brentwood St",
+    "city": "Olathe",
+    "zip": "66062",
+    "website": null,
+    "source_url": "https://foursquare.com/placemakers/review-place/95a40c12f6354e0095f5b536",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Jason M. Park: Allstate Insurance",
+    "phone": "(913) 829-2700",
+    "street_address": "14323 W 135th St Olathe",
+    "city": "Olathe",
+    "zip": "66062",
+    "website": "https://agents.allstate.com/jason-m-park-olathe-ks.html",
+    "source_url": "https://foursquare.com/placemakers/review-place/5e15f6228f89f400080e751b",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Jim Martin - State Farm Insurance Agent",
+    "phone": "(913) 764-1000",
+    "street_address": "16037 S Bradley Dr",
+    "city": "Olathe",
+    "zip": "66062",
+    "website": "https://www.calljimmartin.com",
+    "source_url": "https://foursquare.com/placemakers/review-place/56ab0dcb498ee7b0f6f8edd5",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Farmers Insurance - Anthony Sidoti",
+    "phone": "(913) 270-5400",
+    "street_address": "16069 S Bradley Dr",
+    "city": "Olathe",
+    "zip": "66062",
+    "website": "http://www.farmers.com",
+    "source_url": "https://foursquare.com/placemakers/review-place/0249ad8554184f6ce418f9fe",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Absolute Insurance Group",
+    "phone": "(913) 851-2886",
+    "street_address": "14106 W 135th St",
+    "city": "Olathe",
+    "zip": "66062",
+    "website": "https://www.absoluteinsgroup.com",
+    "source_url": "https://foursquare.com/placemakers/review-place/540ac058498e234757ac15d5",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Nationwide",
+    "phone": "(913) 764-1960",
+    "street_address": "14106 W 135th St",
+    "city": "Olathe",
+    "zip": "66062",
+    "website": "https://www.nationwide.com",
+    "source_url": "https://foursquare.com/placemakers/review-place/30fac982038d47c15aa9719c",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Nationwide Mutual Insurance Company",
+    "phone": "(913) 764-1960",
+    "street_address": "14106 W 135th St",
+    "city": "Olathe",
+    "zip": "66062",
+    "website": "https://www.nationwide.com",
+    "source_url": "https://foursquare.com/placemakers/review-place/2c892b468483a1bb2ee5dff9",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Farmers Insurance - Bridget Duffy-Hays",
+    "phone": "(913) 526-6315",
+    "street_address": "23600 College Blvd",
+    "city": "Olathe",
+    "zip": "66061",
+    "website": "http://www.farmers.com",
+    "source_url": "https://foursquare.com/placemakers/review-place/e6bbd5d8a69d426c38612d9f",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Country Financial",
+    "phone": "(913) 397-0107",
+    "street_address": "23600 College Blvd",
+    "city": "Olathe",
+    "zip": "66061",
+    "website": "https://www.countryfinancial.com",
+    "source_url": "https://foursquare.com/placemakers/review-place/602bd261c4d9435bd4051538",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Michael Losik IV - COUNTRY Financial representative",
+    "phone": "(913) 397-0103",
+    "street_address": "23600 College Blvd Ste 200",
+    "city": "Olathe",
+    "zip": "66061",
+    "website": "https://representatives.countryfinancial.com/michael.losik",
+    "source_url": "https://foursquare.com/placemakers/review-place/5b217ec48fb09e002ca52967",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Alex Hartnett - COUNTRY Financial representative",
+    "phone": "(913) 397-0103",
+    "street_address": "23600 College Blvd Ste 200",
+    "city": "Olathe",
+    "zip": "66061",
+    "website": "https://representatives.countryfinancial.com/alex.hartnett",
+    "source_url": "https://foursquare.com/placemakers/review-place/59f0fe0265cdf85eb41c32a3",
+    "source": "Foursquare"
+  },
+  {
+    "name": "COUNTRY Financial \u00ae Kathy Anstaett",
+    "phone": "(913) 397-0103",
+    "street_address": "23600 College Blvd",
+    "city": "Olathe",
+    "zip": "66061",
+    "website": "http://www.countryfinancial.com/kathy.anstaett",
+    "source_url": "https://foursquare.com/placemakers/review-place/92f42fc4eac34e91c2355f96",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Rick Krapes - COUNTRY Financial representative",
+    "phone": "(913) 397-0103",
+    "street_address": "23600 College Blvd Ste 200",
+    "city": "Olathe",
+    "zip": "66061",
+    "website": "https://representatives.countryfinancial.com/rick.krapes",
+    "source_url": "https://foursquare.com/placemakers/review-place/583c9a4692ca4c579af88a43",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Farmers Insurance - Greg Mosley",
+    "phone": "(913) 225-7995",
+    "street_address": "14014 W 135th St",
+    "city": "Olathe",
+    "zip": "66062",
+    "website": "http://www.farmers.com",
+    "source_url": "https://foursquare.com/placemakers/review-place/2c3e5ec23d204020f91c70d8",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Kevin J Hale - State Farm Insurance Agent",
+    "phone": "(913) 764-1870",
+    "street_address": "15024 W 117th St",
+    "city": "Olathe",
+    "zip": "66062",
+    "website": "http://www.kalebhale.com",
+    "source_url": "https://foursquare.com/placemakers/review-place/5242129a11d2cfbe6a0a6542",
+    "source": "Foursquare"
+  },
+  {
+    "name": "State Farm Insurance",
+    "phone": "(913) 764-1870",
+    "street_address": "15024 W 117th St",
+    "city": "Olathe",
+    "zip": "66062",
+    "website": "http://www.statefarm.com",
+    "source_url": "https://foursquare.com/placemakers/review-place/7bb2c071e4b1400b55d1b5d0",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Goodman Gravley Insurance Source",
+    "phone": "(913) 782-1404",
+    "street_address": "14812 W. 117th St",
+    "city": "Olathe",
+    "zip": "66062",
+    "website": "https://ggisource.com",
+    "source_url": "https://foursquare.com/placemakers/review-place/4ba78863f964a5202c9b39e3",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Nationwide",
+    "phone": "(913) 782-1404",
+    "street_address": "14812 W 117th St",
+    "city": "Olathe",
+    "zip": "66062",
+    "website": "https://www.nationwide.com",
+    "source_url": "https://foursquare.com/placemakers/review-place/a5b40a2b976b4a53af5de686",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Altress insurance service",
+    "phone": "(877) 767-2314",
+    "street_address": "13761 W 149th St",
+    "city": "Olathe",
+    "zip": "66062",
+    "website": "https://altressins.com",
+    "source_url": "https://foursquare.com/placemakers/review-place/5b6894a1ad910e0039ebd4b3",
+    "source": "Foursquare"
+  },
+  {
+    "name": "American Family Insurance - Vince O Halloran Agency, Inc",
+    "phone": "(913) 782-3035",
+    "street_address": "12740 S Pflumm Rd",
+    "city": "Olathe",
+    "zip": "66062",
+    "website": "http://insurance-agency.amfam.com/KS/vince-ohalloran/default.aspx?sourceid=agp0001024348",
+    "source_url": "https://foursquare.com/placemakers/review-place/4d814a7c6fd1d7cebf021178",
+    "source": "Foursquare"
+  },
+  {
+    "name": "American Family Insurance",
+    "phone": "(913) 782-3035",
+    "street_address": "12740 S Pflumm Rd",
+    "city": "Olathe",
+    "zip": "66062",
+    "website": "http://www.amfam.com",
+    "source_url": "https://foursquare.com/placemakers/review-place/38d204f2454f4b3243c33d56",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Criswell & Wyatt",
+    "phone": "(913) 390-9111",
+    "street_address": "25255 W 102nd Ter",
+    "city": "Olathe",
+    "zip": "66061",
+    "website": "http://www.criswellwyatt.com",
+    "source_url": "https://foursquare.com/placemakers/review-place/6ab7cdecfe9b4be4cf430cb2",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Nationwide",
+    "phone": "(913) 553-6229",
+    "street_address": "11730 W Harmony Ln",
+    "city": "Olathe",
+    "zip": "66062",
+    "website": "https://www.nationwide.com",
+    "source_url": "https://foursquare.com/placemakers/review-place/a04659c6f8b14d1ba509e634",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Nationwide Mutual Insurance Company",
+    "phone": "(913) 553-6229",
+    "street_address": "11730 W Harmony Ln",
+    "city": "Olathe",
+    "zip": "66062",
+    "website": "https://www.nationwide.com",
+    "source_url": "https://foursquare.com/placemakers/review-place/18ef29bef3f5914eeaf18bcc",
+    "source": "Foursquare"
+  },
+  {
+    "name": "AAA Missouri",
+    "phone": "(913) 631-1700",
+    "street_address": "6445 Nieman Rd",
+    "city": "Shawnee",
+    "zip": "66203",
+    "website": "http://www.aaa.com",
+    "source_url": "https://foursquare.com/placemakers/review-place/4e2af883bd41be4b161a6553",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Garrett Bob Insurance",
+    "phone": "(913) 631-8269",
+    "street_address": "5703 Nieman Rd",
+    "city": "Shawnee",
+    "zip": "66203",
+    "website": "http://www.safeco.com",
+    "source_url": "https://foursquare.com/placemakers/review-place/4ffee08fda7a4c49317350bb",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Nationwide",
+    "phone": "(913) 268-5000",
+    "street_address": "11211 Johnson Dr",
+    "city": "Shawnee",
+    "zip": "66203",
+    "website": "https://www.nationwide.com",
+    "source_url": "https://foursquare.com/placemakers/review-place/79785bdd3bd243412d245f0b",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Mitzi Ryburn - State Farm Insurance Agent",
+    "phone": "(913) 631-0201",
+    "street_address": "10818 Johnson Dr",
+    "city": "Shawnee",
+    "zip": "66203",
+    "website": "https://www.mitziinsures.com",
+    "source_url": "https://foursquare.com/placemakers/review-place/54da640d498eb05682865454",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Shelter Insurance",
+    "phone": "",
+    "street_address": "11005 W 60th St Ste 300",
+    "city": "Shawnee",
+    "zip": "66203",
+    "website": null,
+    "source_url": "https://foursquare.com/placemakers/review-place/65aec9bef05a952468ce5f6b",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Jim Allen - State Farm Insurance Agent",
+    "phone": "(913) 631-4600",
+    "street_address": "6011 Nieman Rd, Ste 1",
+    "city": "Shawnee",
+    "zip": "66203",
+    "website": "https://www.statefarm.com/agent/US/KS/Shawnee/Jim-Allen-9SG9Q1YS000",
+    "source_url": "https://foursquare.com/placemakers/review-place/4c1112e2ce640f47e5ed3a52",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Richard Gray Jr - State Farm Insurance Agent",
+    "phone": "(913) 631-2620",
+    "street_address": "6011 Nieman Rd, Ste 2",
+    "city": "Shawnee",
+    "zip": "66203",
+    "website": "http://www.richardcgray.com",
+    "source_url": "https://foursquare.com/placemakers/review-place/5218ef0f11d2aa6ec909e777",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Mark Elling - State Farm Insurance Agent",
+    "phone": "(913) 631-9006",
+    "street_address": "6011 Nieman Rd Ste 1",
+    "city": "Shawnee",
+    "zip": "66203",
+    "website": "https://www.markelling.com",
+    "source_url": "https://foursquare.com/placemakers/review-place/5c13fd6a60255e002c80648c",
+    "source": "Foursquare"
+  },
+  {
+    "name": "American Family Insurance - Michael Pfautsch",
+    "phone": "(913) 631-3199",
+    "street_address": "6100 Nieman Rd Ste 103",
+    "city": "Shawnee",
+    "zip": "66203",
+    "website": "http://insurance-agency.amfam.com/KS/michael-pfautsch/default.aspx?sourceid=agp0001023926",
+    "source_url": "https://foursquare.com/placemakers/review-place/5352b0e5498e68ed1e935a3c",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Kurt Sumrall: Allstate Insurance",
+    "phone": "(913) 322-7785",
+    "street_address": "6100 Nieman Rd Ste 103",
+    "city": "Shawnee",
+    "zip": "66203",
+    "website": "https://agents.allstate.com/kurt-sumrall-shawnee-ks.html",
+    "source_url": "https://foursquare.com/placemakers/review-place/602265e91e14fe05c81f9859",
+    "source": "Foursquare"
+  },
+  {
+    "name": "SR22 System Experts Of Wyandotte",
+    "phone": "(913) 871-5795",
+    "street_address": "6115 Nieman Rd",
+    "city": "Shawnee",
+    "zip": "66203",
+    "website": null,
+    "source_url": "https://foursquare.com/placemakers/review-place/638f431b027a5f1749829136",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Pat Lyles - State Farm Insurance Agent",
+    "phone": "(913) 631-4770",
+    "street_address": "11954 W 63 St",
+    "city": "Shawnee",
+    "zip": "66216",
+    "website": "http://www.patlyles.net",
+    "source_url": "https://foursquare.com/placemakers/review-place/521686e311d2ab09232df47b",
+    "source": "Foursquare"
+  },
+  {
+    "name": "American Family Insurance - Kevin L. Clouse",
+    "phone": "(913) 962-1484",
+    "street_address": "12402 W 62nd Ter",
+    "city": "Shawnee",
+    "zip": "66216",
+    "website": "http://insurance-agency.amfam.com/KS/kevin-clouse/default.aspx",
+    "source_url": "https://foursquare.com/placemakers/review-place/5352bdf9498e75e2ec55e1c8",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Nationwide Insurance: Estal Insurance and Financial Services Inc",
+    "phone": "(913) 322-3388",
+    "street_address": "6208 Richards Dr",
+    "city": "Shawnee",
+    "zip": "66216",
+    "website": "http://t.co/4eDIQ4ptQn",
+    "source_url": "https://foursquare.com/placemakers/review-place/4ea06eef4901ba7e0d1b0c1e",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Farmers Insurance - Rudolph Rodriguez",
+    "phone": "(913) 906-0018",
+    "street_address": "10503 Shawnee Mission Pkwy",
+    "city": "Shawnee",
+    "zip": "66203",
+    "website": "http://www.farmers.com",
+    "source_url": "https://foursquare.com/placemakers/review-place/0653b7c8ea824c2fcf9da554",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Farmers Insurance",
+    "phone": "(913) 906-0018",
+    "street_address": "10503 Shawnee Mission Pkwy",
+    "city": "Shawnee",
+    "zip": "66203",
+    "website": "http://www.farmersagent.com/rrodriguez6",
+    "source_url": "https://foursquare.com/placemakers/review-place/564500ba498edf3cd0e1530b",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Jurado Agency",
+    "phone": "",
+    "street_address": "6339 Long Ave",
+    "city": "Shawnee",
+    "zip": "66216",
+    "website": null,
+    "source_url": "https://foursquare.com/placemakers/review-place/69407aec98a16e23d36229e1",
+    "source": "Foursquare"
+  },
+  {
+    "name": "John Wills - State Farm Insurance Agent",
+    "phone": "(913) 631-9007",
+    "street_address": "6339 Long Ave Ste A",
+    "city": "Shawnee",
+    "zip": "66216",
+    "website": "http://www.statefarm.com",
+    "source_url": "https://foursquare.com/placemakers/review-place/1eaea08e6ba140cca4359ab0",
+    "source": "Foursquare"
+  },
+  {
+    "name": "American Family Insurance",
+    "phone": "(913) 962-1484",
+    "street_address": "6342 Long Ave",
+    "city": "Shawnee",
+    "zip": "66216",
+    "website": "http://www.amfam.com",
+    "source_url": "https://foursquare.com/placemakers/review-place/4ff28f6d914a45bed056f57d",
+    "source": "Foursquare"
+  },
+  {
+    "name": "AAA Shawnee Insurance and Member Services",
+    "phone": "(913) 631-1700",
+    "street_address": "6445 Nieman Rd",
+    "city": "Shawnee",
+    "zip": "66203",
+    "website": "https://www.ace.aaa.com/locations.html?branch=Shawnee-66203-188",
+    "source_url": "https://foursquare.com/placemakers/review-place/7f634303bfbb4f95b5a726c1",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Farmers Insurance",
+    "phone": "(913) 601-4055",
+    "street_address": "13432 W 62nd Ter",
+    "city": "Shawnee",
+    "zip": "66216",
+    "website": "http://www.farmersagent.com/jadams1",
+    "source_url": "https://foursquare.com/placemakers/review-place/564500ba498edf3cd0e1536c",
+    "source": "Foursquare"
+  },
+  {
+    "name": "State Farm Insurance",
+    "phone": "(913) 648-1100",
+    "street_address": "13139 Shawnee Mission Pkwy",
+    "city": "Shawnee",
+    "zip": "66216",
+    "website": "http://www.statefarm.com",
+    "source_url": "https://foursquare.com/placemakers/review-place/cc0f28b49f374cca92bde8cf",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Nationwide",
+    "phone": "(913) 396-6320",
+    "street_address": "14406 W 65th Ter",
+    "city": "Shawnee",
+    "zip": "66216",
+    "website": "https://www.nationwide.com",
+    "source_url": "https://foursquare.com/placemakers/review-place/d58a7c5ab8064cde2ba2e868",
+    "source": "Foursquare"
+  },
+  {
+    "name": "American Family Insurance - Brad Henry",
+    "phone": "(913) 268-3000",
+    "street_address": "15100 W 67th St Ste 201",
+    "city": "Shawnee",
+    "zip": "66217",
+    "website": "http://insurance-agency.amfam.com/KS/brad-henry/default.aspx?sourceid=agp0001035107",
+    "source_url": "https://foursquare.com/placemakers/review-place/5352937d498eafc3c7f67fa4",
+    "source": "Foursquare"
+  },
+  {
+    "name": "American Family Insurance - Jennifer Williamson",
+    "phone": "(913) 541-1400",
+    "street_address": "15100 W 67th St Ste 201",
+    "city": "Shawnee",
+    "zip": "66217",
+    "website": "https://agent.amfam.com/ks/shawnee/jennifer-williamson/",
+    "source_url": "https://foursquare.com/placemakers/review-place/5352b0da498e96ab88b19375",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Commercial & Personal Insurance Agency",
+    "phone": "(913) 906-9511",
+    "street_address": "11503 W 75th St",
+    "city": "Shawnee",
+    "zip": "66214",
+    "website": "http://www.cnpins.com",
+    "source_url": "https://foursquare.com/placemakers/review-place/57fbeb540dec4540a1fecf86",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Nationwide Mutual Insurance Company",
+    "phone": "(913) 906-9511",
+    "street_address": "11503 W 75th St",
+    "city": "Shawnee",
+    "zip": "66214",
+    "website": "https://www.nationwide.com",
+    "source_url": "https://foursquare.com/placemakers/review-place/b4dbd0788e49bf66074c6e7a",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Nationwide",
+    "phone": "(913) 906-9511",
+    "street_address": "11503 W 75th St",
+    "city": "Shawnee",
+    "zip": "66214",
+    "website": "https://www.nationwide.com",
+    "source_url": "https://foursquare.com/placemakers/review-place/c9c40b4276ad46b47685a568",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Charles W Schlatter",
+    "phone": "",
+    "street_address": "11503 W 75th St",
+    "city": "Overland Park",
+    "zip": "66214",
+    "website": null,
+    "source_url": "https://foursquare.com/placemakers/review-place/6940608c65d559314ae0170a",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Nationwide Mutual Insurance Company",
+    "phone": "(913) 271-3336",
+    "street_address": "7451 Switzer Rd",
+    "city": "Shawnee",
+    "zip": "66203",
+    "website": "https://www.nationwide.com",
+    "source_url": "https://foursquare.com/placemakers/review-place/04541eea79a7a840a0974a7c",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Nationwide",
+    "phone": "(913) 271-3336",
+    "street_address": "7451 Switzer Rd",
+    "city": "Shawnee",
+    "zip": "66203",
+    "website": "https://www.nationwide.com",
+    "source_url": "https://foursquare.com/placemakers/review-place/3d168412dcc562401aaa9e82",
+    "source": "Foursquare"
+  },
+  {
+    "name": "AAA Missouri",
+    "phone": "(913) 248-1627",
+    "street_address": "15810 Shawnee Mission Pkwy",
+    "city": "Shawnee",
+    "zip": "66217",
+    "website": "http://www.aaa.com",
+    "source_url": "https://foursquare.com/placemakers/review-place/589987dd00841a27d71a1008",
+    "source": "Foursquare"
+  },
+  {
+    "name": "AAA Shawnee Insurance and Member Services",
+    "phone": "(913) 248-1627",
+    "street_address": "15810 Shawnee Mission Pkwy",
+    "city": "Shawnee",
+    "zip": "66217",
+    "website": "https://www.ace.aaa.com/locations.html?branch=Shawnee-66217-142",
+    "source_url": "https://foursquare.com/placemakers/review-place/778fedef241f4771766f6d7d",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Nationwide Mutual Insurance Company",
+    "phone": "(913) 248-0049",
+    "street_address": "16613 Midland Dr",
+    "city": "Shawnee",
+    "zip": "66217",
+    "website": "https://www.nationwide.com",
+    "source_url": "https://foursquare.com/placemakers/review-place/ba72892e55b91ad364e7ca4a",
+    "source": "Foursquare"
+  },
+  {
+    "name": "State Farm Insurance",
+    "phone": "(913) 631-4770",
+    "street_address": "16629 Midland Dr",
+    "city": "Shawnee",
+    "zip": "66217",
+    "website": "http://www.statefarm.com",
+    "source_url": "https://foursquare.com/placemakers/review-place/5bab450c2c7b4307cc919f0f",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Nationwide",
+    "phone": "(913) 248-0049",
+    "street_address": "16613 Midland Dr",
+    "city": "Shawnee",
+    "zip": "66217",
+    "website": "https://www.nationwide.com",
+    "source_url": "https://foursquare.com/placemakers/review-place/fdb67869a5f141b76a1d38c9",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Health Insurance Store",
+    "phone": "(913) 962-1403",
+    "street_address": "7027 Clairborne Ct",
+    "city": "Shawnee",
+    "zip": "66217",
+    "website": "http://www.healthinsurancekc.com",
+    "source_url": "https://foursquare.com/placemakers/review-place/d2bd7982ef1f441217f6c066",
+    "source": "Foursquare"
+  },
+  {
+    "name": "American Family Insurance - Paul Ridgway Agency, Inc",
+    "phone": "(913) 962-1410",
+    "street_address": "17206 Midland Dr",
+    "city": "Shawnee",
+    "zip": "66217",
+    "website": "http://insurance-agency.amfam.com/KS/paul-ridgway/default.aspx?sourceid=agp0001025527",
+    "source_url": "https://foursquare.com/placemakers/review-place/5352bdf5498eb5c7146b3aac",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Timothy Waltrip: Allstate Insurance",
+    "phone": "(913) 962-0400",
+    "street_address": "19705 W 65th Ter",
+    "city": "Shawnee",
+    "zip": "66218",
+    "website": "https://agents.allstate.com/timothy-waltrip-shawnee-ks-32726863.html",
+    "source_url": "https://foursquare.com/placemakers/review-place/0fe2ce0d8e23420559d0a983",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Reed Agency - State Farm Insurance",
+    "phone": "(913) 422-0123",
+    "street_address": "21632 Midland Dr",
+    "city": "Shawnee",
+    "zip": "66218",
+    "website": "https://www.reedagencyonline.com",
+    "source_url": "https://foursquare.com/placemakers/review-place/56b89778498e2c32d54b9961",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Vetter Insurance Services",
+    "phone": "(913) 338-1738",
+    "street_address": "22052 W 66th St",
+    "city": "Shawnee",
+    "zip": "66226",
+    "website": "http://www.vetterins.com",
+    "source_url": "https://foursquare.com/placemakers/review-place/00a5f6a9668c44378835f61b",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Farmers Insurance",
+    "phone": "(913) 441-1800",
+    "street_address": "22233 W 66th St",
+    "city": "Shawnee",
+    "zip": "66226",
+    "website": "http://www.farmersagent.com/ALISPI",
+    "source_url": "https://foursquare.com/placemakers/review-place/564500ba498edf3cd0e15394",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Nationwide Mutual Insurance Company",
+    "phone": "(913) 322-3388",
+    "street_address": "22342 W 66th St",
+    "city": "Shawnee",
+    "zip": "66226",
+    "website": "https://www.nationwide.com",
+    "source_url": "https://foursquare.com/placemakers/review-place/c1bb73430ef2e505612ae5fd",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Nationwide",
+    "phone": "(913) 322-3388",
+    "street_address": "22342 W 66th St",
+    "city": "Shawnee",
+    "zip": "66226",
+    "website": "https://www.nationwide.com",
+    "source_url": "https://foursquare.com/placemakers/review-place/b169e3e9935a47aa00adc72b",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Jim Boldt and Associates: Allstate Insurance",
+    "phone": "(913) 948-7200",
+    "street_address": "5564 Hedge Lane Terrace",
+    "city": "Shawnee",
+    "zip": "66226",
+    "website": "https://agents.allstate.com/jim-boldt-shawnee-ks.html",
+    "source_url": "https://foursquare.com/placemakers/review-place/5ecb8cc7047deb0007df3e51",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Joy Wilner - Allstate Personal Financial Representative",
+    "phone": "(913) 962-0400",
+    "street_address": "22748 Midland Dr",
+    "city": "Shawnee",
+    "zip": "66226",
+    "website": null,
+    "source_url": "https://foursquare.com/placemakers/review-place/0413596afe3f44e8e41d4b68",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Nationwide",
+    "phone": "(913) 660-4245",
+    "street_address": "7524 McCoy St",
+    "city": "Shawnee",
+    "zip": "66227",
+    "website": "https://www.nationwide.com",
+    "source_url": "https://foursquare.com/placemakers/review-place/a3e2bd12f57044f3a97d7915",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Nationwide Mutual Insurance Company",
+    "phone": "(913) 660-4245",
+    "street_address": "7524 McCoy St",
+    "city": "Shawnee",
+    "zip": "66227",
+    "website": "https://www.nationwide.com",
+    "source_url": "https://foursquare.com/placemakers/review-place/016c31c8fd000f3a2696cd7f",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Farmers Insurance",
+    "phone": "(913) 451-8458",
+    "street_address": "21973 W 83rd St",
+    "city": "Shawnee",
+    "zip": "66227",
+    "website": "http://www.farmersagent.com/cchapman",
+    "source_url": "https://foursquare.com/placemakers/review-place/564500ba498edf3cd0e15398",
+    "source": "Foursquare"
+  },
+  {
+    "name": "American Family Insurance - Bryan Rapp",
+    "phone": "(913) 441-7800",
+    "street_address": "22107 W 83rd St",
+    "city": "Shawnee",
+    "zip": "66227",
+    "website": "http://insurance-agency.amfam.com/KS/bryan-rapp/default.aspx?sourceid=agp0001025256",
+    "source_url": "https://foursquare.com/placemakers/review-place/5350b5af11d225fd41560434",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Rudy Thompson Jr. | R Thompson Insurance and Solutions",
+    "phone": "(913) 262-7839",
+    "street_address": "22115 W 83rd St",
+    "city": "Shawnee",
+    "zip": "66227",
+    "website": "https://rudolphthompson.myhomehq.biz",
+    "source_url": "https://foursquare.com/placemakers/review-place/6d0f6cf4f5fb4865de8651c5",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Nationwide",
+    "phone": "(913) 422-0280",
+    "street_address": "22115 W 83rd St",
+    "city": "Shawnee",
+    "zip": "66227",
+    "website": "https://www.nationwide.com",
+    "source_url": "https://foursquare.com/placemakers/review-place/d72e78670331432290302482",
+    "source": "Foursquare"
+  },
+  {
+    "name": "HealthMarkets Insurance - Kevin Shawver",
+    "phone": "(913) 687-1288",
+    "street_address": "7330 Kenton St",
+    "city": "Shawnee",
+    "zip": "66227",
+    "website": "http://agents.healthmarkets.com/kshawver",
+    "source_url": "https://foursquare.com/placemakers/review-place/acf3a38ef6e04769383186d4",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Adams Jones Insurance Agency",
+    "phone": "(913) 422-0280",
+    "street_address": "8302 Hedge Lane Ter",
+    "city": "Lenexa",
+    "zip": "66227",
+    "website": "http://www.chrisjonesinsurance.com",
+    "source_url": "https://foursquare.com/placemakers/review-place/4ac1ceeced4b4443c534e57b",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Farmers Insurance - Linda Hicks",
+    "phone": "(913) 270-6230",
+    "street_address": "23754 W 82nd Ter",
+    "city": "Lenexa",
+    "zip": "66227",
+    "website": "http://www.farmers.com",
+    "source_url": "https://foursquare.com/placemakers/review-place/2eb29549e0f44ac68865e750",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Nationwide Mutual Insurance Company",
+    "phone": "(402) 918-3600",
+    "street_address": "9726 Rosehill Rd",
+    "city": "Mission Township",
+    "zip": "66215",
+    "website": "https://www.nationwide.com",
+    "source_url": "https://foursquare.com/placemakers/review-place/7fc972526c7dbc717bf9fc1b",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Nationwide",
+    "phone": "(402) 918-3600",
+    "street_address": "9726 Rosehill Rd",
+    "city": "Mission Township",
+    "zip": "66215",
+    "website": "https://www.nationwide.com",
+    "source_url": "https://foursquare.com/placemakers/review-place/cfa6b1c7b96a422c1aa44158",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Country Financial",
+    "phone": "(913) 341-0875",
+    "street_address": "9732 Rosehill Rd",
+    "city": "Lenexa",
+    "zip": "66215",
+    "website": "https://www.countryfinancial.com",
+    "source_url": "https://foursquare.com/placemakers/review-place/6bf44dd257754eec03ed9ecb",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Randy Hocking - COUNTRY Financial representative",
+    "phone": "(913) 341-0875",
+    "street_address": "9732 Rosehill Rd",
+    "city": "Lenexa",
+    "zip": "66215",
+    "website": "https://representatives.countryfinancial.com/randy.hocking",
+    "source_url": "https://foursquare.com/placemakers/review-place/583c9a4bce593d187024057b",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Goosehead Insurance - Megan Considine",
+    "phone": "(913) 888-8787",
+    "street_address": "9662 Quivira Rd",
+    "city": "Lenexa",
+    "zip": "66215",
+    "website": "https://agents.gooseheadinsurance.com/ks/lenexa/9662-quivira-rd-001C000001mWGVoIAO",
+    "source_url": "https://foursquare.com/placemakers/review-place/602259abccddbd6eca923641",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Debbie Yeo - State Farm Insurance Agent",
+    "phone": "(913) 888-8787",
+    "street_address": "9431 Pflumm Rd",
+    "city": "Lenexa",
+    "zip": "66215",
+    "website": "http://www.debbieyeo.com",
+    "source_url": "https://foursquare.com/placemakers/review-place/5218823611d2230bebe4ef9b",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Goosehead Insurance - David Ryff",
+    "phone": "(913) 815-2580",
+    "street_address": "9662 Quivira Rd",
+    "city": "Lenexa",
+    "zip": "66215",
+    "website": "https://agents.gooseheadinsurance.com/ks/lenexa/9662-quivira-rd-0013c00001s5zIxAAI",
+    "source_url": "https://foursquare.com/placemakers/review-place/60224738ccddbd6eca68a39d",
+    "source": "Foursquare"
+  },
+  {
+    "name": "American Family Insurance - Connie Fortner Agency Inc.",
+    "phone": "(913) 888-8200",
+    "street_address": "13606 W 95th St",
+    "city": "Lenexa",
+    "zip": "66215",
+    "website": "http://insurance-agency.amfam.com/KS/connie-fortner/default.aspx",
+    "source_url": "https://foursquare.com/placemakers/review-place/5033d479e4b094384638f53f",
+    "source": "Foursquare"
+  },
+  {
+    "name": "American Family Insurance - David Sneider",
+    "phone": "(913) 888-8200",
+    "street_address": "13606 W 95th St",
+    "city": "Lenexa",
+    "zip": "66215",
+    "website": "http://insurance-agency.amfam.com/KS/david-m-sneider/default.aspx?sourceid=agp0001039015",
+    "source_url": "https://foursquare.com/placemakers/review-place/535206b1498e04c293ce6b55",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Nationwide",
+    "phone": "(913) 735-9311",
+    "street_address": "9058 Parkhill St",
+    "city": "Lenexa",
+    "zip": "66215",
+    "website": "https://www.nationwide.com",
+    "source_url": "https://foursquare.com/placemakers/review-place/6985b7be083e4d176f62af51",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Nationwide Mutual Insurance Company",
+    "phone": "(913) 735-9311",
+    "street_address": "9058 Parkhill St",
+    "city": "Lenexa",
+    "zip": "66215",
+    "website": "https://www.nationwide.com",
+    "source_url": "https://foursquare.com/placemakers/review-place/d9a36e32e46b22e171410b5a",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Nationwide",
+    "phone": "(913) 948-7217",
+    "street_address": "8827 Long St",
+    "city": "Lenexa",
+    "zip": "66215",
+    "website": "https://www.nationwide.com",
+    "source_url": "https://foursquare.com/placemakers/review-place/6ac5afc172d64efa8c19b312",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Martin Insurance Group",
+    "phone": "(913) 948-7217",
+    "street_address": "8827 Long St",
+    "city": "Lenexa",
+    "zip": "66215",
+    "website": "http://www.themartininsurancegroup.com",
+    "source_url": "https://foursquare.com/placemakers/review-place/d130645bcfbb46a37a0c877b",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Nationwide Mutual Insurance Company",
+    "phone": "(913) 948-7217",
+    "street_address": "8827 Long St",
+    "city": "Lenexa",
+    "zip": "66215",
+    "website": "https://www.nationwide.com",
+    "source_url": "https://foursquare.com/placemakers/review-place/a17f3b02816b34f0a3ee837a",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Klusman Insurance Agency",
+    "phone": "(913) 888-8900",
+    "street_address": "8827 Long St",
+    "city": "Lenexa",
+    "zip": "66215",
+    "website": "http://www.klusmaninsurance.com",
+    "source_url": "https://foursquare.com/placemakers/review-place/1551544e2d3143239f0bf3a4",
+    "source": "Foursquare"
+  },
+  {
+    "name": "American Family Insurance - Julie Coover",
+    "phone": "(913) 888-7117",
+    "street_address": "12715 W 87th St Pkwy Ste 102",
+    "city": "Lenexa",
+    "zip": "66215",
+    "website": "http://insurance-agency.amfam.com/KS/julie-coover/default.aspx?sourceid=agp0001028357",
+    "source_url": "https://foursquare.com/placemakers/review-place/57806b9b498e91fa9292b05d",
+    "source": "Foursquare"
+  },
+  {
+    "name": "American Family Insurance - Brad Henry & Julie Coover",
+    "phone": "(913) 268-3000",
+    "street_address": "12715 W 87th Street Pkwy, Ste 102",
+    "city": "Lenexa",
+    "zip": "66215",
+    "website": "http://www.amfam.com",
+    "source_url": "https://foursquare.com/placemakers/review-place/4ff701c8e4b0d27dd78f6ce9",
+    "source": "Foursquare"
+  },
+  {
+    "name": "American Family Insurance",
+    "phone": "(913) 888-7117",
+    "street_address": "12715 W 87th Street Pkwy",
+    "city": "Lenexa",
+    "zip": "66215",
+    "website": "http://www.amfam.com",
+    "source_url": "https://foursquare.com/placemakers/review-place/50caad9c0c1b455afdbd2543",
+    "source": "Foursquare"
+  },
+  {
+    "name": "American Family Insurance - Brad Henry",
+    "phone": "(913) 888-7117",
+    "street_address": "12715 W 87th St Pkwy Ste 102",
+    "city": "Lenexa",
+    "zip": "66215",
+    "website": "http://insurance-agency.amfam.com/KS/brad-henry/default.aspx?sourceid=agp0001035107",
+    "source_url": "https://foursquare.com/placemakers/review-place/57802ea4498eeca5f337a891",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Nationwide Mutual Insurance Company",
+    "phone": "(913) 647-7520",
+    "street_address": "8700 Monrovia St",
+    "city": "Lenexa",
+    "zip": "66215",
+    "website": "https://www.nationwide.com",
+    "source_url": "https://foursquare.com/placemakers/review-place/f116f19dff6f683682b0685d",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Good Faith Agency LLC",
+    "phone": "(888) 288-5752",
+    "street_address": "8700 Monrovia St",
+    "city": "Lenexa",
+    "zip": "66215",
+    "website": "http://www.goodfaithagency.com",
+    "source_url": "https://foursquare.com/placemakers/review-place/5e96815182b11b0007bc9816",
+    "source": "Foursquare"
+  },
+  {
+    "name": "James Lunn | Lunn Insurance Group",
+    "phone": "(913) 647-7520",
+    "street_address": "8700 Monrovia St",
+    "city": "Lenexa",
+    "zip": "66215",
+    "website": "http://www.lunngroup.com",
+    "source_url": "https://foursquare.com/placemakers/review-place/0c0b1c770e2f41367215e9c2",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Bill Kadyk - State Farm Insurance Agent",
+    "phone": "(913) 888-8444",
+    "street_address": "12808 W 87 St",
+    "city": "Lenexa",
+    "zip": "66215",
+    "website": "http://www.kadyk.net",
+    "source_url": "https://foursquare.com/placemakers/review-place/52141b77498e5ee2200ac034",
+    "source": "Foursquare"
+  },
+  {
+    "name": "HealthMarkets Insurance - John Morgan",
+    "phone": "(913) 735-9050",
+    "street_address": "12760 W 87th Street Pkwy",
+    "city": "Lenexa",
+    "zip": "66215",
+    "website": "http://agents.healthmarkets.com/jmorgan",
+    "source_url": "https://foursquare.com/placemakers/review-place/9be7aadb2578466443a591ba",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Lowell Davis - State Farm Insurance Agent",
+    "phone": "(913) 492-4006",
+    "street_address": "12014 W 87th Street Pkwy",
+    "city": "Lenexa",
+    "zip": "66215",
+    "website": "http://www.lowelledavis.com",
+    "source_url": "https://foursquare.com/placemakers/review-place/5218f18e11d26f212f4029ac",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Mark Berquist - State Farm Insurance Agent",
+    "phone": "(913) 492-0505",
+    "street_address": "12014 W 87th",
+    "city": "Lenexa",
+    "zip": "66215",
+    "website": "https://www.statefarm.com/agent/us/ks/lenexa/mark-berquist-l3xst1ys000",
+    "source_url": "https://foursquare.com/placemakers/review-place/5c1923d7a2c00b002c0c5dfe",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Dustin Kessler - State Farm Insurance Agent",
+    "phone": "(913) 403-0566",
+    "street_address": "9546 Lackman Rd",
+    "city": "Lenexa",
+    "zip": "66219",
+    "website": "http://www.statefarm.com",
+    "source_url": "https://foursquare.com/placemakers/review-place/124e7dff55b84dc1fc9bb64d",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Shelter Insurance - Brandon Burchett",
+    "phone": "(913) 469-8454",
+    "street_address": "11075 Hauser St",
+    "city": "Lenexa",
+    "zip": "66210",
+    "website": "http://www.shelterinsurance.com",
+    "source_url": "https://foursquare.com/placemakers/review-place/eefa572fc88d46eadf30561a",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Farmers Insurance",
+    "phone": "(913) 248-7790",
+    "street_address": "11083 Hauser St",
+    "city": "Lenexa",
+    "zip": "66210",
+    "website": "http://www.farmersagent.com/jluengo",
+    "source_url": "https://foursquare.com/placemakers/review-place/564500ba498edf3cd0e15335",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Luengo Insurance Agency and Consulting Firm",
+    "phone": "(913) 248-7790",
+    "street_address": "11083 Hauser St",
+    "city": "Lenexa",
+    "zip": "66210",
+    "website": null,
+    "source_url": "https://foursquare.com/placemakers/review-place/4f46448d121d3195bec9bf2d",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Nationwide",
+    "phone": "(913) 469-9400",
+    "street_address": "13414 College Blvd",
+    "city": "Lenexa",
+    "zip": "66210",
+    "website": "https://www.nationwide.com",
+    "source_url": "https://foursquare.com/placemakers/review-place/e4bf0a3470ee46926b534edd",
+    "source": "Foursquare"
+  },
+  {
+    "name": "American Family Insurance - Heather Thomsen",
+    "phone": "(913) 788-1085",
+    "street_address": "13420 College Blvd",
+    "city": "Lenexa",
+    "zip": "66210",
+    "website": "http://insurance-agency.amfam.com/KS/heather-thomsen/default.aspx",
+    "source_url": "https://foursquare.com/placemakers/review-place/5371395e498e35d9c816e41c",
+    "source": "Foursquare"
+  },
+  {
+    "name": "American Family Insurance - Bryan Tebbe",
+    "phone": "(913) 338-5700",
+    "street_address": "13420 College Blvd",
+    "city": "Lenexa",
+    "zip": "66210",
+    "website": "http://insurance-agency.amfam.com/KS/bryan-tebbe/insurance-products.aspx",
+    "source_url": "https://foursquare.com/placemakers/review-place/53515014498e5e050483efb1",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Farmers Insurance",
+    "phone": "(913) 829-7283",
+    "street_address": "10567 Lackman Rd",
+    "city": "Lenexa",
+    "zip": "66219",
+    "website": "http://www.farmersagent.com/jeaton1",
+    "source_url": "https://foursquare.com/placemakers/review-place/564500ba498edf3cd0e15390",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Mel Hawk - State Farm Insurance Agent",
+    "phone": "(913) 888-8045",
+    "street_address": "15201 W 87th Street Pkwy",
+    "city": "Lenexa",
+    "zip": "66219",
+    "website": "https://www.statefarm.com/agent/us/ks/lenexa/mel-hawk-ksvmf1ys000",
+    "source_url": "https://foursquare.com/placemakers/review-place/5c192478f2554e002ca2fc29",
+    "source": "Foursquare"
+  },
+  {
+    "name": "American Family Insurance - Pat Kelly",
+    "phone": "(913) 649-0070",
+    "street_address": "15301 W 87th Street Pkwy Ste 255",
+    "city": "Lenexa",
+    "zip": "66219",
+    "website": "http://insurance-agency.amfam.com/KS/pat-kelly/default.aspx?sourceid=agp0001015903",
+    "source_url": "https://foursquare.com/placemakers/review-place/5352b0f1498e6f87056b9811",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Mylo, A Lockton Company",
+    "phone": "",
+    "street_address": "14425 College Blvd",
+    "city": "Lenexa",
+    "zip": "66215",
+    "website": null,
+    "source_url": "https://foursquare.com/placemakers/review-place/5900de730868a2080c2cc2cf",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Nationwide Mutual Insurance Company",
+    "phone": "(913) 422-0280",
+    "street_address": "14425 College Blvd",
+    "city": "Lenexa",
+    "zip": "66215",
+    "website": "https://www.nationwide.com",
+    "source_url": "https://foursquare.com/placemakers/review-place/8649fd1837ad5bccaeb5cbd7",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Farmers Insurance - Patrick Carter",
+    "phone": "(913) 248-8861",
+    "street_address": "8704 Bourgade St",
+    "city": "Lenexa",
+    "zip": "66219",
+    "website": "http://www.farmers.com",
+    "source_url": "https://foursquare.com/placemakers/review-place/e76d5af3fcf34bccdc4d1e3e",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Farmers Insurance",
+    "phone": "(913) 248-8861",
+    "street_address": "8704 Bourgade St",
+    "city": "Lenexa",
+    "zip": "66219",
+    "website": "http://www.farmersagent.com/pcarter2",
+    "source_url": "https://foursquare.com/placemakers/review-place/564500ba498edf3cd0e1537c",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Farmers Insurance - Kent Jewett",
+    "phone": "(913) 248-1833",
+    "street_address": "8704 Bourgade St",
+    "city": "Lenexa",
+    "zip": "66219",
+    "website": "http://www.farmers.com",
+    "source_url": "https://foursquare.com/placemakers/review-place/8ec20cafcff04746fd04b4d3",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Farmers Insurance",
+    "phone": "(913) 451-4949",
+    "street_address": "7926 Quivira Rd",
+    "city": "Lenexa",
+    "zip": "66215",
+    "website": "http://www.farmersagent.com/twatson1",
+    "source_url": "https://foursquare.com/placemakers/review-place/564500ba498edf3cd0e15369",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Farmers Insurance - Tom Watson",
+    "phone": "(913) 451-4949",
+    "street_address": "7926 Quivira Rd",
+    "city": "Lenexa",
+    "zip": "66215",
+    "website": "http://www.farmers.com",
+    "source_url": "https://foursquare.com/placemakers/review-place/0ba6a05c33cf49bc27a52ed6",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Farmers Insurance - Jeffrey Hodson",
+    "phone": "(913) 579-1141",
+    "street_address": "7926 Quivira Rd",
+    "city": "Lenexa",
+    "zip": "66215",
+    "website": "http://www.farmers.com",
+    "source_url": "https://foursquare.com/placemakers/review-place/5782e1d591bc411b9d5dc9c0",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Emily Pembleton, Bankers Life Agent",
+    "phone": "",
+    "street_address": "8207 Melrose Dr",
+    "city": "Lenexa",
+    "zip": "66214",
+    "website": null,
+    "source_url": "https://foursquare.com/placemakers/review-place/69406a8298a16e23d32b55e0",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Kasey Malone, Bankers Life Agent",
+    "phone": "",
+    "street_address": "8207 Melrose Dr",
+    "city": "Lenexa",
+    "zip": "66214",
+    "website": null,
+    "source_url": "https://foursquare.com/placemakers/review-place/69405f2265d559314adb5362",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Vanessa Banks, Bankers Life Agent",
+    "phone": "(913) 894-6553",
+    "street_address": "8207 Melrose Dr Ste 150",
+    "city": "Lenexa",
+    "zip": "66214",
+    "website": "https://agents.bankerslife.com/ks/lenexa/8207-melrose-dr/vanessa-banks",
+    "source_url": "https://foursquare.com/placemakers/review-place/602242c2dc86d61c51dba58a",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Bankers Life",
+    "phone": "(913) 894-6553",
+    "street_address": "8207 Melrose Dr Ste 150",
+    "city": "Lenexa",
+    "zip": "66214",
+    "website": "https://branches.bankerslife.com/ks/lenexa/8207-melrose-dr",
+    "source_url": "https://foursquare.com/placemakers/review-place/5aa1b88a8c812a40bbc9e16f",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Christopher Hartman, Bankers Life Agent",
+    "phone": "(913) 894-6553",
+    "street_address": "8207 Melrose Dr Ste 150",
+    "city": "Lenexa",
+    "zip": "66214",
+    "website": "https://agents.bankerslife.com/ks/lenexa/8207-melrose-dr/christopher-hartman",
+    "source_url": "https://foursquare.com/placemakers/review-place/602241595b2b961c48b30737",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Julie Brown, Bankers Life Agent",
+    "phone": "(913) 894-6553",
+    "street_address": "8207 Melrose Dr",
+    "city": "Lenexa",
+    "zip": "66214",
+    "website": "https://agents.bankerslife.com/ks/lenexa/8207-melrose-dr/julie-brown",
+    "source_url": "https://foursquare.com/placemakers/review-place/92bc1c7f56a140076de530ee",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Thomasin Kuhn-Wichtendahl, Bankers Life Agent",
+    "phone": "(913) 894-6553",
+    "street_address": "8207 Melrose Dr Ste 150",
+    "city": "Lenexa",
+    "zip": "66214",
+    "website": "https://agents.bankerslife.com/ks/lenexa/8207-melrose-dr/thomasin-kuhn-wichtendahl",
+    "source_url": "https://foursquare.com/placemakers/review-place/60214c8afa4517380b32fa3d",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Justin Pike, Bankers Life Agent",
+    "phone": "(913) 894-6553",
+    "street_address": "8207 Melrose Dr Ste 150",
+    "city": "Lenexa",
+    "zip": "66214",
+    "website": "https://agents.bankerslife.com/ks/lenexa/8207-melrose-dr/justin-pike",
+    "source_url": "https://foursquare.com/placemakers/review-place/60138eb916bf8956e4ea618e",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Ross Polete, Bankers Life Agent",
+    "phone": "(913) 894-6553",
+    "street_address": "8207 Melrose Dr Ste 150",
+    "city": "Lenexa",
+    "zip": "66214",
+    "website": "https://agents.bankerslife.com/ks/lenexa/8207-melrose-dr/ross-polete",
+    "source_url": "https://foursquare.com/placemakers/review-place/60226e121e14fe05c82fe6d9",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Anthony Jacobs, Bankers Life Agent",
+    "phone": "(913) 894-6553",
+    "street_address": "8207 Melrose Dr",
+    "city": "Lenexa",
+    "zip": "66214",
+    "website": "https://agents.bankerslife.com/ks/lenexa/8207-melrose-dr/anthony-jacobs",
+    "source_url": "https://foursquare.com/placemakers/review-place/65824f2cdf1c455890086abd",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Kody Stebens, Bankers Life Agent",
+    "phone": "(913) 894-6553",
+    "street_address": "8207 Melrose Dr",
+    "city": "Lenexa",
+    "zip": "66214",
+    "website": "https://agents.bankerslife.com/ks/lenexa/8207-melrose-dr/kody-stebens",
+    "source_url": "https://foursquare.com/placemakers/review-place/fb5e1298f7a044dabdd26e90",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Jared Lucas, Bankers Life Agent",
+    "phone": "(913) 894-6553",
+    "street_address": "8207 Melrose Dr",
+    "city": "Lenexa",
+    "zip": "66214",
+    "website": "https://agents.bankerslife.com/ks/lenexa/8207-melrose-dr/jared-lucas",
+    "source_url": "https://foursquare.com/placemakers/review-place/7f055b1548964d014ca4c3fa",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Angela Berthot, Bankers Life Agent",
+    "phone": "(913) 894-6553",
+    "street_address": "8207 Melrose Dr",
+    "city": "Lenexa",
+    "zip": "66214",
+    "website": "https://agents.bankerslife.com/ks/lenexa/8207-melrose-dr/angela-berthot",
+    "source_url": "https://foursquare.com/placemakers/review-place/1b878abbb04248b92af15545",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Dwight Mais, Bankers Life Agent",
+    "phone": "(913) 894-6553",
+    "street_address": "8207 Melrose Dr Ste 150",
+    "city": "Lenexa",
+    "zip": "66214",
+    "website": "https://agents.bankerslife.com/ks/lenexa/8207-melrose-dr/dwight-mais",
+    "source_url": "https://foursquare.com/placemakers/review-place/602262b35b2b961c48fbdd79",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Tina Trickett, Bankers Life Agent",
+    "phone": "(913) 894-6553",
+    "street_address": "8207 Melrose Dr Ste 150",
+    "city": "Lenexa",
+    "zip": "66214",
+    "website": "https://agents.bankerslife.com/ks/lenexa/8207-melrose-dr/tina-trickett",
+    "source_url": "https://foursquare.com/placemakers/review-place/602266ffdcd3d46b69c6ab9f",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Derrick Yoch, Bankers Life Agent",
+    "phone": "(913) 275-6025",
+    "street_address": "8207 Melrose Dr",
+    "city": "Lenexa",
+    "zip": "66214",
+    "website": "https://agents.bankerslife.com/ks/lenexa/8207-melrose-dr/derrick-yoch",
+    "source_url": "https://foursquare.com/placemakers/review-place/456a5fdd8f2b4952d3c18771",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Ryan Buresh, Bankers Life Agent",
+    "phone": "(913) 275-6016",
+    "street_address": "8207 Melrose Dr",
+    "city": "Lenexa",
+    "zip": "66214",
+    "website": "https://agents.bankerslife.com/ks/lenexa/8207-melrose-dr/ryan-buresh",
+    "source_url": "https://foursquare.com/placemakers/review-place/fc637a1f0fba4e9655a2c90a",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Jerica Wry, Bankers Life Agent",
+    "phone": "(913) 894-6553",
+    "street_address": "8207 Melrose Dr Ste 150",
+    "city": "Lenexa",
+    "zip": "66214",
+    "website": "https://agents.bankerslife.com/ks/lenexa/8207-melrose-dr/jerica-wry",
+    "source_url": "https://foursquare.com/placemakers/review-place/602268a2c01e1f4ae5200012",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Nationwide Mutual Insurance Company",
+    "phone": "(913) 905-7795",
+    "street_address": "9777 Ridge Dr",
+    "city": "Lenexa",
+    "zip": "66219",
+    "website": "https://www.nationwide.com",
+    "source_url": "https://foursquare.com/placemakers/review-place/297dec076296a0444b509126",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Nationwide",
+    "phone": "(913) 905-7795",
+    "street_address": "9777 Ridge Dr",
+    "city": "Lenexa",
+    "zip": "66219",
+    "website": "https://www.nationwide.com",
+    "source_url": "https://foursquare.com/placemakers/review-place/aa7f4c91a64444d3dfda6369",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Alliance Insurance Brokerage",
+    "phone": "(913) 322-4555",
+    "street_address": "11267 Strang Line Rd",
+    "city": "Lenexa",
+    "zip": "66215",
+    "website": "https://www.allianceib.com",
+    "source_url": "https://foursquare.com/placemakers/review-place/79a7eaa41c9d40da5426acbd",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Farmers Insurance",
+    "phone": "(913) 888-3060",
+    "street_address": "7767 Quivira Rd",
+    "city": "Lenexa",
+    "zip": "66216",
+    "website": "http://www.farmersagent.com/sbenson",
+    "source_url": "https://foursquare.com/placemakers/review-place/564500ba498edf3cd0e15370",
+    "source": "Foursquare"
+  },
+  {
+    "name": "State Farm Insurance",
+    "phone": "(913) 859-9480",
+    "street_address": "9460 Renner Blvd",
+    "city": "Lenexa",
+    "zip": "66219",
+    "website": "http://www.statefarm.com",
+    "source_url": "https://foursquare.com/placemakers/review-place/7ba188176a144d57a484e0a9",
+    "source": "Foursquare"
+  },
+  {
+    "name": "State Farm: Jeff Zigmant",
+    "phone": "(913) 859-9480",
+    "street_address": "9460 Renner Blvd",
+    "city": "Lenexa",
+    "zip": "66219",
+    "website": "http://www.getzig.com",
+    "source_url": "https://foursquare.com/placemakers/review-place/54b567de498ef4363f0df66f",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Zurich",
+    "phone": "(913) 499-0197",
+    "street_address": "16027 W 82nd Ter",
+    "city": "Lenexa",
+    "zip": "66219",
+    "website": "http://zurichservices.com",
+    "source_url": "https://foursquare.com/placemakers/review-place/61142116fee74a12cccd02bc",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Nationwide Mutual Insurance Company",
+    "phone": "",
+    "street_address": "15560 W 77th St",
+    "city": "Lenexa",
+    "zip": "66217",
+    "website": "https://www.nationwide.com",
+    "source_url": "https://foursquare.com/placemakers/review-place/a48dbef972d325f671259014",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Nationwide",
+    "phone": "",
+    "street_address": "15560 W 77th St",
+    "city": "Lenexa",
+    "zip": "66217",
+    "website": "https://www.nationwide.com",
+    "source_url": "https://foursquare.com/placemakers/review-place/49776a0e3ba941806f697569",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Cincinnati Insurance Companies",
+    "phone": "(913) 322-2967",
+    "street_address": "16216 W 80th St",
+    "city": "Lenexa",
+    "zip": "66219",
+    "website": null,
+    "source_url": "https://foursquare.com/placemakers/review-place/78b43240de6e4d60b92f6d64",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Progressive Insurance",
+    "phone": "",
+    "street_address": "Greenwood St, Lenexa, KS 66215",
+    "city": "Lenexa",
+    "zip": "66215",
+    "website": null,
+    "source_url": "https://foursquare.com/placemakers/review-place/4f7c724ae4b08c48d8b763f1",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Streamline Insurance Group",
+    "phone": "",
+    "street_address": "16801 W 116th St",
+    "city": "Lenexa",
+    "zip": "66219",
+    "website": null,
+    "source_url": "https://foursquare.com/placemakers/review-place/69406bb498a16e23d32fbc7e",
+    "source": "Foursquare"
+  },
+  {
+    "name": "John Burns - State Farm Insurance Agent",
+    "phone": "(913) 780-5555",
+    "street_address": "10119 Cherry Ln",
+    "city": "Lenexa",
+    "zip": "66220",
+    "website": "http://www.agentjohnburns.com",
+    "source_url": "https://foursquare.com/placemakers/review-place/5c140075c36588002c5efc43",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Farmers Insurance - Jacob Eaton",
+    "phone": "",
+    "street_address": "10101 Woodland Dr",
+    "city": "Lenexa",
+    "zip": "66220",
+    "website": null,
+    "source_url": "https://foursquare.com/placemakers/review-place/691b939d41a8b3500960f500",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Dave Johnson - State Farm Insurance Agent",
+    "phone": "(913) 258-8606",
+    "street_address": "10084 Woodland Dr",
+    "city": "Lenexa",
+    "zip": "66220",
+    "website": "http://www.statefarm.com",
+    "source_url": "https://foursquare.com/placemakers/review-place/bac2646e194c4ec640315379",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Epoch Group",
+    "phone": "(913) 362-0040",
+    "street_address": "2020 W 89th St",
+    "city": "Leawood",
+    "zip": "66206",
+    "website": null,
+    "source_url": "https://foursquare.com/placemakers/review-place/5a778aeab256471b919eacc7",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Worksite Benefit Associates",
+    "phone": "(913) 353-1300",
+    "street_address": "8900 State Line Rd",
+    "city": "Leawood",
+    "zip": "66206",
+    "website": "http://www.wksite.com",
+    "source_url": "https://foursquare.com/placemakers/review-place/8bf1ba3b65c8462a83a6aaac",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Farmers Insurance - Jaclyn Green",
+    "phone": "(913) 279-0200",
+    "street_address": "8900 State Line Rd",
+    "city": "Leawood",
+    "zip": "66206",
+    "website": "http://www.farmers.com",
+    "source_url": "https://foursquare.com/placemakers/review-place/2b33faeb94db4446f7b4704d",
+    "source": "Foursquare"
+  },
+  {
+    "name": "American Family Insurance - Nicole Feltz",
+    "phone": "(913) 383-9100",
+    "street_address": "8700 State Line Rd Ste 325",
+    "city": "Leawood",
+    "zip": "66206",
+    "website": "https://agent.amfam.com/ks/leawood/nicole-feltz/",
+    "source_url": "https://foursquare.com/placemakers/review-place/535117c5498ed5d85aa047fa",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Wesley K Smith",
+    "phone": "",
+    "street_address": "8014 State Line Rd",
+    "city": "Shawnee Mission",
+    "zip": "66208",
+    "website": null,
+    "source_url": "https://foursquare.com/placemakers/review-place/6940526d65d559314ac0c1c5",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Nationwide",
+    "phone": "(913) 722-5333",
+    "street_address": "8014 State Line Rd",
+    "city": "Prairie Village",
+    "zip": "66208",
+    "website": "https://www.nationwide.com",
+    "source_url": "https://foursquare.com/placemakers/review-place/759d9283a9d34835215bb8ee",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Nationwide Mutual Insurance Company",
+    "phone": "(913) 722-5333",
+    "street_address": "8014 State Line Rd",
+    "city": "Prairie Village",
+    "zip": "66208",
+    "website": "https://www.nationwide.com",
+    "source_url": "https://foursquare.com/placemakers/review-place/6f2993948b50298beb197f22",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Tom Bottiger - State Farm Insurance Agent",
+    "phone": "(913) 341-8888",
+    "street_address": "8010 State Line Rd, Ste 75",
+    "city": "Leawood",
+    "zip": "66208",
+    "website": "https://www.statefarm.com/agent/us/ks/prairie-vlg/tom-bottiger-mf6hh1ys000",
+    "source_url": "https://foursquare.com/placemakers/review-place/4ed5234a8b81e32245c0eeb6",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Farmers Insurance",
+    "phone": "(913) 381-1700",
+    "street_address": "2012 W 104th St",
+    "city": "Leawood",
+    "zip": "66206",
+    "website": "http://www.farmersagent.com/mmeyer2",
+    "source_url": "https://foursquare.com/placemakers/review-place/564500ba498edf3cd0e15313",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Nationwide",
+    "phone": "(913) 951-2400",
+    "street_address": "4601 College Blvd",
+    "city": "Leawood",
+    "zip": "66211",
+    "website": "https://www.nationwide.com",
+    "source_url": "https://foursquare.com/placemakers/review-place/e9ee8e8ab1734c046a57215c",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Max Insurance Agency",
+    "phone": "(913) 338-1100",
+    "street_address": "4400 College Blvd Ste 250",
+    "city": "Leawood",
+    "zip": "66211",
+    "website": "http://www.maxinsuranceagency.com",
+    "source_url": "https://foursquare.com/placemakers/review-place/3ac3f3590ac7454a006e3a5f",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Nationwide Mutual Insurance Company",
+    "phone": "(913) 491-8511",
+    "street_address": "4500 College Blvd",
+    "city": "Leawood",
+    "zip": "66211",
+    "website": "https://www.nationwide.com",
+    "source_url": "https://foursquare.com/placemakers/review-place/34b0b649f651493b7573c0d0",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Delta Dental Plan Of Kansas",
+    "phone": "(913) 381-4928",
+    "street_address": "11300 Tomahawk Creek Pkwy",
+    "city": "Leawood",
+    "zip": "66211",
+    "website": "http://www.deltadentalks.com",
+    "source_url": "https://foursquare.com/placemakers/review-place/4759cbfd4cd8486dca9c67a2",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Nationwide",
+    "phone": "(913) 345-9900",
+    "street_address": "4601 College Blvd",
+    "city": "Leawood",
+    "zip": "66211",
+    "website": "https://www.nationwide.com",
+    "source_url": "https://foursquare.com/placemakers/review-place/7cd03f2a229c4fe8b03ce07b",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Nationwide Mutual Insurance Company",
+    "phone": "(913) 951-2400",
+    "street_address": "4601 College Blvd",
+    "city": "Leawood",
+    "zip": "66211",
+    "website": "https://www.nationwide.com",
+    "source_url": "https://foursquare.com/placemakers/review-place/1773edd24a05ea97aa6acdff",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Bukaty Property & Casualty Services, Inc.",
+    "phone": "(913) 953-8888",
+    "street_address": "4601 College Blvd Ste 100",
+    "city": "Leawood",
+    "zip": "66211",
+    "website": "https://www.bukatyinsurance.com",
+    "source_url": "https://foursquare.com/placemakers/review-place/5c071b0cc0cacb0039e57714",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Nationwide",
+    "phone": "(913) 341-0900",
+    "street_address": "11350 Tomahawk Creek Pkwy",
+    "city": "Leawood",
+    "zip": "66211",
+    "website": "https://www.nationwide.com",
+    "source_url": "https://foursquare.com/placemakers/review-place/11cf5805531242c40cc5be6f",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Nationwide Mutual Insurance Company",
+    "phone": "(913) 341-0900",
+    "street_address": "11350 Tomahawk Creek Pkwy",
+    "city": "Leawood",
+    "zip": "66211",
+    "website": "https://www.nationwide.com",
+    "source_url": "https://foursquare.com/placemakers/review-place/98444339b8e7e05869dbfe14",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Farmers Insurance",
+    "phone": "(913) 491-3535",
+    "street_address": "4701 College Blvd",
+    "city": "Leawood",
+    "zip": "66211",
+    "website": "http://www.farmersagent.com/dernst1",
+    "source_url": "https://foursquare.com/placemakers/review-place/564500ba498edf3cd0e15339",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Kramer Commercial",
+    "phone": "(913) 451-0303",
+    "street_address": "4701 College Blvd",
+    "city": "Leawood",
+    "zip": "66211",
+    "website": "http://www.kramerrestorationkc.com",
+    "source_url": "https://foursquare.com/placemakers/review-place/dd704cb0f10145ad960eaec8",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Michael Baca Agency- State Farm",
+    "phone": "(913) 327-5566",
+    "street_address": "4701 College Blvd Ste 208",
+    "city": "Leawood",
+    "zip": "66211",
+    "website": "http://www.insureleawood.com",
+    "source_url": "https://foursquare.com/placemakers/review-place/5136844b7ab48a1d5ba1f6b7",
+    "source": "Foursquare"
+  },
+  {
+    "name": "American Family Insurance - Michelle Underwood",
+    "phone": "(913) 317-9200",
+    "street_address": "4701 College Blvd Ste 215",
+    "city": "Leawood",
+    "zip": "66211",
+    "website": "http://insurance-agency.amfam.com/KS/michelle-underwood/default.aspx?sourceid=agp0001042624",
+    "source_url": "https://foursquare.com/placemakers/review-place/53515012498ef1a92d4255a5",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Michelle Underwood Agency",
+    "phone": "",
+    "street_address": "4701 College Blvd",
+    "city": "Leawood",
+    "zip": "66211",
+    "website": null,
+    "source_url": "https://foursquare.com/placemakers/review-place/6940795398a16e23d35d47f8",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Christensen Group Insurance",
+    "phone": "(816) 371-5370",
+    "street_address": "4701 College Blvd",
+    "city": "Leawood",
+    "zip": "66211",
+    "website": "https://www.christensengroup.com/office/kansas-city-ks",
+    "source_url": "https://foursquare.com/placemakers/review-place/69b348f20c327f620483f286",
+    "source": "Foursquare"
+  },
+  {
+    "name": "First United Title Agency",
+    "phone": "(913) 383-3913",
+    "street_address": "4707 College Blvd",
+    "city": "Leawood",
+    "zip": "66211",
+    "website": "http://www.futallc.com",
+    "source_url": "https://foursquare.com/placemakers/review-place/d2c36c3619b249f0bbd46d44",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Work Dynamics",
+    "phone": "(913) 317-8200",
+    "street_address": "4707 College Blvd",
+    "city": "Leawood",
+    "zip": "66211",
+    "website": "http://www.workdynamicsinc.com",
+    "source_url": "https://foursquare.com/placemakers/review-place/7924e1c0e9a448b72f1cfbc3",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Nelson Agency",
+    "phone": "(913) 696-0801",
+    "street_address": "2504 W 114th St",
+    "city": "Leawood",
+    "zip": "66211",
+    "website": "http://nelsonagency.com",
+    "source_url": "https://foursquare.com/placemakers/review-place/c01d6e414f3641732f1b805c",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Caprice Black | JRS Healthcare Solutions",
+    "phone": "(800) 979-0266",
+    "street_address": "5330 College Blvd",
+    "city": "Leawood",
+    "zip": "66211",
+    "website": "https://www.amazon.com/dp/B0DF25FXDK",
+    "source_url": "https://foursquare.com/placemakers/review-place/735db91f1ed445033072d34e",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Farmers Insurance - Alfonso Zarate",
+    "phone": "(816) 223-9010",
+    "street_address": "4001 W 114th St",
+    "city": "Leawood",
+    "zip": "66211",
+    "website": "http://www.farmers.com",
+    "source_url": "https://foursquare.com/placemakers/review-place/712ee9060e9644eee98843b9",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Nationwide Mutual Insurance Company",
+    "phone": "(866) 518-0500",
+    "street_address": "11440 Tomahawk Creek Pkwy",
+    "city": "Leawood",
+    "zip": "66211",
+    "website": "https://www.nationwide.com",
+    "source_url": "https://foursquare.com/placemakers/review-place/5fe9c01319336ef5a82d125c",
+    "source": "Foursquare"
+  },
+  {
+    "name": "First Chicago Insurance Service",
+    "phone": "(913) 403-0399",
+    "street_address": "5401 College Blvd",
+    "city": "Leawood",
+    "zip": "66211",
+    "website": "http://www.firstchicagoinsuranceservices.com",
+    "source_url": "https://foursquare.com/placemakers/review-place/01cf019b22634e8a7d540770",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Page Insurance Group",
+    "phone": "(913) 491-9153",
+    "street_address": "11233 Nall Ave",
+    "city": "Leawood",
+    "zip": "66211",
+    "website": "http://www.farmers.com",
+    "source_url": "https://foursquare.com/placemakers/review-place/9b3ade004b884e5d184c26b2",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Scor Global Life USA Reinsurance Company",
+    "phone": "(913) 901-4600",
+    "street_address": "11625 Rosewood St",
+    "city": "Leawood",
+    "zip": "66211",
+    "website": "http://scor.com",
+    "source_url": "https://foursquare.com/placemakers/review-place/f4c82870562f4ffcfd4b1755",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Erik Kolseth - Regions Mortgage Loan Officer",
+    "phone": "(816) 506-8872",
+    "street_address": "5251 W 116th Pl",
+    "city": "Leawood",
+    "zip": "66211",
+    "website": null,
+    "source_url": "https://foursquare.com/placemakers/review-place/82016cbff3c0c248cf82ad45",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Farmers Insurance - Daniel Evans",
+    "phone": "(913) 998-6047",
+    "street_address": "5251 W 116th Pl",
+    "city": "Leawood",
+    "zip": "66211",
+    "website": "http://www.farmers.com",
+    "source_url": "https://foursquare.com/placemakers/review-place/44e6c83bb3ce4af34700f30b",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Steve Walker - State Farm Insurance Agent",
+    "phone": "(913) 339-6600",
+    "street_address": "12108 State Line Rd",
+    "city": "Leawood",
+    "zip": "66209",
+    "website": "http://www.stevewalker.biz",
+    "source_url": "https://foursquare.com/placemakers/review-place/4c3dd18e7d00d13ac2bc3a50",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Nationwide",
+    "phone": "(913) 267-5600",
+    "street_address": "12120 State Line Rd",
+    "city": "Leawood",
+    "zip": "66209",
+    "website": "https://www.nationwide.com",
+    "source_url": "https://foursquare.com/placemakers/review-place/0cce68fb614149265c0e2a5a",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Midwest Insurance Exchange",
+    "phone": "(816) 718-9553",
+    "street_address": "12120 State Line Rd",
+    "city": "Leawood",
+    "zip": "66209",
+    "website": "https://www.midwestinsurance-exchange.com",
+    "source_url": "https://foursquare.com/placemakers/review-place/a239e27a51d64a7d143cc112",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Nationwide Mutual Insurance Company",
+    "phone": "(913) 451-3900",
+    "street_address": "4300 W 133rd St",
+    "city": "Leawood",
+    "zip": "66209",
+    "website": "https://www.nationwide.com",
+    "source_url": "https://foursquare.com/placemakers/review-place/d3614041a4e47091c0f90d49",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Cline Wood, a Marsh & McLennan Agency company",
+    "phone": "(913) 451-3900",
+    "street_address": "4300 W 133rd St",
+    "city": "Leawood",
+    "zip": "66209",
+    "website": "http://www.marshmclennanagency.com",
+    "source_url": "https://foursquare.com/placemakers/review-place/5d2a4bb9a5dc4d58e51385ce",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Nationwide",
+    "phone": "(913) 451-3900",
+    "street_address": "4300 W 133rd St",
+    "city": "Leawood",
+    "zip": "66209",
+    "website": "https://www.nationwide.com",
+    "source_url": "https://foursquare.com/placemakers/review-place/230c0f2d6ebc4e5ea3d34b38",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Tim Thompson - State Farm Insurance Agent",
+    "phone": "(913) 498-8830",
+    "street_address": "13401 Mission Rd Ste 214",
+    "city": "Leawood",
+    "zip": "66209",
+    "website": "http://www.tthompsonagency.com",
+    "source_url": "https://foursquare.com/placemakers/review-place/5c19241b1cf2e1002c20e8cf",
+    "source": "Foursquare"
+  },
+  {
+    "name": "KMO Insurance Agency",
+    "phone": "(816) 258-1564",
+    "street_address": "4901 W 136th St",
+    "city": "Overland Park",
+    "zip": "66224",
+    "website": "https://kmoinsurance.com",
+    "source_url": "https://foursquare.com/placemakers/review-place/6390fea7fc8c5622dec52725",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Nationwide Mutual Insurance Company",
+    "phone": "(888) 878-7058",
+    "street_address": "14809 Sherwood St",
+    "city": "Leawood",
+    "zip": "66224",
+    "website": "https://www.nationwide.com",
+    "source_url": "https://foursquare.com/placemakers/review-place/76070f3d635771bcd09d841d",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Nationwide",
+    "phone": "(213) 381-3202",
+    "street_address": "14809 Sherwood St",
+    "city": "Leawood",
+    "zip": "66224",
+    "website": "https://www.nationwide.com",
+    "source_url": "https://foursquare.com/placemakers/review-place/859aac414a314acc2a11bef1",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Shane Morrison: Allstate Insurance",
+    "phone": "(913) 232-2192",
+    "street_address": "12250 State Line Rd",
+    "city": "Leawood",
+    "zip": "66209",
+    "website": "https://agents.allstate.com/0B8171",
+    "source_url": "https://foursquare.com/placemakers/review-place/5b62c212c824ae002c908847",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Julie Pfefer & Associates Agency",
+    "phone": "(913) 671-7900",
+    "street_address": "7301 Mission Rd",
+    "city": "Prairie Village",
+    "zip": "66208",
+    "website": "http://www.insuredbyjulie.com",
+    "source_url": "https://foursquare.com/placemakers/review-place/cc582c0abc134a01584b79f6",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Nationwide",
+    "phone": "(913) 403-0963",
+    "street_address": "7301 Mission Rd",
+    "city": "Prairie Village",
+    "zip": "66208",
+    "website": "https://www.nationwide.com",
+    "source_url": "https://foursquare.com/placemakers/review-place/5b34aa67276a457b35aabc20",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Nationwide Mutual Insurance Company",
+    "phone": "(913) 403-0963",
+    "street_address": "7301 Mission Rd",
+    "city": "Prairie Village",
+    "zip": "66208",
+    "website": "https://www.nationwide.com",
+    "source_url": "https://foursquare.com/placemakers/review-place/eee475a9216408da4e7a23c1",
+    "source": "Foursquare"
+  },
+  {
+    "name": "State Farm Insurance",
+    "phone": "(913) 648-6400",
+    "street_address": "7301 Mission Rd",
+    "city": "Prairie Village",
+    "zip": "66208",
+    "website": "http://www.statefarm.com",
+    "source_url": "https://foursquare.com/placemakers/review-place/fac8fccadadd4f24c748c10a",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Farmers Insurance - Scott Ferrel",
+    "phone": "(913) 667-7998",
+    "street_address": "3520 W 75th St",
+    "city": "Prairie Village",
+    "zip": "66208",
+    "website": "http://www.farmers.com",
+    "source_url": "https://foursquare.com/placemakers/review-place/b438f7b71b264c54d2eb2777",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Nationwide",
+    "phone": "(816) 361-2423",
+    "street_address": "5225 W 75th St",
+    "city": "Mission Township",
+    "zip": "66208",
+    "website": "https://www.nationwide.com",
+    "source_url": "https://foursquare.com/placemakers/review-place/a9305b92b5cb47c7f736494e",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Nationwide Mutual Insurance Company",
+    "phone": "(816) 361-2423",
+    "street_address": "5225 W 75th St",
+    "city": "Mission Township",
+    "zip": "66208",
+    "website": "https://www.nationwide.com",
+    "source_url": "https://foursquare.com/placemakers/review-place/a7530f5bb2396198637a02b7",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Nationwide",
+    "phone": "(913) 232-7641",
+    "street_address": "4200 Somerset Dr",
+    "city": "Prairie Village",
+    "zip": "66208",
+    "website": "https://www.nationwide.com",
+    "source_url": "https://foursquare.com/placemakers/review-place/fab6750895c24c1341d21ca1",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Nationwide Mutual Insurance Company",
+    "phone": "(913) 232-7641",
+    "street_address": "4200 Somerset Dr",
+    "city": "Prairie Village",
+    "zip": "66208",
+    "website": "https://www.nationwide.com",
+    "source_url": "https://foursquare.com/placemakers/review-place/df50e408880b14c91054834e",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Farmers Insurance - Grant Fenton",
+    "phone": "(913) 642-1035",
+    "street_address": "7505 Nall Ave",
+    "city": "Prairie Village",
+    "zip": "66208",
+    "website": "http://www.farmers.com",
+    "source_url": "https://foursquare.com/placemakers/review-place/60282547a1a94b33ce56c60f",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Nationwide",
+    "phone": "(913) 671-7900",
+    "street_address": "3965 W 83rd St",
+    "city": "Prairie Village",
+    "zip": "66208",
+    "website": "https://www.nationwide.com",
+    "source_url": "https://foursquare.com/placemakers/review-place/21db80889ae44df4f4cc45d9",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Nationwide Mutual Insurance Company",
+    "phone": "(303) 799-8112",
+    "street_address": "7717 Lamar Ave",
+    "city": "Prairie Village",
+    "zip": "66208",
+    "website": "https://www.nationwide.com",
+    "source_url": "https://foursquare.com/placemakers/review-place/108242808754608c7e788654",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Nationwide",
+    "phone": "(303) 799-8112",
+    "street_address": "7717 Lamar Ave",
+    "city": "Prairie Village",
+    "zip": "66208",
+    "website": "https://www.nationwide.com",
+    "source_url": "https://foursquare.com/placemakers/review-place/afa5d322b4f74c0f19581dbe",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Capitol Agency\u00ae Insurance",
+    "phone": "(877) 611-7333",
+    "street_address": "1900 W 75th St Lowr LL20",
+    "city": "Prairie Village",
+    "zip": "66208",
+    "website": "https://www.capitolagencyins.com",
+    "source_url": "https://foursquare.com/placemakers/review-place/64325dce0910f6089e2ca612",
+    "source": "Foursquare"
+  },
+  {
+    "name": "The Sloan Agency",
+    "phone": "(816) 531-3680",
+    "street_address": "7400 State Line Rd",
+    "city": "Prairie Village",
+    "zip": "66208",
+    "website": "http://www.thesloanagency.com",
+    "source_url": "https://foursquare.com/placemakers/review-place/e371f14ef4c34f09f478c32a",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Tko Financial Services",
+    "phone": "(913) 642-0099",
+    "street_address": "7930 State Line Rd",
+    "city": "Prairie Village",
+    "zip": "66208",
+    "website": "http://www.tomwiese.com",
+    "source_url": "https://foursquare.com/placemakers/review-place/02954c1de8ac461ae683db06",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Jane Mcginnis - State Farm Insurance Agent",
+    "phone": "(913) 383-3444",
+    "street_address": "4518 W 89th St",
+    "city": "Prairie Village",
+    "zip": "66207",
+    "website": "https://www.statefarm.com/agent/US/KS/Prairie-Vlg",
+    "source_url": "https://foursquare.com/placemakers/review-place/426033ab709a46a853f65320",
+    "source": "Foursquare"
+  },
+  {
+    "name": "American Family Insurance - Chris A. Woody Agency Inc.",
+    "phone": "(913) 341-4448",
+    "street_address": "4518 W 89th St Ste 200",
+    "city": "Prairie Village",
+    "zip": "66207",
+    "website": "http://insurance-agency.amfam.com/KS/chris-woody/insurance-products.aspx",
+    "source_url": "https://foursquare.com/placemakers/review-place/53523f12498e26a65ee54556",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Nationwide Mutual Insurance Company",
+    "phone": "(913) 238-4479",
+    "street_address": "4518 W 89th St",
+    "city": "Prairie Village",
+    "zip": "66207",
+    "website": "https://www.nationwide.com",
+    "source_url": "https://foursquare.com/placemakers/review-place/a0121ac1008568769656c6cf",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Nationwide",
+    "phone": "(913) 238-4479",
+    "street_address": "4518 W 89th St",
+    "city": "Prairie Village",
+    "zip": "66207",
+    "website": "https://www.nationwide.com",
+    "source_url": "https://foursquare.com/placemakers/review-place/c7aa132aa99543d7e0add4bf",
+    "source": "Foursquare"
+  },
+  {
+    "name": "American Family Insurance - David Rieder",
+    "phone": "(913) 735-8020",
+    "street_address": "4518 W 89th St Ste 200",
+    "city": "Prairie Village",
+    "zip": "66207",
+    "website": "http://insurance-agency.amfam.com/KS/david-rieder/default.aspx?sourceid=agp0001034004",
+    "source_url": "https://foursquare.com/placemakers/review-place/53526a01498e9b49cb913bc6",
+    "source": "Foursquare"
+  },
+  {
+    "name": "The Woody Insurance Group, A Division of World",
+    "phone": "(913) 341-4448",
+    "street_address": "4518 W 89th St",
+    "city": "Prairie Village",
+    "zip": "66207",
+    "website": "https://thewoodyinsurancegroup.com",
+    "source_url": "https://foursquare.com/placemakers/review-place/99455a73dbe646e0f094a1da",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Farmers Insurance",
+    "phone": "(913) 441-8467",
+    "street_address": "4619 W 90th St",
+    "city": "Prairie Village",
+    "zip": "66207",
+    "website": "http://www.farmersagent.com/gphillips",
+    "source_url": "https://foursquare.com/placemakers/review-place/564500ba498edf3cd0e1531a",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Gerber Insurance Group",
+    "phone": "(913) 649-7800",
+    "street_address": "5200 W 94th Ter",
+    "city": "Prairie Village",
+    "zip": "66207",
+    "website": "http://www.gerberinsgroup.com",
+    "source_url": "https://foursquare.com/placemakers/review-place/21a25a650607421bb5d8f760",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Insight Advisers",
+    "phone": "(913) 228-0094",
+    "street_address": "5350 W 94th Ter Ste 102",
+    "city": "Prairie Village",
+    "zip": "66207",
+    "website": "http://www.insight-advisers.com",
+    "source_url": "https://foursquare.com/placemakers/review-place/6a1f48e9976a555380ee887d",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Shelter Insurance - Ryan Fellers",
+    "phone": "(913) 663-1167",
+    "street_address": "9401 Nall Ave",
+    "city": "Prairie Village",
+    "zip": "66207",
+    "website": null,
+    "source_url": "https://foursquare.com/placemakers/review-place/3a14607a4f994daaa056b129",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Nationwide Mutual Insurance Company",
+    "phone": "(913) 544-2600",
+    "street_address": "5100 W 95th St",
+    "city": "Prairie Village",
+    "zip": "66207",
+    "website": "https://www.nationwide.com",
+    "source_url": "https://foursquare.com/placemakers/review-place/625d2c3b4cbed79ff95a0248",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Nationwide",
+    "phone": "(913) 544-2600",
+    "street_address": "5100 W 95th St",
+    "city": "Prairie Village",
+    "zip": "66207",
+    "website": "https://www.nationwide.com",
+    "source_url": "https://foursquare.com/placemakers/review-place/e7892eb9275647f5b4f453b3",
+    "source": "Foursquare"
+  },
+  {
+    "name": "American Family Insurance - Steve Willhite",
+    "phone": "(913) 383-1191",
+    "street_address": "5300 W 95th St",
+    "city": "Prairie Village",
+    "zip": "66207",
+    "website": "http://insurance-agency.amfam.com/KS/steve-willhite/default.aspx?sourceid=agp0001025526",
+    "source_url": "https://foursquare.com/placemakers/review-place/5352860e498efba2c5f3fc42",
+    "source": "Foursquare"
+  },
+  {
+    "name": "American Family Insurance",
+    "phone": "(913) 381-1177",
+    "street_address": "5300 W 95th St",
+    "city": "Prairie Village",
+    "zip": "66207",
+    "website": "http://www.amfam.com",
+    "source_url": "https://foursquare.com/placemakers/review-place/963ddb5276cc4ea86b002391",
+    "source": "Foursquare"
+  },
+  {
+    "name": "American Family Insurance - Kathy Skahan",
+    "phone": "(913) 381-1177",
+    "street_address": "5300 W 95th St",
+    "city": "Prairie Village",
+    "zip": "66207",
+    "website": "http://insurance-agency.amfam.com/KS/kathy-skahan/default.aspx?sourceid=agp0001015900",
+    "source_url": "https://foursquare.com/placemakers/review-place/535293e411d20c751e203eef",
+    "source": "Foursquare"
+  },
+  {
+    "name": "American Family Insurance - Jessica Butler",
+    "phone": "(913) 631-7788",
+    "street_address": "9408 Johnson Dr",
+    "city": "Merriam",
+    "zip": "66203",
+    "website": "http://insurance-agency.amfam.com/KS/jessica-butler/default.aspx?sourceid=agp0001040261",
+    "source_url": "https://foursquare.com/placemakers/review-place/5351501a11d29859f5c48ed8",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Julie Stoll - State Farm Insurance Agent",
+    "phone": "(913) 722-6200",
+    "street_address": "8600 Shawnee Mission Pkwy Ste 303",
+    "city": "Mission",
+    "zip": "66202",
+    "website": "http://www.juliestoll.com",
+    "source_url": "https://foursquare.com/placemakers/review-place/4d275e0bb818a35d2cf38a8a",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Old United Life Insurance Co.",
+    "phone": "(913) 895-0259",
+    "street_address": "8500 Shawnee Mission Pkwy",
+    "city": "Mission",
+    "zip": "66202",
+    "website": "http://www.oldunited.com",
+    "source_url": "https://foursquare.com/placemakers/review-place/d7ec615d20af48ab7cfe2ed7",
+    "source": "Foursquare"
+  },
+  {
+    "name": "MPP Co",
+    "phone": "(800) 747-4400",
+    "street_address": "8500 Shawnee Mission Pkwy",
+    "city": "Mission",
+    "zip": "66202",
+    "website": "http://www.mpp.com",
+    "source_url": "https://foursquare.com/placemakers/review-place/70ae192482c14f63b7e2414f",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Farmers Insurance",
+    "phone": "(913) 631-1202",
+    "street_address": "6505 E Frontage Rd",
+    "city": "Mission Township",
+    "zip": "66202",
+    "website": "http://www.farmersagent.com/tschrader",
+    "source_url": "https://foursquare.com/placemakers/review-place/564500ba498edf3cd0e15302",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Farmers Insurance - Keith Smith",
+    "phone": "(913) 385-9000",
+    "street_address": "7451 Switzer Rd",
+    "city": "Merriam",
+    "zip": "66203",
+    "website": "http://www.farmers.com",
+    "source_url": "https://foursquare.com/placemakers/review-place/6bb8167a0aaa46529c856b63",
+    "source": "Foursquare"
+  },
+  {
+    "name": "American Family Insurance",
+    "phone": "(913) 530-8634",
+    "street_address": "5830 Woodson St",
+    "city": "Mission",
+    "zip": "66202",
+    "website": "http://www.amfam.com",
+    "source_url": "https://foursquare.com/placemakers/review-place/3e6ae776eda643fe8608fd0c",
+    "source": "Foursquare"
+  },
+  {
+    "name": "American Family Insurance - Jeremiah Woodring",
+    "phone": "(913) 722-2777",
+    "street_address": "5820 Lamar Ave Ste 207",
+    "city": "Mission",
+    "zip": "66202",
+    "website": "http://insurance-agency.amfam.com/KS/jeremiah-j-woodring/default.aspx?sourceid=agp0001023980",
+    "source_url": "https://foursquare.com/placemakers/review-place/53515023498ef7c697132550",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Homeowners Insurance Agency",
+    "phone": "(913) 722-4300",
+    "street_address": "6101 Martway St",
+    "city": "Mission",
+    "zip": "66202",
+    "website": "http://copelandinsurance.net",
+    "source_url": "https://foursquare.com/placemakers/review-place/d13e082ac49a4f4e18270726",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Great American Insurance Co.",
+    "phone": "",
+    "street_address": "5700 Broadmoor St",
+    "city": "Mission",
+    "zip": "66202",
+    "website": null,
+    "source_url": "https://foursquare.com/placemakers/review-place/6940511965d559314abe12b0",
+    "source": "Foursquare"
+  },
+  {
+    "name": "AAA Missouri",
+    "phone": "(913) 236-5678",
+    "street_address": "5421 Johnson Dr",
+    "city": "Mission",
+    "zip": "66205",
+    "website": "http://www.aaa.com",
+    "source_url": "https://foursquare.com/placemakers/review-place/589987ab2eb9792cc38efe11",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Nationwide",
+    "phone": "(913) 319-8980",
+    "street_address": "5925 Nall Ave",
+    "city": "Mission",
+    "zip": "66202",
+    "website": "https://www.nationwide.com",
+    "source_url": "https://foursquare.com/placemakers/review-place/3ee5dbc6dca8451bd8234497",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Nationwide Mutual Insurance Company",
+    "phone": "(913) 319-8980",
+    "street_address": "5925 Nall Ave",
+    "city": "Mission",
+    "zip": "66202",
+    "website": "https://www.nationwide.com",
+    "source_url": "https://foursquare.com/placemakers/review-place/04d726b2ced7a4e6a4a69323",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Nationwide Mutual Insurance Company",
+    "phone": "(913) 384-6050",
+    "street_address": "5042 Lamar Ave",
+    "city": "Mission",
+    "zip": "66202",
+    "website": "https://www.nationwide.com",
+    "source_url": "https://foursquare.com/placemakers/review-place/987727ca1b3d381d8217aad7",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Uriarte Insurance",
+    "phone": "(913) 384-6050",
+    "street_address": "5042 Lamar Ave",
+    "city": "Mission",
+    "zip": "66202",
+    "website": "https://www.uriarteinsurancegroup.com",
+    "source_url": "https://foursquare.com/placemakers/review-place/4e613cf318a8ce02fc528fb5",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Nationwide",
+    "phone": "(913) 384-6050",
+    "street_address": "5042 Lamar Ave",
+    "city": "Mission",
+    "zip": "66202",
+    "website": "https://www.nationwide.com",
+    "source_url": "https://foursquare.com/placemakers/review-place/46ac620a707a41162b0695a1",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Chapman & Hogan Insurance Group",
+    "phone": "",
+    "street_address": "6950 Squibb Rd Ste 200",
+    "city": "Mission",
+    "zip": "66202",
+    "website": "https://agency.nationwide.com/chapman-&-hogan-insurance-group-in-mission-ks-13500170",
+    "source_url": "https://foursquare.com/placemakers/review-place/5e56ace6cb60410008c59ea1",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Bovard Insurance Group",
+    "phone": "(913) 529-1130",
+    "street_address": "6950 Squibb Rd",
+    "city": "Mission",
+    "zip": "66202",
+    "website": "http://www.bovardinsurancegroup.com",
+    "source_url": "https://foursquare.com/placemakers/review-place/5910f333e57ca60e46be5526",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Wrenn Insurance",
+    "phone": "(913) 599-2020",
+    "street_address": "7400 Johnson Dr",
+    "city": "Overland Park",
+    "zip": "66202",
+    "website": "http://nreig.us",
+    "source_url": "https://foursquare.com/placemakers/review-place/4d91ecfcd7b1236a13fa3a38",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Joe Oldham - State Farm Insurance Agent",
+    "phone": "(913) 856-6124",
+    "street_address": "224 E Main St",
+    "city": "Gardner",
+    "zip": "66030",
+    "website": "http://www.joeoldhamagency.com",
+    "source_url": "https://foursquare.com/placemakers/review-place/5218f9ce11d2b4b4663978fe",
+    "source": "Foursquare"
+  },
+  {
+    "name": "American Family Insurance - Timothy Miller",
+    "phone": "(913) 856-6177",
+    "street_address": "213 E Main St",
+    "city": "Gardner",
+    "zip": "66030",
+    "website": "http://insurance-agency.amfam.com/KS/timothy-miller/default.aspx?sourceid=agp0001040415",
+    "source_url": "https://foursquare.com/placemakers/review-place/4ea8589f5c5cc8e4992263e0",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Farmers Insurance",
+    "phone": "(913) 856-3816",
+    "street_address": "235 E Main St",
+    "city": "Gardner",
+    "zip": "66030",
+    "website": "http://www.farmersagent.com/rkelly",
+    "source_url": "https://foursquare.com/placemakers/review-place/564500ba498edf3cd0e152cf",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Farm Bureau Financial Services",
+    "phone": "(913) 856-2197",
+    "street_address": "820 E Main St",
+    "city": "Gardner",
+    "zip": "66030",
+    "website": "http://russellotte.fbfs.com",
+    "source_url": "https://foursquare.com/placemakers/review-place/d587011f59fe48b2891d7004",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Nationwide Mutual Insurance Company",
+    "phone": "(913) 856-0002",
+    "street_address": "345 N Moonlight Rd",
+    "city": "Gardner",
+    "zip": "66030",
+    "website": "https://www.nationwide.com",
+    "source_url": "https://foursquare.com/placemakers/review-place/3c01564bc3f226db2ed44228",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Mjh Insurance & Financial",
+    "phone": "(913) 856-0002",
+    "street_address": "345 N Moonlight Rd",
+    "city": "Gardner",
+    "zip": "66030",
+    "website": "http://www.mjhins.com",
+    "source_url": "https://foursquare.com/placemakers/review-place/3c14459987d047613730266e",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Nationwide",
+    "phone": "(913) 856-0002",
+    "street_address": "345 N Moonlight Rd",
+    "city": "Gardner",
+    "zip": "66030",
+    "website": "https://www.nationwide.com",
+    "source_url": "https://foursquare.com/placemakers/review-place/a8497f2cff6d4f6d5439b282",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Dunmire Insurance Agency",
+    "phone": "(913) 592-3326",
+    "street_address": "201 S Webster St",
+    "city": "Spring Hill",
+    "zip": "66083",
+    "website": "http://www.sbsh-ks.com",
+    "source_url": "https://foursquare.com/placemakers/review-place/3c51bc1e88a34bd601b9eca4",
+    "source": "Foursquare"
+  },
+  {
+    "name": "American Family Insurance - Jeffrey Sears",
+    "phone": "(913) 592-3107",
+    "street_address": "119 S Main St",
+    "city": "Spring Hill",
+    "zip": "66083",
+    "website": "http://insurance-agency.amfam.com/KS/jeffrey-sears/default.aspx?sourceid=agp0001023036",
+    "source_url": "https://foursquare.com/placemakers/review-place/53523fa7498ee975a2fb8d19",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Farm Bureau Financial Services",
+    "phone": "",
+    "street_address": "117 S Main St",
+    "city": "Spring Hill",
+    "zip": "66083",
+    "website": null,
+    "source_url": "https://foursquare.com/placemakers/review-place/4e2f0dda62e1fbac610757b1",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Kim Thompson Lutcf",
+    "phone": "(913) 592-5573",
+    "street_address": "21890 S Webster St",
+    "city": "Spring Hill",
+    "zip": "66083",
+    "website": "http://progressive.com",
+    "source_url": "https://foursquare.com/placemakers/review-place/a5b354c1d43c4a88f9de168a",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Libby Clark: Allstate Insurance",
+    "phone": "(913) 686-6205",
+    "street_address": "21191 W 223rd St",
+    "city": "Spring Hill",
+    "zip": "66083",
+    "website": "https://agents.allstate.com/libby-clark-spring-hill-ks.html",
+    "source_url": "https://foursquare.com/placemakers/review-place/5c2ef5361acf11002b784c7a",
+    "source": "Foursquare"
+  },
+  {
+    "name": "American Family Insurance - Julie Coover",
+    "phone": "(913) 583-1219",
+    "street_address": "32565 Lexington Ave Ste B",
+    "city": "De Soto",
+    "zip": "66018",
+    "website": "http://insurance-agency.amfam.com/KS/julie-coover/default.aspx?sourceid=agp0001028357",
+    "source_url": "https://foursquare.com/placemakers/review-place/5352b0dd498e7c38a986ff02",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Nationwide Mutual Insurance Company",
+    "phone": "(913) 585-1981",
+    "street_address": "34102 Commerce Dr",
+    "city": "De Soto",
+    "zip": "66018",
+    "website": "https://www.nationwide.com",
+    "source_url": "https://foursquare.com/placemakers/review-place/5c7513c152f32d28fc519a2c",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Nationwide Mutual Insurance Company",
+    "phone": "(913) 707-7689",
+    "street_address": "4774 Falmouth St",
+    "city": "Roeland Park",
+    "zip": "66205",
+    "website": "https://www.nationwide.com",
+    "source_url": "https://foursquare.com/placemakers/review-place/a5f921d89eed1e0206155153",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Nationwide",
+    "phone": "(913) 707-7689",
+    "street_address": "4774 Falmouth St",
+    "city": "Roeland Park",
+    "zip": "66205",
+    "website": "https://www.nationwide.com",
+    "source_url": "https://foursquare.com/placemakers/review-place/ace75694929245647c3e4aec",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Nationwide Mutual Insurance Company",
+    "phone": "(785) 342-3176",
+    "street_address": "4707 Roe Pkwy",
+    "city": "Roeland Park",
+    "zip": "66205",
+    "website": "https://www.nationwide.com",
+    "source_url": "https://foursquare.com/placemakers/review-place/31d7da211a80b85830e7f49a",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Nationwide",
+    "phone": "(785) 342-3176",
+    "street_address": "4707 Roe Pkwy",
+    "city": "Roeland Park",
+    "zip": "66205",
+    "website": "https://www.nationwide.com",
+    "source_url": "https://foursquare.com/placemakers/review-place/e40779cdb9514a368f01f3dc",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Williams-Gaughan Insurance",
+    "phone": "(913) 677-5122",
+    "street_address": "4818 Johnson Dr",
+    "city": "Roeland Park",
+    "zip": "66205",
+    "website": "http://www.williams-gaughan.com",
+    "source_url": "https://foursquare.com/placemakers/review-place/0019d5b40d644e3b5c7263ac",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Farmers Insurance",
+    "phone": "(913) 362-4500",
+    "street_address": "4818 Johnson Dr",
+    "city": "Roeland Park",
+    "zip": "66205",
+    "website": "http://www.farmersagent.com/jdriver",
+    "source_url": "https://foursquare.com/placemakers/review-place/564500ba498edf3cd0e15310",
+    "source": "Foursquare"
+  },
+  {
+    "name": "David Chavez - State Farm Insurance Agent",
+    "phone": "(913) 432-9000",
+    "street_address": "4920 Johnson Dr",
+    "city": "Roeland Park",
+    "zip": "66205",
+    "website": "http://www.chavezagency.com",
+    "source_url": "https://foursquare.com/placemakers/review-place/52126e6311d2954ec009a8fe",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Midwest Professional Insurance",
+    "phone": "(913) 747-1000",
+    "street_address": "4400 Shawnee Mission Pkwy Ste 208",
+    "city": "Fairway",
+    "zip": "66205",
+    "website": "http://www.mwpins.com",
+    "source_url": "https://foursquare.com/placemakers/review-place/5aa103653149b915e8e8327d",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Nationwide Mutual Insurance Company",
+    "phone": "(913) 222-4080",
+    "street_address": "4207 W 62nd Ter",
+    "city": "Fairway",
+    "zip": "66205",
+    "website": "https://www.nationwide.com",
+    "source_url": "https://foursquare.com/placemakers/review-place/a2ac1b8d54b1c442f626be74",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Impact Programs LLC",
+    "phone": "(913) 218-3910",
+    "street_address": "4300 Shawnee Mission Pkwy Ste 300",
+    "city": "Fairway",
+    "zip": "66205",
+    "website": null,
+    "source_url": "https://foursquare.com/placemakers/review-place/5c80c26e029a55002cc4b26c",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Nationwide",
+    "phone": "(913) 222-4080",
+    "street_address": "4207 W 62nd Ter",
+    "city": "Fairway",
+    "zip": "66205",
+    "website": "https://www.nationwide.com",
+    "source_url": "https://foursquare.com/placemakers/review-place/73442b39935b450c231fcdac",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Specialty Program Insurors",
+    "phone": "(913) 432-4400",
+    "street_address": "4300 Shawnee Mission Pkwy",
+    "city": "Fairway",
+    "zip": "66205",
+    "website": "http://hwins.com",
+    "source_url": "https://foursquare.com/placemakers/review-place/e66037131557469c1f49a948",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Nationwide Mutual Insurance Company",
+    "phone": "(913) 432-4400",
+    "street_address": "4300 Shawnee Mission Pkwy",
+    "city": "Fairway",
+    "zip": "66205",
+    "website": "https://www.nationwide.com",
+    "source_url": "https://foursquare.com/placemakers/review-place/db0ba2542d94bd50d821aace",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Nationwide",
+    "phone": "(913) 432-4400",
+    "street_address": "4300 Shawnee Mission Pkwy",
+    "city": "Fairway",
+    "zip": "66205",
+    "website": "https://www.nationwide.com",
+    "source_url": "https://foursquare.com/placemakers/review-place/2731ebc94a4445da7066d47b",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Jackson National Life Insurance Co.",
+    "phone": "(913) 677-4233",
+    "street_address": "4330 Shawnee Mission Pkwy",
+    "city": "Fairway",
+    "zip": "66205",
+    "website": "http://jackson.com",
+    "source_url": "https://foursquare.com/placemakers/review-place/3f66b697c4d2491152b2b21b",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Assurant Health",
+    "phone": "(913) 236-4029",
+    "street_address": "2905 W 50th St",
+    "city": "Westwood",
+    "zip": "66205",
+    "website": "http://assuranthealth.com",
+    "source_url": "https://foursquare.com/placemakers/review-place/79649b33f0b14cd9b1e9c311",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Arena Insurance Brokers",
+    "phone": "(913) 363-1300",
+    "street_address": "4705 Mission Rd",
+    "city": "Westwood",
+    "zip": "66205",
+    "website": "http://www.arenains.com",
+    "source_url": "https://foursquare.com/placemakers/review-place/e989698188658148fbcb06d9",
+    "source": "Foursquare"
+  }
+]

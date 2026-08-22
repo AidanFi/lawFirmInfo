@@ -12,20 +12,24 @@
 
   Promise.all([
     fetch('county-data/manifest.json').then(function (r) { return r.json(); }),
-    fetch('county-data/providers-manifest.json').then(function (r) { return r.json(); })
+    fetch('county-data/providers-manifest.json').then(function (r) { return r.json(); }),
+    fetch('county-data/insurance-manifest.json').then(function (r) { return r.json(); })
   ]).then(function (results) {
-    render(results[0].counties || [], results[1].providers || []);
+    render(results[0].counties || [], results[1].providers || [], results[2].insurance || []);
   }).catch(function () {
     loadError.classList.remove('hidden');
   });
 
-  function render(counties, providers) {
+  function render(counties, providers, insurance) {
     var states = {};
     counties.forEach(function (c) {
-      (states[c.state] = states[c.state] || { firms: [], providers: [] }).firms.push(c);
+      (states[c.state] = states[c.state] || { firms: [], providers: [], insurance: [] }).firms.push(c);
     });
     providers.forEach(function (p) {
-      (states[p.state] = states[p.state] || { firms: [], providers: [] }).providers.push(p);
+      (states[p.state] = states[p.state] || { firms: [], providers: [], insurance: [] }).providers.push(p);
+    });
+    insurance.forEach(function (i) {
+      (states[i.state] = states[i.state] || { firms: [], providers: [], insurance: [] }).insurance.push(i);
     });
 
     var stateCodes = Object.keys(states).sort();
@@ -82,7 +86,7 @@
   function renderCategoryContent(key, data) {
     if (key === 'firms') return renderFirmGrid(data.firms);
     if (key === 'providers') return renderProviderGrid(data.providers);
-    return renderInsurancePlaceholder();
+    return renderInsuranceGrid(data.insurance);
   }
 
   function renderFirmGrid(entries) {
@@ -104,6 +108,20 @@
         var totalChiro = filtered.reduce(function (sum, p) { return sum + p.chiro; }, 0);
         var totalPt = filtered.reduce(function (sum, p) { return sum + p.pt; }, 0);
         return ' · ' + totalChiro.toLocaleString() + ' chiropractors · ' + totalPt.toLocaleString() + ' physical therapists';
+      }
+    });
+  }
+
+  function renderInsuranceGrid(entries) {
+    return buildSearchableGrid(entries, {
+      emptyTitle: 'No insurance agent data yet',
+      emptyMessage: 'Insurance agent data has not been collected for this state yet.',
+      cardBuilder: createInsuranceCard,
+      sortCountKey: function (e) { return (e.captive_count || 0) + (e.independent_count || 0); },
+      extraSummary: function (filtered) {
+        var totalCaptive = filtered.reduce(function (sum, i) { return sum + i.captive_count; }, 0);
+        var totalIndependent = filtered.reduce(function (sum, i) { return sum + i.independent_count; }, 0);
+        return ' · ' + totalCaptive.toLocaleString() + ' captive agents · ' + totalIndependent.toLocaleString() + ' independent agents';
       }
     });
   }
@@ -191,10 +209,6 @@
     return wrap;
   }
 
-  function renderInsurancePlaceholder() {
-    return renderEmptyState('Insurance data coming soon', 'This category has not been populated yet. Check back once the insurance data pipeline is built.');
-  }
-
   function renderEmptyState(title, message) {
     var div = document.createElement('div');
     div.className = 'empty-state';
@@ -226,6 +240,20 @@
         '<span class="breakdown-item"><strong>' + p.pt + '</strong> Physical Therapists</span>' +
       '</div>' +
       '<a href="county-data/' + encodeURIComponent(p.csv_file) + '" download class="download-btn">Download CSV</a>';
+    return card;
+  }
+
+  function createInsuranceCard(i) {
+    var card = document.createElement('div');
+    card.className = 'county-card';
+    card.innerHTML =
+      '<div class="county-card-name">' + escapeHtml(i.name) + '</div>' +
+      '<div class="county-card-state">' + escapeHtml(i.state) + '</div>' +
+      '<div class="county-card-breakdown">' +
+        '<span class="breakdown-item"><strong>' + i.captive_count + '</strong> Captive Agents</span>' +
+        '<span class="breakdown-item"><strong>' + i.independent_count + '</strong> Independent Agents</span>' +
+      '</div>' +
+      '<a href="county-data/' + encodeURIComponent(i.csv_file) + '" download class="download-btn">Download CSV</a>';
     return card;
   }
 

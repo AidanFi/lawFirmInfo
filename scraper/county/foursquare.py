@@ -78,7 +78,7 @@ def discover_foursquare(county_config: dict, api_key: str, test_mode: bool = Fal
             params = {
                 "query": query,
                 "near": near_val,
-                "categories": FOURSQUARE_LEGAL_CATEGORIES,
+                "fsq_category_ids": FOURSQUARE_LEGAL_CATEGORIES,
                 "limit": 50,
             }
 

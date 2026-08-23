@@ -7,6 +7,14 @@
       "csv_file": "insurance-johnson-county-ks.csv",
       "captive_count": 224,
       "independent_count": 108
+    },
+    {
+      "slug": "sedgwick-county-ks",
+      "name": "Sedgwick County",
+      "state": "KS",
+      "csv_file": "insurance-sedgwick-county-ks.csv",
+      "captive_count": 173,
+      "independent_count": 34
     }
   ]
 }

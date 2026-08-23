@@ -5,8 +5,8 @@
       "name": "Johnson County",
       "state": "KS",
       "csv_file": "insurance-johnson-county-ks.csv",
-      "captive_count": 221,
-      "independent_count": 86
+      "captive_count": 224,
+      "independent_count": 108
     }
   ]
 }

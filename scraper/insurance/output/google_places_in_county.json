@@ -1,0 +1,864 @@
+[
+  {
+    "name": "Agency Insurance",
+    "phone": "(913) 386-8298",
+    "website": "https://www.agencyinsurance.us/",
+    "formatted_address": "5440 W 110th St Ste 300, Overland Park, KS 66211, USA",
+    "city_hint": "Overland Park",
+    "place_id": "ChIJE8ynHbzBwIcRGUaAU2Vnlp4",
+    "business_status": "OPERATIONAL",
+    "types": [
+      "establishment",
+      "insurance_agency",
+      "point_of_interest"
+    ],
+    "source": "Google Places"
+  },
+  {
+    "name": "Johnson County Insurance Agency",
+    "phone": "(913) 381-8400",
+    "website": "http://jocoinsurance.com/",
+    "formatted_address": "9393 W 110th St Ste 553, Overland Park, KS 66210, USA",
+    "city_hint": "Overland Park",
+    "place_id": "ChIJyTOhBqLrwIcRrLZDNxTp56s",
+    "business_status": "OPERATIONAL",
+    "types": [
+      "establishment",
+      "insurance_agency",
+      "point_of_interest"
+    ],
+    "source": "Google Places"
+  },
+  {
+    "name": "Capstone Insurance Agency",
+    "phone": "(913) 825-2700",
+    "website": "https://www.capstoneagency.com/",
+    "formatted_address": "12721 Metcalf Ave Ste 100, Overland Park, KS 66213, USA",
+    "city_hint": "Overland Park",
+    "place_id": "ChIJ58jKBHXqwIcRQQ477epCusc",
+    "business_status": "OPERATIONAL",
+    "types": [
+      "establishment",
+      "insurance_agency",
+      "point_of_interest"
+    ],
+    "source": "Google Places"
+  },
+  {
+    "name": "Marla Williams Agency Inc",
+    "phone": "(913) 815-1725",
+    "website": "http://www.marlawilliamsagency.com/",
+    "formatted_address": "7180 W 107th St #11, Overland Park, KS 66212, USA",
+    "city_hint": "Overland Park",
+    "place_id": "ChIJ2WjGor7rwIcRxKAQqpWtCO8",
+    "business_status": "OPERATIONAL",
+    "types": [
+      "establishment",
+      "insurance_agency",
+      "point_of_interest"
+    ],
+    "source": "Google Places"
+  },
+  {
+    "name": "HighPointe Insurance Services, LLC",
+    "phone": "(913) 905-1486",
+    "website": "http://www.highpointeins.com/",
+    "formatted_address": "7304 W 130th St Ste 240, Overland Park, KS 66213, USA",
+    "city_hint": "Overland Park",
+    "place_id": "ChIJzSpEk_zqwIcR39c3AGCRA-c",
+    "business_status": "OPERATIONAL",
+    "types": [
+      "establishment",
+      "insurance_agency",
+      "point_of_interest"
+    ],
+    "source": "Google Places"
+  },
+  {
+    "name": "Oliver Insurance Agency Inc",
+    "phone": "(913) 341-1900",
+    "website": "http://oliver-insurance.com/",
+    "formatted_address": "10955 Lowell Ave #1010, Overland Park, KS 66210, USA",
+    "city_hint": "Overland Park",
+    "place_id": "ChIJCe07CzDqwIcRk6yPcV2l0G4",
+    "business_status": "OPERATIONAL",
+    "types": [
+      "establishment",
+      "insurance_agency",
+      "point_of_interest"
+    ],
+    "source": "Google Places"
+  },
+  {
+    "name": "The Reilly Company",
+    "phone": "(913) 708-8700",
+    "website": "https://reillyinsurance.com/",
+    "formatted_address": "11225 College Blvd Ste 210, Overland Park, KS 66210, USA",
+    "city_hint": "Overland Park",
+    "place_id": "ChIJJZzygNrqwIcRNdI7Ja4RmSY",
+    "business_status": "OPERATIONAL",
+    "types": [
+      "establishment",
+      "insurance_agency",
+      "point_of_interest"
+    ],
+    "source": "Google Places"
+  },
+  {
+    "name": "Fountain City Insurance Group",
+    "phone": "(913) 660-0880",
+    "website": "http://www.fcigkc.com/",
+    "formatted_address": "6600 W 95th St Ste 102, Overland Park, KS 66212, USA",
+    "city_hint": "Overland Park",
+    "place_id": "ChIJyYZ9C6ocHUwRKZnuGzsN134",
+    "business_status": "OPERATIONAL",
+    "types": [
+      "establishment",
+      "insurance_agency",
+      "point_of_interest"
+    ],
+    "source": "Google Places"
+  },
+  {
+    "name": "Insurance Pros Inc",
+    "phone": "(913) 944-4465",
+    "website": "http://insuranceprosinc.com/",
+    "formatted_address": "6600 College Blvd Ste. 140, Overland Park, KS 66211, USA",
+    "city_hint": "Overland Park",
+    "place_id": "ChIJh3kILjHqwIcR185jYeMST8c",
+    "business_status": "OPERATIONAL",
+    "types": [
+      "establishment",
+      "health",
+      "insurance_agency",
+      "point_of_interest"
+    ],
+    "source": "Google Places"
+  },
+  {
+    "name": "Copeland Insurance Agency",
+    "phone": "(913) 722-4300",
+    "website": "http://www.copelandins.com/",
+    "formatted_address": "9120 W 135th St #204, Overland Park, KS 66221, USA",
+    "city_hint": "Overland Park",
+    "place_id": "ChIJQ5q1rSfqwIcRBZ4EYnU-SfM",
+    "business_status": "OPERATIONAL",
+    "types": [
+      "establishment",
+      "insurance_agency",
+      "point_of_interest"
+    ],
+    "source": "Google Places"
+  },
+  {
+    "name": "Cockrill Insurance Agency",
+    "phone": "(913) 350-0351",
+    "website": "http://www.cockrillins.com/",
+    "formatted_address": "8101 College Blvd #100, Overland Park, KS 66210, USA",
+    "city_hint": "Overland Park",
+    "place_id": "ChIJcfATdojrwIcRFBuZcW2J9Tc",
+    "business_status": "OPERATIONAL",
+    "types": [
+      "establishment",
+      "insurance_agency",
+      "point_of_interest"
+    ],
+    "source": "Google Places"
+  },
+  {
+    "name": "Williamson & Associates Inc American Family Insurance",
+    "phone": "(913) 381-9000",
+    "website": "https://www.amfam.com/agents/kansas/overland-park/jennifer-williamson",
+    "formatted_address": "7900 Marty St, Overland Park, KS 66204, USA",
+    "city_hint": "Overland Park",
+    "place_id": "ChIJ_5NYzXPswIcRQ-2yWjBcIbg",
+    "business_status": "OPERATIONAL",
+    "types": [
+      "establishment",
+      "insurance_agency",
+      "point_of_interest"
+    ],
+    "source": "Google Places"
+  },
+  {
+    "name": "James Buckman - GEICO Insurance Agent",
+    "phone": "(913) 681-3200",
+    "website": "https://www.geico.com/insurance-agents/kansas/kansas-city/james-buckman/?y_source=1_MTQ5NTQ3NzctNzE1LWxvY2F0aW9uLndlYnNpdGU%3D",
+    "formatted_address": "11532 W 95th St, Overland Park, KS 66214, USA",
+    "city_hint": "Overland Park",
+    "place_id": "ChIJw72NTcPBwIcRKiErIG62JRw",
+    "business_status": "OPERATIONAL",
+    "types": [
+      "establishment",
+      "insurance_agency",
+      "point_of_interest"
+    ],
+    "source": "Google Places"
+  },
+  {
+    "name": "Insurance Resources Group (now Inszone Insurance Services)",
+    "phone": "(913) 768-0008",
+    "website": "http://www.irgks.com/",
+    "formatted_address": "1310 E Park St, Olathe, KS 66061, USA",
+    "city_hint": "Olathe",
+    "place_id": "ChIJXWrGLxu-wIcRQfPP8QD4oD8",
+    "business_status": "OPERATIONAL",
+    "types": [
+      "establishment",
+      "insurance_agency",
+      "point_of_interest"
+    ],
+    "source": "Google Places"
+  },
+  {
+    "name": "Smart Insurance",
+    "phone": "(913) 204-0405",
+    "website": "https://smartiagency.com/",
+    "formatted_address": "2036 E Santa Fe St, Olathe, KS 66062, USA",
+    "city_hint": "Olathe",
+    "place_id": "ChIJWS6eyyW-wIcRnwhbFAjC2Pw",
+    "business_status": "OPERATIONAL",
+    "types": [
+      "establishment",
+      "insurance_agency",
+      "point_of_interest"
+    ],
+    "source": "Google Places"
+  },
+  {
+    "name": "New Era Insurance LLC",
+    "phone": "(913) 800-7471",
+    "website": "https://www.newerainsagency.com/",
+    "formatted_address": "2085 E Santa Fe St, Olathe, KS 66062, USA",
+    "city_hint": "Olathe",
+    "place_id": "ChIJiQZrwCW-wIcRKDJNbCt1Fuo",
+    "business_status": "OPERATIONAL",
+    "types": [
+      "establishment",
+      "insurance_agency",
+      "point_of_interest"
+    ],
+    "source": "Google Places"
+  },
+  {
+    "name": "Mavels Insurance & Multiservices",
+    "phone": "(816) 375-8444",
+    "website": "http://www.mavelinsurance.com/",
+    "formatted_address": "10910 W 74th Terrace, Shawnee, KS 66203, USA",
+    "city_hint": "Shawnee",
+    "place_id": "ChIJLVzmsuntwIcRzOvHvf333xg",
+    "business_status": "OPERATIONAL",
+    "types": [
+      "establishment",
+      "insurance_agency",
+      "point_of_interest"
+    ],
+    "source": "Google Places"
+  },
+  {
+    "name": "Farmers Insurance - Mike Zarda",
+    "phone": "(913) 704-4598",
+    "website": "https://agents.farmers.com/ks/shawnee/michael-zarda/",
+    "formatted_address": "6339 Long Ave Ste D, Shawnee, KS 66216, USA",
+    "city_hint": "Shawnee",
+    "place_id": "ChIJQSLCu5KTwIcR8PLbokYhBGw",
+    "business_status": "OPERATIONAL",
+    "types": [
+      "establishment",
+      "insurance_agency",
+      "point_of_interest"
+    ],
+    "source": "Google Places"
+  },
+  {
+    "name": "Prime Insurance KS",
+    "phone": "(913) 210-1140",
+    "website": "",
+    "formatted_address": "10316 Shawnee Mission Pkwy, Shawnee, KS 66203, USA",
+    "city_hint": "Shawnee",
+    "place_id": "ChIJXSHM_CHtwIcRgRqQsSHxWhw",
+    "business_status": "OPERATIONAL",
+    "types": [
+      "establishment",
+      "insurance_agency",
+      "point_of_interest"
+    ],
+    "source": "Google Places"
+  },
+  {
+    "name": "Vista Insurance",
+    "phone": "(913) 962-5100",
+    "website": "",
+    "formatted_address": "7700 Shawnee Mission Pkwy Ste. #300, Overland Park, KS 66203, USA",
+    "city_hint": "Shawnee",
+    "place_id": "ChIJQcRDf9bswIcRVMM_4m1Y4f0",
+    "business_status": "OPERATIONAL",
+    "types": [
+      "establishment",
+      "insurance_agency",
+      "point_of_interest"
+    ],
+    "source": "Google Places"
+  },
+  {
+    "name": "MPP Co Inc",
+    "phone": "(800) 747-4400",
+    "website": "http://www.mpp.com/?utm_source=google&utm_medium=listing&utm_campaign=google-my-business",
+    "formatted_address": "8500 Shawnee Mission Pkwy, Merriam, KS 66202, USA",
+    "city_hint": "Shawnee",
+    "place_id": "ChIJX_QesVXswIcRvv8_fcgBbUI",
+    "business_status": "OPERATIONAL",
+    "types": [
+      "car_dealer",
+      "establishment",
+      "finance",
+      "insurance_agency",
+      "point_of_interest",
+      "store"
+    ],
+    "source": "Google Places"
+  },
+  {
+    "name": "Martin-Tines Agency LLC",
+    "phone": "(913) 302-4529",
+    "website": "https://martintines.com/",
+    "formatted_address": "13600 Santa Fe Trail Dr, Lenexa, KS 66215, USA",
+    "city_hint": "Lenexa",
+    "place_id": "ChIJWUjqp2CVwIcRNQ6_zRleGRs",
+    "business_status": "OPERATIONAL",
+    "types": [
+      "establishment",
+      "insurance_agency",
+      "point_of_interest"
+    ],
+    "source": "Google Places"
+  },
+  {
+    "name": "O'Malley-Boldt Insurance",
+    "phone": "(913) 353-8484",
+    "website": "https://omalleyboldtins.com/",
+    "formatted_address": "9732 Rosehill Rd, Lenexa, KS 66215, USA",
+    "city_hint": "Lenexa",
+    "place_id": "ChIJO8wVrmeVwIcRsdETSNZrOm4",
+    "business_status": "OPERATIONAL",
+    "types": [
+      "establishment",
+      "insurance_agency",
+      "point_of_interest"
+    ],
+    "source": "Google Places"
+  },
+  {
+    "name": "R Thompson Insurance and Solutions LLC",
+    "phone": "(913) 236-0001",
+    "website": "https://rthompsonins.com/",
+    "formatted_address": "14425 College Blvd Ste 115, Lenexa, KS 66215, USA",
+    "city_hint": "Lenexa",
+    "place_id": "ChIJO1CVpwqVwIcRlULb-T6rEsg",
+    "business_status": "OPERATIONAL",
+    "types": [
+      "establishment",
+      "insurance_agency",
+      "point_of_interest"
+    ],
+    "source": "Google Places"
+  },
+  {
+    "name": "Bukaty Companies Property & Casualty - Leawood",
+    "phone": "(913) 951-2400",
+    "website": "https://www.bukaty.com/business-and-personal-insurance",
+    "formatted_address": "4601 College Blvd #200, Leawood, KS 66211, USA",
+    "city_hint": "Leawood",
+    "place_id": "ChIJEStmJI_pwIcRYH2o1racqJI",
+    "business_status": "OPERATIONAL",
+    "types": [
+      "establishment",
+      "insurance_agency",
+      "point_of_interest"
+    ],
+    "source": "Google Places"
+  },
+  {
+    "name": "AMBASSADOR INSURANCE MIDWEST",
+    "phone": "(913) 647-0091",
+    "website": "https://www.aimksmo.com/",
+    "formatted_address": "11233 Nall Ave, Leawood, KS 66211, USA",
+    "city_hint": "Leawood",
+    "place_id": "ChIJcyV88CbqwIcRIbdlb1A2HfI",
+    "business_status": "OPERATIONAL",
+    "types": [
+      "establishment",
+      "health",
+      "insurance_agency",
+      "point_of_interest"
+    ],
+    "source": "Google Places"
+  },
+  {
+    "name": "Brush Creek Select LLC",
+    "phone": "(816) 495-3638",
+    "website": "https://brushcreekselect.com/",
+    "formatted_address": "3846 W 75th St, Prairie Village, KS 66208, USA",
+    "city_hint": "Leawood",
+    "place_id": "ChIJZe1U1BHvwIcRIoNOxfOqCXM",
+    "business_status": "OPERATIONAL",
+    "types": [
+      "establishment",
+      "insurance_agency",
+      "point_of_interest"
+    ],
+    "source": "Google Places"
+  },
+  {
+    "name": "Matthew Meyer Insurance",
+    "phone": "(913) 381-1706",
+    "website": "https://matthewmeyerinsurance.com/",
+    "formatted_address": "3817 W 95th St, Leawood, KS 66206, USA",
+    "city_hint": "Leawood",
+    "place_id": "ChIJi6cWcKnpwIcRlx38_IZl104",
+    "business_status": "OPERATIONAL",
+    "types": [
+      "establishment",
+      "insurance_agency",
+      "point_of_interest"
+    ],
+    "source": "Google Places"
+  },
+  {
+    "name": "Cline Wood, a Marsh & McLennan Agency LLC company",
+    "phone": "(888) 451-3900",
+    "website": "http://www.clinewood.com/",
+    "formatted_address": "4300 W 133rd St, Leawood, KS 66209, USA",
+    "city_hint": "Leawood",
+    "place_id": "ChIJazuplA_CwIcRF8STTjXi5NM",
+    "business_status": "OPERATIONAL",
+    "types": [
+      "establishment",
+      "insurance_agency",
+      "point_of_interest"
+    ],
+    "source": "Google Places"
+  },
+  {
+    "name": "Mylo",
+    "phone": "(844) 863-5950",
+    "website": "https://choosemylo.com/",
+    "formatted_address": "2020 W 89th St Ste 305, Leawood, KS 66206, USA",
+    "city_hint": "Leawood",
+    "place_id": "ChIJzeBmwU7qwIcRe2eAim-cNXc",
+    "business_status": "OPERATIONAL",
+    "types": [
+      "establishment",
+      "insurance_agency",
+      "point_of_interest"
+    ],
+    "source": "Google Places"
+  },
+  {
+    "name": "In the Game Insurance Services",
+    "phone": "(816) 965-2339",
+    "website": "https://www.inthegameinsurance.com/",
+    "formatted_address": "4518 W 89th St ste. 100, Prairie Village, KS 66207, USA",
+    "city_hint": "Leawood",
+    "place_id": "ChIJ-59xKLHwwIcRcuf_Eg8BVJg",
+    "business_status": "OPERATIONAL",
+    "types": [
+      "establishment",
+      "insurance_agency",
+      "point_of_interest"
+    ],
+    "source": "Google Places"
+  },
+  {
+    "name": "Giersch & Associates Insur Agency LLC",
+    "phone": "(913) 232-7641",
+    "website": "http://gierschagency.com/contact.html",
+    "formatted_address": "4200 Somerset Dr, Prairie Village, KS 66208, USA",
+    "city_hint": "Prairie Village",
+    "place_id": "ChIJ22n-jLLuwIcRrH6EIcOzWvg",
+    "business_status": "OPERATIONAL",
+    "types": [
+      "establishment",
+      "insurance_agency",
+      "point_of_interest"
+    ],
+    "source": "Google Places"
+  },
+  {
+    "name": "ICT Health Insurance",
+    "phone": "(913) 600-5511",
+    "website": "https://ictinsurance.com/",
+    "formatted_address": "5000 W 95th St #120, Prairie Village, KS 66207, USA",
+    "city_hint": "Prairie Village",
+    "place_id": "ChIJTf6M4arrwIcR837eRa2QWuo",
+    "business_status": "OPERATIONAL",
+    "types": [
+      "establishment",
+      "health",
+      "insurance_agency",
+      "point_of_interest"
+    ],
+    "source": "Google Places"
+  },
+  {
+    "name": "Johnston Fiss Insurance",
+    "phone": "(913) 396-0800",
+    "website": "http://www.johnstonfiss.com/",
+    "formatted_address": "5225 W 75th St, Prairie Village, KS 66208, USA",
+    "city_hint": "Prairie Village",
+    "place_id": "ChIJQcUKvR3swIcRCmnz6FWPyZY",
+    "business_status": "OPERATIONAL",
+    "types": [
+      "establishment",
+      "insurance_agency",
+      "point_of_interest"
+    ],
+    "source": "Google Places"
+  },
+  {
+    "name": "Michele Brogan - State Farm Insurance Agent",
+    "phone": "(913) 383-9330",
+    "website": "http://www.michelebrogan.com/?cmpid=b5td_blm_0001",
+    "formatted_address": "4200 Somerset Dr Ste 110, Prairie Village, KS 66208, USA",
+    "city_hint": "Prairie Village",
+    "place_id": "ChIJ22n-jLLuwIcR1grmedIAR1s",
+    "business_status": "OPERATIONAL",
+    "types": [
+      "establishment",
+      "insurance_agency",
+      "point_of_interest"
+    ],
+    "source": "Google Places"
+  },
+  {
+    "name": "Insight Advisers",
+    "phone": "(913) 228-0094",
+    "website": "http://www.insight-advisers.com/",
+    "formatted_address": "5350 W 94th Terrace #102, Prairie Village, KS 66207, USA",
+    "city_hint": "Prairie Village",
+    "place_id": "ChIJyaEQzqfrwIcRfcSJ3eyB1uQ",
+    "business_status": "OPERATIONAL",
+    "types": [
+      "establishment",
+      "health",
+      "insurance_agency",
+      "point_of_interest"
+    ],
+    "source": "Google Places"
+  },
+  {
+    "name": "Eils & Associates Insurance Group",
+    "phone": "(913) 296-7543",
+    "website": "https://www.eainsure.com/contact",
+    "formatted_address": "7501 Mission Rd #203, Prairie Village, KS 66206, USA",
+    "city_hint": "Prairie Village",
+    "place_id": "ChIJAQDw8UzpwIcRTyYH63xnaM8",
+    "business_status": "OPERATIONAL",
+    "types": [
+      "establishment",
+      "insurance_agency",
+      "point_of_interest"
+    ],
+    "source": "Google Places"
+  },
+  {
+    "name": "CoreTrust Insurance KS",
+    "phone": "(913) 285-5838",
+    "website": "",
+    "formatted_address": "7658 State Line Rd, Prairie Village, KS 66208, USA",
+    "city_hint": "Prairie Village",
+    "place_id": "ChIJG_7b89PuwIcRkpbglNRTKtg",
+    "business_status": "OPERATIONAL",
+    "types": [
+      "establishment",
+      "insurance_agency",
+      "point_of_interest"
+    ],
+    "source": "Google Places"
+  },
+  {
+    "name": "Loaiza & Pros Insurance Group",
+    "phone": "(913) 609-0445",
+    "website": "https://www.loaizainsurancegroup.com/",
+    "formatted_address": "7961 Frontage Rd, Overland Park, KS 66204, USA",
+    "city_hint": "Merriam",
+    "place_id": "ChIJHUOsUC3xwIcR1d0VYVLgOE0",
+    "business_status": "OPERATIONAL",
+    "types": [
+      "establishment",
+      "insurance_agency",
+      "point_of_interest"
+    ],
+    "source": "Google Places"
+  },
+  {
+    "name": "Old United Life Insurance Co",
+    "phone": "(913) 895-0259",
+    "website": "",
+    "formatted_address": "8500 Shawnee Mission Pkwy #200, Merriam, KS 66202, USA",
+    "city_hint": "Merriam",
+    "place_id": "ChIJX_QesVXswIcR7g7NOEN44n0",
+    "business_status": "OPERATIONAL",
+    "types": [
+      "establishment",
+      "insurance_agency",
+      "point_of_interest"
+    ],
+    "source": "Google Places"
+  },
+  {
+    "name": "Insurance Analysts",
+    "phone": "(913) 362-0486",
+    "website": "",
+    "formatted_address": "10000 W 75th St #119, Merriam, KS 66204, USA",
+    "city_hint": "Merriam",
+    "place_id": "ChIJH_ro7pPswIcRvnyXYN5hRkM",
+    "business_status": "OPERATIONAL",
+    "types": [
+      "establishment",
+      "insurance_agency",
+      "point_of_interest"
+    ],
+    "source": "Google Places"
+  },
+  {
+    "name": "Prime Car insurance Mission KS",
+    "phone": "(785) 268-6763",
+    "website": "https://geronimaweisenhorn.wixsite.com/prime-car-insurance",
+    "formatted_address": "6036 Rosewood, Mission, KS 66205, USA",
+    "city_hint": "Mission",
+    "place_id": "ChIJ68vuZNXtwIcRvbj99sPhOC4",
+    "business_status": "OPERATIONAL",
+    "types": [
+      "establishment",
+      "insurance_agency",
+      "point_of_interest"
+    ],
+    "source": "Google Places"
+  },
+  {
+    "name": "Ample Green Insurance",
+    "phone": "(913) 372-7979",
+    "website": "http://www.amplegreeninsurance.com/",
+    "formatted_address": "526 E Main St, Gardner, KS 66030, USA",
+    "city_hint": "Gardner",
+    "place_id": "ChIJYYZXQmOjwIcRDS4srJgmUf0",
+    "business_status": "OPERATIONAL",
+    "types": [
+      "establishment",
+      "insurance_agency",
+      "point_of_interest"
+    ],
+    "source": "Google Places"
+  },
+  {
+    "name": "ALFT Insurance Agency Inc",
+    "phone": "(913) 856-8050",
+    "website": "http://www.alftinsurance.com/",
+    "formatted_address": "230 E Main St B, Gardner, KS 66030, USA",
+    "city_hint": "Gardner",
+    "place_id": "ChIJhYfZ9G-jwIcRHlHJaePPQsM",
+    "business_status": "OPERATIONAL",
+    "types": [
+      "establishment",
+      "insurance_agency",
+      "point_of_interest"
+    ],
+    "source": "Google Places"
+  },
+  {
+    "name": "Randle & Associates LLC American Family Insurance",
+    "phone": "(913) 592-8060",
+    "website": "https://www.amfam.com/agents/kansas/spring-hill/Samantha-Randle",
+    "formatted_address": "119 S Main St, Spring Hill, KS 66083, USA",
+    "city_hint": "Spring Hill",
+    "place_id": "ChIJl6F0njO7wIcRS4y-B4YCtF8",
+    "business_status": "OPERATIONAL",
+    "types": [
+      "establishment",
+      "insurance_agency",
+      "point_of_interest"
+    ],
+    "source": "Google Places"
+  },
+  {
+    "name": "Stokes Public Adjusters, LLC",
+    "phone": "(913) 206-9056",
+    "website": "http://www.stokesclaims.com/",
+    "formatted_address": "16470 S Laurelwood St, Olathe, KS 66062, USA",
+    "city_hint": "Spring Hill",
+    "place_id": "ChIJfTxcCW6VwIcR1Eosu-ZfRJA",
+    "business_status": "OPERATIONAL",
+    "types": [
+      "establishment",
+      "insurance_agency",
+      "point_of_interest"
+    ],
+    "source": "Google Places"
+  },
+  {
+    "name": "Haas & Wilkerson Insurance",
+    "phone": "(913) 432-4400",
+    "website": "https://hwins.com/",
+    "formatted_address": "4300 Shawnee Mission Pkwy, Fairway, KS 66205, USA",
+    "city_hint": "Roeland Park",
+    "place_id": "ChIJaws8IXvuwIcRPo7GlwEsQY0",
+    "business_status": "OPERATIONAL",
+    "types": [
+      "establishment",
+      "insurance_agency",
+      "point_of_interest"
+    ],
+    "source": "Google Places"
+  },
+  {
+    "name": "Innovate Business Consulting",
+    "phone": "(913) 804-2866",
+    "website": "http://innovatebconsulting.com/",
+    "formatted_address": "4980 Roe Blvd Ste b, Roeland Park, KS 66205, USA",
+    "city_hint": "Roeland Park",
+    "place_id": "ChIJLz-W5xDvwIcRMvrkmZJefms",
+    "business_status": "OPERATIONAL",
+    "types": [
+      "establishment",
+      "insurance_agency",
+      "point_of_interest"
+    ],
+    "source": "Google Places"
+  },
+  {
+    "name": "Jackson National Life Insurance Co",
+    "phone": "(913) 677-4233",
+    "website": "",
+    "formatted_address": "4330 Shawnee Mission Pkwy, Fairway, KS 66205, USA",
+    "city_hint": "Roeland Park",
+    "place_id": "ChIJWbjP43ruwIcROsXkK9clyyo",
+    "business_status": "OPERATIONAL",
+    "types": [
+      "establishment",
+      "insurance_agency",
+      "point_of_interest"
+    ],
+    "source": "Google Places"
+  },
+  {
+    "name": "Progressive Insurance - Claims Office",
+    "phone": "(800) 274-4499",
+    "website": "https://www.progressive.com/claims/?utm_source=G&utm_medium=local&utm_campaign=progressivedirectclaimcenters",
+    "formatted_address": "5200 Metcalf Ave Floor2, Suite 202N, Overland Park, KS 66202, USA",
+    "city_hint": "Roeland Park",
+    "place_id": "ChIJV4r2pX7ywIcRtYbsFZeOZdE",
+    "business_status": "OPERATIONAL",
+    "types": [
+      "establishment",
+      "insurance_agency",
+      "point_of_interest"
+    ],
+    "source": "Google Places"
+  },
+  {
+    "name": "Allstate Auto Insurance",
+    "phone": "(913) 675-3006",
+    "website": "https://agents.allstate.com/kurt-sumrall-shawnee-ks.html?utm_source=GMB&utm_medium=Website",
+    "formatted_address": "5739 Johnson Dr, Mission, KS 66202, USA",
+    "city_hint": "Roeland Park",
+    "place_id": "ChIJV2M3CATtwIcReO1oHl9dMhM",
+    "business_status": "OPERATIONAL",
+    "types": [
+      "establishment",
+      "insurance_agency",
+      "point_of_interest"
+    ],
+    "source": "Google Places"
+  },
+  {
+    "name": "Specialty Program Insurers Inc",
+    "phone": "(913) 432-4400",
+    "website": "",
+    "formatted_address": "4300 Shawnee Mission Pkwy #100, Fairway, KS 66205, USA",
+    "city_hint": "Fairway",
+    "place_id": "ChIJaws8IXvuwIcRc9JG0T3AVCc",
+    "business_status": "OPERATIONAL",
+    "types": [
+      "establishment",
+      "insurance_agency",
+      "point_of_interest"
+    ],
+    "source": "Google Places"
+  },
+  {
+    "name": "InBudget Auto Insurance Agency",
+    "phone": "(725) 350-1383",
+    "website": "",
+    "formatted_address": "2000 Shawnee Mission Pkwy #219, Mission Woods, KS 66205, USA",
+    "city_hint": "Westwood",
+    "place_id": "ChIJOfdFP3nvwIcReWdZ0n8GuV0",
+    "business_status": "OPERATIONAL",
+    "types": [
+      "establishment",
+      "insurance_agency",
+      "point_of_interest"
+    ],
+    "source": "Google Places"
+  },
+  {
+    "name": "Premier Group Insurance",
+    "phone": "(720) 457-1101",
+    "website": "",
+    "formatted_address": "4705 Mission Rd, Westwood, KS 66205, USA",
+    "city_hint": "Westwood",
+    "place_id": "ChIJT8lUEz_uwIcRm8MJW-8cqeU",
+    "business_status": "OPERATIONAL",
+    "types": [
+      "establishment",
+      "insurance_agency",
+      "point_of_interest"
+    ],
+    "source": "Google Places"
+  },
+  {
+    "name": "Chris-Leef General Agency, Inc.",
+    "phone": "(913) 631-1232",
+    "website": "http://www.chris-leef.com/",
+    "formatted_address": "11503 W 75th St #100, Shawnee, KS 66214, USA",
+    "city_hint": "Lake Quivira",
+    "place_id": "ChIJ_05qO7fswIcRghbfzu_FswM",
+    "business_status": "OPERATIONAL",
+    "types": [
+      "establishment",
+      "insurance_agency",
+      "point_of_interest"
+    ],
+    "source": "Google Places"
+  },
+  {
+    "name": "O'Malley Insurance Services",
+    "phone": "(913) 383-3950",
+    "website": "",
+    "formatted_address": "Shawnee Mission, 7610 Canterbury St, Shawnee Mission, KS 66208, USA",
+    "city_hint": "Mission Hills",
+    "place_id": "ChIJGQYRxMfuwIcRLVCpH2bSS9I",
+    "business_status": "OPERATIONAL",
+    "types": [
+      "establishment",
+      "insurance_agency",
+      "point_of_interest"
+    ],
+    "source": "Google Places"
+  },
+  {
+    "name": "Uriarte Insurance",
+    "phone": "(913) 384-0254",
+    "website": "https://www.uriarteinsurancegroup.com/",
+    "formatted_address": "14323 W 135th St, Olathe, KS 66062, USA",
+    "city_hint": "Westwood Hills",
+    "place_id": "ChIJz7p5pUW_wIcRqHH-nAqP8UQ",
+    "business_status": "OPERATIONAL",
+    "types": [
+      "establishment",
+      "insurance_agency",
+      "point_of_interest"
+    ],
+    "source": "Google Places"
+  }
+]

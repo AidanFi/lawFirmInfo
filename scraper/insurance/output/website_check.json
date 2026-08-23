@@ -1,0 +1,447 @@
+[
+  {
+    "name": "Agency Insurance",
+    "website": "https://www.agencyinsurance.us/",
+    "status": 200,
+    "has_auto": false,
+    "has_life": false,
+    "has_health": false,
+    "has_commercial": true
+  },
+  {
+    "name": "Johnson County Insurance Agency",
+    "website": "http://jocoinsurance.com/",
+    "status": 200,
+    "has_auto": true,
+    "has_life": false,
+    "has_health": false,
+    "has_commercial": true
+  },
+  {
+    "name": "Capstone Insurance Agency",
+    "website": "https://www.capstoneagency.com/",
+    "status": 200,
+    "has_auto": true,
+    "has_life": false,
+    "has_health": false,
+    "has_commercial": true
+  },
+  {
+    "name": "Marla Williams Agency Inc",
+    "website": "http://www.marlawilliamsagency.com/",
+    "status": 200,
+    "has_auto": true,
+    "has_life": true,
+    "has_health": false,
+    "has_commercial": false
+  },
+  {
+    "name": "HighPointe Insurance Services, LLC",
+    "website": "http://www.highpointeins.com/",
+    "status": 200,
+    "has_auto": true,
+    "has_life": true,
+    "has_health": false,
+    "has_commercial": true
+  },
+  {
+    "name": "Oliver Insurance Agency Inc",
+    "website": "http://oliver-insurance.com/",
+    "status": 200,
+    "has_auto": true,
+    "has_life": true,
+    "has_health": false,
+    "has_commercial": true
+  },
+  {
+    "name": "The Reilly Company",
+    "website": "https://reillyinsurance.com/",
+    "status": 200,
+    "has_auto": true,
+    "has_life": false,
+    "has_health": true,
+    "has_commercial": true
+  },
+  {
+    "name": "Fountain City Insurance Group",
+    "website": "http://www.fcigkc.com/",
+    "status": 200,
+    "has_auto": true,
+    "has_life": true,
+    "has_health": false,
+    "has_commercial": false
+  },
+  {
+    "name": "Insurance Pros Inc",
+    "website": "http://insuranceprosinc.com/",
+    "status": 200,
+    "has_auto": false,
+    "has_life": true,
+    "has_health": true,
+    "has_commercial": false
+  },
+  {
+    "name": "Copeland Insurance Agency",
+    "website": "http://www.copelandins.com/",
+    "status": 403,
+    "has_auto": false,
+    "has_life": false,
+    "has_health": false,
+    "has_commercial": false
+  },
+  {
+    "name": "Cockrill Insurance Agency",
+    "website": "http://www.cockrillins.com/",
+    "status": 200,
+    "has_auto": true,
+    "has_life": true,
+    "has_health": false,
+    "has_commercial": true
+  },
+  {
+    "name": "Williamson & Associates Inc American Family Insurance",
+    "website": "https://www.amfam.com/agents/kansas/overland-park/jennifer-williamson",
+    "note": "skip-fetch (known carrier page or no site)"
+  },
+  {
+    "name": "James Buckman - GEICO Insurance Agent",
+    "website": "https://www.geico.com/insurance-agents/kansas/kansas-city/james-buckman/?y_source=1_MTQ5NTQ3NzctNzE1LWxvY2F0aW9uLndlYnNpdGU%3D",
+    "note": "skip-fetch (known carrier page or no site)"
+  },
+  {
+    "name": "Insurance Resources Group (now Inszone Insurance Services)",
+    "website": "http://www.irgks.com/",
+    "status": 200,
+    "has_auto": true,
+    "has_life": true,
+    "has_health": false,
+    "has_commercial": true
+  },
+  {
+    "name": "Smart Insurance",
+    "website": "https://smartiagency.com/",
+    "status": 200,
+    "has_auto": true,
+    "has_life": true,
+    "has_health": false,
+    "has_commercial": true
+  },
+  {
+    "name": "New Era Insurance LLC",
+    "website": "https://www.newerainsagency.com/",
+    "status": 200,
+    "has_auto": true,
+    "has_life": false,
+    "has_health": false,
+    "has_commercial": false
+  },
+  {
+    "name": "Mavels Insurance & Multiservices",
+    "website": "http://www.mavelinsurance.com/",
+    "status": 404,
+    "has_auto": false,
+    "has_life": false,
+    "has_health": false,
+    "has_commercial": false
+  },
+  {
+    "name": "Farmers Insurance - Mike Zarda",
+    "website": "https://agents.farmers.com/ks/shawnee/michael-zarda/",
+    "note": "skip-fetch (known carrier page or no site)"
+  },
+  {
+    "name": "Prime Insurance KS",
+    "website": "",
+    "note": "skip-fetch (known carrier page or no site)"
+  },
+  {
+    "name": "Vista Insurance",
+    "website": "",
+    "note": "skip-fetch (known carrier page or no site)"
+  },
+  {
+    "name": "MPP Co Inc",
+    "website": "http://www.mpp.com/?utm_source=google&utm_medium=listing&utm_campaign=google-my-business",
+    "status": 200,
+    "has_auto": false,
+    "has_life": false,
+    "has_health": false,
+    "has_commercial": false
+  },
+  {
+    "name": "Martin-Tines Agency LLC",
+    "website": "https://martintines.com/",
+    "status": 200,
+    "has_auto": true,
+    "has_life": true,
+    "has_health": false,
+    "has_commercial": true
+  },
+  {
+    "name": "O'Malley-Boldt Insurance",
+    "website": "https://omalleyboldtins.com/",
+    "status": 200,
+    "has_auto": true,
+    "has_life": true,
+    "has_health": false,
+    "has_commercial": true
+  },
+  {
+    "name": "R Thompson Insurance and Solutions LLC",
+    "website": "https://rthompsonins.com/",
+    "status": 200,
+    "has_auto": true,
+    "has_life": true,
+    "has_health": true,
+    "has_commercial": true
+  },
+  {
+    "name": "Bukaty Companies Property & Casualty - Leawood",
+    "website": "https://www.bukaty.com/business-and-personal-insurance",
+    "status": 200,
+    "has_auto": false,
+    "has_life": true,
+    "has_health": false,
+    "has_commercial": true
+  },
+  {
+    "name": "AMBASSADOR INSURANCE MIDWEST",
+    "website": "https://www.aimksmo.com/",
+    "status": 200,
+    "has_auto": true,
+    "has_life": true,
+    "has_health": false,
+    "has_commercial": true
+  },
+  {
+    "name": "Brush Creek Select LLC",
+    "website": "https://brushcreekselect.com/",
+    "status": 200,
+    "has_auto": false,
+    "has_life": false,
+    "has_health": false,
+    "has_commercial": false
+  },
+  {
+    "name": "Matthew Meyer Insurance",
+    "website": "https://matthewmeyerinsurance.com/",
+    "status": 200,
+    "has_auto": true,
+    "has_life": true,
+    "has_health": false,
+    "has_commercial": true
+  },
+  {
+    "name": "Cline Wood, a Marsh & McLennan Agency LLC company",
+    "website": "http://www.clinewood.com/",
+    "status": 200,
+    "has_auto": true,
+    "has_life": false,
+    "has_health": false,
+    "has_commercial": true
+  },
+  {
+    "name": "Mylo",
+    "website": "https://choosemylo.com/",
+    "status": 200,
+    "has_auto": true,
+    "has_life": false,
+    "has_health": true,
+    "has_commercial": true
+  },
+  {
+    "name": "In the Game Insurance Services",
+    "website": "https://www.inthegameinsurance.com/",
+    "status": 200,
+    "has_auto": true,
+    "has_life": false,
+    "has_health": false,
+    "has_commercial": true
+  },
+  {
+    "name": "Giersch & Associates Insur Agency LLC",
+    "website": "http://gierschagency.com/contact.html",
+    "status": 200,
+    "has_auto": true,
+    "has_life": true,
+    "has_health": true,
+    "has_commercial": false
+  },
+  {
+    "name": "ICT Health Insurance",
+    "website": "https://ictinsurance.com/",
+    "status": 200,
+    "has_auto": false,
+    "has_life": true,
+    "has_health": true,
+    "has_commercial": true
+  },
+  {
+    "name": "Johnston Fiss Insurance",
+    "website": "http://www.johnstonfiss.com/",
+    "status": 200,
+    "has_auto": false,
+    "has_life": false,
+    "has_health": true,
+    "has_commercial": true
+  },
+  {
+    "name": "Michele Brogan - State Farm Insurance Agent",
+    "website": "http://www.michelebrogan.com/?cmpid=b5td_blm_0001",
+    "note": "skip-fetch (known carrier page or no site)"
+  },
+  {
+    "name": "Insight Advisers",
+    "website": "http://www.insight-advisers.com/",
+    "status": 200,
+    "has_auto": false,
+    "has_life": false,
+    "has_health": true,
+    "has_commercial": false
+  },
+  {
+    "name": "Eils & Associates Insurance Group",
+    "website": "https://www.eainsure.com/contact",
+    "status": 200,
+    "has_auto": false,
+    "has_life": false,
+    "has_health": false,
+    "has_commercial": false
+  },
+  {
+    "name": "CoreTrust Insurance KS",
+    "website": "",
+    "note": "skip-fetch (known carrier page or no site)"
+  },
+  {
+    "name": "Loaiza & Pros Insurance Group",
+    "website": "https://www.loaizainsurancegroup.com/",
+    "status": 200,
+    "has_auto": true,
+    "has_life": false,
+    "has_health": false,
+    "has_commercial": true
+  },
+  {
+    "name": "Old United Life Insurance Co",
+    "website": "",
+    "note": "skip-fetch (known carrier page or no site)"
+  },
+  {
+    "name": "Insurance Analysts",
+    "website": "",
+    "note": "skip-fetch (known carrier page or no site)"
+  },
+  {
+    "name": "Prime Car insurance Mission KS",
+    "website": "https://geronimaweisenhorn.wixsite.com/prime-car-insurance",
+    "status": 200,
+    "has_auto": true,
+    "has_life": false,
+    "has_health": false,
+    "has_commercial": false
+  },
+  {
+    "name": "Ample Green Insurance",
+    "website": "http://www.amplegreeninsurance.com/",
+    "status": 200,
+    "has_auto": false,
+    "has_life": false,
+    "has_health": false,
+    "has_commercial": false
+  },
+  {
+    "name": "ALFT Insurance Agency Inc",
+    "website": "http://www.alftinsurance.com/",
+    "status": 200,
+    "has_auto": true,
+    "has_life": true,
+    "has_health": false,
+    "has_commercial": true
+  },
+  {
+    "name": "Randle & Associates LLC American Family Insurance",
+    "website": "https://www.amfam.com/agents/kansas/spring-hill/Samantha-Randle",
+    "note": "skip-fetch (known carrier page or no site)"
+  },
+  {
+    "name": "Stokes Public Adjusters, LLC",
+    "website": "http://www.stokesclaims.com/",
+    "status": 200,
+    "has_auto": true,
+    "has_life": false,
+    "has_health": false,
+    "has_commercial": false
+  },
+  {
+    "name": "Haas & Wilkerson Insurance",
+    "website": "https://hwins.com/",
+    "status": 200,
+    "has_auto": false,
+    "has_life": false,
+    "has_health": false,
+    "has_commercial": false
+  },
+  {
+    "name": "Innovate Business Consulting",
+    "website": "http://innovatebconsulting.com/",
+    "status": 200,
+    "has_auto": true,
+    "has_life": false,
+    "has_health": false,
+    "has_commercial": true
+  },
+  {
+    "name": "Jackson National Life Insurance Co",
+    "website": "",
+    "note": "skip-fetch (known carrier page or no site)"
+  },
+  {
+    "name": "Progressive Insurance - Claims Office",
+    "website": "https://www.progressive.com/claims/?utm_source=G&utm_medium=local&utm_campaign=progressivedirectclaimcenters",
+    "note": "skip-fetch (known carrier page or no site)"
+  },
+  {
+    "name": "Allstate Auto Insurance",
+    "website": "https://agents.allstate.com/kurt-sumrall-shawnee-ks.html?utm_source=GMB&utm_medium=Website",
+    "note": "skip-fetch (known carrier page or no site)"
+  },
+  {
+    "name": "Specialty Program Insurers Inc",
+    "website": "",
+    "note": "skip-fetch (known carrier page or no site)"
+  },
+  {
+    "name": "InBudget Auto Insurance Agency",
+    "website": "",
+    "note": "skip-fetch (known carrier page or no site)"
+  },
+  {
+    "name": "Premier Group Insurance",
+    "website": "",
+    "note": "skip-fetch (known carrier page or no site)"
+  },
+  {
+    "name": "Chris-Leef General Agency, Inc.",
+    "website": "http://www.chris-leef.com/",
+    "status": 200,
+    "has_auto": false,
+    "has_life": false,
+    "has_health": false,
+    "has_commercial": false
+  },
+  {
+    "name": "O'Malley Insurance Services",
+    "website": "",
+    "note": "skip-fetch (known carrier page or no site)"
+  },
+  {
+    "name": "Uriarte Insurance",
+    "website": "https://www.uriarteinsurancegroup.com/",
+    "status": 200,
+    "has_auto": true,
+    "has_life": true,
+    "has_health": false,
+    "has_commercial": true
+  }
+]

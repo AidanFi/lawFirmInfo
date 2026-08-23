@@ -1,0 +1,47 @@
+[
+  {
+    "agent_name": "Mike Perz",
+    "agency_name": "Mike Perz & Associates, LLC",
+    "company": "Independent / Multiple Carriers",
+    "agent_type": "Independent",
+    "website": "https://www.mikeperz.com",
+    "phone_number": "(913) 894-1009",
+    "email": "mikeperz@mikeperz.com",
+    "street_address": "7304 W 130th St #320",
+    "city": "Overland Park",
+    "state": "KS",
+    "county": "Johnson",
+    "zip_code": "66213",
+    "source": "Found via BBB.org business search for 'insurance agency' in Overland Park, KS (not previously used); verified as real independent agency offering personal auto insurance via its own website mikeperz.com"
+  },
+  {
+    "agent_name": "",
+    "agency_name": "Brett Reid Group",
+    "company": "Independent / Multiple Carriers (insurance offered through Brett Reid Wealth)",
+    "agent_type": "Independent",
+    "website": "https://www.brettreidgroup.com",
+    "phone_number": "(913) 359-1777",
+    "email": "info@brettreidgroup.com",
+    "street_address": "4200 Somerset Dr #101",
+    "city": "Prairie Village",
+    "state": "KS",
+    "county": "Johnson",
+    "zip_code": "66208",
+    "source": "Found via BBB.org business search for 'insurance agency' in Prairie Village, KS (not previously used); verified via agency website which lists 'Life, Home, Auto, Commercial, Long-Term Care' among services offered through its affiliated 'Brett Reid Wealth' insurance arm"
+  },
+  {
+    "agent_name": "",
+    "agency_name": "Oliver Insurance Agency, Inc.",
+    "company": "Independent / Multiple Carriers",
+    "agent_type": "Independent",
+    "website": "https://www.oliver-insurance.com",
+    "phone_number": "(913) 341-1900",
+    "email": "info@oliver-insurance.com",
+    "street_address": "10955 Lowell Avenue, Suite 210",
+    "city": "Overland Park",
+    "state": "KS",
+    "county": "Johnson",
+    "zip_code": "66210",
+    "source": "Found via Overland Park Chamber of Commerce member directory (business.opchamber.org, insurance category, not previously used); verified as independent agency selling personal auto insurance since 1967 via its own website oliver-insurance.com"
+  }
+]

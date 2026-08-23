@@ -1,0 +1,62 @@
+[
+  {
+    "agent_name": "",
+    "agency_name": "Community Insurance Solutions LLC",
+    "company": "Nationwide",
+    "agent_type": "Captive",
+    "website": "",
+    "phone_number": "(785) 861-7888",
+    "email": "",
+    "street_address": "1232 NW Harrison St",
+    "city": "Topeka",
+    "county": "Shawnee",
+    "state": "KS",
+    "zip_code": "66608",
+    "source": "Verified via multiple independent directory listings (incl. Nationwide agent-locator result titled \"Community Insurance Solutions, Topeka, KS | Nationwide\") corroborating name, address, and phone; no owned website found."
+  },
+  {
+    "agent_name": "Jennifer Swisher",
+    "agency_name": "Farmers Insurance - Jennifer Swisher",
+    "company": "Farmers Insurance",
+    "agent_type": "Captive",
+    "website": "https://agents.farmers.com/ks/topeka/jennifer-swisher/",
+    "phone_number": "(785) 253-4682",
+    "email": "",
+    "street_address": "5375 SW 7th St Ste 200",
+    "city": "Topeka",
+    "county": "Shawnee",
+    "state": "KS",
+    "zip_code": "66606",
+    "source": "Verified via agents.farmers.com official agent page confirming auto insurance offered, address, and phone."
+  },
+  {
+    "agent_name": "Dan Key",
+    "agency_name": "Farmers Insurance - Dan Key",
+    "company": "Farmers Insurance",
+    "agent_type": "Captive",
+    "website": "https://agents.farmers.com/ks/topeka/dan-key",
+    "phone_number": "(785) 408-5459",
+    "email": "",
+    "street_address": "5942 SW 29th St Ste A",
+    "city": "Topeka",
+    "county": "Shawnee",
+    "state": "KS",
+    "zip_code": "66614",
+    "source": "Verified via agents.farmers.com official agent page confirming auto insurance offered, address, and phone."
+  },
+  {
+    "agent_name": "",
+    "agency_name": "Brier Payne Meade Insurance",
+    "company": "Independent / Multiple Carriers",
+    "agent_type": "Independent",
+    "website": "http://bpminsurance.com/",
+    "phone_number": "(785) 233-1717",
+    "email": "",
+    "street_address": "5835 SW 29th St #201",
+    "city": "Topeka",
+    "county": "Shawnee",
+    "state": "KS",
+    "zip_code": "66614",
+    "source": "Verified via Wayback Machine archive of bpminsurance.com (Feb 2024 snapshot) showing Personal Coverage > Automobile offered; live site now redirects to acrisure.com (agency was acquired by Acrisure) but same Topeka address/phone."
+  }
+]

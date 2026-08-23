@@ -168,22 +168,27 @@ def discover_yelp(api_key: str, errors: list) -> list:
 # Foursquare Places
 # ---------------------------------------------------------------------------
 
-def discover_foursquare(api_key: str, errors: list) -> list:
+def discover_foursquare(api_key: str, errors: list, cities=None, state=None,
+                         county_qualifier="Johnson County", locality_aliases=None) -> list:
     if not api_key:
         errors.append("Foursquare: no API key found (FOURSQUARE_API_KEY not set)")
         return []
+
+    cities = cities or CITIES
+    state = state or STATE
+    locality_aliases = locality_aliases if locality_aliases is not None else _IN_COUNTY_LOCALITY_ALIASES
 
     headers = {
         "Authorization": f"Bearer {api_key}",
         "Accept": "application/json",
         "X-Places-Api-Version": FOURSQUARE_API_VERSION,
     }
-    city_lookup = {c.lower() for c in CITIES} | _IN_COUNTY_LOCALITY_ALIASES
+    city_lookup = {c.lower() for c in cities} | locality_aliases
     records = []
     skipped_out_of_county = 0
     auth_failed = False
 
-    for city in CITIES:
+    for city in cities:
         if auth_failed:
             break
         url = FOURSQUARE_SEARCH_URL
@@ -193,11 +198,11 @@ def discover_foursquare(api_key: str, errors: list) -> list:
             # results with a 200 instead of erroring) — the working filter
             # param is "fsq_category_ids". Confirmed empirically 2026-08-22.
             "fsq_category_ids": FOURSQUARE_INSURANCE_CATEGORY,
-            # "Johnson County" qualifier disambiguates cities that share a
-            # name with a place elsewhere in KS — plain "Shawnee, KS" geocodes
-            # to Shawnee County/Topeka instead of the Johnson County city of
+            # A county qualifier disambiguates cities that share a name with
+            # a place elsewhere in KS — plain "Shawnee, KS" geocodes to
+            # Shawnee County/Topeka instead of the Johnson County city of
             # Shawnee. Confirmed empirically 2026-08-22.
-            "near": f"{city}, Johnson County, {STATE}",
+            "near": f"{city}, {county_qualifier}, {state}" if county_qualifier else f"{city}, {state}",
             "limit": FOURSQUARE_PAGE_LIMIT,
         }
         page = 0
@@ -266,7 +271,7 @@ def discover_foursquare(api_key: str, errors: list) -> list:
     if skipped_out_of_county:
         errors.append(
             f"Foursquare: skipped {skipped_out_of_county} results whose geocoded "
-            "locality fell outside the 19 Johnson County cities (likely 'near' "
+            f"locality fell outside the {len(cities)} target cities (likely 'near' "
             "geocoder drift)"
         )
 

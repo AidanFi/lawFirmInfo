@@ -1,4 +1,25 @@
 COUNTY_DEFINITIONS = {
+    "sedgwick": {
+        "name": "Sedgwick County",
+        "state": "KS",
+        "slug": "sedgwick-county-ks",
+        "msa": "Wichita",
+        "cities": [
+            "Wichita", "Derby", "Haysville", "Park City", "Valley Center",
+            "Goddard", "Maize", "Bel Aire", "Cheney", "Clearwater",
+            "Colwich", "Eastborough", "Garden Plain", "Kechi", "Mount Hope",
+            "Sedgwick", "Viola", "Andale", "Bentley", "Mulvane",
+        ],
+        "zip_codes": [
+            "67201", "67202", "67203", "67204", "67205", "67206", "67207",
+            "67208", "67209", "67210", "67211", "67212", "67213", "67214",
+            "67215", "67216", "67217", "67218", "67219", "67220", "67223",
+            "67226", "67227", "67228", "67230", "67235", "67037", "67060",
+            "67147", "67052", "67101", "67025", "67026", "67030", "67050",
+            "67067", "67108", "67135", "67149", "67001", "67016", "67110",
+        ],
+        "extra_search_terms": ["Wichita KS", "Wichita Kansas", "Sedgwick County Kansas"],
+    },
     "johnson": {
         "name": "Johnson County",
         "state": "KS",

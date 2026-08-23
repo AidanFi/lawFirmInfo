@@ -1,0 +1,47 @@
+[
+  {
+    "agent_name": "",
+    "agency_name": "ICT Insurance Team",
+    "company": "Independent / Multiple Carriers",
+    "website": "https://www.ictinsuranceteam.com",
+    "phone_number": "(316) 554-7144",
+    "email": "info@ictinsuranceteam.com",
+    "street_address": "3500 N Rock Rd #200, Ste B",
+    "city": "Wichita",
+    "zip_code": "67226",
+    "county": "Sedgwick",
+    "state": "KS",
+    "agent_type": "Independent",
+    "source": "BBB.org business search (bbb.org) + agency website (ictinsuranceteam.com) confirming independent multi-carrier status and personal auto insurance"
+  },
+  {
+    "agent_name": "Cameron Hurley",
+    "agency_name": "Galaxy Insurance Group, LLC",
+    "company": "Independent / Multiple Carriers",
+    "website": "https://www.insuredbygalaxy.com",
+    "phone_number": "(316) 833-4927",
+    "email": "",
+    "street_address": "9747 E 21st St N Ste 123",
+    "city": "Wichita",
+    "zip_code": "67206",
+    "county": "Sedgwick",
+    "state": "KS",
+    "agent_type": "Independent",
+    "source": "BBB.org business search (bbb.org profile identifies owner Cameron Hurley and website insuredbygalaxy.com) + agency website (insuredbygalaxy.com) confirming independent multi-carrier status and personal auto insurance"
+  },
+  {
+    "agent_name": "",
+    "agency_name": "IMA Financial Group (IMA Private Client)",
+    "company": "Independent / Multiple Carriers",
+    "website": "https://www.imacorp.com",
+    "phone_number": "(316) 267-9221",
+    "email": "",
+    "street_address": "430 E. Douglas, Suite 400",
+    "city": "Wichita",
+    "zip_code": "67202",
+    "county": "Sedgwick",
+    "state": "KS",
+    "agent_type": "Independent",
+    "source": "Agency website (imacorp.com Wichita office page + imaprivateclient.com) confirming independent brokerage headquartered in Wichita offering personal auto insurance through its IMA Private Client personal lines division"
+  }
+]

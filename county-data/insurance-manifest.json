@@ -15,6 +15,14 @@
       "csv_file": "insurance-sedgwick-county-ks.csv",
       "captive_count": 173,
       "independent_count": 34
+    },
+    {
+      "slug": "shawnee-county-ks",
+      "name": "Shawnee County",
+      "state": "KS",
+      "csv_file": "insurance-shawnee-county-ks.csv",
+      "captive_count": 53,
+      "independent_count": 18
     }
   ]
 }

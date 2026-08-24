@@ -23,6 +23,14 @@
       "csv_file": "insurance-shawnee-county-ks.csv",
       "captive_count": 53,
       "independent_count": 18
+    },
+    {
+      "slug": "wyandotte-county-ks",
+      "name": "Wyandotte County",
+      "state": "KS",
+      "csv_file": "insurance-wyandotte-county-ks.csv",
+      "captive_count": 19,
+      "independent_count": 13
     }
   ]
 }

@@ -39,6 +39,14 @@
       "csv_file": "insurance-douglas-county-ks.csv",
       "captive_count": 31,
       "independent_count": 18
+    },
+    {
+      "slug": "leavenworth-county-ks",
+      "name": "Leavenworth County",
+      "state": "KS",
+      "csv_file": "insurance-leavenworth-county-ks.csv",
+      "captive_count": 15,
+      "independent_count": 9
     }
   ]
 }

@@ -14,8 +14,19 @@ COLS = ["agent_name", "agency_name", "company", "agent_type", "offers_auto", "of
         "zip_code", "date_pulled", "source"]
 
 
+TOLL_FREE_PREFIXES = ("800", "888", "877", "866", "855", "844", "833")
+
+
 def digits(s):
     return re.sub(r"\D", "", s or "")
+
+
+def is_toll_free(phone_digits: str) -> bool:
+    # A shared national toll-free number does NOT imply the same physical
+    # office - multi-branch orgs route several distinct locations through
+    # one member-service line. Only treat it as a match if city also matches.
+    d = phone_digits[1:] if len(phone_digits) == 11 and phone_digits.startswith("1") else phone_digits
+    return d[:3] in TOLL_FREE_PREFIXES
 
 
 def norm_name(s):
@@ -37,15 +48,20 @@ def main():
     for r in new_rows:
         r["date_pulled"] = DATE_PULLED
 
-    existing_phones = {digits(r["phone_number"]) for r in existing if digits(r["phone_number"])}
+    existing_phones = {}
+    for r in existing:
+        p = digits(r["phone_number"])
+        if p:
+            existing_phones.setdefault(p, []).append((r.get("city") or "").strip().lower())
 
     def is_dupe(r):
         p = digits(r.get("phone_number"))
+        city = (r.get("city") or "").strip().lower()
         if p and p in existing_phones:
-            return True
+            if not is_toll_free(p) or city in existing_phones[p]:
+                return True
         fn = norm_name(r.get("agency_name") or r.get("agent_name"))
         addr = (r.get("street_address") or "").strip().lower()
-        city = (r.get("city") or "").strip().lower()
         for e in existing:
             if (e.get("city") or "").strip().lower() != city:
                 continue
@@ -62,7 +78,7 @@ def main():
         added.append(r)
         p = digits(r.get("phone_number"))
         if p:
-            existing_phones.add(p)
+            existing_phones.setdefault(p, []).append((r.get("city") or "").strip().lower())
 
     print(f"{slug}: new_considered={len(new_rows)} added={len(added)} duplicates_skipped={len(new_rows) - len(added)}")
 

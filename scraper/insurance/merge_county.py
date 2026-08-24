@@ -14,8 +14,19 @@ import sys
 from rapidfuzz import fuzz
 
 
+TOLL_FREE_PREFIXES = ("800", "888", "877", "866", "855", "844", "833")
+
+
 def digits(s):
     return re.sub(r"\D", "", s or "")
+
+
+def is_toll_free(phone_digits: str) -> bool:
+    # A shared national toll-free number does NOT imply the same physical
+    # office - multi-branch orgs route several distinct locations through
+    # one member-service line. Only treat it as a match if city also matches.
+    d = phone_digits[1:] if len(phone_digits) == 11 and phone_digits.startswith("1") else phone_digits
+    return d[:3] in TOLL_FREE_PREFIXES
 
 
 def norm_name(s):
@@ -74,9 +85,12 @@ def main():
         fc = (f.get("city") or "").strip().lower()
 
         hit = None
-        if fp and fp in known_by_phone:
+        if fp and fp in known_by_phone and not is_toll_free(fp):
             hit = known_by_phone[fp][0]
-        else:
+        elif fp and fp in known_by_phone:
+            hit = next((r for r in known_by_phone[fp]
+                        if (r.get("city") or "").strip().lower() == fc), None)
+        if hit is None:
             for r in known:
                 if (r.get("city") or "").strip().lower() != fc:
                     continue

@@ -16,8 +16,20 @@ COLS = ["agent_name", "agency_name", "company", "agent_type", "offers_auto", "of
         "zip_code", "date_pulled", "source"]
 
 
+TOLL_FREE_PREFIXES = ("800", "888", "877", "866", "855", "844", "833")
+
+
 def digits(s):
     return re.sub(r"\D", "", s or "")
+
+
+def is_toll_free(phone_digits: str) -> bool:
+    # A shared national toll-free number does NOT imply the same physical
+    # office - multi-branch orgs (e.g. Armed Forces Insurance) route several
+    # distinct locations through one member-service line. Only treat a
+    # toll-free match as a duplicate if the city also matches.
+    d = phone_digits[1:] if len(phone_digits) == 11 and phone_digits.startswith("1") else phone_digits
+    return d[:3] in TOLL_FREE_PREFIXES
 
 
 def norm_name(s):
@@ -65,14 +77,14 @@ def main():
 
     # Dedup pass
     final = []
-    seen_phones = set()
+    seen_phones = {}  # phone -> city, so a toll-free match must also share a city
     for r in in_county:
         p = digits(r.get("phone_number"))
         fn = norm_name(r.get("agency_name") or r.get("agent_name"))
         city = (r.get("city") or "").strip().lower()
 
         is_dupe = False
-        if p and p in seen_phones:
+        if p and p in seen_phones and (not is_toll_free(p) or seen_phones[p] == city):
             is_dupe = True
         else:
             for kept in final:
@@ -85,7 +97,7 @@ def main():
             continue
         final.append(r)
         if p:
-            seen_phones.add(p)
+            seen_phones[p] = city
 
     final.sort(key=lambda r: ((r.get("agency_name") or r.get("agent_name") or "").lower()))
 

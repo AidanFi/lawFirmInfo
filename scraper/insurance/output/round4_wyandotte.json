@@ -1,0 +1,17 @@
+[
+  {
+    "agent_name": "",
+    "agency_name": "Agency Insurance Associates Inc",
+    "company": "Independent (American Family Insurance, Progressive, Liberty Mutual, Travelers, Safeco, Acuity)",
+    "agent_type": "Independent",
+    "website": "",
+    "phone_number": "(913) 299-1904",
+    "email": "",
+    "street_address": "8160 Parallel Pkwy, Suite 101",
+    "city": "Kansas City",
+    "county": "Wyandotte",
+    "state": "KS",
+    "zip_code": "66112",
+    "source": "Found via Brave Search (proxied through r.jina.ai) for insurance agencies near Michelle Dissmeyer's American Family office; consistent address (8160 Parallel Pkwy, Suite 101 - distinct suite from Dissmeyer's Ste 102) and phone (913-299-1904) returned across two independent Brave queries pulling from aggregated Facebook/Yelp/directory data. Corroborated as a real, distinct business via its own Facebook business page (facebook.com/agencyinsurace/), whose page title confirms 'Agency Insurance Associates | Kansas City KS' (full page content blocked by Facebook login wall, so email/deborah_hand@sbcglobal.net found in aggregator summaries was NOT included since it could not be independently confirmed). Description consistently states it sells 'Insurance for Auto, Renters, Homeowners, Motorcycle, Boats, Commercial Bonds and more' as an independent broker representing American Family, Progressive, Liberty Mutual, Travelers, Safeco, and Acuity - confirming personal auto insurance offering. No dedicated agency website was found, so website field left blank rather than publish an unconfirmed link."
+  }
+]

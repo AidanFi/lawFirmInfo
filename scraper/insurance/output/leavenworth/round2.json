@@ -1,0 +1,36 @@
+[
+  {
+    "agent_name": "Steve Skeet",
+    "agency_name": "Skeet Insurance",
+    "company": "Independent / Multiple Carriers (incl. Progressive)",
+    "agent_type": "Independent",
+    "offers_auto": "Yes",
+    "offers_home": "Yes",
+    "website": "",
+    "phone_number": "(913) 845-2255",
+    "email": "",
+    "street_address": "517 E 4th St",
+    "city": "Tonganoxie",
+    "county": "Leavenworth",
+    "state": "KS",
+    "zip_code": "66086",
+    "source": "Google Places API (Text Search 'farm mutual insurance Leavenworth County KS' + Place Details, business_status OPERATIONAL); progressiveagent.com/local-agent/kansas/tonganoxie/skeet-insurance/ confirms it as an independent agency selling Progressive Auto and Renters coverage ('independent agents...sell insurance from multiple companies'); Google review 'The best realtor and insurance agent in the area' and a linked Facebook page 'SkeetRealEstate' indicate it is a combo real-estate/insurance agency (same local business pattern as Evans Insurance/Evans Real Estate already in this county dataset), supporting personal home-lines coverage alongside confirmed auto; primary domain skeetinsurance.com is expired/parked so no owned website could be verified; agent first name 'Steve' confirmed via multiple Google reviews, surname not independently confirmed."
+  },
+  {
+    "agent_name": "Doug Conrad",
+    "agency_name": "Conrad Insurance Agency, Inc.",
+    "company": "Independent / Multiple Carriers (incl. Travelers)",
+    "agent_type": "Independent",
+    "offers_auto": "Yes",
+    "offers_home": "Yes",
+    "website": "",
+    "phone_number": "(913) 724-4466",
+    "email": "",
+    "street_address": "18985 178th St",
+    "city": "Tonganoxie",
+    "county": "Leavenworth",
+    "state": "KS",
+    "zip_code": "66086",
+    "source": "Google Places API (Text Search 'farm mutual insurance Leavenworth County KS' + Place Details, business_status OPERATIONAL); Google reviews name agent Doug Conrad, describe long-term personal policy servicing ('several changes to the policies' after a spouse's death) and reference 'the national Travelers claims department,' confirming a Travelers-affiliated independent agency writing personal auto/home lines; conradinsuranceagency.com now redirects to an unrelated Indiana agency (conradgroupinsurance.com), so no owned website could be verified for the Kansas office."
+  }
+]

@@ -1,0 +1,872 @@
+[
+  {
+    "name": "AAA Lawrence",
+    "phone": "(785) 843-1600",
+    "street_address": "3514 Clinton Pkwy",
+    "city": "Lawrence",
+    "zip": "66047",
+    "website": "https://cluballiance.aaa.com/locations/aaa-stores/AG135/aaa-lawrence-3514-clinton-parkway-lawrence",
+    "source_url": "https://foursquare.com/placemakers/review-place/4c76a0f144d39521cf8203bf",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Triad Partners",
+    "phone": "(785) 830-0000",
+    "street_address": "730 New Hampshire St",
+    "city": "Lawrence",
+    "zip": "66044",
+    "website": "https://triadpartners.com",
+    "source_url": "https://foursquare.com/placemakers/review-place/bac16f699c3357c62b25d30c",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Capitol Agency Insurance",
+    "phone": "(913) 652-2246",
+    "street_address": "740 New Hampshire St",
+    "city": "Lawrence",
+    "zip": "66044",
+    "website": "https://capitolagencyins.com",
+    "source_url": "https://foursquare.com/placemakers/review-place/64325d8adc590e0a0eed4468",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Aflac",
+    "phone": "(785) 856-1240",
+    "street_address": "211 E 8th St",
+    "city": "Lawrence",
+    "zip": "66044",
+    "website": "http://www.aflac.com",
+    "source_url": "https://foursquare.com/placemakers/review-place/778bbba4a10f4e903b5e652d",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Farmers Insurance - Darin Domnanish",
+    "phone": "(785) 856-0895",
+    "street_address": "901 New Hampshire St",
+    "city": "Lawrence",
+    "zip": "66044",
+    "website": "http://www.farmers.com",
+    "source_url": "https://foursquare.com/placemakers/review-place/dd63837edb9748eceb1699e5",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Nationwide",
+    "phone": "(785) 841-0200",
+    "street_address": "1035 Vermont St",
+    "city": "Lawrence",
+    "zip": "66044",
+    "website": "https://www.nationwide.com",
+    "source_url": "https://foursquare.com/placemakers/review-place/3740f04424534f0cf763dfb7",
+    "source": "Foursquare"
+  },
+  {
+    "name": "American Family Insurance - Mary Woodward",
+    "phone": "(785) 331-4353",
+    "street_address": "708 W 9th St, Ste 208",
+    "city": "Lawrence",
+    "zip": "66044",
+    "website": "http://insurance-agency.amfam.com/KS/mary-wiscombe/default.aspx",
+    "source_url": "https://foursquare.com/placemakers/review-place/5350fbd6498e1d4f75380134",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Farmers Insurance",
+    "phone": "(785) 856-2580",
+    "street_address": "708 W 9th St",
+    "city": "Lawrence",
+    "zip": "66044",
+    "website": "http://www.farmersagent.com/bochs",
+    "source_url": "https://foursquare.com/placemakers/review-place/564500ba498edf3cd0e152d9",
+    "source": "Foursquare"
+  },
+  {
+    "name": "American Family Insurance - Mary Wiscombe",
+    "phone": "(785) 331-4353",
+    "street_address": "708 W 9th St Ste 208",
+    "city": "Lawrence",
+    "zip": "66044",
+    "website": "http://insurance-agency.amfam.com/KS/mary-wiscombe/default.aspx?sourceid=agp0001025109",
+    "source_url": "https://foursquare.com/placemakers/review-place/57802e3b498e222d47dafa12",
+    "source": "Foursquare"
+  },
+  {
+    "name": "American Family Insurance",
+    "phone": "(785) 331-4353",
+    "street_address": "708 W 9th St",
+    "city": "Lawrence",
+    "zip": "66044",
+    "website": "http://www.amfam.com",
+    "source_url": "https://foursquare.com/placemakers/review-place/e5136410f3aa4b0a2a41edf9",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Nationwide Mutual Insurance Company",
+    "phone": "(785) 841-0200",
+    "street_address": "1035 Vermont St",
+    "city": "Lawrence",
+    "zip": "66044",
+    "website": "https://www.nationwide.com",
+    "source_url": "https://foursquare.com/placemakers/review-place/f74ad14e8d76204b9372b59a",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Farmers Insurance",
+    "phone": "(785) 749-4800",
+    "street_address": "601 Missouri St",
+    "city": "Lawrence",
+    "zip": "66044",
+    "website": "http://www.farmersagent.com/mconner",
+    "source_url": "https://foursquare.com/placemakers/review-place/564500ba498edf3cd0e152d0",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Free State Insurance Agency",
+    "phone": "(785) 865-3500",
+    "street_address": "917 Iowa St",
+    "city": "Lawrence",
+    "zip": "66044",
+    "website": "http://agency.nationwide.com/david-brothers-in-lawrence-ks",
+    "source_url": "https://foursquare.com/placemakers/review-place/59cde6fe9ec3997d99e7d8a8",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Calvin Eddy & Kappelman Insurance",
+    "phone": "(785) 843-2772",
+    "street_address": "1011 Westdale Rd",
+    "city": "Lawrence",
+    "zip": "66049",
+    "website": "http://www.cekinsurance.com",
+    "source_url": "https://foursquare.com/placemakers/review-place/5fca25e4d13f4dc3697be247",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Nationwide",
+    "phone": "(816) 453-8584",
+    "street_address": "1011 Westdale Rd",
+    "city": "Lawrence",
+    "zip": "66049",
+    "website": "https://www.nationwide.com",
+    "source_url": "https://foursquare.com/placemakers/review-place/ca1141cc78ae4d399e286a3b",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Nationwide Mutual Insurance Company",
+    "phone": "(816) 453-8584",
+    "street_address": "1011 Westdale Rd",
+    "city": "Lawrence",
+    "zip": "66049",
+    "website": "https://www.nationwide.com",
+    "source_url": "https://foursquare.com/placemakers/review-place/3ecbccb24499666fd86b171e",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Nationwide Mutual Insurance Company",
+    "phone": "(785) 841-9538",
+    "street_address": "2711 W 6th St",
+    "city": "Lawrence",
+    "zip": "66049",
+    "website": "https://www.nationwide.com",
+    "source_url": "https://foursquare.com/placemakers/review-place/b340c4c448fdb098e8c525d1",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Nationwide",
+    "phone": "(785) 841-9538",
+    "street_address": "2711 W 6th St",
+    "city": "Lawrence",
+    "zip": "66049",
+    "website": "https://www.nationwide.com",
+    "source_url": "https://foursquare.com/placemakers/review-place/b29d9dbf997e406e2e20a9e5",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Stephens Insurance",
+    "phone": "(785) 841-9538",
+    "street_address": "2711 W 6th St Ste A",
+    "city": "Lawrence",
+    "zip": "66049",
+    "website": "https://www.sciagency.com",
+    "source_url": "https://foursquare.com/placemakers/review-place/50217748ebcad48960bd66a4",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Student Assurance Services",
+    "phone": "(785) 748-0870",
+    "street_address": "818 N Michigan St",
+    "city": "Lawrence",
+    "zip": "66044",
+    "website": "http://sas-mn.com",
+    "source_url": "https://foursquare.com/placemakers/review-place/d6b7abb48a714fb8b4d9ffa3",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Shelter Insurance - Jeremy Stone",
+    "phone": "(785) 841-3020",
+    "street_address": "3017 W 6th St Ste C",
+    "city": "Lawrence",
+    "zip": "66049",
+    "website": null,
+    "source_url": "https://foursquare.com/placemakers/review-place/ad8b47740faa471cca31feb2",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Timothy Waltrip: Allstate Insurance",
+    "phone": "(785) 843-2532",
+    "street_address": "2233 Louisiana St Ste H2",
+    "city": "Lawrence",
+    "zip": "66046",
+    "website": "https://agents.allstate.com/timothy-waltrip-lawrence-ks.html",
+    "source_url": "https://foursquare.com/placemakers/review-place/60223eade852b707c9162b9e",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Arensberg Tom Insurance",
+    "phone": "(785) 865-0077",
+    "street_address": "600 Lawrence Ave",
+    "city": "Lawrence",
+    "zip": "66049",
+    "website": null,
+    "source_url": "https://foursquare.com/placemakers/review-place/80a5f7c9231f4749d05ef8b4",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Dennis Garrison - State Farm Insurance Agent",
+    "phone": "(785) 842-4193",
+    "street_address": "543 Lawrence Ave, Ste A2",
+    "city": "Lawrence",
+    "zip": "66049",
+    "website": "https://www.statefarm.com/agent/US/KS/Lawrence/Dennis-Garrison-VC1731YS000",
+    "source_url": "https://foursquare.com/placemakers/review-place/52163b3411d22c7efa7aafe0",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Bertram Oparaji: Allstate Insurance",
+    "phone": "(785) 330-5666",
+    "street_address": "3110 Mesa Way Ste D",
+    "city": "Lawrence",
+    "zip": "66049",
+    "website": "https://agents.allstate.com/0B8586",
+    "source_url": "https://foursquare.com/placemakers/review-place/5b8ecd8597cf5a002da79ab7",
+    "source": "Foursquare"
+  },
+  {
+    "name": "American Family Insurance - Dave Nuzum",
+    "phone": "(785) 856-0016",
+    "street_address": "1202 E 23rd St Ste A2",
+    "city": "Lawrence",
+    "zip": "66046",
+    "website": "http://insurance-agency.amfam.com/KS/dave-nuzum/default.aspx?sourceid=agp0001026379",
+    "source_url": "https://foursquare.com/placemakers/review-place/5350fba9498e9e4b2ebe322a",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Nationwide Mutual Insurance Company",
+    "phone": "(785) 856-3343",
+    "street_address": "3109 W 6th St",
+    "city": "Lawrence",
+    "zip": "66049",
+    "website": "https://www.nationwide.com",
+    "source_url": "https://foursquare.com/placemakers/review-place/90bbb268485868024863c5c1",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Nationwide",
+    "phone": "(785) 856-3343",
+    "street_address": "3109 W 6th St",
+    "city": "Lawrence",
+    "zip": "66049",
+    "website": "https://www.nationwide.com",
+    "source_url": "https://foursquare.com/placemakers/review-place/495fa663952e4644757e060a",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Douglas County Farm Burea",
+    "phone": "(785) 856-3276",
+    "street_address": "808 W 24th St",
+    "city": "Lawrence",
+    "zip": "66046",
+    "website": "http://www.dgksfb.org",
+    "source_url": "https://foursquare.com/placemakers/review-place/35f8ec5511154d37756cb870",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Chad Hess Farm Bureau Financial Services",
+    "phone": "(785) 856-6767",
+    "street_address": "3115 W 6th St",
+    "city": "Lawrence",
+    "zip": "66049",
+    "website": null,
+    "source_url": "https://foursquare.com/placemakers/review-place/8bf6481bcb9443f38afec5d9",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Farmers Insurance",
+    "phone": "(785) 843-7511",
+    "street_address": "3200 Mesa Way",
+    "city": "Lawrence",
+    "zip": "66049",
+    "website": "http://www.farmersagent.com/tpollard1",
+    "source_url": "https://foursquare.com/placemakers/review-place/564500ba498edf3cd0e152e6",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Farmers Insurance - Kristi Keefer",
+    "phone": "(785) 843-7511",
+    "street_address": "3300 Mesa Way",
+    "city": "Lawrence",
+    "zip": "66049",
+    "website": "http://www.farmers.com",
+    "source_url": "https://foursquare.com/placemakers/review-place/c0aabe6d42384033bb255c15",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Lawrence Insurance Co: Allstate Insurance",
+    "phone": "(785) 856-8708",
+    "street_address": "1225 E 23rd St",
+    "city": "Lawrence",
+    "zip": "66046",
+    "website": "https://agents.allstate.com/lawrence-insurance-co-lawrence-ks.html",
+    "source_url": "https://foursquare.com/placemakers/review-place/5616261e498ef3e956e69be5",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Kevin Morrissy: Allstate Insurance",
+    "phone": "(785) 856-8708",
+    "street_address": "1225 E 23rd St",
+    "city": "Lawrence",
+    "zip": "66046",
+    "website": "https://agents.allstate.com/kevin-morrissy-lawrence-ks-19786561.html",
+    "source_url": "https://foursquare.com/placemakers/review-place/603ff428abd07e2d6bda766a",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Tim Waltrip: Allstate Insurance",
+    "phone": "(785) 843-2532",
+    "street_address": "2233 Louisiana St",
+    "city": "Lawrence",
+    "zip": "66046",
+    "website": "https://agents.allstate.com/tim-waltrip-lawrence-ks.html",
+    "source_url": "https://foursquare.com/placemakers/review-place/68015c4dd99443f26e126425",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Nationwide Mutual Insurance Company",
+    "phone": "(785) 856-3020",
+    "street_address": "3300 Bob Billings Pkwy",
+    "city": "Lawrence",
+    "zip": "66049",
+    "website": "https://www.nationwide.com",
+    "source_url": "https://foursquare.com/placemakers/review-place/2bd1ebc0e2cd8b106194fcb8",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Nationwide",
+    "phone": "(785) 856-3020",
+    "street_address": "3300 Bob Billings Pkwy",
+    "city": "Lawrence",
+    "zip": "66049",
+    "website": "https://www.nationwide.com",
+    "source_url": "https://foursquare.com/placemakers/review-place/d3fd54fd9a5235fcf8c00458",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Chris Munk - State Farm Insurance Agent",
+    "phone": "(785) 842-5000",
+    "street_address": "3300 Bob Billings Pkwy Ste 1",
+    "city": "Lawrence",
+    "zip": "66049",
+    "website": "http://www.chrismunk.com",
+    "source_url": "https://foursquare.com/placemakers/review-place/50ad18c7183f9ea73c22267b",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Shelter Insurance - Lance Wollesen",
+    "phone": "(785) 865-4040",
+    "street_address": "1420 Kasold Dr Ste B1",
+    "city": "Lawrence",
+    "zip": "66049",
+    "website": null,
+    "source_url": "https://foursquare.com/placemakers/review-place/f64ed7f6c2794c7dda407f8b",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Shelter Insurance - Brett Schneider",
+    "phone": "(785) 841-3575",
+    "street_address": "1420 Kasold Dr Ste B2",
+    "city": "Lawrence",
+    "zip": "66049",
+    "website": null,
+    "source_url": "https://foursquare.com/placemakers/review-place/d2aefe88d1794d56039852e1",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Mike Grosdidier - State Farm Insurance Agent",
+    "phone": "(785) 842-6407",
+    "street_address": "2400 Iowa St, Ste 1",
+    "city": "Lawrence",
+    "zip": "66046",
+    "website": "https://www.statefarm.com/agent/us/ks/lawrence/mike-grosdidier-xdtbf1ys000",
+    "source_url": "https://foursquare.com/placemakers/review-place/53a8741c498edfc9b4b19fdb",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Bob Carlson - State Farm Insurance Agent",
+    "phone": "(785) 843-1292",
+    "street_address": "2400 Iowa St, Ste 2",
+    "city": "Lawrence",
+    "zip": "66046",
+    "website": "http://www.bobcarlsonagency.com",
+    "source_url": "https://foursquare.com/placemakers/review-place/4fb3ff06e4b00e09e24810a6",
+    "source": "Foursquare"
+  },
+  {
+    "name": "American Family Insurance - Harry Thomason Agency Inc.",
+    "phone": "(785) 843-6591",
+    "street_address": "2420 Iowa St",
+    "city": "Lawrence",
+    "zip": "66046",
+    "website": "http://insurance-agency.amfam.com/KS/harry-thomason/insurance-products.aspx",
+    "source_url": "https://foursquare.com/placemakers/review-place/5351340a498ed5d85aa5cfd5",
+    "source": "Foursquare"
+  },
+  {
+    "name": "American Family Insurance - Jenny Huber",
+    "phone": "(785) 843-6591",
+    "street_address": "2420 Iowa St",
+    "city": "Lawrence",
+    "zip": "66046",
+    "website": "http://insurance-agency.amfam.com/KS/jenny-huber/default.aspx?sourceid=agp0001003183",
+    "source_url": "https://foursquare.com/placemakers/review-place/53553866498e6ad33a93f0b7",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Gary Peterson Insurance",
+    "phone": "(785) 841-3020",
+    "street_address": "2500 Iowa St",
+    "city": "Lawrence",
+    "zip": "66046",
+    "website": "http://www.shelterinsurance.com",
+    "source_url": "https://foursquare.com/placemakers/review-place/4eaaf75182312ec2f6ba5798",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Farmers Insurance - Brad Ochs",
+    "phone": "(785) 856-2580",
+    "street_address": "2201 W 25th St",
+    "city": "Lawrence",
+    "zip": "66047",
+    "website": "http://www.farmers.com",
+    "source_url": "https://foursquare.com/placemakers/review-place/4702212c396748bc5eb2a424",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Nationwide Mutual Insurance Company",
+    "phone": "(785) 331-3607",
+    "street_address": "3801 W 6th St",
+    "city": "Lawrence",
+    "zip": "66049",
+    "website": "https://www.nationwide.com",
+    "source_url": "https://foursquare.com/placemakers/review-place/c21f1881225b2865934832ea",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Nationwide",
+    "phone": "(785) 331-3607",
+    "street_address": "3801 W 6th St",
+    "city": "Lawrence",
+    "zip": "66049",
+    "website": "https://www.nationwide.com",
+    "source_url": "https://foursquare.com/placemakers/review-place/70f4fa8a0d654cc40e859e6f",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Farm Bureau Financial Services: Ron Reed",
+    "phone": "(785) 841-7444",
+    "street_address": "2201 W 25th St Ste S",
+    "city": "Lawrence",
+    "zip": "66047",
+    "website": "https://www.fbfs.com/find-an-agent/ronreed",
+    "source_url": "https://foursquare.com/placemakers/review-place/9d0d9092030d4ee120597945",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Cornell Benefit Solutions",
+    "phone": "(785) 393-1276",
+    "street_address": "1611 Saint Andrews Dr",
+    "city": "Lawrence",
+    "zip": "66047",
+    "website": null,
+    "source_url": "https://foursquare.com/placemakers/review-place/34782781fcab4c04a67ca747",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Dixon Financial & Insurance Services",
+    "phone": "",
+    "street_address": "2002 Camelback Dr",
+    "city": "Lawrence",
+    "zip": "66047",
+    "website": null,
+    "source_url": "https://foursquare.com/placemakers/review-place/69406efb98a16e23d33c5bb9",
+    "source": "Foursquare"
+  },
+  {
+    "name": "DJ Flummerfelt Agency",
+    "phone": "(785) 749-1778",
+    "street_address": "2601 Iowa St",
+    "city": "Lawrence",
+    "zip": "66046",
+    "website": "https://agent.amfam.com/dee-flummerfelt/ks/lawrence/2601-iowa-st/",
+    "source_url": "https://foursquare.com/placemakers/review-place/5b9b45c9f2554e00392f32bd",
+    "source": "Foursquare"
+  },
+  {
+    "name": "American Family Insurance - D J Flummerfelt",
+    "phone": "(785) 749-1778",
+    "street_address": "2601 Iowa St",
+    "city": "Lawrence",
+    "zip": "66046",
+    "website": "http://insurance-agency.amfam.com/KS/dj-flummerfelt/default.aspx?sourceid=agp0001023447",
+    "source_url": "https://foursquare.com/placemakers/review-place/53511838498eb4635b5c8625",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Nationwide",
+    "phone": "(785) 528-3191",
+    "street_address": "2706 Iowa St",
+    "city": "Lawrence",
+    "zip": "66046",
+    "website": "https://www.nationwide.com",
+    "source_url": "https://foursquare.com/placemakers/review-place/6ca850b2c103430a6e4a6d0e",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Miller Insurance",
+    "phone": "(785) 841-0511",
+    "street_address": "2706 Iowa St Ste A",
+    "city": "Lawrence",
+    "zip": "66046",
+    "website": "https://www.miller-insurance.com",
+    "source_url": "https://foursquare.com/placemakers/review-place/4e7b5209887750b4e4aa1d03",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Jensen Insurance Group - Lawrence",
+    "phone": "(785) 843-0511",
+    "street_address": "2706 Iowa St Ste A",
+    "city": "Lawrence",
+    "zip": "66046",
+    "website": "https://jenseninsurancegroup.com",
+    "source_url": "https://foursquare.com/placemakers/review-place/5dc215c958c0110007f85bde",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Daniel Garvin Ins",
+    "phone": "(785) 841-6776",
+    "street_address": "4106 W 6th St",
+    "city": "Lawrence",
+    "zip": "66049",
+    "website": null,
+    "source_url": "https://foursquare.com/placemakers/review-place/467d81b08c7743c736acdfc0",
+    "source": "Foursquare"
+  },
+  {
+    "name": "American Family Insurance - Justin Moravec",
+    "phone": "(785) 841-6776",
+    "street_address": "4106 W 6th St Ste C",
+    "city": "Lawrence",
+    "zip": "66049",
+    "website": "http://insurance-agency.amfam.com/KS/justin-moravec/default.aspx?sourceid=agp0001039044",
+    "source_url": "https://foursquare.com/placemakers/review-place/502e8193e4b0b49bb4de93c2",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Rochelle Tramp - State Farm Insurance Agent",
+    "phone": "(785) 842-6288",
+    "street_address": "4205 W 6th St, Ste A",
+    "city": "Lawrence",
+    "zip": "66049",
+    "website": "http://www.rochelletramp.com",
+    "source_url": "https://foursquare.com/placemakers/review-place/4e989c5e7ee571e1ee3c8abe",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Kaitlan Fishburn & Associates LLC, American Family Insurance",
+    "phone": "(785) 841-8008",
+    "street_address": "3010 Four Wheel Dr Ste 2",
+    "city": "Lawrence",
+    "zip": "66047",
+    "website": "https://agent.amfam.com/Kaitlan-Fishburn/",
+    "source_url": "https://foursquare.com/placemakers/review-place/60d7a708a935034eff2f83bc",
+    "source": "Foursquare"
+  },
+  {
+    "name": "American Family Insurance - Ron King Agency",
+    "phone": "(785) 841-8008",
+    "street_address": "3010 Four Wheel Dr",
+    "city": "Lawrence",
+    "zip": "66047",
+    "website": "http://insurance-agency.amfam.com/KS/ronald-king/default.aspx?sourceid=agp0001025158",
+    "source_url": "https://foursquare.com/placemakers/review-place/5352a239498e04c293e5b174",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Nationwide Mutual Insurance Company",
+    "phone": "(785) 542-2000",
+    "street_address": "2500 W 31st St",
+    "city": "Lawrence",
+    "zip": "66047",
+    "website": "https://www.nationwide.com",
+    "source_url": "https://foursquare.com/placemakers/review-place/7763c19844954b0a55a736c2",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Blosser Financial Services",
+    "phone": "(785) 842-4650",
+    "street_address": "2500 W 31st St",
+    "city": "Lawrence",
+    "zip": "66047",
+    "website": "http://blosserfinancialservices.com",
+    "source_url": "https://foursquare.com/placemakers/review-place/e2d3d577d4104037ecda0037",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Integrity Midwest Insurance, LLC",
+    "phone": "(785) 856-5100",
+    "street_address": "2500 W 31st St Ste B",
+    "city": "Lawrence",
+    "zip": "66047",
+    "website": "https://integritymidwestins.com",
+    "source_url": "https://foursquare.com/placemakers/review-place/60338e3e77b1506461376f5c",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Nationwide",
+    "phone": "(785) 542-2000",
+    "street_address": "2500 W 31st St",
+    "city": "Lawrence",
+    "zip": "66047",
+    "website": "https://www.nationwide.com",
+    "source_url": "https://foursquare.com/placemakers/review-place/c9ac8feec4ce4e291bac78a5",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Jeff Zigmant",
+    "phone": "(785) 843-1292",
+    "street_address": "4821 W 6th St Ste O",
+    "city": "Lawrence",
+    "zip": "66049",
+    "website": "https://www.getzig.com",
+    "source_url": "https://foursquare.com/placemakers/review-place/32580ed05b9ef5882b3f60df",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Security 1st Title",
+    "phone": "(785) 856-2900",
+    "street_address": "4821 W 6th St",
+    "city": "Lawrence",
+    "zip": "66049",
+    "website": "http://www.security1stks.com",
+    "source_url": "https://foursquare.com/placemakers/review-place/d7a65d05c245438ac87b14b5",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Nationwide Mutual Insurance Company",
+    "phone": "(785) 371-4124",
+    "street_address": "1201 Wakarusa Dr",
+    "city": "Lawrence",
+    "zip": "66049",
+    "website": "https://www.nationwide.com",
+    "source_url": "https://foursquare.com/placemakers/review-place/946d7f2a7e1c5bfed4981bfc",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Secure Financial Services",
+    "phone": "(785) 856-1652",
+    "street_address": "4840 Bob Billings Pkwy",
+    "city": "Lawrence",
+    "zip": "66049",
+    "website": "https://www.securefsinc.com",
+    "source_url": "https://foursquare.com/placemakers/review-place/49fd5596367c4fe16dd10a7b",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Nationwide",
+    "phone": "(785) 371-4124",
+    "street_address": "1201 Wakarusa Dr",
+    "city": "Lawrence",
+    "zip": "66049",
+    "website": "https://www.nationwide.com",
+    "source_url": "https://foursquare.com/placemakers/review-place/268134ce77604d67e0c8bf05",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Integrity Midwest Insurance",
+    "phone": "(785) 856-5100",
+    "street_address": "1540 Wakarusa Dr",
+    "city": "Lawrence",
+    "zip": "66047",
+    "website": "https://integritymidwestins.com",
+    "source_url": "https://foursquare.com/placemakers/review-place/6edebeb0d1da46e5c38f3e3b",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Nationwide Mutual Insurance Company",
+    "phone": "(785) 832-2600",
+    "street_address": "4911 Legends Dr",
+    "city": "Lawrence",
+    "zip": "66049",
+    "website": "https://www.nationwide.com",
+    "source_url": "https://foursquare.com/placemakers/review-place/83ef2325f7a446c12b397351",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Nationwide",
+    "phone": "(785) 832-2600",
+    "street_address": "4911 Legends Dr",
+    "city": "Lawrence",
+    "zip": "66049",
+    "website": "https://www.nationwide.com",
+    "source_url": "https://foursquare.com/placemakers/review-place/aa21fe53471047ccf090945d",
+    "source": "Foursquare"
+  },
+  {
+    "name": "SR22 Representatives Of Bleeding Kansas",
+    "phone": "(785) 335-9680",
+    "street_address": "4910 Corporate Centre Dr",
+    "city": "Lawrence",
+    "zip": "66049",
+    "website": "https://www.manta.com/c/m1rss3f/sr22-representatives-of-bleeding-kansas",
+    "source_url": "https://foursquare.com/placemakers/review-place/63905903053f736645024ca6",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Kurt Goeser - State Farm Insurance Agent",
+    "phone": "(785) 843-0003",
+    "street_address": "1811 Wakarusa Dr Ste 100",
+    "city": "Lawrence",
+    "zip": "66047",
+    "website": "http://www.kurtinsures.com",
+    "source_url": "https://foursquare.com/placemakers/review-place/545daa6e498ec51130c58f90",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Farm Bureau Financial Service",
+    "phone": "(785) 856-8920",
+    "street_address": "5020 Bob Billings Pkwy",
+    "city": "Lawrence",
+    "zip": "66049",
+    "website": "http://fbfs.com",
+    "source_url": "https://foursquare.com/placemakers/review-place/50897e24b8b74b5daff65bb9",
+    "source": "Foursquare"
+  },
+  {
+    "name": "John Kirby Representing American National",
+    "phone": "(785) 842-6702",
+    "street_address": "5200 Bob Billings Pkwy Ste 204",
+    "city": "Lawrence",
+    "zip": "66049",
+    "website": "http://agent.anpac.com/lawrence/john_kirby_lutcf",
+    "source_url": "https://foursquare.com/placemakers/review-place/118c82d881dbddc3475a128f",
+    "source": "Foursquare"
+  },
+  {
+    "name": "American National Insurance Company",
+    "phone": "(785) 842-6702",
+    "street_address": "5200 Bob Billings Pkwy",
+    "city": "Lawrence",
+    "zip": "66049",
+    "website": "https://www.americannational.com/wps/portal/an/home/!ut/p/z1/04_Sj9CPykssy0xPLMnMz0vMAfIjo8zi_SxMjQwtDQx9LNycXQwCPV1MvQ0CA4wCTUz1wwkpiAJKG-AAjgZA_VFgJXATDAL8XQ0CHQ1CzQx8TI0Ngs2gCvCYUZAbYZDpqKgIAH9LVxQ!/dz/d5/L2dBISEvZ0FBIS9nQSEh",
+    "source_url": "https://foursquare.com/placemakers/review-place/5eaf04ab25134c20f512fea2",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Farm Bureau Financial Services: Anthony Brown",
+    "phone": "(785) 615-0516",
+    "street_address": "101 W 10th St Ste A",
+    "city": "Eudora",
+    "zip": "66025",
+    "website": "https://www.fbfs.com/find-an-agent/anthonybrown",
+    "source_url": "https://foursquare.com/placemakers/review-place/697acefef80141685ac640fa",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Integrity Midwest Insurance, LLC",
+    "phone": "(785) 542-2000",
+    "street_address": "711 Main St",
+    "city": "Eudora",
+    "zip": "66025",
+    "website": "https://integritymidwestins.com",
+    "source_url": "https://foursquare.com/placemakers/review-place/60338bb9af560f12fef5dd88",
+    "source": "Foursquare"
+  },
+  {
+    "name": "LBRR Corporation",
+    "phone": "(785) 246-8811",
+    "street_address": "",
+    "city": "Eudora",
+    "zip": "66025",
+    "website": null,
+    "source_url": "https://foursquare.com/placemakers/review-place/5bdaf2251acf110039d7be2a",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Keith Nowland - State Farm Insurance Agent",
+    "phone": "(785) 542-3276",
+    "street_address": "218 E 20th St, Ste B",
+    "city": "Eudora",
+    "zip": "66025",
+    "website": "http://www.keithnowland.com",
+    "source_url": "https://foursquare.com/placemakers/review-place/521b02c811d2f8aad52b0b72",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Baldwin Insurance Service",
+    "phone": "(785) 594-6822",
+    "street_address": "604 High St",
+    "city": "Baldwin City",
+    "zip": "66006",
+    "website": "https://www.baldwinsurance.com",
+    "source_url": "https://foursquare.com/placemakers/review-place/826d9a782af24a64012bbd79",
+    "source": "Foursquare"
+  },
+  {
+    "name": "David Sneider Agency",
+    "phone": "(785) 594-7400",
+    "street_address": "707 8th St",
+    "city": "Baldwin City",
+    "zip": "66006",
+    "website": "http://www.davidsneider.com",
+    "source_url": "https://foursquare.com/placemakers/review-place/8a9b421ca3d14c5253c72f5e",
+    "source": "Foursquare"
+  },
+  {
+    "name": "American Family Insurance - Mary Wiscombe",
+    "phone": "(785) 594-7400",
+    "street_address": "818 Ames St",
+    "city": "Baldwin City",
+    "zip": "66006",
+    "website": "http://insurance-agency.amfam.com/KS/mary-wiscombe/default.aspx?sourceid=agp0001025109",
+    "source_url": "https://foursquare.com/placemakers/review-place/57802e3a498e6f91f4b3994d",
+    "source": "Foursquare"
+  },
+  {
+    "name": "American Family Insurance - Melissa Mayer-Heinitz",
+    "phone": "(785) 594-7400",
+    "street_address": "707 8th St",
+    "city": "Baldwin City",
+    "zip": "66006",
+    "website": "http://insurance-agency.amfam.com/KS/melissa-mayer-heinitz/default.aspx",
+    "source_url": "https://foursquare.com/placemakers/review-place/53553951498e4646eac973c7",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Aflac",
+    "phone": "(785) 760-1921",
+    "street_address": "820 Lincoln St",
+    "city": "Baldwin City",
+    "zip": "66006",
+    "website": "http://www.aflac.com",
+    "source_url": "https://foursquare.com/placemakers/review-place/92ea2fa29c234230e1286b86",
+    "source": "Foursquare"
+  }
+]

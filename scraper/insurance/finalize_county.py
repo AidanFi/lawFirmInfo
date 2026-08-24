@@ -10,9 +10,10 @@ import re
 import sys
 from rapidfuzz import fuzz
 
-DATE_PULLED = "2026-08-23"
-COLS = ["agent_name", "agency_name", "company", "agent_type", "website", "phone_number",
-        "email", "street_address", "city", "state", "county", "zip_code", "date_pulled", "source"]
+DATE_PULLED = "2026-08-24"
+COLS = ["agent_name", "agency_name", "company", "agent_type", "offers_auto", "offers_home",
+        "website", "phone_number", "email", "street_address", "city", "state", "county",
+        "zip_code", "date_pulled", "source"]
 
 
 def digits(s):

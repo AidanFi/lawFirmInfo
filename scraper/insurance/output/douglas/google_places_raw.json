@@ -1,0 +1,563 @@
+[
+  {
+    "name": "Kansas Insurance, Lawrence",
+    "phone": "(785) 331-3607",
+    "website": "http://www.kansasins.com/",
+    "formatted_address": "3801 W 6th St, Lawrence, KS 66049, USA",
+    "city_hint": "Lawrence",
+    "place_id": "ChIJr5LetMFuv4cRoiW9qrseW50",
+    "business_status": "OPERATIONAL",
+    "types": [
+      "establishment",
+      "insurance_agency",
+      "point_of_interest"
+    ],
+    "source": "Google Places"
+  },
+  {
+    "name": "Miller Insurance",
+    "phone": "(785) 503-9089",
+    "website": "",
+    "formatted_address": "2336 Ridge Ct Ste. A, Lawrence, KS 66046, USA",
+    "city_hint": "Lawrence",
+    "place_id": "ChIJKzFfHcZov4cR4ZUrwKvoD0s",
+    "business_status": "OPERATIONAL",
+    "types": [
+      "establishment",
+      "insurance_agency",
+      "point_of_interest"
+    ],
+    "source": "Google Places"
+  },
+  {
+    "name": "Edie Insurance Group, LLC.",
+    "phone": "(785) 856-3343",
+    "website": "http://www.edieinsurance.com/",
+    "formatted_address": "3109 W 6th St A, Lawrence, KS 66049, USA",
+    "city_hint": "Lawrence",
+    "place_id": "ChIJc-n5uN1uv4cR9nZ9fKCzxYM",
+    "business_status": "OPERATIONAL",
+    "types": [
+      "establishment",
+      "health",
+      "insurance_agency",
+      "point_of_interest"
+    ],
+    "source": "Google Places"
+  },
+  {
+    "name": "ICT Insurance Team",
+    "phone": "(785) 843-0511",
+    "website": "https://www.ictinsuranceteam.com/lawrence-office",
+    "formatted_address": "2336 Ridge Ct Ste. A, Lawrence, KS 66046, USA",
+    "city_hint": "Lawrence",
+    "place_id": "ChIJjy89QP5pv4cRxU2knBQOewc",
+    "business_status": "OPERATIONAL",
+    "types": [
+      "establishment",
+      "insurance_agency",
+      "point_of_interest"
+    ],
+    "source": "Google Places"
+  },
+  {
+    "name": "Integrity Midwest Insurance, LLC",
+    "phone": "(785) 856-5100",
+    "website": "https://integritymidwestins.com/",
+    "formatted_address": "3301 Clinton Pkwy Ct, Lawrence, KS 66047, USA",
+    "city_hint": "Lawrence",
+    "place_id": "ChIJYVTRVm5pv4cR_XmetQ3-CCA",
+    "business_status": "OPERATIONAL",
+    "types": [
+      "establishment",
+      "health",
+      "insurance_agency",
+      "point_of_interest"
+    ],
+    "source": "Google Places"
+  },
+  {
+    "name": "Lawrence Insurance",
+    "phone": "(785) 783-5545",
+    "website": "https://lawrence-insurance.com/",
+    "formatted_address": "1219A E 23rd St, Lawrence, KS 66046, USA",
+    "city_hint": "Lawrence",
+    "place_id": "ChIJtztJ9Bpmv4cRbaQduRXhOys",
+    "business_status": "OPERATIONAL",
+    "types": [
+      "establishment",
+      "insurance_agency",
+      "point_of_interest"
+    ],
+    "source": "Google Places"
+  },
+  {
+    "name": "Prairie Land Insurance",
+    "phone": "(785) 856-3020",
+    "website": "http://www.prairielandgroup.com/",
+    "formatted_address": "3300 Bob Billings Pkwy #1, Lawrence, KS 66049, USA",
+    "city_hint": "Lawrence",
+    "place_id": "ChIJO-3_7aRuv4cRWeDT-ycwUHs",
+    "business_status": "OPERATIONAL",
+    "types": [
+      "establishment",
+      "insurance_agency",
+      "point_of_interest"
+    ],
+    "source": "Google Places"
+  },
+  {
+    "name": "CEK Insurance",
+    "phone": "(785) 843-2772",
+    "website": "https://cekinsurance.com/",
+    "formatted_address": "211 E 8th St, Lawrence, KS 66044, USA",
+    "city_hint": "Lawrence",
+    "place_id": "ChIJyznqtyVvv4cRyyD2hhtfbXo",
+    "business_status": "OPERATIONAL",
+    "types": [
+      "establishment",
+      "insurance_agency",
+      "point_of_interest"
+    ],
+    "source": "Google Places"
+  },
+  {
+    "name": "Hedges Insurance",
+    "phone": "(785) 841-0200",
+    "website": "http://www.lawrenceinsurancecenter.com/",
+    "formatted_address": "1035 Vermont St, Lawrence, KS 66044, USA",
+    "city_hint": "Lawrence",
+    "place_id": "ChIJsxZy_09vv4cR7APiN80RBhk",
+    "business_status": "OPERATIONAL",
+    "types": [
+      "establishment",
+      "insurance_agency",
+      "point_of_interest"
+    ],
+    "source": "Google Places"
+  },
+  {
+    "name": "Beasley Insurance Inc",
+    "phone": "(785) 843-0702",
+    "website": "http://beasleyinsuranceinc.com/",
+    "formatted_address": "2336 Ridge Ct Ste. A, Lawrence, KS 66046, USA",
+    "city_hint": "Lawrence",
+    "place_id": "ChIJ_49LSsVov4cRJbuis-ocuHM",
+    "business_status": "OPERATIONAL",
+    "types": [
+      "establishment",
+      "insurance_agency",
+      "point_of_interest"
+    ],
+    "source": "Google Places"
+  },
+  {
+    "name": "Kurt Goeser - State Farm Insurance Agent",
+    "phone": "(785) 843-0003",
+    "website": "https://www.kurtinsures.com/?cmpid=JYTK_blm_0001",
+    "formatted_address": "1811 Wakarusa Dr #100, Lawrence, KS 66047, USA",
+    "city_hint": "Lawrence",
+    "place_id": "ChIJlw8J2Kpuv4cRA7b2j1ckafk",
+    "business_status": "OPERATIONAL",
+    "types": [
+      "establishment",
+      "insurance_agency",
+      "point_of_interest"
+    ],
+    "source": "Google Places"
+  },
+  {
+    "name": "Jenny Huber American Family Insurance",
+    "phone": "(785) 843-6591",
+    "website": "https://www.amfam.com/agents/kansas/lawrence/jenny-huber",
+    "formatted_address": "2420 Iowa St, Lawrence, KS 66046, USA",
+    "city_hint": "Lawrence",
+    "place_id": "ChIJVT9nBttov4cRPwWGQk0sV_U",
+    "business_status": "OPERATIONAL",
+    "types": [
+      "establishment",
+      "insurance_agency",
+      "point_of_interest"
+    ],
+    "source": "Google Places"
+  },
+  {
+    "name": "Gardner Insurance Agency, LLC.",
+    "phone": "(785) 842-3321",
+    "website": "http://www.gardnerinsurancellc.com/",
+    "formatted_address": "305 E 7th St, Lawrence, KS 66044, USA",
+    "city_hint": "Lawrence",
+    "place_id": "ChIJCUsxP1xvv4cRQwtfykDMsbk",
+    "business_status": "OPERATIONAL",
+    "types": [
+      "establishment",
+      "insurance_agency",
+      "point_of_interest"
+    ],
+    "source": "Google Places"
+  },
+  {
+    "name": "Stephens Chapin Insurance - now Elliott Insurance Group",
+    "phone": "(785) 267-4840",
+    "website": "http://www.elliottinsurancegroup.com/",
+    "formatted_address": "1201 Wakarusa Dr #A-4, Lawrence, KS 66049, USA",
+    "city_hint": "Lawrence",
+    "place_id": "ChIJfx1dmd9uv4cRJoh2HdqbchY",
+    "business_status": "OPERATIONAL",
+    "types": [
+      "establishment",
+      "insurance_agency",
+      "point_of_interest"
+    ],
+    "source": "Google Places"
+  },
+  {
+    "name": "JCK Health Insurance",
+    "phone": "(785) 393-8025",
+    "website": "https://www.jckhealthinsurance.com/",
+    "formatted_address": "120 E 9th St Ste 104, Lawrence, KS 66044, USA",
+    "city_hint": "Lawrence",
+    "place_id": "ChIJm4XuX3Bvv4cR8-ist0JwK4A",
+    "business_status": "OPERATIONAL",
+    "types": [
+      "establishment",
+      "health",
+      "insurance_agency",
+      "point_of_interest"
+    ],
+    "source": "Google Places"
+  },
+  {
+    "name": "Shelter Insurance",
+    "phone": "(785) 367-8172",
+    "website": "https://www.shelterinsurance.com/CA/agent/bschneider",
+    "formatted_address": "2522 Redbud Ln, Lawrence, KS 66046, USA",
+    "city_hint": "Lawrence",
+    "place_id": "ChIJY26dgtxov4cRt5q880ruAYY",
+    "business_status": "OPERATIONAL",
+    "types": [
+      "establishment",
+      "insurance_agency",
+      "point_of_interest"
+    ],
+    "source": "Google Places"
+  },
+  {
+    "name": "Farmers Insurance - Kristi Keefer",
+    "phone": "(785) 843-7511",
+    "website": "https://agents.farmers.com/ks/lawrence/kristi-keefer?SourceID=AMPALFGMAG&utm_source=GMB&utm_medium=Local&y_source=1_MTc4OTU2NTYtNzE1LWxvY2F0aW9uLndlYnNpdGU=",
+    "formatted_address": "3300 Mesa Way Ste C, Lawrence, KS 66049, USA",
+    "city_hint": "Lawrence",
+    "place_id": "ChIJ4QO8echvv4cR6LnPwHdXGyE",
+    "business_status": "OPERATIONAL",
+    "types": [
+      "establishment",
+      "insurance_agency",
+      "point_of_interest"
+    ],
+    "source": "Google Places"
+  },
+  {
+    "name": "AAA Lawrence",
+    "phone": "(785) 843-1600",
+    "website": "https://cluballiance.aaa.com/locations/aaa-stores/AG135/aaa-lawrence-3514-clinton-parkway-lawrence?utm_source=google&utm_medium=organic&utm_campaign=gmb",
+    "formatted_address": "3514 Clinton Parkway Ste K, Lawrence, KS 66047, USA",
+    "city_hint": "Lawrence",
+    "place_id": "ChIJPbFZ-jBpv4cRmOWvuTYtrRA",
+    "business_status": "OPERATIONAL",
+    "types": [
+      "establishment",
+      "insurance_agency",
+      "point_of_interest",
+      "travel_agency"
+    ],
+    "source": "Google Places"
+  },
+  {
+    "name": "Farm Bureau Financial Services: John Magnuson",
+    "phone": "(785) 330-9900",
+    "website": "https://www.fbfs.com/find-an-agent/johnmagnuson?y_source=1_NzI1NzQ3NDgtNzE1LWxvY2F0aW9uLndlYnNpdGU%3D",
+    "formatted_address": "3115 W 6th St Ste B, Lawrence, KS 66049, USA",
+    "city_hint": "Lawrence",
+    "place_id": "ChIJoVI_omFpv4cRN3R11xvHNsM",
+    "business_status": "OPERATIONAL",
+    "types": [
+      "establishment",
+      "insurance_agency",
+      "point_of_interest"
+    ],
+    "source": "Google Places"
+  },
+  {
+    "name": "Free State Insurance Agency",
+    "phone": "(785) 865-3500",
+    "website": "https://freestateinsurance.com/",
+    "formatted_address": "917 Iowa St, Lawrence, KS 66044, USA",
+    "city_hint": "Lawrence",
+    "place_id": "ChIJgcHYFCRvv4cRUL0GHT2KtAU",
+    "business_status": "OPERATIONAL",
+    "types": [
+      "establishment",
+      "insurance_agency",
+      "point_of_interest"
+    ],
+    "source": "Google Places"
+  },
+  {
+    "name": "Integrity Midwest Insurance, LLC",
+    "phone": "(785) 542-2000",
+    "website": "https://integritymidwestins.com/",
+    "formatted_address": "711 Main St, Eudora, KS 66025, USA",
+    "city_hint": "Eudora",
+    "place_id": "ChIJ2R7YFFNhv4cRjiTGuid7Zjc",
+    "business_status": "OPERATIONAL",
+    "types": [
+      "establishment",
+      "health",
+      "insurance_agency",
+      "point_of_interest"
+    ],
+    "source": "Google Places"
+  },
+  {
+    "name": "Midwest Insurance Advisors",
+    "phone": "(913) 215-9522",
+    "website": "https://mwbenefitsgroup.com/",
+    "formatted_address": "932 W 14th St, Eudora, KS 66025, USA",
+    "city_hint": "Eudora",
+    "place_id": "ChIJ62bwzHaqx40R5h5S3dXTyzM",
+    "business_status": "OPERATIONAL",
+    "types": [
+      "establishment",
+      "insurance_agency",
+      "point_of_interest"
+    ],
+    "source": "Google Places"
+  },
+  {
+    "name": "Keith Nowland - State Farm Insurance Agent",
+    "phone": "(785) 542-3276",
+    "website": "http://www.keithnowland.com/?cmpid=qfmo_blm_0001",
+    "formatted_address": "218 E 20th St B, Eudora, KS 66025, USA",
+    "city_hint": "Eudora",
+    "place_id": "ChIJl0XJu6hhv4cRsapp1M60YsA",
+    "business_status": "OPERATIONAL",
+    "types": [
+      "establishment",
+      "insurance_agency",
+      "point_of_interest"
+    ],
+    "source": "Google Places"
+  },
+  {
+    "name": "Farm Bureau Financial Services",
+    "phone": "(785) 615-0516",
+    "website": "https://www.fbfs.com/find-an-agent/Search?typ=AG&t=zip&s=66025&?utm_source=Google&utm_medium=GMB&utm_campaign=listing_website&utm_content=July19",
+    "formatted_address": "101 W 10th St Ste A, Eudora, KS 66025, USA",
+    "city_hint": "Eudora",
+    "place_id": "ChIJeZBNso6VwIcRXLriBA52cNU",
+    "business_status": "OPERATIONAL",
+    "types": [
+      "establishment",
+      "insurance_agency",
+      "point_of_interest"
+    ],
+    "source": "Google Places"
+  },
+  {
+    "name": "Farm Bureau Financial Services: Anthony Brown",
+    "phone": "(785) 615-0516",
+    "website": "https://www.fbfs.com/find-an-agent/anthonybrown?y_source=1_MTAwODQ3OTQxMC03MTUtbG9jYXRpb24ud2Vic2l0ZQ%3D%3D",
+    "formatted_address": "101 W 10th St Ste A, Eudora, KS 66025, USA",
+    "city_hint": "Eudora",
+    "place_id": "ChIJcwdDaPdhv4cRh_bgNBhq-To",
+    "business_status": "OPERATIONAL",
+    "types": [
+      "establishment",
+      "insurance_agency",
+      "point_of_interest"
+    ],
+    "source": "Google Places"
+  },
+  {
+    "name": "Baldwin Insurance Services",
+    "phone": "(785) 594-6822",
+    "website": "http://baldwinsurance.com/",
+    "formatted_address": "604 High St, Baldwin City, KS 66006, USA",
+    "city_hint": "Baldwin City",
+    "place_id": "ChIJR_LkZXlbv4cRI6JFPfQaUdQ",
+    "business_status": "OPERATIONAL",
+    "types": [
+      "establishment",
+      "health",
+      "insurance_agency",
+      "point_of_interest"
+    ],
+    "source": "Google Places"
+  },
+  {
+    "name": "Cody Anno - State Farm Insurance Agent",
+    "phone": "(785) 594-0270",
+    "website": "https://www.codyismyagent.com/?cmpid=MLLIST",
+    "formatted_address": "208 Baker St A, Baldwin City, KS 66006, USA",
+    "city_hint": "Baldwin City",
+    "place_id": "ChIJMfZ8FRJmv4cRL9J9QaN1zx8",
+    "business_status": "OPERATIONAL",
+    "types": [
+      "establishment",
+      "insurance_agency",
+      "point_of_interest"
+    ],
+    "source": "Google Places"
+  },
+  {
+    "name": "Julie Krische American Family Insurance",
+    "phone": "(785) 594-7400",
+    "website": "https://www.amfam.com/agents/kansas/lawrence/julie-krische",
+    "formatted_address": "818 Ames St, Baldwin City, KS 66006, USA",
+    "city_hint": "Baldwin City",
+    "place_id": "ChIJN8Vwqhxbv4cRWqm0X7CwBrA",
+    "business_status": "OPERATIONAL",
+    "types": [
+      "establishment",
+      "insurance_agency",
+      "point_of_interest"
+    ],
+    "source": "Google Places"
+  },
+  {
+    "name": "Farm Bureau Financial Services: Kelly Neufeld",
+    "phone": "(785) 594-1055",
+    "website": "https://www.fbfs.com/find-an-agent/kellyneufeld/?utm_source=Google&utm_medium=GMB&utm_campaign=listing_website&utm_content=May23",
+    "formatted_address": "714 Eighth St, Baldwin City, KS 66006, USA",
+    "city_hint": "Baldwin City",
+    "place_id": "ChIJlTWxxnZbv4cRV_pFUxkL1AI",
+    "business_status": "OPERATIONAL",
+    "types": [
+      "establishment",
+      "insurance_agency",
+      "point_of_interest"
+    ],
+    "source": "Google Places"
+  },
+  {
+    "name": "A G Insurance Kansas",
+    "phone": "(785) 480-9888",
+    "website": "http://aginsurance4u.com/",
+    "formatted_address": "504 Plaza Dr, Perry, KS 66073, USA",
+    "city_hint": "Lecompton",
+    "place_id": "ChIJc4ilPSxzv4cRRKuzntUeTVg",
+    "business_status": "OPERATIONAL",
+    "types": [
+      "establishment",
+      "insurance_agency",
+      "point_of_interest"
+    ],
+    "source": "Google Places"
+  },
+  {
+    "name": "Shelter Insurance - Lance Wollesen",
+    "phone": "(785) 865-4040",
+    "website": "https://www.shelterinsurance.com/CA/agent/LANCEWOLLESEN",
+    "formatted_address": "1420 Kasold Dr Ste B1, Lawrence, KS 66049, USA",
+    "city_hint": "Lawrence",
+    "place_id": "ChIJKzFfHcZov4cR3lURiDe1C6o",
+    "business_status": "OPERATIONAL",
+    "types": [
+      "establishment",
+      "insurance_agency",
+      "point_of_interest"
+    ],
+    "source": "Google Places"
+  },
+  {
+    "name": "Justin Holt - State Farm insurance Agent",
+    "phone": "(785) 842-6407",
+    "website": "https://lawrenceksinsurance.com/?y_source=1_MjA2MDY0NzAyMy03MTUtbG9jYXRpb24ud2Vic2l0ZQ%3D%3D",
+    "formatted_address": "2500 W 6th St I, Lawrence, KS 66049, USA",
+    "city_hint": "Lawrence",
+    "place_id": "ChIJT0gLOP1vv4cR-kvGfj7KPMY",
+    "business_status": "OPERATIONAL",
+    "types": [
+      "establishment",
+      "insurance_agency",
+      "point_of_interest"
+    ],
+    "source": "Google Places"
+  },
+  {
+    "name": "Kansas Preferred Insurance Group",
+    "phone": "(913) 585-1981",
+    "website": "https://www.kpigroup.net/",
+    "formatted_address": "34102 Commerce Dr, De Soto, KS 66018, USA",
+    "city_hint": "Eudora",
+    "place_id": "ChIJQxG6qPGbwIcR1cnii2R8YGQ",
+    "business_status": "OPERATIONAL",
+    "types": [
+      "establishment",
+      "insurance_agency",
+      "point_of_interest"
+    ],
+    "source": "Google Places"
+  },
+  {
+    "name": "Prodigy Insurance Consulting",
+    "phone": "(785) 979-9804",
+    "website": "http://www.prodigycon.com/",
+    "formatted_address": "1026 Westdale Rd, Lawrence, KS 66049, USA",
+    "city_hint": "Eudora",
+    "place_id": "ChIJcXLqRXdpv4cRDumIyTFtCq8",
+    "business_status": "OPERATIONAL",
+    "types": [
+      "establishment",
+      "insurance_agency",
+      "point_of_interest"
+    ],
+    "source": "Google Places"
+  },
+  {
+    "name": "Kaitlan Fishburn & Associates LLC American Family Insurance",
+    "phone": "(785) 841-8008",
+    "website": "https://www.amfam.com/agents/kansas/lawrence/kaitlan-fishburn",
+    "formatted_address": "3010 Four Wheel Dr Ste 2, Lawrence, KS 66047, USA",
+    "city_hint": "Lecompton",
+    "place_id": "ChIJx7sFIYRpv4cRNiybplSszOo",
+    "business_status": "OPERATIONAL",
+    "types": [
+      "establishment",
+      "insurance_agency",
+      "point_of_interest"
+    ],
+    "source": "Google Places"
+  },
+  {
+    "name": "American National Insurance Co",
+    "phone": "(785) 748-4293",
+    "website": "http://www.anico.com/",
+    "formatted_address": "5200 Bob Billings Pkwy, Lawrence, KS 66049, USA",
+    "city_hint": "Lecompton",
+    "place_id": "ChIJNXAptwNsv4cRB89bgE8-vjw",
+    "business_status": "OPERATIONAL",
+    "types": [
+      "establishment",
+      "insurance_agency",
+      "point_of_interest"
+    ],
+    "source": "Google Places"
+  },
+  {
+    "name": "Rochelle Tramp - State Farm Insurance Agent",
+    "phone": "(785) 842-6288",
+    "website": "https://www.rochelletramp.com/?cmpid=C5SY_blm_0001",
+    "formatted_address": "4205 W 6th St Ste A, Lawrence, KS 66049, USA",
+    "city_hint": "Lecompton",
+    "place_id": "ChIJ27p87L1uv4cRfsAhxGeZlXA",
+    "business_status": "OPERATIONAL",
+    "types": [
+      "establishment",
+      "insurance_agency",
+      "point_of_interest"
+    ],
+    "source": "Google Places"
+  }
+]

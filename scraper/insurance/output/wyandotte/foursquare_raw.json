@@ -1,0 +1,992 @@
+[
+  {
+    "name": "AAA Missouri",
+    "phone": "(816) 931-5252",
+    "street_address": "3245 Broadway",
+    "city": "Kansas City",
+    "zip": "64111",
+    "website": "http://www.aaa.com",
+    "source_url": "https://foursquare.com/placemakers/review-place/4bd5fe0d29eb9c74ba5694e1",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Geico Insurance",
+    "phone": "(816) 208-0394",
+    "street_address": "753 State Ave",
+    "city": "Kansas City",
+    "zip": "66101",
+    "website": "https://www.geico.com",
+    "source_url": "https://foursquare.com/placemakers/review-place/5e5cef8f39aba10008f6d893",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Morales Insurance",
+    "phone": "(913) 321-4492",
+    "street_address": "1239 Central Ave",
+    "city": "Kansas City",
+    "zip": "66102",
+    "website": "http://www.americanfamilyinsurance.com",
+    "source_url": "https://foursquare.com/placemakers/review-place/9bb000bc66794dcd7ddd4e6b",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Damalian Insurance Brokers",
+    "phone": "(800) 462-0150",
+    "street_address": "Service Area",
+    "city": "Kansas City",
+    "zip": "64105",
+    "website": null,
+    "source_url": "https://foursquare.com/placemakers/review-place/667b7c942c3ea6461cc319c9",
+    "source": "Foursquare"
+  },
+  {
+    "name": "National Farmers Union Life Insurance",
+    "phone": "(816) 391-2000",
+    "street_address": "1055 Broadway St",
+    "city": "Kansas City",
+    "zip": "64105",
+    "website": "https://www.americo.com",
+    "source_url": "https://foursquare.com/placemakers/review-place/d33117f2f9754f5809dd9535",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Americo Financial Life and Annuity Insurance Company",
+    "phone": "",
+    "street_address": "301 W 11th St",
+    "city": "Kansas City",
+    "zip": "64105",
+    "website": null,
+    "source_url": "https://foursquare.com/placemakers/review-place/4e246f7d22717a5245e885a4",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Nationwide",
+    "phone": "(816) 503-6222",
+    "street_address": "1100 Walnut St",
+    "city": "Kansas City",
+    "zip": "64106",
+    "website": "https://www.nationwide.com",
+    "source_url": "https://foursquare.com/placemakers/review-place/fc9ccb2ae70347d04bc20470",
+    "source": "Foursquare"
+  },
+  {
+    "name": "The Baldwin Group",
+    "phone": "",
+    "street_address": "1511 Baltimore Ave",
+    "city": "Kansas City",
+    "zip": "64108",
+    "website": null,
+    "source_url": "https://foursquare.com/placemakers/review-place/694062a165d559314ae819b1",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Nationwide Mutual Insurance Company",
+    "phone": "(816) 523-2323",
+    "street_address": "520 W Pennway St",
+    "city": "Kansas City",
+    "zip": "64108",
+    "website": "https://www.nationwide.com",
+    "source_url": "https://foursquare.com/placemakers/review-place/09160c209cdcb9e1c7192fc5",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Garrison Companies",
+    "phone": "(816) 474-4857",
+    "street_address": "2020 Broadway Blvd",
+    "city": "Kansas City",
+    "zip": "64108",
+    "website": "https://www.garrisoncompanies.com",
+    "source_url": "https://foursquare.com/placemakers/review-place/0c9db349007844da59878036",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Geico Auto Insurance",
+    "phone": "(913) 386-5242",
+    "street_address": "1512 Locust St",
+    "city": "Kansas City",
+    "zip": "64108",
+    "website": "https://www.geico.com",
+    "source_url": "https://foursquare.com/placemakers/review-place/6020df65df108c4eb3a020a4",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Euclid Managers",
+    "phone": "(816) 778-0708",
+    "street_address": "2345 Grand Blvd",
+    "city": "Kansas City",
+    "zip": "64108",
+    "website": "http://www.euclidmanagerskc.com",
+    "source_url": "https://foursquare.com/placemakers/review-place/ec17b0604b9444484de40edf",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Iseman",
+    "phone": "(816) 556-4812",
+    "street_address": "2405 Grand Blvd",
+    "city": "Kansas City",
+    "zip": "64108",
+    "website": null,
+    "source_url": "https://foursquare.com/placemakers/review-place/bbec38a127484599f2acecd6",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Nationwide",
+    "phone": "(913) 281-2211",
+    "street_address": "1601 E 18th St",
+    "city": "Kansas City",
+    "zip": "64108",
+    "website": "https://www.nationwide.com",
+    "source_url": "/places/215bdd0ba002403bea487bef",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Nationwide Mutual Insurance Company",
+    "phone": "(913) 281-2211",
+    "street_address": "1601 E 18th St",
+    "city": "Kansas City",
+    "zip": "64108",
+    "website": "https://www.nationwide.com",
+    "source_url": "/places/69ccbadac8a946d7c91c8c95",
+    "source": "Foursquare"
+  },
+  {
+    "name": "John Kemp - COUNTRY Financial representative",
+    "phone": "(816) 407-7575",
+    "street_address": "1251 NW Briarcliff Pkwy Ste 250",
+    "city": "Kansas City",
+    "zip": "64116",
+    "website": "https://representatives.countryfinancial.com/john.kemp",
+    "source_url": "https://foursquare.com/placemakers/review-place/5b1cd51ebed483002c33ba55",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Farmers Insurance",
+    "phone": "(816) 994-6233",
+    "street_address": "1201 NW Briarcliff Pkwy",
+    "city": "Kansas City",
+    "zip": "64116",
+    "website": "http://www.farmersagent.com/medwards2",
+    "source_url": "https://foursquare.com/placemakers/review-place/564500ba498edf3cd0e1519e",
+    "source": "Foursquare"
+  },
+  {
+    "name": "June A Ramer: Primerica - Financial Services",
+    "phone": "(816) 455-7577",
+    "street_address": "1201 NW Briarcliff Pkwy",
+    "city": "Kansas City",
+    "zip": "64116",
+    "website": "https://reps.primerica.com/mo/kansascity/june-a-ramer",
+    "source_url": "https://foursquare.com/placemakers/review-place/b38efd5baf2c456d17aef90f",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Uga",
+    "phone": "(816) 561-1446",
+    "street_address": "411 Valentine Rd",
+    "city": "Kansas City",
+    "zip": "64111",
+    "website": "http://uptowntheater.com?doing_wp_cron=1631780462.4455919265747070312500",
+    "source_url": "https://foursquare.com/placemakers/review-place/be41af26cdc1460f729d9f80",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Freeway Insurance",
+    "phone": "(913) 804-4002",
+    "street_address": "3900 Broadway Blvd Unit A",
+    "city": "Kansas City",
+    "zip": "64111",
+    "website": "https://www.freewayinsurance.com/office-locator/kansas-city-car-insurance-64111-mo",
+    "source_url": "https://foursquare.com/placemakers/review-place/5acec5bc6f706a43c4c97645",
+    "source": "Foursquare"
+  },
+  {
+    "name": "DeMasters Insurance",
+    "phone": "(816) 531-1000",
+    "street_address": "1130 Westport Rd",
+    "city": "Kansas City",
+    "zip": "64111",
+    "website": "http://kcinsurance.com",
+    "source_url": "https://foursquare.com/placemakers/review-place/50f997bbe4b0bda8a7ba3204",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Nationwide Mutual Insurance Company",
+    "phone": "(913) 747-1000",
+    "street_address": "4037 Central St",
+    "city": "Kansas City",
+    "zip": "64111",
+    "website": "https://www.nationwide.com",
+    "source_url": "https://foursquare.com/placemakers/review-place/55cf90d47db2c82e3e407c2f",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Frank Oligbo - State Farm Insurance Agent",
+    "phone": "(816) 561-1883",
+    "street_address": "4450 Belleview",
+    "city": "Kansas City",
+    "zip": "64111",
+    "website": "http://www.frankoligbo.com",
+    "source_url": "https://foursquare.com/placemakers/review-place/4dd587e745ddced820587747",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Family Heritage Life: Zeal Financial Group",
+    "phone": "(573) 301-4455",
+    "street_address": "1420 NW Vivion Rd Ste 113",
+    "city": "Kansas City",
+    "zip": "64118",
+    "website": "https://fh.globelifeinsurance.com/united-states/missouri/kansas-city/george-zimny",
+    "source_url": "https://foursquare.com/placemakers/review-place/5cde6993c824ae002c2ccec0",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Medicare Solutions of Kansas City",
+    "phone": "(816) 370-4855",
+    "street_address": "950 McGee St",
+    "city": "Kansas City",
+    "zip": "64106",
+    "website": null,
+    "source_url": "https://foursquare.com/placemakers/review-place/6018dce58c80fc6975be90c5",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Engle Martin & Associates",
+    "phone": "(816) 561-5004",
+    "street_address": "801 W 47th St",
+    "city": "Kansas City",
+    "zip": "64112",
+    "website": "http://www.englemartin.com",
+    "source_url": "https://foursquare.com/placemakers/review-place/bed7dd739b384f311e31be72",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Farmers Insurance",
+    "phone": "(816) 929-8484",
+    "street_address": "5752 N Broadway St",
+    "city": "Kansas City",
+    "zip": "64118",
+    "website": "http://www.farmersagent.com/jayers",
+    "source_url": "https://foursquare.com/placemakers/review-place/564500ba498edf3cd0e151ca",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Cole Insure",
+    "phone": "(816) 307-6165",
+    "street_address": "5748 N Broadway St",
+    "city": "Kansas City",
+    "zip": "64118",
+    "website": null,
+    "source_url": "https://foursquare.com/placemakers/review-place/681df5f29fb0142f924d403d",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Fusion Insurance",
+    "phone": "(816) 470-9050",
+    "street_address": "5920 Wilson Ave",
+    "city": "Kansas City",
+    "zip": "64123",
+    "website": "http://www.fiagency.com",
+    "source_url": "https://foursquare.com/placemakers/review-place/586444ed25584f809e7ac38b",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Farmers Insurance",
+    "phone": "(816) 741-4300",
+    "street_address": "6302 N Lucerne Ave",
+    "city": "Kansas City",
+    "zip": "64151",
+    "website": "http://www.farmersagent.com/asaverino",
+    "source_url": "https://foursquare.com/placemakers/review-place/564500ba498edf3cd0e15204",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Farmers Insurance",
+    "phone": "(816) 746-4443",
+    "street_address": "5775 NW 64th Ter",
+    "city": "Kansas City",
+    "zip": "64151",
+    "website": "http://www.farmersagent.com/dyork",
+    "source_url": "https://foursquare.com/placemakers/review-place/564500ba498edf3cd0e15208",
+    "source": "Foursquare"
+  },
+  {
+    "name": "David Starns: Allstate Insurance",
+    "phone": "(816) 587-5200",
+    "street_address": "6447 N Cosby Ave",
+    "city": "Kansas City",
+    "zip": "64151",
+    "website": "https://agents.allstate.com/david-starns-kansas-city-mo.html",
+    "source_url": "https://foursquare.com/placemakers/review-place/19bc39e02cf414d2fc985c84",
+    "source": "Foursquare"
+  },
+  {
+    "name": "American Family Insurance - Dean Villella Agency, Inc",
+    "phone": "(816) 741-1162",
+    "street_address": "6511 N Cosby Ave",
+    "city": "Kansas City",
+    "zip": "64151",
+    "website": "http://insurance-agency.amfam.com/MO/deana-poston-seibold/default.aspx?sourceid=agp0001024447",
+    "source_url": "https://foursquare.com/placemakers/review-place/57806b3c498e5f3bec34141d",
+    "source": "Foursquare"
+  },
+  {
+    "name": "American Family Insurance - Deana Poston-Seibold",
+    "phone": "(816) 741-1162",
+    "street_address": "6511 N Cosby Ave",
+    "city": "Kansas City",
+    "zip": "64151",
+    "website": "http://insurance-agency.amfam.com/MO/deana-poston-seibold/default.aspx",
+    "source_url": "https://foursquare.com/placemakers/review-place/4d3ee407978476eb173c57fc",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Ioa Re",
+    "phone": "(816) 444-5534",
+    "street_address": "6247 Brookside Blvd",
+    "city": "Kansas City",
+    "zip": "64113",
+    "website": "http://www.ioare.com",
+    "source_url": "https://foursquare.com/placemakers/review-place/b9042522c18b4616524ac66d",
+    "source": "Foursquare"
+  },
+  {
+    "name": "American Family Insurance - Robert Redmond Agency, Inc",
+    "phone": "(816) 361-8600",
+    "street_address": "6315 Brookside Plz Ste 104",
+    "city": "Kansas City",
+    "zip": "64113",
+    "website": "http://insurance-agency.amfam.com/MO/robert-redmond/default.aspx?sourceid=agp0001024094",
+    "source_url": "https://foursquare.com/placemakers/review-place/4d3ee409978476eb1b3d57fc",
+    "source": "Foursquare"
+  },
+  {
+    "name": "State Farm Insurance",
+    "phone": "(816) 361-4200",
+    "street_address": "6300 Walnut St",
+    "city": "Kansas City",
+    "zip": "64113",
+    "website": "http://www.statefarm.com",
+    "source_url": "https://foursquare.com/placemakers/review-place/90676c82520742f53f74da77",
+    "source": "Foursquare"
+  },
+  {
+    "name": "David Krough - State Farm Insurance Agent",
+    "phone": "(816) 943-6166",
+    "street_address": "6300 Walnut St",
+    "city": "Kansas City",
+    "zip": "64113",
+    "website": "http://www.davidkrough.com",
+    "source_url": "https://foursquare.com/placemakers/review-place/54da6302498e7176d263a9f0",
+    "source": "Foursquare"
+  },
+  {
+    "name": "American Family Insurance - Torrence Leathers Agency LLC",
+    "phone": "(816) 523-8499",
+    "street_address": "221 E 63rd St",
+    "city": "Kansas City",
+    "zip": "64113",
+    "website": "https://agent.amfam.com/mo/kansas-city/torrence-leathers/",
+    "source_url": "https://foursquare.com/placemakers/review-place/4d3ee409978476eb423d57fc",
+    "source": "Foursquare"
+  },
+  {
+    "name": "ABBA Insurance",
+    "phone": "(816) 454-8833",
+    "street_address": "4401 NE Vivion Rd Ste 206",
+    "city": "Kansas City",
+    "zip": "64119",
+    "website": null,
+    "source_url": "https://foursquare.com/placemakers/review-place/e8d7e1b0e5b74ece78ccd353",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Medigap Select Insurance Services",
+    "phone": "(800) 405-4802",
+    "street_address": "751 E 63rd St",
+    "city": "Kansas City",
+    "zip": "64110",
+    "website": "https://medigapselect.com",
+    "source_url": "https://foursquare.com/placemakers/review-place/59c55f37c9f907513683e495",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Curry Insurance",
+    "phone": "(816) 444-1595",
+    "street_address": "809 W 70th St",
+    "city": "Kansas City",
+    "zip": "64113",
+    "website": "http://isucurry.com",
+    "source_url": "https://foursquare.com/placemakers/review-place/8a7d708c96194b1f7a97d918",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Cobalt Medical Plans",
+    "phone": "(816) 743-7635",
+    "street_address": "6500 Euclid Ave",
+    "city": "Kansas City",
+    "zip": "64132",
+    "website": "http://cobaltmedplans.com",
+    "source_url": "https://foursquare.com/placemakers/review-place/826f86c2e18b425f1df35fb5",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Carleton Voorhies - State Farm Insurance Agent",
+    "phone": "(816) 741-3558",
+    "street_address": "7709 NW Prairie View Rd",
+    "city": "Kansas City",
+    "zip": "64151",
+    "website": "http://www.parkvilleagent.com",
+    "source_url": "https://foursquare.com/placemakers/review-place/4f8c7325e4b051f0127f0ba6",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Mary Ciurej - AAA Insurance Agent",
+    "phone": "(816) 896-9990",
+    "street_address": "7679 NW Prairie View Rd",
+    "city": "Kansas City",
+    "zip": "64151",
+    "website": null,
+    "source_url": "https://foursquare.com/placemakers/review-place/e162ae04f38a4e3b4d77d52c",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Farmers Insurance - Tim Presko",
+    "phone": "(816) 436-6000",
+    "street_address": "7817 N Oak Trfy",
+    "city": "Kansas City",
+    "zip": "64118",
+    "website": "http://www.farmers.com",
+    "source_url": "https://foursquare.com/placemakers/review-place/d955acbfef7542c9f850fa54",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Farmers Insurance - Nicklas Presko",
+    "phone": "(816) 436-0007",
+    "street_address": "7817 N Oak Trfy",
+    "city": "Kansas City",
+    "zip": "64118",
+    "website": "http://www.farmers.com",
+    "source_url": "https://foursquare.com/placemakers/review-place/4b81b7b8b15441506e0bc88c",
+    "source": "Foursquare"
+  },
+  {
+    "name": "MoKan Sheetmetal Benefits",
+    "phone": "",
+    "street_address": "2902 Blue Ridge Blvd",
+    "city": "Kansas City",
+    "zip": "64129",
+    "website": null,
+    "source_url": "https://foursquare.com/placemakers/review-place/698d0237ebcefe368b4f2b33",
+    "source": "Foursquare"
+  },
+  {
+    "name": "A 1 Insurance",
+    "phone": "(816) 363-2265",
+    "street_address": "7823 Wornall Rd",
+    "city": "Kansas City",
+    "zip": "64114",
+    "website": "https://a1insurancekc.com",
+    "source_url": "https://foursquare.com/placemakers/review-place/59972a1466f3cd6c73c02fce",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Cheapest Auto Insurance",
+    "phone": "(816) 505-1877",
+    "street_address": "7211 NW 83 St",
+    "city": "Kansas City",
+    "zip": "64152",
+    "website": "http://aautoandhomeinsurance.com/kansas-city/",
+    "source_url": "https://foursquare.com/placemakers/review-place/5735a57d498eb42026adb62c",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Christi Farnan - Aflac Insurance Agent",
+    "phone": "(816) 256-8181",
+    "street_address": "7211 NW 83rd St Ste 330C",
+    "city": "Kansas City",
+    "zip": "64152",
+    "website": "https://www.aflac.com/christi_farnan",
+    "source_url": "https://foursquare.com/placemakers/review-place/59b6e5f76eda027f54305ad7",
+    "source": "Foursquare"
+  },
+  {
+    "name": "American Family Insurance - Anthony Searcy",
+    "phone": "(816) 468-4800",
+    "street_address": "5567 NW Barry Rd",
+    "city": "Kansas City",
+    "zip": "64154",
+    "website": "http://insurance-agency.amfam.com/MO/anthony-searcy/default.aspx",
+    "source_url": "https://foursquare.com/placemakers/review-place/535223b111d20c751e0eb818",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Nationwide Mutual Insurance Company",
+    "phone": "(816) 452-8810",
+    "street_address": "8117 N Oak Trfy",
+    "city": "Kansas City",
+    "zip": "64118",
+    "website": "https://www.nationwide.com",
+    "source_url": "https://foursquare.com/placemakers/review-place/4f3f522c68a3db2cfd6b8620",
+    "source": "Foursquare"
+  },
+  {
+    "name": "American Family Insurance - Clint Elkins",
+    "phone": "(816) 436-2100",
+    "street_address": "8121 N Oak Trfy",
+    "city": "Kansas City",
+    "zip": "64118",
+    "website": "http://insurance-agency.amfam.com/MO/clint-elkins/default.aspx?sourceid=agp0001046636",
+    "source_url": "https://foursquare.com/placemakers/review-place/53f81e07498e7dfcd2c7f018",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Abbott Insurance",
+    "phone": "(816) 584-8810",
+    "street_address": "6228 NW Barry Rd",
+    "city": "Kansas City",
+    "zip": "64154",
+    "website": "http://www.christophermundell.com",
+    "source_url": "https://foursquare.com/placemakers/review-place/9f04cccdec24495062d9b83b",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Nationwide",
+    "phone": "(816) 454-0400",
+    "street_address": "214 NE Barry Rd",
+    "city": "Kansas City",
+    "zip": "64155",
+    "website": "https://www.nationwide.com",
+    "source_url": "https://foursquare.com/placemakers/review-place/0e8aabb9dfe14739d3154181",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Nationwide",
+    "phone": "(816) 728-0527",
+    "street_address": "7280 NW 87th Ter",
+    "city": "Kansas City",
+    "zip": "64153",
+    "website": "https://www.nationwide.com",
+    "source_url": "https://foursquare.com/placemakers/review-place/38b1092209844f2319cf3390",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Nationwide",
+    "phone": "(816) 708-4600",
+    "street_address": "9200 Ward Pkwy",
+    "city": "Kansas City",
+    "zip": "64114",
+    "website": "https://www.nationwide.com",
+    "source_url": "https://foursquare.com/placemakers/review-place/dbdf0423c9e84b943954945f",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Traders Insurance Company",
+    "phone": "(816) 333-5030",
+    "street_address": "8916 Troost Ave",
+    "city": "Kansas City",
+    "zip": "64131",
+    "website": "http://www.tradersauto.com",
+    "source_url": "https://foursquare.com/placemakers/review-place/1241cd1c719f4d98fcff82a3",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Peter Fox - State Farm Insurance Agent",
+    "phone": "(816) 587-6155",
+    "street_address": "9332 N Oak Trfy",
+    "city": "Kansas City",
+    "zip": "64155",
+    "website": "http://www.foxagency.net",
+    "source_url": "https://foursquare.com/placemakers/review-place/4e1470efaeb7727f2102017f",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Nationwide",
+    "phone": "(816) 361-6442",
+    "street_address": "9233 Ward Pkwy",
+    "city": "Kansas City",
+    "zip": "64114",
+    "website": "https://www.nationwide.com",
+    "source_url": "https://foursquare.com/placemakers/review-place/e0ef9771de634ba96b0a4758",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Brad Galyean - Mutual of Omaha Advisor",
+    "phone": "(816) 718-3203",
+    "street_address": "7505 NW Tiffany Springs Pkwy Ste 230",
+    "city": "Kansas City",
+    "zip": "64153",
+    "website": "http://agents.mutualofomaha.com/Brad-Galyean",
+    "source_url": "https://foursquare.com/placemakers/review-place/5c36ae42a2a6ce002b7320c8",
+    "source": "Foursquare"
+  },
+  {
+    "name": "James Davis - Mutual of Omaha",
+    "phone": "(816) 880-4614",
+    "street_address": "7505 NW Tiffany Springs Pkwy Ste 230",
+    "city": "Kansas City",
+    "zip": "64153",
+    "website": "http://agents.mutualofomaha.com/James-Davis",
+    "source_url": "https://foursquare.com/placemakers/review-place/5c36ac9beaf49a0039210c89",
+    "source": "Foursquare"
+  },
+  {
+    "name": "The MAI Agency",
+    "phone": "(913) 829-6888",
+    "street_address": "404 E Bannister Rd Ste E",
+    "city": "Kansas City",
+    "zip": "64131",
+    "website": "https://www.farmersagent.com/nmai",
+    "source_url": "https://foursquare.com/placemakers/review-place/18d92300d01a55628e6b0cdb",
+    "source": "Foursquare"
+  },
+  {
+    "name": "George Lounds - State Farm Insurance Agent",
+    "phone": "(816) 941-0055",
+    "street_address": "550 E 99th St",
+    "city": "Kansas City",
+    "zip": "64131",
+    "website": "http://www.georgelounds.com",
+    "source_url": "https://foursquare.com/placemakers/review-place/50081b95e4b00e303c587764",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Joe Nowatzki - State Farm Insurance Agent",
+    "phone": "(816) 420-0200",
+    "street_address": "10201 N Oak Trfy Ste 400",
+    "city": "Kansas City",
+    "zip": "64155",
+    "website": "https://www.kcmoinsurance.com",
+    "source_url": "https://foursquare.com/placemakers/review-place/4e7a2dcbd1649ea097f65d86",
+    "source": "Foursquare"
+  },
+  {
+    "name": "American Family Insurance - David Beard",
+    "phone": "(816) 765-6400",
+    "street_address": "9916 Holmes Rd Ste D",
+    "city": "Kansas City",
+    "zip": "64131",
+    "website": "http://insurance-agency.amfam.com/MO/david-beard/default.aspx?sourceid=agp0001029741",
+    "source_url": "https://foursquare.com/placemakers/review-place/4d3ee407978476eb0a3c57fc",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Nationwide Mutual Insurance Company",
+    "phone": "(816) 471-4245",
+    "street_address": "10525 N Ambassador Dr",
+    "city": "Kansas City",
+    "zip": "64153",
+    "website": "https://www.nationwide.com",
+    "source_url": "https://foursquare.com/placemakers/review-place/6ba4106a1d29e9ee0d33f709",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Allstate Insurance",
+    "phone": "(816) 943-9500",
+    "street_address": "600 W 103rd St",
+    "city": "Kansas City",
+    "zip": "64114",
+    "website": "http://www.allstate.com",
+    "source_url": "https://foursquare.com/placemakers/review-place/d384d5ba34f04791234b8e87",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Nationwide",
+    "phone": "(816) 333-3000",
+    "street_address": "903 E 104th St",
+    "city": "Kansas City",
+    "zip": "64131",
+    "website": "https://www.nationwide.com",
+    "source_url": "https://foursquare.com/placemakers/review-place/939932ffcc7c4e1317b1904d",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Gallagher Bassett Services",
+    "phone": "(816) 942-8555",
+    "street_address": "1300 E 104th St Ste 200",
+    "city": "Kansas City",
+    "zip": "64131",
+    "website": "http://gallagherbassett.com",
+    "source_url": "https://foursquare.com/placemakers/review-place/c55970bcc1b94a28a8657459",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Hulse Laretha",
+    "phone": "(816) 734-2728",
+    "street_address": "815 NE 107th Ter",
+    "city": "Kansas City",
+    "zip": "64155",
+    "website": null,
+    "source_url": "https://foursquare.com/placemakers/review-place/e4fa737c14964e9415d1ffe0",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Farmers Insurance - Tyler Ritenour",
+    "phone": "(816) 759-8590",
+    "street_address": "11108 N Oak Trfy",
+    "city": "Kansas City",
+    "zip": "64155",
+    "website": "http://www.farmers.com",
+    "source_url": "https://foursquare.com/placemakers/review-place/5c203fe48fd843a1e23177ea",
+    "source": "Foursquare"
+  },
+  {
+    "name": "American Family Insurance - Tom Lafontaine",
+    "phone": "(816) 734-2224",
+    "street_address": "11113 N Oak Trfy",
+    "city": "Kansas City",
+    "zip": "64155",
+    "website": "http://insurance-agency.amfam.com/MO/tom-lafontaine/default.aspx?sourceid=agp0001024049",
+    "source_url": "https://foursquare.com/placemakers/review-place/4d3ee409978476eb353d57fc",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Aflac",
+    "phone": "(816) 734-2224",
+    "street_address": "11119 N Oak Trfy",
+    "city": "Kansas City",
+    "zip": "64155",
+    "website": "http://www.aflac.com",
+    "source_url": "https://foursquare.com/placemakers/review-place/60e40e1efc5f4d8a78b1fe36",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Bret Ohlhausen - State Farm Insurance Agent",
+    "phone": "(816) 781-4960",
+    "street_address": "8549 Church Rd",
+    "city": "Kansas City",
+    "zip": "64157",
+    "website": "http://www.agentbret.com",
+    "source_url": "https://foursquare.com/placemakers/review-place/4ed7e9ce9911b345bea6ff7e",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Steve Basinger State Farm",
+    "phone": "(816) 942-3288",
+    "street_address": "11040 Holmes Road Suite 100",
+    "city": "Kansas City",
+    "zip": "64131",
+    "website": "http://www.statefarm.com/agent/US/MO/Kansas-City/Steve-Basinger-5NXGK1YS000",
+    "source_url": "https://foursquare.com/placemakers/review-place/523905aa11d2fc7d46e63e51",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Nationwide",
+    "phone": "(816) 809-9380",
+    "street_address": "3435 E Red Bridge Rd",
+    "city": "Kansas City",
+    "zip": "64137",
+    "website": "https://www.nationwide.com",
+    "source_url": "https://foursquare.com/placemakers/review-place/6721b7d6fbec4c90afb6e496",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Jennifer Hubbs - State Farm Insurance Agent",
+    "phone": "(816) 781-2044",
+    "street_address": "9759 N Cedar Ave",
+    "city": "Kansas City",
+    "zip": "64157",
+    "website": "http://www.jenniferhubbs.com",
+    "source_url": "https://foursquare.com/placemakers/review-place/4e0a272914959022c8a97775",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Etta McKenzie - State Farm Insurance Agent",
+    "phone": "(816) 861-8600",
+    "street_address": "11818 Blue Ridge Blvd",
+    "city": "Kansas City",
+    "zip": "64134",
+    "website": "https://www.statefarm.com/agent/US/MO/Kansas-City/Etta-Mckenzie-PGZYN1YS000",
+    "source_url": "https://foursquare.com/placemakers/review-place/5240886011d2b11afcd793c4",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Vijit Sehgal: Allstate Insurance",
+    "phone": "(816) 947-6056",
+    "street_address": "13606 Washington St",
+    "city": "Kansas City",
+    "zip": "64145",
+    "website": "https://agents.allstate.com/vijit-sehgal-kansas-city-mo.html",
+    "source_url": "https://foursquare.com/placemakers/review-place/2c2e8b38abb54e57752cbe81",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Pro Insurance Managers",
+    "phone": "(816) 941-0030",
+    "street_address": "209 W 135th St",
+    "city": "Kansas City",
+    "zip": "64145",
+    "website": "http://pro4.us",
+    "source_url": "https://foursquare.com/placemakers/review-place/171d8e043ede451f9de7a8f2",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Premium Financing Specialists",
+    "phone": "(816) 942-6336",
+    "street_address": "13520 Wyandotte St",
+    "city": "Kansas City",
+    "zip": "64145",
+    "website": "http://www.premiumfinance.com",
+    "source_url": "https://foursquare.com/placemakers/review-place/5d90169c82e04cc2878fd221",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Farmers Insurance: Gregory Darnell",
+    "phone": "(913) 422-7077",
+    "street_address": "144 N Nettleton Ave",
+    "city": "Bonner Springs",
+    "zip": "66012",
+    "website": "http://agents.farmers.com/ks/bonner-springs/gregory-darnell",
+    "source_url": "https://foursquare.com/placemakers/review-place/564500ba498edf3cd0e152ce",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Dusil Insurance Agency",
+    "phone": "(913) 422-2096",
+    "street_address": "303 E 2nd St",
+    "city": "Bonner Springs",
+    "zip": "66012",
+    "website": null,
+    "source_url": "https://foursquare.com/placemakers/review-place/2916c1bb82bb4ac752d617a4",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Farm Bureau Insurance",
+    "phone": "(913) 422-7005",
+    "street_address": "300 Oak St",
+    "city": "Bonner Springs",
+    "zip": "66012",
+    "website": "http://farmbureaus.insurancestep.com",
+    "source_url": "https://foursquare.com/placemakers/review-place/4ca9ed7827ff42b926af8acf",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Garrett Good - State Farm Insurance Agent",
+    "phone": "(913) 422-9900",
+    "street_address": "608 Tulip Dr",
+    "city": "Bonner Springs",
+    "zip": "66012",
+    "website": "https://www.statefarm.com/agent/US/KS/Bonner-Spgs",
+    "source_url": "https://foursquare.com/placemakers/review-place/3a9d0135ea924ddeaf8a19d4",
+    "source": "Foursquare"
+  },
+  {
+    "name": "American Family Insurance - Mike Holloway Agency Inc.",
+    "phone": "(913) 441-3336",
+    "street_address": "11627 K 32 Hwy",
+    "city": "Bonner Springs",
+    "zip": "66012",
+    "website": "http://insurance-agency.amfam.com/KS/mike-holloway/default.aspx",
+    "source_url": "https://foursquare.com/placemakers/review-place/53515019498ec99bcba43c07",
+    "source": "Foursquare"
+  },
+  {
+    "name": "American Family Insurance - Mike Holloway Agency, Inc",
+    "phone": "(913) 441-3336",
+    "street_address": "11627 K 32 Hwy",
+    "city": "Bonner Springs",
+    "zip": "66012",
+    "website": "http://insurance-agency.amfam.com/KS/mike-holloway/default.aspx?sourceid=agp0001025178",
+    "source_url": "https://foursquare.com/placemakers/review-place/5780a4c9498ec67ef951d019",
+    "source": "Foursquare"
+  },
+  {
+    "name": "American Family Insurance - David Pierce",
+    "phone": "(913) 441-0033",
+    "street_address": "13100 Kansas Ave Ste D",
+    "city": "Bonner Springs",
+    "zip": "66012",
+    "website": "http://insurance-agency.amfam.com/KS/david-pierce/default.aspx?sourceid=agp0001025155",
+    "source_url": "https://foursquare.com/placemakers/review-place/53515017498ed6bbf5371b77",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Truck Insurance Mart",
+    "phone": "(913) 441-0349",
+    "street_address": "10027 Woodend Rd",
+    "city": "Kansas City",
+    "zip": "66111",
+    "website": "http://www.truckinsurancemart.com",
+    "source_url": "https://foursquare.com/placemakers/review-place/08dd036e2b21475ae20cf2b0",
+    "source": "Foursquare"
+  },
+  {
+    "name": "State Farm Mutual Automobile Insurance Company",
+    "phone": "(913) 371-8414",
+    "street_address": "7925 State Ave",
+    "city": "Kansas City",
+    "zip": "66112",
+    "website": null,
+    "source_url": "https://foursquare.com/placemakers/review-place/eeac842958634bddde04136e",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Timothy Williams - State Farm Insurance Agent",
+    "phone": "(913) 371-8414",
+    "street_address": "7925 State Ave Ste 105",
+    "city": "Kansas City",
+    "zip": "66112",
+    "website": "http://protectedbytim.com",
+    "source_url": "https://foursquare.com/placemakers/review-place/6960953ad4c53331251b99dd",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Heart of America SR22 Specialist",
+    "phone": "(913) 270-1043",
+    "street_address": "8042 Parallel Pkwy",
+    "city": "Kansas City",
+    "zip": "66112",
+    "website": null,
+    "source_url": "https://foursquare.com/placemakers/review-place/63835b2da72157414626b110",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Deborah Hand",
+    "phone": "(913) 299-1904",
+    "street_address": "8160 Parallel Pkwy",
+    "city": "Kansas City",
+    "zip": "66112",
+    "website": null,
+    "source_url": "https://foursquare.com/placemakers/review-place/5b0e19778c812a002c1773ea",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Don Swanson - State Farm Insurance Agent",
+    "phone": "(913) 334-1702",
+    "street_address": "7415 Leavenworth Rd",
+    "city": "Kansas City",
+    "zip": "66109",
+    "website": "https://www.swansoninsurancekc.com",
+    "source_url": "https://foursquare.com/placemakers/review-place/5211cb2811d22f60e64cdb77",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Farmers",
+    "phone": "",
+    "street_address": "10200 Abilities Way, Kansas City, KS 66111, USA",
+    "city": "Kansas City",
+    "zip": "66111",
+    "website": null,
+    "source_url": "https://foursquare.com/placemakers/review-place/68112f49f1b6cb0eaefd5a36",
+    "source": "Foursquare"
+  },
+  {
+    "name": "American Family Insurance - Chris Rhodes",
+    "phone": "(913) 788-9713",
+    "street_address": "10207 Leavenworth Rd",
+    "city": "Kansas City",
+    "zip": "66109",
+    "website": "http://insurance-agency.amfam.com/KS/chris-rhodes/default.aspx?sourceid=agp0001030787",
+    "source_url": "https://foursquare.com/placemakers/review-place/5352bddb498ebeb562d4f733",
+    "source": "Foursquare"
+  },
+  {
+    "name": "Nationwide",
+    "phone": "(913) 710-0592",
+    "street_address": "2414 N 114th Ter",
+    "city": "Kansas City",
+    "zip": "66109",
+    "website": "https://www.nationwide.com",
+    "source_url": "https://foursquare.com/placemakers/review-place/e29849a785bd4581bcec11a3",
+    "source": "Foursquare"
+  }
+]

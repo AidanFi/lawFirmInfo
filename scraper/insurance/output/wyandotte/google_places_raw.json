@@ -1,0 +1,846 @@
+[
+  {
+    "name": "Hernandez Insurance Agency Inc",
+    "phone": "(913) 967-5727",
+    "website": "https://hernandezagencyinc.com/",
+    "formatted_address": "1001 Kansas Ave, Kansas City, KS 66105, USA",
+    "city_hint": "Kansas City",
+    "place_id": "ChIJVabMyQbxwIcRiv3mPNGdRMY",
+    "business_status": "OPERATIONAL",
+    "types": [
+      "establishment",
+      "insurance_agency",
+      "point_of_interest"
+    ],
+    "source": "Google Places"
+  },
+  {
+    "name": "Auto Insurance Discounters",
+    "phone": "(913) 371-2255",
+    "website": "https://www.autoinsdiscounters.com/",
+    "formatted_address": "4038 State Ave, Kansas City, KS 66102, USA",
+    "city_hint": "Kansas City",
+    "place_id": "ChIJER4DlqTzwIcRX0gqJho-3aA",
+    "business_status": "OPERATIONAL",
+    "types": [
+      "establishment",
+      "insurance_agency",
+      "point_of_interest"
+    ],
+    "source": "Google Places"
+  },
+  {
+    "name": "Tom Rich Insurance",
+    "phone": "(913) 281-0808",
+    "website": "http://tomrichinsurance.com/",
+    "formatted_address": "1057 Minnesota Ave, Kansas City, KS 66101, USA",
+    "city_hint": "Kansas City",
+    "place_id": "ChIJcSeG3GTxwIcRmTC2x6mgNIk",
+    "business_status": "OPERATIONAL",
+    "types": [
+      "establishment",
+      "insurance_agency",
+      "point_of_interest"
+    ],
+    "source": "Google Places"
+  },
+  {
+    "name": "E & A AGENCY INSURANCE MULTISERVICES",
+    "phone": "(913) 436-9599",
+    "website": "",
+    "formatted_address": "1100 N 18 St, Kansas City, KS 66102, USA",
+    "city_hint": "Kansas City",
+    "place_id": "ChIJM9j4jdnzwIcRe0e2VXA_MYU",
+    "business_status": "OPERATIONAL",
+    "types": [
+      "establishment",
+      "insurance_agency",
+      "point_of_interest"
+    ],
+    "source": "Google Places"
+  },
+  {
+    "name": "Kansas City Auto Insurance",
+    "phone": "(816) 888-3435",
+    "website": "",
+    "formatted_address": "950 McGee St, Kansas City, MO 64106, USA",
+    "city_hint": "Kansas City",
+    "place_id": "ChIJ5_1kLmTxwIcRgtbzcDVigrI",
+    "business_status": "OPERATIONAL",
+    "types": [
+      "establishment",
+      "insurance_agency",
+      "point_of_interest"
+    ],
+    "source": "Google Places"
+  },
+  {
+    "name": "Conexion Insurance Agency",
+    "phone": "(913) 490-9050",
+    "website": "https://conexionins.com/",
+    "formatted_address": "6000 Leavenworth Rd Ste N, Kansas City, KS 66104, USA",
+    "city_hint": "Kansas City",
+    "place_id": "ChIJnVUsh9rUh4URz3p_wTKDPzM",
+    "business_status": "OPERATIONAL",
+    "types": [
+      "establishment",
+      "insurance_agency",
+      "point_of_interest"
+    ],
+    "source": "Google Places"
+  },
+  {
+    "name": "Freeway Insurance",
+    "phone": "(913) 774-1014",
+    "website": "https://locations.freeway.com/kansas-city-ks-66101/?utm_medium=directory&utm_source=google&utm_campaign=RRMINN_KansasCity_KS",
+    "formatted_address": "1020 Minnesota Ave, Kansas City, KS 66101, USA",
+    "city_hint": "Kansas City",
+    "place_id": "ChIJBYkLnmDxwIcRgI5QwjfGNxw",
+    "business_status": "OPERATIONAL",
+    "types": [
+      "establishment",
+      "insurance_agency",
+      "point_of_interest"
+    ],
+    "source": "Google Places"
+  },
+  {
+    "name": "Abbott Insurance Inc.",
+    "phone": "(816) 452-8810",
+    "website": "https://abbottkc.com/",
+    "formatted_address": "8117 N Oak Trafficway, Kansas City, MO 64118, USA",
+    "city_hint": "Kansas City",
+    "place_id": "ChIJZZQqO-z3wIcR5Uhdx70j13M",
+    "business_status": "OPERATIONAL",
+    "types": [
+      "establishment",
+      "insurance_agency",
+      "point_of_interest"
+    ],
+    "source": "Google Places"
+  },
+  {
+    "name": "R&S Agency Inc",
+    "phone": "(913) 766-1590",
+    "website": "http://www.rs-agency.com/",
+    "formatted_address": "44 S 7th St, Kansas City, KS 66101, USA",
+    "city_hint": "Kansas City",
+    "place_id": "ChIJ1R06G5_xwIcRwXZwciHt_jk",
+    "business_status": "OPERATIONAL",
+    "types": [
+      "accounting",
+      "establishment",
+      "finance",
+      "insurance_agency",
+      "point_of_interest"
+    ],
+    "source": "Google Places"
+  },
+  {
+    "name": "Ekberg Insurance",
+    "phone": "(913) 371-6128",
+    "website": "",
+    "formatted_address": "1301 Central Ave, Kansas City, KS 66102, USA",
+    "city_hint": "Kansas City",
+    "place_id": "ChIJPVZc9X_xwIcRdAweb1yPEMI",
+    "business_status": "OPERATIONAL",
+    "types": [
+      "establishment",
+      "insurance_agency",
+      "point_of_interest"
+    ],
+    "source": "Google Places"
+  },
+  {
+    "name": "Nova SR22 Insurance Kansas City",
+    "phone": "(816) 816-5568",
+    "website": "https://sr22insurancekansascity.us/",
+    "formatted_address": "1353 Locust St, Kansas City, MO 64106, USA",
+    "city_hint": "Kansas City",
+    "place_id": "ChIJ3_UHCYnxwIcRP14sR7YtgGo",
+    "business_status": "OPERATIONAL",
+    "types": [
+      "establishment",
+      "insurance_agency",
+      "point_of_interest"
+    ],
+    "source": "Google Places"
+  },
+  {
+    "name": "SR22 Insurance Kansas City",
+    "phone": "(816) 816-3110",
+    "website": "https://sr22insurancekansascitymo.com/",
+    "formatted_address": "1475 Walnut St, Kansas City, MO 64106, USA",
+    "city_hint": "Kansas City",
+    "place_id": "ChIJHysdxY_xwIcRTKOe1y8ti-M",
+    "business_status": "OPERATIONAL",
+    "types": [
+      "establishment",
+      "insurance_agency",
+      "point_of_interest"
+    ],
+    "source": "Google Places"
+  },
+  {
+    "name": "Fusion Insurance",
+    "phone": "(913) 204-0404",
+    "website": "http://www.fiagency.com/",
+    "formatted_address": "151 S 18th St E, Kansas City, KS 66102, USA",
+    "city_hint": "Kansas City",
+    "place_id": "ChIJ5TbRLCrywIcRSFimGKcgcdc",
+    "business_status": "OPERATIONAL",
+    "types": [
+      "establishment",
+      "insurance_agency",
+      "point_of_interest"
+    ],
+    "source": "Google Places"
+  },
+  {
+    "name": "Bargain Insurance Connection",
+    "phone": "(816) 453-7722",
+    "website": "https://www.bic-agent.com/",
+    "formatted_address": "2635 NE Vivion Rd, Kansas City, MO 64119, USA",
+    "city_hint": "Kansas City",
+    "place_id": "ChIJ7_0Jc8z5wIcRUhxRvw06pRQ",
+    "business_status": "OPERATIONAL",
+    "types": [
+      "establishment",
+      "insurance_agency",
+      "point_of_interest"
+    ],
+    "source": "Google Places"
+  },
+  {
+    "name": "Auto Insurance Affordables - Kansas City",
+    "phone": "(986) 256-3451",
+    "website": "",
+    "formatted_address": "1200 Main St Ste 3805, Kansas City, MO 64105, USA",
+    "city_hint": "Kansas City",
+    "place_id": "ChIJlcxiG2fxwIcR1qGMbxTyj9g",
+    "business_status": "OPERATIONAL",
+    "types": [
+      "establishment",
+      "insurance_agency",
+      "point_of_interest"
+    ],
+    "source": "Google Places"
+  },
+  {
+    "name": "Matrix Insurance",
+    "phone": "(913) 515-2222",
+    "website": "http://matrixagency.com/",
+    "formatted_address": "4208 Rainbow Blvd, Kansas City, KS 66103, USA",
+    "city_hint": "Kansas City",
+    "place_id": "ChIJwUiNhdfxwIcRcGaRGUTzrPM",
+    "business_status": "OPERATIONAL",
+    "types": [
+      "establishment",
+      "insurance_agency",
+      "point_of_interest"
+    ],
+    "source": "Google Places"
+  },
+  {
+    "name": "Traders Insurance Company",
+    "phone": "(800) 369-0369",
+    "website": "http://www.tradersauto.com/",
+    "formatted_address": "9300 Troost Ave, Kansas City, MO 64131, USA",
+    "city_hint": "Kansas City",
+    "place_id": "ChIJ9wAHm77owIcR1G5-hNxZ4Ic",
+    "business_status": "OPERATIONAL",
+    "types": [
+      "establishment",
+      "point_of_interest"
+    ],
+    "source": "Google Places"
+  },
+  {
+    "name": "Ruth & Associates Business Solutions",
+    "phone": "(913) 942-0088",
+    "website": "",
+    "formatted_address": "1720 Central Ave, Kansas City, KS 66102, USA",
+    "city_hint": "Kansas City",
+    "place_id": "ChIJsynVCvnzwIcRb-aJUKDS1sA",
+    "business_status": "OPERATIONAL",
+    "types": [
+      "establishment",
+      "finance",
+      "insurance_agency",
+      "point_of_interest"
+    ],
+    "source": "Google Places"
+  },
+  {
+    "name": "Prime Insurance Agency",
+    "phone": "(816) 479-0595",
+    "website": "http://www.primeinsurancekc.com/",
+    "formatted_address": "9601 NE Barry Rd Ste 120, Kansas City, MO 64158, USA",
+    "city_hint": "Kansas City",
+    "place_id": "ChIJoxogrIVVwIcRjQ_0vFAvPLM",
+    "business_status": "OPERATIONAL",
+    "types": [
+      "establishment",
+      "insurance_agency",
+      "point_of_interest"
+    ],
+    "source": "Google Places"
+  },
+  {
+    "name": "Valle Multi Service and Insurance LLC",
+    "phone": "(913) 701-8334",
+    "website": "https://vallemultiservice.com/",
+    "formatted_address": "611 Central Ave, Kansas City, KS 66101, USA",
+    "city_hint": "Kansas City",
+    "place_id": "ChIJe0i4AvXxwIcR7Xqdo-B60ZA",
+    "business_status": "OPERATIONAL",
+    "types": [
+      "establishment",
+      "insurance_agency",
+      "point_of_interest"
+    ],
+    "source": "Google Places"
+  },
+  {
+    "name": "Mike Holloway Agency, Inc. American Family Insurance",
+    "phone": "(913) 441-3336",
+    "website": "https://www.amfam.com/agents/kansas/bonner-springs/michael-holloway",
+    "formatted_address": "11627 KS-32, Bonner Springs, KS 66012, USA",
+    "city_hint": "Bonner Springs",
+    "place_id": "ChIJk-g5ZN2PwIcRPwWIvvhR-Pg",
+    "business_status": "OPERATIONAL",
+    "types": [
+      "establishment",
+      "insurance_agency",
+      "point_of_interest"
+    ],
+    "source": "Google Places"
+  },
+  {
+    "name": "Garrett Good - State Farm Insurance Agent",
+    "phone": "(913) 422-9900",
+    "website": "http://www.ggoodsf.com/?cmpid=dyqk_blm_0001",
+    "formatted_address": "20 N 130th Terrace, Bonner Springs, KS 66012, USA",
+    "city_hint": "Bonner Springs",
+    "place_id": "ChIJ13Yq-pqPwIcRQa1S0xXl6bY",
+    "business_status": "OPERATIONAL",
+    "types": [
+      "establishment",
+      "insurance_agency",
+      "point_of_interest"
+    ],
+    "source": "Google Places"
+  },
+  {
+    "name": "Marci Hunter Agency, LLC American Family Insurance",
+    "phone": "(913) 724-6400",
+    "website": "https://www.amfam.com/agents/kansas/basehor/marci-hunter",
+    "formatted_address": "14500 Parallel Rd E, Basehor, KS 66007, USA",
+    "city_hint": "Bonner Springs",
+    "place_id": "ChIJTVmgcXiFwIcROSIlKZiKJuQ",
+    "business_status": "OPERATIONAL",
+    "types": [
+      "establishment",
+      "insurance_agency",
+      "point_of_interest"
+    ],
+    "source": "Google Places"
+  },
+  {
+    "name": "Dave Pierce American Family Insurance",
+    "phone": "(913) 441-0033",
+    "website": "https://www.amfam.com/agents/kansas/bonner-springs/david-pierce",
+    "formatted_address": "13100 Kansas Ave D, Bonner Springs, KS 66012, USA",
+    "city_hint": "Bonner Springs",
+    "place_id": "ChIJn4eNv4SPwIcRqU0ydcWjbcY",
+    "business_status": "OPERATIONAL",
+    "types": [
+      "establishment",
+      "insurance_agency",
+      "point_of_interest"
+    ],
+    "source": "Google Places"
+  },
+  {
+    "name": "Shelter Insurance - Tara Myers",
+    "phone": "(913) 422-2550",
+    "website": "https://www.shelterinsurance.com/CA/agent/TMYERS",
+    "formatted_address": "300 Oak St Ste. C, Bonner Springs, KS 66012, USA",
+    "city_hint": "Bonner Springs",
+    "place_id": "ChIJWzaq-iyPwIcRqwPEnfDPLNA",
+    "business_status": "OPERATIONAL",
+    "types": [
+      "establishment",
+      "insurance_agency",
+      "point_of_interest"
+    ],
+    "source": "Google Places"
+  },
+  {
+    "name": "Farm Bureau Financial Services",
+    "phone": "(913) 543-4530",
+    "website": "https://www.fbfs.com/find-an-agent/Search?s=66012&t=zip?utm_source=Google&utm_medium=GMB&utm_campaign=listing_website&utm_content=July19",
+    "formatted_address": "129 N Nettleton Ave, Bonner Springs, KS 66012, USA",
+    "city_hint": "Bonner Springs",
+    "place_id": "ChIJk4oLP_uPwIcRpuz5eGJFy34",
+    "business_status": "OPERATIONAL",
+    "types": [
+      "establishment",
+      "insurance_agency",
+      "point_of_interest"
+    ],
+    "source": "Google Places"
+  },
+  {
+    "name": "State Farm",
+    "phone": "",
+    "website": "",
+    "formatted_address": "20 N 130th Terrace, Bonner Springs, KS 66012, USA",
+    "city_hint": "Bonner Springs",
+    "place_id": "ChIJlY-I-nmPwIcRAhGP8DK3Rao",
+    "business_status": "OPERATIONAL",
+    "types": [
+      "establishment",
+      "insurance_agency",
+      "point_of_interest"
+    ],
+    "source": "Google Places"
+  },
+  {
+    "name": "Farm Bureau Financial Services: Aaron Mendoza",
+    "phone": "(913) 202-7320",
+    "website": "https://www.fbfs.com/find-an-agent/aaronmendoza?y_source=1_NjcwOTcyMTUtNzE1LWxvY2F0aW9uLndlYnNpdGU%3D",
+    "formatted_address": "129 N Nettleton Ave, Bonner Springs, KS 66012, USA",
+    "city_hint": "Bonner Springs",
+    "place_id": "ChIJARR8vkyNwIcR8StD0Vcr_dg",
+    "business_status": "OPERATIONAL",
+    "types": [
+      "establishment",
+      "insurance_agency",
+      "point_of_interest"
+    ],
+    "source": "Google Places"
+  },
+  {
+    "name": "Brightway Insurance, The Arrocha Family Agency",
+    "phone": "(913) 934-5756",
+    "website": "http://www.brightwayarrocha.com/",
+    "formatted_address": "5564 Hedge Ln Terrace, Shawnee, KS 66226, USA",
+    "city_hint": "Bonner Springs",
+    "place_id": "ChIJv_RnjomRwIcRVk9xOfOvzXQ",
+    "business_status": "OPERATIONAL",
+    "types": [
+      "establishment",
+      "insurance_agency",
+      "point_of_interest"
+    ],
+    "source": "Google Places"
+  },
+  {
+    "name": "Jim Million - State Farm Insurance Agent",
+    "phone": "(913) 422-5567",
+    "website": "https://www.statefarm.com/agent/us/ks/bonner-spgs/jim-million-wflsw1ys000?cmpid=b5pr_blm_0001",
+    "formatted_address": "13100 Kansas Ave G, Bonner Springs, KS 66012, USA",
+    "city_hint": "Bonner Springs",
+    "place_id": "ChIJ7xX6xoSPwIcRRoRa_rwdTAY",
+    "business_status": "OPERATIONAL",
+    "types": [
+      "establishment",
+      "insurance_agency",
+      "point_of_interest"
+    ],
+    "source": "Google Places"
+  },
+  {
+    "name": "ABIA (A BARGAIN INSURANCE AGENCY)",
+    "phone": "(913) 492-7722",
+    "website": "http://abiainsurancekc.com/",
+    "formatted_address": "12249 W 87th St Pkwy, Lenexa, KS 66215, USA",
+    "city_hint": "Bonner Springs",
+    "place_id": "ChIJjcmcwm-MwIcRJUBxu69UgWA",
+    "business_status": "OPERATIONAL",
+    "types": [
+      "establishment",
+      "insurance_agency",
+      "point_of_interest"
+    ],
+    "source": "Google Places"
+  },
+  {
+    "name": "Insurance Inc",
+    "phone": "(913) 268-5000",
+    "website": "http://www.insuranceinckc.com/",
+    "formatted_address": "11211 Johnson Dr, Shawnee, KS 66203, USA",
+    "city_hint": "Bonner Springs",
+    "place_id": "ChIJ6VUYCybtwIcRpXixXLGew8U",
+    "business_status": "OPERATIONAL",
+    "types": [
+      "establishment",
+      "insurance_agency",
+      "point_of_interest"
+    ],
+    "source": "Google Places"
+  },
+  {
+    "name": "Brush Creek Select LLC",
+    "phone": "(816) 495-3638",
+    "website": "https://brushcreekselect.com/",
+    "formatted_address": "3846 W 75th St, Prairie Village, KS 66208, USA",
+    "city_hint": "Bonner Springs",
+    "place_id": "ChIJZe1U1BHvwIcRIoNOxfOqCXM",
+    "business_status": "OPERATIONAL",
+    "types": [
+      "establishment",
+      "insurance_agency",
+      "point_of_interest"
+    ],
+    "source": "Google Places"
+  },
+  {
+    "name": "Kansas Insurance, Tonganoxie",
+    "phone": "(913) 369-6600",
+    "website": "http://www.kansasins.com/",
+    "formatted_address": "219 E 24-40 Hwy, Tonganoxie, KS 66086, USA",
+    "city_hint": "Bonner Springs",
+    "place_id": "ChIJgwo67qN9v4cR9vtoLCNoO84",
+    "business_status": "OPERATIONAL",
+    "types": [
+      "establishment",
+      "insurance_agency",
+      "point_of_interest"
+    ],
+    "source": "Google Places"
+  },
+  {
+    "name": "Relation Insurance Services",
+    "phone": "(913) 441-0349",
+    "website": "https://www.relationinsurance.com/locations/kansas/10027-woodend-rd-edwardsville-ks-66111/",
+    "formatted_address": "10027 Woodend Rd, Edwardsville, KS 66111, USA",
+    "city_hint": "Bonner Springs",
+    "place_id": "ChIJa8yXrf6RwIcR1Y0DlxFqS18",
+    "business_status": "OPERATIONAL",
+    "types": [
+      "establishment",
+      "insurance_agency",
+      "point_of_interest"
+    ],
+    "source": "Google Places"
+  },
+  {
+    "name": "ehealthcover",
+    "phone": "(866) 203-5594",
+    "website": "",
+    "formatted_address": "135 Oak St, Bonner Springs, KS 66012, USA",
+    "city_hint": "Bonner Springs",
+    "place_id": "ChIJq6qON-OPwIcRh-sYh3tDu9E",
+    "business_status": "OPERATIONAL",
+    "types": [
+      "establishment",
+      "health",
+      "insurance_agency",
+      "point_of_interest"
+    ],
+    "source": "Google Places"
+  },
+  {
+    "name": "Mario Giraldo - State Farm Insurance Agent",
+    "phone": "(913) 334-9400",
+    "website": "https://www.legendsmariosf.com/?cmpid=MLLIST",
+    "formatted_address": "10940 Parallel Pkwy Ste J, Kansas City, KS 66109, USA",
+    "city_hint": "Bonner Springs",
+    "place_id": "ChIJs5tHrsmOwIcRfLWJOGTP5rk",
+    "business_status": "OPERATIONAL",
+    "types": [
+      "establishment",
+      "insurance_agency",
+      "point_of_interest"
+    ],
+    "source": "Google Places"
+  },
+  {
+    "name": "Precept Solutions LLC",
+    "phone": "(913) 354-5277",
+    "website": "",
+    "formatted_address": "144 N Nettleton Ave, Bonner Springs, KS 66012, USA",
+    "city_hint": "Bonner Springs",
+    "place_id": "ChIJd1km0FmPwIcRLtUR348y4M8",
+    "business_status": "OPERATIONAL",
+    "types": [
+      "establishment",
+      "insurance_agency",
+      "point_of_interest"
+    ],
+    "source": "Google Places"
+  },
+  {
+    "name": "Darnell Insurance Agency",
+    "phone": "(913) 484-3705",
+    "website": "http://darnellagency.com/",
+    "formatted_address": "1201 S 103 St, Edwardsville, KS 66111, USA",
+    "city_hint": "Edwardsville",
+    "place_id": "ChIJE4NEoSaPwIcRypZ9hahmYqU",
+    "business_status": "OPERATIONAL",
+    "types": [
+      "establishment",
+      "insurance_agency",
+      "point_of_interest"
+    ],
+    "source": "Google Places"
+  },
+  {
+    "name": "Martin-Tines Agency LLC",
+    "phone": "(913) 302-4529",
+    "website": "https://martintines.com/",
+    "formatted_address": "13600 Santa Fe Trail Dr, Lenexa, KS 66215, USA",
+    "city_hint": "Lake Quivira",
+    "place_id": "ChIJWUjqp2CVwIcRNQ6_zRleGRs",
+    "business_status": "OPERATIONAL",
+    "types": [
+      "establishment",
+      "insurance_agency",
+      "point_of_interest"
+    ],
+    "source": "Google Places"
+  },
+  {
+    "name": "Greg Aldridge - State Farm Insurance Agent",
+    "phone": "(913) 888-2200",
+    "website": "https://www.gregaldridge.com/",
+    "formatted_address": "21977 W 83rd St, Lenexa, KS 66227, USA",
+    "city_hint": "Lake Quivira",
+    "place_id": "ChIJuVQRmcSRwIcRzReQ8nrVQr4",
+    "business_status": "OPERATIONAL",
+    "types": [
+      "establishment",
+      "insurance_agency",
+      "point_of_interest"
+    ],
+    "source": "Google Places"
+  },
+  {
+    "name": "Uriarte Insurance Group",
+    "phone": "(913) 384-6050",
+    "website": "http://www.uriarteinsurancegroup.com/",
+    "formatted_address": "5042 Lamar Ave, Mission, KS 66202, USA",
+    "city_hint": "Lake Quivira",
+    "place_id": "ChIJTbdersPtwIcR0Od7bcdIQiA",
+    "business_status": "OPERATIONAL",
+    "types": [
+      "establishment",
+      "insurance_agency",
+      "point_of_interest"
+    ],
+    "source": "Google Places"
+  },
+  {
+    "name": "Farmers Insurance - Jacob Eaton",
+    "phone": "(913) 829-7283",
+    "website": "https://agents.farmers.com/ks/lenexa/jacob-eaton/",
+    "formatted_address": "10101 Woodland Rd #200, Lenexa, KS 66220, USA",
+    "city_hint": "Lake Quivira",
+    "place_id": "ChIJ8coinfyUwIcREQ3z6TLAF3Q",
+    "business_status": "OPERATIONAL",
+    "types": [
+      "establishment",
+      "insurance_agency",
+      "point_of_interest"
+    ],
+    "source": "Google Places"
+  },
+  {
+    "name": "Blue Valley Insurance Agency",
+    "phone": "(913) 451-0020",
+    "website": "http://www.bvia.com/",
+    "formatted_address": "7311 W 132nd St Ste 100, Overland Park, KS 66213, USA",
+    "city_hint": "Lake Quivira",
+    "place_id": "ChIJ3zMgVNnBwIcRsjRM2yAK5WM",
+    "business_status": "OPERATIONAL",
+    "types": [
+      "establishment",
+      "insurance_agency",
+      "point_of_interest"
+    ],
+    "source": "Google Places"
+  },
+  {
+    "name": "Tim Waltrip: Allstate Insurance",
+    "phone": "(913) 962-0400",
+    "website": "https://www.modernconsultinginsurance.com/",
+    "formatted_address": "19705 W 65th Terrace, Shawnee, KS 66218, USA",
+    "city_hint": "Lake Quivira",
+    "place_id": "ChIJzWgTywORwIcR4NIdIbkn09Q",
+    "business_status": "OPERATIONAL",
+    "types": [
+      "establishment",
+      "insurance_agency",
+      "point_of_interest"
+    ],
+    "source": "Google Places"
+  },
+  {
+    "name": "Tischer & Associates LLC American Family Insurance",
+    "phone": "(913) 888-8200",
+    "website": "https://www.amfam.com/agents/kansas/lenexa/Jeffrey-Tischer",
+    "formatted_address": "13606 W 95th St, Lenexa, KS 66215, USA",
+    "city_hint": "Lake Quivira",
+    "place_id": "ChIJQzwe6z2VwIcRNkZST3s0MLo",
+    "business_status": "OPERATIONAL",
+    "types": [
+      "establishment",
+      "insurance_agency",
+      "point_of_interest"
+    ],
+    "source": "Google Places"
+  },
+  {
+    "name": "Greg Aldridge - State Farm Insurance Agent",
+    "phone": "(913) 492-6080",
+    "website": "http://www.gregaldridgesf.com/",
+    "formatted_address": "13501 W 87th St Pkwy, Lenexa, KS 66215, USA",
+    "city_hint": "Lake Quivira",
+    "place_id": "ChIJXXLAuKaUwIcR2Lc1I2HRjEg",
+    "business_status": "OPERATIONAL",
+    "types": [
+      "establishment",
+      "finance",
+      "insurance_agency",
+      "point_of_interest"
+    ],
+    "source": "Google Places"
+  },
+  {
+    "name": "Rieder & Associates LLC American Family Insurance",
+    "phone": "(913) 735-8020",
+    "website": "https://www.amfam.com/agents/kansas/lenexa/david-rieder",
+    "formatted_address": "9234 Pflumm Rd, Lenexa, KS 66215, USA",
+    "city_hint": "Lake Quivira",
+    "place_id": "ChIJB-PkElrpwIcRzTo1_o_bPPg",
+    "business_status": "OPERATIONAL",
+    "types": [
+      "establishment",
+      "insurance_agency",
+      "point_of_interest"
+    ],
+    "source": "Google Places"
+  },
+  {
+    "name": "Farmers Insurance - Kent Jewett",
+    "phone": "(913) 248-1833",
+    "website": "https://agents.farmers.com/ks/lenexa/kent-jewett?SourceID=AMPALFGMAG&utm_source=GMB&utm_medium=Local&y_source=1_MTU1MzA4Mi03MTUtbG9jYXRpb24ud2Vic2l0ZQ==",
+    "formatted_address": "8704 Bourgade St Ste 200, Lenexa, KS 66219, USA",
+    "city_hint": "Lake Quivira",
+    "place_id": "ChIJWzaN8YCUwIcRiAYNmJKkQlQ",
+    "business_status": "OPERATIONAL",
+    "types": [
+      "establishment",
+      "insurance_agency",
+      "point_of_interest"
+    ],
+    "source": "Google Places"
+  },
+  {
+    "name": "Mel Hawk - State Farm Insurance Agent",
+    "phone": "(913) 888-8045",
+    "website": "https://www.melhawk.net/?cmpid=b6yx_blm_0001",
+    "formatted_address": "15201 W 87th St Pkwy, Lenexa, KS 66219, USA",
+    "city_hint": "Lake Quivira",
+    "place_id": "ChIJRzu0sYOUwIcRBRmtFyYPZ-M",
+    "business_status": "OPERATIONAL",
+    "types": [
+      "establishment",
+      "insurance_agency",
+      "point_of_interest"
+    ],
+    "source": "Google Places"
+  },
+  {
+    "name": "Chris-Leef General Agency, Inc.",
+    "phone": "(913) 631-1232",
+    "website": "http://www.chris-leef.com/",
+    "formatted_address": "11503 W 75th St #100, Shawnee, KS 66214, USA",
+    "city_hint": "Lake Quivira",
+    "place_id": "ChIJ_05qO7fswIcRghbfzu_FswM",
+    "business_status": "OPERATIONAL",
+    "types": [
+      "establishment",
+      "insurance_agency",
+      "point_of_interest"
+    ],
+    "source": "Google Places"
+  },
+  {
+    "name": "Martin Insurance Group",
+    "phone": "(913) 294-3444",
+    "website": "https://www.themartininsurancegroup.com/",
+    "formatted_address": "8827 Long St, Lenexa, KS 66215, USA",
+    "city_hint": "Lake Quivira",
+    "place_id": "ChIJ3TEkJJaywIcRC6_X86_oYas",
+    "business_status": "OPERATIONAL",
+    "types": [
+      "establishment",
+      "insurance_agency",
+      "point_of_interest"
+    ],
+    "source": "Google Places"
+  },
+  {
+    "name": "Midwest Insurance Solutions",
+    "phone": "(913) 422-0280",
+    "website": "https://www.midwest-insurance.com/",
+    "formatted_address": "14425 College Blvd Ste 115, Lenexa, KS 66215, USA",
+    "city_hint": "Lake Quivira",
+    "place_id": "ChIJ4dGVLNGQwIcRmZQTNZb6rvw",
+    "business_status": "OPERATIONAL",
+    "types": [
+      "establishment",
+      "insurance_agency",
+      "point_of_interest"
+    ],
+    "source": "Google Places"
+  },
+  {
+    "name": "Farmers Insurance - Patrick Carter",
+    "phone": "(913) 248-8861",
+    "website": "https://agents.farmers.com/ks/lenexa/patrick-carter?SourceID=AMPALFGMAG&utm_source=GMB&utm_medium=Local&y_source=1_MTU1NTQ5OC03MTUtbG9jYXRpb24ud2Vic2l0ZQ==",
+    "formatted_address": "8704 Bourgade St Ste 200, Lenexa, KS 66219, USA",
+    "city_hint": "Lake Quivira",
+    "place_id": "ChIJWzaN8YCUwIcRjS84ti81t5Q",
+    "business_status": "OPERATIONAL",
+    "types": [
+      "establishment",
+      "insurance_agency",
+      "point_of_interest"
+    ],
+    "source": "Google Places"
+  },
+  {
+    "name": "Jeff Zigmant - State Farm Insurance Agent",
+    "phone": "(913) 859-9480",
+    "website": "https://getzig.com/?y_source=1_MTAxMTM2MDI1NC03MTUtbG9jYXRpb24ud2Vic2l0ZQ%3D%3D",
+    "formatted_address": "9460 Renner Blvd, Lenexa, KS 66219, USA",
+    "city_hint": "Lake Quivira",
+    "place_id": "ChIJX7lZV2-UwIcRGgZi5SpUOWA",
+    "business_status": "OPERATIONAL",
+    "types": [
+      "establishment",
+      "insurance_agency",
+      "point_of_interest"
+    ],
+    "source": "Google Places"
+  },
+  {
+    "name": "Kelsey Ballard - State Farm Insurance Agent",
+    "phone": "(913) 492-0505",
+    "website": "https://www.kelseyballard.com/?cmpid=VAEM6E_blm_0001",
+    "formatted_address": "12014 W 87th St Pkwy, Lenexa, KS 66215, USA",
+    "city_hint": "Lake Quivira",
+    "place_id": "ChIJiTsRCQvrwIcRKi4korM9wTs",
+    "business_status": "OPERATIONAL",
+    "types": [
+      "establishment",
+      "insurance_agency",
+      "point_of_interest"
+    ],
+    "source": "Google Places"
+  }
+]

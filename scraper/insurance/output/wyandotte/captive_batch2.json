@@ -1,0 +1,62 @@
+[
+  {
+    "agent_name": "Tara Myers",
+    "agency_name": "Shelter Insurance - Tara Myers",
+    "company": "Shelter Insurance",
+    "website": "https://www.shelterinsurance.com/CA/agent/TMYERS",
+    "phone_number": "(913) 422-2550",
+    "email": null,
+    "street_address": "300 Oak St Ste. C",
+    "city": "Bonner Springs",
+    "zip_code": "66012",
+    "source": "Google Places API (live query \"Shelter Insurance in Bonner Springs, KS\", 2026-08-23) - only Shelter agent found across all 4 target cities; shelterinsurance.com blocks direct fetch (Cloudflare 403) so the agent page URL is from the Places listing, not independently re-verified",
+    "county": "Wyandotte",
+    "state": "KS",
+    "agent_type": "Captive"
+  },
+  {
+    "agent_name": "Aaron Mendoza",
+    "agency_name": "Farm Bureau Financial Services: Aaron Mendoza",
+    "company": "Farm Bureau Financial Services",
+    "website": "https://www.fbfs.com/find-an-agent/aaronmendoza",
+    "phone_number": "(913) 202-7320",
+    "email": null,
+    "street_address": "129 N Nettleton Ave",
+    "city": "Bonner Springs",
+    "zip_code": "66012",
+    "source": "fbfs.com agent profile page (direct fetch, JSON-LD confirms name/address/phone) cross-verified against Google Places; merged with a duplicate unnamed \"Farm Bureau Financial Services\" Google Places listing at the same address",
+    "county": "Wyandotte",
+    "state": "KS",
+    "agent_type": "Captive"
+  },
+  {
+    "agent_name": "Matthew Gorman",
+    "agency_name": "Farm Bureau Financial Services: Matt Gorman",
+    "company": "Farm Bureau Financial Services",
+    "website": "https://www.fbfs.com/find-an-agent/matthewgorman",
+    "phone_number": "(913) 262-2333",
+    "email": null,
+    "street_address": "2707 S 47th St",
+    "city": "Kansas City",
+    "zip_code": "66106-3629",
+    "source": "fbfs.com agent profile page (direct fetch, JSON-LD confirms name/address/phone) cross-verified against Google Places (live query \"Farm Bureau Financial Services in Kansas City, KS\", 2026-08-23)",
+    "county": "Wyandotte",
+    "state": "KS",
+    "agent_type": "Captive"
+  },
+  {
+    "agent_name": null,
+    "agency_name": "Farm Bureau Financial Services",
+    "company": "Farm Bureau Financial Services",
+    "website": "https://www.fbfs.com/find-an-agent?s=66112&t=zip",
+    "phone_number": "(913) 299-0900",
+    "email": null,
+    "street_address": "9340 Parallel Pkwy",
+    "city": "Kansas City",
+    "zip_code": "66112",
+    "source": "Google Places API (live query \"Farm Bureau Financial Services in Kansas City, KS\", 2026-08-23); fbfs.com's own agent-finder is a client-rendered SPA so the specific named agent at this office could not be confirmed and was left blank rather than guessed",
+    "county": "Wyandotte",
+    "state": "KS",
+    "agent_type": "Captive"
+  }
+]

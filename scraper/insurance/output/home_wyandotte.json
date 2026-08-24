@@ -1,0 +1,19 @@
+[
+  {
+    "agent_name": "Greg Darnell",
+    "agency_name": "Darnell Insurance Agency",
+    "company": "Independent / Multiple Carriers (unspecified)",
+    "agent_type": "Independent",
+    "offers_auto": "Yes",
+    "offers_home": "Yes",
+    "website": "",
+    "phone_number": "(913) 484-3705",
+    "email": "",
+    "street_address": "1201 S 103 St",
+    "city": "Edwardsville",
+    "county": "Wyandotte",
+    "state": "KS",
+    "zip_code": "66111",
+    "source": "Found via Google Places Text Search ('home insurance agency in Edwardsville, KS'); Place Details confirmed Wyandotte County via address_components and matched phone (913) 484-3705. Live domain darnellagency.com now redirects to a parked cPanel default page, so website left blank rather than publish a dead link. Verified via Wayback Machine snapshot (web.archive.org/web/20220112135455/https://darnellagency.com/, when the site was live and content-rich) explicitly listing 'Homeowners Insurance' and 'Auto Insurance' under 'Personal Lines' / 'For Your Family', self-describing as 'an Independent Insurance Agency... Located in Edwardsville, we service clients in the Kansas City Metro area', with matching phone 913-484-3705 and fax 913-273-3452. Distinct business from the already-listed captive 'Farmers Insurance - Gregory Darnell' (144 N Nettleton Ave, Bonner Springs, KS) - different address, different phone, different carrier model (independent vs. Farmers-captive) - though possibly the same individual operating two books of business. No email address was found in any source, so left blank rather than guessed. BBB.org search for this business name near Edwardsville, KS returned zero results (checked, not used)."
+  }
+]

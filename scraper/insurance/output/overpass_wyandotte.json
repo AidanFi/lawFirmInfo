@@ -1,0 +1,211 @@
+{
+  "version": 0.6,
+  "generator": "Overpass API 0.7.62.11 87bfad18",
+  "osm3s": {
+    "timestamp_osm_base": "2026-08-24T02:02:39Z",
+    "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
+  },
+  "elements": [
+
+{
+  "type": "node",
+  "id": 9765516498,
+  "lat": 39.1037350,
+  "lon": -94.6437584,
+  "tags": {
+    "addr:city": "Kansas City",
+    "addr:housenumber": "1301",
+    "addr:postcode": "66102",
+    "addr:state": "KS",
+    "addr:street": "Central Avenue",
+    "name": "Ekberg Insurance",
+    "office": "insurance",
+    "phone": "+1-913-371-6128"
+  }
+},
+{
+  "type": "node",
+  "id": 9767300328,
+  "lat": 39.1030087,
+  "lon": -94.6424159,
+  "tags": {
+    "addr:city": "Kansas City",
+    "addr:housenumber": "1239",
+    "addr:postcode": "66102",
+    "addr:state": "KS",
+    "addr:street": "Central Avenue",
+    "name": "Morales Insurance",
+    "office": "insurance",
+    "phone": "+1-913-321-4492"
+  }
+},
+{
+  "type": "node",
+  "id": 9849672355,
+  "lat": 39.1288751,
+  "lon": -94.7636627,
+  "tags": {
+    "addr:city": "Kansas City",
+    "addr:postcode": "66112",
+    "addr:state": "KS",
+    "addr:street": "Parallel Parkway",
+    "fax": "+1-913-788-8939",
+    "name": "Farmers Insurance: Shawn McAllister",
+    "office": "insurance",
+    "phone": "+1-913-788-8288",
+    "website": "https://agents.farmers.com/ks/kansas-city/shawn-mcallister"
+  }
+},
+{
+  "type": "node",
+  "id": 10788804248,
+  "lat": 39.0991706,
+  "lon": -94.6476387,
+  "tags": {
+    "addr:city": "Kansas City",
+    "addr:housenumber": "151",
+    "addr:postcode": "66102",
+    "addr:state": "KS",
+    "addr:street": "South 18th Street",
+    "check_date": "2026-03-13",
+    "check_date:opening_hours": "2026-03-13",
+    "name": "Fusion Insurance",
+    "office": "insurance",
+    "opening_hours": "Mo-Fr 09:00-18:00; Sa 10:00-15:00",
+    "phone": "+1-913-204-0404",
+    "website": "https://www.fiagency.com/"
+  }
+},
+{
+  "type": "node",
+  "id": 11342296469,
+  "lat": 39.1158631,
+  "lon": -94.7690870,
+  "tags": {
+    "addr:city": "Kansas City",
+    "addr:country": "US",
+    "addr:housenumber": "8151-8153",
+    "addr:postcode": "66112",
+    "addr:state": "KS",
+    "addr:street": "State Avenue",
+    "brand": "American Family Insurance",
+    "check_date:opening_hours": "2023-11-11",
+    "entrance": "main",
+    "name": "American Family Insurance",
+    "office": "insurance",
+    "opening_hours": "Mo-Fr 09:00-17:00",
+    "phone": "+1 913 334 3553"
+  }
+},
+{
+  "type": "node",
+  "id": 11445157812,
+  "lat": 39.0500709,
+  "lon": -94.6008344,
+  "tags": {
+    "check_date": "2023-12-22",
+    "name": "Demaster's Insurance",
+    "office": "insurance",
+    "phone": "+1 816-531-1000"
+  }
+},
+{
+  "type": "way",
+  "id": 506966682,
+  "center": {
+    "lat": 39.1157828,
+    "lon": -94.6362922
+  },
+  "tags": {
+    "addr:city": "Kansas City",
+    "addr:housenumber": "1020",
+    "addr:postcode": "66101",
+    "addr:state": "KS",
+    "addr:street": "Minnesota Avenue",
+    "building": "yes",
+    "name": "Red Rock Insurance",
+    "office": "insurance"
+  }
+},
+{
+  "type": "way",
+  "id": 506966684,
+  "center": {
+    "lat": 39.1157765,
+    "lon": -94.6367213
+  },
+  "tags": {
+    "addr:city": "Kansas City",
+    "addr:housenumber": "1032",
+    "addr:postcode": "66101",
+    "addr:state": "KS",
+    "addr:street": "Minnesota Avenue",
+    "building": "yes",
+    "name": "Insure One",
+    "office": "insurance"
+  }
+},
+{
+  "type": "way",
+  "id": 512137265,
+  "center": {
+    "lat": 39.1153545,
+    "lon": -94.6378158
+  },
+  "tags": {
+    "addr:city": "Kansas City",
+    "addr:housenumber": "1057",
+    "addr:postcode": "66101",
+    "addr:state": "KS",
+    "addr:street": "Minnesota Avenue",
+    "building": "yes",
+    "name": "Tom Rich Insurance",
+    "office": "insurance"
+  }
+},
+{
+  "type": "way",
+  "id": 658607192,
+  "center": {
+    "lat": 39.1864272,
+    "lon": -94.6066498
+  },
+  "tags": {
+    "addr:city": "Northmoor",
+    "addr:housenumber": "5100",
+    "addr:postcode": "64151",
+    "addr:state": "MO",
+    "addr:street": "Northwest Waukomis Drive",
+    "addr:unit": "B",
+    "brand": "Farmers Insurance",
+    "brand:wikidata": "Q1396863",
+    "building": "yes",
+    "name": "Farmers Insurance",
+    "office": "insurance",
+    "opening_hours": "Mo-Fr 08:30-05:30",
+    "website": "https://agents.farmers.com/mo/northmoor/staci-blackwell"
+  }
+},
+{
+  "type": "way",
+  "id": 991243312,
+  "center": {
+    "lat": 39.1054896,
+    "lon": -94.6475643
+  },
+  "tags": {
+    "addr:city": "Kansas City",
+    "addr:housenumber": "1608",
+    "addr:postcode": "66102",
+    "addr:state": "KS",
+    "addr:street": "Central Avenue",
+    "building": "yes",
+    "name": "V&A Multiservices Insurance",
+    "office": "insurance",
+    "phone": "+1 913-573-2115",
+    "source": "microsoft/BuildingFootprints"
+  }
+}
+
+  ]
+}

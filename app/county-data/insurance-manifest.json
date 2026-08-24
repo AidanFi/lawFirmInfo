@@ -6,7 +6,7 @@
       "state": "KS",
       "csv_file": "insurance-johnson-county-ks.csv",
       "captive_count": 224,
-      "independent_count": 108
+      "independent_count": 109
     },
     {
       "slug": "sedgwick-county-ks",
@@ -21,7 +21,7 @@
       "name": "Shawnee County",
       "state": "KS",
       "csv_file": "insurance-shawnee-county-ks.csv",
-      "captive_count": 53,
+      "captive_count": 55,
       "independent_count": 18
     },
     {
@@ -29,8 +29,8 @@
       "name": "Wyandotte County",
       "state": "KS",
       "csv_file": "insurance-wyandotte-county-ks.csv",
-      "captive_count": 19,
-      "independent_count": 13
+      "captive_count": 25,
+      "independent_count": 17
     }
   ]
 }

@@ -1,0 +1,32 @@
+[
+  {
+    "agent_name": "Yana Ross",
+    "agency_name": "Farm Bureau Financial Services - Yana Ross",
+    "company": "Kansas Farm Bureau (Farm Bureau Financial Services)",
+    "agent_type": "Captive",
+    "website": "https://yanaross.fbfsagents.com/",
+    "phone_number": "(785) 329-5212",
+    "email": "yana.ross@fbfs.com",
+    "street_address": "6028 SW 29th St",
+    "city": "Topeka",
+    "county": "Shawnee",
+    "state": "KS",
+    "zip_code": "66614",
+    "source": "OpenStreetMap Overpass API (office=insurance node in Shawnee County KS bounding box) identified a Farm Bureau Financial Services office at 6028 SW 29th St distinct from the already-listed 5605 SW Barrington North Ct location; cross-verified via direct fetch of the agent's own fbfsagents.com page (name, phone, email confirmed live on page)."
+  },
+  {
+    "agent_name": "Brenda Gomez",
+    "agency_name": "Shelter Insurance - Brenda Gomez",
+    "company": "Shelter Insurance",
+    "agent_type": "Captive",
+    "website": "https://www.shelterinsurance.com/CA/agent/BRENDAGOMEZ",
+    "phone_number": "(785) 271-6034",
+    "email": "bgomez@agent.shelterinsurance.com",
+    "street_address": "2110 SW Brandywine Ln Ste 110",
+    "city": "Topeka",
+    "county": "Shawnee",
+    "state": "KS",
+    "zip_code": "66614",
+    "source": "OpenStreetMap Overpass API (office=insurance node, brand=Shelter Insurance) at 2110 SW Brandywine Lane, distinct address from the five Shelter Insurance agents already in the county CSV; live page content retrieved via r.jina.ai reader proxy (shelterinsurance.com direct fetch returns Cloudflare 403) confirms name, phone, email, and 'proudly serving Topeka, Kansas' location statement."
+  }
+]

@@ -1,0 +1,18 @@
+[
+  {
+    "agent_name": "",
+    "agency_name": "Fusion Insurance Agency (Olathe)",
+    "company": "Independent (American Modern, Dairyland, First Chicago, Foremost, Progressive, Safeco, Traders, and others)",
+    "agent_type": "Independent",
+    "website": "https://www.fiagency.com/",
+    "phone_number": "(913) 297-7500",
+    "email": "",
+    "street_address": "123 N Parker St, Ste E",
+    "city": "Olathe",
+    "county": "Johnson",
+    "state": "KS",
+    "zip_code": "66061",
+    "date_pulled": "2026-08-23",
+    "source": "OpenStreetMap Overpass API (office=insurance node) + agency website (fiagency.com) confirming this is a distinct Olathe branch office (separate from their Kansas City, KS and Kansas City, MO locations) offering personal auto insurance through multiple carriers"
+  }
+]

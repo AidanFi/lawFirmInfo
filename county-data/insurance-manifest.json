@@ -46,7 +46,7 @@
       "state": "KS",
       "csv_file": "insurance-leavenworth-county-ks.csv",
       "captive_count": 15,
-      "independent_count": 9
+      "independent_count": 11
     }
   ]
 }

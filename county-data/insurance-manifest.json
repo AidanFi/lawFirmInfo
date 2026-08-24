@@ -31,6 +31,14 @@
       "csv_file": "insurance-wyandotte-county-ks.csv",
       "captive_count": 25,
       "independent_count": 19
+    },
+    {
+      "slug": "douglas-county-ks",
+      "name": "Douglas County",
+      "state": "KS",
+      "csv_file": "insurance-douglas-county-ks.csv",
+      "captive_count": 30,
+      "independent_count": 15
     }
   ]
 }

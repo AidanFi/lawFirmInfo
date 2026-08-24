@@ -37,8 +37,8 @@
       "name": "Douglas County",
       "state": "KS",
       "csv_file": "insurance-douglas-county-ks.csv",
-      "captive_count": 30,
-      "independent_count": 15
+      "captive_count": 31,
+      "independent_count": 18
     }
   ]
 }

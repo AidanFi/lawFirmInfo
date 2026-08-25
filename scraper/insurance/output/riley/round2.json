@@ -1,0 +1,19 @@
+[
+  {
+    "agent_name": "Misty Palmer",
+    "agency_name": "Farm Bureau Financial Services: Misty Palmer",
+    "company": "Kansas Farm Bureau (Farm Bureau Financial Services)",
+    "agent_type": "Captive",
+    "offers_auto": "Yes",
+    "offers_home": "Yes",
+    "website": "https://www.fbfs.com/find-an-agent/mistypalmer",
+    "phone_number": "(785) 320-2295",
+    "email": "",
+    "street_address": "8200 S Port Dr, Ste 109",
+    "city": "Manhattan",
+    "county": "Riley",
+    "state": "KS",
+    "zip_code": "66502",
+    "source": "Manhattan Area Chamber of Commerce member directory (insurance category) listed 'Misty Palmer, Agent Farm Bureau Financial Services'; verified via official fbfs.com/find-an-agent/mistypalmer agent page confirming Auto (cars, motorcycles, RVs, roadside assistance) and Home (homeowner's, renter's, condo) coverage. FLAG: street address and phone number are IDENTICAL to the existing CSV row for 'Andy Fischer, Farm Bureau Financial Services: Andy Fischer' at the same suite (8200 S Port Dr #109, (785) 320-2295) - likely a shared Farm Bureau district office with multiple agents, but could not independently confirm both agents are still concurrently active there. Needs human review before merging."
+  }
+]

@@ -47,6 +47,14 @@
       "csv_file": "insurance-leavenworth-county-ks.csv",
       "captive_count": 15,
       "independent_count": 11
+    },
+    {
+      "slug": "riley-county-ks",
+      "name": "Riley County",
+      "state": "KS",
+      "csv_file": "insurance-riley-county-ks.csv",
+      "captive_count": 23,
+      "independent_count": 13
     }
   ]
 }

@@ -1,0 +1,530 @@
+[
+  {
+    "name": "Copeland Insurance Agency",
+    "phone": "(785) 776-0089",
+    "website": "http://copelandins.com/",
+    "formatted_address": "601 S 5th St Ste B, Manhattan, KS 66502, USA",
+    "city_hint": "Manhattan",
+    "place_id": "ChIJ77OeaInSvYcR8iWHX4tCxT4",
+    "business_status": "OPERATIONAL",
+    "types": [
+      "establishment",
+      "insurance_agency",
+      "point_of_interest"
+    ],
+    "source": "Google Places"
+  },
+  {
+    "name": "Dillon Insurance Agency",
+    "phone": "(785) 539-3048",
+    "website": "https://www.dillon-insurance.com/",
+    "formatted_address": "527 Fort Riley Blvd, Manhattan, KS 66502, USA",
+    "city_hint": "Manhattan",
+    "place_id": "ChIJJXjZHInSvYcRai63pNzCn7M",
+    "business_status": "OPERATIONAL",
+    "types": [
+      "establishment",
+      "insurance_agency",
+      "point_of_interest"
+    ],
+    "source": "Google Places"
+  },
+  {
+    "name": "Charlson & Wilson Insurance Agency",
+    "phone": "(785) 537-1600",
+    "website": "http://www.charlsonwilson.com/",
+    "formatted_address": "555 Poyntz Ave #205, Manhattan, KS 66502, USA",
+    "city_hint": "Manhattan",
+    "place_id": "ChIJA2OkXGLSvYcR3Gs5S6rfaqE",
+    "business_status": "OPERATIONAL",
+    "types": [
+      "establishment",
+      "insurance_agency",
+      "point_of_interest"
+    ],
+    "source": "Google Places"
+  },
+  {
+    "name": "Kramer Agency & Associates LLC American Family Insurance",
+    "phone": "(785) 776-4518",
+    "website": "https://www.amfam.com/agents/kansas/manhattan/lacey-kramer",
+    "formatted_address": "5410 Ledge Stone Dr #110, Manhattan, KS 66503, USA",
+    "city_hint": "Manhattan",
+    "place_id": "ChIJT5FHd0vNvYcRYZ6v6hB3-iI",
+    "business_status": "OPERATIONAL",
+    "types": [
+      "establishment",
+      "insurance_agency",
+      "point_of_interest"
+    ],
+    "source": "Google Places"
+  },
+  {
+    "name": "Tim Engle Agency, Inc. American Family Insurance",
+    "phone": "(785) 539-9200",
+    "website": "https://www.amfam.com/agents/kansas/manhattan/tim-engle",
+    "formatted_address": "3320 Anderson Ave, Manhattan, KS 66503, USA",
+    "city_hint": "Manhattan",
+    "place_id": "ChIJtbBrUbPNvYcRqli07V6_ONw",
+    "business_status": "OPERATIONAL",
+    "types": [
+      "establishment",
+      "insurance_agency",
+      "point_of_interest"
+    ],
+    "source": "Google Places"
+  },
+  {
+    "name": "Wild & Associates LLC American Family Insurance",
+    "phone": "(785) 560-3004",
+    "website": "https://www.amfam.com/agents/kansas/manhattan/rob-wild",
+    "formatted_address": "1601 Poyntz Ave, Manhattan, KS 66502, USA",
+    "city_hint": "Manhattan",
+    "place_id": "ChIJG0y2DBzNvYcR2m_S_N3GpII",
+    "business_status": "OPERATIONAL",
+    "types": [
+      "establishment",
+      "insurance_agency",
+      "point_of_interest"
+    ],
+    "source": "Google Places"
+  },
+  {
+    "name": "Pray Family Agency: Allstate Insurance",
+    "phone": "(785) 537-4101",
+    "website": "https://agents.allstate.com/pray-family-agency-manhattan-ks.html?utm_source=GMB&utm_medium=Website",
+    "formatted_address": "409 Poyntz Ave Ste A, Manhattan, KS 66502, USA",
+    "city_hint": "Manhattan",
+    "place_id": "ChIJze-BtgHTvYcRllJj36HoODY",
+    "business_status": "OPERATIONAL",
+    "types": [
+      "establishment",
+      "insurance_agency",
+      "point_of_interest"
+    ],
+    "source": "Google Places"
+  },
+  {
+    "name": "Jon J Harper Agency, Inc American Family Insurance",
+    "phone": "(785) 776-1855",
+    "website": "https://www.amfam.com/agents/kansas/manhattan/Jon-Harper",
+    "formatted_address": "701 Fort Riley Blvd, Manhattan, KS 66502, USA",
+    "city_hint": "Manhattan",
+    "place_id": "ChIJfwFjNYzNvYcR_ahE40_cdfg",
+    "business_status": "OPERATIONAL",
+    "types": [
+      "establishment",
+      "insurance_agency",
+      "point_of_interest"
+    ],
+    "source": "Google Places"
+  },
+  {
+    "name": "Legacy Solutions Insurance LLC",
+    "phone": "(785) 789-3441",
+    "website": "http://www.legacysolutionsks.com/",
+    "formatted_address": "2401 Seth Child Rd #140, Manhattan, KS 66503, USA",
+    "city_hint": "Manhattan",
+    "place_id": "ChIJrZeHjGHSvYcR9kof3E_D-Nc",
+    "business_status": "OPERATIONAL",
+    "types": [
+      "establishment",
+      "insurance_agency",
+      "point_of_interest"
+    ],
+    "source": "Google Places"
+  },
+  {
+    "name": "Raleigh Insurance Agency, Inc.",
+    "phone": "(785) 810-8050",
+    "website": "http://www.raleighinsurance.biz/",
+    "formatted_address": "121 N 8th St, Manhattan, KS 66502, USA",
+    "city_hint": "Manhattan",
+    "place_id": "ChIJq2NO3HzSvYcRXpsTh4xqMFg",
+    "business_status": "OPERATIONAL",
+    "types": [
+      "establishment",
+      "insurance_agency",
+      "point_of_interest"
+    ],
+    "source": "Google Places"
+  },
+  {
+    "name": "Holmes Agency LLC",
+    "phone": "",
+    "website": "https://www.holmesinsuranceagency.com/",
+    "formatted_address": "422 N Juliette Ave, Manhattan, KS 66502, USA",
+    "city_hint": "Manhattan",
+    "place_id": "ChIJb6YglmTSvYcRRy8QIuyaJ0A",
+    "business_status": "OPERATIONAL",
+    "types": [
+      "establishment",
+      "insurance_agency",
+      "point_of_interest"
+    ],
+    "source": "Google Places"
+  },
+  {
+    "name": "Al Langton Insurance",
+    "phone": "(785) 776-4091",
+    "website": "http://langtonins.com/",
+    "formatted_address": "1014 Poyntz Ave B, Manhattan, KS 66502, USA",
+    "city_hint": "Manhattan",
+    "place_id": "ChIJQw9MLHzSvYcRz4X-9CQXKKA",
+    "business_status": "OPERATIONAL",
+    "types": [
+      "establishment",
+      "insurance_agency",
+      "point_of_interest"
+    ],
+    "source": "Google Places"
+  },
+  {
+    "name": "Cura Insurance",
+    "phone": "(785) 370-0722",
+    "website": "https://curains.com/",
+    "formatted_address": "120 N 4th St Ste E, Manhattan, KS 66502, USA",
+    "city_hint": "Manhattan",
+    "place_id": "ChIJVZd20U3TvYcR5Lok62fFwwc",
+    "business_status": "OPERATIONAL",
+    "types": [
+      "establishment",
+      "insurance_agency",
+      "point_of_interest"
+    ],
+    "source": "Google Places"
+  },
+  {
+    "name": "Farmers Insurance - Jason Mallory",
+    "phone": "(785) 539-1511",
+    "website": "https://agents.farmers.com/ks/manhattan/jason-mallory?SourceID=AMPALFGMAG&utm_source=GMB&utm_medium=Local&y_source=1_ODA5MDY2NDUtNzE1LWxvY2F0aW9uLndlYnNpdGU=",
+    "formatted_address": "2601 Anderson Ave #102, Manhattan, KS 66502, USA",
+    "city_hint": "Manhattan",
+    "place_id": "ChIJOZE62sLNvYcRzU50uASZ2Us",
+    "business_status": "OPERATIONAL",
+    "types": [
+      "establishment",
+      "insurance_agency",
+      "point_of_interest"
+    ],
+    "source": "Google Places"
+  },
+  {
+    "name": "State Farm Insurance: Josh Salmans",
+    "phone": "(785) 776-8754",
+    "website": "http://www.joshsalmans.com/",
+    "formatted_address": "511 Leavenworth St, Manhattan, KS 66502, USA",
+    "city_hint": "Manhattan",
+    "place_id": "ChIJrdO-lWPSvYcRGEY_0Otd254",
+    "business_status": "OPERATIONAL",
+    "types": [
+      "establishment",
+      "insurance_agency",
+      "point_of_interest"
+    ],
+    "source": "Google Places"
+  },
+  {
+    "name": "Shelter Insurance - Mike Bean",
+    "phone": "(785) 537-1718",
+    "website": "https://www.shelterinsurance.com/CA/agent/MBEAN",
+    "formatted_address": "2308 Anderson Ave, Manhattan, KS 66502, USA",
+    "city_hint": "Manhattan",
+    "place_id": "ChIJR1XVupfNvYcRGQkoTNUsmBg",
+    "business_status": "OPERATIONAL",
+    "types": [
+      "establishment",
+      "insurance_agency",
+      "point_of_interest"
+    ],
+    "source": "Google Places"
+  },
+  {
+    "name": "Dillon Schwerdt American Family Insurance",
+    "phone": "(785) 539-6949",
+    "website": "https://www.amfam.com/agents/kansas/manhattan/dillon-schwerdt",
+    "formatted_address": "201 Seth Child Rd, Manhattan, KS 66502, USA",
+    "city_hint": "Manhattan",
+    "place_id": "ChIJ21sM6kDNvYcRVn7n2z_20M4",
+    "business_status": "OPERATIONAL",
+    "types": [
+      "establishment",
+      "insurance_agency",
+      "point_of_interest"
+    ],
+    "source": "Google Places"
+  },
+  {
+    "name": "Farmers Insurance - Kasandra Cavender",
+    "phone": "(785) 236-5995",
+    "website": "https://agents.farmers.com/ks/manhattan/kasandra-cavender/",
+    "formatted_address": "200 Southwind Pl #102, Manhattan, KS 66503, USA",
+    "city_hint": "Manhattan",
+    "place_id": "ChIJrVhGNhzNvYcRXWywtG0Unso",
+    "business_status": "OPERATIONAL",
+    "types": [
+      "establishment",
+      "insurance_agency",
+      "point_of_interest"
+    ],
+    "source": "Google Places"
+  },
+  {
+    "name": "Insur Kansas",
+    "phone": "(785) 410-3773",
+    "website": "http://www.insurkansas.com/",
+    "formatted_address": "8637 Eagle's Landing Cir, Manhattan, KS 66502, USA",
+    "city_hint": "Manhattan",
+    "place_id": "ChIJ1YkdGsDTvYcRSVnT1mPi6zQ",
+    "business_status": "OPERATIONAL",
+    "types": [
+      "establishment",
+      "insurance_agency",
+      "point_of_interest"
+    ],
+    "source": "Google Places"
+  },
+  {
+    "name": "Shelter Insurance - Joe McCarthy",
+    "phone": "(785) 537-1122",
+    "website": "https://www.shelterinsurance.com/CA/agent/JMCCARTHY",
+    "formatted_address": "2048 Tuttle Creek Blvd Ste B1, Manhattan, KS 66502, USA",
+    "city_hint": "Manhattan",
+    "place_id": "ChIJWTRyyg_SvYcRCyUP6GrHdVo",
+    "business_status": "OPERATIONAL",
+    "types": [
+      "establishment",
+      "insurance_agency",
+      "point_of_interest"
+    ],
+    "source": "Google Places"
+  },
+  {
+    "name": "Copeland Insurance Agency",
+    "phone": "(785) 485-2101",
+    "website": "http://www.copelandins.com/",
+    "formatted_address": "111 S Broadway St, Riley, KS 66531, USA",
+    "city_hint": "Ogden",
+    "place_id": "ChIJLc31PfC5vYcRuORtw_u89jk",
+    "business_status": "OPERATIONAL",
+    "types": [
+      "establishment",
+      "insurance_agency",
+      "point_of_interest"
+    ],
+    "source": "Google Places"
+  },
+  {
+    "name": "Tyner Insurance Group Inc.",
+    "phone": "(785) 539-1101",
+    "website": "https://www.tynerinsurancegroup.com/location/manhattan-office/",
+    "formatted_address": "613 Stadel Rd, Manhattan, KS 66502, USA",
+    "city_hint": "Ogden",
+    "place_id": "ChIJAQCMvWTSvYcRYdaGSGMuI-A",
+    "business_status": "OPERATIONAL",
+    "types": [
+      "establishment",
+      "insurance_agency",
+      "point_of_interest"
+    ],
+    "source": "Google Places"
+  },
+  {
+    "name": "Brian Green: Allstate Insurance",
+    "phone": "(785) 465-4276",
+    "website": "https://agents.allstate.com/brian-green-manhattan-ks.html",
+    "formatted_address": "3202 Kimball Ave, Manhattan, KS 66503, USA",
+    "city_hint": "Ogden",
+    "place_id": "ChIJN1S7Pc3NvYcR1YIZ8r4U6lY",
+    "business_status": "OPERATIONAL",
+    "types": [
+      "establishment",
+      "insurance_agency",
+      "point_of_interest"
+    ],
+    "source": "Google Places"
+  },
+  {
+    "name": "Alliance Agency Inc",
+    "phone": "(620) 241-0213",
+    "website": "http://www.allianceagencyks.com/",
+    "formatted_address": "121 W Marlin St #203, McPherson, KS 67460, USA",
+    "city_hint": "Riley",
+    "place_id": "ChIJcTr0zlpWu4cRU94sX67Y8yc",
+    "business_status": "OPERATIONAL",
+    "types": [
+      "establishment",
+      "insurance_agency",
+      "point_of_interest"
+    ],
+    "source": "Google Places"
+  },
+  {
+    "name": "Tiffany Neel American Family Insurance",
+    "phone": "(620) 503-3410",
+    "website": "https://www.amfam.com/agents/kansas/mcpherson/tiffany-neel",
+    "formatted_address": "118 N Ash St, McPherson, KS 67460, USA",
+    "city_hint": "Riley",
+    "place_id": "ChIJbVH1NhZXu4cRgH_ajqWYOQw",
+    "business_status": "OPERATIONAL",
+    "types": [
+      "establishment",
+      "insurance_agency",
+      "point_of_interest"
+    ],
+    "source": "Google Places"
+  },
+  {
+    "name": "Whitehill Insurance Services LLC",
+    "phone": "(620) 241-1918",
+    "website": "http://www.whitehillinsurance.com/",
+    "formatted_address": "901 W 1st St Ste 1, McPherson, KS 67460, USA",
+    "city_hint": "Riley",
+    "place_id": "ChIJL7oKF2pWu4cRFynF8FOdU0k",
+    "business_status": "OPERATIONAL",
+    "types": [
+      "establishment",
+      "insurance_agency",
+      "point_of_interest"
+    ],
+    "source": "Google Places"
+  },
+  {
+    "name": "L&LAdvisors - Jana McKinney",
+    "phone": "(620) 798-7170",
+    "website": "",
+    "formatted_address": "224 S Main St, McPherson, KS 67460, USA",
+    "city_hint": "Riley",
+    "place_id": "ChIJhyBmElJXu4cReLW31ArhdLA",
+    "business_status": "OPERATIONAL",
+    "types": [
+      "establishment",
+      "insurance_agency",
+      "point_of_interest"
+    ],
+    "source": "Google Places"
+  },
+  {
+    "name": "Trust Insurance Agency Kansas",
+    "phone": "(866) 227-9003",
+    "website": "",
+    "formatted_address": "3215 Claflin Rd, Manhattan, KS 66503, USA",
+    "city_hint": "Riley",
+    "place_id": "ChIJd5e_ALXNvYcR1L3RFVJPTlo",
+    "business_status": "OPERATIONAL",
+    "types": [
+      "establishment",
+      "insurance_agency",
+      "point_of_interest"
+    ],
+    "source": "Google Places"
+  },
+  {
+    "name": "Kevin Bryant - State Farm Insurance Agent",
+    "phone": "(785) 537-1809",
+    "website": "https://www.mykansasagent.com/?cmpid=VAFLKH_blm_0001",
+    "formatted_address": "1115 Westport Dr Ste a, Manhattan, KS 66502, USA",
+    "city_hint": "Leonardville",
+    "place_id": "ChIJrZg7f5_NvYcRQmqF0wUTSio",
+    "business_status": "OPERATIONAL",
+    "types": [
+      "establishment",
+      "insurance_agency",
+      "point_of_interest"
+    ],
+    "source": "Google Places"
+  },
+  {
+    "name": "Farm Bureau Financial Services Kansas Office",
+    "phone": "(785) 587-6000",
+    "website": "http://www.fbfs.com/?y_source=1_NTM0OTA4MzQtNzE1LWxvY2F0aW9uLndlYnNpdGU%3D",
+    "formatted_address": "2627 Kfb Plz, Manhattan, KS 66502, USA",
+    "city_hint": "Leonardville",
+    "place_id": "ChIJBZ4c33_OvYcRn60yBFVJKCY",
+    "business_status": "OPERATIONAL",
+    "types": [
+      "establishment",
+      "finance",
+      "health",
+      "insurance_agency",
+      "point_of_interest"
+    ],
+    "source": "Google Places"
+  },
+  {
+    "name": "Farm Bureau Financial Services: Joe Wilson",
+    "phone": "(785) 537-0339",
+    "website": "https://www.fbfs.com/find-an-agent/joewilson?y_source=1_OTY1MjQ5ODQtNzE1LWxvY2F0aW9uLndlYnNpdGU%3D",
+    "formatted_address": "2815 Anderson Ave C, Manhattan, KS 66502, USA",
+    "city_hint": "Leonardville",
+    "place_id": "ChIJmwfnnLDTvYcRuFUrHNG58K4",
+    "business_status": "OPERATIONAL",
+    "types": [
+      "establishment",
+      "insurance_agency",
+      "point_of_interest"
+    ],
+    "source": "Google Places"
+  },
+  {
+    "name": "Farmers Insurance - Bob Joyce",
+    "phone": "(785) 539-7323",
+    "website": "https://agents.farmers.com/ks/manhattan/bob-joyce?SourceID=AMPALFGMAG&utm_source=GMB&utm_medium=Local&y_source=1_MTU0NzI2Ni03MTUtbG9jYXRpb24ud2Vic2l0ZQ==",
+    "formatted_address": "8831 Quail Ln #204, Manhattan, KS 66502, USA",
+    "city_hint": "Randolph",
+    "place_id": "ChIJ03Ungn_SvYcRkI6nMlXhdO4",
+    "business_status": "OPERATIONAL",
+    "types": [
+      "establishment",
+      "insurance_agency",
+      "point_of_interest"
+    ],
+    "source": "Google Places"
+  },
+  {
+    "name": "Ryan Opat American Family Insurance",
+    "phone": "(785) 238-1987",
+    "website": "https://www.amfam.com/agents/kansas/junction-city/ryan-opat",
+    "formatted_address": "236 W 8th St, Junction City, KS 66441, USA",
+    "city_hint": "Ogden",
+    "place_id": "ChIJY0qwjx1JvIcRLkJMampMUq0",
+    "business_status": "OPERATIONAL",
+    "types": [
+      "establishment",
+      "insurance_agency",
+      "point_of_interest"
+    ],
+    "source": "Google Places"
+  },
+  {
+    "name": "Elliott Insurance Agency Inc",
+    "phone": "(620) 241-0753",
+    "website": "http://www.elliottagency.com/",
+    "formatted_address": "207 N Main St #103, McPherson, KS 67460, USA",
+    "city_hint": "Riley",
+    "place_id": "ChIJrw5dy1pWu4cRi-JcC0mpkiU",
+    "business_status": "OPERATIONAL",
+    "types": [
+      "establishment",
+      "insurance_agency",
+      "point_of_interest",
+      "real_estate_agency"
+    ],
+    "source": "Google Places"
+  },
+  {
+    "name": "The Dragastin Insurance Agency",
+    "phone": "(785) 510-6665",
+    "website": "https://www.dragastinagency.com/",
+    "formatted_address": "1109 E Crawford St, Clay Center, KS 67432, USA",
+    "city_hint": "Randolph",
+    "place_id": "ChIJg4t17NcLvYcRPnwEszZzI2c",
+    "business_status": "OPERATIONAL",
+    "types": [
+      "establishment",
+      "insurance_agency",
+      "point_of_interest"
+    ],
+    "source": "Google Places"
+  }
+]

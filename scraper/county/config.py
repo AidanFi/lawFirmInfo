@@ -1,4 +1,13 @@
 COUNTY_DEFINITIONS = {
+    "riley": {
+        "name": "Riley County",
+        "state": "KS",
+        "slug": "riley-county-ks",
+        "msa": "Manhattan",
+        "cities": ["Manhattan", "Ogden", "Riley", "Leonardville", "Randolph"],
+        "zip_codes": ["66502", "66503", "66506", "66517", "66531", "66449", "66554", "66505"],
+        "extra_search_terms": ["Manhattan KS", "Kansas State University", "Riley County Kansas"],
+    },
     "sedgwick": {
         "name": "Sedgwick County",
         "state": "KS",

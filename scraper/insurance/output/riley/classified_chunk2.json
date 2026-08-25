@@ -1,0 +1,19 @@
+[
+  {
+    "agent_name": "",
+    "agency_name": "Nationwide Insurance",
+    "company": "Nationwide",
+    "agent_type": "Captive",
+    "offers_auto": "Yes",
+    "offers_home": "Yes",
+    "website": "https://www.nationwide.com",
+    "phone_number": "(785) 775-5000",
+    "email": "",
+    "street_address": "923 Westport Pl",
+    "city": "Manhattan",
+    "county": "Riley",
+    "state": "KS",
+    "zip_code": "66502",
+    "source": "Nationwide.com corporate site confirms auto/home P&C lines; address/phone is a local Manhattan, KS office distinct from Nationwide's Columbus, OH HQ, consistent with a local exclusive-agent storefront (agent-specific subpage not found; verified brand-level product line only)."
+  }
+]

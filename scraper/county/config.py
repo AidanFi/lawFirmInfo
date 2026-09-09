@@ -1,4 +1,23 @@
 COUNTY_DEFINITIONS = {
+    "harris_tx": {
+        "name": "Harris County",
+        "state": "TX",
+        "slug": "harris-county-tx",
+        "msa": "Houston",
+        "cities": [
+            "Houston", "Pasadena", "Baytown", "Pearland", "Deer Park",
+            "La Porte", "Humble", "Katy", "Spring", "Cypress", "Tomball",
+            "Channelview", "South Houston", "Galena Park", "Jacinto City",
+            "Bellaire", "West University Place", "Southside Place",
+            "Piney Point Village", "Hunters Creek Village", "Hedwig Village",
+            "Bunker Hill Village", "Spring Valley Village", "Hilshire Village",
+            "Jersey Village", "Friendswood", "Webster", "Seabrook",
+            "Shoreacres", "Morgan's Point", "Nassau Bay", "Taylor Lake Village",
+            "El Lago", "Highlands", "Crosby", "Huffman", "Atascocita",
+            "Kingwood", "Aldine", "Klein", "Alief", "Fresno",
+        ],
+        "extra_search_terms": ["Houston TX", "Harris County Texas"],
+    },
     "riley": {
         "name": "Riley County",
         "state": "KS",

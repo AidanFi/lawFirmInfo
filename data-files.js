@@ -1,5 +1,5 @@
 (function () {
-  var STATE_LABELS = { KS: 'Kansas', MO: 'Missouri', OK: 'Oklahoma' };
+  var STATE_LABELS = { KS: 'Kansas', MO: 'Missouri', OK: 'Oklahoma', TX: 'Texas' };
   var CATEGORIES = [
     { key: 'firms', label: 'Law Firm Data' },
     { key: 'providers', label: 'Providers Data' },

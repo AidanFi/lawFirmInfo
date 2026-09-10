@@ -117,6 +117,10 @@ PLACEHOLDER_COMPANY = {
 # the solo bucket, same as a blank company field.
 PLACEHOLDER_RE = re.compile(r'^(none|n/?a|unknown|not applicable)\b', re.IGNORECASE)
 
+# A purely numeric "company" value (e.g. "1958") is a data-entry error —
+# not a real firm name — route to the solo bucket like other placeholders.
+NUMERIC_ONLY_RE = re.compile(r'^\d+$')
+
 # Self-declared non-practicing wording ("Retired", "Inactive", "Deceased")
 # — still shows "Eligible to practice" bar status, but not a firm and not
 # a currently-referable solo attorney either, so drop entirely.
@@ -189,7 +193,8 @@ _GENERIC_CORP_SUFFIX_RE = re.compile(
     re.IGNORECASE,
 )
 _ANY_LAW_INDICATOR_RE = re.compile(
-    r'\blaw\b|\blegal\b|\battorney|\bcounsel\b|\bpllc\b|\bllp\b|\bp\.?c\.?\b|\bp\.?a\.?\b|\besq\b',
+    r'\blaw\b|\blegal\b|\battorney|\bcounsel\b|\bpllc\b|\bllp\b|\bp\.?c\.?\b|\bp\.?a\.?\b|\besq\b|'
+    r'(?:&|and)\s*associates\b',
     re.IGNORECASE,
 )
 
@@ -202,7 +207,7 @@ CORP_NON_LAW_FRAGMENTS = [
     "phillips 66", "marathon oil", "occidental petroleum", "kinder morgan",
     "plains all american", "energy transfer", "targa resources", "nrg energy",
     "technipfmc", "schlumberger", "halliburton", "baker hughes",
-    "cheniere energy", "enterprise products", "calpine", "hilcorp", "motiva",
+    "cheniere energy", "enterprise products", "hilcorp", "motiva",
     "sempra", "tc energy", "totalenergies", "enbridge", "air liquide",
     "quanta services", "service corporation international", "woodside energy",
     "apache corporation", "eog resources", "westlake chemical", "westlake corporation",
@@ -225,10 +230,13 @@ CORP_NON_LAW_FRAGMENTS = [
     "texas children's", "texas state teachers association", "voltagrid",
     "hewlett packard", "imperial star solar", "first american title",
     "title insurance company", "chicago title", "stewart title",
-    "fidelity national title", "airswift",
+    "fidelity national title", "airswift", "reladyne", "commonspirit",
+    "the women's home", "hca houston", "memorial hermann",
+    "coastal prairie conservancy", "the harris center for mental health",
+    "charles river associates",
 ]
 # Short/ambiguous tokens that need whole-word matching to avoid false positives
-CORP_NON_LAW_WHOLE_WORDS = ["oxy", "slb", "kbr", "hines", "aramco", "pwc", "cargill"]
+CORP_NON_LAW_WHOLE_WORDS = ["oxy", "slb", "kbr", "hines", "aramco", "pwc", "cargill", "ubs", "calpine"]
 
 CORP_NON_LAW_RE = re.compile(
     "|".join(re.escape(f) for f in CORP_NON_LAW_FRAGMENTS)
@@ -383,7 +391,7 @@ def build_csv(slug: str) -> int:
             solos.append(e)
         elif NONPRACTICING_RE.search(company):
             dropped_placeholder += 1
-        elif key in PLACEHOLDER_COMPANY or PLACEHOLDER_RE.search(company):
+        elif key in PLACEHOLDER_COMPANY or PLACEHOLDER_RE.search(company) or NUMERIC_ONLY_RE.match(company):
             solos.append(e)
         else:
             raw_groups[key].append(e)
@@ -395,6 +403,7 @@ def build_csv(slug: str) -> int:
     print(f"{len(clusters)} firms after fuzzy-merge dedup")
 
     rows = []
+    row_contact_ids_list: list[list[str]] = []
     today = date.today().isoformat()
     dropped_non_law = 0
     dropped_out_of_county = 0
@@ -439,6 +448,7 @@ def build_csv(slug: str) -> int:
             "date_pulled": today,
             "source": "State Bar of Texas Member Directory",
         })
+        row_contact_ids_list.append([m.get("contact_id", "") for m in members if m.get("contact_id")])
 
     dropped_solo_non_law = 0
     for e in solos:
@@ -472,18 +482,31 @@ def build_csv(slug: str) -> int:
             "date_pulled": today,
             "source": "State Bar of Texas Member Directory",
         })
+        row_contact_ids_list.append([e["contact_id"]] if e.get("contact_id") else [])
 
     for r in rows:
         for field in ("law_firm_name", "city", "street_address"):
             r[field] = re.sub(r"\s+", " ", r[field]).strip()
 
-    rows.sort(key=lambda r: (r["city"], r["law_firm_name"]))
+    # Sort rows and their parallel contact-id lists together so the
+    # sidecar mapping (written below, keyed by final name|||city) stays
+    # correct after reordering.
+    order = sorted(range(len(rows)), key=lambda i: (rows[i]["city"], rows[i]["law_firm_name"]))
+    rows = [rows[i] for i in order]
+    row_contact_ids_list = [row_contact_ids_list[i] for i in order]
 
     out_path = DATA_DIR / f"{slug}.csv"
     with open(out_path, "w", newline="", encoding="utf-8") as f:
         writer = csv.DictWriter(f, fieldnames=FIELDNAMES)
         writer.writeheader()
         writer.writerows(rows)
+
+    sidecar = {
+        f"{r['law_firm_name']}|||{r['city']}": ids
+        for r, ids in zip(rows, row_contact_ids_list)
+    }
+    sidecar_path = CACHE_DIR / f"{slug}_row_contact_ids.json"
+    sidecar_path.write_text(json.dumps(sidecar, indent=1))
 
     print(f"Dropped {dropped_non_law} non-law firm clusters, {dropped_solo_non_law} non-law solo entries, "
           f"{dropped_out_of_county} out-of-county entries")

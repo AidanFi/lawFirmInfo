@@ -96,7 +96,8 @@ def extract_email(text: str, firm_domain: str = "") -> str:
     text = _strip_noise(text)
     found = set()
     for m in _MAILTO_RE.finditer(text):
-        addr = m.group(1).split("?")[0].strip()
+        from urllib.parse import unquote
+        addr = unquote(m.group(1).split("?")[0]).strip()
         if "@" in addr:
             found.add(addr.lower())
     for m in _EMAIL_RE.finditer(text):

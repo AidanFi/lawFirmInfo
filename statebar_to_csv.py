@@ -406,6 +406,8 @@ CORP_NON_LAW_FRAGMENTS = [
     "rocktop technologies",
     "b-29 family holdings", "topgolf", "weitzman", "skyview group",
     "raices", "dell technologies", "flexbase technologies",
+    "nautilus group", "usaig", "island technology", "cetera financial group",
+    "selene finance", "selene title", "marubeni-itochu steel group",
     "global war on terrorism memorial foundation", "panasonic corporation",
     "southland industries", "trane technologies",
     "briggs freeman sotheby's international realty", "neovia logistics",

@@ -54,6 +54,7 @@ COUNTY_META = {
     "harris-county-tx": {"name": "Harris", "state": "TX", "msa": "Houston"},
     "dallas-county-tx": {"name": "Dallas", "state": "TX", "msa": "Dallas-Fort Worth"},
     "tarrant-county-tx": {"name": "Tarrant", "state": "TX", "msa": "Dallas-Fort Worth"},
+    "bexar-county-tx": {"name": "Bexar", "state": "TX", "msa": "San Antonio"},
 }
 
 # The State Bar's "County" search field does not strictly mean "office is
@@ -99,6 +100,14 @@ COUNTY_CITY_ALLOWLIST = {
         "Westworth Village", "Edgecliff Village", "Lake Worth", "Pantego",
         "Dalworthington Gardens", "Westlake", "Trophy Club", "Blue Mound",
         "Haslet", "Richland Hills",
+    ]},
+    "bexar-county-tx": {c.lower() for c in [
+        "San Antonio", "Alamo Heights", "Balcones Heights", "Castle Hills",
+        "China Grove", "Converse", "Elmendorf", "Grey Forest", "Helotes",
+        "Hill Country Village", "Hollywood Park", "Kirby", "Leon Valley",
+        "Live Oak", "Olmos Park", "Schertz", "Selma", "Shavano Park",
+        "Somerset", "St. Hedwig", "Terrell Hills", "Universal City",
+        "Von Ormy", "Windcrest", "Fair Oaks Ranch",
     ]},
 }
 _CITY_ABBR_FIX = {
@@ -178,7 +187,9 @@ GOVT_PATTERNS = re.compile(
     r'child\s+protective\s+services|department\s+of\s+family|'
     r'independent\s+school\s+district|\bisd\b|school\s+district|'
     r'\bcity\s+of\s+\w|\bcounty\s+of\s+\w|'
-    r'(harris|dallas|tarrant)\s+(county|co\.|cty\.?)(?!\s+.*(law|pllc|llp))|\bdallas\s+da\b|'
+    r'(harris|dallas|tarrant|bexar)\s+(county|co\.|cty\.?)(?!\s+.*(law|pllc|llp))|\bdallas\s+da\b|'
+    r'\bcscd\b|dispute\s+resolution\s+center|'
+    r'\bprecinct\s+\d+\b|'
     r'\bdist\.?\s+attys?\.?\s+ofc\b|\bdist\.?\s+atty\b|\bmagistrate\b|'
     r'juvenile\s+(probation|court|services)|family\s+court\s+services|'
     r'\bwater\s+district\b|employees.?\s+retirement\s+fund|'
@@ -212,6 +223,8 @@ GOVT_PATTERNS = re.compile(
     r'\bfederal\s+judiciary\b|'
     r'u\.?\s?s\.?\s+securities\s+and\s+exchange\s+commission|'
     r'\bjag\s+corps\b|judge\s+advocate\s+general|'
+    r'united\s+states\s+air\s+force|u\.?\s?s\.?\s+air\s+force|'
+    r'united\s+states\s+army|united\s+states\s+navy|united\s+states\s+marine|'
     r'small\s+business\s+administration|'
     r'state\s+office\s+of\s+administrative\s+hearings|'
     r'executive\s+office\s+for\s+immigration\s+review|'
@@ -253,6 +266,9 @@ DEDICATED_GOVT_BUILDINGS = {
         "401 w belknap", "401 west belknap", "100 n calhoun",
         "200 e weatherford",
     ],
+    "bexar-county-tx": [
+        "101 w nueva", "100 dolorosa", "300 dolorosa",
+    ],
 }
 
 
@@ -287,7 +303,7 @@ INHOUSE_TITLE_RE = re.compile(
 GUARDED_CORP_RE = re.compile(
     r'\bmidstream\b|\bventures\b|progressive insurance|state farm|\bgeico\b|'
     r'liberty mutual|nationwide insurance|farmers insurance|\ballstate\b|'
-    r'discover financial',
+    r'discover financial|\busaa\b',
     re.IGNORECASE,
 )
 _EXPLICIT_LAW_OFFICE_RE = re.compile(
@@ -491,6 +507,22 @@ CORP_NON_LAW_FRAGMENTS = [
     "texas rangers baseball club", "firstcash", "interbank",
     "double eagle energy", "double eagle", "ferrovial construction", "ferrovial",
     "general services administration",
+    "brooke army medical center", "cps energy",
+    "catholic charities archdiocese of san antonio",
+    "the archdiocese of san antonio", "goodwill san antonio",
+    "haven for hope of bexar county", "kipp san antonio",
+    "opportunity home san antonio", "port san antonio",
+    "san antonio board of realtors", "san antonio community law ctr",
+    "san antonio fire & police pension fund",
+    "san antonio fire and police pension fund",
+    "san antonio legal services association", "san antonio water system",
+    "seaworld san antonio", "the children's hospital of san antonio foundation",
+    "ut health san antonio", "ut san antonio",
+    "via metropolitan transit", "texas riogrande legal aid",
+    "southwest research institute", "h-e-b, lp", "h-e-b lp",
+    "lewis energy group", "zachry group", "broadway bank",
+    "alamo colleges district", "defense health agency",
+    "group legal services", "las aguilas",
     "global war on terrorism memorial foundation", "panasonic corporation",
     "southland industries", "trane technologies",
     "briggs freeman sotheby's international realty", "neovia logistics",
@@ -505,6 +537,16 @@ CORP_NON_LAW_WHOLE_WORDS = [
     "dart", "ey", "finra", "lument", "ibm", "epa", "citi", "fossil", "mmc", "ati",
     "bnsf",
 ]
+
+# Company names that are also common surnames — a whole-word or substring
+# match would wrongly catch a PERSON whose name happens to contain the
+# word (found in the wild: "Dolores Carina Valero" in Harris County is a
+# real attorney with the surname Valero, not the energy company). Only
+# exclude when the ENTIRE normalized name equals one of these, or is
+# "Valero" + a distinctive corporate word — never a bare substring/whole-
+# word match against an otherwise personal-name-shaped string.
+_EXACT_NON_LAW_NAMES = {"valero"}
+_VALERO_CORP_RE = re.compile(r'\bvalero\s+(energy|way)\b', re.IGNORECASE)
 
 CORP_NON_LAW_RE = re.compile(
     "|".join(re.escape(f) for f in CORP_NON_LAW_FRAGMENTS)
@@ -601,6 +643,10 @@ def is_non_law(name: str) -> bool:
         return False
     if normalize_key(name) in _CONFIRMED_LAW_FIRM_EXACT:
         return False
+    if normalize_key(name) in _EXACT_NON_LAW_NAMES:
+        return True
+    if _VALERO_CORP_RE.search(name):
+        return True
     if GOVT_PATTERNS.search(name):
         return True
     if CORP_NON_LAW_RE.search(name):

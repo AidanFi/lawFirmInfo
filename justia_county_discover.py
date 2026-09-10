@@ -53,6 +53,12 @@ COUNTY_CITIES = {
         "Crowley", "Benbrook", "White Settlement", "Forest Hill",
         "Kennedale", "Everman", "Lake Worth",
     ],
+    "bexar-county-tx": [
+        "San Antonio", "Alamo Heights", "Castle Hills", "Converse",
+        "Helotes", "Leon Valley", "Live Oak", "Olmos Park", "Schertz",
+        "Shavano Park", "Terrell Hills", "Universal City", "Windcrest",
+        "Fair Oaks Ranch",
+    ],
 }
 CITY_SLUGS = {
     "West University Place": "west-university-place",

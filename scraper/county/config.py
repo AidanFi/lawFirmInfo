@@ -51,6 +51,21 @@ COUNTY_DEFINITIONS = {
         ],
         "extra_search_terms": ["Fort Worth TX", "Tarrant County Texas"],
     },
+    "bexar_tx": {
+        "name": "Bexar County",
+        "state": "TX",
+        "slug": "bexar-county-tx",
+        "msa": "San Antonio",
+        "cities": [
+            "San Antonio", "Alamo Heights", "Balcones Heights", "Castle Hills",
+            "China Grove", "Converse", "Elmendorf", "Grey Forest", "Helotes",
+            "Hill Country Village", "Hollywood Park", "Kirby", "Leon Valley",
+            "Live Oak", "Olmos Park", "Schertz", "Selma", "Shavano Park",
+            "Somerset", "St. Hedwig", "Terrell Hills", "Universal City",
+            "Von Ormy", "Windcrest", "Fair Oaks Ranch",
+        ],
+        "extra_search_terms": ["San Antonio TX", "Bexar County Texas"],
+    },
     "riley": {
         "name": "Riley County",
         "state": "KS",

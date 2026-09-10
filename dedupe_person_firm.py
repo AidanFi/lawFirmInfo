@@ -34,19 +34,21 @@ FIELDNAMES = [
 
 # A comma is only reliable evidence of "multiple partner surnames joined"
 # (e.g. "Stafford, Keyser, Bromberg") if what remains after stripping every
-# trailing bare corporate/entity suffix AND generic professional-title
-# phrase STILL has a comma in it — a comma immediately before nothing but
-# such a suffix ("Hendricks Interests, LLC") is NOT a law firm, and
-# neither is a SINGLE person's name followed by a comma-separated title
-# ("Michael J. Henry, Atty at Law, P.C." is one person, not multiple
-# partners — found in the wild: P.C./P.A. and "Atty/Attorney at Law"
-# weren't in the original strip list, so a single-owner PC with that
-# exact comma-separated phrasing was wrongly treated as strong evidence
-# of a genuine multi-partner firm name). Strip repeatedly since more than
-# one such trailing fragment can be chained.
+# trailing bare corporate/entity suffix, generic professional-title
+# phrase, AND generational suffix STILL has a comma in it — a comma
+# immediately before nothing but such a suffix ("Hendricks Interests,
+# LLC") is NOT a law firm, and neither is a SINGLE person's name followed
+# by a comma-separated title ("Michael J. Henry, Atty at Law, P.C." is
+# one person, not multiple partners) or a comma-separated generational
+# suffix ("Roy R. Barrera, Jr., P.C." is one person, not "Barrera" and
+# "Jr." as two different partners — found in the wild: stripping only
+# the trailing P.C. left ", Jr." still attached with its own comma,
+# which would otherwise misread as genuine multi-partner evidence).
+# Strip repeatedly since more than one such trailing fragment can chain.
 _TRAILING_ENTITY_SUFFIX_RE = re.compile(
-    r',?\s*(llc|inc\.?|incorporated|corp\.?|corporation|ltd\.?|co\.?|'
-    r'p\.?c\.?|p\.?a\.?|atty\.?\s+at\s+law|attorney\s+at\s+law)\s*$',
+    r',?\s*\b(llc|inc\.?|incorporated|corp\.?|corporation|ltd\.?|co\.?|'
+    r'p\.?c\.?|p\.?a\.?|atty\.?\s+at\s+law|attorney\s+at\s+law|'
+    r'jr\.?|sr\.?|ii|iii|iv)\s*$',
     re.IGNORECASE,
 )
 _MULTI_SURNAME_RE = re.compile(r'&|\band\b', re.IGNORECASE)

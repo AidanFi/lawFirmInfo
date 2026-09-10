@@ -13,6 +13,33 @@ from pathlib import Path
 
 sys.path.insert(0, ".")
 from scraper.utils.normalize import are_same_firm
+from statebar_to_csv import is_non_law
+from scraper.county.enhance import (
+    _LEGAL_RE, _LEGAL_SUFFIX_RE, _NON_LEGAL_INDICATORS, _NONLEGAL_RE,
+)
+
+
+_EXTRA_NON_LEGAL = (
+    "bookkeeping", "accounting", "cpa", "notary", "tax service",
+    "tax preparation", "consulting", "escrow", "title company",
+)
+
+
+def _is_plausible_law_name(name: str) -> bool:
+    """Strict check for appending a BRAND NEW firm sourced only from
+    Foursquare — deliberately does NOT trust "came from a legal-category
+    API search" the way scraper.county.enhance's merge logic does for
+    established multi-source pipelines, since that same category
+    filtering was independently found to include consumer-finance/retail
+    chains that Foursquare mistags. A bare entity suffix (LLC/PC/PA) is
+    NOT enough on its own — that matches any small business — so this
+    requires an explicit legal keyword in the name."""
+    lower = name.lower()
+    if any(ind in lower for ind in _NON_LEGAL_INDICATORS) or any(ind in lower for ind in _EXTRA_NON_LEGAL):
+        return False
+    if _NONLEGAL_RE.search(lower):
+        return False
+    return bool(_LEGAL_RE.search(lower))
 
 DATA_DIR = Path("app/county-data")
 CACHE_DIR = Path("data/county")
@@ -68,6 +95,8 @@ def main(slug: str):
                 matched["source"] = f"{src}; {extra}" if src else extra
         else:
             if not sf.get("phone") and not sf.get("website"):
+                continue
+            if is_non_law(name) or not _is_plausible_law_name(name):
                 continue
             new_row = {
                 "law_firm_name": name,

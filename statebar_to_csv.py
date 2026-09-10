@@ -54,6 +54,52 @@ COUNTY_META = {
     "harris-county-tx": {"name": "Harris", "state": "TX", "msa": "Houston"},
 }
 
+# The State Bar's "County" search field does not strictly mean "office is
+# physically located in this county" — verified in the wild: searching
+# County=Harris returned ~500 attorneys whose listed city is Dallas,
+# Austin, San Antonio, The Woodlands (Montgomery Co.), Sugar Land (Fort
+# Bend Co.), even New York/Chicago/London (a national firm's other-office
+# attorneys whose bar record wasn't updated, or "county" reflecting
+# something else like a bar-district/mailing address). A non-blank city
+# outside this set is excluded outright — a "Harris County" file should
+# not contain firms actually located elsewhere. A BLANK city is kept
+# (can't disprove it's local, and the inclusion policy favors keeping
+# incomplete-but-plausible entries over guessing).
+HARRIS_COUNTY_CITIES = {c.lower() for c in [
+    "Houston", "Pasadena", "Baytown", "Pearland", "Deer Park", "La Porte",
+    "Humble", "Katy", "Spring", "Cypress", "Tomball", "Channelview",
+    "South Houston", "Galena Park", "Jacinto City", "Bellaire",
+    "West University Place", "Southside Place", "Piney Point Village",
+    "Hunters Creek Village", "Hedwig Village", "Bunker Hill Village",
+    "Spring Valley Village", "Hilshire Village", "Jersey Village",
+    "Friendswood", "Webster", "Seabrook", "Shoreacres", "Morgan's Point",
+    "Nassau Bay", "Taylor Lake Village", "El Lago", "Highlands", "Crosby",
+    "Huffman", "Atascocita", "Kingwood", "Aldine", "Klein", "Alief",
+    "Fresno", "Barker", "Hockley",
+]}
+_CITY_ABBR_FIX = {
+    "w univ pl": "west university place",
+    "jersey vlg": "jersey village",
+}
+
+
+def _normalize_city(city: str) -> tuple[str, str]:
+    """Returns (display, lookup_key) — strips trailing ', TX'/', TX 77002'
+    /', DC' style suffixes and fixes known abbreviations, WITHOUT changing
+    what county a city that legitimately is NOT Harris resolves to."""
+    c = (city or "").strip()
+    c = re.sub(r",?\s*tx\b.*$", "", c, flags=re.IGNORECASE).strip()
+    c = re.sub(r",?\s*dc\b.*$", "", c, flags=re.IGNORECASE).strip()
+    key = _CITY_ABBR_FIX.get(c.lower(), c.lower())
+    return c, key
+
+
+def is_in_harris_county(city: str) -> bool:
+    if not city or not city.strip():
+        return True
+    _, key = _normalize_city(city)
+    return key in HARRIS_COUNTY_CITIES
+
 # Self-reported "company" values that are not a real firm name — route
 # these attorneys to the solo-practitioner bucket instead of merging
 # unrelated people into a fake mega-firm.
@@ -91,10 +137,16 @@ GOVT_PATTERNS = re.compile(
     r'\bcity of \w|\bcounty of \w|harris county(?! .*(law|pllc|llp))|'
     r'state of texas|texas department|texas legislature|texas workforce|'
     r'\bdepartment of \w|\bdept\.? of \w|internal revenue service|\birs\b|'
-    r'social security administration|federal bureau|u\.?s\.? department|'
+    r'social security administration|\bssa\b|office of hearings|federal bureau|u\.?s\.? department|'
+    r'port houston|port authority|port of houston|'
     r'u\.?s\.? district court|united states district court|'
     r'court of appeals|supreme court of texas|texas supreme court|'
-    r'college of law|law center|law school|school of law|\buniversity\b)',
+    r'college of law|law center|law school|school of law|\buniversity\b|'
+    r'\bjudge\b|\bjudicial district\b|\bdistrict court\b|\bcourt at law\b|'
+    r'\bcivil district\b|\bcriminal district\b|\bfamily district\b|'
+    r'\bbankruptcy court\b|\biv-d court\b|\bcourt receiver\b|\blaw clerk\b|'
+    r'\bbar association\b|\bcourt reporting\b|\badministrative judicial region\b|'
+    r'\btexas business court\b|\bcourt administration\b|\bchildren.?s court\b)',
     re.IGNORECASE,
 )
 
@@ -105,6 +157,39 @@ GOVT_PATTERNS = re.compile(
 INHOUSE_TITLE_RE = re.compile(
     r'general counsel|managing counsel|deputy counsel|chief legal officer|'
     r'\bsubsidiary of\b',
+    re.IGNORECASE,
+)
+
+# Insurance carriers and "midstream"/"ventures" energy-investment companies
+# — in-house employers, not referral firms. Guarded (unlike the harder
+# CORP_NON_LAW_FRAGMENTS below): some insurers retain a captive staff-counsel
+# "Law Office of X" that legitimately IS a real law office even though it
+# names its sole client, e.g. "Law Office of Fareed Saba (Progressive
+# Insurance)" (12 attorneys) — so this only excludes when no actual
+# law-office/firm/attorney phrase is also present.
+GUARDED_CORP_RE = re.compile(
+    r'\bmidstream\b|\bventures\b|progressive insurance|state farm|\bgeico\b|'
+    r'liberty mutual|nationwide insurance|farmers insurance|\ballstate\b|'
+    r'discover financial',
+    re.IGNORECASE,
+)
+_EXPLICIT_LAW_OFFICE_RE = re.compile(
+    r'law office|law firm|attorneys? at law|\bpllc\b|\bllp\b', re.IGNORECASE,
+)
+
+# General rule for the whole class of corporate in-house-counsel employers
+# an exact-name list can never fully enumerate: a name ending in a bare
+# generic corporate-entity word, with no law indicator anywhere in it, is
+# essentially never a real referral law firm — verified in the wild
+# (title companies, a distribution company, a trust company, a property
+# company all matched this shape and were confirmed non-law). Real TX law
+# firms use PLLC/LLP/P.C./P.A. or an explicit "Law"/"Attorney" word.
+_GENERIC_CORP_SUFFIX_RE = re.compile(
+    r'\b(company|corporation|incorporated|corp\.?|inc\.?|holdings|enterprises)\s*$',
+    re.IGNORECASE,
+)
+_ANY_LAW_INDICATOR_RE = re.compile(
+    r'\blaw\b|\blegal\b|\battorney|\bcounsel\b|\bpllc\b|\bllp\b|\bp\.?c\.?\b|\bp\.?a\.?\b|\besq\b',
     re.IGNORECASE,
 )
 
@@ -131,9 +216,19 @@ CORP_NON_LAW_FRAGMENTS = [
     "woodforest national bank", "prosperity bank", "cadence bank",
     "sysco corporation", "waste management", "waste connections",
     "united airlines", "academy sports", "hines interests",
+    "saudi aramco", "axens north america", "ceva logistics", "cargill",
+    "conga corporation", "contourglobal", "inception fertility",
+    "intuitive machines", "net power", "pricewaterhousecoopers",
+    "rsm us llp", "quinbrook infrastructure", "grant thornton",
+    "bdo usa", "mckinsey", "boston consulting group", "bain & company",
+    "repsol renewables", "saexploration", "swift current energy",
+    "texas children's", "texas state teachers association", "voltagrid",
+    "hewlett packard", "imperial star solar", "first american title",
+    "title insurance company", "chicago title", "stewart title",
+    "fidelity national title", "airswift",
 ]
 # Short/ambiguous tokens that need whole-word matching to avoid false positives
-CORP_NON_LAW_WHOLE_WORDS = ["oxy", "slb", "kbr", "hines"]
+CORP_NON_LAW_WHOLE_WORDS = ["oxy", "slb", "kbr", "hines", "aramco", "pwc", "cargill"]
 
 CORP_NON_LAW_RE = re.compile(
     "|".join(re.escape(f) for f in CORP_NON_LAW_FRAGMENTS)
@@ -205,6 +300,10 @@ def is_non_law(name: str) -> bool:
     if CORP_NON_LAW_RE.search(name):
         return True
     if INHOUSE_TITLE_RE.search(name) and not LAW_FIRM_SUFFIX_RE.search(name):
+        return True
+    if GUARDED_CORP_RE.search(name) and not _EXPLICIT_LAW_OFFICE_RE.search(name):
+        return True
+    if _GENERIC_CORP_SUFFIX_RE.search(name) and not _ANY_LAW_INDICATOR_RE.search(name):
         return True
     return False
 
@@ -298,6 +397,7 @@ def build_csv(slug: str) -> int:
     rows = []
     today = date.today().isoformat()
     dropped_non_law = 0
+    dropped_out_of_county = 0
 
     for members in clusters:
         display_name = _mode([m["company"] for m in members])
@@ -313,6 +413,10 @@ def build_csv(slug: str) -> int:
             dropped_non_law += 1
             continue
         city = _mode([m.get("city", "") for m in members])
+        if not is_in_harris_county(city):
+            dropped_out_of_county += 1
+            continue
+        city = _normalize_city(city)[0] or city
         street = _mode([m.get("street", "") for m in members])
         zipc = _mode([m.get("zip", "") for m in members])
         phone = _mode([m.get("phone", "") for m in members])
@@ -344,12 +448,17 @@ def build_csv(slug: str) -> int:
         if is_non_law(name):
             dropped_solo_non_law += 1
             continue
+        solo_city = e.get("city", "")
+        if not is_in_harris_county(solo_city):
+            dropped_out_of_county += 1
+            continue
+        solo_city = _normalize_city(solo_city)[0] or solo_city
         rows.append({
             "law_firm_name": name,
             "website": "",
             "google_business_profile": "",
             "legal_directory_listing": "",
-            "city": e.get("city", ""),
+            "city": solo_city,
             "state": meta["state"],
             "county": meta["name"],
             "phone_number": e.get("phone", ""),
@@ -376,7 +485,8 @@ def build_csv(slug: str) -> int:
         writer.writeheader()
         writer.writerows(rows)
 
-    print(f"Dropped {dropped_non_law} non-law firm clusters, {dropped_solo_non_law} non-law solo entries")
+    print(f"Dropped {dropped_non_law} non-law firm clusters, {dropped_solo_non_law} non-law solo entries, "
+          f"{dropped_out_of_county} out-of-county entries")
     print(f"Wrote {len(rows)} firm rows to {out_path}")
     return len(rows)
 

@@ -13,7 +13,7 @@ proven for provider (chiro/PT) website discovery in enrich_providers_v4.py.
 """
 import re
 import time
-from urllib.parse import urlparse
+from urllib.parse import urljoin, urlparse
 
 import requests
 import warnings
@@ -36,6 +36,8 @@ _STRIP_RE = re.compile(
 _GENERIC_WORDS = frozenset({
     "law", "legal", "office", "offices", "firm", "group", "attorney", "attorneys",
     "and", "the", "of", "at", "for", "county", "general", "practice",
+    "company", "corporation", "incorporated", "corp", "inc", "holdings",
+    "enterprises", "services",
 })
 
 _BAD_HOST_SUFFIXES = (
@@ -91,6 +93,15 @@ def domain_candidates(firm_name: str) -> list[str]:
         candidates.append(f"https://www.{a}{b}law.com")
         candidates.append(f"https://www.{b}{a}law.com")
 
+    # Multi-partner boutique firms ("Martin, Disiere, Jefferson & Wisdom" ->
+    # [martin, disiere, jefferson, wisdom]) very commonly register an
+    # acronym domain instead of spelling out every surname.
+    if len(words) >= 3:
+        acronym = "".join(w[0] for w in words)
+        candidates.append(f"https://www.{acronym}law.com")
+        candidates.append(f"https://www.{acronym}.com")
+        candidates.append(f"https://www.{acronym}llp.com")
+
     # dedupe, preserve order
     seen = set()
     out = []
@@ -99,6 +110,16 @@ def domain_candidates(firm_name: str) -> list[str]:
             seen.add(c)
             out.append(c)
     return out
+
+
+def _fetch(url: str, timeout: int = 6):
+    try:
+        r = requests.get(url, headers=HEADERS, timeout=timeout, verify=False, allow_redirects=True)
+        if r.status_code < 400:
+            return r
+    except Exception:
+        pass
+    return None
 
 
 def _host_is_directory(url: str) -> bool:
@@ -123,12 +144,51 @@ def _location_tokens(city: str, state: str, zip_code: str, phone: str) -> list[s
     return [t for t in toks if t]
 
 
+_PROXIMITY_WINDOW = 250
+
+
+def _token_positions(token: str, text: str) -> list[int]:
+    if token.isdigit() and len(token) == 7:
+        pat = re.compile(re.escape(token[:3]) + r"[\s\-.]{0,2}" + re.escape(token[3:]))
+        return [m.start() for m in pat.finditer(text)]
+    return [m.start() for m in re.finditer(re.escape(token), text)]
+
+
+def _find_office_subpage(base_url: str, home_text: str, city: str) -> str | None:
+    """Large multi-office firms rarely put a location's phone/address on
+    the homepage itself — it lives on a dedicated offices/locations page.
+    Follow the first same-domain link whose href or anchor text names the
+    target city, so validation has real per-office content to check."""
+    if not city:
+        return None
+    for m in re.finditer(r'href="([^"]+)"[^>]{0,80}>([^<]{0,80})', home_text, re.IGNORECASE):
+        href, anchor = m.group(1), m.group(2)
+        if city.lower() in (href + " " + anchor).lower():
+            candidate = urljoin(base_url, href)
+            if urlparse(candidate).netloc == urlparse(base_url).netloc:
+                return candidate
+    return None
+
+
 def validate_candidate(url: str, firm_name: str, city: str = "", state: str = "",
                         zip_code: str = "", phone: str = "", timeout: int = 6) -> bool:
-    """Fetch the page and require it mentions the firm/attorney, a law-practice
-    term, AND a location signal (city/zip/area code) — a bare name+law-term
-    match is not enough for common surnames (e.g. "Esparza Law Office" and
-    "Westbrook Law" both exist as unrelated firms in other states)."""
+    """Fetch the page and require distinctive name tokens AND a location
+    signal (city/zip/phone) to appear TOGETHER in the same region of the
+    page — not just independently anywhere on it.
+
+    A bare "does this word appear somewhere on the page" check is not
+    enough: verified in the wild that a large multi-office national firm's
+    homepage will independently mention both an unrelated solo attorney's
+    surname (e.g. some attorney named "Baker" appears somewhere on
+    bakerlaw.com/BakerHostetler's huge site) AND the target city (in an
+    "our offices" list) with zero connection between the two — e.g.
+    "Bryan W. Baker" wrongly matched BakerHostetler's real site this way,
+    and "Jeanie Tate Goodwin" wrongly matched Goodwin Procter's site
+    because an unrelated "Tate" happened to appear somewhere on their
+    site too. Requiring proximity (the name and the location appearing
+    within the same ~250-character window) is what actually distinguishes
+    "this page is really about this person/firm" from "this page is a
+    big site that happens to contain these words somewhere"."""
     if _host_is_directory(url):
         return False
     try:
@@ -146,31 +206,46 @@ def validate_candidate(url: str, firm_name: str, city: str = "", state: str = ""
     if not has_law_term:
         return False
 
-    # Require at least one distinctive name token to appear on the page
     words = [w for w in _tokens(firm_name) if len(w) >= 4]
-    if words and not any(w in text for w in words):
-        return False
-
-    # Require a location signal — this is what actually distinguishes the real
-    # local firm from a same-named firm/squatter in a different state. Phone
-    # match requires the digits appear together with only light separators
-    # (not a bare substring of page digits, which false-positives on
-    # minified JS/CSS hex strings).
     loc_tokens = _location_tokens(city, state, zip_code, phone)
-    matched = False
-    for t in loc_tokens:
-        if t.isdigit() and len(t) == 7:
-            phone_re = re.compile(re.escape(t[:3]) + r"[\s\-.]{0,2}" + re.escape(t[3:]))
-            if phone_re.search(text):
-                matched = True
-                break
-        elif t in text:
-            matched = True
-            break
-    if loc_tokens and not matched:
+
+    # No location signal at all (blank city/zip/phone) — there is nothing
+    # to cross-check a guessed domain against, so refuse to validate
+    # rather than accept an ungrounded name-only match.
+    if not loc_tokens:
         return False
 
-    return True
+    name_required = 2 if len(words) >= 3 else max(1, len(words))
+    if _proximity_match(text, words, loc_tokens, name_required):
+        return True
+
+    # Large multi-office firms often don't put phone/address on the
+    # homepage at all (it lives on a dedicated offices/locations page) —
+    # give the candidate one more chance there before rejecting.
+    subpage_url = _find_office_subpage(r.url, r.text, city)
+    if subpage_url:
+        sub_r = _fetch(subpage_url, timeout=timeout)
+        if sub_r and _proximity_match(sub_r.text.lower(), words, loc_tokens, name_required):
+            return True
+
+    return False
+
+
+def _proximity_match(text: str, words: list[str], loc_tokens: list[str], name_required: int) -> bool:
+    loc_positions = [p for t in loc_tokens for p in _token_positions(t, text)]
+    if not loc_positions:
+        return False
+    name_positions = {w: _token_positions(w, text) for w in words}
+    if not any(name_positions.values()):
+        return False
+    for lp in loc_positions:
+        hits = sum(
+            1 for positions in name_positions.values()
+            if any(abs(p - lp) <= _PROXIMITY_WINDOW for p in positions)
+        )
+        if hits >= name_required:
+            return True
+    return False
 
 
 def find_website_by_guessing(firm_name: str, city: str = "", state: str = "",

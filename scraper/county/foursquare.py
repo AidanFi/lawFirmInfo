@@ -19,13 +19,33 @@ _LAW_KEYWORDS = (
     "esquire", "esq", "advocates",
 )
 
+# Foursquare's own category tagging for the "Law Office"/"Legal Service"
+# category IDs is unreliable in bulk — verified in the wild (Harris County,
+# TX pull): dozens of consumer-finance/retail chain locations (bank
+# branches, tax-prep storefronts, insurance agents, money-transfer and
+# title-loan chains) carry one of those category IDs, presumably because
+# they share a strip-mall/plaza listing with an actual law office, or a
+# stale/erroneous secondary category tag. A name match against this
+# denylist overrides a "trusted" category ID — these chains are never a
+# referral law firm regardless of what Foursquare tagged them as.
+_NON_LAW_NAME_DENYLIST = (
+    "bank of america", "wells fargo", "jpmorgan chase", "h&r block",
+    "jackson hewitt", "liberty tax", "western union", "moneygram",
+    "titlemax", "title loans", "cash store", "world finance",
+    "advance america", "regional finance", "republic finance",
+    "lendmark", "credit repair", "edward jones", "ameriprise",
+    "allstate", "check into cash", "loan depot", "pawn",
+)
+
 
 def _is_likely_law_firm(place: dict) -> bool:
+    name_lower = place.get("name", "").lower()
+    if any(kw in name_lower for kw in _NON_LAW_NAME_DENYLIST):
+        return False
     categories = place.get("categories", [])
     cat_ids = {c.get("fsq_category_id", "") for c in categories}
     if cat_ids & _LEGAL_CATEGORY_IDS:
         return True
-    name_lower = place.get("name", "").lower()
     return any(kw in name_lower for kw in _LAW_KEYWORDS)
 
 

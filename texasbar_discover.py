@@ -62,6 +62,12 @@ TEXAS_COUNTIES = {
         "msa": "Dallas-Fort Worth",
         "county_ids": [57],
     },
+    "tarrant-county-tx": {
+        "name": "Tarrant",
+        "state": "TX",
+        "msa": "Dallas-Fort Worth",
+        "county_ids": [220],
+    },
 }
 
 ARTICLE_RE = re.compile(r'<article class="lawyer">.*?</article>', re.S)

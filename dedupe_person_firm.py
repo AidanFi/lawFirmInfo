@@ -33,19 +33,32 @@ FIELDNAMES = [
 ]
 
 # A comma is only reliable evidence of "multiple partner surnames joined"
-# (e.g. "Stafford, Keyser, Bromberg") if what remains after stripping a
-# trailing bare corporate/entity suffix STILL has a comma in it — a comma
-# immediately before nothing but that suffix ("Hendricks Interests, LLC")
-# is NOT a law firm and wrongly matched this way originally.
+# (e.g. "Stafford, Keyser, Bromberg") if what remains after stripping every
+# trailing bare corporate/entity suffix AND generic professional-title
+# phrase STILL has a comma in it — a comma immediately before nothing but
+# such a suffix ("Hendricks Interests, LLC") is NOT a law firm, and
+# neither is a SINGLE person's name followed by a comma-separated title
+# ("Michael J. Henry, Atty at Law, P.C." is one person, not multiple
+# partners — found in the wild: P.C./P.A. and "Atty/Attorney at Law"
+# weren't in the original strip list, so a single-owner PC with that
+# exact comma-separated phrasing was wrongly treated as strong evidence
+# of a genuine multi-partner firm name). Strip repeatedly since more than
+# one such trailing fragment can be chained.
 _TRAILING_ENTITY_SUFFIX_RE = re.compile(
-    r',?\s*(llc|inc\.?|incorporated|corp\.?|corporation|ltd\.?|co\.?)\s*$',
+    r',?\s*(llc|inc\.?|incorporated|corp\.?|corporation|ltd\.?|co\.?|'
+    r'p\.?c\.?|p\.?a\.?|atty\.?\s+at\s+law|attorney\s+at\s+law)\s*$',
     re.IGNORECASE,
 )
 _MULTI_SURNAME_RE = re.compile(r'&|\band\b', re.IGNORECASE)
 
 
 def has_comma_joined_names(name: str) -> bool:
-    stripped = _TRAILING_ENTITY_SUFFIX_RE.sub("", name).strip()
+    stripped = name
+    while True:
+        new = _TRAILING_ENTITY_SUFFIX_RE.sub("", stripped).strip()
+        if new == stripped:
+            break
+        stripped = new
     return "," in stripped
 
 # Surnames common enough that a single-token match is not reliable
@@ -97,20 +110,37 @@ _BUSINESS_DESCRIPTOR_RE = re.compile(
 )
 
 
+_WEAK_BRAND_RE = re.compile(
+    r'attys?\.?\s+at\s+law|attorneys?\s+at\s+law|counselor\s+at\s+law|'
+    r'attorney\s+&\s+counselor',
+    re.IGNORECASE,
+)
+
+
 def is_firm_branded(name: str) -> bool:
     if LAW_FIRM_SUFFIX_RE.search(name):
         return True
-    if re.search(
-        r'\blaw firm\b|\blaw office\b|\blaw group\b|attorney(s)?\s+at\s+law|'
-        r'counselor\s+at\s+law|attorney\s+&\s+counselor',
-        name, re.IGNORECASE,
-    ):
+    if re.search(r'\blaw firm\b|\blaw office\b|\blaw group\b', name, re.IGNORECASE):
         return True
     if _MULTI_SURNAME_RE.search(name):
         return True
     if has_comma_joined_names(name):
         return True
     return False
+
+
+def is_weakly_branded(name: str) -> bool:
+    """A bare '[Name] Attorney at Law' / '[Name] Counselor at Law' with NO
+    other firm-entity signal is really just ANOTHER personal name, not a
+    distinct firm brand — verified in the wild: "Bruce A. Ashworth" (self-
+    reported "bruce ashworth attorney") and "Collin Bruce Ashworth" (self-
+    reported "Collin Ashworth Attorney at Law") are two different real
+    attorneys — likely father and son — sharing an office+phone, wrongly
+    merged into one because the surname-only check treated the "Attorney
+    at Law" suffix as sufficient evidence of a real firm brand. A match
+    here still requires first-name corroboration even for an uncommon
+    surname (see main())."""
+    return not is_firm_branded(name) and bool(_WEAK_BRAND_RE.search(name))
 
 
 def is_bare_personal_name(name: str) -> bool:
@@ -157,22 +187,28 @@ def main(slug: str):
             continue
         personal = [i for i in idxs if is_bare_personal_name(rows[i]["law_firm_name"])]
         branded = [i for i in idxs if is_firm_branded(rows[i]["law_firm_name"])]
+        weak_branded = [i for i in idxs if is_weakly_branded(rows[i]["law_firm_name"])]
         for pi in personal:
             if pi in remove:
                 continue
             candidates = surname_candidates(rows[pi]["law_firm_name"])
             if not candidates:
                 continue
-            for bi in branded:
+            for bi in branded + weak_branded:
                 if bi == pi or bi in remove:
                     continue
                 branded_lower = rows[bi]["law_firm_name"].lower()
                 matched_surname = next((s for s in candidates if s in branded_lower), None)
                 if not matched_surname:
                     continue
-                if matched_surname in _COMMON_SURNAMES:
-                    # Require a first-name token to also appear — a bare
-                    # common surname isn't enough evidence alone.
+                # A weakly-branded match ("[Name] Attorney at Law" with no
+                # other firm-entity signal) is really just ANOTHER personal
+                # name — two different real people (e.g. father/son) can
+                # each be "[their name] Attorney at Law" at a shared
+                # office+phone, so this always needs first-name
+                # corroboration, even for an uncommon surname.
+                needs_first_name = matched_surname in _COMMON_SURNAMES or bi in weak_branded
+                if needs_first_name:
                     first_names = [t for t in _tokens(rows[pi]["law_firm_name"]) if len(t) >= 3 and t != matched_surname]
                     if not any(t in branded_lower for t in first_names):
                         continue

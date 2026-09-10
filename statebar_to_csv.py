@@ -53,6 +53,7 @@ PRIORITY_MAP = {
 COUNTY_META = {
     "harris-county-tx": {"name": "Harris", "state": "TX", "msa": "Houston"},
     "dallas-county-tx": {"name": "Dallas", "state": "TX", "msa": "Dallas-Fort Worth"},
+    "tarrant-county-tx": {"name": "Tarrant", "state": "TX", "msa": "Dallas-Fort Worth"},
 }
 
 # The State Bar's "County" search field does not strictly mean "office is
@@ -88,6 +89,16 @@ COUNTY_CITY_ALLOWLIST = {
         "Hutchins", "Seagoville", "Sunnyvale", "Rowlett", "Sachse",
         "Glenn Heights", "Ovilla", "Cockrell Hill", "Wylie", "Lewisville",
         "Grapevine", "Combine", "Ferris",
+    ]},
+    "tarrant-county-tx": {c.lower() for c in [
+        "Fort Worth", "Arlington", "North Richland Hills", "Mansfield",
+        "Euless", "Bedford", "Hurst", "Haltom City", "Keller", "Southlake",
+        "Colleyville", "Grapevine", "Watauga", "Saginaw", "Burleson",
+        "Crowley", "Benbrook", "White Settlement", "Forest Hill",
+        "Kennedale", "Everman", "River Oaks", "Sansom Park",
+        "Westworth Village", "Edgecliff Village", "Lake Worth", "Pantego",
+        "Dalworthington Gardens", "Westlake", "Trophy Club", "Blue Mound",
+        "Haslet", "Richland Hills",
     ]},
 }
 _CITY_ABBR_FIX = {
@@ -126,7 +137,7 @@ PLACEHOLDER_COMPANY = {
     "government", "unaffiliated", "solo", "solo practitioner", "law office",
     "law offices", "law firm", "the law office", "the law firm",
     "attorney counselor at law", "attorney and counselor at law",
-    "counselor at law", "esq", "esquire",
+    "counselor at law", "esq", "esquire", "select",
 }
 
 # Regex fallback for "no employer reported" variants that don't hit the
@@ -137,6 +148,15 @@ PLACEHOLDER_RE = re.compile(r'^(none|n/?a|unknown|not applicable)\b', re.IGNOREC
 # A purely numeric "company" value (e.g. "1958") is a data-entry error —
 # not a real firm name — route to the solo bucket like other placeholders.
 NUMERIC_ONLY_RE = re.compile(r'^\d+$')
+
+# An attorney's own street address typed into the "company" field by
+# mistake (e.g. "301 Commerce Street, Suite 2001, Fort Worth, TX 76102")
+# is not a real firm name — route to the solo bucket like other
+# placeholders, same treatment as NUMERIC_ONLY_RE.
+ADDRESS_LIKE_RE = re.compile(
+    r'^\d+\s+\S+.*\b(street|st|ave|avenue|blvd|drive|dr|road|rd|lane|ln|suite|ste)\b',
+    re.IGNORECASE,
+)
 
 # Self-declared non-practicing wording ("Retired", "Inactive", "Deceased")
 # — still shows "Eligible to practice" bar status, but not a firm and not
@@ -151,13 +171,18 @@ GOVT_PATTERNS = re.compile(
     r'district\s+atty\.?\b|county\s+atty\.?\b|'
     r'u\.?\s?s\.?\s+attorney|united\s+states\s+attorney|office\s+of\s+the\s+attorney|'
     r'public\s+defender|assigned\s+counsel|managed\s+counsel|domestic\s+relations|'
-    r'county\s+clerk|district\s+clerk|county\s+court\s+at\s+law|justice\s+of\s+the\s+peace|'
+    r'county\s+clerk|district\s+clerk|county\s+court\s+at\s+law|'
+    r'county\s+criminal\s+court|justice\s+of\s+the\s+peace|'
     r'\bconstable\b|sheriff.?s\s+office|police\s+department|fire\s+department|'
-    r'municipal\s+court|probate\s+court|juvenile\s+(probation|court)|'
+    r'municipal\s+court|probate\s+court|'
     r'child\s+protective\s+services|department\s+of\s+family|'
     r'independent\s+school\s+district|\bisd\b|school\s+district|'
     r'\bcity\s+of\s+\w|\bcounty\s+of\s+\w|'
-    r'(harris|dallas)\s+(county|co\.)(?!\s+.*(law|pllc|llp))|\bdallas\s+da\b|'
+    r'(harris|dallas|tarrant)\s+(county|co\.|cty\.?)(?!\s+.*(law|pllc|llp))|\bdallas\s+da\b|'
+    r'\bdist\.?\s+attys?\.?\s+ofc\b|\bdist\.?\s+atty\b|\bmagistrate\b|'
+    r'juvenile\s+(probation|court|services)|family\s+court\s+services|'
+    r'\bwater\s+district\b|employees.?\s+retirement\s+fund|'
+    r'county\s+commissioner|'
     r'state\s+of\s+texas|texas\s+department|texas\s+legislature|texas\s+workforce|'
     r'texas\s+association\s+of\s+counties|'
     r'\bdepartment\s+of\s+\w|\bdept\.?\s+of\s+\w|\bdep\'t\s+of\s+\w|'
@@ -184,7 +209,13 @@ GOVT_PATTERNS = re.compile(
     r'criminal\s+justice\s+center|\bhcao\b|\bhcdao\b|circuit\s+co?u?rt?\s+of\s+appeals|'
     r'fifth\s+circuit|foster\s+care\s+advocacy|'
     r'\bfdic\b|federal\s+reserve\s+bank|environmental\s+protection\s+agency|'
-    r'\bfederal\s+judiciary\b)',
+    r'\bfederal\s+judiciary\b|'
+    r'u\.?\s?s\.?\s+securities\s+and\s+exchange\s+commission|'
+    r'\bjag\s+corps\b|judge\s+advocate\s+general|'
+    r'small\s+business\s+administration|'
+    r'state\s+office\s+of\s+administrative\s+hearings|'
+    r'executive\s+office\s+for\s+immigration\s+review|'
+    r'national\s+labor\s+relations\s+board)',
     re.IGNORECASE,
 )
 
@@ -218,11 +249,19 @@ DEDICATED_GOVT_BUILDINGS = {
         "2600 lone star", "4050 alpha", "200 n 5th", "825 w irving",
         "106 s harwood",
     ],
+    "tarrant-county-tx": [
+        "401 w belknap", "401 west belknap", "100 n calhoun",
+        "200 e weatherford",
+    ],
 }
 
 
 def is_at_dedicated_govt_building(street: str, slug: str) -> bool:
-    street = (street or "").strip().lower()
+    # Punctuation-insensitive: self-reported addresses vary between
+    # "200 E Weatherford" / "200 E. Weatherford" / "200 E. Weatherford St."
+    # for the exact same building — strip periods before prefix-matching
+    # so one list entry covers all of them.
+    street = re.sub(r"\.", "", (street or "").strip().lower())
     if not street:
         return False
     return any(street.startswith(prefix) for prefix in DEDICATED_GOVT_BUILDINGS.get(slug, []))
@@ -278,6 +317,14 @@ _ANY_LAW_INDICATOR_RE = re.compile(
 # PLLC"), so only flag it as institutional when there's no actual
 # firm-entity suffix backing it up.
 _LAW_CENTER_RE = re.compile(r'\blaw\s+center\b', re.IGNORECASE)
+
+# "Justice Center" is usually a courthouse/government building name (Tim
+# Curry Criminal Justice Center) or a nonprofit legal-aid org (Equal
+# Justice Center, Tahirih Justice Center) — but a real solo PLLC can also
+# brand itself this way ("Jump Start Legal Justice Center, PLLC", a real
+# Dallas civil-rights litigation firm), so only flag it when there's no
+# actual firm-entity suffix backing it up.
+_JUSTICE_CENTER_RE = re.compile(r'\bjustice\s+center\b', re.IGNORECASE)
 
 # Corporate / institutional in-house-counsel employers — not referral law
 # firms. Substring match on distinctive company-name fragments (curated
@@ -408,6 +455,42 @@ CORP_NON_LAW_FRAGMENTS = [
     "raices", "dell technologies", "flexbase technologies",
     "nautilus group", "usaig", "island technology", "cetera financial group",
     "selene finance", "selene title", "marubeni-itochu steel group",
+    "legal aid of northwest texas", "legal aid of north west texas",
+    "catholic diocese of fort worth", "catholic charities fort worth",
+    "dallas fort worth international airport", "fort worth counseling",
+    "my health my resources of tarrant county", "mhmr of tarrant county",
+    "multipurpose arena fort worth", "trail drive management corp",
+    "united way of tarrant county", "tarrant regional water district",
+    "american airlines", "bnsf railway", "cook children's health care system",
+    "capital one, n.a.", "capital one", "general motors financial",
+    "longbridge financial", "public investment fund", "r4 foundation",
+    "array technologies", "fusion health", "texas health & human services",
+    "texas health and human services", "pickering family foundation",
+    "hfw capital partners",
+    "federal government", "allied pilots association",
+    "andrews preferred holdings", "bok financial", "bw gas & convenience holdings",
+    "baylor scott and white health", "cbj financial", "cliff capital group",
+    "creative solutions in healthcare", "daimler truck financial services",
+    "diamondback industries", "e7 investments", "elbit systems of america",
+    "element environmental resources", "federal aviation administration",
+    "first command financial services", "frost : banking",
+    "happy state bank", "jps health network", "jasper ridge partners",
+    "kings branch resources", "longfellow energy", "mazur capital",
+    "menalon capital", "mercedes-benz financial services",
+    "mount olivet cemetery association", "north texas christian foundation",
+    "olive cove partners", "onemain financial", "onemain solutions",
+    "pacific legal foundation", "pine wave energy partners",
+    "point energy partners", "post oak royalty partners", "q investments",
+    "storm guard franchise systems", "toc energy resources",
+    "us health group", "united educators association", "valleyview energy",
+    "gst manufacturing", "integrated medical solutions",
+    "integer health technologies", "albaron partners", "gauge capital",
+    "n5b capital", "stetson investments", "trinity portfolio advisors",
+    "alcon research", "alcon vision", "state national companies",
+    "unleashed brands", "crescent real estate", "tpg global",
+    "texas rangers baseball club", "firstcash", "interbank",
+    "double eagle energy", "double eagle", "ferrovial construction", "ferrovial",
+    "general services administration",
     "global war on terrorism memorial foundation", "panasonic corporation",
     "southland industries", "trane technologies",
     "briggs freeman sotheby's international realty", "neovia logistics",
@@ -420,6 +503,7 @@ CORP_NON_LAW_FRAGMENTS = [
 CORP_NON_LAW_WHOLE_WORDS = [
     "oxy", "slb", "kbr", "hines", "aramco", "pwc", "cargill", "ubs", "calpine", "bp",
     "dart", "ey", "finra", "lument", "ibm", "epa", "citi", "fossil", "mmc", "ati",
+    "bnsf",
 ]
 
 CORP_NON_LAW_RE = re.compile(
@@ -527,6 +611,8 @@ def is_non_law(name: str) -> bool:
         return True
     if _LAW_CENTER_RE.search(name) and not LAW_FIRM_SUFFIX_RE.search(name):
         return True
+    if _JUSTICE_CENTER_RE.search(name) and not LAW_FIRM_SUFFIX_RE.search(name):
+        return True
     if _GENERIC_CORP_SUFFIX_RE.search(name) and not _ANY_LAW_INDICATOR_RE.search(name):
         return True
     return False
@@ -610,7 +696,7 @@ def build_csv(slug: str) -> int:
                 solos.append(e)
         elif NONPRACTICING_RE.search(company):
             dropped_placeholder += 1
-        elif key in PLACEHOLDER_COMPANY or PLACEHOLDER_RE.search(company) or NUMERIC_ONLY_RE.match(company):
+        elif key in PLACEHOLDER_COMPANY or PLACEHOLDER_RE.search(company) or NUMERIC_ONLY_RE.match(company) or ADDRESS_LIKE_RE.match(company):
             if is_at_dedicated_govt_building(e.get("street", ""), slug):
                 dropped_placeholder += 1
             else:

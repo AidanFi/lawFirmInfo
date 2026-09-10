@@ -46,6 +46,13 @@ COUNTY_CITIES = {
         "University Park", "Highland Park", "Balch Springs", "Rowlett",
         "Sachse", "Wylie", "Lewisville", "Grapevine",
     ],
+    "tarrant-county-tx": [
+        "Fort Worth", "Arlington", "North Richland Hills", "Mansfield",
+        "Euless", "Bedford", "Hurst", "Haltom City", "Keller", "Southlake",
+        "Colleyville", "Grapevine", "Watauga", "Saginaw", "Burleson",
+        "Crowley", "Benbrook", "White Settlement", "Forest Hill",
+        "Kennedale", "Everman", "Lake Worth",
+    ],
 }
 CITY_SLUGS = {
     "West University Place": "west-university-place",

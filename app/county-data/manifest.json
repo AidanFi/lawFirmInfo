@@ -996,7 +996,7 @@
       "slug": "harris-county-tx",
       "name": "Harris County",
       "state": "TX",
-      "firm_count": 11317,
+      "firm_count": 11312,
       "last_updated": "2026-09-10",
       "csv_file": "harris-county-tx.csv"
     },
@@ -1004,9 +1004,17 @@
       "slug": "dallas-county-tx",
       "name": "Dallas County",
       "state": "TX",
-      "firm_count": 7050,
+      "firm_count": 7048,
       "last_updated": "2026-09-10",
       "csv_file": "dallas-county-tx.csv"
+    },
+    {
+      "slug": "tarrant-county-tx",
+      "name": "Tarrant County",
+      "state": "TX",
+      "firm_count": 2932,
+      "last_updated": "2026-09-10",
+      "csv_file": "tarrant-county-tx.csv"
     }
   ]
 }

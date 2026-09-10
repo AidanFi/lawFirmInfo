@@ -34,6 +34,23 @@ COUNTY_DEFINITIONS = {
         ],
         "extra_search_terms": ["Dallas TX", "Dallas County Texas"],
     },
+    "tarrant_tx": {
+        "name": "Tarrant County",
+        "state": "TX",
+        "slug": "tarrant-county-tx",
+        "msa": "Dallas-Fort Worth",
+        "cities": [
+            "Fort Worth", "Arlington", "North Richland Hills", "Mansfield",
+            "Euless", "Bedford", "Hurst", "Haltom City", "Keller", "Southlake",
+            "Colleyville", "Grapevine", "Watauga", "Saginaw", "Burleson",
+            "Crowley", "Benbrook", "White Settlement", "Forest Hill",
+            "Kennedale", "Everman", "River Oaks", "Sansom Park",
+            "Westworth Village", "Edgecliff Village", "Lake Worth", "Pantego",
+            "Dalworthington Gardens", "Westlake", "Trophy Club", "Blue Mound",
+            "Haslet", "Richland Hills",
+        ],
+        "extra_search_terms": ["Fort Worth TX", "Tarrant County Texas"],
+    },
     "riley": {
         "name": "Riley County",
         "state": "KS",

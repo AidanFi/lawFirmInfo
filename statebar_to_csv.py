@@ -109,7 +109,8 @@ PLACEHOLDER_COMPANY = {
     "mr", "ms", "mrs", "dr", "sole practitioner", "solo practitioner",
     "unemployed", "individual", "private", "private practice", "unknown",
     "not applicable", "in house", "in-house", "law student", "student",
-    "government", "unaffiliated",
+    "government", "unaffiliated", "solo", "solo practitioner", "law office",
+    "law offices", "law firm", "the law office", "the law firm",
 }
 
 # Regex fallback for "no employer reported" variants that don't hit the
@@ -130,29 +131,57 @@ NONPRACTICING_RE = re.compile(r'\bretire[ds]?\b|\binactive\b|\bdeceased\b|\bunaf
 # "law"/"legal"/"attorney" wording, since agency names legitimately
 # contain those words (e.g. "District Attorney's Office").
 GOVT_PATTERNS = re.compile(
-    r'(district attorney|county attorney|city attorney|attorney general|'
-    r'u\.?s\.? attorney|united states attorney|office of the attorney|'
-    r'public defender|assigned counsel|managed counsel|'
-    r'county clerk|district clerk|county court at law|justice of the peace|'
-    r'\bconstable\b|sheriff.?s office|police department|fire department|'
-    r'municipal court|probate court|juvenile (probation|court)|'
-    r'child protective services|department of family|'
-    r'independent school district|\bisd\b|school district|'
-    r'\bcity of \w|\bcounty of \w|harris county(?! .*(law|pllc|llp))|'
-    r'state of texas|texas department|texas legislature|texas workforce|'
-    r'\bdepartment of \w|\bdept\.? of \w|internal revenue service|\birs\b|'
-    r'social security administration|\bssa\b|office of hearings|federal bureau|u\.?s\.? department|'
-    r'port houston|port authority|port of houston|'
-    r'u\.?s\.? district court|united states district court|'
-    r'court of appeals|supreme court of texas|texas supreme court|'
-    r'college of law|law center|law school|school of law|\buniversity\b|'
-    r'\bjudge\b|\bjudicial district\b|\bdistrict court\b|\bcourt at law\b|'
-    r'\bcivil district\b|\bcriminal district\b|\bfamily district\b|'
-    r'\bbankruptcy court\b|\biv-d court\b|\bcourt receiver\b|\blaw clerk\b|'
-    r'\bbar association\b|\bcourt reporting\b|\badministrative judicial region\b|'
-    r'\btexas business court\b|\bcourt administration\b|\bchildren.?s court\b)',
+    r'(district\s+attorney|county\s+attorney|city\s+attorney|attorney\s+general|'
+    r'u\.?\s?s\.?\s+attorney|united\s+states\s+attorney|office\s+of\s+the\s+attorney|'
+    r'public\s+defender|assigned\s+counsel|managed\s+counsel|domestic\s+relations|'
+    r'county\s+clerk|district\s+clerk|county\s+court\s+at\s+law|justice\s+of\s+the\s+peace|'
+    r'\bconstable\b|sheriff.?s\s+office|police\s+department|fire\s+department|'
+    r'municipal\s+court|probate\s+court|juvenile\s+(probation|court)|'
+    r'child\s+protective\s+services|department\s+of\s+family|'
+    r'independent\s+school\s+district|\bisd\b|school\s+district|'
+    r'\bcity\s+of\s+\w|\bcounty\s+of\s+\w|harris\s+county(?!\s+.*(law|pllc|llp))|'
+    r'state\s+of\s+texas|texas\s+department|texas\s+legislature|texas\s+workforce|'
+    r'\bdepartment\s+of\s+\w|\bdept\.?\s+of\s+\w|internal\s+revenue\s+service|\birs\b|'
+    r'social\s+security\s+administration|\bssa\b|office\s+of\s+hearings|federal\s+bureau|'
+    r'u\.?\s?s\.?\s+department|port\s+houston|port\s+authority|port\s+of\s+houston|'
+    r'u\.?\s?s\.?\s+district\s+court|united\s+states\s+district\s+court|'
+    r'united\s+states\s+courts?\b|united\s+states\s+judiciary|southern\s+district\s+of\s+texas|'
+    r'u\.?\s?s\.?\s+trustee|office\s+of\s+the\s+u\.?\s?s\.?\s+trustee|united\s+states\s+courthouse|'
+    r'court\s+of\s+appeals|supreme\s+court\s+of\s+texas|texas\s+supreme\s+court|'
+    r'college\s+of\s+law|law\s+center|law\s+school|school\s+of\s+law|\buniversity\b|'
+    r'\bjudge\b|\bjudicial\s+district\b|\bdistrict\s+courts?\b|\bcourts?\s+at\s+law\b|'
+    r'\bcivil\s+district\b|\bcriminal\s+district\b|\bfamily\s+district\b|'
+    r'\bbankruptcy\s+courts?\b|\biv-d\s+court\b|\bcourt\s+receiver\b|\blaw\s+clerk\b|'
+    r'\bbar\s+association\b|\bcourt\s+reporting\b|\badministrative\s+judicial\s+region\b|'
+    r'\btexas\s+business\s+court\b|\bcourt\s+administration\b|\bchildren.?s\s+court\b|'
+    r'criminal\s+justice\s+center|\bhcao\b|\bhcdao\b|circuit\s+co?u?rt?\s+of\s+appeals|'
+    r'fifth\s+circuit|foster\s+care\s+advocacy)',
     re.IGNORECASE,
 )
+
+# Blank-company attorneys (routed to the solo bucket, since we don't know who
+# they work for) who happen to sit at a CONFIRMED single-purpose government
+# building are almost certainly court/prosecutor/public-defender staff, not
+# private practice — verified by checking every entry at each address: these
+# five buildings had 0-2 exceptions out of 55-294 entries each, and every
+# exception was itself a government/court entity with a company-field typo or
+# unusual phrasing (already fixed above), never an actual private firm.
+# Deliberately NOT extended to superficially similar downtown addresses that
+# turned out to be ordinary mixed-use office towers with a government tenant
+# on one floor and real law firms on others (500 Jefferson St has Littler
+# Mendelson; 1010 Lamar St has Shepherd Smith Edwards & Kantas LLP; 515 Rusk
+# St and 1301 Fannin St are similarly mixed) — blanket-excluding by street
+# address there would wrongly drop real firms. Only extend this list after
+# verifying zero private-firm tenancy the same way, per county.
+DEDICATED_GOVT_BUILDING_RE = re.compile(
+    r'^(1201 franklin|1310 prairie|1019 congress|1400 lubbock|4170 martin luther king)',
+    re.IGNORECASE,
+)
+
+
+def is_at_dedicated_govt_building(street: str) -> bool:
+    return bool(DEDICATED_GOVT_BUILDING_RE.match((street or "").strip()))
+
 
 # In-house-counsel job-title phrasing self-reported as the "company" field —
 # only a non-law signal when no real firm-entity suffix is also present
@@ -233,10 +262,16 @@ CORP_NON_LAW_FRAGMENTS = [
     "fidelity national title", "airswift", "reladyne", "commonspirit",
     "the women's home", "hca houston", "memorial hermann",
     "coastal prairie conservancy", "the harris center for mental health",
-    "charles river associates",
+    "charles river associates", "distribution now", "distributionnow",
+    "centerpoint energy", "pattern energy", "midland credit management",
+    "texas health and human services", "harris central appraisal district",
+    "national oilwell varco", "newquest properties", "northern trust",
+    "perry homes", "technip energies", "transocean", "chord energy",
+    "edp renewables", "jera americas", "equinor", "eor energy services",
+    "nextera energy",
 ]
 # Short/ambiguous tokens that need whole-word matching to avoid false positives
-CORP_NON_LAW_WHOLE_WORDS = ["oxy", "slb", "kbr", "hines", "aramco", "pwc", "cargill", "ubs", "calpine"]
+CORP_NON_LAW_WHOLE_WORDS = ["oxy", "slb", "kbr", "hines", "aramco", "pwc", "cargill", "ubs", "calpine", "bp"]
 
 CORP_NON_LAW_RE = re.compile(
     "|".join(re.escape(f) for f in CORP_NON_LAW_FRAGMENTS)
@@ -261,11 +296,19 @@ _SUFFIX_WORDS = {
     "llp", "llc", "lp", "pllc", "plc", "pc", "pa", "ltd", "inc", "incorporated",
     "corp", "corporation", "company", "co", "law", "laws", "firm", "firms",
     "group", "office", "offices", "attorney", "attorneys", "lawyer", "lawyers",
-    "associates", "and", "the", "of", "a",
+    "associates", "assoc", "assocs", "and", "the", "of", "a",
 }
 
 
+_CAMEL_BOUNDARY_RE = re.compile(r"(?<=[a-z])(?=[A-Z])")
+
+
 def _tokens(name: str) -> list[str]:
+    # Split camelCase BEFORE lowercasing (case is what marks the boundary) —
+    # verified in the wild that the same real firm gets split into two
+    # unmerged clusters when some attorneys self-report "BakerHostetler"
+    # and others "Baker Hostetler" / "Baker & Hostetler".
+    name = _CAMEL_BOUNDARY_RE.sub(" ", name)
     s = name.lower().replace("|", " ").replace("+", " ")
     s = re.sub(r"[.']", "", s)
     s = re.sub(r"[^a-z0-9&]+", " ", s).replace("&", " ")
@@ -388,11 +431,17 @@ def build_csv(slug: str) -> int:
         company = (e.get("company") or "").strip()
         key = normalize_key(company)
         if not company:
-            solos.append(e)
+            if is_at_dedicated_govt_building(e.get("street", "")):
+                dropped_placeholder += 1
+            else:
+                solos.append(e)
         elif NONPRACTICING_RE.search(company):
             dropped_placeholder += 1
         elif key in PLACEHOLDER_COMPANY or PLACEHOLDER_RE.search(company) or NUMERIC_ONLY_RE.match(company):
-            solos.append(e)
+            if is_at_dedicated_govt_building(e.get("street", "")):
+                dropped_placeholder += 1
+            else:
+                solos.append(e)
         else:
             raw_groups[key].append(e)
 

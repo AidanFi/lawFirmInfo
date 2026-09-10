@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
 """
-Merge the Foursquare/Yelp supplement cache into the State-Bar-derived
-Harris County CSV: backfill website/phone on matching rows (by
-name-similarity + city), and append any firm-level listing discovered
-there that has no match among the individual-attorney-derived rows.
+Merge the Foursquare/Yelp supplement cache into a State-Bar-derived
+county CSV: backfill website/phone on matching rows (by name-similarity
++ city), and append any firm-level listing discovered there that has no
+match among the individual-attorney-derived rows.
 """
 import csv
 import json
@@ -13,7 +13,7 @@ from pathlib import Path
 
 sys.path.insert(0, ".")
 from scraper.utils.normalize import are_same_firm
-from statebar_to_csv import is_non_law
+from statebar_to_csv import is_non_law, COUNTY_META
 from scraper.county.enhance import (
     _LEGAL_RE, _LEGAL_SUFFIX_RE, _NON_LEGAL_INDICATORS, _NONLEGAL_RE,
 )
@@ -53,6 +53,7 @@ FIELDNAMES = [
 
 
 def main(slug: str):
+    meta = COUNTY_META[slug]
     csv_path = DATA_DIR / f"{slug}.csv"
     supp_path = CACHE_DIR / f"{slug}_supplement_cache.json"
 
@@ -104,14 +105,14 @@ def main(slug: str):
                 "google_business_profile": sf.get("google_business_profile") or "",
                 "legal_directory_listing": "",
                 "city": addr.get("city", ""),
-                "state": addr.get("state", "TX"),
-                "county": "Harris",
+                "state": addr.get("state", meta["state"]),
+                "county": meta["name"],
                 "phone_number": sf.get("phone") or "",
                 "email": sf.get("email") or "",
                 "practice_area": "General",
                 "street_address": addr.get("street", ""),
                 "zip_code": addr.get("zip", ""),
-                "msa": "Houston",
+                "msa": meta["msa"],
                 "priority": "4",
                 "number_of_lawyers": "",
                 "date_pulled": today,

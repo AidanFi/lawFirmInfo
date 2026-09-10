@@ -1,15 +1,23 @@
 #!/usr/bin/env python3
 """
-Supplementary free-tier discovery (Foursquare + Yelp) for Harris County, TX.
+Supplementary free-tier discovery (Foursquare + Yelp) for a TX county.
 
 Runs independently of the State Bar registry harvest (texasbar_discover.py)
 and writes raw results to a JSON cache. merge_statebar_supplement.py later
 folds these in to backfill website/phone on matching State Bar firm rows
 and appends any firm found here that isn't already in the registry-derived
 CSV (e.g. firm-level listings rather than individual attorneys).
+
+Usage: python3 foursquare_supplement.py <county_config_key>
+  e.g. python3 foursquare_supplement.py harris_tx
+       python3 foursquare_supplement.py dallas_tx
+(county_config_key is the key in scraper/county/config.py's
+COUNTY_DEFINITIONS, NOT the output slug — it has the "_tx" suffix, not
+"-county-tx".)
 """
 import json
 import os
+import sys
 from pathlib import Path
 
 from dotenv import load_dotenv
@@ -22,8 +30,13 @@ CACHE_DIR = Path("data/county")
 
 
 def main():
+    if len(sys.argv) < 2:
+        print("Usage: python3 foursquare_supplement.py <county_config_key>")
+        sys.exit(1)
+    county_key = sys.argv[1]
+
     load_dotenv("scraper/.env")
-    county_config = get_county_config("harris_tx")
+    county_config = get_county_config(county_key)
     slug = county_config["slug"]
 
     firms = []

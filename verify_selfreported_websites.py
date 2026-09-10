@@ -1,19 +1,26 @@
 #!/usr/bin/env python3
 """
-Verify self-reported websites (from merge_detail_data.py) actually relate
-to the firm/attorney they're attached to, and extract phone/email from
-the same fetch.
+Verify self-reported (merge_detail_data.py) AND Justia-backfilled
+(merge_justia_data.py) websites actually relate to the firm/attorney
+they're attached to, and extract phone/email from the same fetch.
 
-Self-reported data from an attorney's own bar profile is a strong signal,
-but verified NOT infallible: some profiles are stale (a "website" field
-still pointing to a job the attorney left — e.g. an in-house counsel
-whose profile still listed their former BigLaw firm's site) or outright
-data-entry errors (a firm name or an email address typed into the URL
-field). This does a light-touch check — does the page mention a
-distinctive token from the firm name — and clears the website if not,
-rather than trusting it blindly. Unlike domain-guessing, this does NOT
-require proximity to a location signal (self-reported is already a much
-stronger prior than a guessed domain), just basic relatedness.
+Self-reported bar-profile data is a strong signal, but verified NOT
+infallible: some profiles are stale (a "website" field still pointing to
+a job the attorney left — e.g. an in-house counsel whose profile still
+listed their former BigLaw firm's site) or outright data-entry errors (a
+firm name or an email address typed into the URL field). Justia's
+directory data has the SAME failure mode from a different cause: Justia
+matches by individual attorney name, and for a multi-lawyer firm row,
+one attorney's stale/wrong bio-page link (e.g. their old firm from
+before a lateral move) silently becomes the whole FIRM's website —
+verified in the wild on Dallas County: "Bell Nunnally & Martin LLP"
+picked up "gibsondunn.com/Lawyers/jguild" this way. Both sources get the
+same light-touch check here — does the page mention a distinctive token
+from the firm name plus an actual law-practice term — and the website is
+cleared if not, rather than trusted blindly. Unlike domain-guessing, this
+does NOT require proximity to a location signal (both sources are
+already a much stronger prior than a guessed domain), just basic
+relatedness.
 """
 import argparse
 import csv
@@ -132,8 +139,11 @@ def main():
     csv_path = DATA_DIR / f"{args.slug}.csv"
     rows = list(csv.DictReader(open(csv_path, encoding="utf-8")))
 
-    targets = [i for i, r in enumerate(rows) if r["website"] and "self-reported" in r["source"]]
-    print(f"Verifying {len(targets)} self-reported websites")
+    targets = [
+        i for i, r in enumerate(rows)
+        if r["website"] and ("self-reported" in r["source"] or "Justia" in r["source"])
+    ]
+    print(f"Verifying {len(targets)} self-reported/Justia websites")
 
     cleared = 0
     kept = 0

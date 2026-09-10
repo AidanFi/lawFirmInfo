@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Justia lawyer-directory discovery for Harris County, TX cities.
+Justia lawyer-directory discovery for a TX county's cities.
 
 Supplementary website-backfill source: Justia listing cards give name,
 phone, address, and (when the attorney has one) a real website link. TX
@@ -15,6 +15,11 @@ website backfill is a separate, conservative step (see
 merge_justia_data.py) that requires close name+city agreement, never
 bare fuzzy-name similarity (verified elsewhere in this project that
 fuzzy matching on personal names causes false merges).
+
+Usage: python3 justia_county_discover.py <slug> [city1] [city2] ...
+  e.g. python3 justia_county_discover.py dallas-county-tx
+       python3 justia_county_discover.py dallas-county-tx Dallas Irving
+(cities default to the full list for that slug if none are given.)
 """
 import json
 import re
@@ -27,14 +32,34 @@ from bs4 import BeautifulSoup
 
 CACHE_DIR = Path("data/county")
 
-HARRIS_CITIES = [
-    "Houston", "Pasadena", "Baytown", "Pearland", "Deer Park", "La Porte",
-    "Humble", "Katy", "Spring", "Cypress", "Tomball", "Channelview",
-    "South Houston", "Galena Park", "Jacinto City", "Bellaire",
-    "West University Place", "Friendswood", "Webster", "Kingwood",
-]
+COUNTY_CITIES = {
+    "harris-county-tx": [
+        "Houston", "Pasadena", "Baytown", "Pearland", "Deer Park", "La Porte",
+        "Humble", "Katy", "Spring", "Cypress", "Tomball", "Channelview",
+        "South Houston", "Galena Park", "Jacinto City", "Bellaire",
+        "West University Place", "Friendswood", "Webster", "Kingwood",
+    ],
+    "dallas-county-tx": [
+        "Dallas", "Irving", "Garland", "Mesquite", "Grand Prairie",
+        "Richardson", "Carrollton", "DeSoto", "Cedar Hill", "Duncanville",
+        "Lancaster", "Farmers Branch", "Coppell", "Addison",
+        "University Park", "Highland Park", "Balch Springs", "Rowlett",
+        "Sachse", "Wylie", "Lewisville", "Grapevine",
+    ],
+}
 CITY_SLUGS = {
     "West University Place": "west-university-place",
+    "University Park": "university-park",
+    "Highland Park": "highland-park",
+    "Balch Springs": "balch-springs",
+    "Grand Prairie": "grand-prairie",
+    "Farmers Branch": "farmers-branch",
+    "Cedar Hill": "cedar-hill",
+    "Deer Park": "deer-park",
+    "La Porte": "la-porte",
+    "South Houston": "south-houston",
+    "Galena Park": "galena-park",
+    "Jacinto City": "jacinto-city",
 }
 
 
@@ -149,14 +174,22 @@ def scrape_city(session, city: str, max_pages: int = 200, delay: float = 1.0) ->
 
 
 def main():
+    if len(sys.argv) < 2:
+        print("Usage: python3 justia_county_discover.py <slug> [city1] [city2] ...")
+        sys.exit(1)
+    slug = sys.argv[1]
+    cities = sys.argv[2:] if len(sys.argv) > 2 else COUNTY_CITIES.get(slug, [])
+    if not cities:
+        print(f"No city list known for {slug} — add one to COUNTY_CITIES or pass cities explicitly.")
+        sys.exit(1)
+
     session = creq.Session(impersonate="chrome120")
     all_results = []
-    cities = sys.argv[1:] if len(sys.argv) > 1 else HARRIS_CITIES
     for city in cities:
         print(f"=== {city} ===")
         all_results.extend(scrape_city(session, city))
 
-    out_path = CACHE_DIR / "harris-county-tx_justia_cache.json"
+    out_path = CACHE_DIR / f"{slug}_justia_cache.json"
     existing = []
     if out_path.exists():
         existing = json.loads(out_path.read_text())

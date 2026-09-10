@@ -18,6 +18,22 @@ COUNTY_DEFINITIONS = {
         ],
         "extra_search_terms": ["Houston TX", "Harris County Texas"],
     },
+    "dallas_tx": {
+        "name": "Dallas County",
+        "state": "TX",
+        "slug": "dallas-county-tx",
+        "msa": "Dallas-Fort Worth",
+        "cities": [
+            "Dallas", "Irving", "Garland", "Mesquite", "Grand Prairie",
+            "Richardson", "Carrollton", "DeSoto", "Cedar Hill", "Duncanville",
+            "Lancaster", "Farmers Branch", "Coppell", "Addison",
+            "University Park", "Highland Park", "Balch Springs", "Wilmer",
+            "Hutchins", "Seagoville", "Sunnyvale", "Rowlett", "Sachse",
+            "Glenn Heights", "Ovilla", "Cockrell Hill", "Wylie", "Lewisville",
+            "Grapevine", "Combine", "Ferris",
+        ],
+        "extra_search_terms": ["Dallas TX", "Dallas County Texas"],
+    },
     "riley": {
         "name": "Riley County",
         "state": "KS",

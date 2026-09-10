@@ -52,31 +52,44 @@ PRIORITY_MAP = {
 
 COUNTY_META = {
     "harris-county-tx": {"name": "Harris", "state": "TX", "msa": "Houston"},
+    "dallas-county-tx": {"name": "Dallas", "state": "TX", "msa": "Dallas-Fort Worth"},
 }
 
 # The State Bar's "County" search field does not strictly mean "office is
-# physically located in this county" — verified in the wild: searching
-# County=Harris returned ~500 attorneys whose listed city is Dallas,
-# Austin, San Antonio, The Woodlands (Montgomery Co.), Sugar Land (Fort
-# Bend Co.), even New York/Chicago/London (a national firm's other-office
-# attorneys whose bar record wasn't updated, or "county" reflecting
+# physically located in this county" — verified in the wild for Harris:
+# searching County=Harris returned ~500 attorneys whose listed city is
+# Dallas, Austin, San Antonio, The Woodlands (Montgomery Co.), Sugar Land
+# (Fort Bend Co.), even New York/Chicago/London (a national firm's other-
+# office attorneys whose bar record wasn't updated, or "county" reflecting
 # something else like a bar-district/mailing address). A non-blank city
-# outside this set is excluded outright — a "Harris County" file should
-# not contain firms actually located elsewhere. A BLANK city is kept
-# (can't disprove it's local, and the inclusion policy favors keeping
-# incomplete-but-plausible entries over guessing).
-HARRIS_COUNTY_CITIES = {c.lower() for c in [
-    "Houston", "Pasadena", "Baytown", "Pearland", "Deer Park", "La Porte",
-    "Humble", "Katy", "Spring", "Cypress", "Tomball", "Channelview",
-    "South Houston", "Galena Park", "Jacinto City", "Bellaire",
-    "West University Place", "Southside Place", "Piney Point Village",
-    "Hunters Creek Village", "Hedwig Village", "Bunker Hill Village",
-    "Spring Valley Village", "Hilshire Village", "Jersey Village",
-    "Friendswood", "Webster", "Seabrook", "Shoreacres", "Morgan's Point",
-    "Nassau Bay", "Taylor Lake Village", "El Lago", "Highlands", "Crosby",
-    "Huffman", "Atascocita", "Kingwood", "Aldine", "Klein", "Alief",
-    "Fresno", "Barker", "Hockley",
-]}
+# outside the allowlist for that county is excluded outright — a county's
+# file should not contain firms actually located elsewhere. A BLANK city
+# is kept (can't disprove it's local, and the inclusion policy favors
+# keeping incomplete-but-plausible entries over guessing). Per-county
+# allowlist, since every county needs its own city list.
+COUNTY_CITY_ALLOWLIST = {
+    "harris-county-tx": {c.lower() for c in [
+        "Houston", "Pasadena", "Baytown", "Pearland", "Deer Park", "La Porte",
+        "Humble", "Katy", "Spring", "Cypress", "Tomball", "Channelview",
+        "South Houston", "Galena Park", "Jacinto City", "Bellaire",
+        "West University Place", "Southside Place", "Piney Point Village",
+        "Hunters Creek Village", "Hedwig Village", "Bunker Hill Village",
+        "Spring Valley Village", "Hilshire Village", "Jersey Village",
+        "Friendswood", "Webster", "Seabrook", "Shoreacres", "Morgan's Point",
+        "Nassau Bay", "Taylor Lake Village", "El Lago", "Highlands", "Crosby",
+        "Huffman", "Atascocita", "Kingwood", "Aldine", "Klein", "Alief",
+        "Fresno", "Barker", "Hockley",
+    ]},
+    "dallas-county-tx": {c.lower() for c in [
+        "Dallas", "Irving", "Garland", "Mesquite", "Grand Prairie",
+        "Richardson", "Carrollton", "DeSoto", "Cedar Hill", "Duncanville",
+        "Lancaster", "Farmers Branch", "Coppell", "Addison",
+        "University Park", "Highland Park", "Balch Springs", "Wilmer",
+        "Hutchins", "Seagoville", "Sunnyvale", "Rowlett", "Sachse",
+        "Glenn Heights", "Ovilla", "Cockrell Hill", "Wylie", "Lewisville",
+        "Grapevine", "Combine", "Ferris",
+    ]},
+}
 _CITY_ABBR_FIX = {
     "w univ pl": "west university place",
     "jersey vlg": "jersey village",
@@ -86,7 +99,8 @@ _CITY_ABBR_FIX = {
 def _normalize_city(city: str) -> tuple[str, str]:
     """Returns (display, lookup_key) — strips trailing ', TX'/', TX 77002'
     /', DC' style suffixes and fixes known abbreviations, WITHOUT changing
-    what county a city that legitimately is NOT Harris resolves to."""
+    what county a city that legitimately is NOT in the target county
+    resolves to."""
     c = (city or "").strip()
     c = re.sub(r",?\s*tx\b.*$", "", c, flags=re.IGNORECASE).strip()
     c = re.sub(r",?\s*dc\b.*$", "", c, flags=re.IGNORECASE).strip()
@@ -94,11 +108,11 @@ def _normalize_city(city: str) -> tuple[str, str]:
     return c, key
 
 
-def is_in_harris_county(city: str) -> bool:
+def is_in_county(city: str, slug: str) -> bool:
     if not city or not city.strip():
         return True
     _, key = _normalize_city(city)
-    return key in HARRIS_COUNTY_CITIES
+    return key in COUNTY_CITY_ALLOWLIST.get(slug, set())
 
 # Self-reported "company" values that are not a real firm name — route
 # these attorneys to the solo-practitioner bucket instead of merging
@@ -111,6 +125,8 @@ PLACEHOLDER_COMPANY = {
     "not applicable", "in house", "in-house", "law student", "student",
     "government", "unaffiliated", "solo", "solo practitioner", "law office",
     "law offices", "law firm", "the law office", "the law firm",
+    "attorney counselor at law", "attorney and counselor at law",
+    "counselor at law", "esq", "esquire",
 }
 
 # Regex fallback for "no employer reported" variants that don't hit the
@@ -132,6 +148,7 @@ NONPRACTICING_RE = re.compile(r'\bretire[ds]?\b|\binactive\b|\bdeceased\b|\bunaf
 # contain those words (e.g. "District Attorney's Office").
 GOVT_PATTERNS = re.compile(
     r'(district\s+attorney|county\s+attorney|city\s+attorney|attorney\s+general|'
+    r'district\s+atty\.?\b|county\s+atty\.?\b|'
     r'u\.?\s?s\.?\s+attorney|united\s+states\s+attorney|office\s+of\s+the\s+attorney|'
     r'public\s+defender|assigned\s+counsel|managed\s+counsel|domestic\s+relations|'
     r'county\s+clerk|district\s+clerk|county\s+court\s+at\s+law|justice\s+of\s+the\s+peace|'
@@ -139,23 +156,35 @@ GOVT_PATTERNS = re.compile(
     r'municipal\s+court|probate\s+court|juvenile\s+(probation|court)|'
     r'child\s+protective\s+services|department\s+of\s+family|'
     r'independent\s+school\s+district|\bisd\b|school\s+district|'
-    r'\bcity\s+of\s+\w|\bcounty\s+of\s+\w|harris\s+county(?!\s+.*(law|pllc|llp))|'
+    r'\bcity\s+of\s+\w|\bcounty\s+of\s+\w|'
+    r'(harris|dallas)\s+(county|co\.)(?!\s+.*(law|pllc|llp))|\bdallas\s+da\b|'
     r'state\s+of\s+texas|texas\s+department|texas\s+legislature|texas\s+workforce|'
-    r'\bdepartment\s+of\s+\w|\bdept\.?\s+of\s+\w|internal\s+revenue\s+service|\birs\b|'
+    r'texas\s+association\s+of\s+counties|'
+    r'\bdepartment\s+of\s+\w|\bdept\.?\s+of\s+\w|\bdep\'t\s+of\s+\w|'
+    r'internal\s+revenue\s+service|\birs\b|'
     r'social\s+security\s+administration|\bssa\b|office\s+of\s+hearings|federal\s+bureau|'
     r'u\.?\s?s\.?\s+department|port\s+houston|port\s+authority|port\s+of\s+houston|'
     r'u\.?\s?s\.?\s+district\s+court|united\s+states\s+district\s+court|'
-    r'united\s+states\s+courts?\b|united\s+states\s+judiciary|southern\s+district\s+of\s+texas|'
-    r'u\.?\s?s\.?\s+trustee|office\s+of\s+the\s+u\.?\s?s\.?\s+trustee|united\s+states\s+courthouse|'
+    r'united\s+states\s+courts?\b|united\s+states\s+judiciary|'
+    r'southern\s+district\s+of\s+texas|northern\s+district\s+of\s+texas|'
+    r'eastern\s+district\s+of\s+texas|western\s+district\s+of\s+texas|'
+    r'capital\s+habeas|merit\s+systems\s+protection\s+board|'
+    r'army\s+corps?\s+of\s+engineers|'
+    r'u\.?\s?s\.?\s+trustee|united\s+states\s+trustee|'
+    r'office\s+of\s+the\s+u\.?\s?s\.?\s+trustee|united\s+states\s+courthouse|'
     r'court\s+of\s+appeals|supreme\s+court\s+of\s+texas|texas\s+supreme\s+court|'
-    r'college\s+of\s+law|law\s+center|law\s+school|school\s+of\s+law|\buniversity\b|'
-    r'\bjudge\b|\bjudicial\s+district\b|\bdistrict\s+courts?\b|\bcourts?\s+at\s+law\b|'
+    r'college\s+of\s+law|law\s+school|school\s+of\s+law|\buniversity\b|'
+    r'\bjudge\b|\bhon\.?\s+[a-z]|\bjudicial\s+(district|court)\b|\bdistrict\s+courts?\b|'
+    r'\bcourts?[\s-]+at[\s-]+law\b|'
     r'\bcivil\s+district\b|\bcriminal\s+district\b|\bfamily\s+district\b|'
-    r'\bbankruptcy\s+courts?\b|\biv-d\s+court\b|\bcourt\s+receiver\b|\blaw\s+clerk\b|'
+    r'\bbankruptcy\s+courts?\b|\bbankruptcy\s+ct\b|\biv-d\s+court\b|\bcourt\s+receiver\b|'
+    r'\blaw\s+clerk\b|\busao\b|office\s+of\s+(the\s+)?solicitor|'
     r'\bbar\s+association\b|\bcourt\s+reporting\b|\badministrative\s+judicial\s+region\b|'
     r'\btexas\s+business\s+court\b|\bcourt\s+administration\b|\bchildren.?s\s+court\b|'
     r'criminal\s+justice\s+center|\bhcao\b|\bhcdao\b|circuit\s+co?u?rt?\s+of\s+appeals|'
-    r'fifth\s+circuit|foster\s+care\s+advocacy)',
+    r'fifth\s+circuit|foster\s+care\s+advocacy|'
+    r'\bfdic\b|federal\s+reserve\s+bank|environmental\s+protection\s+agency|'
+    r'\bfederal\s+judiciary\b)',
     re.IGNORECASE,
 )
 
@@ -173,14 +202,30 @@ GOVT_PATTERNS = re.compile(
 # St and 1301 Fannin St are similarly mixed) — blanket-excluding by street
 # address there would wrongly drop real firms. Only extend this list after
 # verifying zero private-firm tenancy the same way, per county.
-DEDICATED_GOVT_BUILDING_RE = re.compile(
-    r'^(1201 franklin|1310 prairie|1019 congress|1400 lubbock|4170 martin luther king)',
-    re.IGNORECASE,
-)
+# Per-county list of confirmed single-purpose government buildings (street
+# prefixes). EMPTY by default for a county until the same per-address
+# tenancy check has actually been run for it — never copy Harris's list
+# into a new county without doing that check fresh, addresses don't
+# transfer between counties.
+DEDICATED_GOVT_BUILDINGS = {
+    "harris-county-tx": [
+        "1201 franklin", "1310 prairie", "1019 congress", "1400 lubbock",
+        "4170 martin luther king",
+    ],
+    "dallas-county-tx": [
+        "133 n riverfront", "600 commerce", "1100 commerce", "1500 marilla",
+        "525 s griffin", "3315 daniel", "500 elm", "2014 main",
+        "2600 lone star", "4050 alpha", "200 n 5th", "825 w irving",
+        "106 s harwood",
+    ],
+}
 
 
-def is_at_dedicated_govt_building(street: str) -> bool:
-    return bool(DEDICATED_GOVT_BUILDING_RE.match((street or "").strip()))
+def is_at_dedicated_govt_building(street: str, slug: str) -> bool:
+    street = (street or "").strip().lower()
+    if not street:
+        return False
+    return any(street.startswith(prefix) for prefix in DEDICATED_GOVT_BUILDINGS.get(slug, []))
 
 
 # In-house-counsel job-title phrasing self-reported as the "company" field —
@@ -223,9 +268,16 @@ _GENERIC_CORP_SUFFIX_RE = re.compile(
 )
 _ANY_LAW_INDICATOR_RE = re.compile(
     r'\blaw\b|\blegal\b|\battorney|\bcounsel\b|\bpllc\b|\bllp\b|\bp\.?c\.?\b|\bp\.?a\.?\b|\besq\b|'
-    r'(?:&|and)\s*associates\b',
+    r'(?:&|and)\s*associates\b|professional\s+corporation',
     re.IGNORECASE,
 )
+
+# "Law Center" is almost always a university's law school (Southern
+# Methodist, Georgetown, etc.) — but verified in the wild that a real
+# private firm can stylize itself the same way ("Wright Law Center
+# PLLC"), so only flag it as institutional when there's no actual
+# firm-entity suffix backing it up.
+_LAW_CENTER_RE = re.compile(r'\blaw\s+center\b', re.IGNORECASE)
 
 # Corporate / institutional in-house-counsel employers — not referral law
 # firms. Substring match on distinctive company-name fragments (curated
@@ -269,9 +321,104 @@ CORP_NON_LAW_FRAGMENTS = [
     "perry homes", "technip energies", "transocean", "chord energy",
     "edp renewables", "jera americas", "equinor", "eor energy services",
     "nextera energy",
+    # Dallas-specific in-house/institutional employers found via manual
+    # spot-check of the largest no-website rows (a large lawyer count made
+    # these easy to spot as non-referral: Goldman Sachs and other banks'
+    # in-house counsel groups, hospital-system legal departments, asset-
+    # management/investment-fund general counsel — Dallas is a finance/
+    # banking and healthcare-system hub the way Houston is an energy hub).
+    "goldman sachs", "citibank", "citigroup", "bank of america", "bank of texas",
+    "bank ozk", "frost bank", "jpmorgan private bank", "origin bank",
+    "plainscapital bank", "pnc bank", "regions bank", "susser bank",
+    "bank of nova scotia", "vista bank", "b1 bank", "bmo harris bank",
+    "federal home loan bank", "first guaranty bank", "texas regional bank",
+    "texas capital bank", "texas capital",
+    "sonic healthcare usa", "access healthcare", "ardent health services",
+    "ashford hospitality advisors", "baylor health care system",
+    "baylor scott & white health", "children's health system of texas",
+    "conifer health solutions", "employer direct healthcare",
+    "enhabit home health", "parkland health", "scp health",
+    "tenet health systems", "texas health resources",
+    "texas scottish rite hospital", "christus health",
+    "caliber healthcare solutions", "agape home healthcare",
+    "health care service corporation", "ut southwestern medical center",
+    "cantex capital", "ridgepost capital", "spirit realty capital",
+    "relevance capital management", "avad capital",
+    "ackerman capital management", "affinius capital",
+    "banner oak capital partners", "base capital funding",
+    "black river capital", "carlson capital", "dt capital group",
+    "evolve capital", "gap capital", "hbk capital management",
+    "highland capital management", "insight capital group",
+    "international capital, llc", "jpg capital", "k-star asset management",
+    "knightvest capital", "longford capital management",
+    "ngp energy capital management", "nexpoint advisors",
+    "northmarq capital", "outlander capital", "p squared advisors",
+    "pgim private capital", "pmb capital investments", "palmwood capital",
+    "patent capital group", "preston hollow community capital",
+    "sgf capital", "saxum capital partners", "silver spur capital partners",
+    "strong capital", "suntx capital partners", "trive capital",
+    "uptown capital advisors", "vwh capital management",
+    "westmount realty capital", "l&b realty advisors", "dfw advisors",
+    "highground advisors", "strata wealth advisors", "tiedemann advisors",
+    "longo commercial advisors", "maverick capital",
+    "american beacon advisors", "bland garvey wealth advisors",
+    "american heart association", "oncor electric delivery",
+    "southwest airlines", "title resources", "capital title of texas",
+    "hudson advisors", "orix corporation", "bausch health",
+    "catholic diocese of dallas", "sw electric",
+    "southern glazer's wine and spirits", "state bar of texas",
+    # Further Dallas in-house/institutional/investment employers found via
+    # systematic manual triage of every 2+-attorney no-website row (WebSearch-
+    # verified where the name alone was ambiguous, e.g. confirming "MMC" =
+    # a staffing company and "ATI" = a materials manufacturer at the exact
+    # address self-reported, not a coincidental abbreviation collision).
+    "caris life sciences", "conduent business services", "brinker international",
+    "dii asbestos trust", "dallas area rapid transit",
+    "federal trade commission", "guidestone", "match group",
+    "the beneficient company group", "united surgical partners international",
+    "verizon", "dr horton", "fidelity investments", "army and air force exchange",
+    "avanci", "benchmark title", "bessemer trust", "copart", "cyrusone",
+    "dallas casa", "disability rights texas", "drivetime", "dominion harbor",
+    "highlander partners", "kosmos energy", "leeward renewable energy",
+    "santander consumer usa", "scout energy partners", "stream data centers",
+    "tolleson wealth management", "u.s. anesthesia partners", "work shield",
+    "builders firstsource", "vistra energy", "national life group",
+    "solis mammography", "zurich north america", "verily life sciences",
+    "axle funding", "adamas energy", "austin commercial", "communities foundation of texas",
+    "consilio", "corgan", "dairy farmers of america", "deason criminal justice reform center",
+    "digital realty", "ecobat", "elemetal", "fannie mae",
+    "financial industry regulatory authority", "genesis women's shelter",
+    "greystar", "hall group", "hbk investments", "headington companies",
+    "hillwood", "international rescue committee", "invitation homes",
+    "lincoln property co", "m financial", "m.d. anderson",
+    "morgan stanley", "office of the comptroller of the currency",
+    "petrus trust company", "riata corporate group", "sunoco",
+    "toyota financial services", "turtle creek, a multi-family office",
+    "u.s. office of special counsel", "us epa",
+    "united states postal service", "vendera resources", "wwex group",
+    "willis towers watson", "willow bridge", "xebec realty", "haggar clothing",
+    "poly-america", "accenture", "berkshire hathaway automotive",
+    "boy scouts of america", "dept homeland security-tsa",
+    "draken international", "heidelberg materials", "invited clubs",
+    "invited (formerly clubcorp)", "nissan north america", "pioneer natural resources",
+    "planet home lending", "primesource building products", "qts data centers",
+    "us citizenship and immigration services", "american contractors insurance group",
+    "rocktop technologies",
+    "b-29 family holdings", "topgolf", "weitzman", "skyview group",
+    "raices", "dell technologies", "flexbase technologies",
+    "global war on terrorism memorial foundation", "panasonic corporation",
+    "southland industries", "trane technologies",
+    "briggs freeman sotheby's international realty", "neovia logistics",
+    "softlayer technologies", "kubota credit corporation", "mlb properties",
+    "the george w. bush foundation", "the o'donnell foundation",
+    "dha housing solutions", "vistra corp", "level 2 legal solutions",
+    "north texas litigation solutions", "employment practices solutions",
 ]
 # Short/ambiguous tokens that need whole-word matching to avoid false positives
-CORP_NON_LAW_WHOLE_WORDS = ["oxy", "slb", "kbr", "hines", "aramco", "pwc", "cargill", "ubs", "calpine", "bp"]
+CORP_NON_LAW_WHOLE_WORDS = [
+    "oxy", "slb", "kbr", "hines", "aramco", "pwc", "cargill", "ubs", "calpine", "bp",
+    "dart", "ey", "finra", "lument", "ibm", "epa", "citi", "fossil", "mmc", "ati",
+]
 
 CORP_NON_LAW_RE = re.compile(
     "|".join(re.escape(f) for f in CORP_NON_LAW_FRAGMENTS)
@@ -343,8 +490,30 @@ def same_firm(a_tokens: list[str], b_tokens: list[str], a_key: str, b_key: str) 
     return False
 
 
+# Confirmed-real law firms (via WebSearch, one at a time) whose names use
+# a bare "&"/"and" join with an abbreviated corporate suffix (Corp./Assoc/
+# Inc.) and no other recognizable law word — the exact shape shared by
+# real non-law companies in the same TX county datasets (AT&T Services,
+# Dave & Buster's, Bain & Company, Charles Schwab & Co., Anderson &
+# Company, American National Bank and Trust Company...). Broadening
+# _ANY_LAW_INDICATOR_RE to accept bare "&"/abbreviated suffixes generally
+# was tried and rejected: it reintroduced those false negatives. Exact-
+# match override is the safe fix — verify each new candidate via
+# WebSearch before adding it here, never add on pattern-guess alone.
+_CONFIRMED_LAW_FIRM_EXACT = {
+    normalize_key(n) for n in (
+        "Travis & Inman, A Professional Corp.",
+        "Kris Terry & Assoc Inc",
+        "Hoffmeyer & Grass, Inc.",
+        "Mullen & Mullen, Inc",
+    )
+}
+
+
 def is_non_law(name: str) -> bool:
     if not name:
+        return False
+    if normalize_key(name) in _CONFIRMED_LAW_FIRM_EXACT:
         return False
     if GOVT_PATTERNS.search(name):
         return True
@@ -353,6 +522,8 @@ def is_non_law(name: str) -> bool:
     if INHOUSE_TITLE_RE.search(name) and not LAW_FIRM_SUFFIX_RE.search(name):
         return True
     if GUARDED_CORP_RE.search(name) and not _EXPLICIT_LAW_OFFICE_RE.search(name):
+        return True
+    if _LAW_CENTER_RE.search(name) and not LAW_FIRM_SUFFIX_RE.search(name):
         return True
     if _GENERIC_CORP_SUFFIX_RE.search(name) and not _ANY_LAW_INDICATOR_RE.search(name):
         return True
@@ -431,14 +602,14 @@ def build_csv(slug: str) -> int:
         company = (e.get("company") or "").strip()
         key = normalize_key(company)
         if not company:
-            if is_at_dedicated_govt_building(e.get("street", "")):
+            if is_at_dedicated_govt_building(e.get("street", ""), slug):
                 dropped_placeholder += 1
             else:
                 solos.append(e)
         elif NONPRACTICING_RE.search(company):
             dropped_placeholder += 1
         elif key in PLACEHOLDER_COMPANY or PLACEHOLDER_RE.search(company) or NUMERIC_ONLY_RE.match(company):
-            if is_at_dedicated_govt_building(e.get("street", "")):
+            if is_at_dedicated_govt_building(e.get("street", ""), slug):
                 dropped_placeholder += 1
             else:
                 solos.append(e)
@@ -471,7 +642,7 @@ def build_csv(slug: str) -> int:
             dropped_non_law += 1
             continue
         city = _mode([m.get("city", "") for m in members])
-        if not is_in_harris_county(city):
+        if not is_in_county(city, slug):
             dropped_out_of_county += 1
             continue
         city = _normalize_city(city)[0] or city
@@ -508,7 +679,7 @@ def build_csv(slug: str) -> int:
             dropped_solo_non_law += 1
             continue
         solo_city = e.get("city", "")
-        if not is_in_harris_county(solo_city):
+        if not is_in_county(solo_city, slug):
             dropped_out_of_county += 1
             continue
         solo_city = _normalize_city(solo_city)[0] or solo_city

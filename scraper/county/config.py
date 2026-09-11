@@ -66,6 +66,18 @@ COUNTY_DEFINITIONS = {
         ],
         "extra_search_terms": ["San Antonio TX", "Bexar County Texas"],
     },
+    "travis_tx": {
+        "name": "Travis County",
+        "state": "TX",
+        "slug": "travis-county-tx",
+        "msa": "Austin",
+        "cities": [
+            "Austin", "Pflugerville", "Lakeway", "West Lake Hills", "Rollingwood",
+            "Sunset Valley", "Manor", "Bee Cave", "Volente", "Point Venture",
+            "Jonestown", "Lago Vista", "Briarcliff", "Mustang Ridge", "San Leanna",
+        ],
+        "extra_search_terms": ["Austin TX", "Travis County Texas"],
+    },
     "riley": {
         "name": "Riley County",
         "state": "KS",

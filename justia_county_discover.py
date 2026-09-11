@@ -59,6 +59,10 @@ COUNTY_CITIES = {
         "Shavano Park", "Terrell Hills", "Universal City", "Windcrest",
         "Fair Oaks Ranch",
     ],
+    "travis-county-tx": [
+        "Austin", "Pflugerville", "Lakeway", "West Lake Hills", "Rollingwood",
+        "Sunset Valley", "Manor", "Bee Cave", "Lago Vista",
+    ],
 }
 CITY_SLUGS = {
     "West University Place": "west-university-place",

@@ -74,6 +74,12 @@ TEXAS_COUNTIES = {
         "msa": "San Antonio",
         "county_ids": [15],
     },
+    "travis-county-tx": {
+        "name": "Travis",
+        "state": "TX",
+        "msa": "Austin",
+        "county_ids": [227],
+    },
 }
 
 ARTICLE_RE = re.compile(r'<article class="lawyer">.*?</article>', re.S)

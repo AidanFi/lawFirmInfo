@@ -55,6 +55,7 @@ COUNTY_META = {
     "dallas-county-tx": {"name": "Dallas", "state": "TX", "msa": "Dallas-Fort Worth"},
     "tarrant-county-tx": {"name": "Tarrant", "state": "TX", "msa": "Dallas-Fort Worth"},
     "bexar-county-tx": {"name": "Bexar", "state": "TX", "msa": "San Antonio"},
+    "travis-county-tx": {"name": "Travis", "state": "TX", "msa": "Austin"},
 }
 
 # The State Bar's "County" search field does not strictly mean "office is
@@ -108,6 +109,11 @@ COUNTY_CITY_ALLOWLIST = {
         "Live Oak", "Olmos Park", "Schertz", "Selma", "Shavano Park",
         "Somerset", "St. Hedwig", "Terrell Hills", "Universal City",
         "Von Ormy", "Windcrest", "Fair Oaks Ranch",
+    ]},
+    "travis-county-tx": {c.lower() for c in [
+        "Austin", "Pflugerville", "Lakeway", "West Lake Hills", "Rollingwood",
+        "Sunset Valley", "Manor", "Bee Cave", "Volente", "Point Venture",
+        "Jonestown", "Lago Vista", "Briarcliff", "Mustang Ridge", "San Leanna",
     ]},
 }
 _CITY_ABBR_FIX = {
@@ -208,7 +214,8 @@ GOVT_PATTERNS = re.compile(
     r'army\s+corps?\s+of\s+engineers|'
     r'u\.?\s?s\.?\s+trustee|united\s+states\s+trustee|'
     r'office\s+of\s+the\s+u\.?\s?s\.?\s+trustee|united\s+states\s+courthouse|'
-    r'court\s+of\s+appeals|supreme\s+court\s+of\s+texas|texas\s+supreme\s+court|'
+    r'court\s+of\s+appeals|court\s+of\s+criminal\s+appeals|'
+    r'supreme\s+court\s+of\s+texas|texas\s+supreme\s+court|'
     r'college\s+of\s+law|law\s+school|school\s+of\s+law|\buniversity\b|'
     r'\bjudge\b|\bhon\.?\s+[a-z]|\bjudicial\s+(district|court)\b|\bdistrict\s+courts?\b|'
     r'\bcourts?[\s-]+at[\s-]+law\b|'
@@ -216,7 +223,7 @@ GOVT_PATTERNS = re.compile(
     r'\bbankruptcy\s+courts?\b|\bbankruptcy\s+ct\b|\biv-d\s+court\b|\bcourt\s+receiver\b|'
     r'\blaw\s+clerk\b|\busao\b|office\s+of\s+(the\s+)?solicitor|'
     r'\bbar\s+association\b|\bcourt\s+reporting\b|\badministrative\s+judicial\s+region\b|'
-    r'\btexas\s+business\s+court\b|\bcourt\s+administration\b|\bchildren.?s\s+court\b|'
+    r'\btexas\s+business\s+court\b|\bbusiness\s+court\b|\bcourt\s+administration\b|\bchildren.?s\s+court\b|'
     r'criminal\s+justice\s+center|\bhcao\b|\bhcdao\b|circuit\s+co?u?rt?\s+of\s+appeals|'
     r'fifth\s+circuit|foster\s+care\s+advocacy|'
     r'\bfdic\b|federal\s+reserve\s+bank|environmental\s+protection\s+agency|'
@@ -268,6 +275,10 @@ DEDICATED_GOVT_BUILDINGS = {
     ],
     "bexar-county-tx": [
         "101 w nueva", "100 dolorosa", "300 dolorosa",
+    ],
+    "travis-county-tx": [
+        "416 w 11th", "300 w 15th", "1501 congress", "727 e dean keeton",
+        "314 w 11th", "1010 lavaca", "3700 lake austin",
     ],
 }
 
@@ -507,6 +518,43 @@ CORP_NON_LAW_FRAGMENTS = [
     "texas rangers baseball club", "firstcash", "interbank",
     "double eagle energy", "double eagle", "ferrovial construction", "ferrovial",
     "general services administration",
+    "lower colorado river authority", "brown advisory",
+    "friends of the children texas", "formentera operations",
+    "texas comptroller of public accounts",
+    "texas commission on environmental quality",
+    "texas legislative council", "texas legislative budget board",
+    "texas sunset advisory commission", "public utility commission of texas",
+    "teacher retirement system of texas", "railroad commission of texas",
+    "texas legal services center", "texas general land office",
+    "texas education agency", "texas secretary of state",
+    "office of capital and forensic writs", "state commission on judicial conduct",
+    "pension review board", "texas department of information resources",
+    "department of information resources",
+    "texas medical board", "texas real estate commission",
+    "texas alcoholic beverage commission", "office of the governor",
+    "samsung austin semiconductor", "texas advocacy project",
+    "texas higher education coordinating board",
+    "texas parks and wildlife department", "at&t",
+    "office of inspector general", "texas ethics commission",
+    "texas state board of pharmacy", "texas behavioral health executive council",
+    "texas municipal league", "applied materials", "dimensional fund advisors",
+    "independence title", "american gateways", "texas civil rights project",
+    "texas immigration law council", "texas public policy foundation",
+    "institute for justice", "travis county office of first defense",
+    "texans for lawsuit reform", "employees retirement system of texas",
+    "texas association of school boards", "hid global",
+    "texas board of nursing", "texas defender service",
+    "texas house of representatives", "travis county law library",
+    "travis county office of child representation", "whole foods market",
+    "incline p&c group", "texas association of builders",
+    "texas classroom teachers association",
+    "texas commission on law enforcement", "texas facilities commission",
+    "texas state securities board", "texas water development board",
+    "capital area private defender service", "nxp semiconductors",
+    "google llc", "capitol services", "usa compression partners",
+    "atlas energy solutions", "cornerstone government affairs",
+    "covenant clearinghouse", "jupiter power", "keller williams realty",
+    "lone star justice alliance", "office of parental representation",
     "brooke army medical center", "cps energy",
     "catholic charities archdiocese of san antonio",
     "the archdiocese of san antonio", "goodwill san antonio",
@@ -535,7 +583,7 @@ CORP_NON_LAW_FRAGMENTS = [
 CORP_NON_LAW_WHOLE_WORDS = [
     "oxy", "slb", "kbr", "hines", "aramco", "pwc", "cargill", "ubs", "calpine", "bp",
     "dart", "ey", "finra", "lument", "ibm", "epa", "citi", "fossil", "mmc", "ati",
-    "bnsf",
+    "bnsf", "hntb", "indeed", "tceq", "tesla", "amd", "amazon",
 ]
 
 # Company names that are also common surnames — a whole-word or substring
@@ -735,7 +783,12 @@ def build_csv(slug: str) -> int:
     for e in kept_status:
         company = (e.get("company") or "").strip()
         key = normalize_key(company)
-        if not company:
+        if not company or not key:
+            # A company value that's purely punctuation (e.g. a lone "-"
+            # placeholder — found in the wild in Travis County) normalizes
+            # to an empty key and has no actual name content; treat it the
+            # same as a genuinely blank company rather than letting it
+            # become its own nonsense-named "firm" cluster.
             if is_at_dedicated_govt_building(e.get("street", ""), slug):
                 dropped_placeholder += 1
             else:

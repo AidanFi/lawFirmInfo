@@ -592,12 +592,20 @@ CORP_NON_LAW_FRAGMENTS = [
     "the george w. bush foundation", "the o'donnell foundation",
     "dha housing solutions", "vistra corp", "level 2 legal solutions",
     "north texas litigation solutions", "employment practices solutions",
+    # Collin County (Plano/McKinney/Frisco) in-house/institutional employers
+    # found via the top-N-by-lawyer-count manual sweep before the verified-
+    # website search pass (WebSearch-confirmed each ambiguous one at its
+    # self-reported Plano address before excluding).
+    "north texas tollway authority", "penney opco", "pizza hut",
+    "qbe north america", "republic finance", "stonebriar commercial finance",
+    "tellus group", "toyota financial savings bank", "urban oil & gas group",
+    "yum! brands", "yum brands",
 ]
 # Short/ambiguous tokens that need whole-word matching to avoid false positives
 CORP_NON_LAW_WHOLE_WORDS = [
     "oxy", "slb", "kbr", "hines", "aramco", "pwc", "cargill", "ubs", "calpine", "bp",
     "dart", "ey", "finra", "lument", "ibm", "epa", "citi", "fossil", "mmc", "ati",
-    "bnsf", "hntb", "indeed", "tceq", "tesla", "amd", "amazon",
+    "bnsf", "hntb", "indeed", "tceq", "tesla", "amd", "amazon", "jpmc",
 ]
 
 # Company names that are also common surnames — a whole-word or substring

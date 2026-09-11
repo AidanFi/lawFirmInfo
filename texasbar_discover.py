@@ -80,6 +80,12 @@ TEXAS_COUNTIES = {
         "msa": "Austin",
         "county_ids": [227],
     },
+    "collin-county-tx": {
+        "name": "Collin",
+        "state": "TX",
+        "msa": "Dallas-Fort Worth",
+        "county_ids": [43],
+    },
 }
 
 ARTICLE_RE = re.compile(r'<article class="lawyer">.*?</article>', re.S)

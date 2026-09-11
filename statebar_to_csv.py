@@ -56,6 +56,7 @@ COUNTY_META = {
     "tarrant-county-tx": {"name": "Tarrant", "state": "TX", "msa": "Dallas-Fort Worth"},
     "bexar-county-tx": {"name": "Bexar", "state": "TX", "msa": "San Antonio"},
     "travis-county-tx": {"name": "Travis", "state": "TX", "msa": "Austin"},
+    "collin-county-tx": {"name": "Collin", "state": "TX", "msa": "Dallas-Fort Worth"},
 }
 
 # The State Bar's "County" search field does not strictly mean "office is
@@ -114,6 +115,12 @@ COUNTY_CITY_ALLOWLIST = {
         "Austin", "Pflugerville", "Lakeway", "West Lake Hills", "Rollingwood",
         "Sunset Valley", "Manor", "Bee Cave", "Volente", "Point Venture",
         "Jonestown", "Lago Vista", "Briarcliff", "Mustang Ridge", "San Leanna",
+    ]},
+    "collin-county-tx": {c.lower() for c in [
+        "Plano", "McKinney", "Frisco", "Allen", "Wylie", "Prosper", "Celina",
+        "Anna", "Melissa", "Princeton", "Farmersville", "Fairview", "Lucas",
+        "Parker", "Murphy", "Sachse", "Josephine", "Blue Ridge", "Nevada",
+        "Weston", "New Hope", "St. Paul", "Lowry Crossing",
     ]},
 }
 _CITY_ABBR_FIX = {
@@ -193,7 +200,7 @@ GOVT_PATTERNS = re.compile(
     r'child\s+protective\s+services|department\s+of\s+family|'
     r'independent\s+school\s+district|\bisd\b|school\s+district|'
     r'\bcity\s+of\s+\w|\bcounty\s+of\s+\w|'
-    r'(harris|dallas|tarrant|bexar)\s+(county|co\.|cty\.?)(?!\s+.*(law|pllc|llp))|\bdallas\s+da\b|'
+    r'(harris|dallas|tarrant|bexar|travis|collin)\s+(county|co\.|cty\.?)(?!\s+.*(law|pllc|llp))|\bdallas\s+da\b|'
     r'\bcscd\b|dispute\s+resolution\s+center|'
     r'\bprecinct\s+\d+\b|'
     r'\bdist\.?\s+attys?\.?\s+ofc\b|\bdist\.?\s+atty\b|\bmagistrate\b|'
@@ -279,6 +286,9 @@ DEDICATED_GOVT_BUILDINGS = {
     "travis-county-tx": [
         "416 w 11th", "300 w 15th", "1501 congress", "727 e dean keeton",
         "314 w 11th", "1010 lavaca", "3700 lake austin",
+    ],
+    "collin-county-tx": [
+        "2100 bloomdale",
     ],
 }
 
@@ -555,6 +565,10 @@ CORP_NON_LAW_FRAGMENTS = [
     "atlas energy solutions", "cornerstone government affairs",
     "covenant clearinghouse", "jupiter power", "keller williams realty",
     "lone star justice alliance", "office of parental representation",
+    "ericsson", "first liberty institute", "fedex office", "raising cane's",
+    "dallas cowboys", "keurig dr pepper", "methodist health system",
+    "collin college", "newrez", "lacore enterprises", "t-mobile",
+    "traxxas", "atlantic aviation",
     "brooke army medical center", "cps energy",
     "catholic charities archdiocese of san antonio",
     "the archdiocese of san antonio", "goodwill san antonio",

@@ -63,6 +63,10 @@ COUNTY_CITIES = {
         "Austin", "Pflugerville", "Lakeway", "West Lake Hills", "Rollingwood",
         "Sunset Valley", "Manor", "Bee Cave", "Lago Vista",
     ],
+    "collin-county-tx": [
+        "Plano", "McKinney", "Frisco", "Allen", "Wylie", "Prosper", "Celina",
+        "Anna", "Melissa", "Princeton", "Fairview", "Murphy",
+    ],
 }
 CITY_SLUGS = {
     "West University Place": "west-university-place",

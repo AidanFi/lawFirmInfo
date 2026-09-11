@@ -78,6 +78,19 @@ COUNTY_DEFINITIONS = {
         ],
         "extra_search_terms": ["Austin TX", "Travis County Texas"],
     },
+    "collin_tx": {
+        "name": "Collin County",
+        "state": "TX",
+        "slug": "collin-county-tx",
+        "msa": "Dallas-Fort Worth",
+        "cities": [
+            "Plano", "McKinney", "Frisco", "Allen", "Wylie", "Prosper", "Celina",
+            "Anna", "Melissa", "Princeton", "Farmersville", "Fairview", "Lucas",
+            "Parker", "Murphy", "Sachse", "Josephine", "Blue Ridge", "Nevada",
+            "Weston", "New Hope", "St. Paul", "Lowry Crossing",
+        ],
+        "extra_search_terms": ["Plano TX", "Collin County Texas"],
+    },
     "riley": {
         "name": "Riley County",
         "state": "KS",

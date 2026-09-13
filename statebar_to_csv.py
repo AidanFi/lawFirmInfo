@@ -68,6 +68,11 @@ COUNTY_META = {
     "bell-county-tx": {"name": "Bell", "state": "TX", "msa": "Killeen-Temple"},
     "nueces-county-tx": {"name": "Nueces", "state": "TX", "msa": "Corpus Christi"},
     "webb-county-tx": {"name": "Webb", "state": "TX", "msa": "Laredo"},
+    "galveston-county-tx": {"name": "Galveston", "state": "TX", "msa": "Houston"},
+    "lubbock-county-tx": {"name": "Lubbock", "state": "TX", "msa": "Lubbock"},
+    "hays-county-tx": {"name": "Hays", "state": "TX", "msa": "Austin"},
+    "mclennan-county-tx": {"name": "McLennan", "state": "TX", "msa": "Waco"},
+    "jefferson-county-tx": {"name": "Jefferson", "state": "TX", "msa": "Beaumont-Port Arthur"},
 }
 
 # The State Bar's "County" search field does not strictly mean "office is
@@ -191,6 +196,30 @@ COUNTY_CITY_ALLOWLIST = {
         "Laredo", "Rio Bravo", "El Cenizo", "Mirando City",
         "Bruni", "Oilton",
     ]},
+    "galveston-county-tx": {c.lower() for c in [
+        "Galveston", "League City", "Texas City", "Dickinson",
+        "Friendswood", "La Marque", "Santa Fe", "Hitchcock", "Bacliff",
+        "San Leon", "Kemah", "Clear Lake Shores", "Bayou Vista",
+        "Tiki Island", "Jamaica Beach", "Bolivar Peninsula",
+        "Crystal Beach", "High Island", "Port Bolivar",
+    ]},
+    "lubbock-county-tx": {c.lower() for c in [
+        "Lubbock", "Slaton", "Wolfforth", "Shallowater", "Idalou",
+        "New Deal", "Ransom Canyon", "Abernathy", "Buffalo Springs",
+    ]},
+    "hays-county-tx": {c.lower() for c in [
+        "San Marcos", "Kyle", "Buda", "Dripping Springs", "Wimberley",
+        "Uhland", "Niederwald", "Woodcreek", "Mountain City", "Driftwood",
+    ]},
+    "mclennan-county-tx": {c.lower() for c in [
+        "Waco", "Woodway", "Hewitt", "Robinson", "Lorena", "Bellmead",
+        "McGregor", "Lacy-Lakeview", "Beverly Hills", "Crawford", "West",
+        "Riesel", "Moody", "China Spring", "Elm Mott",
+    ]},
+    "jefferson-county-tx": {c.lower() for c in [
+        "Beaumont", "Port Arthur", "Nederland", "Port Neches", "Groves",
+        "China", "Nome", "Bevil Oaks", "Sabine Pass",
+    ]},
     "hidalgo-county-tx": {c.lower() for c in [
         "McAllen", "Edinburg", "Mission", "Pharr", "San Juan", "Weslaco",
         "Alton", "Donna", "Elsa", "Hidalgo", "La Joya", "Mercedes",
@@ -217,6 +246,8 @@ _CITY_ABBR_FIX = {
     "the woodland": "the woodlands",
     "woodlands": "the woodlands",
     "panorama vlg": "panorama village",
+    "dripping spgs": "dripping springs",
+    "san  marcos": "san marcos",
 }
 
 
@@ -261,6 +292,11 @@ IN_COUNTY_ZIP_OVERRIDE = {
     # (75%/94%/97% respectively) split zips, so most self-reports there
     # really are out-of-county, same judgment call as Fort Bend's 77083.
     "williamson-county-tx": {"78717", "78729"},
+    # 78737 (Southwest Austin/Belterra/Dripping Springs area) is primarily
+    # Hays County despite the "Austin" mailing city — verified. 78739
+    # (also self-reported "Austin") is majority-Travis and deliberately
+    # left out, same judgment call as the Williamson split zips above.
+    "hays-county-tx": {"78737"},
 }
 
 
@@ -277,7 +313,8 @@ def is_in_county(city: str, slug: str, zipc: str = "") -> bool:
 # unrelated people into a fake mega-firm.
 PLACEHOLDER_COMPANY = {
     "self", "self employed", "self-employed", "selfemployed", "attorney",
-    "attorney at law", "attorneys at law", "n a", "na", "none", "retired",
+    "attorney at law", "attorneys at law", "atty at law", "attys at law",
+    "atty-at-law", "n a", "na", "none", "retired",
     "mr", "ms", "mrs", "dr", "sole practitioner", "solo practitioner",
     "unemployed", "individual", "private", "private practice", "unknown",
     "not applicable", "in house", "in-house", "law student", "student",
@@ -315,8 +352,9 @@ NONPRACTICING_RE = re.compile(r'\bretire[ds]?\b|\binactive\b|\bdeceased\b|\bunaf
 # contain those words (e.g. "District Attorney's Office").
 GOVT_PATTERNS = re.compile(
     r'(district\s+attorney|county\s+attorney|city\s+attorney|attorney\s+general|'
-    r'district\s+atty\.?\b|county\s+atty\.?\b|'
+    r'district\s+atty\.?\b|county\s+atty\.?\b|atty\.?\s+general|atty\.?\s+gen\.?\b|'
     r'u\.?\s?s\.?\s+attorney|united\s+states\s+attorney|office\s+of\s+the\s+attorney|'
+    r'u\.?\s?s\.?\s+atty\.?\b|'
     r'public\s+defender|assigned\s+counsel|managed\s+counsel|domestic\s+relations|'
     r'county\s+clerk|district\s+clerk|county\s+court\s+at\s+law|'
     r'county\s+criminal\s+court|justice\s+of\s+the\s+peace|'
@@ -325,7 +363,7 @@ GOVT_PATTERNS = re.compile(
     r'child\s+protective\s+services|department\s+of\s+family|'
     r'independent\s+school\s+district|\bisd\b|school\s+district|'
     r'\bcity\s+of\s+\w|\bcounty\s+of\s+\w|'
-    r'(harris|dallas|tarrant|bexar|travis|collin|denton|fort\s+bend|hidalgo|el\s+paso|montgomery|williamson|cameron|brazoria|bell|nueces|webb)\s+(county|co\.|cty\.?)(?!\s+.*(law|pllc|llp))|\bdallas\s+da\b|'
+    r'(harris|dallas|tarrant|bexar|travis|collin|denton|fort\s+bend|hidalgo|el\s+paso|montgomery|williamson|cameron|brazoria|bell|nueces|webb|galveston|lubbock|hays|mclennan|jefferson)\s+(county|co\.|cty\.?)(?!\s+.*(law|pllc|llp))|\bdallas\s+da\b|'
     r'\bcscd\b|dispute\s+resolution\s+center|'
     r'\bprecinct\s+\d+\b|'
     r'\bdist\.?\s+attys?\.?\s+ofc\b|\bdist\.?\s+atty\b|\bmagistrate\b|'
@@ -426,6 +464,11 @@ DEDICATED_GOVT_BUILDINGS = {
     "bell-county-tx": [],
     "nueces-county-tx": [],
     "webb-county-tx": [],
+    "galveston-county-tx": [],
+    "lubbock-county-tx": [],
+    "hays-county-tx": [],
+    "mclennan-county-tx": [],
+    "jefferson-county-tx": [],
 }
 
 
@@ -758,6 +801,26 @@ CORP_NON_LAW_FRAGMENTS = [
     # Brazoria County finds: a famous TX gas-station/convenience-store
     # chain headquartered near Lake Jackson, and a legal-aid nonprofit.
     "buc-ee's", "lone star legal aid",
+    # Galveston County finds: a major insurance company and an oil
+    # refiner with a large Texas City plant.
+    "the hartford", "marathon petroleum",
+    # Lubbock County finds: a hospital system, a legal-aid nonprofit, an
+    # indigent-defense nonprofit, a municipal electric utility, a
+    # specialty government court, and a drive-thru coffee franchisee.
+    "umc health system", "family legal services of the south plains",
+    "lone star defenders office", "lubbock power & light",
+    "south plains foster care court", "7crew enterprises",
+    # Hays County find: the county's public defender office (indigent
+    # defense, government-funded, not a referral target).
+    "neighborhood defender service",
+    # McLennan County (Waco) finds: an agricultural insurance/lobbying
+    # organization, a river authority, a nonprofit student-loan servicer,
+    # a legal-aid nonprofit, and three banks/wealth-management firms.
+    "texas farm bureau", "brazos river authority",
+    "brazos higher education", "greater waco legal services",
+    "community bank & trust", "alliance bank central texas",
+    "extraco wealth and trust", "extraco banks", "texas life insurance",
+    "centex child protection court",
     # Nueces County finds: a community college district, a county court
     # (self-reported bare as "County Court #5"), a federally-appointed
     # Chapter 13 bankruptcy trustee (quasi-judicial, not a referral
@@ -782,12 +845,28 @@ CORP_NON_LAW_FRAGMENTS = [
     "covermymeds", "munich re trading", "repsol",
     "8 rivers capital", "american bureau of shipping",
     "fcc environmental services", "independent office of inmate counsel",
+    # Galveston County finds: a public housing authority, a career/trade
+    # school combined with a personal-sounding firm name, a community
+    # college, and a county tax appraisal district.
+    "galveston housing authority", "texas health and technical trade institute",
+    "college of the mainland", "galveston central appraisal district",
+    # Lubbock County finds: a regional transit authority (self-reported
+    # bare, unrelated to Lubbock itself), a public charter school, a
+    # Lubbock-headquartered bank, an out-of-state hospital system's legal
+    # department, and a community college.
+    "capital metropolitan transportation authority",
+    "betty m. condra school for education innovation",
+    "providence health", "south plains college",
+    # Hays County finds: a national health-insurance corporation, a state
+    # military/national-guard agency, and a regional natural-gas utility.
+    "molina healthcare", "texas military department", "sienergy",
 ]
 # Short/ambiguous tokens that need whole-word matching to avoid false positives
 CORP_NON_LAW_WHOLE_WORDS = [
     "oxy", "slb", "kbr", "hines", "aramco", "pwc", "cargill", "ubs", "calpine", "bp",
     "dart", "ey", "finra", "lument", "ibm", "epa", "citi", "fossil", "mmc", "ati",
     "bnsf", "hntb", "indeed", "tceq", "tesla", "amd", "amazon", "jpmc",
+    "city bank",
 ]
 
 # Company names that are also common surnames — a whole-word or substring
@@ -823,7 +902,19 @@ _SUFFIX_WORDS = {
     "llp", "llc", "lp", "pllc", "plc", "pc", "pa", "ltd", "inc", "incorporated",
     "corp", "corporation", "company", "co", "law", "laws", "firm", "firms",
     "group", "office", "offices", "attorney", "attorneys", "lawyer", "lawyers",
-    "associates", "assoc", "assocs", "and", "the", "of", "a",
+    "associates", "assoc", "assocs", "and", "the", "of", "a", "at",
+    # "atty"/"attys" is the abbreviated form of "attorney"/"attorneys"
+    # (already stripped above) but wasn't itself stripped — found in the
+    # wild (Lubbock County) wrongly subset-matching three completely
+    # unrelated solo attorneys who each self-reported "[Name] Atty at
+    # Law" into one fake firm, since after removing only "law" the
+    # remaining {"atty", "at"} was a 2-token "distinctive" subset of
+    # every other such name. Stripping "atty"/"attys"/"at" here (same as
+    # the full-spelling forms already stripped) leaves the bare
+    # placeholder's token set empty (correctly blocking any match) and
+    # leaves each real name's own distinctive tokens (surname etc.)
+    # as the only thing left to compare.
+    "atty", "attys",
 }
 
 

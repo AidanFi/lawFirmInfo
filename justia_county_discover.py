@@ -109,6 +109,22 @@ COUNTY_CITIES = {
     "webb-county-tx": [
         "Laredo",
     ],
+    "galveston-county-tx": [
+        "Galveston", "League City", "Texas City", "Dickinson",
+        "Friendswood", "La Marque", "Santa Fe",
+    ],
+    "lubbock-county-tx": [
+        "Lubbock", "Wolfforth", "Slaton",
+    ],
+    "hays-county-tx": [
+        "San Marcos", "Kyle", "Buda", "Dripping Springs", "Wimberley",
+    ],
+    "mclennan-county-tx": [
+        "Waco", "Woodway", "Hewitt", "Robinson", "Bellmead", "McGregor",
+    ],
+    "jefferson-county-tx": [
+        "Beaumont", "Port Arthur", "Nederland", "Port Neches", "Groves",
+    ],
 }
 CITY_SLUGS = {
     "West University Place": "west-university-place",

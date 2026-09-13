@@ -234,6 +234,36 @@ TEXAS_COUNTIES = {
         "msa": "Laredo",
         "county_ids": [ALL_TEXAS_COUNTY_IDS["WEBB"]],
     },
+    "galveston-county-tx": {
+        "name": "Galveston",
+        "state": "TX",
+        "msa": "Houston",
+        "county_ids": [ALL_TEXAS_COUNTY_IDS["GALVESTON"]],
+    },
+    "lubbock-county-tx": {
+        "name": "Lubbock",
+        "state": "TX",
+        "msa": "Lubbock",
+        "county_ids": [ALL_TEXAS_COUNTY_IDS["LUBBOCK"]],
+    },
+    "hays-county-tx": {
+        "name": "Hays",
+        "state": "TX",
+        "msa": "Austin",
+        "county_ids": [ALL_TEXAS_COUNTY_IDS["HAYS"]],
+    },
+    "mclennan-county-tx": {
+        "name": "McLennan",
+        "state": "TX",
+        "msa": "Waco",
+        "county_ids": [ALL_TEXAS_COUNTY_IDS["MCLENNAN"]],
+    },
+    "jefferson-county-tx": {
+        "name": "Jefferson",
+        "state": "TX",
+        "msa": "Beaumont-Port Arthur",
+        "county_ids": [ALL_TEXAS_COUNTY_IDS["JEFFERSON"]],
+    },
 }
 
 ARTICLE_RE = re.compile(r'<article class="lawyer">.*?</article>', re.S)

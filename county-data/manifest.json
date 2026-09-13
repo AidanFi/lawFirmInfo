@@ -996,7 +996,7 @@
       "slug": "harris-county-tx",
       "name": "Harris County",
       "state": "TX",
-      "firm_count": 11304,
+      "firm_count": 11300,
       "last_updated": "2026-09-13",
       "csv_file": "harris-county-tx.csv"
     },
@@ -1028,7 +1028,7 @@
       "slug": "travis-county-tx",
       "name": "Travis County",
       "state": "TX",
-      "firm_count": 4850,
+      "firm_count": 4848,
       "last_updated": "2026-09-13",
       "csv_file": "travis-county-tx.csv"
     },
@@ -1079,6 +1079,30 @@
       "firm_count": 1037,
       "last_updated": "2026-09-13",
       "csv_file": "montgomery-county-tx.csv"
+    },
+    {
+      "slug": "williamson-county-tx",
+      "name": "Williamson County",
+      "state": "TX",
+      "firm_count": 764,
+      "last_updated": "2026-09-13",
+      "csv_file": "williamson-county-tx.csv"
+    },
+    {
+      "slug": "cameron-county-tx",
+      "name": "Cameron County",
+      "state": "TX",
+      "firm_count": 364,
+      "last_updated": "2026-09-13",
+      "csv_file": "cameron-county-tx.csv"
+    },
+    {
+      "slug": "brazoria-county-tx",
+      "name": "Brazoria County",
+      "state": "TX",
+      "firm_count": 458,
+      "last_updated": "2026-09-13",
+      "csv_file": "brazoria-county-tx.csv"
     }
   ]
 }

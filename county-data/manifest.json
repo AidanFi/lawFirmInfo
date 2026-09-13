@@ -1012,7 +1012,7 @@
             "slug": "tarrant-county-tx",
             "name": "Tarrant County",
             "state": "TX",
-            "firm_count": 2926,
+            "firm_count": 2925,
             "last_updated": "2026-09-13",
             "csv_file": "tarrant-county-tx.csv"
         },
@@ -1060,7 +1060,7 @@
             "slug": "hidalgo-county-tx",
             "name": "Hidalgo County",
             "state": "TX",
-            "firm_count": 702,
+            "firm_count": 701,
             "last_updated": "2026-09-13",
             "csv_file": "hidalgo-county-tx.csv"
         },
@@ -1076,7 +1076,7 @@
             "slug": "montgomery-county-tx",
             "name": "Montgomery County",
             "state": "TX",
-            "firm_count": 1037,
+            "firm_count": 1036,
             "last_updated": "2026-09-13",
             "csv_file": "montgomery-county-tx.csv"
         },
@@ -1084,7 +1084,7 @@
             "slug": "williamson-county-tx",
             "name": "Williamson County",
             "state": "TX",
-            "firm_count": 764,
+            "firm_count": 763,
             "last_updated": "2026-09-13",
             "csv_file": "williamson-county-tx.csv"
         },
@@ -1092,7 +1092,7 @@
             "slug": "cameron-county-tx",
             "name": "Cameron County",
             "state": "TX",
-            "firm_count": 364,
+            "firm_count": 363,
             "last_updated": "2026-09-13",
             "csv_file": "cameron-county-tx.csv"
         },
@@ -1167,6 +1167,46 @@
             "firm_count": 262,
             "last_updated": "2026-09-13",
             "csv_file": "jefferson-county-tx.csv"
+        },
+        {
+            "slug": "smith-county-tx",
+            "name": "Smith County",
+            "state": "TX",
+            "firm_count": 359,
+            "last_updated": "2026-09-13",
+            "csv_file": "smith-county-tx.csv"
+        },
+        {
+            "slug": "brazos-county-tx",
+            "name": "Brazos County",
+            "state": "TX",
+            "firm_count": 238,
+            "last_updated": "2026-09-13",
+            "csv_file": "brazos-county-tx.csv"
+        },
+        {
+            "slug": "ellis-county-tx",
+            "name": "Ellis County",
+            "state": "TX",
+            "firm_count": 171,
+            "last_updated": "2026-09-13",
+            "csv_file": "ellis-county-tx.csv"
+        },
+        {
+            "slug": "johnson-county-tx",
+            "name": "Johnson County",
+            "state": "TX",
+            "firm_count": 114,
+            "last_updated": "2026-09-13",
+            "csv_file": "johnson-county-tx.csv"
+        },
+        {
+            "slug": "comal-county-tx",
+            "name": "Comal County",
+            "state": "TX",
+            "firm_count": 277,
+            "last_updated": "2026-09-13",
+            "csv_file": "comal-county-tx.csv"
         }
     ]
 }

@@ -996,7 +996,7 @@
       "slug": "harris-county-tx",
       "name": "Harris County",
       "state": "TX",
-      "firm_count": 11300,
+      "firm_count": 11299,
       "last_updated": "2026-09-13",
       "csv_file": "harris-county-tx.csv"
     },
@@ -1012,7 +1012,7 @@
       "slug": "tarrant-county-tx",
       "name": "Tarrant County",
       "state": "TX",
-      "firm_count": 2927,
+      "firm_count": 2926,
       "last_updated": "2026-09-13",
       "csv_file": "tarrant-county-tx.csv"
     },
@@ -1020,8 +1020,8 @@
       "slug": "bexar-county-tx",
       "name": "Bexar County",
       "state": "TX",
-      "firm_count": 3428,
-      "last_updated": "2026-09-11",
+      "firm_count": 3427,
+      "last_updated": "2026-09-13",
       "csv_file": "bexar-county-tx.csv"
     },
     {
@@ -1036,7 +1036,7 @@
       "slug": "collin-county-tx",
       "name": "Collin County",
       "state": "TX",
-      "firm_count": 1878,
+      "firm_count": 1877,
       "last_updated": "2026-09-13",
       "csv_file": "collin-county-tx.csv"
     },
@@ -1052,7 +1052,7 @@
       "slug": "fort-bend-county-tx",
       "name": "Fort Bend County",
       "state": "TX",
-      "firm_count": 1272,
+      "firm_count": 1271,
       "last_updated": "2026-09-13",
       "csv_file": "fort-bend-county-tx.csv"
     },
@@ -1060,7 +1060,7 @@
       "slug": "hidalgo-county-tx",
       "name": "Hidalgo County",
       "state": "TX",
-      "firm_count": 704,
+      "firm_count": 703,
       "last_updated": "2026-09-13",
       "csv_file": "hidalgo-county-tx.csv"
     },
@@ -1068,7 +1068,7 @@
       "slug": "el-paso-county-tx",
       "name": "El Paso County",
       "state": "TX",
-      "firm_count": 669,
+      "firm_count": 668,
       "last_updated": "2026-09-13",
       "csv_file": "el-paso-county-tx.csv"
     },
@@ -1103,6 +1103,30 @@
       "firm_count": 458,
       "last_updated": "2026-09-13",
       "csv_file": "brazoria-county-tx.csv"
+    },
+    {
+      "slug": "bell-county-tx",
+      "name": "Bell County",
+      "state": "TX",
+      "firm_count": 178,
+      "last_updated": "2026-09-13",
+      "csv_file": "bell-county-tx.csv"
+    },
+    {
+      "slug": "nueces-county-tx",
+      "name": "Nueces County",
+      "state": "TX",
+      "firm_count": 457,
+      "last_updated": "2026-09-13",
+      "csv_file": "nueces-county-tx.csv"
+    },
+    {
+      "slug": "webb-county-tx",
+      "name": "Webb County",
+      "state": "TX",
+      "firm_count": 217,
+      "last_updated": "2026-09-13",
+      "csv_file": "webb-county-tx.csv"
     }
   ]
 }

@@ -73,6 +73,11 @@ COUNTY_META = {
     "hays-county-tx": {"name": "Hays", "state": "TX", "msa": "Austin"},
     "mclennan-county-tx": {"name": "McLennan", "state": "TX", "msa": "Waco"},
     "jefferson-county-tx": {"name": "Jefferson", "state": "TX", "msa": "Beaumont-Port Arthur"},
+    "smith-county-tx": {"name": "Smith", "state": "TX", "msa": "Tyler"},
+    "brazos-county-tx": {"name": "Brazos", "state": "TX", "msa": "College Station-Bryan"},
+    "ellis-county-tx": {"name": "Ellis", "state": "TX", "msa": "Dallas-Fort Worth"},
+    "johnson-county-tx": {"name": "Johnson", "state": "TX", "msa": "Dallas-Fort Worth"},
+    "comal-county-tx": {"name": "Comal", "state": "TX", "msa": "San Antonio-New Braunfels"},
 }
 
 # The State Bar's "County" search field does not strictly mean "office is
@@ -237,6 +242,30 @@ COUNTY_CITY_ALLOWLIST = {
         "Woodloch", "Cut and Shoot", "New Caney", "Porter",
         "Pinehurst", "Dobbin",
     ]},
+    "smith-county-tx": {c.lower() for c in [
+        "Tyler", "Whitehouse", "Lindale", "Arp", "Bullard", "Noonday",
+        "Chapel Hill", "New Chapel Hill", "Flint", "Hideaway", "Winona",
+        "Troup", "Overton",
+    ]},
+    "brazos-county-tx": {c.lower() for c in [
+        "Bryan", "College Station", "Kurten", "Wixon Valley", "Edge",
+        "Millican", "Wellborn",
+    ]},
+    "ellis-county-tx": {c.lower() for c in [
+        "Waxahachie", "Ennis", "Midlothian", "Red Oak", "Ovilla", "Italy",
+        "Ferris", "Palmer", "Bardwell", "Milford", "Maypearl", "Venus",
+        "Oak Leaf", "Alma", "Garrett", "Pecan Hill",
+    ]},
+    "johnson-county-tx": {c.lower() for c in [
+        "Cleburne", "Burleson", "Alvarado", "Godley", "Joshua", "Keene",
+        "Grandview", "Rio Vista", "Cross Timber", "Venus", "Lillian",
+        "Sand Flat", "Grandview",
+    ]},
+    "comal-county-tx": {c.lower() for c in [
+        "New Braunfels", "Schertz", "Bulverde", "Garden Ridge",
+        "Fair Oaks Ranch", "Spring Branch", "Canyon Lake", "Startzville",
+        "Bear Creek", "Fischer",
+    ]},
 }
 _CITY_ABBR_FIX = {
     "w univ pl": "west university place",
@@ -248,6 +277,10 @@ _CITY_ABBR_FIX = {
     "panorama vlg": "panorama village",
     "dripping spgs": "dripping springs",
     "san  marcos": "san marcos",
+    "college sta": "college station",
+    "college statiion": "college station",
+    "college station,": "college station",
+    "hideawayr": "hideaway",
 }
 
 
@@ -260,6 +293,15 @@ def _normalize_city(city: str) -> tuple[str, str]:
     c = re.sub(r",?\s*tx\b.*$", "", c, flags=re.IGNORECASE).strip()
     c = re.sub(r",?\s*dc\b.*$", "", c, flags=re.IGNORECASE).strip()
     key = _CITY_ABBR_FIX.get(c.lower(), c.lower())
+    # If an abbreviation/typo fix applied, the display should show the
+    # CORRECTED city name too (title-cased), not the raw self-reported
+    # typo/abbreviation — otherwise a row correctly recognized as
+    # in-county via the fix still displays the wrong city text (found:
+    # "College Sta" shipped verbatim in Brazos County despite the
+    # "college sta"->"college station" key fix already being applied for
+    # allowlist purposes).
+    if c.lower() in _CITY_ABBR_FIX:
+        return key.title(), key
     return c, key
 
 
@@ -361,9 +403,10 @@ GOVT_PATTERNS = re.compile(
     r'\bconstable\b|sheriff.?s\s+office|police\s+department|fire\s+department|'
     r'municipal\s+court|probate\s+court|'
     r'child\s+protective\s+services|department\s+of\s+family|'
+    r'child\s+protection\s+court|'
     r'independent\s+school\s+district|\bisd\b|school\s+district|'
     r'\bcity\s+of\s+\w|\bcounty\s+of\s+\w|'
-    r'(harris|dallas|tarrant|bexar|travis|collin|denton|fort\s+bend|hidalgo|el\s+paso|montgomery|williamson|cameron|brazoria|bell|nueces|webb|galveston|lubbock|hays|mclennan|jefferson)\s+(county|co\.|cty\.?)(?!\s+.*(law|pllc|llp))|\bdallas\s+da\b|'
+    r'(harris|dallas|tarrant|bexar|travis|collin|denton|fort\s+bend|hidalgo|el\s+paso|montgomery|williamson|cameron|brazoria|bell|nueces|webb|galveston|lubbock|hays|mclennan|jefferson|smith|brazos|ellis|johnson|comal)\s+(county|co\.|cty\.?)(?!\s+.*(law|pllc|llp))|\bdallas\s+da\b|'
     r'\bcscd\b|dispute\s+resolution\s+center|'
     r'\bprecinct\s+\d+\b|'
     r'\bdist\.?\s+attys?\.?\s+ofc\b|\bdist\.?\s+atty\b|\bmagistrate\b|'
@@ -469,6 +512,11 @@ DEDICATED_GOVT_BUILDINGS = {
     "hays-county-tx": [],
     "mclennan-county-tx": [],
     "jefferson-county-tx": [],
+    "smith-county-tx": [],
+    "brazos-county-tx": [],
+    "ellis-county-tx": [],
+    "johnson-county-tx": [],
+    "comal-county-tx": [],
 }
 
 
@@ -860,6 +908,20 @@ CORP_NON_LAW_FRAGMENTS = [
     # Hays County finds: a national health-insurance corporation, a state
     # military/national-guard agency, and a regional natural-gas utility.
     "molina healthcare", "texas military department", "sienergy",
+    # Comal County (New Braunfels) finds: a municipal utility and a
+    # ten-county regional river/water authority.
+    "new braunfels utilities", "guadalupe-blanco river authority",
+    # Smith County (Tyler) finds: a regional nonprofit hospital system and
+    # a community/junior college.
+    "christus trinity mother frances", "tyler junior college",
+    # Brazos County (Bryan/College Station) finds: an out-of-state
+    # industrial bank, a Texas clean-energy developer, a community
+    # college (Brenham-based, with a Bryan campus), an agricultural
+    # lending cooperative headquartered in College Station, a university-
+    # affiliated fundraising foundation, and a healthcare distribution
+    # company.
+    "first electronic bank", "treaty oak clean energy", "blinn college",
+    "capital farm credit", "texas a&m foundation", "cardinal health",
 ]
 # Short/ambiguous tokens that need whole-word matching to avoid false positives
 CORP_NON_LAW_WHOLE_WORDS = [

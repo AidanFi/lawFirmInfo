@@ -125,6 +125,21 @@ COUNTY_CITIES = {
     "jefferson-county-tx": [
         "Beaumont", "Port Arthur", "Nederland", "Port Neches", "Groves",
     ],
+    "smith-county-tx": [
+        "Tyler", "Whitehouse", "Lindale", "Bullard", "Troup",
+    ],
+    "brazos-county-tx": [
+        "Bryan", "College Station",
+    ],
+    "ellis-county-tx": [
+        "Waxahachie", "Ennis", "Midlothian", "Red Oak",
+    ],
+    "johnson-county-tx": [
+        "Cleburne", "Burleson", "Alvarado", "Joshua",
+    ],
+    "comal-county-tx": [
+        "New Braunfels", "Schertz", "Bulverde", "Canyon Lake",
+    ],
 }
 CITY_SLUGS = {
     "West University Place": "west-university-place",

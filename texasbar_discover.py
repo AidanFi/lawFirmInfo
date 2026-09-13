@@ -264,6 +264,36 @@ TEXAS_COUNTIES = {
         "msa": "Beaumont-Port Arthur",
         "county_ids": [ALL_TEXAS_COUNTY_IDS["JEFFERSON"]],
     },
+    "smith-county-tx": {
+        "name": "Smith",
+        "state": "TX",
+        "msa": "Tyler",
+        "county_ids": [ALL_TEXAS_COUNTY_IDS["SMITH"]],
+    },
+    "brazos-county-tx": {
+        "name": "Brazos",
+        "state": "TX",
+        "msa": "College Station-Bryan",
+        "county_ids": [ALL_TEXAS_COUNTY_IDS["BRAZOS"]],
+    },
+    "ellis-county-tx": {
+        "name": "Ellis",
+        "state": "TX",
+        "msa": "Dallas-Fort Worth",
+        "county_ids": [ALL_TEXAS_COUNTY_IDS["ELLIS"]],
+    },
+    "johnson-county-tx": {
+        "name": "Johnson",
+        "state": "TX",
+        "msa": "Dallas-Fort Worth",
+        "county_ids": [ALL_TEXAS_COUNTY_IDS["JOHNSON"]],
+    },
+    "comal-county-tx": {
+        "name": "Comal",
+        "state": "TX",
+        "msa": "San Antonio-New Braunfels",
+        "county_ids": [ALL_TEXAS_COUNTY_IDS["COMAL"]],
+    },
 }
 
 ARTICLE_RE = re.compile(r'<article class="lawyer">.*?</article>', re.S)

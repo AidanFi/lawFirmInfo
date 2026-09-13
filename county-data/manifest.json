@@ -1004,8 +1004,8 @@
       "slug": "dallas-county-tx",
       "name": "Dallas County",
       "state": "TX",
-      "firm_count": 7043,
-      "last_updated": "2026-09-11",
+      "firm_count": 7041,
+      "last_updated": "2026-09-12",
       "csv_file": "dallas-county-tx.csv"
     },
     {
@@ -1036,9 +1036,17 @@
       "slug": "collin-county-tx",
       "name": "Collin County",
       "state": "TX",
-      "firm_count": 1879,
-      "last_updated": "2026-09-11",
+      "firm_count": 1878,
+      "last_updated": "2026-09-12",
       "csv_file": "collin-county-tx.csv"
+    },
+    {
+      "slug": "denton-county-tx",
+      "name": "Denton County",
+      "state": "TX",
+      "firm_count": 1002,
+      "last_updated": "2026-09-12",
+      "csv_file": "denton-county-tx.csv"
     }
   ]
 }

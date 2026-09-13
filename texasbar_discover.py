@@ -198,6 +198,24 @@ TEXAS_COUNTIES = {
         "msa": "Houston",
         "county_ids": [170],
     },
+    "williamson-county-tx": {
+        "name": "Williamson",
+        "state": "TX",
+        "msa": "Austin",
+        "county_ids": [ALL_TEXAS_COUNTY_IDS["WILLIAMSON"]],
+    },
+    "cameron-county-tx": {
+        "name": "Cameron",
+        "state": "TX",
+        "msa": "Brownsville-Harlingen",
+        "county_ids": [ALL_TEXAS_COUNTY_IDS["CAMERON"]],
+    },
+    "brazoria-county-tx": {
+        "name": "Brazoria",
+        "state": "TX",
+        "msa": "Houston",
+        "county_ids": [ALL_TEXAS_COUNTY_IDS["BRAZORIA"]],
+    },
 }
 
 ARTICLE_RE = re.compile(r'<article class="lawyer">.*?</article>', re.S)

@@ -62,6 +62,9 @@ COUNTY_META = {
     "hidalgo-county-tx": {"name": "Hidalgo", "state": "TX", "msa": "McAllen-Edinburg-Mission"},
     "el-paso-county-tx": {"name": "El Paso", "state": "TX", "msa": "El Paso"},
     "montgomery-county-tx": {"name": "Montgomery", "state": "TX", "msa": "Houston"},
+    "williamson-county-tx": {"name": "Williamson", "state": "TX", "msa": "Austin"},
+    "cameron-county-tx": {"name": "Cameron", "state": "TX", "msa": "Brownsville-Harlingen"},
+    "brazoria-county-tx": {"name": "Brazoria", "state": "TX", "msa": "Houston"},
 }
 
 # The State Bar's "County" search field does not strictly mean "office is
@@ -149,6 +152,27 @@ COUNTY_CITY_ALLOWLIST = {
         "Cinco Ranch", "Aliana", "Riverstone", "Telfair", "Fairchilds",
         "Juliff", "Weston Lakes", "Guy",
     ]},
+    "williamson-county-tx": {c.lower() for c in [
+        "Georgetown", "Round Rock", "Cedar Park", "Leander", "Pflugerville",
+        "Hutto", "Taylor", "Liberty Hill", "Jarrell", "Florence",
+        "Granger", "Thrall", "Bartlett", "Weir", "Coupland", "Sun City",
+        "Andice", "Schwertner", "Walburg", "Corn Hill",
+    ]},
+    "cameron-county-tx": {c.lower() for c in [
+        "Brownsville", "Harlingen", "San Benito", "Los Fresnos",
+        "Port Isabel", "Rio Hondo", "Santa Rosa", "Combes", "La Feria",
+        "Laguna Vista", "South Padre Island", "Primera", "Bayview",
+        "Los Indios", "Rancho Viejo", "Indian Lake",
+        "Palm Valley", "Olmito",
+    ]},
+    "brazoria-county-tx": {c.lower() for c in [
+        "Pearland", "Alvin", "Angleton", "Lake Jackson", "Freeport",
+        "Clute", "Manvel", "Sweeny", "West Columbia", "Brazoria",
+        "Danbury", "Richwood", "Oyster Creek", "Surfside Beach",
+        "Jones Creek", "Brookside Village", "Iowa Colony",
+        "Liverpool", "Old Ocean", "Bailey's Prairie", "Quintana",
+        "Holiday Lakes",
+    ]},
     "hidalgo-county-tx": {c.lower() for c in [
         "McAllen", "Edinburg", "Mission", "Pharr", "San Juan", "Weslaco",
         "Alton", "Donna", "Elsa", "Hidalgo", "La Joya", "Mercedes",
@@ -212,6 +236,13 @@ IN_COUNTY_ZIP_OVERRIDE = {
     # entirely-Fort-Bend (not a Harris/Fort-Bend split zip like 77083,
     # deliberately left out).
     "fort-bend-county-tx": {"77469", "77407"},
+    # North Austin zips genuinely in Williamson County (self-reported as
+    # "Austin" since that's the city name, not the county) — 78717 is
+    # entirely Williamson, 78729 confirmed Williamson. Deliberately did
+    # NOT include 78750/78753/78727: verified each is majority-Travis
+    # (75%/94%/97% respectively) split zips, so most self-reports there
+    # really are out-of-county, same judgment call as Fort Bend's 77083.
+    "williamson-county-tx": {"78717", "78729"},
 }
 
 
@@ -276,7 +307,7 @@ GOVT_PATTERNS = re.compile(
     r'child\s+protective\s+services|department\s+of\s+family|'
     r'independent\s+school\s+district|\bisd\b|school\s+district|'
     r'\bcity\s+of\s+\w|\bcounty\s+of\s+\w|'
-    r'(harris|dallas|tarrant|bexar|travis|collin|denton|fort\s+bend|hidalgo|el\s+paso|montgomery)\s+(county|co\.|cty\.?)(?!\s+.*(law|pllc|llp))|\bdallas\s+da\b|'
+    r'(harris|dallas|tarrant|bexar|travis|collin|denton|fort\s+bend|hidalgo|el\s+paso|montgomery|williamson|cameron|brazoria)\s+(county|co\.|cty\.?)(?!\s+.*(law|pllc|llp))|\bdallas\s+da\b|'
     r'\bcscd\b|dispute\s+resolution\s+center|'
     r'\bprecinct\s+\d+\b|'
     r'\bdist\.?\s+attys?\.?\s+ofc\b|\bdist\.?\s+atty\b|\bmagistrate\b|'
@@ -371,6 +402,9 @@ DEDICATED_GOVT_BUILDINGS = {
     "hidalgo-county-tx": [],
     "el-paso-county-tx": [],
     "montgomery-county-tx": [],
+    "williamson-county-tx": [],
+    "cameron-county-tx": [],
+    "brazoria-county-tx": [],
 }
 
 
@@ -691,6 +725,18 @@ CORP_NON_LAW_FRAGMENTS = [
     # (same non-referral category as Dallas CASA / Texas Civil Rights
     # Project, already excluded elsewhere).
     "90 degree benefits", "aid to victims of domestic abuse",
+    # Williamson County find: active-duty military legal corps, same
+    # non-referral category as other government/court patterns.
+    "us army jag",
+    # Cameron County (Brownsville/Harlingen) finds: a legal-aid nonprofit,
+    # a pro-bono immigration-representation ABA project, a municipal
+    # utility board, and a hospital system.
+    "texas rio grande legal aid", "aba probar",
+    "brownsville public utilities board",
+    "valley baptist health system", "tenet healthcare",
+    # Brazoria County finds: a famous TX gas-station/convenience-store
+    # chain headquartered near Lake Jackson, and a legal-aid nonprofit.
+    "buc-ee's", "lone star legal aid",
     # El Paso County finds: a federal immigration-enforcement legal office,
     # a consumer-products company HQ, a municipal water-utility governing
     # board, a hospital, and the federal judiciary self-reported bare as

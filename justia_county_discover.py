@@ -87,6 +87,18 @@ COUNTY_CITIES = {
         "Conroe", "The Woodlands", "Willis", "Magnolia", "Montgomery",
         "Splendora", "Shenandoah", "New Caney", "Porter",
     ],
+    "williamson-county-tx": [
+        "Georgetown", "Round Rock", "Cedar Park", "Leander", "Pflugerville",
+        "Hutto", "Taylor", "Liberty Hill", "Jarrell",
+    ],
+    "cameron-county-tx": [
+        "Brownsville", "Harlingen", "San Benito", "Los Fresnos",
+        "Port Isabel", "La Feria", "South Padre Island",
+    ],
+    "brazoria-county-tx": [
+        "Pearland", "Alvin", "Angleton", "Lake Jackson", "Freeport",
+        "Clute", "Manvel", "West Columbia",
+    ],
 }
 CITY_SLUGS = {
     "West University Place": "west-university-place",

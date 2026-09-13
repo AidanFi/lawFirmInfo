@@ -76,6 +76,17 @@ COUNTY_CITIES = {
         "Sugar Land", "Missouri City", "Richmond", "Rosenberg", "Katy",
         "Fulshear", "Needville", "Stafford", "Arcola", "Fresno",
     ],
+    "hidalgo-county-tx": [
+        "McAllen", "Edinburg", "Mission", "Pharr", "San Juan", "Weslaco",
+        "Donna", "Mercedes", "Alamo", "Alton",
+    ],
+    "el-paso-county-tx": [
+        "El Paso", "Socorro", "Horizon City", "Clint", "Fabens", "Anthony",
+    ],
+    "montgomery-county-tx": [
+        "Conroe", "The Woodlands", "Willis", "Magnolia", "Montgomery",
+        "Splendora", "Shenandoah", "New Caney", "Porter",
+    ],
 }
 CITY_SLUGS = {
     "West University Place": "west-university-place",

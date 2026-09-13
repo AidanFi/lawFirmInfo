@@ -59,6 +59,9 @@ COUNTY_META = {
     "collin-county-tx": {"name": "Collin", "state": "TX", "msa": "Dallas-Fort Worth"},
     "denton-county-tx": {"name": "Denton", "state": "TX", "msa": "Dallas-Fort Worth"},
     "fort-bend-county-tx": {"name": "Fort Bend", "state": "TX", "msa": "Houston"},
+    "hidalgo-county-tx": {"name": "Hidalgo", "state": "TX", "msa": "McAllen-Edinburg-Mission"},
+    "el-paso-county-tx": {"name": "El Paso", "state": "TX", "msa": "El Paso"},
+    "montgomery-county-tx": {"name": "Montgomery", "state": "TX", "msa": "Houston"},
 }
 
 # The State Bar's "County" search field does not strictly mean "office is
@@ -146,12 +149,32 @@ COUNTY_CITY_ALLOWLIST = {
         "Cinco Ranch", "Aliana", "Riverstone", "Telfair", "Fairchilds",
         "Juliff", "Weston Lakes", "Guy",
     ]},
+    "hidalgo-county-tx": {c.lower() for c in [
+        "McAllen", "Edinburg", "Mission", "Pharr", "San Juan", "Weslaco",
+        "Alton", "Donna", "Elsa", "Hidalgo", "La Joya", "Mercedes",
+        "Palmview", "Penitas", "Progreso", "Sullivan City", "Alamo",
+        "Granjeno", "Palmhurst", "La Villa", "Edcouch",
+    ]},
+    "el-paso-county-tx": {c.lower() for c in [
+        "El Paso", "Socorro", "San Elizario", "Horizon City", "Clint",
+        "Fabens", "Anthony", "Vinton", "Canutillo", "Tornillo",
+    ]},
+    "montgomery-county-tx": {c.lower() for c in [
+        "Conroe", "The Woodlands", "Willis", "Magnolia", "Montgomery",
+        "Splendora", "Oak Ridge North", "Panorama Village",
+        "Patton Village", "Roman Forest", "Shenandoah", "Stagecoach",
+        "Woodloch", "Cut and Shoot", "New Caney", "Porter",
+        "Pinehurst", "Dobbin",
+    ]},
 }
 _CITY_ABBR_FIX = {
     "w univ pl": "west university place",
     "jersey vlg": "jersey village",
     "highland vlg": "highland village",
     "sugarland": "sugar land",
+    "the woodland": "the woodlands",
+    "woodlands": "the woodlands",
+    "panorama vlg": "panorama village",
 }
 
 
@@ -167,7 +190,34 @@ def _normalize_city(city: str) -> tuple[str, str]:
     return c, key
 
 
-def is_in_county(city: str, slug: str) -> bool:
+# Some real in-county addresses self-report a city name that belongs to a
+# DIFFERENT (usually adjacent, larger) county, because USPS historically
+# accepted that name for the zip before the actual community got its own
+# postal designation — a city-name allowlist alone can't distinguish these
+# from the genuinely out-of-county same-named place. Found in Montgomery
+# County: The Woodlands (entirely Montgomery) is very commonly self-
+# reported as "Spring" (Harris/Montgomery border community) or even
+# "Houston" — verified the specific zips below are true Woodlands zips
+# regardless of self-reported city text (77354/77375/77380/77381/77382/
+# 77384/77385/77386/77387/77389/77393). Zips belonging to genuine Harris-
+# County Spring (77373/77379/77388) are deliberately NOT in this set.
+IN_COUNTY_ZIP_OVERRIDE = {
+    "montgomery-county-tx": {
+        "77354", "77375", "77380", "77381", "77382", "77384", "77385",
+        "77386", "77387", "77389", "77393",
+    },
+    # A handful of Richmond-area zips genuinely in Fort Bend County that
+    # some attorneys self-report under "Houston" instead — found via the
+    # same zip-cross-check after the Montgomery discovery above. Confirmed
+    # entirely-Fort-Bend (not a Harris/Fort-Bend split zip like 77083,
+    # deliberately left out).
+    "fort-bend-county-tx": {"77469", "77407"},
+}
+
+
+def is_in_county(city: str, slug: str, zipc: str = "") -> bool:
+    if zipc.strip()[:5] in IN_COUNTY_ZIP_OVERRIDE.get(slug, set()):
+        return True
     if not city or not city.strip():
         return True
     _, key = _normalize_city(city)
@@ -226,7 +276,7 @@ GOVT_PATTERNS = re.compile(
     r'child\s+protective\s+services|department\s+of\s+family|'
     r'independent\s+school\s+district|\bisd\b|school\s+district|'
     r'\bcity\s+of\s+\w|\bcounty\s+of\s+\w|'
-    r'(harris|dallas|tarrant|bexar|travis|collin|denton|fort\s+bend)\s+(county|co\.|cty\.?)(?!\s+.*(law|pllc|llp))|\bdallas\s+da\b|'
+    r'(harris|dallas|tarrant|bexar|travis|collin|denton|fort\s+bend|hidalgo|el\s+paso|montgomery)\s+(county|co\.|cty\.?)(?!\s+.*(law|pllc|llp))|\bdallas\s+da\b|'
     r'\bcscd\b|dispute\s+resolution\s+center|'
     r'\bprecinct\s+\d+\b|'
     r'\bdist\.?\s+attys?\.?\s+ofc\b|\bdist\.?\s+atty\b|\bmagistrate\b|'
@@ -318,6 +368,9 @@ DEDICATED_GOVT_BUILDINGS = {
     ],
     "denton-county-tx": [],
     "fort-bend-county-tx": [],
+    "hidalgo-county-tx": [],
+    "el-paso-county-tx": [],
+    "montgomery-county-tx": [],
 }
 
 
@@ -638,6 +691,24 @@ CORP_NON_LAW_FRAGMENTS = [
     # (same non-referral category as Dallas CASA / Texas Civil Rights
     # Project, already excluded elsewhere).
     "90 degree benefits", "aid to victims of domestic abuse",
+    # El Paso County finds: a federal immigration-enforcement legal office,
+    # a consumer-products company HQ, a municipal water-utility governing
+    # board, a hospital, and the federal judiciary self-reported bare as
+    # "US Courts" - all WebSearch-confirmed before exclusion.
+    "office of the principal legal advisor", "helen of troy",
+    "el paso public service board", "el paso children's hospital",
+    "us courts", "u.s. courts",
+    # Montgomery County (The Woodlands/Spring/Conroe) finds: mostly energy/
+    # petrochemical corporate HQs clustered in The Woodlands (a major
+    # corporate-campus hub), plus a state inmate-defense office and one
+    # environmental-services company.
+    "entergy services", "arena energy", "strike operating company",
+    "xto energy", "americas styrenics", "bilfinger north america",
+    "cb&i", "consolidated communications", "deep blue water management",
+    "huntsman international", "lone star college system",
+    "covermymeds", "munich re trading", "repsol",
+    "8 rivers capital", "american bureau of shipping",
+    "fcc environmental services", "independent office of inmate counsel",
 ]
 # Short/ambiguous tokens that need whole-word matching to avoid false positives
 CORP_NON_LAW_WHOLE_WORDS = [
@@ -889,12 +960,12 @@ def build_csv(slug: str) -> int:
             dropped_non_law += 1
             continue
         city = _mode([m.get("city", "") for m in members])
-        if not is_in_county(city, slug):
+        zipc = _mode([m.get("zip", "") for m in members])
+        if not is_in_county(city, slug, zipc):
             dropped_out_of_county += 1
             continue
         city = _normalize_city(city)[0] or city
         street = _mode([m.get("street", "") for m in members])
-        zipc = _mode([m.get("zip", "") for m in members])
         phone = _mode([m.get("phone", "") for m in members])
         rows.append({
             "law_firm_name": display_name,
@@ -926,7 +997,7 @@ def build_csv(slug: str) -> int:
             dropped_solo_non_law += 1
             continue
         solo_city = e.get("city", "")
-        if not is_in_county(solo_city, slug):
+        if not is_in_county(solo_city, slug, e.get("zip", "")):
             dropped_out_of_county += 1
             continue
         solo_city = _normalize_city(solo_city)[0] or solo_city

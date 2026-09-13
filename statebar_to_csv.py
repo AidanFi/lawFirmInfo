@@ -57,6 +57,7 @@ COUNTY_META = {
     "bexar-county-tx": {"name": "Bexar", "state": "TX", "msa": "San Antonio"},
     "travis-county-tx": {"name": "Travis", "state": "TX", "msa": "Austin"},
     "collin-county-tx": {"name": "Collin", "state": "TX", "msa": "Dallas-Fort Worth"},
+    "denton-county-tx": {"name": "Denton", "state": "TX", "msa": "Dallas-Fort Worth"},
 }
 
 # The State Bar's "County" search field does not strictly mean "office is
@@ -122,10 +123,25 @@ COUNTY_CITY_ALLOWLIST = {
         "Parker", "Murphy", "Sachse", "Josephine", "Blue Ridge", "Nevada",
         "Weston", "New Hope", "St. Paul", "Lowry Crossing",
     ]},
+    "denton-county-tx": {c.lower() for c in [
+        "Denton", "Lewisville", "Flower Mound", "Little Elm", "The Colony",
+        "Highland Village", "Corinth", "Lake Dallas", "Argyle", "Northlake",
+        "Justin", "Ponder", "Sanger", "Aubrey", "Krum", "Pilot Point",
+        "Hickory Creek", "Shady Shores", "Hackberry", "Copper Canyon",
+        "Bartonville", "Double Oak", "Trophy Club", "Roanoke", "Frisco",
+        "Carrollton", "Prosper", "Celina", "Oak Point", "Cross Roads",
+        "Lincoln Park", "DISH", "Marshall Creek",
+        # Westlake straddles Denton/Tarrant counties; Lantana and Crossroads
+        # are unincorporated Denton County communities near Argyle/Flower
+        # Mound (found via the out-of-county-drop spot-check, same
+        # discipline as lesson 8).
+        "Westlake", "Lantana", "Crossroads",
+    ]},
 }
 _CITY_ABBR_FIX = {
     "w univ pl": "west university place",
     "jersey vlg": "jersey village",
+    "highland vlg": "highland village",
 }
 
 
@@ -200,7 +216,7 @@ GOVT_PATTERNS = re.compile(
     r'child\s+protective\s+services|department\s+of\s+family|'
     r'independent\s+school\s+district|\bisd\b|school\s+district|'
     r'\bcity\s+of\s+\w|\bcounty\s+of\s+\w|'
-    r'(harris|dallas|tarrant|bexar|travis|collin)\s+(county|co\.|cty\.?)(?!\s+.*(law|pllc|llp))|\bdallas\s+da\b|'
+    r'(harris|dallas|tarrant|bexar|travis|collin|denton)\s+(county|co\.|cty\.?)(?!\s+.*(law|pllc|llp))|\bdallas\s+da\b|'
     r'\bcscd\b|dispute\s+resolution\s+center|'
     r'\bprecinct\s+\d+\b|'
     r'\bdist\.?\s+attys?\.?\s+ofc\b|\bdist\.?\s+atty\b|\bmagistrate\b|'
@@ -290,6 +306,7 @@ DEDICATED_GOVT_BUILDINGS = {
     "collin-county-tx": [
         "2100 bloomdale",
     ],
+    "denton-county-tx": [],
 }
 
 
@@ -600,6 +617,11 @@ CORP_NON_LAW_FRAGMENTS = [
     "qbe north america", "republic finance", "stonebriar commercial finance",
     "tellus group", "toyota financial savings bank", "urban oil & gas group",
     "yum! brands", "yum brands",
+    # Denton County (Lewisville/Flower Mound/Carrollton/Westlake) in-house/
+    # institutional employers found via the same top-N-by-lawyer-count sweep,
+    # WebSearch-confirmed at each self-reported address before excluding.
+    "global medical response", "pennymac", "solera holdings",
+    "dafgiving360", "goosehead insurance", "caliber collision",
 ]
 # Short/ambiguous tokens that need whole-word matching to avoid false positives
 CORP_NON_LAW_WHOLE_WORDS = [
@@ -615,7 +637,7 @@ CORP_NON_LAW_WHOLE_WORDS = [
 # exclude when the ENTIRE normalized name equals one of these, or is
 # "Valero" + a distinctive corporate word — never a bare substring/whole-
 # word match against an otherwise personal-name-shaped string.
-_EXACT_NON_LAW_NAMES = {"valero"}
+_EXACT_NON_LAW_NAMES = {"valero", "stryker"}
 _VALERO_CORP_RE = re.compile(r'\bvalero\s+(energy|way)\b', re.IGNORECASE)
 
 CORP_NON_LAW_RE = re.compile(

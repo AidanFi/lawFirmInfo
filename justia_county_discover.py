@@ -67,6 +67,11 @@ COUNTY_CITIES = {
         "Plano", "McKinney", "Frisco", "Allen", "Wylie", "Prosper", "Celina",
         "Anna", "Melissa", "Princeton", "Fairview", "Murphy",
     ],
+    "denton-county-tx": [
+        "Denton", "Lewisville", "Flower Mound", "Little Elm", "The Colony",
+        "Highland Village", "Corinth", "Argyle", "Aubrey", "Sanger",
+        "Justin", "Roanoke", "Frisco", "Carrollton", "Prosper", "Celina",
+    ],
 }
 CITY_SLUGS = {
     "West University Place": "west-university-place",

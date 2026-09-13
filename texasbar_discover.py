@@ -86,6 +86,12 @@ TEXAS_COUNTIES = {
         "msa": "Dallas-Fort Worth",
         "county_ids": [43],
     },
+    "denton-county-tx": {
+        "name": "Denton",
+        "state": "TX",
+        "msa": "Dallas-Fort Worth",
+        "county_ids": [61],
+    },
 }
 
 ARTICLE_RE = re.compile(r'<article class="lawyer">.*?</article>', re.S)

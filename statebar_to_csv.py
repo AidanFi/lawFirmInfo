@@ -58,6 +58,7 @@ COUNTY_META = {
     "travis-county-tx": {"name": "Travis", "state": "TX", "msa": "Austin"},
     "collin-county-tx": {"name": "Collin", "state": "TX", "msa": "Dallas-Fort Worth"},
     "denton-county-tx": {"name": "Denton", "state": "TX", "msa": "Dallas-Fort Worth"},
+    "fort-bend-county-tx": {"name": "Fort Bend", "state": "TX", "msa": "Houston"},
 }
 
 # The State Bar's "County" search field does not strictly mean "office is
@@ -137,11 +138,20 @@ COUNTY_CITY_ALLOWLIST = {
         # discipline as lesson 8).
         "Westlake", "Lantana", "Crossroads",
     ]},
+    "fort-bend-county-tx": {c.lower() for c in [
+        "Sugar Land", "Missouri City", "Richmond", "Rosenberg", "Katy",
+        "Fulshear", "Needville", "Simonton", "Beasley", "Kendleton",
+        "Orchard", "Pleak", "Meadows Place", "Stafford", "Arcola",
+        "Fresno", "Thompsons", "Pecan Grove", "Greatwood", "New Territory",
+        "Cinco Ranch", "Aliana", "Riverstone", "Telfair", "Fairchilds",
+        "Juliff", "Weston Lakes", "Guy",
+    ]},
 }
 _CITY_ABBR_FIX = {
     "w univ pl": "west university place",
     "jersey vlg": "jersey village",
     "highland vlg": "highland village",
+    "sugarland": "sugar land",
 }
 
 
@@ -216,7 +226,7 @@ GOVT_PATTERNS = re.compile(
     r'child\s+protective\s+services|department\s+of\s+family|'
     r'independent\s+school\s+district|\bisd\b|school\s+district|'
     r'\bcity\s+of\s+\w|\bcounty\s+of\s+\w|'
-    r'(harris|dallas|tarrant|bexar|travis|collin|denton)\s+(county|co\.|cty\.?)(?!\s+.*(law|pllc|llp))|\bdallas\s+da\b|'
+    r'(harris|dallas|tarrant|bexar|travis|collin|denton|fort\s+bend)\s+(county|co\.|cty\.?)(?!\s+.*(law|pllc|llp))|\bdallas\s+da\b|'
     r'\bcscd\b|dispute\s+resolution\s+center|'
     r'\bprecinct\s+\d+\b|'
     r'\bdist\.?\s+attys?\.?\s+ofc\b|\bdist\.?\s+atty\b|\bmagistrate\b|'
@@ -307,6 +317,7 @@ DEDICATED_GOVT_BUILDINGS = {
         "2100 bloomdale",
     ],
     "denton-county-tx": [],
+    "fort-bend-county-tx": [],
 }
 
 
@@ -622,6 +633,11 @@ CORP_NON_LAW_FRAGMENTS = [
     # WebSearch-confirmed at each self-reported address before excluding.
     "global medical response", "pennymac", "solera holdings",
     "dafgiving360", "goosehead insurance", "caliber collision",
+    # Fort Bend County (Sugar Land/Katy/Richmond) finds: a benefits-
+    # administration company and a domestic-violence legal-aid nonprofit
+    # (same non-referral category as Dallas CASA / Texas Civil Rights
+    # Project, already excluded elsewhere).
+    "90 degree benefits", "aid to victims of domestic abuse",
 ]
 # Short/ambiguous tokens that need whole-word matching to avoid false positives
 CORP_NON_LAW_WHOLE_WORDS = [

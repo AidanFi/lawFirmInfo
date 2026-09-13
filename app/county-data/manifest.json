@@ -996,8 +996,8 @@
       "slug": "harris-county-tx",
       "name": "Harris County",
       "state": "TX",
-      "firm_count": 11307,
-      "last_updated": "2026-09-11",
+      "firm_count": 11306,
+      "last_updated": "2026-09-13",
       "csv_file": "harris-county-tx.csv"
     },
     {
@@ -1047,6 +1047,14 @@
       "firm_count": 1002,
       "last_updated": "2026-09-12",
       "csv_file": "denton-county-tx.csv"
+    },
+    {
+      "slug": "fort-bend-county-tx",
+      "name": "Fort Bend County",
+      "state": "TX",
+      "firm_count": 1270,
+      "last_updated": "2026-09-13",
+      "csv_file": "fort-bend-county-tx.csv"
     }
   ]
 }

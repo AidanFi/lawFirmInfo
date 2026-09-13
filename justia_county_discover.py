@@ -72,6 +72,10 @@ COUNTY_CITIES = {
         "Highland Village", "Corinth", "Argyle", "Aubrey", "Sanger",
         "Justin", "Roanoke", "Frisco", "Carrollton", "Prosper", "Celina",
     ],
+    "fort-bend-county-tx": [
+        "Sugar Land", "Missouri City", "Richmond", "Rosenberg", "Katy",
+        "Fulshear", "Needville", "Stafford", "Arcola", "Fresno",
+    ],
 }
 CITY_SLUGS = {
     "West University Place": "west-university-place",

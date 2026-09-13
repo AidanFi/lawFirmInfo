@@ -216,6 +216,24 @@ TEXAS_COUNTIES = {
         "msa": "Houston",
         "county_ids": [ALL_TEXAS_COUNTY_IDS["BRAZORIA"]],
     },
+    "bell-county-tx": {
+        "name": "Bell",
+        "state": "TX",
+        "msa": "Killeen-Temple",
+        "county_ids": [ALL_TEXAS_COUNTY_IDS["BELL"]],
+    },
+    "nueces-county-tx": {
+        "name": "Nueces",
+        "state": "TX",
+        "msa": "Corpus Christi",
+        "county_ids": [ALL_TEXAS_COUNTY_IDS["NUECES"]],
+    },
+    "webb-county-tx": {
+        "name": "Webb",
+        "state": "TX",
+        "msa": "Laredo",
+        "county_ids": [ALL_TEXAS_COUNTY_IDS["WEBB"]],
+    },
 }
 
 ARTICLE_RE = re.compile(r'<article class="lawyer">.*?</article>', re.S)

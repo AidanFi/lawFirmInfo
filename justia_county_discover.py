@@ -99,6 +99,16 @@ COUNTY_CITIES = {
         "Pearland", "Alvin", "Angleton", "Lake Jackson", "Freeport",
         "Clute", "Manvel", "West Columbia",
     ],
+    "bell-county-tx": [
+        "Killeen", "Temple", "Belton", "Harker Heights", "Nolanville",
+        "Salado",
+    ],
+    "nueces-county-tx": [
+        "Corpus Christi", "Robstown", "Port Aransas",
+    ],
+    "webb-county-tx": [
+        "Laredo",
+    ],
 }
 CITY_SLUGS = {
     "West University Place": "west-university-place",

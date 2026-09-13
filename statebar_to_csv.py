@@ -65,6 +65,9 @@ COUNTY_META = {
     "williamson-county-tx": {"name": "Williamson", "state": "TX", "msa": "Austin"},
     "cameron-county-tx": {"name": "Cameron", "state": "TX", "msa": "Brownsville-Harlingen"},
     "brazoria-county-tx": {"name": "Brazoria", "state": "TX", "msa": "Houston"},
+    "bell-county-tx": {"name": "Bell", "state": "TX", "msa": "Killeen-Temple"},
+    "nueces-county-tx": {"name": "Nueces", "state": "TX", "msa": "Corpus Christi"},
+    "webb-county-tx": {"name": "Webb", "state": "TX", "msa": "Laredo"},
 }
 
 # The State Bar's "County" search field does not strictly mean "office is
@@ -172,6 +175,21 @@ COUNTY_CITY_ALLOWLIST = {
         "Jones Creek", "Brookside Village", "Iowa Colony",
         "Liverpool", "Old Ocean", "Bailey's Prairie", "Quintana",
         "Holiday Lakes",
+    ]},
+    "bell-county-tx": {c.lower() for c in [
+        "Killeen", "Temple", "Belton", "Harker Heights", "Nolanville",
+        "Salado", "Troy", "Bartlett", "Holland", "Rogers",
+        "Little River-Academy", "Morgans Point Resort", "Kempner",
+        "Youngsport",
+    ]},
+    "nueces-county-tx": {c.lower() for c in [
+        "Corpus Christi", "Robstown", "Bishop", "Driscoll", "Agua Dulce",
+        "Banquete", "Port Aransas", "Aransas Pass", "Chapman Ranch",
+        "Petronila", "Bluntzer",
+    ]},
+    "webb-county-tx": {c.lower() for c in [
+        "Laredo", "Rio Bravo", "El Cenizo", "Mirando City",
+        "Bruni", "Oilton",
     ]},
     "hidalgo-county-tx": {c.lower() for c in [
         "McAllen", "Edinburg", "Mission", "Pharr", "San Juan", "Weslaco",
@@ -307,7 +325,7 @@ GOVT_PATTERNS = re.compile(
     r'child\s+protective\s+services|department\s+of\s+family|'
     r'independent\s+school\s+district|\bisd\b|school\s+district|'
     r'\bcity\s+of\s+\w|\bcounty\s+of\s+\w|'
-    r'(harris|dallas|tarrant|bexar|travis|collin|denton|fort\s+bend|hidalgo|el\s+paso|montgomery|williamson|cameron|brazoria)\s+(county|co\.|cty\.?)(?!\s+.*(law|pllc|llp))|\bdallas\s+da\b|'
+    r'(harris|dallas|tarrant|bexar|travis|collin|denton|fort\s+bend|hidalgo|el\s+paso|montgomery|williamson|cameron|brazoria|bell|nueces|webb)\s+(county|co\.|cty\.?)(?!\s+.*(law|pllc|llp))|\bdallas\s+da\b|'
     r'\bcscd\b|dispute\s+resolution\s+center|'
     r'\bprecinct\s+\d+\b|'
     r'\bdist\.?\s+attys?\.?\s+ofc\b|\bdist\.?\s+atty\b|\bmagistrate\b|'
@@ -405,6 +423,9 @@ DEDICATED_GOVT_BUILDINGS = {
     "williamson-county-tx": [],
     "cameron-county-tx": [],
     "brazoria-county-tx": [],
+    "bell-county-tx": [],
+    "nueces-county-tx": [],
+    "webb-county-tx": [],
 }
 
 
@@ -737,6 +758,12 @@ CORP_NON_LAW_FRAGMENTS = [
     # Brazoria County finds: a famous TX gas-station/convenience-store
     # chain headquartered near Lake Jackson, and a legal-aid nonprofit.
     "buc-ee's", "lone star legal aid",
+    # Nueces County finds: a community college district, a county court
+    # (self-reported bare as "County Court #5"), a federally-appointed
+    # Chapter 13 bankruptcy trustee (quasi-judicial, not a referral
+    # target), and a grantmaking community foundation.
+    "del mar college district", "county court #", "chapter 13 trustee",
+    "coastal bend community foundation",
     # El Paso County finds: a federal immigration-enforcement legal office,
     # a consumer-products company HQ, a municipal water-utility governing
     # board, a hospital, and the federal judiciary self-reported bare as

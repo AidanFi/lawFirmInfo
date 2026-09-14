@@ -996,48 +996,48 @@
             "slug": "harris-county-tx",
             "name": "Harris County",
             "state": "TX",
-            "firm_count": 11314,
-            "last_updated": "2026-09-13",
+            "firm_count": 11278,
+            "last_updated": "2026-09-14",
             "csv_file": "harris-county-tx.csv"
         },
         {
             "slug": "dallas-county-tx",
             "name": "Dallas County",
             "state": "TX",
-            "firm_count": 7039,
-            "last_updated": "2026-09-13",
+            "firm_count": 7033,
+            "last_updated": "2026-09-14",
             "csv_file": "dallas-county-tx.csv"
         },
         {
             "slug": "tarrant-county-tx",
             "name": "Tarrant County",
             "state": "TX",
-            "firm_count": 2925,
-            "last_updated": "2026-09-13",
+            "firm_count": 2924,
+            "last_updated": "2026-09-14",
             "csv_file": "tarrant-county-tx.csv"
         },
         {
             "slug": "bexar-county-tx",
             "name": "Bexar County",
             "state": "TX",
-            "firm_count": 3427,
-            "last_updated": "2026-09-13",
+            "firm_count": 3422,
+            "last_updated": "2026-09-14",
             "csv_file": "bexar-county-tx.csv"
         },
         {
             "slug": "travis-county-tx",
             "name": "Travis County",
             "state": "TX",
-            "firm_count": 4845,
-            "last_updated": "2026-09-13",
+            "firm_count": 4772,
+            "last_updated": "2026-09-14",
             "csv_file": "travis-county-tx.csv"
         },
         {
             "slug": "collin-county-tx",
             "name": "Collin County",
             "state": "TX",
-            "firm_count": 1877,
-            "last_updated": "2026-09-13",
+            "firm_count": 1876,
+            "last_updated": "2026-09-14",
             "csv_file": "collin-county-tx.csv"
         },
         {
@@ -1068,16 +1068,16 @@
             "slug": "el-paso-county-tx",
             "name": "El Paso County",
             "state": "TX",
-            "firm_count": 668,
-            "last_updated": "2026-09-13",
+            "firm_count": 665,
+            "last_updated": "2026-09-14",
             "csv_file": "el-paso-county-tx.csv"
         },
         {
             "slug": "montgomery-county-tx",
             "name": "Montgomery County",
             "state": "TX",
-            "firm_count": 1036,
-            "last_updated": "2026-09-13",
+            "firm_count": 1033,
+            "last_updated": "2026-09-14",
             "csv_file": "montgomery-county-tx.csv"
         },
         {
@@ -1124,16 +1124,16 @@
             "slug": "webb-county-tx",
             "name": "Webb County",
             "state": "TX",
-            "firm_count": 217,
-            "last_updated": "2026-09-13",
+            "firm_count": 215,
+            "last_updated": "2026-09-14",
             "csv_file": "webb-county-tx.csv"
         },
         {
             "slug": "galveston-county-tx",
             "name": "Galveston County",
             "state": "TX",
-            "firm_count": 495,
-            "last_updated": "2026-09-13",
+            "firm_count": 494,
+            "last_updated": "2026-09-14",
             "csv_file": "galveston-county-tx.csv"
         },
         {

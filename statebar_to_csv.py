@@ -364,6 +364,16 @@ PLACEHOLDER_COMPANY = {
     "law offices", "law firm", "the law office", "the law firm",
     "attorney counselor at law", "attorney and counselor at law",
     "counselor at law", "esq", "esquire", "select",
+    # Harris County audit finds, 2026-09-14: bare junk "employer" self-
+    # reports that fuzzy-clustered multiple unrelated attorneys into a
+    # fake multi-person "firm" (same failure class as the "atty at law"
+    # bug — a generic placeholder phrase with no real company identity).
+    "owner", "personal", "independent", "please select a prefix",
+    "private family office", "solo practice",
+    # normalize_key strips hyphens without introducing a space, so
+    # "Solo-practitioner" normalizes to "solopractitioner" rather than
+    # matching the space-separated "solo practitioner" entry above.
+    "solopractitioner", "same", "attorney at law cpa", "us government",
 }
 
 # Regex fallback for "no employer reported" variants that don't hit the
@@ -929,6 +939,107 @@ CORP_NON_LAW_WHOLE_WORDS = [
     "dart", "ey", "finra", "lument", "ibm", "epa", "citi", "fossil", "mmc", "ati",
     "bnsf", "hntb", "indeed", "tceq", "tesla", "amd", "amazon", "jpmc",
     "city bank",
+    # Bexar County (San Antonio, military-heavy) finds: US Air Force
+    # (self-reported bare abbreviation, distinct from the AAFES retail
+    # exchange already covered by "army and air force exchange"), the
+    # Dept. of Homeland Security (bare abbreviation, distinct from the
+    # already-covered "dept homeland security-tsa" phrasing), a
+    # manufacturing conglomerate, a heavy-equipment (Caterpillar) dealer,
+    # and a Texas-founded fast-food chain.
+    "usaf", "dhs", "3m", "holt cat", "whataburger",
+    # Travis County (Austin) audit finds, 2026-09-14: state-agency and
+    # corporate abbreviations self-reported bare.
+    "soah", "hhsc", "nteu", "yeti", "billd", "crowdstrike", "eeoc",
+]
+
+# Harris County (Houston) full-corpus audit finds, 2026-09-14 — this county
+# never got the systematic non-law sweep every other county received
+# (it was one of the first 4 built, before that practice was established).
+# All WebSearch-confirmed real non-law entities: real-estate/property-
+# management companies, a car-dealership chain, a police union, a
+# construction firm, a large local nonprofit, a commodities trader, the
+# Catholic archdiocese, a municipal pension system, a public university,
+# an offshore-drilling company, a specialty insurer, a petrochemical
+# maker, a civil-liberties nonprofit (staff attorneys, not a referral
+# firm — same category as other legal-aid orgs already excluded), and a
+# public housing authority (same category as Galveston's, already
+# excluded, but this is Houston's own distinct entity).
+CORP_NON_LAW_FRAGMENTS += [
+    "fidelis realty partners", "asset living", "group 1 automotive",
+    "houston police officers' union", "quanta infrastructure solutions group",
+    "bakerripley", "castleton commodities international",
+    "archdiocese of galveston-houston", "houston municipal employees pension system",
+    "univ of houston clear lake", "valaris", "tokio marine hcc", "tpc group",
+    "aclu of texas", "american civil liberties union of texas",
+    "houston housing authority",
+    # Additional confirmed-by-common-knowledge Fortune-500/govt-agency
+    # names found in the same audit (energy majors, national companies,
+    # federal agencies) — same non-referral category as the dozens of
+    # similar entries already curated above for this county. Only the
+    # multi-word, low-collision-risk forms go here; the bare short forms
+    # some attorneys self-reported (e.g. plain "Shell", "Sulzer") are
+    # handled via _EXACT_NON_LAW_NAMES below since a bare substring/
+    # whole-word match risks colliding with an ordinary surname.
+    "golden pass lng", "mcdermott international", "tallgrass energy",
+    "travelers insurance", "weatherford international",
+    "union pacific railroad", "ge vernova", "j.p. morgan chase",
+]
+
+# Travis County (Austin, state capital) full-corpus audit finds, 2026-09-14
+# — same situation as Harris: this county never got the systematic
+# non-law sweep. All WebSearch-confirmed or unambiguous-by-name real
+# non-law entities: TX state agencies/commissions/boards/offices (on top
+# of the ~25 already curated for this county), a regional transit
+# authority self-reported bare, unions, a political campaign committee,
+# national corporations, hospital systems, environmental/advocacy
+# nonprofits, and lobbying/government-relations-sounding LLCs.
+CORP_NON_LAW_FRAGMENTS += [
+    # TX state government
+    "office of public utility counsel", "office of state prosecuting attorney",
+    "office of texas governor", "office of the lieutenant governor",
+    "office of the lt. governor",
+    "texas comptroller's office", "texas lottery commission",
+    "ut system", "utimco", "texas state board of dental examiners",
+    "texas state board of plumbing examiners",
+    "texas state board of public accountancy",
+    "texas judicial commission on mental health",
+    "the board of disciplinary appeals", "state office of risk management",
+    "sunset advisory commission",
+    "the cancer prevention and research institute of texas",
+    "tx health benefits pool", "texas juvenile justice department",
+    "texas racing commission", "texas veterans commission",
+    "texas windstorm insurance association", "capmetro",
+    # Unions / political
+    "national treasury employees union", "austin police association",
+    "texans for greg abbott",
+    # National corporations
+    "yeti coolers", "charter communications", "charles schwab",
+    "huntington bank", "adapthealth", "cintra us", "rwe renewables",
+    "ware real estate", "wm capital partners", "vista equity partners",
+    "epicor software", "havoc ai", "petros pace finance",
+    # Hospitals / nonprofits / advocacy
+    "ascension seton", "ascension texas", "st. david's foundation",
+    "st. david's healthcare", "save our springs alliance",
+    "environmental integrity project", "texas access to justice foundation",
+    "texas access to justice commission",
+    "texas association of community health centers",
+    "texas association of realtors", "texas veterinary medical association",
+    "casa marianella legal clinic", "the forensic project, capds",
+    # Lobbying / government-relations / consulting LLCs
+    "cobos strategies", "dth strategies", "delta consulting group",
+    "bresnenassociates", "riverside resources", "gerson lehrman group",
+    "c3 presents", "saronic technologies", "austin fc",
+    "proassurance", "us court",
+]
+
+# Dallas County full-corpus audit finds, 2026-09-14: a sports-apparel
+# manufacturer, an automotive-dealership HR/management group, and a
+# gym-chain conglomerate self-reported under its RSG/Gold's Gym/John
+# Reed brand combination.
+CORP_NON_LAW_FRAGMENTS += [
+    "bsn sports", "the car group", "rsg / gold's gym / john reed",
+    "drug enforcement administration", "nasa johnson space center",
+    "shell energy",
 ]
 
 # Company names that are also common surnames — a whole-word or substring
@@ -938,7 +1049,21 @@ CORP_NON_LAW_WHOLE_WORDS = [
 # exclude when the ENTIRE normalized name equals one of these, or is
 # "Valero" + a distinctive corporate word — never a bare substring/whole-
 # word match against an otherwise personal-name-shaped string.
-_EXACT_NON_LAW_NAMES = {"valero", "stryker"}
+_EXACT_NON_LAW_NAMES = {
+    "valero", "stryker",
+    # Harris County audit finds, 2026-09-14: bare short company names
+    # that plausible-surname risk rules out as a substring/whole-word
+    # match (a real attorney could be named "Shell", "Sulzer", etc.) —
+    # only exclude when the ENTIRE self-reported name equals one of
+    # these exactly.
+    "shell", "sabic", "sulzer", "citgo", "equifax", "honeywell",
+    "weatherford", "travelers", "nov",
+    # Travis County audit find, 2026-09-14: bare "Abbott" self-reported by
+    # in-house counsel at Abbott (medical device co.) 8701 Bee Caves Rd
+    # office — but "Abbott" is also a plausible surname, so exact-match
+    # only, same treatment as Shell/Sulzer above.
+    "abbott",
+}
 _VALERO_CORP_RE = re.compile(r'\bvalero\s+(energy|way)\b', re.IGNORECASE)
 
 CORP_NON_LAW_RE = re.compile(
